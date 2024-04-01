@@ -1,0 +1,82 @@
+@import vars
+@import mixins
+
+@import _layouts/header
+@import _layouts/footer
+@import _layouts/modal
+@import _sections/home
+@import _sections/about
+@import _sections/experience
+@import _sections/qualification
+@import _sections/skills
+@import _sections/projects
+@import _sections/recomendations
+@import _sections/contacts
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	transition: all .3s ease-in-out
+html
+	scroll-behavior: smooth
+body
+	display: block
+	width: 100%
+	font-style: normal
+
+input,
+textarea
+	padding: 8px 16px
+	border: none
+	border-radius: 6px
+	outline: none
+	font-size: 13px
+	background-color: $accent-background
+	color: $gray
+	&::placeholder
+		color: $gray
+label
+	margin-bottom: 4px
+	font-weight: 600
+	font-size: 14px
+ul
+	list-style: none
+a
+	text-decoration: none
+h1, h2, h3, h4, h5, h6, p, label
+	font-family: $font
+	color: $white
+h1, h2, h4
+	font-weight: 700
+h3, h5
+	font-weight: 600
+h1
+	font-size: 44px
+h2
+	font-size: 28px
+h3
+	font-size: 24px
+h4
+	font-size: 20px
+h5
+	font-size: 16px
+h6
+	font-weight: 500
+	font-size: 13px
+p
+	font-weight: 400
+	font-size: 16px
+	line-height: 23px
+
+.box
+	width: 1140px
+	margin: auto
+.main
+	background: url("@/assets/images/background.jpeg") no-repeat center top / cover
+.btn
+	cursor: pointer
+.icon
+	color: $white
+
+@import media

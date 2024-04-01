@@ -1,0 +1,44 @@
+// show / hide
+@mixin hide
+	visibility: hidden
+	opacity: 0
+	transition: all .2s ease-in-out
+@mixin hide-height
+	@include hide
+	height: 0
+@mixin show
+	visibility: visible !important
+	opacity: 1 !important
+@mixin show-height
+	@include show
+	height: max-content
+
+@mixin o
+	top: 0
+	left: 0
+@mixin center
+	left: 50%
+	transform: translateX(-50%)
+@mixin center-vertical
+	top: 50%
+	transform: translateY(-50%)
+@mixin image-center
+	align-self: center
+	justify-self: center
+
+// allignment
+@mixin horizontal
+	display: flex
+@mixin vertical
+	@include horizontal
+	flex-direction: column
+@mixin aic
+	@include horizontal
+	align-items: center
+@mixin jcsb
+	@include horizontal
+	justify-content: space-between
+@mixin aic_jcsb
+	@include horizontal
+	align-items: center
+	justify-content: space-between

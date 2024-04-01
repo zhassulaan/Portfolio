@@ -1,0 +1,28 @@
+.about
+	display: grid
+	align-items: center
+	grid-template-columns: repeat(2, 1fr)
+	gap: 24px
+	&-image
+		width: 240px
+		border-radius: 20px
+		@include image-center
+	&-info
+		@include vertical
+		gap: 32px
+		&__stats
+			@include jcsb
+
+/* Small Devices, Tablets, Phones */
+@media only screen and (max-width : 768px)
+	.about
+		display: flex
+		&-image
+			width: 200px
+		&-info
+			.text
+				text-align: center
+			&__stats
+				justify-content: space-evenly
+			.button
+				margin: 0 auto
