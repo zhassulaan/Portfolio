@@ -1,5 +1,6 @@
-import recommendation1 from "assets/files/Characteristics.pdf";
-import recommendation2 from "assets/files/Recommendations.pdf";
+import recommendation1 from "assets/files/refference_letter-kashim.pdf";
+import recommendation2 from "assets/files/recommendation_letter-athena_plus.pdf";
+import recommendation3 from "assets/files/recommendation_letter-key_horse.pdf";
 import cv from "assets/files/Zhassulan_Serikuly-CV.pdf";
 import image from "assets/images/photo.png";
 import zs from "assets/images/logos/zs.png";
@@ -47,22 +48,27 @@ const info = {
 	name: "Serikuly Zhassulan",
 	position: ["Web Developer", "Software Engineer", "Nuxt.js / Vue.js", "React.js / Next.js", "Django.py"],
 	image: image,
-	description: "Experienced and versatile Web Developer adept in Vue.js (Nuxt.js), React.js (Next.js), and Django.py. Demonstrates a strong flair for creativity and an ability to deliver innovative solutions. Possesses a proven track record of making informed, independent decisions, coupled with a dedicated team-oriented approach. Committed to ongoing self-improvement and professional growth, consistently embracing new challenges to broaden horizons.",
+	description: [
+		"I’m a Frontend Developer with 6+ years of commercial experience, specializing in Vue (Nuxt) and React(Next), with hands-on backend experience using Django and PostgreSQL.",
+		"I’ve worked on large-scale web applications and 50+ geoportals and digital twin solutions for cities and regions across Kazakhstan. I’ve also built several regional geoportals from the ground up, working with complex geospatial data and interactive Mapbox-based interfaces.",
+		"Beyond development, I have experience leading development teams, mentoring junior developers, conducting code reviews, and sharing knowledge through technical workshops. I enjoy taking ownership of projects, solving complex problems, and helping teams deliver clean, maintainable, and reliable products.",
+		"While frontend is my primary focus, my backend experience allows me to understand the full product architecture and collaborate effectively across the entire development lifecycle.",
+	],
 	logo: zs,
 	phone: "+7 (775) 976-41-65",
 	gmail: "serikuly.zhassulan@gmail.com",
 	location: "Almaty, Kazakhstan",
 	stats: [
 		{
+			key: "Companies worked",
+			value: 4,
+		}, {
 			key: "Project works",
-			value: 35
+			value: '70+',
 		}, {
 			key: "Language profiency",
-			value: 5
-		}, {
-			key: "Companies worked",
-			value: 4
-		}
+			value: 5,
+		},
 	],
 	links: {
 		phone: "tel:+77759764165",
@@ -73,7 +79,7 @@ const info = {
 		telegram: "https://msng.link/o/?young_flovver=tg",
 		whatsapp: "https://wa.me/77759764165",
 		facebook: "https://www.facebook.com/young.flovver",
-		instagram: "https://instagram.com/zhassulaan__?igshid=YmMyMTA2M2Y"
+		instagram: "https://instagram.com/zhassulaan__?igshid=YmMyMTA2M2Y",
 	},
 	documents: {
 		cv: cv,
@@ -81,41 +87,33 @@ const info = {
 			{
 				cheif: "Mammadov E.",
 				file: recommendation1,
-				description: "TOO «KasHIM» - August, 2021 / Atyrau"
+				description: "TOO «KasHIM» - August, 2021 / Atyrau",
 			}, {
 				cheif: "Sain S.",
 				file: recommendation2,
-				description: "«Athena plus» - May, 2022 / Almaty"
-			}
-		]
+				description: "«Athena plus» - May, 2022 / Almaty",
+			}, {
+				cheif: "Kentbayev A. E.",
+				file: recommendation3,
+				description: "Key Horse» - August, 2026 / Almaty",
+			},
+		],
 	},
 	experience: [
 		{
-			id: "kashim",
-			name: "TOO «КасХИМ»",
-			position: "Intern Software Engineer",
-			icon: "fa-solid fa-laptop-code",
-			logo: kashim,
-			date: "January, 2021 - March, 2021 / Atyrau",
+			id: "key_horse",
+			name: "Key Horse",
+			position: "Full-Stack Developer / Frontend Team Lead (Vue.js, Django.py, PostgresSQL)",
+			icon: "fa-solid fa-server",
+			logo: key_horse,
+			date: "June, 2022 - August, 2026 / Almaty",
 			responsibilities: [
-				'Created responsive front-end interfaces using HTML, CSS, and JavaScript, ensuring an aesthetically pleasing User Experience across various devices.',
-				'Transformed design mockups into high-quality, functional code, paying attention to detail, and maintaining consistency with design guidelines.',
-				'Actively participated in daily stand-up meetings and workshops, discussing project progress, challenges, and solutions.',
-				'Conducted computer diagnostics to investigate issues and provide technical assistance and support, demonstrating a problem-solving mindset and ensuring the smooth operation of web applications.',
-			]
-		}, {
-			id: "athena_plus",
-			name: "Athena Plus",
-			position: "Frontend Developer (React.js, Next.js)",
-			icon: "fa-brands fa-react",
-			logo: athena_plus,
-			date: "June, 2021 - May, 2022 / Almaty",
-			responsibilities: [
-				'Created logos and animations for websites, playing a pivotal role in enhancing overall visual branding and UX.',
-				'Developed and implemented reusable code components for client projects, ensuring functionality and optimal performance.',
-				"Utilized JavaScript framework (React, Next) to translate design concepts into seamless and responsive user interface designs.",
-				'Established smooth integration between frontend and backend systems of the website, collaborated closely with Backend Developer to ensure efficient data exchange and contributing to the dynamic and interactive elements of web applications.'
-			]
+				'Developed and maintained 50+ geoportals and digital twin solutions for cities and regions across Kazakhstan, working with large volumes of geospatial and municipal data, using Vue.js, Mapbox, Django and PostgreSQL.',
+				'Built 4 regional geoportals from the ground up for Ulytau, Kyzylorda, Kostanay, and Turkistan, with initial development cycles of 2–3 months followed by ongoing feature development and improvements.',
+				'Led a 5-person development team on a large-scale project, coordinating development, assigning tasks to four junior developers, conducting code reviews, and providing technical guidance through workshops and hands-on mentoring.',
+				'Built complex interactive Mapbox-based interfaces for visualizing and working with large volumes of geospatial and municipal data.',
+				'Worked across frontend and backend, developing Django REST APIs, integrating them with Vue.js applications and PostgreSQL, and implementing data-driven services including electoral district functionality.',
+			],
 		}, {
 			id: "a_lux",
 			name: "A - Lux",
@@ -124,31 +122,48 @@ const info = {
 			logo: a_lux,
 			date: "March, 2022 - August, 2022 / Almaty",
 			responsibilities: [
-				'Led the front-end development of new projects and contributed significantly to the modernization of existing projects, ensuring adherence to industry best practices.',
-				'Created visually appealing web pages based on design layouts to optimize User Interface (UI) and User Experience (UX).',
-				'Actively participated in design discussions and provided valuable insights to create user-friendly interfaces and interactive components.',
-				'Worked closely with product managers and other stakeholders to understand project requirements and delivered solutions that met or exceeded expectations.'
-			]
+				'Developed the frontend of Tez Zhet, a food delivery mobile platform built with Nuxt.js, implementing restaurant and menu catalogs, search and filtering, shopping cart, checkout and ordering flows, user authentication, delivery addresses, maps, payment flows, order history, and backend API integrations.',
+				'Worked within a 30+ person engineering organization alongside frontend and backend developers, gaining experience collaborating on larger projects and shared codebases.',
+				'Quickly transitioned from the React ecosystem to Vue.js and Nuxt.js, becoming productive with the new stack and contributing to commercial projects within a short period of time.',
+				'Supported other developers in completing and delivering ongoing projects by troubleshooting frontend issues, implementing remaining functionality, and helping resolve development blockers.',
+				'Delivered frontend solutions for clients including Asian Credit Bank, KazMed Engineering, M1 Service, and Small, adapting implementations to different products and business requirements.',
+			],
 		}, {
-			id: "key_horse",
-			name: "Key Horse",
-			position: "Full-stack Developer (Vue.js, Django.py, PostgresSQL)",
-			icon: "fa-solid fa-server",
-			logo: key_horse,
-			date: "June, 2022 - February, 2024 / Almaty",
+			id: "athena_plus",
+			name: "Athena Plus",
+			position: "Frontend Developer (React.js, Next.js)",
+			icon: "fa-brands fa-react",
+			logo: athena_plus,
+			date: "June, 2021 - May, 2022 / Almaty",
 			responsibilities: [
-				'Contributed significantly to the end-to-end development of internal projects and company tools.',
-				'Collaborated with stakeholders to understand business requirements and translated them into technical solutions.',
-				'Mentored junior team members, conducted code reviews, and actively participated in knowledge-sharing sessions.',
-				'Enhanced service functionality by adding and implementing new utility features, optimizing overall performance, and addressing user feedback.',
-				'Developed and maintained API for various forms, catalogs, and interactive components.',
-				'Documented each step of the development procedure, providing comprehensive guides for future maintenance and facilitating knowledge transfer within the team.',
-				'Proactively identified and resolved errors/bugs during the layout phase.'
-			]
-		}
+				'Worked as the primary frontend developer in a 6–7 person cross-functional team, collaborating with a project manager, backend developer, designer, and media specialists to deliver client projects from concept to production.',
+				'Independently developed and delivered multiple commercial web projects using React, Next.js, and Redux, ranging from landing pages and corporate websites to multi-page platforms, online catalogs, and full-featured web applications.',
+				'Built reusable product and service catalogs with search, filtering, sorting, and category-based navigation across multiple projects, including Dobraia pharmacy network, Asia Mebel.',
+				'Developed the frontend of Qazbooking.kz, an accommodation booking platform, implementing user registration, authentication, booking flows, and integration with backend APIs.',
+				'Delivered solutions across travel, e-commerce, retail, hospitality, logistics, automotive, and healthcare, supporting projects through implementation, testing, launch, and post-release improvements.',
+			],
+		}, {
+			id: "kashim",
+			name: "TOO «КасХИМ»",
+			position: "Software Engineer Intern",
+			icon: "fa-solid fa-laptop-code",
+			logo: kashim,
+			date: "January, 2021 - March, 2021 / Atyrau",
+			responsibilities: [
+				'Gained first hands-on experience in professional web development by working with the company’s existing website and learning its codebase, structure, and development workflow.',
+				'Implemented UI improvements and missing functionality using JavaScript, HTML, and CSS, while fixing layout and usability issues across existing pages.',
+				'Worked with an existing production codebase, debugging issues, testing changes, and contributing to the maintenance and improvement of the company’s website.',
+			],
+		},
 	],
 	projects: [
 		{
+			name: "Kagis > Geonomix",
+			link: "https://alauzo.kz",
+			description: "Государственный архитектурно-строительный контроль. Казахстанское агентство географических информационных систем и дистанционного зондирования.",
+			stack: "Vue.js, HTML, CSS, Django.py, PostgresSQL",
+			image: geonomix
+		}, {
 			name: "Kostyum",
 			link: "https://kostyum.kz",
 			description: "​Kostyum.kz - это Ваш надежный партнёр в мире мужской одежды. Работает в сфере торговли с 1998 года, благодаря высокому качеству товаров и индивидуальному подходу, завоевали широкий круг постоянных клиентов. Основным принципом работы является честность, ответственность и нацеленность на долгосрочное сотрудничество.",
@@ -167,41 +182,11 @@ const info = {
 			stack: "1C Bitrix, PHP (HTML, JavaScript, SASS, CSS), Bootstrap",
 			image: qazbooking
 		}, {
-			name: "«YAQ» - Альпинист Товаров",
-			link: "https://yaq.kz",
-			description: "YAQ - это магазин спецодежды и снаряжения для активного отдыха. В магазине вы найдете целые коллекции первоклассной спецодежды, обуви, аксессуаров и снаряжения от известных брендов для всех нужд и возрастных категорий. Также вы получите профессиональную консультацию по всем интересующим вопросам.",
-			stack: "React.js",
-			image: yaq
-		}, {
 			name: "KazMed Engineering",
 			link: "https://www.kme.kz",
 			description: "ТОО «КазМедИнжиниринг» было основано в 2007 году, является авторизованным сервисным партнером Philips Medical Systems Nederland B.V. (НИДЕРЛАНДЫ) в Республике Казахстан. В своем составе компания имеет высококвалифицированных инженеров, прошедших обучение в ведущих учебных центрах Европы и США. Предоставляет качественные услуги по диагностике, ремонту и обслуживанию медицинского оборудования. Стремиться поддерживать самые высокие стандарты и используем передовые технологии для обеспечения безопасности и надежности медицинской техники.",
 			stack: "Nuxt.js, Swiper",
 			image: kazmed
-		}, {
-			name: "Pharmacom",
-			link: "https://pharma.com.kz",
-			description: "Бренд Pharmacom основан в 1996 году. Сегодня оно объединяет Клинику вакцинации в г. Алматы и классическую аптеку в современном формате, представленную сетью из 55 точек продаж в городах Алматы, Астана, Шымкент, Кызылорда, Павлодар и Петропавловск.",
-			stack: "HTML, JavaScript, Bootstrap, jQuery, CSS",
-			image: pharmacom
-		}, {
-			name: "Tahit",
-			link: "https://tahit.kz",
-			description: "На производстве ТОО TAHIT самые передовые технологии и современные материалы. Сублимационный метод нанесения рисунка на ткань позволяет получить яркие, глубокие, стойкие к выцветанию принты. Фабрика оснащена современным европейским оборудованием, мощностей которого достаточно, чтобы в минимальные сроки качественно справиться с заказом любого объема и получить качественную продукцию, соответствующую высоким стандартам качества.",
-			stack: "Vue.js, SCSS",
-			image: tahit
-		}, {
-			name: "Rakhat",
-			link: "https://rakhat.a-lux.dev",
-			description: "АО «ЛОТТЕ Рахат» представляют уникальный проект «Rakhat Qazaqstan óneri», цель которого, познакомить Вас с богатой современной культурой Казахстана, вдохновить на исследование казахстанского искусства и неповторимого художественного стиля.",
-			stack: "Vue.js, SCSS",
-			image: rakhat
-		}, {
-			name: "Asia Credit Bank",
-			link: "https://asiacreditbank.kz",
-			description: "Контактный центр АО «AsiaCredit Bank (АзияКредит Банк)» обеспечивает дистанционное консультирование юридических и физических лиц. Каждый поступающий звонок регистрируется и оперативно обрабатывается высококвалифицированными специалистами, консультирующими по предоставляемым продуктам и услугам Банка.",
-			stack: "PHP (HTML, JavaScript, SCSS, CSS)",
-			image: asia_credit_bank
 		}, {
 			name: "ABI Construction",
 			link: "https://abi-construction.kz",
@@ -215,6 +200,12 @@ const info = {
 			stack: "HTML, JavaScript, CSS, jQuery",
 			image: midas_event
 		}, {
+			name: "Азия - Мебель",
+			link: "https://asiamebel.com",
+			description: "​Торгово - сервисная компания. «Азия Мебель» — специализируется на продаже поитных материалов, фурнитуры и инструментов, а также оказывает услуги распила, фрезеровки и закатки пвх.",
+			stack: "1C Bitrix, PHP (HTML, JavaScript, SASS, CSS), Bootstrap",
+			image: azm_trade
+		}, {
 			name: "Melissa",
 			link: "https://melissaapteka.kz",
 			description: "Melissa — современный удобный интернет-магазин медикаментов, в котором можно купить онлайн сертифицированные лекарственные средства, витамины, товары для детей и мам, БАДы, косметику и другие товары для здоровья, красоты и гигиены по низким ценам. Общий ассортимент интернет аптеки включает более 13 000 фармацевтических, косметологических и медицинских изделий.",
@@ -226,6 +217,36 @@ const info = {
 			description: "Dostyk Trans Terminal - модерн-терминал на границе «Достык - Алашанькоу» предоставляет ряд высококачественных услуг, от стандартного хранения контейнеров и перегруза, до сложнореализуемых операций.",
 			stack: "Nuxt.js",
 			image: dostyk_trans_terminal
+		}, {
+			name: "Pharmacom",
+			link: "https://pharma.com.kz",
+			description: "Бренд Pharmacom основан в 1996 году. Сегодня оно объединяет Клинику вакцинации в г. Алматы и классическую аптеку в современном формате, представленную сетью из 55 точек продаж в городах Алматы, Астана, Шымкент, Кызылорда, Павлодар и Петропавловск.",
+			stack: "HTML, JavaScript, Bootstrap, jQuery, CSS",
+			image: pharmacom
+		}, {
+			name: "Tahit",
+			link: "https://tahit.kz",
+			description: "На производстве ТОО TAHIT самые передовые технологии и современные материалы. Сублимационный метод нанесения рисунка на ткань позволяет получить яркие, глубокие, стойкие к выцветанию принты. Фабрика оснащена современным европейским оборудованием, мощностей которого достаточно, чтобы в минимальные сроки качественно справиться с заказом любого объема и получить качественную продукцию, соответствующую высоким стандартам качества.",
+			stack: "Vue.js, SCSS",
+			image: tahit
+		}, {
+			name: "«YAQ» - Альпинист Товаров",
+			link: "https://yaq.kz",
+			description: "YAQ - это магазин спецодежды и снаряжения для активного отдыха. В магазине вы найдете целые коллекции первоклассной спецодежды, обуви, аксессуаров и снаряжения от известных брендов для всех нужд и возрастных категорий. Также вы получите профессиональную консультацию по всем интересующим вопросам.",
+			stack: "React.js",
+			image: yaq
+		}, {
+			name: "Rakhat",
+			link: "https://rakhat.a-lux.dev",
+			description: "АО «ЛОТТЕ Рахат» представляют уникальный проект «Rakhat Qazaqstan óneri», цель которого, познакомить Вас с богатой современной культурой Казахстана, вдохновить на исследование казахстанского искусства и неповторимого художественного стиля.",
+			stack: "Vue.js, SCSS",
+			image: rakhat
+		}, {
+			name: "Asia Credit Bank",
+			link: "https://asiacreditbank.kz",
+			description: "Контактный центр АО «AsiaCredit Bank (АзияКредит Банк)» обеспечивает дистанционное консультирование юридических и физических лиц. Каждый поступающий звонок регистрируется и оперативно обрабатывается высококвалифицированными специалистами, консультирующими по предоставляемым продуктам и услугам Банка.",
+			stack: "PHP (HTML, JavaScript, SCSS, CSS)",
+			image: asia_credit_bank
 		}, {
 			name: "Qazaq Taxi",
 			link: "https://play.google.com/store/apps/details?id=com.user.qazaqtaxi&hl=en&gl=US",
@@ -244,12 +265,6 @@ const info = {
 			description: "Invitation website for event prepared with React.",
 			stack: "React.js",
 			image: qonys_toi
-		}, {
-			name: "Kagis > Geonomix",
-			link: "https://alauzo.kz",
-			description: "Государственный архитектурно-строительный контроль. Казахстанское агентство географических информационных систем и дистанционного зондирования.",
-			stack: "Vue.js, HTML, CSS, Django.py, PostgresSQL",
-			image: geonomix
 		}, {
 			name: "Art - Galery",
 			link: "https://art-galery.netlify.app",
@@ -298,12 +313,6 @@ const info = {
 			description: "Portfolio web - page that introduces me. This project is made to show my abilities and information, such as education, skills and work experience. Thanks to this page, you don't have to download a PDF file and read boring text on one text file.",
 			stack: "HTML, CSS, JavaScript, jQuery",
 			image: portfolio
-		}, {
-			name: "Азия - Мебель",
-			link: "https://asiamebel.com",
-			description: "​Торгово - сервисная компания. «Азия Мебель» — специализируется на продаже поитных материалов, фурнитуры и инструментов, а также оказывает услуги распила, фрезеровки и закатки пвх.",
-			stack: "1C Bitrix, PHP (HTML, JavaScript, SASS, CSS), Bootstrap",
-			image: azm_trade
 		}, {
 			name: "Age Counter",
 			link: "https://zhassulaan.github.io/AgeCounter",
@@ -358,7 +367,7 @@ const info = {
 			description: "My first full-stack project written in django framework of python and react framework of javascript.",
 			stack: "React.js, Django.py",
 			image: sxodim
-		}
+		},
 	],
 	education: [
 		{
@@ -414,7 +423,7 @@ const info = {
 		}, {
 			title: "Robotics",
 			link: "https://drive.google.com/file/d/1d5cTWh0y8LDrCVYhXj_5GZlXAKT8dGkN",
-			description: "Participation",
+			description: "I place",
 			date: "2017"
 		}, {
 			title: "International Competition «Infomatrix»",
@@ -424,12 +433,12 @@ const info = {
 		}, {
 			title: "Euler Olympiad in Mathematics",
 			link: "",
-			description: "Participation",
+			description: "II place",
 			date: "2018"
 		}, {
 			title: "«IELTS»",
 			link: "",
-			description: "6,5 Band",
+			description: "7 Band",
 			date: "2018"
 		}, {
 			title: "Dostyk Intellectual Olympiad",
@@ -472,97 +481,93 @@ const info = {
 		{
 			id: "programming_languages",
 			title: "Programming Languages",
-			subtitle: "Aproximately 4 years",
+			subtitle: "Aproximately 8 years",
 			icon: "fa-solid fa-code",
 			list: [
 				{
+					key: "vue_nuxt",
+					name: "Vue / Nuxt .js",
+					percentage: 100
+				}, {
+					key: "react_next",
+					name: "React / Next .js",
+					percentage: 95
+				}, {
+					key: "django",
+					name: "Django.py",
+					percentage: 80
+				}, {
 					key: "js",
 					name: "Java Script",
 					percentage: 100
 				}, {
 					key: "ts",
 					name: "Type Script",
-					percentage: 88
+					percentage: 100
 				}, {
-					key: "react_next",
-					name: "React / Next .js",
-					percentage: 93
-				}, {
-					key: "vue_nuxt",
-					name: "Vue / Nuxt .js",
-					percentage: 98
-				}, {
-					key: "django",
-					name: "Django.py",
-					percentage: 75
+					key: "html",
+					name: "HTML",
+					percentage: 100
 				}, {
 					key: "css",
 					name: "CSS",
 					percentage: 100
 				}, {
-					key: "sass",
-					name: "SASS",
-					percentage: 100
-				}, {
 					key: "scss",
-					name: "SCSS",
+					name: "SCSS/Sass",
 					percentage: 100
 				}, {
 					key: "less",
 					name: "Less",
-					percentage: 95
+					percentage: 100
+				}, {
+					key: "tailwind",
+					name: "Tailwind CSS",
+					percentage: 100
 				}, {
 					key: "bootstrap",
 					name: "Bootstrap",
-					percentage: 79
-				}, {
-					key: "jquery",
-					name: "jQuery",
-					percentage: 75
-				}, {
-					key: "html",
-					name: "HTML",
 					percentage: 100
 				}
 			]
 		}, {
 			id: "data_base",
 			title: "Data Base",
-			subtitle: "More than 4 years",
+			subtitle: "More than 5 years",
 			icon: "fa-solid fa-clapperboard",
 			list: [
 				{
-					key: "my_sql",
-					name: "MySQL",
-					percentage: 80
+					key: "postgres_sql",
+					name: "PostgresSQL",
+					percentage: 100
 				}, {
 					key: "pl_sql",
 					name: "Oracle PL / SQL",
-					percentage: 80
+					percentage: 85
 				}, {
-					key: "postgres_sql",
-					name: "PostgresSQL",
+					key: "my_sql",
+					name: "MySQL",
 					percentage: 85
 				}, {
 					key: "sqlite",
 					name: "SQLite",
-					percentage: 77
+					percentage: 75
 				}
 			]
 		}, {
 			id: "designer",
 			title: "Designer",
-			subtitle: "More than 6 years",
+			subtitle: "More than 7 years",
 			icon: "fa-solid fa-object-group",
 			list: [
 				{
-					key: "adobe_photoshop",
-					name: "Adobe Photoshop",
-					percentage: 86
-				}, {
 					key: "figma",
 					name: "Figma",
-					percentage: 96
+					percentage: 100
+				}, {
+					key: "adobe_photoshop",
+					name: "Adobe Photoshop",
+					percentage: 85
 				}, {
 					key: "fusion",
 					name: "Fusion 360°",
@@ -606,8 +611,8 @@ const info = {
 				}, {
 					key: "chinese",
 					name: "Chinese",
-					level: "Intermediate",
-					percentage: 60,
+					level: "Conversant",
+					percentage: 40,
 					link: "https://drive.google.com/file/d/1Nc2r3H21SrN_16sO473fxIXHeC-gScnL"
 				}
 			]
