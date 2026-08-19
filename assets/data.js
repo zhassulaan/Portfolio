@@ -13,16 +13,13 @@ import age_counter from "assets/images/projects/age-counter.png";
 import art_galery from "assets/images/projects/art-galery.png";
 import asia_credit_bank from "assets/images/projects/asia-credit-bank.png";
 import azm_trade from "assets/images/projects/azm-trade.png";
-import calculator from "assets/images/projects/calculator.png";
 import check_market from "assets/images/projects/check-market.png";
-import coffee_boom from "assets/images/projects/coffee-boom.png";
 import dobraya from "assets/images/projects/dobraya.png";
 import dostyk_trans_terminal from "assets/images/projects/dostyk-trans-terminal.png";
 import ikeruen from "assets/images/projects/ikeruen.png";
 import kazmed from "assets/images/projects/kazmed.png";
 import kostyum from "assets/images/projects/kostyum.png";
 import m1_service from "assets/images/projects/m1-service.png";
-import md_stadt from "assets/images/projects/md-stadt.png";
 import melissa from "assets/images/projects/melissa.png";
 import midas_event from "assets/images/projects/midas-event.png";
 import mobi_event from "assets/images/projects/mobi-event.png";
@@ -36,7 +33,6 @@ import geonomix from "assets/images/projects/geonomix.png";
 import qonys_toi from "assets/images/projects/qonys-toi.png";
 import rakhat from "assets/images/projects/rakhat.png";
 import rento from "assets/images/projects/rento.png";
-import sxodim from "assets/images/projects/sxodim.png";
 import tahit from "assets/images/projects/tahit.png";
 import tez_zhet from "assets/images/projects/tez-zhet.png";
 import torgsoft from "assets/images/projects/torgsoft.png";
@@ -46,7 +42,7 @@ import youngs_store from "assets/images/projects/youngs-store.png";
 
 const info = {
 	name: "Serikuly Zhassulan",
-	position: ["Web Developer", "Software Engineer", "Nuxt.js / Vue.js", "React.js / Next.js", "Django.py"],
+	position: ["Web Developer", "Nuxt.js / Vue.js", "React.js / Next.js", "Django.py"],
 	image: image,
 	description: [
 		"I’m a Frontend Developer with 6+ years of commercial experience, specializing in Vue (Nuxt) and React(Next), with hands-on backend experience using Django and PostgreSQL.",
@@ -158,215 +154,191 @@ const info = {
 	],
 	projects: [
 		{
-			name: "Kagis > Geonomix",
-			link: "https://alauzo.kz",
-			description: "Государственный архитектурно-строительный контроль. Казахстанское агентство географических информационных систем и дистанционного зондирования.",
-			stack: "Vue.js, HTML, CSS, Django.py, PostgresSQL",
+			name: "KAGIS / Geonomix (alauzo.kz · alagsk.kz · iturkistan.kz · and 50+ regional geoportals across Kazakhstan)",
+			link: "https://iulytau.kz",
+			description: "A large-scale geospatial platform and digital twin solution developed for cities and regions across Kazakhstan. The platform brings together interactive maps, municipal and spatial data, digital registries, government services, monitoring tools, and operational information within a unified system.",
+			stack: "Vue.js, Vuex, Docker, PostgresSQL, Django.py",
 			image: geonomix
 		}, {
-			name: "Kostyum",
+			name: "Kostyum.kz — Men’s Fashion E-commerce Website",
 			link: "https://kostyum.kz",
-			description: "​Kostyum.kz - это Ваш надежный партнёр в мире мужской одежды. Работает в сфере торговли с 1998 года, благодаря высокому качеству товаров и индивидуальному подходу, завоевали широкий круг постоянных клиентов. Основным принципом работы является честность, ответственность и нацеленность на долгосрочное сотрудничество.",
-			stack: "Nuxt.js, SCSS, CSS",
+			description: "A modern e-commerce website for a men’s clothing retailer operating in Kazakhstan since 1998. The platform provides customers with an easy way to explore the brand’s product range, browse collections and categories, and discover detailed product information online. I developed the frontend using Nuxt.js, focusing on responsive design, reusable UI components, product catalog functionality, and a smooth user experience across desktop and mobile devices.",
+			stack: "Nuxt.js",
 			image: kostyum
 		}, {
-			name: "Сеть аптек «Добрая»",
-			link: "https://dobraya-apteka.kz",
-			description: "Сеть аптек «Добрая» начала свою деятельность в 1995 году в г. Алматы и Алматинской области. Компания всегда двигается в ногу со временем и развиваем онлайн технологии через интернет-аптеку «Добрая», где цены зачастую ниже, чем в наших точках продаж.",
-			stack: "HTML, Bootstrap, JavaScript, jQuery, SCSS, CSS",
-			image: dobraya
-		}, {
-			name: "QazBooking",
-			link: "https://qazbooking.kz",
-			description: "Qazbooking - это сервис онлайн бронирования хостелов и баз отдыха. С его помощью можно легко и удобно запланировать своё путешествие в пару кликов. Не придётся много раз звонить, если линии заняты, или долго ожидать ответа в WhatsApp. Бронирование проходит в онлайн режиме. На Qazbooking.kz собрано большое количество хостелов Алматы, Астаны, Актау, Караганды, Талгара, Уральска и других городов Казахстан.",
-			stack: "1C Bitrix, PHP (HTML, JavaScript, SASS, CSS), Bootstrap",
-			image: qazbooking
-		}, {
-			name: "KazMed Engineering",
+			name: "KazMedEngineering — Medical Equipment Service Website",
 			link: "https://www.kme.kz",
-			description: "ТОО «КазМедИнжиниринг» было основано в 2007 году, является авторизованным сервисным партнером Philips Medical Systems Nederland B.V. (НИДЕРЛАНДЫ) в Республике Казахстан. В своем составе компания имеет высококвалифицированных инженеров, прошедших обучение в ведущих учебных центрах Европы и США. Предоставляет качественные услуги по диагностике, ремонту и обслуживанию медицинского оборудования. Стремиться поддерживать самые высокие стандарты и используем передовые технологии для обеспечения безопасности и надежности медицинской техники.",
+			description: "A corporate website for KazMedEngineering, an authorized Philips Medical Systems service partner in Kazakhstan specializing in diagnostics, repair, and maintenance of professional medical equipment. I developed the frontend using Nuxt.js, creating a responsive and user-friendly interface for presenting the company’s services, expertise, and medical equipment solutions across desktop and mobile devices.",
 			stack: "Nuxt.js, Swiper",
 			image: kazmed
 		}, {
-			name: "ABI Construction",
+			name: "ABI Construction — Construction Company Website",
 			link: "https://abi-construction.kz",
-			description: "Abi construction — это проектно-строительная компания, специализирующаяся на комплексном проектировании и строительстве различных объектов, включая жилые и коммерческие здания. Компания предлагает полный цикл работ — от сбора требований и разработки проекта до строительства и отделки.",
+			description: "A corporate website for ABI Construction, a design and construction company providing end-to-end services for residential and commercial projects, from initial planning and architectural design to construction and finishing. I worked on the development and customization of the website using WordPress, Vue.js, and PHP, implementing responsive user interfaces, dynamic functionality, and content management features to effectively present the company’s projects and services.",
 			stack: "WordPress, Vue.js, PHP, SCSS",
 			image: abi_construction
 		}, {
-			name: "Midas Event",
+			name: "Midas Event — Event Agency Website",
 			link: "https://midasevent.kz",
-			description: "Цель «Midas Event» - быть самым эффективным event-агентством в Казахстане. Команда работает по системному подходу, от разработки концепции, до конечной реализации.",
+			description: "A corporate website for Midas Event, an event agency providing end-to-end event management services, from concept development and planning to full-scale execution. I developed the frontend of the website using HTML, JavaScript, and CSS, creating responsive pages and interactive elements to showcase the agency’s services, projects, and event portfolio across desktop and mobile devices.",
 			stack: "HTML, JavaScript, CSS, jQuery",
 			image: midas_event
 		}, {
-			name: "Азия - Мебель",
-			link: "https://asiamebel.com",
-			description: "​Торгово - сервисная компания. «Азия Мебель» — специализируется на продаже поитных материалов, фурнитуры и инструментов, а также оказывает услуги распила, фрезеровки и закатки пвх.",
-			stack: "1C Bitrix, PHP (HTML, JavaScript, SASS, CSS), Bootstrap",
-			image: azm_trade
-		}, {
-			name: "Melissa",
+			name: "Melissa — Online Pharmacy & E-commerce Platform",
 			link: "https://melissaapteka.kz",
-			description: "Melissa — современный удобный интернет-магазин медикаментов, в котором можно купить онлайн сертифицированные лекарственные средства, витамины, товары для детей и мам, БАДы, косметику и другие товары для здоровья, красоты и гигиены по низким ценам. Общий ассортимент интернет аптеки включает более 13 000 фармацевтических, косметологических и медицинских изделий.",
+			description: "A large-scale online pharmacy offering 13,000+ products, including medicines, vitamins, healthcare products, cosmetics, and products for children and mothers. I worked on the frontend of the e-commerce platform, developing responsive product catalogs, category navigation, search, filtering and sorting, product pages, shopping cart functionality, and integrations with backend services.",
 			stack: "Nuxt.js",
 			image: melissa
 		}, {
-			name: "Dostyk Trans Terminal",
-			link: "https://dostyk-trans-terminal.netlify.app",
-			description: "Dostyk Trans Terminal - модерн-терминал на границе «Достык - Алашанькоу» предоставляет ряд высококачественных услуг, от стандартного хранения контейнеров и перегруза, до сложнореализуемых операций.",
+			name: "TAHIT — Manufacturing Company Website",
+			link: "https://tahit.kz",
+			description: "A corporate website for TAHIT, a textile manufacturing company specializing in high-quality fabric printing and production using modern sublimation technologies and European manufacturing equipment. I developed the frontend of the website, creating a responsive and visually engaging interface to showcase the company’s production capabilities, technologies, products, and services. The website was optimized to provide a consistent user experience across desktop and mobile devices.",
+			stack: "Vue.js",
+			image: tahit
+		}, {
+			name: "Dostyk Trans Terminal — Logistics Terminal Website",
+			link: "https://www.dtt.kz/",
+			description: "A corporate website for Dostyk Trans Terminal, a modern logistics terminal located at the Dostyk–Alashankou border crossing, one of the key transportation links between Kazakhstan and China. The terminal provides container handling, storage, transshipment, and other logistics services.",
 			stack: "Nuxt.js",
 			image: dostyk_trans_terminal
 		}, {
-			name: "Pharmacom",
+			name: "Dobraya — Online Pharmacy & E-commerce Website",
+			link: "https://dobraya-apteka.kz",
+			description: "An e-commerce website for Dobraya, a pharmacy chain operating in Almaty and the Almaty region since 1995, combining its physical pharmacy network with an online shopping experience. I worked on the frontend of the online pharmacy, developing responsive product catalogs, category navigation, search and filtering, product pages, and other e-commerce functionality to provide a convenient shopping experience across desktop and mobile devices.",
+			stack: "HTML, JavaScript, SCSS, CSS, Bootstrap, jQuery",
+			image: dobraya
+		}, {
+			name: "UniStory - AI & Web3 Business Platform",
+			link: "https://unistory.netlify.app",
+			description: "A modern digital platform focused on AI-powered business solutions, helping companies integrate artificial intelligence into their workflows and accelerate the development of web services, applications, and AI-driven products. I developed the frontend using React, implementing integration with a crypto wallet and building interfaces for retrieving, processing, and displaying dynamic data from backend APIs. The project involved managing wallet connection states, handling asynchronous data, and creating responsive, reusable UI components for a smooth user experience.",
+			stack: "React.ts, Typescript",
+			image: unistory
+		}, {
+			name: "QazBooking — Online Accommodation Booking Platform",
+			link: "https://qazbooking.kz",
+			description: "An online booking platform for hostels and recreation centers across Kazakhstan, allowing travelers to discover accommodation and complete reservations directly online instead of relying on phone calls or messaging. I worked on the frontend and booking functionality of the platform, implementing accommodation catalogs, search, filtering and sorting, user registration and authentication, property pages, and online booking flows, with integration to backend services.",
+			stack: "1C Bitrix, PHP (HTML, JavaScript, SASS, CSS), Bootstrap",
+			image: qazbooking
+		}, {
+			name: "Asia Mebel — Furniture Materials & Services Website",
+			link: "https://asiamebel.com",
+			description: "A commercial website for Asia Mebel, a retail and service company specializing in furniture materials, fittings, tools, and professional services such as cutting, milling, and PVC edge banding. I developed the frontend of the website, implementing a structured product catalog, category navigation, search, filtering and sorting, product pages, and service-related interfaces. The focus was on making a large range of materials and products easy to browse across desktop and mobile devices.",
+			stack: "1C Bitrix, PHP (HTML, JavaScript, SASS, CSS), Bootstrap",
+			image: azm_trade
+		}, {
+			name: "Pharmacom — Pharmacy & Healthcare Website",
 			link: "https://pharma.com.kz",
-			description: "Бренд Pharmacom основан в 1996 году. Сегодня оно объединяет Клинику вакцинации в г. Алматы и классическую аптеку в современном формате, представленную сетью из 55 точек продаж в городах Алматы, Астана, Шымкент, Кызылорда, Павлодар и Петропавловск.",
-			stack: "HTML, JavaScript, Bootstrap, jQuery, CSS",
+			description: "A corporate website for Pharmacom, a healthcare brand founded in 1996 that operates a vaccination clinic in Almaty and a network of 55 pharmacies across major cities in Kazakhstan.",
+			stack: "JavaScript, HTML, CSS, Bootstrap, jQuery",
 			image: pharmacom
 		}, {
-			name: "Tahit",
-			link: "https://tahit.kz",
-			description: "На производстве ТОО TAHIT самые передовые технологии и современные материалы. Сублимационный метод нанесения рисунка на ткань позволяет получить яркие, глубокие, стойкие к выцветанию принты. Фабрика оснащена современным европейским оборудованием, мощностей которого достаточно, чтобы в минимальные сроки качественно справиться с заказом любого объема и получить качественную продукцию, соответствующую высоким стандартам качества.",
-			stack: "Vue.js, SCSS",
-			image: tahit
-		}, {
-			name: "«YAQ» - Альпинист Товаров",
-			link: "https://yaq.kz",
-			description: "YAQ - это магазин спецодежды и снаряжения для активного отдыха. В магазине вы найдете целые коллекции первоклассной спецодежды, обуви, аксессуаров и снаряжения от известных брендов для всех нужд и возрастных категорий. Также вы получите профессиональную консультацию по всем интересующим вопросам.",
-			stack: "React.js",
-			image: yaq
-		}, {
-			name: "Rakhat",
-			link: "https://rakhat.a-lux.dev",
-			description: "АО «ЛОТТЕ Рахат» представляют уникальный проект «Rakhat Qazaqstan óneri», цель которого, познакомить Вас с богатой современной культурой Казахстана, вдохновить на исследование казахстанского искусства и неповторимого художественного стиля.",
-			stack: "Vue.js, SCSS",
-			image: rakhat
-		}, {
-			name: "Asia Credit Bank",
-			link: "https://asiacreditbank.kz",
-			description: "Контактный центр АО «AsiaCredit Bank (АзияКредит Банк)» обеспечивает дистанционное консультирование юридических и физических лиц. Каждый поступающий звонок регистрируется и оперативно обрабатывается высококвалифицированными специалистами, консультирующими по предоставляемым продуктам и услугам Банка.",
-			stack: "PHP (HTML, JavaScript, SCSS, CSS)",
-			image: asia_credit_bank
-		}, {
-			name: "Qazaq Taxi",
-			link: "https://play.google.com/store/apps/details?id=com.user.qazaqtaxi&hl=en&gl=US",
-			description: "QAZAQ TAXI — отечественное приложение для заказа быстрых и комфортных поездок.",
-			stack: "Vue.js, Nuxt.js, Vuetify, SCSS, CSS",
-			image: qazaq_taxi
-		}, {
-			name: "New Navat",
+			name: "NAVAT — Restaurant Landing Page",
 			link: "https://newnavat.netlify.app",
-			description: "Navat — это лэндинг, предназначенный для того, чтобы донести аутентичный вкус среднеазиатской кухни до вашего порога. Специализируясь на блюдах в стиле «чайхана», Navat предлагает разнообразные вкусные блюда, вдохновленные богатыми кулинарными традициями Узбекистана, Таджикистана, Кыргызстана, Казахстана и других стран.",
-			stack: "HTML, JavaScript, CSS, jQuery",
+			description: "A promotional landing page for NAVAT, a Central Asian restaurant brand known for its traditional teahouse-style cuisine inspired by the culinary traditions of Kazakhstan, Uzbekistan, Kyrgyzstan, Tajikistan, and the wider region. I developed the frontend of the landing page, creating a responsive and visually engaging interface to showcase the restaurant’s cuisine, menu, atmosphere, and brand identity across desktop and mobile devices.",
+			stack: "JavaScript, HTML, CSS, jQuery",
 			image: new_navat
 		}, {
-			name: "Qonys Toi",
+			name: "Event Invitation Website",
 			link: "https://qonys-toi.netlify.app",
-			description: "Invitation website for event prepared with React.",
+			description: "A custom event invitation website designed to provide guests with event details in a simple, modern, and visually engaging format. I developed the frontend using React, creating a responsive interface optimized for both mobile and desktop devices, with interactive elements and a smooth user experience.",
 			stack: "React.js",
 			image: qonys_toi
 		}, {
-			name: "Art - Galery",
-			link: "https://art-galery.netlify.app",
-			description: "Website with products that can be searched. You can add product to favourites.",
-			stack: "React.js, SCSS",
-			image: art_galery
-		}, {
-			name: "Tez Zhet",
-			link: "https://apps.apple.com/sk/app/tezzhet/id6473077229",
-			description: "Приложение для доставки продуктов предоставляет удобный способ заказа еды и товаров из различных магазинов и ресторанов, прямо к вам домой. Откройте приложение, выберите из разнообразных предложений, оформите заказ, и наши курьеры быстро доставят ваш заказ в удобное для вас место. С широким ассортиментом и удобным интерфейсом, мы делаем процесс покупок легким и приятным.",
-			stack: "Nuxt.js, CSS, SCSS",
-			image: tez_zhet
-		}, {
-			name: "Mobi Event",
+			name: "MobiEvent — Mobile & Digital Finance Event Website",
 			link: "https://mobievent.kz",
-			description: "«MobiEvent» - мобильные сервисы и платежи” - знаковое отраслевое событие, посвященное вопросам развития рынка мобильных и электронных финансовых услуг и технологий Казахстана и стран СНГ.",
+			description: "A website for MobiEvent, an industry event focused on the development of mobile services, digital payments, and financial technologies across Kazakhstan and the CIS region.",
 			stack: "Nuxt.js",
 			image: mobi_event
 		}, {
-			name: "Unistory",
-			link: "https://unistory.netlify.app",
-			description: "Application on React, with connecting a crypto wallet and displaying information from the backend.",
-			stack: "React.ts, CSS, Typescript",
-			image: unistory
+			name: "Rento — Sports Facility Booking Platform",
+			link: "https://rentokz.netlify.app",
+			description: "A full-featured online platform for discovering and booking sports facilities and venues, connecting customers with facility owners through a single booking system. I developed the frontend using React, implementing separate user experiences for customers and facility hosts. The platform includes a custom administration panel that allows hosts to manage their facilities, availability, and booking-related information, while customers can explore available venues and complete reservations online. I also implemented user registration and authentication flows, including phone number verification, account activation, and secure password recovery. The application included role-based interfaces for different types of users, reusable UI components, form validation, and integration with backend APIs. The project gave me experience building a more complex product with multiple user roles, administrative functionality, authentication, booking workflows, and frontend–backend integration rather than a traditional content-based website.",
+			stack: "React.js, Redux, Firebase",
+			image: rento
 		}, {
-			name: "Torg Soft",
-			link: "https://torgsoft.netlify.app",
-			description: "ТОРГСОФТ — это программное обеспечение, созданное с целью автоматизировать бизнес на самом высоком уровне. Благодаря простому интерфейсу и логичной структуре ТОРГСОФТА, Вы сможете наладить контроль своего бизнеса уже сегодня!",
-			stack: "HTML, JavaScript, CSS",
-			image: torgsoft
+			name: "QAZAQ TAXI — Ride-Hailing Platform",
+			link: "https://play.google.com/store/apps/details?id=com.user.qazaqtaxi&hl=en&gl=US",
+			description: "A Kazakhstan-based ride-hailing platform designed to provide users with a fast and convenient way to request and manage taxi rides. I developed the frontend using Vue.js, Nuxt.js, and Vuetify, implementing responsive user interfaces and core ride-booking flows with a focus on a smooth experience across mobile and desktop devices.",
+			stack: "Vue.js, Nuxt.js, Vuetify",
+			image: qazaq_taxi
 		}, {
-			name: "IKeruen",
+			name: "Tez Zhet - Food & Grocery Delivery Platform",
+			link: "https://apps.apple.com/sk/app/tezzhet/id6473077229",
+			description: "A multi-service delivery application that allows users to order food, groceries, and everyday products from local restaurants and stores through a single platform. I worked on the frontend development of the application, implementing product and restaurant catalogs, search and filtering, shopping cart and checkout flows, user authentication, delivery address management, order placement, order history, and integration with backend APIs. The platform was designed with a mobile-first approach, focusing on simple navigation and a smooth ordering experience across different devices.",
+			stack: "Nuxt.js",
+			image: tez_zhet
+		}, {
+			name: "YAQ — Outdoor & Sports E-commerce Platform",
+			link: "https://yaq.kz",
+			description: "An e-commerce website for YAQ, a retailer specializing in professional clothing, footwear, accessories, and equipment for running, hiking, camping, tourism, and other outdoor activities. I developed the frontend of the online store, implementing product catalogs, category navigation, search, filtering and sorting, product pages, and shopping functionality. I focused on building a responsive and user-friendly shopping experience that makes it easy to navigate a large product assortment across desktop and mobile devices.",
+			stack: "React.js",
+			image: yaq
+		}, {
+			name: "M1 Service — Automotive Service Website",
+			link: "https://m1-service.netlify.app",
+			description: "A corporate website for M1 Service, an established network of automotive service centers providing vehicle maintenance, diagnostics, and repair services.",
+			stack: "Nuxt.js, TypeScript",
+			image: m1_service
+		}, {
+			name: "Art Gallery — React Product Gallery",
+			link: "https://art-galery.netlify.app",
+			description: "One of my first React projects, created while learning how to build interactive and component-based web applications. The application displays a collection of products that users can browse, search, and add to their favorites. I implemented reusable React components, dynamic search functionality, favorites management, and interactive UI updates based on user actions. This project helped me gain practical experience with React fundamentals, component architecture, state management, event handling, filtering data, and building responsive user interfaces.",
+			stack: "React.js",
+			image: art_galery
+		}, {
+			name: "Rakhat Qazaqstan Óneri — Cultural Digital Project",
+			link: "https://rakhat.a-lux.dev",
+			description: "A digital project created for LOTTE Rakhat to showcase the richness of contemporary Kazakh culture and introduce users to Kazakhstan’s art, artists, and distinctive creative heritage.",
+			stack: "Vue.js",
+			image: rakhat
+		}, {
+			name: "AsiaCredit Bank — Contact Center Website",
+			link: "https://asiacreditbank.kz",
+			description: "A web solution for AsiaCredit Bank’s Contact Center, designed to provide individuals and businesses with convenient access to information about the bank’s products, services, and customer support. I worked on the frontend implementation and maintenance of the website, developing responsive interfaces and interactive functionality using HTML, JavaScript, and SCSS, with PHP used on the server side.",
+			stack: "PHP (HTML, JavaScript, SCSS, CSS)",
+			image: asia_credit_bank
+		}, {
+			name: "IKeruen — Logistics & Transportation Website",
 			link: "https://ikeruen.kz",
-			description: "Компания IKeruen специализируется на предоставлении широкого спектра услуг по грузоперевозкам. Компания предлагает надежные и эффективные решения для перевозки грузов любого типа и объема.",
-			stack: "Nuxt.js, Swiper",
+			description: "A corporate website for IKeruen, a logistics company providing freight transportation services for different types and volumes of cargo.",
+			stack: "Nuxt.js",
 			image: ikeruen
 		}, {
-			name: "Young’s Store",
+			name: "TORGSOFT — Business Automation Software Website",
+			link: "https://torgsoft.netlify.app",
+			description: "One of my first commercial web development projects, created for TORGSOFT — a business automation software company providing solutions for managing sales, inventory, operations, and other day-to-day business processes. I worked on the frontend of the website, implementing responsive pages and UI components while gaining early hands-on experience working with a real production project and an existing commercial codebase. This project was an important step in my transition from learning web development to building and maintaining software for real businesses.",
+			stack: "JavaScript, HTML, CSS",
+			image: torgsoft
+		}, {
+			name: "Check Market — Retail Automation & Equipment Website",
+			link: "https://github.com/zhassulaan/check-market",
+			description: "A commercial website for Check Market, a company providing retail and business automation solutions, including cash register equipment, security systems, installation and maintenance services, and related consumables. I developed the frontend of the website, implementing a structured product catalog, category navigation, search, filtering and sorting, product pages, and service-related interfaces. The focus was on making a broad range of equipment and business solutions easy to discover and navigate across desktop and mobile devices.",
+			stack: "Next.js",
+			image: check_market
+		}, {
+			name: "Young’s Store — E-commerce Website",
 			link: "https://youngs-store.netlify.app",
-			description: "Personal website for a shop that sells stylish Korean clothes. Here you can view products, place an order and apply for a job. It's fully responsive, so you can use it on any device.",
-			stack: "HTML, CSS, JavaScript, Bootstrap, jQuery",
+			description: "One of my very first web development projects, created while I was learning the fundamentals of frontend development and turning my programming knowledge into a complete working website. I built an online store for stylish Korean clothing where users can browse products, view product information, place orders, and submit job applications. The website was built with a strong focus on responsive design, providing a consistent experience across desktop, tablet, and mobile devices. This project played an important role in my early development journey, helping me gain practical experience with HTML, CSS, JavaScript, responsive layouts, UI implementation, and building a complete website from scratch.",
+			stack: "JavaScript, HTML, CSS, Bootstrap, jQuery",
 			image: youngs_store
 		}, {
-			name: "Portfolio Website",
+			name: "Personal Portfolio — Developer Website",
 			link: "https://zhassulan.netlify.app",
-			description: "Portfolio web - page that introduces me. This project is made to show my abilities and information, such as education, skills and work experience. Thanks to this page, you don't have to download a PDF file and read boring text on one text file.",
-			stack: "HTML, CSS, JavaScript, jQuery",
+			description: "A personal portfolio website designed and developed to showcase my professional experience, technical skills, education, projects, and development journey in a more interactive and engaging format than a traditional resume. I built the website to serve as a central place where recruiters, companies, and other developers can explore my background, technologies I work with, and selected commercial and personal projects without relying solely on a PDF resume. The website is fully responsive and designed to provide a clean and consistent experience across desktop, tablet, and mobile devices.",
+			stack: "JavaScript, HTML, CSS, jQuery",
 			image: portfolio
 		}, {
-			name: "Age Counter",
+			name: "Age Counter — Real-Time Age Calculator",
 			link: "https://zhassulaan.github.io/AgeCounter",
-			description: "An application that calculates how many years, months, days, hours... you have lived since you were born. Now you can calculate your age in more detail.",
-			stack: "JavaScript, CSS, HTML, moment.js",
+			description: "One of my early JavaScript projects, created while practicing date manipulation, calculations, and dynamic DOM updates. The application calculates a user’s exact age based on their birth date and displays how long they have lived in years, months, days, hours, minutes, and seconds, updating the results dynamically. This project helped me strengthen my understanding of JavaScript date handling, user input validation, real-time calculations, and DOM manipulation while building a simple responsive user interface.",
+			stack: "JavaScript, HTML, CSS, moment.js",
 			image: age_counter
-		}, {
-			name: "iPhone’s Calculator",
-			link: "https://zhassulaan.github.io/Calculator",
-			description: "Simple Calculator. It's designed as our modern iPhones calculator. Here you can solve problems of varying complexity. It reduces the number of mistakes, so you could use it for your examination.",
-			stack: "JavaScript, HTML, CSS",
-			image: calculator
 		}, {
 			name: "Number speller",
 			link: "https://zhassulaan.github.io/Number-speller",
 			description: "Number to word counter converter in three languages.",
 			stack: "JavaScript, HTML, CSS",
 			image: number_speller
-		}, {
-			name: "MD Stadt",
-			link: "https://md-stadt.netlify.app",
-			description: "Description: App for tourists of Kazakhstan with beautiful places in our cities. Written in Nuxt 3.",
-			stack: "Nuxt.js, SCSS, CSS, Typescript",
-			image: md_stadt
-		}, {
-			name: "Coffee Boom",
-			link: "https://zhassulaan.github.io/CoffeeBoom",
-			description: "Webpage for coffee court. It's a simple single page website. You can switch pages by tags. Here it uses some animations to make a smooth transition.",
-			stack: "JavaScript, jQuery, HTML, CSS",
-			image: coffee_boom
-		}, {
-			name: "Rento",
-			link: "https://rentokz.netlify.app",
-			description: "Онлайн сервис для бронирования и автоматизация для сферы спорта.",
-			stack: "React.js, Redux, Firebase",
-			image: rento
-		}, {
-			name: "M1 Service",
-			link: "https://m1-service.netlify.app",
-			description: "Мы — сеть автосервисов М1 Сервис. Работаем с 2006 года и уже 16 лет успешно развиваемся в сфере технического обслуживания автомобилей.",
-			stack: "Nuxt.js, SCSS, TypeScript",
-			image: m1_service
-		}, {
-			name: "ЧЕК МАРКЕТ",
-			link: "https://github.com/zhassulaan/check-market",
-			description: "Компания «ЧЕК МАРКЕТ» создана с целью помогать. Помогать вам в решении ваших задач и проблем. Основной принцип работы компании – подбор оптимальных решений по безопасности предприятий торговли и оказание профессиональных услуг по автоматизации производства, установке и обслуживанию оборудования, а также предоставление качественного расходного материала!",
-			stack: "Next.js",
-			image: check_market
-		}, {
-			name: "Sxodim.kz",
-			link: "https://github.com/zhassulaan/sxodim",
-			description: "My first full-stack project written in django framework of python and react framework of javascript.",
-			stack: "React.js, Django.py",
-			image: sxodim
 		},
 	],
 	education: [
