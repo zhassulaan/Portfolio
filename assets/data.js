@@ -42,10 +42,10 @@ import youngs_store from "assets/images/projects/youngs-store.png";
 
 const info = {
 	name: "Serikuly Zhassulan",
-	position: ["Web Developer", "Nuxt.js / Vue.js", "React.js / Next.js", "Django.py"],
+	position: ["Web Developer", "Nuxt.js / Vue.js", "React / Next.js", "Django.py"],
 	image: image,
 	description: [
-		"I’m a Frontend Developer with 6+ years of commercial experience, specializing in Vue (Nuxt) and React(Next), with hands-on backend experience using Django and PostgreSQL.",
+		"I’m a Frontend Developer with 6+ years of commercial experience, specializing in Vue.js (Nuxt) and React(Next), with hands-on backend experience using Django and PostgreSQL.",
 		"I’ve worked on large-scale web applications and 50+ geoportals and digital twin solutions for cities and regions across Kazakhstan. I’ve also built several regional geoportals from the ground up, working with complex geospatial data and interactive Mapbox-based interfaces.",
 		"Beyond development, I have experience leading development teams, mentoring junior developers, conducting code reviews, and sharing knowledge through technical workshops. I enjoy taking ownership of projects, solving complex problems, and helping teams deliver clean, maintainable, and reliable products.",
 		"While frontend is my primary focus, my backend experience allows me to understand the full product architecture and collaborate effectively across the entire development lifecycle.",
@@ -127,7 +127,7 @@ const info = {
 		}, {
 			id: "athena_plus",
 			name: "Athena Plus",
-			position: "Frontend Developer (React.js, Next.js)",
+			position: "Frontend Developer (React, Next.js)",
 			icon: "fa-brands fa-react",
 			logo: athena_plus,
 			date: "June, 2021 - May, 2022 / Almaty",
@@ -241,7 +241,7 @@ const info = {
 			name: "Event Invitation Website",
 			link: "https://qonys-toi.netlify.app",
 			description: "A custom event invitation website designed to provide guests with event details in a simple, modern, and visually engaging format. I developed the frontend using React, creating a responsive interface optimized for both mobile and desktop devices, with interactive elements and a smooth user experience.",
-			stack: "React.js",
+			stack: "React",
 			image: qonys_toi
 		}, {
 			name: "MobiEvent — Mobile & Digital Finance Event Website",
@@ -253,7 +253,7 @@ const info = {
 			name: "Rento — Sports Facility Booking Platform",
 			link: "https://rentokz.netlify.app",
 			description: "A full-featured online platform for discovering and booking sports facilities and venues, connecting customers with facility owners through a single booking system. I developed the frontend using React, implementing separate user experiences for customers and facility hosts. The platform includes a custom administration panel that allows hosts to manage their facilities, availability, and booking-related information, while customers can explore available venues and complete reservations online. I also implemented user registration and authentication flows, including phone number verification, account activation, and secure password recovery. The application included role-based interfaces for different types of users, reusable UI components, form validation, and integration with backend APIs. The project gave me experience building a more complex product with multiple user roles, administrative functionality, authentication, booking workflows, and frontend–backend integration rather than a traditional content-based website.",
-			stack: "React.js, Redux, Firebase",
+			stack: "React, Redux, Firebase",
 			image: rento
 		}, {
 			name: "QAZAQ TAXI — Ride-Hailing Platform",
@@ -271,7 +271,7 @@ const info = {
 			name: "YAQ — Outdoor & Sports E-commerce Platform",
 			link: "https://yaq.kz",
 			description: "An e-commerce website for YAQ, a retailer specializing in professional clothing, footwear, accessories, and equipment for running, hiking, camping, tourism, and other outdoor activities. I developed the frontend of the online store, implementing product catalogs, category navigation, search, filtering and sorting, product pages, and shopping functionality. I focused on building a responsive and user-friendly shopping experience that makes it easy to navigate a large product assortment across desktop and mobile devices.",
-			stack: "React.js",
+			stack: "React",
 			image: yaq
 		}, {
 			name: "M1 Service — Automotive Service Website",
@@ -283,7 +283,7 @@ const info = {
 			name: "Art Gallery — React Product Gallery",
 			link: "https://art-galery.netlify.app",
 			description: "One of my first React projects, created while learning how to build interactive and component-based web applications. The application displays a collection of products that users can browse, search, and add to their favorites. I implemented reusable React components, dynamic search functionality, favorites management, and interactive UI updates based on user actions. This project helped me gain practical experience with React fundamentals, component architecture, state management, event handling, filtering data, and building responsive user interfaces.",
-			stack: "React.js",
+			stack: "React",
 			image: art_galery
 		}, {
 			name: "Rakhat Qazaqstan Óneri — Cultural Digital Project",
@@ -458,7 +458,7 @@ const info = {
 			list: [
 				{
 					key: "vue_nuxt",
-					name: "Vue / Nuxt .js",
+					name: "Vue.js / Nuxt .js",
 					percentage: 100
 				}, {
 					key: "react_next",
