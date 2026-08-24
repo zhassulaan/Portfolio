@@ -42,13 +42,11 @@ import youngs_store from "assets/images/projects/youngs-store.png";
 
 const info = {
 	name: "Serikuly Zhassulan",
-	position: ["Web Developer", "Nuxt.js / Vue.js", "React / Next.js", "Django.py"],
+	position: ["Web Developer", "Vue.js / Nuxt.js", "React / Next.js", "Django.py + PostgresSQL"],
 	image: image,
 	description: [
-		"I’m a Frontend Developer with 6+ years of commercial experience, specializing in Vue.js (Nuxt) and React(Next), with hands-on backend experience using Django and PostgreSQL.",
-		"I’ve worked on large-scale web applications and 50+ geoportals and digital twin solutions for cities and regions across Kazakhstan. I’ve also built several regional geoportals from the ground up, working with complex geospatial data and interactive Mapbox-based interfaces.",
-		"Beyond development, I have experience leading development teams, mentoring junior developers, conducting code reviews, and sharing knowledge through technical workshops. I enjoy taking ownership of projects, solving complex problems, and helping teams deliver clean, maintainable, and reliable products.",
-		"While frontend is my primary focus, my backend experience allows me to understand the full product architecture and collaborate effectively across the entire development lifecycle.",
+		"Frontend Developer with 5+ years of commercial experience, specializing primarily in Vue.js and Nuxt.js. Strong production experience building complex web applications, geoportals, e-commerce and booking platforms with Vue.js/Nuxt.js, JavaScript and TypeScript. Also experienced with React and Next.js, with full-stack knowledge of Python, Django REST Framework and PostgreSQL.",
+		"Experienced in technical leadership, including leading a 5-person development team, conducting code reviews, mentoring junior engineers, task decomposition and frontend technical decision-making. Built and maintained 50+ geoportals and digital twin solutions and delivered multiple commercial web applications from concept to production. ",
 	],
 	logo: zs,
 	phone: "+7 (775) 976-41-65",
@@ -154,10 +152,10 @@ const info = {
 	],
 	projects: [
 		{
-			name: "KAGIS / Geonomix (alauzo.kz · alagsk.kz · iturkistan.kz · and 50+ regional geoportals across Kazakhstan)",
+			name: "KAGIS / Geonomix (iulytau.kz · iturkistan.kz · alauzo.kz · and 50+ regional geoportals across Kazakhstan)",
 			link: "https://iulytau.kz",
 			description: "A large-scale geospatial platform and digital twin solution developed for cities and regions across Kazakhstan. The platform brings together interactive maps, municipal and spatial data, digital registries, government services, monitoring tools, and operational information within a unified system.",
-			stack: "Vue.js, Vuex, Docker, PostgresSQL, Django.py",
+			stack: "Vue.js, Vuex, Docker, PostgresSQL, Django.py, Mapbox",
 			image: geonomix
 		}, {
 			name: "Kostyum.kz — Men’s Fashion E-commerce Website",
@@ -181,7 +179,7 @@ const info = {
 			name: "Midas Event — Event Agency Website",
 			link: "https://midasevent.kz",
 			description: "A corporate website for Midas Event, an event agency providing end-to-end event management services, from concept development and planning to full-scale execution. I developed the frontend of the website using HTML, JavaScript, and CSS, creating responsive pages and interactive elements to showcase the agency’s services, projects, and event portfolio across desktop and mobile devices.",
-			stack: "HTML, JavaScript, CSS, jQuery",
+			stack: "React",
 			image: midas_event
 		}, {
 			name: "Melissa — Online Pharmacy & E-commerce Platform",
@@ -381,125 +379,122 @@ const info = {
 			title: "Olympiad in Mathematics",
 			link: "https://drive.google.com/file/d/1FhD5mtBb9VX-Fv1ujiogRi6cYO8xd2DT",
 			description: "II place",
-			date: "2013"
+			date: "2013",
 		}, {
 			title: "International Competition «Kenguru - Math for all»",
 			link: "https://drive.google.com/file/d/1y_I3_SPkK8VtgmOfLqFOHdAPU7nudGP4",
 			description: "III place",
-			date: "2016"
+			date: "2016",
 		}, {
 			title: "Regional Olympiad in Informatics",
 			link: "",
 			description: "I place",
-			date: "2017"
+			date: "2017",
 		}, {
 			title: "Robotics",
 			link: "https://drive.google.com/file/d/1d5cTWh0y8LDrCVYhXj_5GZlXAKT8dGkN",
 			description: "I place",
-			date: "2017"
+			date: "2017",
 		}, {
 			title: "International Competition «Infomatrix»",
 			link: "https://drive.google.com/file/d/1u3UMHzxXUi6G4kEWZPkPYKewY3i_lpyJ",
 			description: "Silver medal",
-			date: "2018"
+			date: "2018",
 		}, {
 			title: "Euler Olympiad in Mathematics",
 			link: "",
 			description: "II place",
-			date: "2018"
+			date: "2018",
 		}, {
 			title: "«IELTS»",
 			link: "",
 			description: "7 Band",
-			date: "2018"
+			date: "2018",
 		}, {
 			title: "Dostyk Intellectual Olympiad",
 			link: "https://drive.google.com/file/d/1yZUrKA01CuQJWMqfKT1kei4B9BJQdpIb",
 			description: "I place",
-			date: "2018"
+			date: "2018",
 		}, {
 			title: "Certificate of Chinese Proficiency",
 			link: "https://drive.google.com/file/d/16B_xxDNRz7HviOhAtrDwvILR6Y7X105j",
 			description: "II level",
-			date: "2019"
+			date: "2019",
 		}, {
 			title: "Secondary Education",
 			link: "https://drive.google.com/file/d/1QS2dibgwZRQ8Va0kIf20Cpmq9_9G3JED",
 			description: "Red diploma",
-			date: "2019"
+			date: "2019",
 		}, {
 			title: "Jaxart 2019",
 			link: "https://drive.google.com/file/d/1xL7XQZ-ILjUSxEFRRmfsVkZ4v4Nj7zq0",
 			description: "Participation",
-			date: "2019"
+			date: "2019",
 		}, {
 			title: "Certificate of English Proficiency",
 			link: "https://drive.google.com/file/d/1i2wlS6PG-HIQpwW5mwjoykEHuBbPo_ZW",
 			description: "Upper-Intermediate (B2)",
-			date: "2022"
+			date: "2022",
 		}, {
 			title: "Film Fest",
 			link: "https://drive.google.com/file/d/1Il_qnjWe3R2pNkpLVYY_hEW4Oduu-uRH",
 			description: "III place",
-			date: "2022"
+			date: "2022",
 		}, {
 			title: "Bachelor degree",
 			link: "https://drive.google.com/file/d/18C7FIeKxUVyKwXf2K95jU1TsKytAKB3K",
 			description: "Red diploma",
-			date: "2023"
+			date: "2023",
 		}
 	],
 	skills: [
 		{
-			id: "programming_languages",
-			title: "Programming Languages",
+			id: "frontend",
+			title: "Frontend",
 			subtitle: "Aproximately 8 years",
 			icon: "fa-solid fa-code",
 			list: [
 				{
 					key: "vue_nuxt",
-					name: "Vue.js / Nuxt .js",
-					percentage: 100
+					name: "Vue.js / Nuxt .j (Vuex)s",
+					percentage: 100,
 				}, {
 					key: "react_next",
-					name: "React / Next .js",
-					percentage: 95
+					name: "React / Next .js (Redux)",
+					percentage: 95,
 				}, {
-					key: "django",
-					name: "Django.py",
-					percentage: 80
-				}, {
-					key: "js",
-					name: "Java Script",
-					percentage: 100
+					key: "pinia",
+					name: "Pinia",
+					percentage: 100,
 				}, {
 					key: "ts",
 					name: "Type Script",
-					percentage: 100
+					percentage: 100,
 				}, {
+					key: "j
 					key: "html",
 					name: "HTML",
-					percentage: 100
+					percentage: 100,
 				}, {
 					key: "css",
 					name: "CSS",
-					percentage: 100
+					percentage: 100,
+				}
+			]
+		}, {
+			id: "backend",
+			title: "Backend",
+			subtitle: "More than 2 years",
+			icon: "fa-solid fa-code",
+			list: [
+				{
+					key: "python",
+					name: "Python",
+					percentage: 100,
 				}, {
-					key: "scss",
-					name: "SCSS/Sass",
-					percentage: 100
-				}, {
-					key: "less",
-					name: "Less",
-					percentage: 100
-				}, {
-					key: "tailwind",
-					name: "Tailwind CSS",
-					percentage: 100
-				}, {
-					key: "bootstrap",
-					name: "Bootstrap",
-					percentage: 100
+					key: "django",
+					name: "Django.py",
+					percentage: 80,
 				}
 			]
 		}, {
@@ -511,43 +506,43 @@ const info = {
 				{
 					key: "postgres_sql",
 					name: "PostgresSQL",
-					percentage: 100
+					percentage: 100,
 				}, {
 					key: "pl_sql",
 					name: "Oracle PL / SQL",
-					percentage: 85
+					percentage: 85,
 				}, {
 					key: "my_sql",
 					name: "MySQL",
-					percentage: 85
-				}, {
-					key: "sqlite",
-					name: "SQLite",
-					percentage: 75
+					percentage: 85,
 				}
 			]
 		}, {
-			id: "designer",
-			title: "Designer",
+			id: "tools",
+			title: "Tools",
 			subtitle: "More than 7 years",
 			icon: "fa-solid fa-object-group",
 			list: [
 				{
+					key: "git",
+					name: "Git",
+					percentage: 100,
+				}, {
+					key: "docker",
+					name: "Docker",
+					percentage: 80,
+				}, {
 					key: "figma",
 					name: "Figma",
-					percentage: 100
+					percentage: 100,
 				}, {
-					key: "adobe_photoshop",
-					name: "Adobe Photoshop",
-					percentage: 85
+					key: "jira",
+					name: "Atlassian Jira",
+					percentage: 95,
 				}, {
-					key: "fusion",
-					name: "Fusion 360°",
-					percentage: 75
-				}, {
-					key: "coreldraw",
-					name: "CorelDRAW",
-					percentage: 75
+					key: "postman",
+					name: "Postman",
+					percentage: 100,
 				}
 			]
 		}, {
@@ -561,31 +556,31 @@ const info = {
 					name: "English",
 					level: "Upper-Intermediate",
 					percentage: 80,
-					link: "https://drive.google.com/file/d/1FDTru0F0fmUbImlWmFKx1PQ9QbS0zvqR"
+					link: "https://drive.google.com/file/d/1FDTru0F0fmUbImlWmFKx1PQ9QbS0zvqR",
 				}, {
 					key: "kazakh",
 					name: "Kazakh",
 					level: "Native",
 					percentage: 100,
-					link: ""
+					link: "",
 				}, {
 					key: "russian",
 					name: "Russian",
 					level: "Fluent",
 					percentage: 95,
-					link: ""
+					link: "",
 				}, {
 					key: "turkish",
 					name: "Turkish",
 					level: "Upper-Intermediate",
 					percentage: 80,
-					link: ""
+					link: "",
 				}, {
 					key: "chinese",
 					name: "Chinese",
 					level: "Conversant",
 					percentage: 40,
-					link: "https://drive.google.com/file/d/1Nc2r3H21SrN_16sO473fxIXHeC-gScnL"
+					link: "https://drive.google.com/file/d/1Nc2r3H21SrN_16sO473fxIXHeC-gScnL",
 				}
 			]
 		}
