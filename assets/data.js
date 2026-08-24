@@ -42,7 +42,7 @@ import youngs_store from "assets/images/projects/youngs-store.png";
 
 const info = {
 	name: "Serikuly Zhassulan",
-	position: ["Web Developer", "Vue.js / Nuxt.js", "React / Next.js", "Django.py + PostgresSQL"],
+	position: ["Web Developer", "Vue.js / Nuxt.js", "React / Next.js", "Django.py + PostgreSQL"],
 	image: image,
 	description: [
 		"Frontend Developer with 5+ years of commercial experience, specializing primarily in Vue.js and Nuxt.js. Strong production experience building complex web applications, geoportals, e-commerce and booking platforms with Vue.js/Nuxt.js, JavaScript and TypeScript. Also experienced with React and Next.js, with full-stack knowledge of Python, Django REST Framework and PostgreSQL.",
@@ -250,7 +250,7 @@ const info = {
 		}, {
 			name: "Rento — Sports Facility Booking Platform",
 			link: "https://rentokz.netlify.app",
-			description: "A full-featured online platform for discovering and booking sports facilities and venues, connecting customers with facility owners through a single booking system. I developed the frontend using React, implementing separate user experiences for customers and facility hosts. The platform includes a custom administration panel that allows hosts to manage their facilities, availability, and booking-related information, while customers can explore available venues and complete reservations online. I also implemented user registration and authentication flows, including phone number verification, account activation, and secure password recovery. The application included role-based interfaces for different types of users, reusable UI components, form validation, and integration with backend APIs. The project gave me experience building a more complex product with multiple user roles, administrative functionality, authentication, booking workflows, and frontend–backend integration rather than a traditional content-based website.",
+			description: "A full-featured online platform for discovering and booking sports facilities and venues, connecting customers with facility owners through a single booking system. I developed the frontend using React, implementing separate user experiences for customers and facility hosts. The platform includes a custom administration panel that allows hosts to manage their facilities, availability, and booking-related information, while customers can explore available venues and complete reservations online. The project gave me experience building a more complex product with multiple user roles, administrative functionality, authentication, booking workflows.",
 			stack: "React, Redux, Firebase",
 			image: rento
 		}, {
@@ -456,7 +456,7 @@ const info = {
 			list: [
 				{
 					key: "vue_nuxt",
-					name: "Vue.js / Nuxt .j (Vuex)s",
+					name: "Vue.js / Nuxt.js (Vuex)",
 					percentage: 100,
 				}, {
 					key: "react_next",
@@ -468,10 +468,13 @@ const info = {
 					percentage: 100,
 				}, {
 					key: "ts",
-					name: "Type Script",
+					name: "TypeScript",
 					percentage: 100,
 				}, {
-					key: "j
+					key: "js",
+					name: "JavaScript",
+					percentage: 100,
+				}, {
 					key: "html",
 					name: "HTML",
 					percentage: 100,
@@ -482,30 +485,18 @@ const info = {
 				}
 			]
 		}, {
-			id: "backend",
-			title: "Backend",
-			subtitle: "More than 2 years",
-			icon: "fa-solid fa-code",
-			list: [
-				{
-					key: "python",
-					name: "Python",
-					percentage: 100,
-				}, {
-					key: "django",
-					name: "Django.py",
-					percentage: 80,
-				}
-			]
-		}, {
-			id: "data_base",
-			title: "Data Base",
-			subtitle: "More than 5 years",
+			id: "backend_database",
+			title: "Backend + DataBase",
+			subtitle: "More than 4 years",
 			icon: "fa-solid fa-clapperboard",
 			list: [
 				{
-					key: "postgres_sql",
-					name: "PostgresSQL",
+					key: "django",
+					name: "Django.py",
+					percentage: 80,
+				}, {
+					key: "postgre_sql",
+					name: "PostgreSQL",
 					percentage: 100,
 				}, {
 					key: "pl_sql",

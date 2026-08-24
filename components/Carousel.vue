@@ -6,8 +6,8 @@
 			</div>
 		</div>
 
-		<i id="prev" class="fa-regular fa-circle-left icon btn" @click="slider().prevSlide"></i>
-		<i id="next" class="fa-regular fa-circle-right icon btn" @click="slider().nextSlide"></i>
+		<button><i id="prev" class="fa-regular fa-circle-left icon btn" @click="slider().prevSlide"></i></button>
+		<button><i id="next" class="fa-regular fa-circle-right icon btn" @click="slider().nextSlide"></i></button>
 	</div>
 </template>
 
