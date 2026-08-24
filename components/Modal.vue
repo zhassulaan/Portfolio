@@ -9,6 +9,7 @@
 				<div class="modal-header__left">
 					<h4>{{ position }}</h4>
 					<h6 class="text">{{ date }}</h6>
+					<h6 class="text">{{ technologies }}</h6>
 				</div>
 				<img :src="logo" :alt="name" class="logo" />
 			</div>
@@ -32,5 +33,5 @@ const props = defineProps({
 	company: Object,
 });
 
-const { id, name, position, logo, date, responsibilities } = props.company;
+const { id, name, position, technologies, logo, date, responsibilities } = props.company;
 </script>

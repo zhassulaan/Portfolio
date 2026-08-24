@@ -42,11 +42,11 @@ import youngs_store from "assets/images/projects/youngs-store.png";
 
 const info = {
 	name: "Serikuly Zhassulan",
-	position: ["Web Developer", "Vue.js / Nuxt.js", "React / Next.js", "Django.py + PostgreSQL"],
+	position: ["Senior Frontend Engineer", "Vue.js / Nuxt.js", "React / Next.js"],
 	image: image,
 	description: [
-		"Frontend Developer with 5+ years of commercial experience, specializing primarily in Vue.js and Nuxt.js. Strong production experience building complex web applications, geoportals, e-commerce and booking platforms with Vue.js/Nuxt.js, JavaScript and TypeScript. Also experienced with React and Next.js, with full-stack knowledge of Python, Django REST Framework and PostgreSQL.",
-		"Experienced in technical leadership, including leading a 5-person development team, conducting code reviews, mentoring junior engineers, task decomposition and frontend technical decision-making. Built and maintained 50+ geoportals and digital twin solutions and delivered multiple commercial web applications from concept to production. ",
+		"Senior Frontend Engineer with 5+ years of commercial experience building and maintaining production web applications, geoportals, e-commerce and booking platforms. Strongly specialized in Vue.js, Nuxt.js and TypeScript, with additional experience in React/Next.js and backend development with Django and PostgreSQL.",
+		"Experienced in owning frontend delivery from requirements to production, designing reusable UI architecture, integrating complex REST APIs and geospatial data, and making technical implementation decisions. Led a 5-person development team, conducting code reviews, mentoring engineers, decomposing requirements and coordinating delivery.",
 	],
 	logo: zs,
 	phone: "+7 (775) 976-41-65",
@@ -58,7 +58,7 @@ const info = {
 			value: 4,
 		}, {
 			key: "Project works",
-			value: '70+',
+			value: "70+",
 		}, {
 			key: "Language profiency",
 			value: 5,
@@ -79,17 +79,17 @@ const info = {
 		cv: cv,
 		recomendations: [
 			{
-				cheif: "Mammadov E.",
-				file: recommendation1,
-				description: "TOO «KasHIM» - August, 2021 / Atyrau",
+				cheif: "Kentbayev A. E.",
+				file: recommendation3,
+				description: "Key Horse» - August, 2026 / Almaty",
 			}, {
 				cheif: "Sain S.",
 				file: recommendation2,
 				description: "«Athena plus» - May, 2022 / Almaty",
 			}, {
-				cheif: "Kentbayev A. E.",
-				file: recommendation3,
-				description: "Key Horse» - August, 2026 / Almaty",
+				cheif: "Mammadov E.",
+				file: recommendation1,
+				description: "LLC «KasHIM» - August, 2021 / Atyrau",
 			},
 		],
 	},
@@ -97,56 +97,58 @@ const info = {
 		{
 			id: "key_horse",
 			name: "Key Horse",
-			position: "Full-Stack Developer / Frontend Team Lead (Vue.js, Django.py, PostgresSQL)",
+			position: "Senior Full-Stack Developer / Frontend Team Lead",
 			icon: "fa-solid fa-server",
 			logo: key_horse,
 			date: "June, 2022 - August, 2026 / Almaty",
+			technologies: "Vue.js, Vuex, Django, PostgreSQL, Mapbox, Docker, ESLint",
 			responsibilities: [
-				'Developed and maintained 50+ geoportals and digital twin solutions for cities and regions across Kazakhstan, working with large volumes of geospatial and municipal data, using Vue.js, Mapbox, Django and PostgreSQL.',
-				'Built 4 regional geoportals from the ground up for Ulytau, Kyzylorda, Kostanay, and Turkistan, with initial development cycles of 2–3 months followed by ongoing feature development and improvements.',
-				'Led a 5-person development team on a large-scale project, coordinating development, assigning tasks to four junior developers, conducting code reviews, and providing technical guidance through workshops and hands-on mentoring.',
-				'Built complex interactive Mapbox-based interfaces for visualizing and working with large volumes of geospatial and municipal data.',
-				'Worked across frontend and backend, developing Django REST APIs, integrating them with Vue.js applications and PostgreSQL, and implementing data-driven services including electoral district functionality.',
+				"Led frontend development within a 5-person engineering team, coordinating delivery, decomposing requirements, assigning tasks, reviewing code, mentoring four junior developers, and providing technical guidance.",
+				"Took ownership of 4 regional geoportals from initial implementation to production for Ulytau, Kyzylorda, Kostanay and Turkistan, delivering initial versions within 2–3 month development cycles and continuing post-launch feature development.",
+				"Developed and maintained 50+ production geoportals and digital twin solutions for cities and regions across Kazakhstan using Vue.js, Mapbox, Django REST Framework and PostgreSQL.",
+				"Designed and implemented complex reusable Mapbox-based interfaces for visualization and interaction with large geospatial and municipal datasets, integrating REST APIs and Django/PostgreSQL services for data-intensive functionality.",
+				"Optimized search and filtering across data-heavy geospatial catalogs containing hundreds of thousands of map objects, improving lookup efficiency and UI responsiveness through more efficient frontend data traversal.",
+				"Introduced shared frontend coding standards and BEM methodology, trained developers on the new conventions, and drove team-wide adoption, improving consistency and maintainability across a previously fragmented codebase.",
 			],
 		}, {
 			id: "a_lux",
 			name: "A - Lux",
-			position: "Frontend Developer (Nuxt.js, Vue.js)",
+			position: "Frontend Developer",
 			icon: "fa-brands fa-vuejs",
 			logo: a_lux,
 			date: "March, 2022 - August, 2022 / Almaty",
+			technologies: "Nuxt.js, Vue.js, Vuex, Pinia, TypeScript",
 			responsibilities: [
-				'Developed the frontend of Tez Zhet, a food delivery mobile platform built with Nuxt.js, implementing restaurant and menu catalogs, search and filtering, shopping cart, checkout and ordering flows, user authentication, delivery addresses, maps, payment flows, order history, and backend API integrations.',
-				'Worked within a 30+ person engineering organization alongside frontend and backend developers, gaining experience collaborating on larger projects and shared codebases.',
-				'Quickly transitioned from the React ecosystem to Vue.js and Nuxt.js, becoming productive with the new stack and contributing to commercial projects within a short period of time.',
-				'Supported other developers in completing and delivering ongoing projects by troubleshooting frontend issues, implementing remaining functionality, and helping resolve development blockers.',
-				'Delivered frontend solutions for clients including Asian Credit Bank, KazMed Engineering, M1 Service, and Small, adapting implementations to different products and business requirements.',
+				"Developed and maintained frontend functionality across multiple commercial projects using Vue.js and Nuxt.js, including e-commerce, food delivery, healthcare, and corporate web platforms.",
+				"Contributed extensively to Tez Zhet, a Nuxt.js food-delivery platform, implementing restaurant and menu catalog, search and filtering, cart, checkout, authentication, delivery addresses, maps, payment flows and order history.",
+				"Collaborated within a 30+ person engineering organization alongside frontend and backend teams, contributing to shared production codebases and coordinated releases.",
+				"Resolved complex frontend issues and helped unblock development and delivery across multiple ongoing projects.",
 			],
 		}, {
 			id: "athena_plus",
 			name: "Athena Plus",
-			position: "Frontend Developer (React, Next.js)",
+			position: "Frontend Developer",
 			icon: "fa-brands fa-react",
 			logo: athena_plus,
 			date: "June, 2021 - May, 2022 / Almaty",
+			technologies: "React, React Native, Next.js, Redux",
 			responsibilities: [
-				'Worked as the primary frontend developer in a 6–7 person cross-functional team, collaborating with a project manager, backend developer, designer, and media specialists to deliver client projects from concept to production.',
-				'Independently developed and delivered multiple commercial web projects using React, Next.js, and Redux, ranging from landing pages and corporate websites to multi-page platforms, online catalogs, and full-featured web applications.',
-				'Built reusable product and service catalogs with search, filtering, sorting, and category-based navigation across multiple projects, including Dobraia pharmacy network, Asia Mebel.',
-				'Developed the frontend of Qazbooking.kz, an accommodation booking platform, implementing user registration, authentication, booking flows, and integration with backend APIs.',
-				'Delivered solutions across travel, e-commerce, retail, hospitality, logistics, automotive, and healthcare, supporting projects through implementation, testing, launch, and post-release improvements.',
+				"Owned frontend delivery as the primary frontend engineer in a 6–7 person cross-functional team, collaborating directly with product/project manager, backend engineer, designer to deliver client projects from concept to production.",
+				"Independently architected and delivered multiple commercial applications using React, Next.js, and Redux across e-commerce, travel, retail, hospitality, logistics and healthcare.",
+				"Built reusable catalog, search, filtering, sorting and navigation functionality across multiple projects.",
+				"Developed the frontend of Qazbooking.kz, an accommodation booking platform, implementing authentication, accommodation search, and booking flows.",
 			],
 		}, {
-			id: "kashim",
-			name: "TOO «КасХИМ»",
+			id: "kaskhim",
+			name: "LLC «KasKhim»",
 			position: "Software Engineer Intern",
 			icon: "fa-solid fa-laptop-code",
 			logo: kashim,
 			date: "January, 2021 - March, 2021 / Atyrau",
+			technologies: "JavaScript, HTML, CSS",
 			responsibilities: [
-				'Gained first hands-on experience in professional web development by working with the company’s existing website and learning its codebase, structure, and development workflow.',
-				'Implemented UI improvements and missing functionality using JavaScript, HTML, and CSS, while fixing layout and usability issues across existing pages.',
-				'Worked with an existing production codebase, debugging issues, testing changes, and contributing to the maintenance and improvement of the company’s website.',
+				"Implemented UI improvements and missing functionality using JavaScript, HTML, and CSS, resolving layout, usability, and cross-page consistency issues.",
+				"Debugged and tested the existing codebase, identifying frontend issues and delivering fixes and incremental improvements.",
 			],
 		},
 	],
@@ -155,7 +157,7 @@ const info = {
 			name: "KAGIS / Geonomix (iulytau.kz · iturkistan.kz · alauzo.kz · and 50+ regional geoportals across Kazakhstan)",
 			link: "https://iulytau.kz",
 			description: "A large-scale geospatial platform and digital twin solution developed for cities and regions across Kazakhstan. The platform brings together interactive maps, municipal and spatial data, digital registries, government services, monitoring tools, and operational information within a unified system.",
-			stack: "Vue.js, Vuex, Docker, PostgresSQL, Django.py, Mapbox",
+			stack: "Vue.js, Vuex, Docker, PostgreSQL, Django, Mapbox",
 			image: geonomix
 		}, {
 			name: "Kostyum.kz — Men’s Fashion E-commerce Website",
@@ -491,8 +493,12 @@ const info = {
 			icon: "fa-solid fa-clapperboard",
 			list: [
 				{
+					key: "python",
+					name: "Python",
+					percentage: 100,
+				}, {
 					key: "django",
-					name: "Django.py",
+					name: "Django",
 					percentage: 80,
 				}, {
 					key: "postgre_sql",
@@ -522,6 +528,10 @@ const info = {
 					key: "docker",
 					name: "Docker",
 					percentage: 80,
+				}, {
+					key: "eslint",
+					name: "ESLint",
+					percentage: 100,
 				}, {
 					key: "figma",
 					name: "Figma",
