@@ -44,10 +44,7 @@ const info = {
 	name: "Serikuly Zhassulan",
 	position: ["Senior Frontend Engineer", "Vue.js / Nuxt.js", "React / Next.js"],
 	image: image,
-	description: [
-		"Senior Frontend Engineer with 5+ years of commercial experience building and maintaining production web applications, geoportals, e-commerce and booking platforms. Strongly specialized in Vue.js, Nuxt.js and TypeScript, with additional experience in React/Next.js and backend development with Django and PostgreSQL.",
-		"Experienced in owning frontend delivery from requirements to production, designing reusable UI architecture, integrating complex REST APIs and geospatial data, and making technical implementation decisions. Led a 5-person development team, conducting code reviews, mentoring engineers, decomposing requirements and coordinating delivery.",
-	],
+	description: "Senior Frontend Engineer with 5+ years of commercial experience building production web applications, e-commerce platforms, booking systems and geoportals. Specialized in Vue.js, Nuxt.js and TypeScript, with experience in reusable frontend architecture, performance optimization, and REST API integration. Experienced in technical leadership, leading a 5-person engineering team, conducting code reviews, mentoring developers, establishing shared frontend standards, decomposing requirements and driving technical decisions.",
 	logo: zs,
 	phone: "+7 (775) 976-41-65",
 	gmail: "serikuly.zhassulan@gmail.com",
@@ -93,65 +90,6 @@ const info = {
 			},
 		],
 	},
-	experience: [
-		{
-			id: "key_horse",
-			name: "Key Horse",
-			position: "Senior Full-Stack Developer / Frontend Team Lead",
-			icon: "fa-solid fa-server",
-			logo: key_horse,
-			date: "June, 2022 - August, 2026 / Almaty",
-			technologies: "Vue.js, Vuex, Django, PostgreSQL, Mapbox, Docker, ESLint",
-			responsibilities: [
-				"Led frontend development within a 5-person engineering team, coordinating delivery, decomposing requirements, assigning tasks, reviewing code, mentoring four junior developers, and providing technical guidance.",
-				"Took ownership of 4 regional geoportals from initial implementation to production for Ulytau, Kyzylorda, Kostanay and Turkistan, delivering initial versions within 2–3 month development cycles and continuing post-launch feature development.",
-				"Developed and maintained 50+ production geoportals and digital twin solutions for cities and regions across Kazakhstan using Vue.js, Mapbox, Django REST Framework and PostgreSQL.",
-				"Designed and implemented complex reusable Mapbox-based interfaces for visualization and interaction with large geospatial and municipal datasets, integrating REST APIs and Django/PostgreSQL services for data-intensive functionality.",
-				"Optimized search and filtering across data-heavy geospatial catalogs containing hundreds of thousands of map objects, improving lookup efficiency and UI responsiveness through more efficient frontend data traversal.",
-				"Introduced shared frontend coding standards and BEM methodology, trained developers on the new conventions, and drove team-wide adoption, improving consistency and maintainability across a previously fragmented codebase.",
-			],
-		}, {
-			id: "a_lux",
-			name: "A - Lux",
-			position: "Frontend Developer",
-			icon: "fa-brands fa-vuejs",
-			logo: a_lux,
-			date: "March, 2022 - August, 2022 / Almaty",
-			technologies: "Nuxt.js, Vue.js, Vuex, Pinia, TypeScript",
-			responsibilities: [
-				"Developed and maintained frontend functionality across multiple commercial projects using Vue.js and Nuxt.js, including e-commerce, food delivery, healthcare, and corporate web platforms.",
-				"Contributed extensively to Tez Zhet, a Nuxt.js food-delivery platform, implementing restaurant and menu catalog, search and filtering, cart, checkout, authentication, delivery addresses, maps, payment flows and order history.",
-				"Collaborated within a 30+ person engineering organization alongside frontend and backend teams, contributing to shared production codebases and coordinated releases.",
-				"Resolved complex frontend issues and helped unblock development and delivery across multiple ongoing projects.",
-			],
-		}, {
-			id: "athena_plus",
-			name: "Athena Plus",
-			position: "Frontend Developer",
-			icon: "fa-brands fa-react",
-			logo: athena_plus,
-			date: "June, 2021 - May, 2022 / Almaty",
-			technologies: "React, React Native, Next.js, Redux",
-			responsibilities: [
-				"Owned frontend delivery as the primary frontend engineer in a 6–7 person cross-functional team, collaborating directly with product/project manager, backend engineer, designer to deliver client projects from concept to production.",
-				"Independently architected and delivered multiple commercial applications using React, Next.js, and Redux across e-commerce, travel, retail, hospitality, logistics and healthcare.",
-				"Built reusable catalog, search, filtering, sorting and navigation functionality across multiple projects.",
-				"Developed the frontend of Qazbooking.kz, an accommodation booking platform, implementing authentication, accommodation search, and booking flows.",
-			],
-		}, {
-			id: "kaskhim",
-			name: "LLC «KasKhim»",
-			position: "Software Engineer Intern",
-			icon: "fa-solid fa-laptop-code",
-			logo: kashim,
-			date: "January, 2021 - March, 2021 / Atyrau",
-			technologies: "JavaScript, HTML, CSS",
-			responsibilities: [
-				"Implemented UI improvements and missing functionality using JavaScript, HTML, and CSS, resolving layout, usability, and cross-page consistency issues.",
-				"Debugged and tested the existing codebase, identifying frontend issues and delivering fixes and incremental improvements.",
-			],
-		},
-	],
 	projects: [
 		{
 			name: "KAGIS / Geonomix (iulytau.kz · iturkistan.kz · alauzo.kz · and 50+ regional geoportals across Kazakhstan)",
@@ -341,6 +279,202 @@ const info = {
 			image: number_speller
 		},
 	],
+	experience: [
+		{
+			id: "key_horse",
+			name: "Key Horse",
+			position: "Senior Full-Stack Developer / Frontend Team Lead",
+			icon: "fa-solid fa-server",
+			logo: key_horse,
+			date: "June, 2022 - August, 2026 / Almaty",
+			technologies: "Vue.js, Vuex, Django, PostgreSQL, Mapbox, Docker, ESLint",
+			responsibilities: [
+				"Led frontend development within a 5-person engineering team, coordinating delivery, decomposing requirements, assigning tasks, reviewing code, mentoring four junior developers, and providing technical guidance.",
+				"Took ownership of 4 regional geoportals from initial implementation to production for Ulytau, Kyzylorda, Kostanay and Turkistan, delivering initial versions within 2–3 month development cycles and continuing post-launch feature development.",
+				"Developed and maintained 50+ production geoportals and digital twin solutions used by government and municipal organizations across Kazakhstan for city monitoring, analytics, and data-driven decision-making, using Vue.js, Mapbox, Django REST Framework and PostgreSQL.",
+				"Designed and implemented complex reusable Mapbox-based interfaces for visualization and interaction with large geospatial and municipal datasets, integrating REST APIs and Django/PostgreSQL services for data-intensive functionality.",
+				"Optimized search and filtering across data-heavy geospatial catalogs containing hundreds of thousands of map objects, improving lookup efficiency and UI responsiveness through more efficient frontend data traversal.",
+				"Introduced shared frontend coding standards and BEM methodology, trained developers on the new conventions, and drove team-wide adoption, improving consistency and maintainability across a previously fragmented codebase.",
+			],
+		}, {
+			id: "a_lux",
+			name: "A - Lux",
+			position: "Frontend Developer",
+			icon: "fa-brands fa-vuejs",
+			logo: a_lux,
+			date: "March, 2022 - August, 2022 / Almaty",
+			technologies: "Nuxt.js, Vue.js, Vuex, Pinia, TypeScript",
+			responsibilities: [
+				"Developed and maintained frontend functionality across multiple commercial projects using Vue.js and Nuxt.js, including e-commerce, food delivery, healthcare, and corporate web platforms.",
+				"Led frontend development of a major city-wide food delivery platform built with Nuxt.js, delivering the end-to-end customer journey from restaurant discovery and search to checkout, payments, delivery, and order tracking.",
+				"Collaborated within a 30+ person engineering organization alongside frontend and backend teams, contributing to shared production codebases and coordinated releases.",
+				"Resolved complex frontend issues and helped unblock development and delivery across multiple ongoing projects.",
+			],
+		}, {
+			id: "athena_plus",
+			name: "Athena Plus",
+			position: "Frontend Developer",
+			icon: "fa-brands fa-react",
+			logo: athena_plus,
+			date: "June, 2021 - May, 2022 / Almaty",
+			technologies: "React, React Native, Next.js, Redux",
+			responsibilities: [
+				"Owned frontend delivery as the primary frontend engineer in a 6–7 person cross-functional team, collaborating directly with product/project manager, backend engineer, designer to deliver client projects from concept to production.",
+				"Independently architected and delivered multiple commercial applications using React, Next.js, and Redux across e-commerce, travel, retail, hospitality, logistics and healthcare.",
+				"Built reusable catalog, search, filtering, sorting and navigation functionality across multiple projects.",
+				"Developed the frontend of Qazbooking.kz, an accommodation booking platform, implementing authentication, accommodation search, and booking flows.",
+			],
+		}, {
+			id: "kaskhim",
+			name: "LLC «KasKhim»",
+			position: "Software Engineer Intern",
+			icon: "fa-solid fa-laptop-code",
+			logo: kashim,
+			date: "January, 2021 - March, 2021 / Atyrau",
+			technologies: "JavaScript, HTML, CSS",
+			responsibilities: [
+				"Implemented UI improvements and missing functionality using JavaScript, HTML, and CSS, resolving layout, usability, and cross-page consistency issues.",
+				"Debugged and tested the existing codebase, identifying frontend issues and delivering fixes and incremental improvements.",
+			],
+		},
+	],
+	skills: [
+		{
+			id: "frontend",
+			title: "Frontend",
+			subtitle: "Aproximately 8 years",
+			icon: "fa-solid fa-code",
+			list: [
+				{
+					key: "vue_nuxt",
+					name: "Vue.js / Nuxt.js (Vuex)",
+					percentage: 100,
+				}, {
+					key: "react_next",
+					name: "React / Next .js (Redux)",
+					percentage: 95,
+				}, {
+					key: "pinia",
+					name: "Pinia",
+					percentage: 100,
+				}, {
+					key: "ts",
+					name: "TypeScript",
+					percentage: 100,
+				}, {
+					key: "js",
+					name: "JavaScript",
+					percentage: 100,
+				}, {
+					key: "html",
+					name: "HTML",
+					percentage: 100,
+				}, {
+					key: "css",
+					name: "CSS",
+					percentage: 100,
+				}
+			]
+		}, {
+			id: "backend_database",
+			title: "Backend + DataBase",
+			subtitle: "More than 4 years",
+			icon: "fa-solid fa-clapperboard",
+			list: [
+				{
+					key: "python",
+					name: "Python",
+					percentage: 100,
+				}, {
+					key: "django",
+					name: "Django",
+					percentage: 80,
+				}, {
+					key: "postgre_sql",
+					name: "PostgreSQL",
+					percentage: 100,
+				}, {
+					key: "pl_sql",
+					name: "Oracle PL / SQL",
+					percentage: 85,
+				}, {
+					key: "my_sql",
+					name: "MySQL",
+					percentage: 85,
+				}
+			]
+		}, {
+			id: "tools",
+			title: "Tools",
+			subtitle: "More than 7 years",
+			icon: "fa-solid fa-object-group",
+			list: [
+				{
+					key: "vite",
+					name: "Vite",
+					percentage: 100,
+				}, {
+					key: "git",
+					name: "Git",
+					percentage: 100,
+				}, {
+					key: "docker",
+					name: "Docker",
+					percentage: 80,
+				}, {
+					key: "eslint",
+					name: "ESLint",
+					percentage: 100,
+				}, {
+					key: "figma",
+					name: "Figma",
+					percentage: 100,
+				}, {
+					key: "jira",
+					name: "Atlassian Jira",
+					percentage: 95,
+				}
+			]
+		}, {
+			id: "languages",
+			title: "Languages",
+			subtitle: "From birth",
+			icon: "fa-solid fa-language",
+			list: [
+				{
+					key: "english",
+					name: "English",
+					level: "Upper-Intermediate",
+					percentage: 80,
+					link: "https://drive.google.com/file/d/1FDTru0F0fmUbImlWmFKx1PQ9QbS0zvqR",
+				}, {
+					key: "kazakh",
+					name: "Kazakh",
+					level: "Native",
+					percentage: 100,
+					link: "",
+				}, {
+					key: "russian",
+					name: "Russian",
+					level: "Fluent",
+					percentage: 95,
+					link: "",
+				}, {
+					key: "turkish",
+					name: "Turkish",
+					level: "Upper-Intermediate",
+					percentage: 80,
+					link: "",
+				}, {
+					key: "chinese",
+					name: "Chinese",
+					level: "Conversant",
+					percentage: 40,
+					link: "https://drive.google.com/file/d/1Nc2r3H21SrN_16sO473fxIXHeC-gScnL",
+				}
+			]
+		}
+	],
 	education: [
 		{
 			title: "National School - Gymnasium No. 13",
@@ -444,148 +578,11 @@ const info = {
 			date: "2022",
 		}, {
 			title: "Bachelor degree",
-			link: "https://drive.google.com/file/d/18C7FIeKxUVyKwXf2K95jU1TsKytAKB3K",
+			link: "https://drive.google.com/file/d/1JDFHy1AvlL2WrH0Ey63WJGy2mw8RON1B",
 			description: "Red diploma",
 			date: "2023",
 		}
 	],
-	skills: [
-		{
-			id: "frontend",
-			title: "Frontend",
-			subtitle: "Aproximately 8 years",
-			icon: "fa-solid fa-code",
-			list: [
-				{
-					key: "vue_nuxt",
-					name: "Vue.js / Nuxt.js (Vuex)",
-					percentage: 100,
-				}, {
-					key: "react_next",
-					name: "React / Next .js (Redux)",
-					percentage: 95,
-				}, {
-					key: "pinia",
-					name: "Pinia",
-					percentage: 100,
-				}, {
-					key: "ts",
-					name: "TypeScript",
-					percentage: 100,
-				}, {
-					key: "js",
-					name: "JavaScript",
-					percentage: 100,
-				}, {
-					key: "html",
-					name: "HTML",
-					percentage: 100,
-				}, {
-					key: "css",
-					name: "CSS",
-					percentage: 100,
-				}
-			]
-		}, {
-			id: "backend_database",
-			title: "Backend + DataBase",
-			subtitle: "More than 4 years",
-			icon: "fa-solid fa-clapperboard",
-			list: [
-				{
-					key: "python",
-					name: "Python",
-					percentage: 100,
-				}, {
-					key: "django",
-					name: "Django",
-					percentage: 80,
-				}, {
-					key: "postgre_sql",
-					name: "PostgreSQL",
-					percentage: 100,
-				}, {
-					key: "pl_sql",
-					name: "Oracle PL / SQL",
-					percentage: 85,
-				}, {
-					key: "my_sql",
-					name: "MySQL",
-					percentage: 85,
-				}
-			]
-		}, {
-			id: "tools",
-			title: "Tools",
-			subtitle: "More than 7 years",
-			icon: "fa-solid fa-object-group",
-			list: [
-				{
-					key: "git",
-					name: "Git",
-					percentage: 100,
-				}, {
-					key: "docker",
-					name: "Docker",
-					percentage: 80,
-				}, {
-					key: "eslint",
-					name: "ESLint",
-					percentage: 100,
-				}, {
-					key: "figma",
-					name: "Figma",
-					percentage: 100,
-				}, {
-					key: "jira",
-					name: "Atlassian Jira",
-					percentage: 95,
-				}, {
-					key: "postman",
-					name: "Postman",
-					percentage: 100,
-				}
-			]
-		}, {
-			id: "languages",
-			title: "Languages",
-			subtitle: "From birth",
-			icon: "fa-solid fa-language",
-			list: [
-				{
-					key: "english",
-					name: "English",
-					level: "Upper-Intermediate",
-					percentage: 80,
-					link: "https://drive.google.com/file/d/1FDTru0F0fmUbImlWmFKx1PQ9QbS0zvqR",
-				}, {
-					key: "kazakh",
-					name: "Kazakh",
-					level: "Native",
-					percentage: 100,
-					link: "",
-				}, {
-					key: "russian",
-					name: "Russian",
-					level: "Fluent",
-					percentage: 95,
-					link: "",
-				}, {
-					key: "turkish",
-					name: "Turkish",
-					level: "Upper-Intermediate",
-					percentage: 80,
-					link: "",
-				}, {
-					key: "chinese",
-					name: "Chinese",
-					level: "Conversant",
-					percentage: 40,
-					link: "https://drive.google.com/file/d/1Nc2r3H21SrN_16sO473fxIXHeC-gScnL",
-				}
-			]
-		}
-	]
 }
 
 export default info;

@@ -3,7 +3,7 @@
 		<div class="about section-content">
 			<img :src="info.image" :alt="info.name" class="about-image" />
 			<div class="about-info">
-				<p v-for="text in info.description" class="text">{{ text }}</p>
+				<p class="text">{{ info.description }}</p>
 
 				<div class="about-info__stats">
 					<Stat
