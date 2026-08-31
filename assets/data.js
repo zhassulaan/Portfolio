@@ -9,11 +9,8 @@ import athena_plus from "assets/images/logos/athena-plus.png";
 import kashim from "assets/images/logos/kashim.png";
 import key_horse from "assets/images/logos/key-horse.png";
 import abi_construction from "assets/images/projects/abi-construction.png";
-import age_counter from "assets/images/projects/age-counter.png";
-import art_galery from "assets/images/projects/art-galery.png";
 import asia_credit_bank from "assets/images/projects/asia-credit-bank.png";
 import azm_trade from "assets/images/projects/azm-trade.png";
-import check_market from "assets/images/projects/check-market.png";
 import dobraya from "assets/images/projects/dobraya.png";
 import dostyk_trans_terminal from "assets/images/projects/dostyk-trans-terminal.png";
 import ikeruen from "assets/images/projects/ikeruen.png";
@@ -24,9 +21,7 @@ import melissa from "assets/images/projects/melissa.png";
 import midas_event from "assets/images/projects/midas-event.png";
 import mobi_event from "assets/images/projects/mobi-event.png";
 import new_navat from "assets/images/projects/new-navat.png";
-import number_speller from "assets/images/projects/number-speller.png";
 import pharmacom from "assets/images/projects/pharmacom.png";
-import portfolio from "assets/images/projects/portfolio.png";
 import qazbooking from "assets/images/projects/qazbooking.png";
 import qazaq_taxi from "assets/images/projects/qazaq-taxi.png";
 import geonomix from "assets/images/projects/geonomix.png";
@@ -35,16 +30,14 @@ import rakhat from "assets/images/projects/rakhat.png";
 import rento from "assets/images/projects/rento.png";
 import tahit from "assets/images/projects/tahit.png";
 import tez_zhet from "assets/images/projects/tez-zhet.png";
-import torgsoft from "assets/images/projects/torgsoft.png";
 import unistory from "assets/images/projects/unistory.png";
 import yaq from "assets/images/projects/yaq.png";
-import youngs_store from "assets/images/projects/youngs-store.png";
 
 const info = {
 	name: "Serikuly Zhassulan",
 	position: ["Senior Frontend Engineer", "Vue.js / Nuxt.js", "React / Next.js"],
 	image: image,
-	description: "Senior Frontend Engineer with 5+ years of commercial experience building production web applications, e-commerce platforms, booking systems and geoportals. Specialized in Vue.js, Nuxt.js and TypeScript, with experience in reusable frontend architecture, performance optimization, and REST API integration. Experienced in technical leadership, leading a 5-person engineering team, conducting code reviews, mentoring developers, establishing shared frontend standards, decomposing requirements and driving technical decisions.",
+	description: "Senior Frontend Engineer with 5+ years of commercial experience, specializing in Vue.js, Nuxt.js, and TypeScript, with strong expertise in frontend architecture and performance optimization. Experienced in technical leadership, mentoring, and building scalable production applications across e-commerce, booking, and data-intensive platforms. Looking to bring this expertise to a product-focused international engineering team..",
 	logo: zs,
 	phone: "+7 (775) 976-41-65",
 	gmail: "serikuly.zhassulan@gmail.com",
@@ -96,187 +89,145 @@ const info = {
 			link: "https://iulytau.kz",
 			description: "A large-scale geospatial platform and digital twin solution developed for cities and regions across Kazakhstan. The platform brings together interactive maps, municipal and spatial data, digital registries, government services, monitoring tools, and operational information within a unified system.",
 			stack: "Vue.js, Vuex, Docker, PostgreSQL, Django, Mapbox",
-			image: geonomix
+			image: geonomix,
 		}, {
 			name: "Kostyum.kz — Men’s Fashion E-commerce Website",
 			link: "https://kostyum.kz",
 			description: "A modern e-commerce website for a men’s clothing retailer operating in Kazakhstan since 1998. The platform provides customers with an easy way to explore the brand’s product range, browse collections and categories, and discover detailed product information online. I developed the frontend using Nuxt.js, focusing on responsive design, reusable UI components, product catalog functionality, and a smooth user experience across desktop and mobile devices.",
 			stack: "Nuxt.js",
-			image: kostyum
-		}, {
-			name: "KazMedEngineering — Medical Equipment Service Website",
-			link: "https://www.kme.kz",
-			description: "A corporate website for KazMedEngineering, an authorized Philips Medical Systems service partner in Kazakhstan specializing in diagnostics, repair, and maintenance of professional medical equipment. I developed the frontend using Nuxt.js, creating a responsive and user-friendly interface for presenting the company’s services, expertise, and medical equipment solutions across desktop and mobile devices.",
-			stack: "Nuxt.js, Swiper",
-			image: kazmed
-		}, {
-			name: "ABI Construction — Construction Company Website",
-			link: "https://abi-construction.kz",
-			description: "A corporate website for ABI Construction, a design and construction company providing end-to-end services for residential and commercial projects, from initial planning and architectural design to construction and finishing. I worked on the development and customization of the website using WordPress, Vue.js, and PHP, implementing responsive user interfaces, dynamic functionality, and content management features to effectively present the company’s projects and services.",
-			stack: "WordPress, Vue.js, PHP, SCSS",
-			image: abi_construction
+			image: kostyum,
 		}, {
 			name: "Midas Event — Event Agency Website",
 			link: "https://midasevent.kz",
 			description: "A corporate website for Midas Event, an event agency providing end-to-end event management services, from concept development and planning to full-scale execution. I developed the frontend of the website using HTML, JavaScript, and CSS, creating responsive pages and interactive elements to showcase the agency’s services, projects, and event portfolio across desktop and mobile devices.",
 			stack: "React",
-			image: midas_event
-		}, {
-			name: "Melissa — Online Pharmacy & E-commerce Platform",
-			link: "https://melissaapteka.kz",
-			description: "A large-scale online pharmacy offering 13,000+ products, including medicines, vitamins, healthcare products, cosmetics, and products for children and mothers. I worked on the frontend of the e-commerce platform, developing responsive product catalogs, category navigation, search, filtering and sorting, product pages, shopping cart functionality, and integrations with backend services.",
-			stack: "Nuxt.js",
-			image: melissa
-		}, {
-			name: "TAHIT — Manufacturing Company Website",
-			link: "https://tahit.kz",
-			description: "A corporate website for TAHIT, a textile manufacturing company specializing in high-quality fabric printing and production using modern sublimation technologies and European manufacturing equipment. I developed the frontend of the website, creating a responsive and visually engaging interface to showcase the company’s production capabilities, technologies, products, and services. The website was optimized to provide a consistent user experience across desktop and mobile devices.",
-			stack: "Vue.js",
-			image: tahit
+			image: midas_event,
 		}, {
 			name: "Dostyk Trans Terminal — Logistics Terminal Website",
 			link: "https://www.dtt.kz/",
 			description: "A corporate website for Dostyk Trans Terminal, a modern logistics terminal located at the Dostyk–Alashankou border crossing, one of the key transportation links between Kazakhstan and China. The terminal provides container handling, storage, transshipment, and other logistics services.",
 			stack: "Nuxt.js",
-			image: dostyk_trans_terminal
+			image: dostyk_trans_terminal,
+		}, {
+			name: "UniStory - AI & Web3 Business Platform",
+			link: "https://unistory.app/ru/",
+			description: "A modern digital platform focused on AI-powered business solutions, helping companies integrate artificial intelligence into their workflows and accelerate the development of web services, applications, and AI-driven products. I developed the frontend using React, implementing integration with a crypto wallet and building interfaces for retrieving, processing, and displaying dynamic data from backend APIs. The project involved managing wallet connection states, handling asynchronous data, and creating responsive, reusable UI components for a smooth user experience.",
+			stack: "React.ts, Typescript",
+			image: unistory,
+		}, {
+			name: "KazMedEngineering — Medical Equipment Service Website",
+			link: "https://www.kme.kz",
+			description: "A corporate website for KazMedEngineering, an authorized Philips Medical Systems service partner in Kazakhstan specializing in diagnostics, repair, and maintenance of professional medical equipment. I developed the frontend using Nuxt.js, creating a responsive and user-friendly interface for presenting the company’s services, expertise, and medical equipment solutions across desktop and mobile devices.",
+			stack: "Nuxt.js, Swiper",
+			image: kazmed,
+		}, {
+			name: "Melissa — Online Pharmacy & E-commerce Platform",
+			link: "https://melissaapteka.kz",
+			description: "A large-scale online pharmacy offering 13,000+ products, including medicines, vitamins, healthcare products, cosmetics, and products for children and mothers. I worked on the frontend of the e-commerce platform, developing responsive product catalogs, category navigation, search, filtering and sorting, product pages, shopping cart functionality, and integrations with backend services.",
+			stack: "Nuxt.js",
+			image: melissa,
+		}, {
+			name: "ABI Construction — Construction Company Website",
+			link: "https://abi-construction.kz",
+			description: "A corporate website for ABI Construction, a design and construction company providing end-to-end services for residential and commercial projects, from initial planning and architectural design to construction and finishing. I worked on the development and customization of the website using WordPress, Vue.js, and PHP, implementing responsive user interfaces, dynamic functionality, and content management features to effectively present the company’s projects and services.",
+			stack: "WordPress, Vue.js, PHP, SCSS",
+			image: abi_construction,
+		}, {
+			name: "TAHIT — Manufacturing Company Website",
+			link: "https://tahit.kz",
+			description: "A corporate website for TAHIT, a textile manufacturing company specializing in high-quality fabric printing and production using modern sublimation technologies and European manufacturing equipment. I developed the frontend of the website, creating a responsive and visually engaging interface to showcase the company’s production capabilities, technologies, products, and services. The website was optimized to provide a consistent user experience across desktop and mobile devices.",
+			stack: "Vue.js",
+			image: tahit,
 		}, {
 			name: "Dobraya — Online Pharmacy & E-commerce Website",
 			link: "https://dobraya-apteka.kz",
 			description: "An e-commerce website for Dobraya, a pharmacy chain operating in Almaty and the Almaty region since 1995, combining its physical pharmacy network with an online shopping experience. I worked on the frontend of the online pharmacy, developing responsive product catalogs, category navigation, search and filtering, product pages, and other e-commerce functionality to provide a convenient shopping experience across desktop and mobile devices.",
 			stack: "HTML, JavaScript, SCSS, CSS, Bootstrap, jQuery",
-			image: dobraya
-		}, {
-			name: "UniStory - AI & Web3 Business Platform",
-			link: "https://unistory.netlify.app",
-			description: "A modern digital platform focused on AI-powered business solutions, helping companies integrate artificial intelligence into their workflows and accelerate the development of web services, applications, and AI-driven products. I developed the frontend using React, implementing integration with a crypto wallet and building interfaces for retrieving, processing, and displaying dynamic data from backend APIs. The project involved managing wallet connection states, handling asynchronous data, and creating responsive, reusable UI components for a smooth user experience.",
-			stack: "React.ts, Typescript",
-			image: unistory
+			image: dobraya,
 		}, {
 			name: "QazBooking — Online Accommodation Booking Platform",
 			link: "https://qazbooking.kz",
 			description: "An online booking platform for hostels and recreation centers across Kazakhstan, allowing travelers to discover accommodation and complete reservations directly online instead of relying on phone calls or messaging. I worked on the frontend and booking functionality of the platform, implementing accommodation catalogs, search, filtering and sorting, user registration and authentication, property pages, and online booking flows, with integration to backend services.",
 			stack: "1C Bitrix, PHP (HTML, JavaScript, SASS, CSS), Bootstrap",
-			image: qazbooking
+			image: qazbooking,
 		}, {
 			name: "Asia Mebel — Furniture Materials & Services Website",
 			link: "https://asiamebel.com",
 			description: "A commercial website for Asia Mebel, a retail and service company specializing in furniture materials, fittings, tools, and professional services such as cutting, milling, and PVC edge banding. I developed the frontend of the website, implementing a structured product catalog, category navigation, search, filtering and sorting, product pages, and service-related interfaces. The focus was on making a large range of materials and products easy to browse across desktop and mobile devices.",
 			stack: "1C Bitrix, PHP (HTML, JavaScript, SASS, CSS), Bootstrap",
-			image: azm_trade
+			image: azm_trade,
 		}, {
 			name: "Pharmacom — Pharmacy & Healthcare Website",
 			link: "https://pharma.com.kz",
 			description: "A corporate website for Pharmacom, a healthcare brand founded in 1996 that operates a vaccination clinic in Almaty and a network of 55 pharmacies across major cities in Kazakhstan.",
 			stack: "JavaScript, HTML, CSS, Bootstrap, jQuery",
-			image: pharmacom
-		}, {
-			name: "NAVAT — Restaurant Landing Page",
-			link: "https://newnavat.netlify.app",
-			description: "A promotional landing page for NAVAT, a Central Asian restaurant brand known for its traditional teahouse-style cuisine inspired by the culinary traditions of Kazakhstan, Uzbekistan, Kyrgyzstan, Tajikistan, and the wider region. I developed the frontend of the landing page, creating a responsive and visually engaging interface to showcase the restaurant’s cuisine, menu, atmosphere, and brand identity across desktop and mobile devices.",
-			stack: "JavaScript, HTML, CSS, jQuery",
-			image: new_navat
-		}, {
-			name: "Event Invitation Website",
-			link: "https://qonys-toi.netlify.app",
-			description: "A custom event invitation website designed to provide guests with event details in a simple, modern, and visually engaging format. I developed the frontend using React, creating a responsive interface optimized for both mobile and desktop devices, with interactive elements and a smooth user experience.",
-			stack: "React",
-			image: qonys_toi
+			image: pharmacom,
 		}, {
 			name: "MobiEvent — Mobile & Digital Finance Event Website",
 			link: "https://mobievent.kz",
 			description: "A website for MobiEvent, an industry event focused on the development of mobile services, digital payments, and financial technologies across Kazakhstan and the CIS region.",
 			stack: "Nuxt.js",
-			image: mobi_event
+			image: mobi_event,
+		}, {
+			name: "NAVAT — Restaurant Landing Page",
+			link: "https://newnavat.netlify.app",
+			description: "A promotional landing page for NAVAT, a Central Asian restaurant brand known for its traditional teahouse-style cuisine inspired by the culinary traditions of Kazakhstan, Uzbekistan, Kyrgyzstan, Tajikistan, and the wider region. I developed the frontend of the landing page, creating a responsive and visually engaging interface to showcase the restaurant’s cuisine, menu, atmosphere, and brand identity across desktop and mobile devices.",
+			stack: "JavaScript, HTML, CSS, jQuery",
+			image: new_navat,
+		}, {
+			name: "Event Invitation Website",
+			link: "https://qonys-toi.netlify.app",
+			description: "A custom event invitation website designed to provide guests with event details in a simple, modern, and visually engaging format. I developed the frontend using React, creating a responsive interface optimized for both mobile and desktop devices, with interactive elements and a smooth user experience.",
+			stack: "React",
+			image: qonys_toi,
 		}, {
 			name: "Rento — Sports Facility Booking Platform",
 			link: "https://rentokz.netlify.app",
 			description: "A full-featured online platform for discovering and booking sports facilities and venues, connecting customers with facility owners through a single booking system. I developed the frontend using React, implementing separate user experiences for customers and facility hosts. The platform includes a custom administration panel that allows hosts to manage their facilities, availability, and booking-related information, while customers can explore available venues and complete reservations online. The project gave me experience building a more complex product with multiple user roles, administrative functionality, authentication, booking workflows.",
 			stack: "React, Redux, Firebase",
-			image: rento
+			image: rento,
 		}, {
 			name: "QAZAQ TAXI — Ride-Hailing Platform",
 			link: "https://play.google.com/store/apps/details?id=com.user.qazaqtaxi&hl=en&gl=US",
 			description: "A Kazakhstan-based ride-hailing platform designed to provide users with a fast and convenient way to request and manage taxi rides. I developed the frontend using Vue.js, Nuxt.js, and Vuetify, implementing responsive user interfaces and core ride-booking flows with a focus on a smooth experience across mobile and desktop devices.",
 			stack: "Vue.js, Nuxt.js, Vuetify",
-			image: qazaq_taxi
+			image: qazaq_taxi,
 		}, {
 			name: "Tez Zhet - Food & Grocery Delivery Platform",
 			link: "https://apps.apple.com/sk/app/tezzhet/id6473077229",
 			description: "A multi-service delivery application that allows users to order food, groceries, and everyday products from local restaurants and stores through a single platform. I worked on the frontend development of the application, implementing product and restaurant catalogs, search and filtering, shopping cart and checkout flows, user authentication, delivery address management, order placement, order history, and integration with backend APIs. The platform was designed with a mobile-first approach, focusing on simple navigation and a smooth ordering experience across different devices.",
 			stack: "Nuxt.js",
-			image: tez_zhet
+			image: tez_zhet,
 		}, {
 			name: "YAQ — Outdoor & Sports E-commerce Platform",
 			link: "https://yaq.kz",
 			description: "An e-commerce website for YAQ, a retailer specializing in professional clothing, footwear, accessories, and equipment for running, hiking, camping, tourism, and other outdoor activities. I developed the frontend of the online store, implementing product catalogs, category navigation, search, filtering and sorting, product pages, and shopping functionality. I focused on building a responsive and user-friendly shopping experience that makes it easy to navigate a large product assortment across desktop and mobile devices.",
 			stack: "React",
-			image: yaq
-		}, {
-			name: "M1 Service — Automotive Service Website",
-			link: "https://m1-service.netlify.app",
-			description: "A corporate website for M1 Service, an established network of automotive service centers providing vehicle maintenance, diagnostics, and repair services.",
-			stack: "Nuxt.js, TypeScript",
-			image: m1_service
-		}, {
-			name: "Art Gallery — React Product Gallery",
-			link: "https://art-galery.netlify.app",
-			description: "One of my first React projects, created while learning how to build interactive and component-based web applications. The application displays a collection of products that users can browse, search, and add to their favorites. I implemented reusable React components, dynamic search functionality, favorites management, and interactive UI updates based on user actions. This project helped me gain practical experience with React fundamentals, component architecture, state management, event handling, filtering data, and building responsive user interfaces.",
-			stack: "React",
-			image: art_galery
-		}, {
-			name: "Rakhat Qazaqstan Óneri — Cultural Digital Project",
-			link: "https://rakhat.a-lux.dev",
-			description: "A digital project created for LOTTE Rakhat to showcase the richness of contemporary Kazakh culture and introduce users to Kazakhstan’s art, artists, and distinctive creative heritage.",
-			stack: "Vue.js",
-			image: rakhat
+			image: yaq,
 		}, {
 			name: "AsiaCredit Bank — Contact Center Website",
 			link: "https://asiacreditbank.kz",
 			description: "A web solution for AsiaCredit Bank’s Contact Center, designed to provide individuals and businesses with convenient access to information about the bank’s products, services, and customer support. I worked on the frontend implementation and maintenance of the website, developing responsive interfaces and interactive functionality using HTML, JavaScript, and SCSS, with PHP used on the server side.",
 			stack: "PHP (HTML, JavaScript, SCSS, CSS)",
-			image: asia_credit_bank
+			image: asia_credit_bank,
 		}, {
 			name: "IKeruen — Logistics & Transportation Website",
 			link: "https://ikeruen.kz",
 			description: "A corporate website for IKeruen, a logistics company providing freight transportation services for different types and volumes of cargo.",
 			stack: "Nuxt.js",
-			image: ikeruen
+			image: ikeruen,
 		}, {
-			name: "TORGSOFT — Business Automation Software Website",
-			link: "https://torgsoft.netlify.app",
-			description: "One of my first commercial web development projects, created for TORGSOFT — a business automation software company providing solutions for managing sales, inventory, operations, and other day-to-day business processes. I worked on the frontend of the website, implementing responsive pages and UI components while gaining early hands-on experience working with a real production project and an existing commercial codebase. This project was an important step in my transition from learning web development to building and maintaining software for real businesses.",
-			stack: "JavaScript, HTML, CSS",
-			image: torgsoft
+			name: "Rakhat Qazaqstan Óneri — Cultural Digital Project",
+			link: "https://rakhat.a-lux.dev",
+			description: "A digital project created for LOTTE Rakhat to showcase the richness of contemporary Kazakh culture and introduce users to Kazakhstan’s art, artists, and distinctive creative heritage.",
+			stack: "Vue.js",
+			image: rakhat,
 		}, {
-			name: "Check Market — Retail Automation & Equipment Website",
-			link: "https://github.com/zhassulaan/check-market",
-			description: "A commercial website for Check Market, a company providing retail and business automation solutions, including cash register equipment, security systems, installation and maintenance services, and related consumables. I developed the frontend of the website, implementing a structured product catalog, category navigation, search, filtering and sorting, product pages, and service-related interfaces. The focus was on making a broad range of equipment and business solutions easy to discover and navigate across desktop and mobile devices.",
-			stack: "Next.js",
-			image: check_market
-		}, {
-			name: "Young’s Store — E-commerce Website",
-			link: "https://youngs-store.netlify.app",
-			description: "One of my very first web development projects, created while I was learning the fundamentals of frontend development and turning my programming knowledge into a complete working website. I built an online store for stylish Korean clothing where users can browse products, view product information, place orders, and submit job applications. The website was built with a strong focus on responsive design, providing a consistent experience across desktop, tablet, and mobile devices. This project played an important role in my early development journey, helping me gain practical experience with HTML, CSS, JavaScript, responsive layouts, UI implementation, and building a complete website from scratch.",
-			stack: "JavaScript, HTML, CSS, Bootstrap, jQuery",
-			image: youngs_store
-		}, {
-			name: "Personal Portfolio — Developer Website",
-			link: "https://zhassulan.netlify.app",
-			description: "A personal portfolio website designed and developed to showcase my professional experience, technical skills, education, projects, and development journey in a more interactive and engaging format than a traditional resume. I built the website to serve as a central place where recruiters, companies, and other developers can explore my background, technologies I work with, and selected commercial and personal projects without relying solely on a PDF resume. The website is fully responsive and designed to provide a clean and consistent experience across desktop, tablet, and mobile devices.",
-			stack: "JavaScript, HTML, CSS, jQuery",
-			image: portfolio
-		}, {
-			name: "Age Counter — Real-Time Age Calculator",
-			link: "https://zhassulaan.github.io/AgeCounter",
-			description: "One of my early JavaScript projects, created while practicing date manipulation, calculations, and dynamic DOM updates. The application calculates a user’s exact age based on their birth date and displays how long they have lived in years, months, days, hours, minutes, and seconds, updating the results dynamically. This project helped me strengthen my understanding of JavaScript date handling, user input validation, real-time calculations, and DOM manipulation while building a simple responsive user interface.",
-			stack: "JavaScript, HTML, CSS, moment.js",
-			image: age_counter
-		}, {
-			name: "Number speller",
-			link: "https://zhassulaan.github.io/Number-speller",
-			description: "Number to word counter converter in three languages.",
-			stack: "JavaScript, HTML, CSS",
-			image: number_speller
+			name: "M1 Service — Automotive Service Website",
+			link: "https://m1-service.netlify.app",
+			description: "A corporate website for M1 Service, an established network of automotive service centers providing vehicle maintenance, diagnostics, and repair services.",
+			stack: "Nuxt.js, TypeScript",
+			image: m1_service,
 		},
 	],
 	experience: [
@@ -289,12 +240,12 @@ const info = {
 			date: "June, 2022 - August, 2026 / Almaty",
 			technologies: "Vue.js, Vuex, Django, PostgreSQL, Mapbox, Docker, ESLint",
 			responsibilities: [
-				"Led frontend development within a 5-person engineering team, coordinating delivery, decomposing requirements, assigning tasks, reviewing code, mentoring four junior developers, and providing technical guidance.",
-				"Took ownership of 4 regional geoportals from initial implementation to production for Ulytau, Kyzylorda, Kostanay and Turkistan, delivering initial versions within 2–3 month development cycles and continuing post-launch feature development.",
-				"Developed and maintained 50+ production geoportals and digital twin solutions used by government and municipal organizations across Kazakhstan for city monitoring, analytics, and data-driven decision-making, using Vue.js, Mapbox, Django REST Framework and PostgreSQL.",
-				"Designed and implemented complex reusable Mapbox-based interfaces for visualization and interaction with large geospatial and municipal datasets, integrating REST APIs and Django/PostgreSQL services for data-intensive functionality.",
-				"Optimized search and filtering across data-heavy geospatial catalogs containing hundreds of thousands of map objects, improving lookup efficiency and UI responsiveness through more efficient frontend data traversal.",
-				"Introduced shared frontend coding standards and BEM methodology, trained developers on the new conventions, and drove team-wide adoption, improving consistency and maintainability across a previously fragmented codebase.",
+				"Team Leadership: Led frontend development within an 8-person engineering team, coordinating delivery, decomposing requirements, assigning tasks, reviewing code, mentoring junior developers, and providing technical guidance.",
+				"Large-Scale Platforms: Developed and maintained 50+ production geoportals and digital-twin solutions used by government and municipal organizations across Kazakhstan for city monitoring and data-driven decision-making, building reusable interfaces with Vue.js and Mapbox for complex geospatial data.",
+				"Product Ownership: Owned frontend development for 4 regional geoportals from architecture and initial implementation through production launch and continued feature development.",
+				"Performance Optimization: Optimized search and filtering across geospatial datasets containing hundreds of thousands of objects, improving lookup efficiency and UI responsiveness through more efficient data-processing algorithms.",
+				"Engineering Standards: Introduced BEM methodology and shared frontend coding standards, trained developers on the new conventions, and drove team-wide adoption, improving consistency and maintainability across the codebase.",
+				"Backend & API Development: Designed and maintained REST APIs and backend services with Python, Django REST Framework, and PostgreSQL, implementing endpoints, data processing, and database integrations for data-intensive geoportals.",
 			],
 		}, {
 			id: "a_lux",
@@ -302,27 +253,26 @@ const info = {
 			position: "Frontend Developer",
 			icon: "fa-brands fa-vuejs",
 			logo: a_lux,
-			date: "March, 2022 - August, 2022 / Almaty",
+			date: "December, 2021 - May, 2022 / Almaty",
 			technologies: "Nuxt.js, Vue.js, Vuex, Pinia, TypeScript",
 			responsibilities: [
-				"Developed and maintained frontend functionality across multiple commercial projects using Vue.js and Nuxt.js, including e-commerce, food delivery, healthcare, and corporate web platforms.",
-				"Led frontend development of a major city-wide food delivery platform built with Nuxt.js, delivering the end-to-end customer journey from restaurant discovery and search to checkout, payments, delivery, and order tracking.",
-				"Collaborated within a 30+ person engineering organization alongside frontend and backend teams, contributing to shared production codebases and coordinated releases.",
-				"Resolved complex frontend issues and helped unblock development and delivery across multiple ongoing projects.",
+				"Cross-Team Delivery: Worked within a 30+ person engineering organization, collaborating with frontend and backend teams on shared codebases and coordinated releases.",
+				"SSR & Performance: Delivered production Vue.js and Nuxt.js solutions across multiple client projects, implementing SSR and optimizing technical SEO and Core Web Vitals (LCP, INP, CLS) to improve page performance, search visibility, and overall user experience.",
+				"Large-Scale Platform: Led frontend development of a major city-wide Nuxt.js food delivery platform, building the complete customer journey from restaurant discovery and search to checkout, payments, delivery, and order tracking.",
 			],
 		}, {
 			id: "athena_plus",
-			name: "Athena Plus",
+			name: "Athena Plus (Part-time)",
 			position: "Frontend Developer",
 			icon: "fa-brands fa-react",
 			logo: athena_plus,
-			date: "June, 2021 - May, 2022 / Almaty",
-			technologies: "React, React Native, Next.js, Redux",
+			date: "June, 2021 - February, 2022 / Almaty",
+			technologies: "React, React Native, Vue.js, Nuxt.js Next.js, Redux, Vuex, Pinia",
 			responsibilities: [
-				"Owned frontend delivery as the primary frontend engineer in a 6–7 person cross-functional team, collaborating directly with product/project manager, backend engineer, designer to deliver client projects from concept to production.",
-				"Independently architected and delivered multiple commercial applications using React, Next.js, and Redux across e-commerce, travel, retail, hospitality, logistics and healthcare.",
-				"Built reusable catalog, search, filtering, sorting and navigation functionality across multiple projects.",
-				"Developed the frontend of Qazbooking.kz, an accommodation booking platform, implementing authentication, accommodation search, and booking flows.",
+				"Frontend Ownership: Served as the primary frontend engineer in a 6–7 person cross-functional team, owning client projects from technical implementation through production.",
+				"Multi-Stack Development: Architected commercial applications with Vue.js and React, leveraging Nuxt.js and Next.js for SSR to improve performance and scalability across multiple business domains.",
+				"Reusable Architecture: Developed reusable catalog, search, filtering, sorting, and navigation functionality across multiple production projects.",
+				"Booking Platform: Built a large-scale accommodation booking platform, implementing authentication, property discovery, search and filtering, and end-to-end booking flows.",
 			],
 		}, {
 			id: "kaskhim",
@@ -331,7 +281,7 @@ const info = {
 			icon: "fa-solid fa-laptop-code",
 			logo: kashim,
 			date: "January, 2021 - March, 2021 / Atyrau",
-			technologies: "JavaScript, HTML, CSS",
+			technologies: "React, JavaScript, HTML, CSS",
 			responsibilities: [
 				"Implemented UI improvements and missing functionality using JavaScript, HTML, and CSS, resolving layout, usability, and cross-page consistency issues.",
 				"Debugged and tested the existing codebase, identifying frontend issues and delivering fixes and incremental improvements.",
