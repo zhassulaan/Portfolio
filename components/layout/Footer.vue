@@ -34,17 +34,17 @@ import info from "@/assets/data.js";
 
 const list = [
 	{
-		id: "experience",
-		text: "Experience"
-	}, {
-		id: "qualification",
-		text: "Qualification"
-	}, {
 		id: "projects",
 		text: "Projects"
 	}, {
+		id: "experience",
+		text: "Experience"
+	}, {
 		id: "recomendations",
 		text: "Recomendations"
+	}, {
+		id: "qualification",
+		text: "Qualification"
 	}
 ];
 const icons = [

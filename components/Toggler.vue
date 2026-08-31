@@ -1,8 +1,8 @@
 <template>
-	<div :id="`toggler-${section}`" class="toggler btn" :class="{ 'active': (active === section) }">
+	<button :id="`toggler-${section}`" class="toggler btn" :class="{ 'active': (active === section) }">
 		<i :class="`${icon} icon`"></i>
 		<h4 class="text">{{ section.charAt(0).toUpperCase() + section.slice(1) }}</h4>
-	</div>
+	</button>
 </template>
 
 <script setup>

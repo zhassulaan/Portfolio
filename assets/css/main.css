@@ -793,6 +793,10 @@ p {
   background: url("@/assets/images/background.jpeg") no-repeat center top/cover;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
 .btn {
   cursor: pointer;
 }

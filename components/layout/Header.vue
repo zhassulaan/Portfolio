@@ -33,25 +33,25 @@ const list = [
 		text: "About me",
 		icon: "fa-user"
 	}, {
+		id: "projects",
+		text: "Projects",
+		icon: "fa-laptop-code"
+	}, {
 		id: "experience",
 		text: "Experience",
 		icon: "fa-briefcase"
 	}, {
-		id: "qualification",
-		text: "Qualification",
-		icon: "fa-graduation-cap"
+		id: "recomendations",
+		text: "Recomendations",
+		icon: "fa-note-sticky"
 	}, {
 		id: "skills",
 		text: "Skills",
 		icon: "fa-file"
 	}, {
-		id: "projects",
-		text: "Projects",
-		icon: "fa-laptop-code"
-	}, {
-		id: "recomendations",
-		text: "Recomendations",
-		icon: "fa-note-sticky"
+		id: "qualification",
+		text: "Qualification",
+		icon: "fa-graduation-cap"
 	}, {
 		id: "contacts",
 		text: "Contacts",

@@ -1,0 +1,4 @@
+const Card_vue_vue_type_style_index_0_scoped_027b3554_lang = ".card[data-v-027b3554]{background-color:#313030;border-radius:5px;box-shadow:0 2px 4px #1a1a1c;padding:64px 30px 90px;position:relative;width:240px}.card[data-v-027b3554]:hover{box-shadow:0 2px 4px #c7c7c7}.card-icon[data-v-027b3554]{color:#8cde59;font-size:40px}.card-text[data-v-027b3554]{margin-top:20px}@media only screen and (max-width:1440px){.card[data-v-027b3554]{width:210px}}@media only screen and (max-width:992px){.card[data-v-027b3554]{width:236px}}@media only screen and (max-width:768px){.card[data-v-027b3554]{align-items:center;display:flex;flex-direction:column;padding:32px 15px}.card-icon[data-v-027b3554]{font-size:32px}.card-text[data-v-027b3554]{margin:12px 0;text-align:center}}";
+
+export { Card_vue_vue_type_style_index_0_scoped_027b3554_lang as C };
+//# sourceMappingURL=entry-styles-10.mjs-C48ijwbT.mjs.map
