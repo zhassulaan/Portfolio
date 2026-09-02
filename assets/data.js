@@ -1,6 +1,6 @@
-import document1 from "assets/files/refference_kaskhim.pdf";
+import document1 from "assets/files/recommendation_keyhorse.pdf";
 import document2 from "assets/files/recommendation_athena_plus.pdf";
-import document3 from "assets/files/recommendation_keyhorse.pdf";
+import document3 from "assets/files/refference_kaskhim.pdf";
 import cv from "assets/files/Zhassulan_Serikuly-CV.pdf";
 import image from "assets/images/photo.png";
 import zs from "assets/images/logos/zs.png";
@@ -35,9 +35,9 @@ import yaq from "assets/images/projects/yaq.png";
 
 const info = {
 	name: "Serikuly Zhassulan",
-	position: ["Senior Software Engineer", "Vue.js / Nuxt.js", "React / Next.js"],
+	position: ["Senior Software Engineer", "Vue.js / Nuxt.js", "TypeScript", "React / Next.js"],
 	image: image,
-	description: "Senior Software Engineer with 5+ years of commercial experience, specializing in Vue.js, Nuxt.js, and TypeScript, with strong expertise in frontend architecture and performance optimization. Experienced in technical leadership, mentoring, and building scalable production applications across e-commerce, booking, and data-intensive platforms. Looking to bring this expertise to a product-focused international engineering team..",
+	description: "Senior Frontend Engineer with 5+ years of commercial experience building scalable, high-performance web applications with Vue.js, Nuxt.js, TypeScript, and JavaScript. Experienced across the full software development lifecycle, from requirements analysis and architecture to implementation, testing, deployment, and production support. Strong background in technical leadership, mentoring, code reviews, API integration, and performance optimization within cross-functional engineering teams.",
 	logo: zs,
 	phone: "+7 (775) 976-41-65",
 	gmail: "serikuly.zhassulan@gmail.com",
@@ -75,11 +75,11 @@ const info = {
 			}, {
 				cheif: "Sain S.",
 				file: document2,
-				description: "«Athena plus» - May, 2022 / Almaty",
+				description: "«Athena plus» - February, 2022 / Almaty",
 			}, {
 				cheif: "Mammadov E.",
 				file: document3,
-				description: "LLC «KasKHIM - August, 2021 / Atyrau",
+				description: "LLC «KasKHIM» - March, 2021 / Atyrau",
 			},
 		],
 	},
@@ -240,25 +240,27 @@ const info = {
 			date: "June, 2022 - August, 2026 / Almaty",
 			technologies: "Vue.js, Vuex, Django, PostgreSQL, Mapbox, Docker, ESLint",
 			responsibilities: [
-				"Team Leadership: Led frontend development within an 8-person engineering team, coordinating delivery, decomposing requirements, assigning tasks, reviewing code, mentoring junior developers, and providing technical guidance.",
-				"Large-Scale Platforms: Developed and maintained 50+ production geoportals and digital-twin solutions used by government and municipal organizations across Kazakhstan for city monitoring and data-driven decision-making, building reusable interfaces with Vue.js and Mapbox for complex geospatial data.",
-				"Product Ownership: Owned frontend development for 4 regional geoportals from architecture and initial implementation through production launch and continued feature development.",
-				"Performance Optimization: Optimized search and filtering across geospatial datasets containing hundreds of thousands of objects, improving lookup efficiency and UI responsiveness through more efficient data-processing algorithms.",
-				"Engineering Standards: Introduced BEM methodology and shared frontend coding standards, trained developers on the new conventions, and drove team-wide adoption, improving consistency and maintainability across the codebase.",
-				"Backend & API Development: Designed and maintained REST APIs and backend services with Python, Django REST Framework, and PostgreSQL, implementing endpoints, data processing, and database integrations for data-intensive geoportals.",
+				"Leadership & Architecture: Led frontend development within an 8-person engineering team, driving technical design and delivery, mentoring developers, conducting code reviews, and establishing frontend standards including reusable Vue.js components, design system patterns, and BEM conventions.",
+				"Large-Scale Platforms: Developed and maintained 50+ production geoportals and digital-twin solutions for government and municipal organizations across Kazakhstan, building scalable Vue.js and Mapbox interfaces for urban monitoring and complex geospatial data visualization.",
+				"Product Ownership: Owned frontend solutions across the full SDLC, from requirements analysis and architecture to implementation, API integration, testing, CI/CD, Docker-based deployment, and production support.",
+				"Performance Optimization: Optimized search and filtering across geospatial datasets containing hundreds of thousands of objects through algorithmic and frontend performance improvements.",
+				"Accessibility: Designed a reusable accessibility framework for visually impaired users across production geoportals, standardizing configurable visual modes, typography controls, image display settings, and text-to-speech functionality.",
+				"Quality & Testing: Established frontend testing practices with Vitest and Playwright, covering critical user flows with unit and E2E tests to improve release reliability and prevent regressions.",
+				"Backend & APIs: Designed REST APIs and backend services with Python, Django REST Framework, and PostgreSQL, including data processing and database integrations for data-intensive geoportals.",
 			],
 		}, {
 			id: "a_lux",
-			name: "A - Lux",
+			name: "A-Lux",
 			position: "Frontend Developer",
 			icon: "fa-brands fa-vuejs",
 			logo: a_lux,
 			date: "December, 2021 - May, 2022 / Almaty",
 			technologies: "Nuxt.js, Vue.js, Vuex, Pinia, TypeScript",
 			responsibilities: [
-				"Cross-Team Delivery: Worked within a 30+ person engineering organization, collaborating with frontend and backend teams on shared codebases and coordinated releases.",
-				"SSR & Performance: Delivered production Vue.js and Nuxt.js solutions across multiple client projects, implementing SSR and optimizing technical SEO and Core Web Vitals (LCP, INP, CLS) to improve page performance, search visibility, and overall user experience.",
+				"Cross-Team Delivery: Collaborated across a 30+ person engineering organization, coordinating frontend and backend development across shared codebases and releases.",
+				"SSR & Performance: Optimized production Vue.js and Nuxt.js applications with TypeScript, improving Core Web Vitals and SEO through SSR, code splitting, lazy loading, tree shaking, and bundle optimization.",
 				"Large-Scale Platform: Led frontend development of a major city-wide Nuxt.js food delivery platform, building the complete customer journey from restaurant discovery and search to checkout, payments, delivery, and order tracking.",
+				"Cross-Platform Development: Built production web and mobile applications with Ionic and Capacitor, delivering responsive experiences across web, iOS, and Android.",
 			],
 		}, {
 			id: "athena_plus",
@@ -269,10 +271,10 @@ const info = {
 			date: "June, 2021 - February, 2022 / Almaty",
 			technologies: "React, React Native, Vue.js, Nuxt.js Next.js, Redux, Vuex, Pinia",
 			responsibilities: [
-				"Frontend Ownership: Served as the primary frontend engineer in a 6–7 person cross-functional team, owning client projects from technical implementation through production.",
+				"Frontend Ownership: Served as the primary frontend engineer in a 6–7 person cross-functional team, owning client projects from technical design through production.",
 				"Multi-Stack Development: Architected commercial applications with Vue.js and React, leveraging Nuxt.js and Next.js for SSR to improve performance and scalability across multiple business domains.",
-				"Reusable Architecture: Developed reusable catalog, search, filtering, sorting, and navigation functionality across multiple production projects.",
-				"Booking Platform: Built a large-scale accommodation booking platform, implementing authentication, property discovery, search and filtering, and end-to-end booking flows.",
+				"Reusable Architecture: Developed reusable catalog, search, filtering, sorting, and navigation patterns shared across multiple production projects.",
+				"Booking Platform: Built a large-scale accommodation booking platform, covering authentication, property discovery, advanced search and filtering, and end-to-end booking flows.",
 			],
 		}, {
 			id: "kaskhim",
@@ -323,8 +325,8 @@ const info = {
 					key: "css",
 					name: "CSS",
 					percentage: 100,
-				}
-			]
+				},
+			],
 		}, {
 			id: "backend_database",
 			title: "Backend + DataBase",
@@ -351,8 +353,8 @@ const info = {
 					key: "my_sql",
 					name: "MySQL",
 					percentage: 85,
-				}
-			]
+				},
+			],
 		}, {
 			id: "tools",
 			title: "Tools",
@@ -383,8 +385,8 @@ const info = {
 					key: "jira",
 					name: "Atlassian Jira",
 					percentage: 95,
-				}
-			]
+				},
+			],
 		}, {
 			id: "languages",
 			title: "Languages",
@@ -421,9 +423,9 @@ const info = {
 					level: "Conversant",
 					percentage: 40,
 					link: "https://drive.google.com/file/d/1Nc2r3H21SrN_16sO473fxIXHeC-gScnL",
-				}
-			]
-		}
+				},
+			],
+		},
 	],
 	education: [
 		{
@@ -458,7 +460,7 @@ const info = {
 			title: "SQL (Basic) Certificate",
 			description: "HackerRank",
 			date: "June - 2022"
-		}
+		},
 	],
 	achievement: [
 		{
@@ -531,7 +533,7 @@ const info = {
 			link: "https://drive.google.com/file/d/1JDFHy1AvlL2WrH0Ey63WJGy2mw8RON1B",
 			description: "Red diploma",
 			date: "2023",
-		}
+		},
 	],
 }
 
