@@ -1,13 +1,13 @@
-import recommendation1 from "assets/files/refference_letter-kashim.pdf";
-import recommendation2 from "assets/files/recommendation_letter-athena_plus.pdf";
-import recommendation3 from "assets/files/recommendation_letter-key_horse.pdf";
+import document1 from "assets/files/refference_kaskhim.pdf";
+import document2 from "assets/files/recommendation_athena_plus.pdf";
+import document3 from "assets/files/recommendation_keyhorse.pdf";
 import cv from "assets/files/Zhassulan_Serikuly-CV.pdf";
 import image from "assets/images/photo.png";
 import zs from "assets/images/logos/zs.png";
 import a_lux from "assets/images/logos/a-lux.png";
 import athena_plus from "assets/images/logos/athena-plus.png";
-import kashim from "assets/images/logos/kashim.png";
-import key_horse from "assets/images/logos/key-horse.png";
+import kaskhim from "assets/images/logos/kaskhim.png";
+import keyhorse from "assets/images/logos/key-horse.png";
 import abi_construction from "assets/images/projects/abi-construction.png";
 import asia_credit_bank from "assets/images/projects/asia-credit-bank.png";
 import azm_trade from "assets/images/projects/azm-trade.png";
@@ -35,9 +35,9 @@ import yaq from "assets/images/projects/yaq.png";
 
 const info = {
 	name: "Serikuly Zhassulan",
-	position: ["Senior Frontend Engineer", "Vue.js / Nuxt.js", "React / Next.js"],
+	position: ["Senior Software Engineer", "Vue.js / Nuxt.js", "React / Next.js"],
 	image: image,
-	description: "Senior Frontend Engineer with 5+ years of commercial experience, specializing in Vue.js, Nuxt.js, and TypeScript, with strong expertise in frontend architecture and performance optimization. Experienced in technical leadership, mentoring, and building scalable production applications across e-commerce, booking, and data-intensive platforms. Looking to bring this expertise to a product-focused international engineering team..",
+	description: "Senior Software Engineer with 5+ years of commercial experience, specializing in Vue.js, Nuxt.js, and TypeScript, with strong expertise in frontend architecture and performance optimization. Experienced in technical leadership, mentoring, and building scalable production applications across e-commerce, booking, and data-intensive platforms. Looking to bring this expertise to a product-focused international engineering team..",
 	logo: zs,
 	phone: "+7 (775) 976-41-65",
 	gmail: "serikuly.zhassulan@gmail.com",
@@ -70,16 +70,16 @@ const info = {
 		recomendations: [
 			{
 				cheif: "Kentbayev A. E.",
-				file: recommendation3,
+				file: document1,
 				description: "Key Horse» - August, 2026 / Almaty",
 			}, {
 				cheif: "Sain S.",
-				file: recommendation2,
+				file: document2,
 				description: "«Athena plus» - May, 2022 / Almaty",
 			}, {
 				cheif: "Mammadov E.",
-				file: recommendation1,
-				description: "LLC «KasHIM» - August, 2021 / Atyrau",
+				file: document3,
+				description: "LLC «KasKHIM - August, 2021 / Atyrau",
 			},
 		],
 	},
@@ -232,11 +232,11 @@ const info = {
 	],
 	experience: [
 		{
-			id: "key_horse",
-			name: "Key Horse",
-			position: "Senior Full-Stack Developer / Frontend Team Lead",
+			id: "keyhorse",
+			name: "KeyHorse",
+			position: "Senior Software Engineer / Frontend Team Lead",
 			icon: "fa-solid fa-server",
-			logo: key_horse,
+			logo: keyhorse,
 			date: "June, 2022 - August, 2026 / Almaty",
 			technologies: "Vue.js, Vuex, Django, PostgreSQL, Mapbox, Docker, ESLint",
 			responsibilities: [
@@ -279,7 +279,7 @@ const info = {
 			name: "LLC «KasKhim»",
 			position: "Software Engineer Intern",
 			icon: "fa-solid fa-laptop-code",
-			logo: kashim,
+			logo: kaskhim,
 			date: "January, 2021 - March, 2021 / Atyrau",
 			technologies: "React, JavaScript, HTML, CSS",
 			responsibilities: [
