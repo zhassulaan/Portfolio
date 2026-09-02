@@ -7,7 +7,7 @@ import zs from "assets/images/logos/zs.png";
 import a_lux from "assets/images/logos/a-lux.png";
 import athena_plus from "assets/images/logos/athena-plus.png";
 import kaskhim from "assets/images/logos/kaskhim.png";
-import keyhorse from "assets/images/logos/key-horse.png";
+import keyhorse from "assets/images/logos/keyhorse.png";
 import abi_construction from "assets/images/projects/abi-construction.png";
 import asia_credit_bank from "assets/images/projects/asia-credit-bank.png";
 import azm_trade from "assets/images/projects/azm-trade.png";
