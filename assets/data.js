@@ -1,12 +1,10 @@
 import document1 from "assets/files/recommendation_keyhorse.pdf";
-import document2 from "assets/files/recommendation_athena_plus.pdf";
-import document3 from "assets/files/refference_kaskhim.pdf";
+import document2 from "assets/files/recommendation_zerone.pdf";
 import cv from "assets/files/Zhassulan_Serikuly-CV.pdf";
-import image from "assets/images/photo.png";
+import image from "assets/images/image.png";
 import zs from "assets/images/logos/zs.png";
-import a_lux from "assets/images/logos/a-lux.png";
-import athena_plus from "assets/images/logos/athena-plus.png";
-import kaskhim from "assets/images/logos/kaskhim.png";
+import alux from "assets/images/logos/alux.png";
+import zerone from "assets/images/logos/zerone.png";
 import keyhorse from "assets/images/logos/keyhorse.png";
 import abi_construction from "assets/images/projects/abi-construction.png";
 import asia_credit_bank from "assets/images/projects/asia-credit-bank.png";
@@ -37,7 +35,7 @@ const info = {
 	name: "Serikuly Zhassulan",
 	position: ["Senior Software Engineer", "Vue.js / Nuxt.js", "TypeScript", "React / Next.js"],
 	image: image,
-	description: "Senior Frontend Engineer with 5+ years of commercial experience building scalable, high-performance web applications with Vue.js, Nuxt.js, TypeScript, and JavaScript. Experienced across the full software development lifecycle, from requirements analysis and architecture to implementation, testing, deployment, and production support. Strong background in technical leadership, mentoring, code reviews, API integration, and performance optimization within cross-functional engineering teams.",
+	description: "Senior Software Engineer with 5+ years of commercial experience building scalable, high-performance web applications with Vue.js, Nuxt.js, TypeScript, and JavaScript. Experienced across the full software development lifecycle, from requirements analysis and architecture to implementation, testing, deployment, and production support. Strong background in technical leadership, mentoring, code reviews, API integration, and performance optimization within cross-functional engineering teams.",
 	logo: zs,
 	phone: "+7 (775) 976-41-65",
 	gmail: "serikuly.zhassulan@gmail.com",
@@ -45,7 +43,7 @@ const info = {
 	stats: [
 		{
 			key: "Companies worked",
-			value: 4,
+			value: 3,
 		}, {
 			key: "Project works",
 			value: "70+",
@@ -69,17 +67,13 @@ const info = {
 		cv: cv,
 		recomendations: [
 			{
-				cheif: "Kentbayev A. E.",
+				cheif: "Kentbayev A.",
 				file: document1,
 				description: "Key Horse» - August, 2026 / Almaty",
 			}, {
-				cheif: "Sain S.",
+				cheif: "Raishidinov D.",
 				file: document2,
-				description: "«Athena plus» - February, 2022 / Almaty",
-			}, {
-				cheif: "Mammadov E.",
-				file: document3,
-				description: "LLC «KasKHIM» - March, 2021 / Atyrau",
+				description: "«Zerone Technology» - March, 2021 / Almaty",
 			},
 		],
 	},
@@ -253,8 +247,8 @@ const info = {
 			name: "A-Lux",
 			position: "Frontend Developer",
 			icon: "fa-brands fa-vuejs",
-			logo: a_lux,
-			date: "December, 2021 - May, 2022 / Almaty",
+			logo: alux,
+			date: "June, 2021 - May, 2022 / Almaty",
 			technologies: "Nuxt.js, Vue.js, Vuex, Pinia, TypeScript",
 			responsibilities: [
 				"Cross-Team Delivery: Collaborated across a 30+ person engineering organization, coordinating frontend and backend development across shared codebases and releases.",
@@ -263,30 +257,18 @@ const info = {
 				"Cross-Platform Development: Built production web and mobile applications with Ionic and Capacitor, delivering responsive experiences across web, iOS, and Android.",
 			],
 		}, {
-			id: "athena_plus",
-			name: "Athena Plus (Part-time)",
-			position: "Frontend Developer",
+			id: "zerone_technology",
+			name: "Zerone Technology",
+			position: "Software Engineer Intern",
 			icon: "fa-brands fa-react",
-			logo: athena_plus,
-			date: "June, 2021 - February, 2022 / Almaty",
+			logo: zerone,
+			date: "January, 2021 - March, 2021 / Almaty",
 			technologies: "React, React Native, Vue.js, Nuxt.js Next.js, Redux, Vuex, Pinia",
 			responsibilities: [
 				"Frontend Ownership: Served as the primary frontend engineer in a 6–7 person cross-functional team, owning client projects from technical design through production.",
 				"Multi-Stack Development: Architected commercial applications with Vue.js and React, leveraging Nuxt.js and Next.js for SSR to improve performance and scalability across multiple business domains.",
 				"Reusable Architecture: Developed reusable catalog, search, filtering, sorting, and navigation patterns shared across multiple production projects.",
 				"Booking Platform: Built a large-scale accommodation booking platform, covering authentication, property discovery, advanced search and filtering, and end-to-end booking flows.",
-			],
-		}, {
-			id: "kaskhim",
-			name: "LLC «KasKhim»",
-			position: "Software Engineer Intern",
-			icon: "fa-solid fa-laptop-code",
-			logo: kaskhim,
-			date: "January, 2021 - March, 2021 / Atyrau",
-			technologies: "React, JavaScript, HTML, CSS",
-			responsibilities: [
-				"Implemented UI improvements and missing functionality using JavaScript, HTML, and CSS, resolving layout, usability, and cross-page consistency issues.",
-				"Debugged and tested the existing codebase, identifying frontend issues and delivering fixes and incremental improvements.",
 			],
 		},
 	],
