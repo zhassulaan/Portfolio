@@ -1,18 +1,19 @@
+<script setup lang="ts">
+import SiteHeader from '@/components/layout/site_header.vue';
+import SiteFooter from '@/components/layout/site_footer.vue';
+
+useHead({
+  titleTemplate: (title_chunk) => title_chunk ? `${title_chunk} · Zhassulan Serikuly` : 'Zhassulan Serikuly — Engineering Notebook',
+  meta: [
+    { name: 'description', content: 'Engineering portfolio of Zhassulan Serikuly — frontend architecture, performance, modernization, GIS and production systems.' },
+  ],
+});
+</script>
+
 <template>
-	<Progressbar />
-	<Scroller />
-	<layout-header />
-	<div class="main">
-		<div class="box">
-			<section-home />
-			<section-about />
-			<section-projects />
-			<section-experience />
-			<section-recomendations />
-			<section-skills />
-			<section-qualification />
-			<section-contacts />
-		</div>
-	</div>
-	<layout-footer />
+  <div class="site_shell">
+    <SiteHeader />
+    <NuxtPage />
+    <SiteFooter />
+  </div>
 </template>
