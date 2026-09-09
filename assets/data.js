@@ -1,13 +1,11 @@
-import recommendation1 from "assets/files/refference_letter-kashim.pdf";
-import recommendation2 from "assets/files/recommendation_letter-athena_plus.pdf";
-import recommendation3 from "assets/files/recommendation_letter-key_horse.pdf";
+import document1 from "assets/files/recommendation_keyhorse.pdf";
+import document2 from "assets/files/recommendation_zerone.pdf";
 import cv from "assets/files/Zhassulan_Serikuly-CV.pdf";
-import image from "assets/images/photo.png";
+import image from "assets/images/image.png";
 import zs from "assets/images/logos/zs.png";
-import a_lux from "assets/images/logos/a-lux.png";
-import athena_plus from "assets/images/logos/athena-plus.png";
-import kashim from "assets/images/logos/kashim.png";
-import key_horse from "assets/images/logos/key-horse.png";
+import alux from "assets/images/logos/alux.png";
+import zerone from "assets/images/logos/zerone.png";
+import keyhorse from "assets/images/logos/keyhorse.png";
 import abi_construction from "assets/images/projects/abi-construction.png";
 import asia_credit_bank from "assets/images/projects/asia-credit-bank.png";
 import azm_trade from "assets/images/projects/azm-trade.png";
@@ -35,9 +33,9 @@ import yaq from "assets/images/projects/yaq.png";
 
 const info = {
 	name: "Serikuly Zhassulan",
-	position: ["Senior Frontend Engineer", "Vue.js / Nuxt.js", "React / Next.js"],
+	position: ["Senior Software Engineer", "Vue.js / React", "TypeScript", "Nuxt.js / Next.js"],
 	image: image,
-	description: "Senior Frontend Engineer with 5+ years of commercial experience, specializing in Vue.js, Nuxt.js, and TypeScript, with strong expertise in frontend architecture and performance optimization. Experienced in technical leadership, mentoring, and building scalable production applications across e-commerce, booking, and data-intensive platforms. Looking to bring this expertise to a product-focused international engineering team..",
+	description: "Senior Software Engineer with 6+ years of commercial experience building scalable, high-performance web applications with Vue.js, Nuxt.js, TypeScript, and JavaScript. Experienced across the full software development lifecycle, from requirements analysis and architecture to implementation, testing, deployment, and production support. Strong background in technical leadership, mentoring, code reviews, API integration, and performance optimization within cross-functional engineering teams.",
 	logo: zs,
 	phone: "+7 (775) 976-41-65",
 	gmail: "serikuly.zhassulan@gmail.com",
@@ -48,7 +46,7 @@ const info = {
 			value: 4,
 		}, {
 			key: "Project works",
-			value: "70+",
+			value: "100+",
 		}, {
 			key: "Language profiency",
 			value: 5,
@@ -69,17 +67,13 @@ const info = {
 		cv: cv,
 		recomendations: [
 			{
-				cheif: "Kentbayev A. E.",
-				file: recommendation3,
+				cheif: "Kentbayev A.",
+				file: document1,
 				description: "Key Horse» - August, 2026 / Almaty",
-			}, {
-				cheif: "Sain S.",
-				file: recommendation2,
-				description: "«Athena plus» - May, 2022 / Almaty",
-			}, {
-				cheif: "Mammadov E.",
-				file: recommendation1,
-				description: "LLC «KasHIM» - August, 2021 / Atyrau",
+			// }, {
+			// 	cheif: "Raishidinov D.",
+			// 	file: document2,
+			// 	description: "«Zerone Technology» - March, 2021 / Almaty",
 			},
 		],
 	},
@@ -232,60 +226,64 @@ const info = {
 	],
 	experience: [
 		{
-			id: "key_horse",
-			name: "Key Horse",
-			position: "Senior Full-Stack Developer / Frontend Team Lead",
+			id: "keyhorse",
+			name: "KeyHorse",
+			position: "Team Lead",
 			icon: "fa-solid fa-server",
-			logo: key_horse,
+			logo: keyhorse,
+			date: "September, 2024 - August, 2026 / Almaty",
+			technologies: "Scrum, Vitest, Playwright, CI/CD, BEM",
+			responsibilities: [
+				"👥 Engineering Leadership: Mentored 8 junior developers, including 5 frontend engineers, providing technical guidance, onboarding support, and regular code reviews across production projects.",
+				"🔍 Code Quality: Conducted ~20 code reviews per week, enforcing BEM, ESLint, and Stylelint standards and improving consistency across shared frontend codebases. ",
+				"🏗️ Engineering Standards: Standardized shared component architecture, BEM conventions, theming, and role/context-based UI patterns across 80+ regional projects, reducing code duplication and improving maintainability.",
+				"🧪 Testing & Quality: Automated 40+ critical frontend scenarios with Vitest and Playwright across search/filtering, map interactions, forms, and core user flows, achieving 70–80% coverage of critical application logic.",
+				"⚙️ CI/CD Automation: Integrated automated ESLint and Stylelint checks into GitLab CI/CD, enforcing frontend quality standards before production releases.",
+			],
+		}, {
+			id: "keyhorse",
+			name: "KeyHorse",
+			position: "Senior Software Engineer",
+			icon: "fa-solid fa-server",
+			logo: keyhorse,
 			date: "June, 2022 - August, 2026 / Almaty",
-			technologies: "Vue.js, Vuex, Django, PostgreSQL, Mapbox, Docker, ESLint",
+			technologies: "Vue.js, Vuex, Django REST Framework, PostgreSQL, Mapbox",
 			responsibilities: [
-				"Team Leadership: Led frontend development within an 8-person engineering team, coordinating delivery, decomposing requirements, assigning tasks, reviewing code, mentoring junior developers, and providing technical guidance.",
-				"Large-Scale Platforms: Developed and maintained 50+ production geoportals and digital-twin solutions used by government and municipal organizations across Kazakhstan for city monitoring and data-driven decision-making, building reusable interfaces with Vue.js and Mapbox for complex geospatial data.",
-				"Product Ownership: Owned frontend development for 4 regional geoportals from architecture and initial implementation through production launch and continued feature development.",
-				"Performance Optimization: Optimized search and filtering across geospatial datasets containing hundreds of thousands of objects, improving lookup efficiency and UI responsiveness through more efficient data-processing algorithms.",
-				"Engineering Standards: Introduced BEM methodology and shared frontend coding standards, trained developers on the new conventions, and drove team-wide adoption, improving consistency and maintainability across the codebase.",
-				"Backend & API Development: Designed and maintained REST APIs and backend services with Python, Django REST Framework, and PostgreSQL, implementing endpoints, data processing, and database integrations for data-intensive geoportals.",
+				"🌍 Platform Scale & Delivery: Delivered solutions across 80+ regional and 100+ smaller GIS projects serving 1M+ users across Kazakhstan, Russia, Uzbekistan, and Kyrgyzstan; built 10 regional platforms from the ground up, typically delivering initial production versions within 1–1.5 months.",
+				"⚡ GIS Performance: Reduced initial Mapbox GL JS rendering time by 40% (800ms → 480ms) across datasets containing 300K–500K geospatial objects through layer/style restructuring, clustering, client-side filtering, and optimized Vuex–Elasticsearch data handling. ",
+				"🔍 Search Optimization: Improved geospatial search response time by 30% by eliminating redundant processing loops, optimizing frontend algorithms, and reducing unnecessary intermediate data storage.",
+				"🏗️ Reusable Architecture: Built 100+ reusable Vue components and shared modules within a centralized architecture, cutting development effort by up to 50% on similar projects and, in some cases, reducing implementation from ~1 month to 1 week.",
+				"♿ Accessibility: Built a core accessibility framework shared across regional projects, reducing implementation time from ~3 days to ~4 hours while supporting configurable visual modes, typography, image settings, and text-to-speech; projects averaged approximately 87/100 Lighthouse Accessibility and 95/100 Performance.",
+				"⚙️ Backend & APIs: Developed 30–40 REST endpoints with Python, Django REST Framework, and PostgreSQL for datasets containing 100K+ records, supporting frontend integrations and data-intensive GIS workflows.",
 			],
-		}, {
-			id: "a_lux",
-			name: "A - Lux",
-			position: "Frontend Developer",
-			icon: "fa-brands fa-vuejs",
-			logo: a_lux,
-			date: "December, 2021 - May, 2022 / Almaty",
-			technologies: "Nuxt.js, Vue.js, Vuex, Pinia, TypeScript",
-			responsibilities: [
-				"Cross-Team Delivery: Worked within a 30+ person engineering organization, collaborating with frontend and backend teams on shared codebases and coordinated releases.",
-				"SSR & Performance: Delivered production Vue.js and Nuxt.js solutions across multiple client projects, implementing SSR and optimizing technical SEO and Core Web Vitals (LCP, INP, CLS) to improve page performance, search visibility, and overall user experience.",
-				"Large-Scale Platform: Led frontend development of a major city-wide Nuxt.js food delivery platform, building the complete customer journey from restaurant discovery and search to checkout, payments, delivery, and order tracking.",
-			],
-		}, {
-			id: "athena_plus",
-			name: "Athena Plus (Part-time)",
-			position: "Frontend Developer",
-			icon: "fa-brands fa-react",
-			logo: athena_plus,
-			date: "June, 2021 - February, 2022 / Almaty",
-			technologies: "React, React Native, Vue.js, Nuxt.js Next.js, Redux, Vuex, Pinia",
-			responsibilities: [
-				"Frontend Ownership: Served as the primary frontend engineer in a 6–7 person cross-functional team, owning client projects from technical implementation through production.",
-				"Multi-Stack Development: Architected commercial applications with Vue.js and React, leveraging Nuxt.js and Next.js for SSR to improve performance and scalability across multiple business domains.",
-				"Reusable Architecture: Developed reusable catalog, search, filtering, sorting, and navigation functionality across multiple production projects.",
-				"Booking Platform: Built a large-scale accommodation booking platform, implementing authentication, property discovery, search and filtering, and end-to-end booking flows.",
-			],
-		}, {
-			id: "kaskhim",
-			name: "LLC «KasKhim»",
-			position: "Software Engineer Intern",
-			icon: "fa-solid fa-laptop-code",
-			logo: kashim,
-			date: "January, 2021 - March, 2021 / Atyrau",
-			technologies: "React, JavaScript, HTML, CSS",
-			responsibilities: [
-				"Implemented UI improvements and missing functionality using JavaScript, HTML, and CSS, resolving layout, usability, and cross-page consistency issues.",
-				"Debugged and tested the existing codebase, identifying frontend issues and delivering fixes and incremental improvements.",
-			],
+		// }, {
+		// 	id: "a_lux",
+		// 	name: "A-Lux",
+		// 	position: "Frontend Developer",
+		// 	icon: "fa-brands fa-vuejs",
+		// 	logo: alux,
+		// 	date: "June, 2021 - May, 2022 / Almaty",
+		// 	technologies: "Vue.js, React, Nuxt.js, Next.js, TypeScript",
+		// 	responsibilities: [
+		// 		"💻 Production Scale: Delivered frontend functionality across 40 multi-page applications, typically containing 10+ pages each, while handling up to 3–4 concurrent projects. ",
+		// 		"🚀 Delivery Efficiency: Reduced development time by 5–10 days per project through 30+ reusable components, shared layouts, and BEM-based architecture reused across 20+ projects, enabling consistent delivery ahead of deadlines.",
+		// 		"🌐 Large-Scale Platforms: Independently built the complete frontend for food delivery and accommodation booking platforms in ~1 month each, supporting 150–200 restaurants across 3 cities and 100–150 property listings.",
+		// 		"⚡ Performance & SEO: Reduced load times by 40% to 1.8–2.2 seconds through SSR, code splitting, lazy loading, tree shaking, and bundle optimization, while achieving 100/100 Lighthouse SEO scores across most projects.",
+		// 		"📱 Multi-Platform Delivery: Shipped 5–7 production mobile applications to iOS and Android using Ionic, Capacitor, and React Native, sharing up to 40–50% of code across platforms.",
+		// 	],
+		// }, {
+		// 	id: "zerone_technology",
+		// 	name: "Zerone Technology",
+		// 	position: "Software Engineer",
+		// 	icon: "fa-brands fa-react",
+		// 	logo: zerone,
+		// 	date: "January, 2021 - March, 2021 / Almaty",
+		// 	technologies: "React, JavaScript, GSAP.js",
+		// 	responsibilities: [
+		// 		"💻 React Development: Developed reusable React components and responsive user interfaces using JavaScript, HTML, and CSS, translating design requirements into maintainable frontend functionality.",
+		// 		"✨ Interactive UI: Implemented web animations and interactive interface elements with GSAP.js, contributing to more polished and engaging user experiences.",
+		// 		"🔧 Production Engineering: Debugged and improved existing applications, resolving frontend bugs, layout inconsistencies, and usability issues while validating changes across browsers and screen sizes. ",
+		// 	],
 		},
 	],
 	skills: [
@@ -323,8 +321,8 @@ const info = {
 					key: "css",
 					name: "CSS",
 					percentage: 100,
-				}
-			]
+				},
+			],
 		}, {
 			id: "backend_database",
 			title: "Backend + DataBase",
@@ -351,8 +349,8 @@ const info = {
 					key: "my_sql",
 					name: "MySQL",
 					percentage: 85,
-				}
-			]
+				},
+			],
 		}, {
 			id: "tools",
 			title: "Tools",
@@ -383,8 +381,8 @@ const info = {
 					key: "jira",
 					name: "Atlassian Jira",
 					percentage: 95,
-				}
-			]
+				},
+			],
 		}, {
 			id: "languages",
 			title: "Languages",
@@ -421,9 +419,9 @@ const info = {
 					level: "Conversant",
 					percentage: 40,
 					link: "https://drive.google.com/file/d/1Nc2r3H21SrN_16sO473fxIXHeC-gScnL",
-				}
-			]
-		}
+				},
+			],
+		},
 	],
 	education: [
 		{
@@ -458,7 +456,7 @@ const info = {
 			title: "SQL (Basic) Certificate",
 			description: "HackerRank",
 			date: "June - 2022"
-		}
+		},
 	],
 	achievement: [
 		{
@@ -531,7 +529,7 @@ const info = {
 			link: "https://drive.google.com/file/d/1JDFHy1AvlL2WrH0Ey63WJGy2mw8RON1B",
 			description: "Red diploma",
 			date: "2023",
-		}
+		},
 	],
 }
 
