@@ -1,0 +1,1 @@
+import{f as n,o as s,c as t,F as r,k as o,t as _}from"./entry.IApI_Etv.js";const i={class:"tag_list"},m=n({__name:"tag_list",props:{items:{}},setup(c){return(a,l)=>(s(),t("div",i,[(s(!0),t(r,null,o(a.items,e=>(s(),t("span",{key:e,class:"tag_list__item"},_(e),1))),128))]))}});export{m as _};
