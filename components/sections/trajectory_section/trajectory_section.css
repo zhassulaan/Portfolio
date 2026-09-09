@@ -1,0 +1,170 @@
+.trajectory_section__companies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.trajectory_section__company {
+  min-height: 315px;
+  padding: 22px;
+  border-right: 1px solid var(--line);
+}
+
+.trajectory_section__company:last-child {
+  border-right: 0;
+}
+
+.trajectory_section__company_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 74px;
+}
+
+.trajectory_section__company_head > span {
+  color: #9b9da5;
+  font: 800 10px 'Manrope';
+}
+
+.trajectory_section__company_head img {
+  max-width: 105px;
+  max-height: 42px;
+  object-fit: contain;
+  filter: saturate(.85);
+}
+
+.trajectory_section__company_body {
+  margin-top: 65px;
+}
+
+.trajectory_section__company_body small {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.trajectory_section__company_body h3 {
+  margin: 10px 0 12px;
+  font-size: 23px;
+  line-height: 1.08;
+}
+
+.trajectory_section__company_body p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.trajectory_section__proof {
+  display: grid;
+  grid-template-columns: .65fr 1.35fr;
+  gap: 60px;
+  margin-top: 80px;
+  padding-top: 60px;
+  border-top: 1px solid var(--line);
+}
+
+.trajectory_section__proof_intro h3 {
+  font-size: 34px;
+}
+
+.trajectory_section__proof_intro > p:last-child {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.trajectory_section__proof_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.trajectory_section__proof_item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 180px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.trajectory_section__proof_item img {
+  width: 70px;
+  height: 34px;
+  margin-bottom: 20px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.trajectory_section__proof_item span {
+  color: #9a9ca4;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.trajectory_section__proof_item strong {
+  margin-top: 8px;
+  font: 800 22px 'Manrope';
+}
+
+.trajectory_section__proof_item p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.trajectory_section__proof_item em {
+  margin-top: auto;
+  padding-top: 16px;
+  color: var(--accent);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+@media (max-width: 980px) {
+  .trajectory_section__companies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trajectory_section__company:nth-child(2) {
+    border-right: 0;
+  }
+  .trajectory_section__company:nth-child(-n+2) {
+    border-bottom: 1px solid var(--line);
+  }
+  .trajectory_section__proof {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .trajectory_section__companies {
+    grid-template-columns: 1fr;
+  }
+  .trajectory_section__company {
+    min-height: 250px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .trajectory_section__company:last-child {
+    border-bottom: 0;
+  }
+  .trajectory_section__company_body {
+    margin-top: 35px;
+  }
+  .trajectory_section__proof_grid {
+    grid-template-columns: 1fr;
+  }
+}

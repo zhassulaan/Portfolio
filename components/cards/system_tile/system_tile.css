@@ -1,0 +1,115 @@
+.system_tile {
+  display: grid;
+  grid-template-columns: .82fr 1.18fr;
+  min-height: 340px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--surface);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.system_tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 50px rgba(17, 18, 24, .09);
+}
+
+.system_tile__visual {
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
+  background: #17181e;
+}
+
+.system_tile__index {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 2;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid #3b3d46;
+  border-radius: 50%;
+  color: #fff;
+  font: 800 11px 'Manrope';
+}
+
+.system_tile__pattern {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 68px 24px 24px;
+}
+
+.system_tile__pattern i {
+  border: 1px solid #33353e;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #22242c, #17181e);
+  transition: transform .35s ease, background .35s ease;
+}
+
+.system_tile:hover .system_tile__pattern i:nth-child(3n+1) {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, rgba(99, 91, 255, .55), #242633);
+}
+
+.system_tile--map .system_tile__pattern {
+  grid-template-columns: repeat(3, 1fr);
+  transform: rotate(-8deg) scale(1.1);
+}
+
+.system_tile--map .system_tile__pattern i {
+  border-radius: 40% 60% 50% 50%;
+}
+
+.system_tile--flow .system_tile__pattern {
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+}
+
+.system_tile--flow .system_tile__pattern i {
+  height: 16px;
+  border-radius: 999px;
+}
+
+.system_tile--pulse .system_tile__pattern {
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.system_tile--pulse .system_tile__pattern i {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.system_tile__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+.system_tile__body h3 {
+  font-size: 28px;
+}
+
+.system_tile__body p {
+  margin: 14px 0 24px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+@media (max-width: 560px) {
+  .system_tile {
+    grid-template-columns: 1fr;
+  }
+  .system_tile__visual {
+    min-height: 210px;
+  }
+}

@@ -15,11 +15,13 @@ export default defineNuxtPlugin((nuxt_app) => {
       }
 
       const observer = new IntersectionObserver(([entry]) => {
-        if (!entry) return;
+        if (!entry) {
+          return;
+        }
 
         element.classList.toggle('reveal--visible', entry.isIntersecting);
       }, {
-        threshold: 0.1,
+        threshold: .1,
         rootMargin: '-4% 0px -4% 0px',
       });
 
