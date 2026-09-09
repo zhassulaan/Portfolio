@@ -38,8 +38,8 @@
 .project_archive_card__body { position: relative; z-index: 2; padding: 24px; background: var(--surface); transform: translateZ(12px); }
 .project_archive_card__heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
 .project_archive_card__title { font-size: 27px; }
-.project_archive_card__link { display: grid; width: 40px; height: 40px; flex: 0 0 auto; place-items: center; border: 1px solid var(--line); border-radius: 50%; transition: transform .45s cubic-bezier(.2, .8, .2, 1), background .25s ease, color .25s ease; }
-.project_archive_card__link:hover { background: var(--ink); color: #ffffff; transform: rotate(360deg) scale(1.08); }
+.project_archive_card__link { display: grid; width: 40px; height: 40px; flex: 0 0 auto; place-items: center; border: 1px solid var(--line); border-radius: 50%; transition: transform .25s ease, background .25s ease, color .25s ease; }
+.project_archive_card__link:hover { background: var(--ink); color: #ffffff; transform: scale(1.06); }
 .project_archive_card__description { min-height: 94px; margin: 16px 0 22px; color: var(--muted); font-size: 14px; line-height: 1.65; }
 
 @media (max-width: 600px) {

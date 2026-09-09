@@ -35,7 +35,7 @@ import type { CaseStudy, Milestone, Principle, ProofItem, Project, Signal, Surfa
 export const portfolio_assets = { portrait, cv };
 
 export const nav_items = [
-  { label: 'Signals', href: '#signals' }, { label: 'Cases', href: '#cases' }, { label: 'Builds', href: '#builds' }, { label: 'Path', href: '#path' }, { label: 'Contact', href: '#contact' },
+  { label: 'Signals', href: '/#signals' }, { label: 'Cases', href: '/#cases' }, { label: 'Builds', href: '/#builds' }, { label: 'Projects', href: '/projects' }, { label: 'Path', href: '/#path' }, { label: 'Contact', href: '/#contact' },
 ];
 
 export const signals: Signal[] = [

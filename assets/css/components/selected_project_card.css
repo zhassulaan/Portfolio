@@ -79,7 +79,7 @@
 .selected_project_card__arrow:hover {
   background: #ffffff;
   color: #111218;
-  transform: rotate(8deg);
+  transform: translateY(-2px);
 }
 
 .selected_project_card__description {
