@@ -191,8 +191,8 @@ onBeforeUnmount(() => {
     </div>
 
     <div class='site_header__mobile_nav'
-      id='mobile_nav'
-      v-show='is_mobile_nav_open'>
+      :class="{ 'site_header__mobile_nav--open': is_mobile_nav_open }"
+      id='mobile_nav'>
       <nav class='site_header__mobile_links' aria-label='Mobile navigation'>
         <NuxtLink class='site_header__mobile_link'
           :class="{ 'site_header__mobile_link--active': is_nav_item_active(item.href) }"

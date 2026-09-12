@@ -219,8 +219,21 @@
 }
 
 .site_header__mobile_nav {
-  border-top: 1px solid var(--theme-line);
-  background: var(--theme-paper);
+  display: none;
+  position: absolute;
+  z-index: 40;
+  top: 100%;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  max-height: calc(100vh - 88px);
+  box-shadow: 0 18px 32px rgba(17, 18, 24, .14);
+  border-top: 1px solid var(--theme-line, rgba(17, 18, 24, .08));
+  background: var(--theme-paper, #f4f2ec);
+}
+
+.site_header__mobile_nav--open {
+  display: block;
 }
 
 .site_header__mobile_links {
@@ -286,8 +299,15 @@
 }
 
 @media (min-width: 821px) {
-  .site_header__mobile_nav {
+  .site_header__mobile_nav,
+  .site_header__mobile_nav--open {
     display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .site_header__mobile_nav {
+    max-height: calc(100vh - 72px);
   }
 }
 

@@ -37,7 +37,8 @@ export default defineNuxtConfig({
           innerHTML: `(function () {
             try {
               var stored = window.localStorage.getItem('zs_theme');
-              var preference = (stored === 'light' || stored === 'dark' || stored === 'auto') ? stored : 'auto';
+              var explicit = ['light', 'dark', 'blue', 'gray'];
+              var preference = (explicit.indexOf(stored) !== -1 || stored === 'auto') ? stored : 'auto';
               var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
               var resolved = preference === 'auto' ? (prefersDark ? 'dark' : 'light') : preference;
               document.documentElement.setAttribute('data-theme', resolved);

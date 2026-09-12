@@ -16,7 +16,10 @@ export default <RouterConfig>{
       return {
         el: to.hash,
         top: 112,
-        behavior: prefers_reduced_motion ? 'auto' : 'smooth',
+        // 'auto' defers to the CSS `scroll-behavior` on <html> (which we set
+        // to 'smooth' for the anchor-link experience), so a truly instant
+        // jump for reduced-motion users has to be requested explicitly.
+        behavior: prefers_reduced_motion ? 'instant' : 'smooth',
       };
     }
 
@@ -24,14 +27,17 @@ export default <RouterConfig>{
       return {
         left: 0,
         top: 0,
-        behavior: 'auto',
+        // Same trap: 'auto' would inherit the smooth CSS scroll-behavior and
+        // visibly animate from the old scroll position, which is exactly the
+        // 'lands in the middle, then scrolls up' glitch this avoids.
+        behavior: 'instant',
       };
     }
 
     return {
       left: 0,
       top: 0,
-      behavior: 'auto',
+      behavior: 'instant',
     };
   },
 };

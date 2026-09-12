@@ -14,7 +14,7 @@
         </p>
 
         <a href='mailto:zhassulan.serikuly@gmail.com'>
-          zhassulan.serikuly@gmail.com <span aria-hidden='true'>↗</span>
+          zhassulan.serikuly@gmail.com&nbsp;<span aria-hidden='true'>↗</span>
         </a>
 
         <div>
