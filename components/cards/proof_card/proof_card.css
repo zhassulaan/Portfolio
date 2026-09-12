@@ -5,15 +5,15 @@
   transform: perspective(1000px) rotateX(var(--tilt_rotate_x)) rotateY(var(--tilt_rotate_y));
   transform-style: preserve-3d;
   transition: transform .16s ease-out, box-shadow .3s ease, border-color .3s ease, background .25s ease;
-  border: 1px solid var(--theme_line);
+  border: 1px solid var(--theme-line);
   border-radius: 22px;
   padding: 26px;
-  background: var(--theme_surface);
+  background: var(--theme-surface);
 }
 
 .proof_card:hover {
   box-shadow: 0 24px 60px rgba(99, 91, 255, .12);
-  border-color: var(--theme_accent);
+  border-color: var(--theme-accent);
 }
 
 .proof_card__head {
@@ -26,12 +26,12 @@
 .proof_card__kind {
   border-radius: 999px;
   padding: 7px 10px;
-  background: var(--theme_chip_bg);
+  background: var(--theme-chip_bg);
   font-size: 10px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .08em;
-  color: var(--theme_chip_text);
+  color: var(--theme-chip_text);
 }
 
 .proof_card__arrow {
@@ -40,13 +40,13 @@
   transition: background .25s ease, color .25s ease, transform .25s ease;
   width: 34px;
   height: 34px;
-  border: 1px solid var(--theme_line);
+  border: 1px solid var(--theme-line);
   border-radius: 50%;
 }
 
 .proof_card:hover .proof_card__arrow {
   transform: rotate(45deg);
-  background: var(--theme_ink);
+  background: var(--theme-ink);
   color: #fff;
 }
 
@@ -61,7 +61,7 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .04em;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
 }
 
 .proof_card__description {
@@ -69,7 +69,7 @@
   margin: 14px 0 0;
   font-size: 14px;
   line-height: 1.6;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
 }
 
 @media (max-width: 600px) {

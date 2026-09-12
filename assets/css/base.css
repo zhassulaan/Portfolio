@@ -1,5 +1,5 @@
 /* Color tokens live in assets/css/theme.css (loaded before this file) as
-   --theme_*  custom properties. This file only holds layout tokens and
+   --theme-*  custom properties. This file only holds layout tokens and
    base element rules. */
 :root {
   --max: 1180px;
@@ -18,10 +18,10 @@ body {
   overflow-x: hidden;
   transition: background .25s ease, color .25s ease;
   margin: 0;
-  background: var(--theme_paper);
+  background: var(--theme-paper);
   font-family: 'DM Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: var(--theme_text);
+  color: var(--theme-text);
 }
 
 a {
@@ -35,9 +35,9 @@ button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 [tabindex]:focus-visible {
-  outline: 2px solid var(--theme_accent);
-  outline-offset: 3px;
   border-radius: 4px;
+  outline: 2px solid var(--theme-accent);
+  outline-offset: 3px;
 }
 
 .skip_link {
@@ -49,7 +49,7 @@ select:focus-visible,
   transition: transform .2s ease;
   border-radius: 10px;
   padding: 12px 18px;
-  background: var(--theme_ink);
+  background: var(--theme-ink);
   font-size: 13px;
   font-weight: 700;
   color: #fff;
@@ -108,7 +108,7 @@ h1, h2, h3 {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .16em;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
 }
 
 .section_heading {
@@ -130,7 +130,7 @@ h1, h2, h3 {
   margin: 0;
   font-size: 17px;
   line-height: 1.7;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
 }
 
 .button {
@@ -139,10 +139,10 @@ h1, h2, h3 {
   justify-content: center;
   gap: 10px;
   transition: transform .2s ease, box-shadow .2s ease;
-  border: 1px solid var(--theme_ink);
+  border: 1px solid var(--theme-ink);
   border-radius: 999px;
   padding: 15px 20px;
-  background: var(--theme_ink);
+  background: var(--theme-ink);
   font-size: 14px;
   font-weight: 700;
   color: #fff;
@@ -154,9 +154,9 @@ h1, h2, h3 {
 }
 
 .button--ghost {
-  border-color: var(--theme_line);
+  border-color: var(--theme-line);
   background: transparent;
-  color: var(--theme_text);
+  color: var(--theme-text);
 }
 
 .tag_list {
@@ -168,10 +168,10 @@ h1, h2, h3 {
 .tag_list__item {
   border-radius: 999px;
   padding: 7px 10px;
-  background: var(--theme_chip_bg);
+  background: var(--theme-chip_bg);
   font-size: 11px;
   font-weight: 700;
-  color: var(--theme_chip_text);
+  color: var(--theme-chip_text);
 }
 
 .reveal {

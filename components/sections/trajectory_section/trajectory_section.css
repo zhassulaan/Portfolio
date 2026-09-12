@@ -1,17 +1,17 @@
 .trajectory_section__companies {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border: 1px solid var(--theme_line);
+  border: 1px solid var(--theme-line);
   border-radius: 22px;
   overflow: hidden;
-  background: var(--surface);
+  background: var(--theme-surface);
   transition: background .25s ease;
 }
 
 .trajectory_section__company {
   min-height: 315px;
   padding: 22px;
-  border-right: 1px solid var(--theme_line);
+  border-right: 1px solid var(--theme-line);
 }
 
 .trajectory_section__company:last-child {
@@ -26,7 +26,7 @@
 }
 
 .trajectory_section__company_head > span {
-  color: var(--theme_muted);
+  color: var(--theme-muted);
   font: 800 10px 'Manrope';
 }
 
@@ -45,7 +45,7 @@
 }
 
 .trajectory_section__company_body small {
-  color: var(--theme_muted);
+  color: var(--theme-muted);
   font-size: 10px;
   font-weight: 800;
   letter-spacing: .1em;
@@ -60,7 +60,7 @@
 
 .trajectory_section__company_body p {
   margin: 0;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
   font-size: 12px;
   line-height: 1.6;
 }
@@ -71,7 +71,7 @@
   gap: 60px;
   margin-top: 80px;
   padding-top: 60px;
-  border-top: 1px solid var(--theme_line);
+  border-top: 1px solid var(--theme-line);
 }
 
 .trajectory_section__proof_intro h3 {
@@ -79,14 +79,14 @@
 }
 
 .trajectory_section__proof_intro > p:last-child {
-  color: var(--theme_muted);
+  color: var(--theme-muted);
   line-height: 1.65;
 }
 
 .trajectory_section__proof_link {
   display: inline-block;
   margin-top: 18px;
-  color: var(--theme_accent);
+  color: var(--theme-accent);
   font-size: 13px;
   font-weight: 800;
   transition: transform .25s ease;
@@ -108,9 +108,9 @@
   flex-direction: column;
   min-height: 180px;
   padding: 22px;
-  border: 1px solid var(--theme_line);
+  border: 1px solid var(--theme-line);
   border-radius: 18px;
-  background: var(--surface);
+  background: var(--theme-surface);
   transition: background .25s ease;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .trajectory_section__proof_item span {
-  color: var(--theme_muted);
+  color: var(--theme-muted);
   font-size: 9px;
   font-weight: 800;
   letter-spacing: .12em;
@@ -140,7 +140,7 @@
 
 .trajectory_section__proof_item p {
   margin: 8px 0 0;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
   font-size: 12px;
   line-height: 1.55;
 }
@@ -148,7 +148,7 @@
 .trajectory_section__proof_item em {
   margin-top: auto;
   padding-top: 16px;
-  color: var(--theme_accent);
+  color: var(--theme-accent);
   font-size: 11px;
   font-style: normal;
   font-weight: 800;
@@ -162,7 +162,7 @@
     border-right: 0;
   }
   .trajectory_section__company:nth-child(-n+2) {
-    border-bottom: 1px solid var(--theme_line);
+    border-bottom: 1px solid var(--theme-line);
   }
   .trajectory_section__proof {
     grid-template-columns: 1fr;
@@ -177,7 +177,7 @@
   .trajectory_section__company {
     min-height: 250px;
     border-right: 0;
-    border-bottom: 1px solid var(--theme_line);
+    border-bottom: 1px solid var(--theme-line);
   }
   .trajectory_section__company:last-child {
     border-bottom: 0;

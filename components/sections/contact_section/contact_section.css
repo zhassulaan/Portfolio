@@ -1,6 +1,6 @@
 .contact_section {
   padding-block: 100px;
-  background: var(--theme_accent);
+  background: var(--theme-accent);
   color: #fff;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .contact_section__action > div a:hover {
-  color: var(--theme_accent);
+  color: var(--theme-accent);
   transform: translateY(-2px);
 }
 

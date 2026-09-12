@@ -1,5 +1,5 @@
 .case_studies_section {
-  background: var(--surface_alt);
+  background: var(--theme-surface_alt);
   transition: background .25s ease;
 }
 

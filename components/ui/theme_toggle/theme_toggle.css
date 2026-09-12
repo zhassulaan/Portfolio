@@ -2,10 +2,10 @@
   display: inline-flex;
   align-items: center;
   gap: 2px;
-  border: 1px solid var(--theme_line);
+  border: 1px solid var(--theme-line);
   border-radius: 999px;
   padding: 3px;
-  background: var(--theme_surface);
+  background: var(--theme-surface);
 }
 
 .theme_toggle__option {
@@ -18,7 +18,7 @@
   border-radius: 50%;
   background: transparent;
   cursor: pointer;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
 }
 
 .theme_toggle__icon {
@@ -27,10 +27,10 @@
 }
 
 .theme_toggle__option:hover:not(.theme_toggle__option--active) {
-  color: var(--theme_text);
+  color: var(--theme-text);
 }
 
 .theme_toggle__option--active {
-  background: var(--theme_ink);
+  background: var(--theme-ink);
   color: #fff;
 }
