@@ -65,7 +65,6 @@ export interface ProofDocument {
   issuer: string;
   date: string;
   description: string;
-  /** Import from assets/files/... once the real scan is added; see PROOF_GUIDE.md. */
   file?: string;
   file_type?: 'image' | 'pdf';
 }

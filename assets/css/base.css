@@ -1,6 +1,3 @@
-/* Color tokens live in assets/css/theme.css (loaded before this file) as
-   --theme-*  custom properties. This file only holds layout tokens and
-   base element rules. */
 :root {
   --max: 73.75em;
 }
@@ -29,7 +26,6 @@ a {
   color: inherit;
 }
 
-/* Visible keyboard focus everywhere; mouse/touch users don't see it. */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -59,8 +55,6 @@ select:focus-visible,
   transform: translateY(0);
 }
 
-/* Skip-link landmarks receive focus programmatically; they don't need a
-   visible ring on the whole page region, only the moved focus itself. */
 main[id='main_content']:focus {
   outline: none;
 }

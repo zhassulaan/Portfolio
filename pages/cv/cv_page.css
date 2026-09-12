@@ -16,7 +16,7 @@
   margin-bottom: 3em;
   font-size: .8125em;
   font-weight: 700;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
 }
 
 .cv_page__title {
@@ -29,7 +29,7 @@
   max-width: 30em;
   font-size: 1.0625em;
   line-height: 1.7;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
 }
 
 .cv_page__download {
@@ -37,10 +37,10 @@
   align-items: start;
   gap: .875em;
   display: flex;
-  border: 1px solid var(--theme_line);
+  border: 1px solid var(--theme-line);
   border-radius: 1.375em;
   padding: 1.75em;
-  background: var(--theme_surface);
+  background: var(--theme-surface);
 }
 
 .cv_page__download_button {
@@ -50,7 +50,7 @@
 .cv_page__view_link {
   font-size: .8125em;
   font-weight: 700;
-  color: var(--theme_accent);
+  color: var(--theme-accent);
 }
 
 .cv_page__file_meta {
@@ -59,21 +59,21 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .1em;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
 }
 
 .cv_page__signals {
   grid-template-columns: repeat(4, 1fr);
   display: grid;
-  border-top: 1px solid var(--theme_line);
-  border-bottom: 1px solid var(--theme_line);
+  border-top: 1px solid var(--theme-line);
+  border-bottom: 1px solid var(--theme-line);
 }
 
 .cv_page__signal {
   align-items: baseline;
   gap: .625em;
   display: flex;
-  border-right: 1px solid var(--theme_line);
+  border-right: 1px solid var(--theme-line);
   padding: 1.75em 1.375em;
 }
 
@@ -93,11 +93,11 @@
 .cv_page__signal span {
   font-size: .6875em;
   font-weight: 700;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
 }
 
 .cv_page__section {
-  border-bottom: 1px solid var(--theme_line);
+  border-bottom: 1px solid var(--theme-line);
   padding-block: 3.75em;
 }
 
@@ -117,10 +117,10 @@
 }
 
 .cv_page__timeline_item {
-  border: 1px solid var(--theme_line);
+  border: 1px solid var(--theme-line);
   border-radius: 1.125em;
   padding: 1.5em;
-  background: var(--theme_surface);
+  background: var(--theme-surface);
 }
 
 .cv_page__timeline_head {
@@ -148,7 +148,7 @@
 .cv_page__timeline_head small {
   font-size: .6875em;
   font-weight: 700;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
 }
 
 .cv_page__timeline_role {
@@ -161,7 +161,7 @@
   margin: 0;
   font-size: .8125em;
   line-height: 1.6;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
 }
 
 .cv_page__skills {
@@ -175,7 +175,7 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .1em;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
 }
 
 .cv_page__proof_grid {
@@ -189,11 +189,11 @@
   position: relative;
   flex-direction: column;
   display: flex;
-  border: 1px solid var(--theme_line);
+  border: 1px solid var(--theme-line);
   border-radius: 1.125em;
   min-height: 10.625em;
   padding: 1.25em;
-  background: var(--theme_surface);
+  background: var(--theme-surface);
 }
 
 .cv_page__proof_item img {
@@ -212,7 +212,7 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .12em;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
 }
 
 .cv_page__proof_item strong {
@@ -224,7 +224,7 @@
   margin: .5em 0 0;
   font-size: .6875em;
   line-height: 1.5;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
 }
 
 .cv_page__proof_item em {
@@ -233,7 +233,7 @@
   font-size: .625em;
   font-weight: 800;
   font-style: normal;
-  color: var(--theme_accent);
+  color: var(--theme-accent);
 }
 
 .cv_page__proof_link {
@@ -241,7 +241,7 @@
   transition: transform .25s ease;
   font-size: .8125em;
   font-weight: 800;
-  color: var(--theme_accent);
+  color: var(--theme-accent);
 }
 
 .cv_page__proof_link:hover {
@@ -254,10 +254,10 @@
   gap: 1.5em;
   display: flex;
   margin-top: 3.75em;
-  border: 1px solid var(--theme_line);
+  border: 1px solid var(--theme-line);
   border-radius: 1.375em;
   padding: 2.25em;
-  background: var(--theme_surface);
+  background: var(--theme-surface);
 }
 
 .cv_page__cta h2 {
@@ -267,7 +267,7 @@
 
 .cv_page__cta p {
   margin: 0;
-  color: var(--theme_muted);
+  color: var(--theme-muted);
 }
 
 .cv_page__cta_button {
@@ -282,7 +282,7 @@
     border-right: 0;
   }
   .cv_page__signal:nth-child(-n+2) {
-    border-bottom: 1px solid var(--theme_line);
+    border-bottom: 1px solid var(--theme-line);
   }
   .cv_page__proof_grid {
     grid-template-columns: repeat(2, 1fr);
