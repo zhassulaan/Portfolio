@@ -2,7 +2,7 @@ import type { RouterConfig } from '@nuxt/schema';
 
 export default <RouterConfig>{
   scrollBehavior(to, from, saved_position) {
-    // Respect the OS-level "reduce motion" preference (vestibular disorders,
+    // Respect the OS-level 'reduce motion' preference (vestibular disorders,
     // motion sensitivity) instead of always forcing a smooth animated scroll.
     const prefers_reduced_motion =
       typeof window !== 'undefined' &&

@@ -16,18 +16,16 @@ defineProps<{ project: Project }>();
       aria-hidden='true'>
       <img class='project_archive_card__image'
         :src="project.image"
-        :alt="`${project.title} interface`"
-        loading='lazy'
-      />
+        alt=''
+        loading='lazy' />
       <span class='project_archive_card__category' v-text='project.category'></span>
     </a>
 
-    <div v-else class='project_archive_card__media'>
+    <div class='project_archive_card__media' v-else>
       <img class='project_archive_card__image'
         :src="project.image"
         :alt="`${project.title} interface`"
-        loading='lazy'
-      />
+        loading='lazy' />
       <span class='project_archive_card__category' v-text='project.category'></span>
     </div>
 

@@ -15,9 +15,8 @@ defineProps<{ project: Project }>();
       aria-hidden='true'>
       <img class='selected_project_card__image'
         :src="project.image"
-        :alt="`${project.title} interface`"
-        loading='lazy'
-      />
+        alt=''
+        loading='lazy' />
       <span class='selected_project_card__category' v-text='project.category'></span>
     </a>
 

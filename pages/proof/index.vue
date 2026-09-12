@@ -62,8 +62,7 @@ useHead({
         <span>Search</span>
         <input v-model='search_query'
           type='search'
-          placeholder='Try “IELTS”, “KeyHorse”…'
-        />
+          placeholder='Try “IELTS”, “KeyHorse”…' />
       </label>
 
       <label class='proof_page__select'>
@@ -92,11 +91,10 @@ useHead({
       <div class='proof_page__grid' v-if='filtered_documents.length'>
         <ProofCard v-for='document in filtered_documents'
           :key="`${document.kind}-${document.slug}`"
-          :doc="document"
-        />
+          :doc="document" />
       </div>
 
-      <div v-else class='proof_page__empty'>
+      <div class='proof_page__empty' v-else>
         <strong>No matching documents.</strong>
         <p>Try a broader search or reset the filters.</p>
         <button class='button'

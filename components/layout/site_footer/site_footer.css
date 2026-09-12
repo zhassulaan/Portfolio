@@ -4,19 +4,19 @@
   justify-content: space-between;
   gap: 20px;
   min-height: 96px;
-  color: var(--muted);
   font-size: 11px;
+  color: var(--theme_muted);
 }
 
 .site_footer__top {
-  padding: 0;
+  transition: transform .25s ease;
   border: 0;
+  padding: 0;
   background: transparent;
-  color: var(--ink);
+  cursor: pointer;
   font: inherit;
   font-weight: 800;
-  cursor: pointer;
-  transition: transform .25s ease;
+  color: var(--theme_ink);
 }
 
 .site_footer__top:hover {

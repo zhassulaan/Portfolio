@@ -1,61 +1,8 @@
+/* Color tokens live in assets/css/theme.css (loaded before this file) as
+   --theme_*  custom properties. This file only holds layout tokens and
+   base element rules. */
 :root {
-  --ink: #111218;
-  --text: #111218;
-  --muted: #6a6c76;
-  --paper: #f4f2ec;
-  --surface: #fff;
-  --surface_alt: #ebe8e0;
-  --line: #d6d3ca;
-  --accent: #635bff;
-  --accent_soft: #e9e6ff;
-  --green: #66db91;
-  --dark: #101116;
-  --header_bg: rgba(244, 242, 236, .96);
-  --chip_bg: #efede7;
-  --chip_text: #555862;
-  --control_bg: #fff;
-  --nav_text: #383a43;
   --max: 1180px;
-  color-scheme: light;
-}
-
-/* Dark palette. The `data-theme` attribute is set as early as possible by an
-   inline script in nuxt.config.ts (before hydration) to avoid a flash; the
-   media query below only covers the brief no-JS / pre-script edge case. */
-:root[data-theme='dark'] {
-  --text: #eceaf2;
-  --muted: #9a9ca6;
-  --paper: #0c0d11;
-  --surface: #16171d;
-  --surface_alt: #1c1d24;
-  --line: #2a2b33;
-  --accent: #8a83ff;
-  --accent_soft: rgba(138, 131, 255, .18);
-  --header_bg: rgba(12, 13, 17, .86);
-  --chip_bg: #1e1f27;
-  --chip_text: #c7c9d1;
-  --control_bg: #16171d;
-  --nav_text: #b7b9c2;
-  color-scheme: dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']):not([data-theme='dark']) {
-    --text: #eceaf2;
-    --muted: #9a9ca6;
-    --paper: #0c0d11;
-    --surface: #16171d;
-    --surface_alt: #1c1d24;
-    --line: #2a2b33;
-    --accent: #8a83ff;
-    --accent_soft: rgba(138, 131, 255, .18);
-    --header_bg: rgba(12, 13, 17, .86);
-    --chip_bg: #1e1f27;
-    --chip_text: #c7c9d1;
-    --control_bg: #16171d;
-    --nav_text: #b7b9c2;
-    color-scheme: dark;
-  }
 }
 
 * {
@@ -68,18 +15,18 @@ html {
 }
 
 body {
-  margin: 0;
   overflow-x: hidden;
-  background: var(--paper);
-  color: var(--text);
+  transition: background .25s ease, color .25s ease;
+  margin: 0;
+  background: var(--theme_paper);
   font-family: 'DM Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
-  transition: background .25s ease, color .25s ease;
+  color: var(--theme_text);
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 /* Visible keyboard focus everywhere; mouse/touch users don't see it. */
@@ -88,7 +35,7 @@ button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 [tabindex]:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--theme_accent);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -98,14 +45,14 @@ select:focus-visible,
   z-index: 1000;
   top: 12px;
   left: 12px;
-  padding: 12px 18px;
   transform: translateY(-150%);
+  transition: transform .2s ease;
   border-radius: 10px;
-  background: var(--ink);
-  color: #fff;
+  padding: 12px 18px;
+  background: var(--theme_ink);
   font-size: 13px;
   font-weight: 700;
-  transition: transform .2s ease;
+  color: #fff;
 }
 
 .skip_link:focus {
@@ -125,14 +72,14 @@ html.has_locked_scroll body {
 
 .sr_only {
   position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
   border: 0;
+  padding: 0;
+  white-space: nowrap;
 }
 
 img {
@@ -157,18 +104,18 @@ h1, h2, h3 {
 
 .eyebrow {
   margin: 0 0 18px;
-  color: var(--muted);
   font-size: 11px;
   font-weight: 800;
-  letter-spacing: .16em;
   text-transform: uppercase;
+  letter-spacing: .16em;
+  color: var(--theme_muted);
 }
 
 .section_heading {
   display: grid;
-  grid-template-columns: 1.2fr .8fr;
-  gap: 80px;
   align-items: end;
+  gap: 80px;
+  grid-template-columns: 1.2fr .8fr;
   margin-bottom: 58px;
 }
 
@@ -181,9 +128,9 @@ h1, h2, h3 {
 .section_heading > p {
   max-width: 510px;
   margin: 0;
-  color: var(--muted);
   font-size: 17px;
   line-height: 1.7;
+  color: var(--theme_muted);
 }
 
 .button {
@@ -191,14 +138,14 @@ h1, h2, h3 {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 15px 20px;
-  border: 1px solid var(--ink);
+  transition: transform .2s ease, box-shadow .2s ease;
+  border: 1px solid var(--theme_ink);
   border-radius: 999px;
-  background: var(--ink);
-  color: #fff;
+  padding: 15px 20px;
+  background: var(--theme_ink);
   font-size: 14px;
   font-weight: 700;
-  transition: transform .2s ease, box-shadow .2s ease;
+  color: #fff;
 }
 
 .button:hover {
@@ -207,9 +154,9 @@ h1, h2, h3 {
 }
 
 .button--ghost {
-  border-color: var(--line);
+  border-color: var(--theme_line);
   background: transparent;
-  color: var(--text);
+  color: var(--theme_text);
 }
 
 .tag_list {
@@ -219,12 +166,12 @@ h1, h2, h3 {
 }
 
 .tag_list__item {
-  padding: 7px 10px;
   border-radius: 999px;
-  background: var(--chip_bg);
-  color: var(--chip_text);
+  padding: 7px 10px;
+  background: var(--theme_chip_bg);
   font-size: 11px;
   font-weight: 700;
+  color: var(--theme_chip_text);
 }
 
 .reveal {
@@ -240,8 +187,8 @@ h1, h2, h3 {
 
 @media (max-width: 900px) {
   .section_heading {
-    grid-template-columns: 1fr;
     gap: 28px;
+    grid-template-columns: 1fr;
   }
 }
 

@@ -57,8 +57,7 @@ useHead({
         <span>Search</span>
         <input v-model='search_query'
           type='search'
-          placeholder='Try “Mapbox”, “booking”, “React”…'
-        />
+          placeholder='Try “Mapbox”, “booking”, “React”…' />
       </label>
 
       <label class='projects_page__select'>
@@ -95,11 +94,10 @@ useHead({
       <div class='projects_page__grid' v-if='filtered_projects.length'>
         <ProjectArchiveCard v-for='project in filtered_projects'
           :key="project.id"
-          :project="project"
-        />
+          :project="project" />
       </div>
 
-      <div v-else class='projects_page__empty'>
+      <div class='projects_page__empty' v-else>
         <strong>No matching projects.</strong>
         <p>Try a broader search or reset the filters.</p>
         <button class='button'

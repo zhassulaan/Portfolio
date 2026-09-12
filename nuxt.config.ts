@@ -3,6 +3,7 @@ export default defineNuxtConfig({
     enabled: false,
   },
   css: [
+    '@/assets/css/theme.css',
     '@/assets/css/base.css',
   ],
   app: {

@@ -1,0 +1,75 @@
+:root {
+  --theme_ink: #111218;
+  --theme_text: #111218;
+  --theme_muted: #6a6c76;
+  --theme_paper: #f4f2ec;
+  --theme_surface: #fff;
+  --theme_surface_alt: #ebe8e0;
+  --theme_line: #d6d3ca;
+  --theme_accent: #635bff;
+  --theme_accent_soft: #e9e6ff;
+  --theme_green: #66db91;
+  --theme_dark: #101116;
+  --theme_header_bg: rgba(244, 242, 236, .96);
+  --theme_chip_bg: #efede7;
+  --theme_chip_text: #555862;
+  --theme_control_bg: #fff;
+  --theme_nav_text: #383a43;
+  --theme_case_study_border: #d0cdc4;
+  --theme_case_study_surface: #f8f6f1;
+  --theme_case_study_rule: #d7d4cc;
+  --theme_case_study_label: #92949b;
+  --theme_case_study_story: #50525b;
+  --theme_controls_bg: rgba(246, 244, 239, .94);
+  --theme_projects_motion: #12a874;
+  --theme_projects_motion_soft: rgba(18, 168, 116, .07);
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --theme_text: #eceaf2;
+  --theme_muted: #9a9ca6;
+  --theme_paper: #0c0d11;
+  --theme_surface: #16171d;
+  --theme_surface_alt: #1c1d24;
+  --theme_line: #2a2b33;
+  --theme_accent: #8a83ff;
+  --theme_accent_soft: rgba(138, 131, 255, .18);
+  --theme_header_bg: rgba(12, 13, 17, .86);
+  --theme_chip_bg: #1e1f27;
+  --theme_chip_text: #c7c9d1;
+  --theme_control_bg: #16171d;
+  --theme_nav_text: #b7b9c2;
+  --theme_case_study_border: var(--theme_line);
+  --theme_case_study_surface: var(--theme_surface);
+  --theme_case_study_rule: var(--theme_line);
+  --theme_case_study_label: var(--theme_muted);
+  --theme_case_study_story: var(--theme_muted);
+  --theme_controls_bg: rgba(12, 13, 17, .88);
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']):not([data-theme='dark']) {
+    --theme_text: #eceaf2;
+    --theme_muted: #9a9ca6;
+    --theme_paper: #0c0d11;
+    --theme_surface: #16171d;
+    --theme_surface_alt: #1c1d24;
+    --theme_line: #2a2b33;
+    --theme_accent: #8a83ff;
+    --theme_accent_soft: rgba(138, 131, 255, .18);
+    --theme_header_bg: rgba(12, 13, 17, .86);
+    --theme_chip_bg: #1e1f27;
+    --theme_chip_text: #c7c9d1;
+    --theme_control_bg: #16171d;
+    --theme_nav_text: #b7b9c2;
+    --theme_case_study_border: var(--theme_line);
+    --theme_case_study_surface: var(--theme_surface);
+    --theme_case_study_rule: var(--theme_line);
+    --theme_case_study_label: var(--theme_muted);
+    --theme_case_study_story: var(--theme_muted);
+    --theme_controls_bg: rgba(12, 13, 17, .88);
+    color-scheme: dark;
+  }
+}
