@@ -1,0 +1,1 @@
+import{f as a,o as t,c as e,F as o,n as r,t as _}from"./entry.DPjSWd8p.js";const i={class:"tag_list"},l=["textContent"],u=a({__name:"tag_list",props:{items:{}},setup(c){return(n,p)=>(t(),e("div",i,[(t(!0),e(o,null,r(n.items,s=>(t(),e("span",{class:"tag_list__item",key:s,textContent:_(s)},null,8,l))),128))]))}});export{u as _};
