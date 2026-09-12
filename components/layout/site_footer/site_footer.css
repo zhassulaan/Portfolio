@@ -1,0 +1,32 @@
+.site_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 96px;
+  font-size: 11px;
+  color: var(--theme-muted);
+}
+
+.site_footer__top {
+  transition: transform .25s ease;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  color: var(--theme-ink);
+}
+
+.site_footer__top:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .site_footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-block: 28px;
+  }
+}

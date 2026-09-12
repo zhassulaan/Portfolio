@@ -1,0 +1,226 @@
+/* Color tokens live in assets/css/theme.css (loaded before this file) as
+   --theme-*  custom properties. This file only holds layout tokens and
+   base element rules. */
+:root {
+  --max: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 112px;
+}
+
+body {
+  overflow-x: hidden;
+  transition: background .25s ease, color .25s ease;
+  margin: 0;
+  background: var(--theme-paper);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: var(--theme-text);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Visible keyboard focus everywhere; mouse/touch users don't see it. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid var(--theme-accent);
+  outline-offset: 3px;
+}
+
+.skip_link {
+  position: fixed;
+  z-index: 1000;
+  top: 12px;
+  left: 12px;
+  transform: translateY(-150%);
+  transition: transform .2s ease;
+  border-radius: 10px;
+  padding: 12px 18px;
+  background: var(--theme-ink);
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.skip_link:focus {
+  transform: translateY(0);
+}
+
+/* Skip-link landmarks receive focus programmatically; they don't need a
+   visible ring on the whole page region, only the moved focus itself. */
+main[id='main_content']:focus {
+  outline: none;
+}
+
+html.has_locked_scroll,
+html.has_locked_scroll body {
+  overflow: hidden;
+}
+
+.sr_only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: -.045em;
+}
+
+.wrap {
+  width: min(calc(100% - 48px), var(--max));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: 118px;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  color: var(--theme-muted);
+}
+
+.section_heading {
+  display: grid;
+  align-items: end;
+  gap: 80px;
+  grid-template-columns: 1.2fr .8fr;
+  margin-bottom: 58px;
+}
+
+.section_heading h2 {
+  max-width: 760px;
+  font-size: clamp(38px, 5.4vw, 68px);
+  line-height: 1.02;
+}
+
+.section_heading > p {
+  max-width: 510px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--theme-muted);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform .2s ease, box-shadow .2s ease;
+  border: 1px solid var(--theme-ink);
+  border-radius: 999px;
+  padding: 15px 20px;
+  background: var(--theme-ink);
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(17, 18, 24, .12);
+}
+
+.button--ghost {
+  border-color: var(--theme-line);
+  background: transparent;
+  color: var(--theme-text);
+}
+
+.tag_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.tag_list__item {
+  border-radius: 999px;
+  padding: 7px 10px;
+  background: var(--theme-chip_bg);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--theme-chip_text);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .7s cubic-bezier(.2, .7, .2, 1), transform .7s cubic-bezier(.2, .7, .2, 1);
+}
+
+.reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .section_heading {
+    gap: 28px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    width: min(calc(100% - 28px), var(--max));
+  }
+  .section {
+    padding-block: 82px;
+  }
+  .section_heading {
+    margin-bottom: 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+[id] {
+  scroll-margin-top: 112px;
+}

@@ -1,0 +1,9 @@
+.case_studies_section {
+  background: var(--theme-surface_alt);
+  transition: background .25s ease;
+}
+
+.case_studies_section__list {
+  display: grid;
+  gap: 18px;
+}
