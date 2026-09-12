@@ -33,7 +33,7 @@ useHead({
 </script>
 
 <template>
-  <main class='projects_page'>
+  <main class='projects_page' id='main_content' tabindex='-1'>
     <section class='projects_page__hero wrap'>
       <div v-reveal class='projects_page__heading'>
         <NuxtLink class='projects_page__back' to='/'>

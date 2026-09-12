@@ -1,9 +1,11 @@
 <script setup lang='ts'>
 import { nav_items } from '@/data/portfolio';
+import ThemeToggle from '@/components/ui/theme_toggle/theme_toggle.vue';
 
 const route = useRoute();
 
 const active_section = ref('');
+const is_mobile_nav_open = ref(false);
 const section_ids = nav_items
   .filter((item) => item.href.startsWith('/#'))
   .map((item) => item.href.slice(2));
@@ -11,11 +13,11 @@ const section_ids = nav_items
 let observer: IntersectionObserver | null = null;
 
 const is_nav_item_active = (href: string) => {
-  if (href === '/projects') {
-    return route.path === '/projects';
+  if (!href.startsWith('/#')) {
+    return route.path === href;
   }
 
-  if (!href.startsWith('/#') || route.path !== '/') {
+  if (route.path !== '/') {
     return false;
   }
 
@@ -91,6 +93,20 @@ const observe_sections = () => {
   sync_active_section();
 };
 
+const close_mobile_nav = () => {
+  is_mobile_nav_open.value = false;
+};
+
+const toggle_mobile_nav = () => {
+  is_mobile_nav_open.value = !is_mobile_nav_open.value;
+};
+
+const handle_keydown = (event: KeyboardEvent) => {
+  if (event.key === 'Escape' && is_mobile_nav_open.value) {
+    close_mobile_nav();
+  }
+};
+
 onMounted(() => {
   observe_sections();
 
@@ -99,16 +115,24 @@ onMounted(() => {
     sync_active_section,
     { passive: true },
   );
+
+  window.addEventListener('keydown', handle_keydown);
 });
 
 watch(
   () => route.fullPath,
   async () => {
+    close_mobile_nav();
+
     await nextTick();
 
     observe_sections();
   },
 );
+
+watch(is_mobile_nav_open, (is_open) => {
+  document.documentElement.classList.toggle('has_locked_scroll', is_open);
+});
 
 onBeforeUnmount(() => {
   observer?.disconnect();
@@ -117,6 +141,9 @@ onBeforeUnmount(() => {
     'scroll',
     sync_active_section,
   );
+
+  window.removeEventListener('keydown', handle_keydown);
+  document.documentElement.classList.remove('has_locked_scroll');
 });
 </script>
 
@@ -134,15 +161,57 @@ onBeforeUnmount(() => {
           :class="{ 'site_header__nav_link--active': is_nav_item_active(item.href) }"
           v-for='item in nav_items'
           :key='item.href'
-          :to='item.href'>
+          :to='item.href'
+          :aria-current="is_nav_item_active(item.href) ? 'page' : null">
           <span class='site_header__nav_text' v-text='item.label'></span>
         </NuxtLink>
       </nav>
 
-      <a class='site_header__cta' href='mailto:zhassulan.serikuly@gmail.com'>
-        <span class='site_header__cta_text' v-text="'Start a conversation'"></span>
-        <i class='site_header__cta_arrow' v-text="'↗'"></i>
-      </a>
+      <div class='site_header__actions'>
+        <ThemeToggle class='site_header__theme' />
+
+        <a class='site_header__cta' href='mailto:zhassulan.serikuly@gmail.com'>
+          <span class='site_header__cta_text' v-text="'Start a conversation'"></span>
+          <i class='site_header__cta_arrow' aria-hidden='true' v-text="'↗'"></i>
+        </a>
+
+        <button class='site_header__burger'
+          type='button'
+          :aria-expanded="is_mobile_nav_open"
+          aria-controls='mobile_nav'
+          :aria-label="is_mobile_nav_open ? 'Close menu' : 'Open menu'"
+          v-on:click="toggle_mobile_nav">
+          <span class='site_header__burger_box' :class="{ 'site_header__burger_box--open': is_mobile_nav_open }">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class='site_header__mobile_nav'
+      id='mobile_nav'
+      v-show='is_mobile_nav_open'>
+      <nav class='site_header__mobile_links' aria-label='Mobile navigation'>
+        <NuxtLink class='site_header__mobile_link'
+          :class="{ 'site_header__mobile_link--active': is_nav_item_active(item.href) }"
+          v-for='item in nav_items'
+          :key='item.href'
+          :to='item.href'
+          :aria-current="is_nav_item_active(item.href) ? 'page' : null"
+          v-on:click="close_mobile_nav">
+          <span v-text='item.label'></span>
+        </NuxtLink>
+      </nav>
+
+      <div class='site_header__mobile_footer'>
+        <ThemeToggle />
+
+        <a class='button site_header__mobile_cta' href='mailto:zhassulan.serikuly@gmail.com'>
+          Start a conversation ↗
+        </a>
+      </div>
     </div>
   </header>
 </template>

@@ -13,6 +13,7 @@ useHead({
 
 <template>
   <div class='site_shell'>
+    <a class='skip_link' href='#main_content'>Skip to content</a>
     <SiteHeader />
     <NuxtPage />
     <SiteFooter />

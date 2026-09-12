@@ -28,6 +28,25 @@ export default defineNuxtConfig({
           href: '/favicon.ico',
         },
       ],
+      // Resolves and applies the theme before first paint so switching
+      // between light/dark/auto never causes a flash of the wrong theme.
+      script: [
+        {
+          key: 'theme-init',
+          innerHTML: `(function () {
+            try {
+              var stored = window.localStorage.getItem('zs_theme');
+              var preference = (stored === 'light' || stored === 'dark' || stored === 'auto') ? stored : 'auto';
+              var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+              var resolved = preference === 'auto' ? (prefersDark ? 'dark' : 'light') : preference;
+              document.documentElement.setAttribute('data-theme', resolved);
+            } catch (error) {
+              document.documentElement.setAttribute('data-theme', 'light');
+            }
+          })();`,
+          tagPosition: 'head',
+        },
+      ],
     },
   },
 });

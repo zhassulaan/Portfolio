@@ -21,7 +21,7 @@ useHead({
 </script>
 
 <template>
-  <main class='site_shell__main' id='top'>
+  <main class='site_shell__main' id='main_content' tabindex='-1'>
     <HeroSection />
     <SignalSection />
     <CaseStudiesSection />

@@ -1,5 +1,6 @@
 .case_studies_section {
-  background: #ebe8e0;
+  background: var(--surface_alt);
+  transition: background .25s ease;
 }
 
 .case_studies_section__list {

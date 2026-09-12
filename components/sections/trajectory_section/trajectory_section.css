@@ -4,7 +4,8 @@
   border: 1px solid var(--line);
   border-radius: 22px;
   overflow: hidden;
-  background: #fff;
+  background: var(--surface);
+  transition: background .25s ease;
 }
 
 .trajectory_section__company {
@@ -25,14 +26,17 @@
 }
 
 .trajectory_section__company_head > span {
-  color: #9b9da5;
+  color: var(--muted);
   font: 800 10px 'Manrope';
 }
 
 .trajectory_section__company_head img {
   max-width: 105px;
   max-height: 42px;
+  padding: 5px 8px;
+  border-radius: 8px;
   object-fit: contain;
+  background: #fff;
   filter: saturate(.85);
 }
 
@@ -79,6 +83,19 @@
   line-height: 1.65;
 }
 
+.trajectory_section__proof_link {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 800;
+  transition: transform .25s ease;
+}
+
+.trajectory_section__proof_link:hover {
+  transform: translateX(3px);
+}
+
 .trajectory_section__proof_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -93,19 +110,23 @@
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: 18px;
-  background: #fff;
+  background: var(--surface);
+  transition: background .25s ease;
 }
 
 .trajectory_section__proof_item img {
   width: 70px;
   height: 34px;
   margin-bottom: 20px;
+  padding: 4px 6px;
+  border-radius: 6px;
   object-fit: contain;
   object-position: left center;
+  background: #fff;
 }
 
 .trajectory_section__proof_item span {
-  color: #9a9ca4;
+  color: var(--muted);
   font-size: 9px;
   font-weight: 800;
   letter-spacing: .12em;

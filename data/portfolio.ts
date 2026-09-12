@@ -30,12 +30,12 @@ import asia_credit_bank_image from '@/assets/images/projects/asia-credit-bank.pn
 import ikeruen_image from '@/assets/images/projects/ikeruen.png';
 import rakhat_image from '@/assets/images/projects/rakhat.png';
 import m1_service_image from '@/assets/images/projects/m1-service.png';
-import type { CaseStudy, Milestone, Principle, ProofItem, Project, Signal, Surface } from '@/types/portfolio';
+import type { CaseStudy, Milestone, Principle, ProofDocument, ProofItem, Project, Signal, Surface } from '@/types/portfolio';
 
 export const portfolio_assets = { portrait, /*cv*/ };
 
 export const nav_items = [
-  { label: 'Signals', href: '/#signals' }, { label: 'Cases', href: '/#cases' }, { label: 'Builds', href: '/#builds' }, { label: 'Projects', href: '/projects' }, { label: 'Path', href: '/#path' }, { label: 'Contact', href: '/#contact' },
+  { label: 'Signals', href: '/#signals' }, { label: 'Cases', href: '/#cases' }, { label: 'Builds', href: '/#builds' }, { label: 'Projects', href: '/projects' }, { label: 'Proof', href: '/proof' }, { label: 'Path', href: '/#path' }, { label: 'Contact', href: '/#contact' },
 ];
 
 export const signals: Signal[] = [
@@ -129,5 +129,45 @@ export const milestones: Milestone[] = [
 ];
 
 export const proof_items: ProofItem[] = [
-  { label: 'Education', value: 'Information Systems', note: 'Suleyman Demirel University · 2018–2022 · GPA 3.72 / 4.0', logo: sdu_logo }, { label: 'English', value: 'IELTS 7.0', note: 'Academic IELTS · CEFR C1 result' }, { label: 'Recognition', value: 'Silver Medal', note: 'INFOMATRIX-ASIA 2018 — International Computer Project Competition.' }, { label: 'Reference', value: 'KeyHorse', note: 'Signed recommendation from company leadership', /* href: recommendation_keyhorse */ },
+  { label: 'Education', value: 'Information Systems', note: 'Suleyman Demirel University · 2018–2022 · GPA 3.72 / 4.0', logo: sdu_logo }, { label: 'English', value: 'IELTS 7.0', note: 'Academic IELTS · CEFR C1 result', href: '/certificate/ielts' }, { label: 'Recognition', value: 'Silver Medal', note: 'INFOMATRIX-ASIA 2018 — International Computer Project Competition.', href: '/certificate/infomatrix-silver-medal' }, { label: 'Reference', value: 'KeyHorse', note: 'Signed recommendation from company leadership', href: '/recommendation/keyhorse' },
+];
+
+// One source of truth for the /proof archive and its detail pages
+// (pages/certificate/[slug].vue, pages/recommendation/[slug].vue).
+// See PROOF_GUIDE.md for how to attach the real scanned file to an entry.
+export const proof_documents: ProofDocument[] = [
+  {
+    slug: 'ielts',
+    kind: 'certificate',
+    title: 'IELTS Academic 7.0/9.0',
+    issuer: 'British Council',
+    date: '2023',
+    description: 'Academic IELTS result (CEFR C1) — evidence of full working professional English proficiency for international, remote-first engineering roles.',
+  },
+  {
+    slug: 'chinese-proficiency',
+    kind: 'certificate',
+    title: 'Chinese Language Proficiency',
+    issuer: 'Language proficiency certificate',
+    date: '2023',
+    description: 'Basic Chinese language proficiency, developed alongside professional work with cross-border product and business teams.',
+  },
+  {
+    slug: 'infomatrix-silver-medal',
+    kind: 'certificate',
+    title: 'Silver Medal — INFOMATRIX-ASIA 2018',
+    issuer: 'INFOMATRIX-ASIA',
+    date: '2018',
+    description: 'International Computer Project Competition recognition for an early software engineering project.',
+  },
+  {
+    slug: 'keyhorse',
+    kind: 'recommendation',
+    title: 'Recommendation Letter — KeyHorse',
+    issuer: 'Adilet Kentbayev, Company Head — KeyHorse LLP',
+    date: 'Issued 21 Aug 2026',
+    description: 'A signed recommendation on KeyHorse letterhead recommending Zhassulan for a senior-level engineering role.',
+    file: '/files/recommendations/keyhorse.pdf',
+    file_type: 'pdf',
+  },
 ];

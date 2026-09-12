@@ -35,6 +35,9 @@ import { milestones, proof_items } from '@/data/portfolio';
         <p class='eyebrow'>Proof, not decoration</p>
         <h3>Things that can be checked.</h3>
         <p>Education, language evidence, competition recognition and a signed recommendation — kept separate from the engineering story.</p>
+        <NuxtLink class='trajectory_section__proof_link' to='/proof'>
+          View all certificates &amp; recommendations ↗
+        </NuxtLink>
       </div>
 
       <div class='trajectory_section__proof_grid'>
