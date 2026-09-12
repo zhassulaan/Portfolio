@@ -1,5 +1,4 @@
 import portrait from '@/assets/images/main.png';
-// import cv from '@/assets/files/Zhassulan_Serikuly-CV.pdf';
 // import recommendation_keyhorse from '@/assets/files/recommendation_keyhorse.pdf';
 import ciklum_logo from '@/assets/logos/ciklum.svg';
 import keyhorse_logo from '@/assets/logos/keyhorse.svg';
@@ -32,10 +31,12 @@ import rakhat_image from '@/assets/images/projects/rakhat.png';
 import m1_service_image from '@/assets/images/projects/m1-service.png';
 import type { CaseStudy, Milestone, Principle, ProofDocument, ProofItem, Project, Signal, Surface } from '@/types/portfolio';
 
-export const portfolio_assets = { portrait, /*cv*/ };
+// Served straight from /public — a static file needs no build-time import,
+// unlike the images/logos above which go through Vite's asset pipeline.
+export const portfolio_assets = { portrait, cv: '/files/Zhassulan_Serikuly-CV.pdf' };
 
 export const nav_items = [
-  { label: 'Signals', href: '/#signals' }, { label: 'Cases', href: '/#cases' }, { label: 'Builds', href: '/#builds' }, { label: 'Projects', href: '/projects' }, { label: 'Proof', href: '/proof' }, { label: 'Path', href: '/#path' }, { label: 'Contact', href: '/#contact' },
+  { label: 'Signals', href: '/#signals' }, { label: 'Cases', href: '/#cases' }, { label: 'Builds', href: '/#builds' }, { label: 'Projects', href: '/projects' }, { label: 'Proof', href: '/proof' }, { label: 'CV', href: '/cv' }, { label: 'Path', href: '/#path' }, { label: 'Contact', href: '/#contact' },
 ];
 
 export const signals: Signal[] = [

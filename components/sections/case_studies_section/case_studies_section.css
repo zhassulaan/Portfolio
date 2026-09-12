@@ -5,5 +5,5 @@
 
 .case_studies_section__list {
   display: grid;
-  gap: 18px;
+  gap: 1.125em;
 }

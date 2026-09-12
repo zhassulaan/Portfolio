@@ -6,8 +6,17 @@ const STORAGE_KEY = 'zs_a11y_settings';
 const font_size = ref<FontSize>('medium');
 const image_mode = ref<ImageMode>('show');
 const text_to_speech = ref(false);
+// Whether speech synthesis is available at all. This starts `false` (matching
+// SSR, where `window` doesn't exist) and only flips to `true` once we've
+// actually checked on the client — as a plain `typeof window !== 'undefined'`
+// function called directly from the template, this would return different
+// results on the server and the client and Vue would hydrate with a
+// mismatched DOM (the text-to-speech section present on the client but
+// missing from the server-rendered HTML).
+const speech_supported = ref(false);
 
 let is_initialized = false;
+let keep_alive_timer: ReturnType<typeof setInterval> | null = null;
 
 interface StoredSettings {
   font_size?: FontSize;
@@ -67,7 +76,16 @@ const apply_image_mode = (value: ImageMode) => {
   document.documentElement.setAttribute('data-a11y-images', value);
 };
 
+const clear_keep_alive = () => {
+  if (keep_alive_timer !== null) {
+    clearInterval(keep_alive_timer);
+    keep_alive_timer = null;
+  }
+};
+
 const stop_speaking = () => {
+  clear_keep_alive();
+
   if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
     window.speechSynthesis.cancel();
   }
@@ -82,13 +100,33 @@ const speak_main_content = () => {
   const text = main.innerText.trim();
 
   window.speechSynthesis.cancel();
+  clear_keep_alive();
 
   if (!text) {
     return;
   }
 
   const utterance = new SpeechSynthesisUtterance(text);
+
+  utterance.addEventListener('end', clear_keep_alive);
+  utterance.addEventListener('error', clear_keep_alive);
+
   window.speechSynthesis.speak(utterance);
+
+  // Chrome silently stops speaking after ~15 seconds on longer utterances
+  // (a long-standing bug, not a setting) unless the utterance is paused and
+  // resumed periodically. A whole page's main content easily runs past that,
+  // so without this a visitor who turns speech on would hear it cut off
+  // partway through and look broken.
+  keep_alive_timer = setInterval(() => {
+    if (!window.speechSynthesis.speaking) {
+      clear_keep_alive();
+      return;
+    }
+
+    window.speechSynthesis.pause();
+    window.speechSynthesis.resume();
+  }, 10000);
 };
 
 const set_font_size = (value: FontSize) => {
@@ -134,10 +172,8 @@ const initialize = () => {
 
   apply_font_size(stored.font_size ?? 'medium');
   apply_image_mode(stored.image_mode ?? 'show');
+  speech_supported.value = 'speechSynthesis' in window;
 };
-
-const is_speech_supported = () =>
-  typeof window !== 'undefined' && 'speechSynthesis' in window;
 
 export const useAccessibility = () => {
   initialize();
@@ -146,11 +182,11 @@ export const useAccessibility = () => {
     font_size,
     image_mode,
     text_to_speech,
+    speech_supported,
     set_font_size,
     set_image_mode,
     set_text_to_speech,
     stop_speaking,
     reset_all,
-    is_speech_supported,
   };
 };

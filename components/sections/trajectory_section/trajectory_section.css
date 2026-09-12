@@ -2,15 +2,15 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   border: 1px solid var(--theme-line);
-  border-radius: 22px;
+  border-radius: 1.375em;
   overflow: hidden;
   background: var(--theme-surface);
   transition: background .25s ease;
 }
 
 .trajectory_section__company {
-  min-height: 315px;
-  padding: 22px;
+  min-height: 19.6875em;
+  padding: 1.375em;
   border-right: 1px solid var(--theme-line);
 }
 
@@ -22,60 +22,60 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 74px;
+  min-height: 4.625em;
 }
 
 .trajectory_section__company_head > span {
   color: var(--theme-muted);
-  font: 800 10px 'Manrope';
+  font: 800 .625em 'Manrope';
 }
 
 .trajectory_section__company_head img {
-  max-width: 105px;
-  max-height: 42px;
-  padding: 5px 8px;
-  border-radius: 8px;
+  max-width: 6.5625em;
+  max-height: 2.625em;
+  padding: .3125em .5em;
+  border-radius: .5em;
   object-fit: contain;
   background: #fff;
   filter: saturate(.85);
 }
 
 .trajectory_section__company_body {
-  margin-top: 65px;
+  margin-top: 4.0625em;
 }
 
 .trajectory_section__company_body small {
   color: var(--theme-muted);
-  font-size: 10px;
+  font-size: .625em;
   font-weight: 800;
   letter-spacing: .1em;
   text-transform: uppercase;
 }
 
 .trajectory_section__company_body h3 {
-  margin: 10px 0 12px;
-  font-size: 23px;
+  margin: .625em 0 .75em;
+  font-size: 1.4375em;
   line-height: 1.08;
 }
 
 .trajectory_section__company_body p {
   margin: 0;
   color: var(--theme-muted);
-  font-size: 12px;
+  font-size: .75em;
   line-height: 1.6;
 }
 
 .trajectory_section__proof {
   display: grid;
   grid-template-columns: .65fr 1.35fr;
-  gap: 60px;
-  margin-top: 80px;
-  padding-top: 60px;
+  gap: 3.75em;
+  margin-top: 5em;
+  padding-top: 3.75em;
   border-top: 1px solid var(--theme-line);
 }
 
 .trajectory_section__proof_intro h3 {
-  font-size: 34px;
+  font-size: 2.125em;
 }
 
 .trajectory_section__proof_intro > p:last-child {
@@ -85,41 +85,41 @@
 
 .trajectory_section__proof_link {
   display: inline-block;
-  margin-top: 18px;
+  margin-top: 1.125em;
   color: var(--theme-accent);
-  font-size: 13px;
+  font-size: .8125em;
   font-weight: 800;
   transition: transform .25s ease;
 }
 
 .trajectory_section__proof_link:hover {
-  transform: translateX(3px);
+  transform: translateX(.1875em);
 }
 
 .trajectory_section__proof_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: .75em;
 }
 
 .trajectory_section__proof_item {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 180px;
-  padding: 22px;
+  min-height: 11.25em;
+  padding: 1.375em;
   border: 1px solid var(--theme-line);
-  border-radius: 18px;
+  border-radius: 1.125em;
   background: var(--theme-surface);
   transition: background .25s ease;
 }
 
 .trajectory_section__proof_item img {
-  width: 70px;
-  height: 34px;
-  margin-bottom: 20px;
-  padding: 4px 6px;
-  border-radius: 6px;
+  width: 4.375em;
+  height: 2.125em;
+  margin-bottom: 1.25em;
+  padding: .25em .375em;
+  border-radius: .375em;
   object-fit: contain;
   object-position: left center;
   background: #fff;
@@ -127,29 +127,29 @@
 
 .trajectory_section__proof_item span {
   color: var(--theme-muted);
-  font-size: 9px;
+  font-size: .5625em;
   font-weight: 800;
   letter-spacing: .12em;
   text-transform: uppercase;
 }
 
 .trajectory_section__proof_item strong {
-  margin-top: 8px;
-  font: 800 22px 'Manrope';
+  margin-top: .5em;
+  font: 800 1.375em 'Manrope';
 }
 
 .trajectory_section__proof_item p {
-  margin: 8px 0 0;
+  margin: .5em 0 0;
   color: var(--theme-muted);
-  font-size: 12px;
+  font-size: .75em;
   line-height: 1.55;
 }
 
 .trajectory_section__proof_item em {
   margin-top: auto;
-  padding-top: 16px;
+  padding-top: 1em;
   color: var(--theme-accent);
-  font-size: 11px;
+  font-size: .6875em;
   font-style: normal;
   font-weight: 800;
 }
@@ -166,7 +166,7 @@
   }
   .trajectory_section__proof {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 1.875em;
   }
 }
 
@@ -175,7 +175,7 @@
     grid-template-columns: 1fr;
   }
   .trajectory_section__company {
-    min-height: 250px;
+    min-height: 15.625em;
     border-right: 0;
     border-bottom: 1px solid var(--theme-line);
   }
@@ -183,7 +183,7 @@
     border-bottom: 0;
   }
   .trajectory_section__company_body {
-    margin-top: 35px;
+    margin-top: 2.1875em;
   }
   .trajectory_section__proof_grid {
     grid-template-columns: 1fr;

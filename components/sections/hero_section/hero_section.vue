@@ -25,12 +25,11 @@ import { portfolio_assets } from '@/data/portfolio';
         <a class='button' href='#cases'>
           Open the notebook <span aria-hidden='true'>↓</span>
         </a>
-        <a class='button button--ghost'
-          :href="portfolio_assets.cv"
-          aria-label='Download CV as PDF'
-          download>
+        <NuxtLink class='button button--ghost'
+          to='/cv'
+          aria-label='View and download CV'>
           CV / PDF
-        </a>
+        </NuxtLink>
       </div>
 
       <div class='hero_section__socials' aria-label='Social links'>
@@ -68,8 +67,7 @@ import { portfolio_assets } from '@/data/portfolio';
       <div class='hero_section__portrait_frame'>
         <img class='hero_section__portrait'
           :src="portfolio_assets.portrait"
-          alt='Zhassulan Serikuly'
-        />
+          alt='Zhassulan Serikuly' />
       </div>
 
       <div class='hero_section__signal hero_section__signal--top'>

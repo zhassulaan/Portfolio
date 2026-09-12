@@ -7,12 +7,12 @@ const {
   font_size,
   image_mode,
   text_to_speech,
+  speech_supported,
   set_font_size,
   set_image_mode,
   set_text_to_speech,
   stop_speaking,
   reset_all,
-  is_speech_supported,
 } = useAccessibility();
 
 const is_open = ref(false);
@@ -207,7 +207,7 @@ watch(
         </div>
       </fieldset>
 
-      <fieldset class='accessibility_panel__section' v-if='is_speech_supported()'>
+      <fieldset class='accessibility_panel__section' v-if='speech_supported'>
         <legend>Text-to-speech</legend>
         <div class='accessibility_panel__options' role='group' aria-label='Text-to-speech'>
           <button class='accessibility_panel__option'

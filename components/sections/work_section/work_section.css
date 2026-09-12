@@ -1,7 +1,7 @@
 .work_section__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  gap: 1.125em;
 }
 
 @media (max-width: 760px) {

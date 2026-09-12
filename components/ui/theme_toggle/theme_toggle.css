@@ -1,10 +1,10 @@
 .theme_toggle {
   display: inline-flex;
   align-items: center;
-  gap: 2px;
+  gap: .125em;
   border: 1px solid var(--theme-line);
-  border-radius: 999px;
-  padding: 3px;
+  border-radius: 62.4375em;
+  padding: .1875em;
   background: var(--theme-surface);
 }
 
@@ -12,8 +12,8 @@
   place-items: center;
   display: grid;
   transition: background .2s ease, color .2s ease;
-  width: 30px;
-  height: 30px;
+  width: 1.875em;
+  height: 1.875em;
   border: 0;
   border-radius: 50%;
   background: transparent;
@@ -22,7 +22,7 @@
 }
 
 .theme_toggle__icon {
-  font-size: 14px;
+  font-size: .875em;
   line-height: 1;
 }
 

@@ -1,8 +1,8 @@
 .accessibility_panel__toggle {
   position: fixed;
   z-index: 900;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1.25em;
+  right: 1.25em;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -10,36 +10,36 @@
   box-shadow: 0 10px 24px rgba(17, 18, 24, .22);
   border: 0;
   border-radius: 50%;
-  width: 52px;
-  height: 52px;
+  width: 3.25em;
+  height: 3.25em;
   background: var(--theme-ink);
   cursor: pointer;
-  font-size: 22px;
+  font-size: 1.375em;
   color: #fff;
 }
 
 .accessibility_panel__toggle:hover {
-  transform: translateY(-2px);
+  transform: translateY(-.125em);
   box-shadow: 0 14px 30px rgba(17, 18, 24, .28);
 }
 
 .accessibility_panel {
   position: fixed;
   z-index: 900;
-  bottom: 84px;
-  right: 20px;
+  bottom: 5.25em;
+  right: 1.25em;
   opacity: 0;
-  transform: translateY(12px);
+  transform: translateY(.75em);
   pointer-events: none;
   visibility: hidden;
   overflow-y: auto;
   transition: opacity .2s ease, transform .2s ease, visibility .2s;
   box-shadow: 0 24px 48px rgba(17, 18, 24, .24);
   border: 1px solid var(--theme-line);
-  border-radius: 18px;
-  width: min(320px, calc(100vw - 40px));
-  max-height: min(560px, calc(100vh - 120px));
-  padding: 18px;
+  border-radius: 1.125em;
+  width: min(20em, calc(100vw - 2.5em));
+  max-height: min(35em, calc(100vh - 7.5em));
+  padding: 1.125em;
   background: var(--theme-surface);
   color: var(--theme-text);
 }
@@ -54,29 +54,29 @@
 .accessibility_panel__header {
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: .75em;
   display: flex;
-  margin-bottom: 14px;
+  margin-bottom: .875em;
 }
 
 .accessibility_panel__header h2 {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 800;
 }
 
 .accessibility_panel__header_actions {
   align-items: center;
-  gap: 8px;
+  gap: .5em;
   display: flex;
 }
 
 .accessibility_panel__reset {
   border: 1px solid var(--theme-line);
-  border-radius: 999px;
-  padding: 6px 12px;
+  border-radius: 62.4375em;
+  padding: .375em .75em;
   background: var(--theme-control_bg);
   cursor: pointer;
-  font-size: 12px;
+  font-size: .75em;
   font-weight: 700;
   color: var(--theme-text);
 }
@@ -91,11 +91,11 @@
   display: flex;
   border: 1px solid var(--theme-line);
   border-radius: 50%;
-  width: 28px;
-  height: 28px;
+  width: 1.75em;
+  height: 1.75em;
   background: var(--theme-control_bg);
   cursor: pointer;
-  font-size: 13px;
+  font-size: .8125em;
   color: var(--theme-text);
 }
 
@@ -104,7 +104,7 @@
 }
 
 .accessibility_panel__section {
-  margin: 0 0 16px;
+  margin: 0 0 1em;
   border: 0;
   padding: 0;
 }
@@ -114,30 +114,30 @@
 }
 
 .accessibility_panel__section legend {
-  margin-bottom: 8px;
+  margin-bottom: .5em;
   padding: 0;
-  font-size: 12px;
+  font-size: .75em;
   font-weight: 700;
   color: var(--theme-muted);
 }
 
 .accessibility_panel__options {
-  gap: 8px;
+  gap: .5em;
   grid-template-columns: repeat(2, 1fr);
   display: grid;
 }
 
 .accessibility_panel__option {
   align-items: center;
-  gap: 8px;
+  gap: .5em;
   display: flex;
   transition: border-color .18s ease, background .18s ease;
   border: 1px solid var(--theme-line);
-  border-radius: 10px;
-  padding: 8px 10px;
+  border-radius: .625em;
+  padding: .5em .625em;
   background: var(--theme-control_bg);
   cursor: pointer;
-  font-size: 12px;
+  font-size: .75em;
   font-weight: 700;
   color: var(--theme-text);
 }
@@ -156,23 +156,23 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  border-radius: 6px;
-  width: 22px;
-  height: 22px;
-  font-size: 12px;
+  border-radius: .375em;
+  width: 1.375em;
+  height: 1.375em;
+  font-size: .75em;
   font-weight: 800;
 }
 
 .accessibility_panel__option--font_small .accessibility_panel__sample {
-  font-size: 10px;
+  font-size: .625em;
 }
 
 .accessibility_panel__option--font_medium .accessibility_panel__sample {
-  font-size: 14px;
+  font-size: .875em;
 }
 
 .accessibility_panel__option--font_large .accessibility_panel__sample {
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 .accessibility_panel__option--light .accessibility_panel__sample {
@@ -196,18 +196,18 @@
 }
 
 .accessibility_panel__hint {
-  margin-top: 8px;
-  font-size: 11px;
+  margin-top: .5em;
+  font-size: .6875em;
   color: var(--theme-muted);
 }
 
 @media (max-width: 480px) {
   .accessibility_panel__toggle {
-    bottom: 14px;
-    right: 14px;
+    bottom: .875em;
+    right: .875em;
   }
   .accessibility_panel {
-    bottom: 76px;
-    right: 14px;
+    bottom: 4.75em;
+    right: .875em;
   }
 }
