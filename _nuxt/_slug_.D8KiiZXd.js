@@ -1,1 +1,0 @@
-import{f as e,g as s,h as t,i as n,j as a,o as r}from"./entry.D2a5TaaA.js";import{_ as u}from"./proof_detail_section.css.CUvgZ9zP.js";const f=e({__name:"[slug]",setup(c){const o=s().params.slug;return t(()=>{window.scrollTo({top:0,left:0,behavior:"auto"})}),(m,_)=>(r(),n(u,{kind:"recommendation",slug:a(o)},null,8,["slug"]))}});export{f as default};
