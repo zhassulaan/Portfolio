@@ -81,7 +81,7 @@ useHead({
 
       <button class='projects_page__reset'
         type='button'
-        @click="reset_filters">
+        v-on:click="reset_filters">
         Reset
       </button>
     </section>
@@ -104,7 +104,7 @@ useHead({
         <p>Try a broader search or reset the filters.</p>
         <button class='button'
           type='button'
-          @click="reset_filters">
+          v-on:click="reset_filters">
           Reset filters
         </button>
       </div>

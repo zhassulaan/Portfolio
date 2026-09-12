@@ -14,7 +14,7 @@ const scrollToTop = () => {
     <span>Nuxt 3 · Vue 3 · TypeScript</span>
     <button class='site_footer__top'
       type='button'
-      @click="scrollToTop">
+      v-on:click="scrollToTop">
       Back to top ↑
     </button>
   </footer>
