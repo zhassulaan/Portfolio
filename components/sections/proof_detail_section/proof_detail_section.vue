@@ -23,7 +23,7 @@ const kind_label = props.kind === 'certificate' ? 'Certificate' : 'Recommendatio
 <template>
   <main class='proof_detail wrap' id='main_content' tabindex='-1'>
     <NuxtLink class='proof_detail__back' to='/proof'>
-      ← All proof documents
+      <span aria-hidden='true'>←</span> All proof documents
     </NuxtLink>
 
     <p class='eyebrow' v-text='kind_label'></p>
@@ -51,7 +51,8 @@ const kind_label = props.kind === 'certificate' ? 'Certificate' : 'Recommendatio
         :href='proof_document.file'
         target='_blank'
         rel='noreferrer'>
-        Open full document ↗
+        Open full document <span aria-hidden='true'>↗</span>
+        <span class='sr_only'>(opens in a new tab)</span>
       </a>
     </div>
 

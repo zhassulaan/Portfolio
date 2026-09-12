@@ -10,7 +10,9 @@ defineProps<{ project: Project }>();
     <a class='selected_project_card__media'
       :href="project.href"
       target='_blank'
-      rel='noreferrer'>
+      rel='noreferrer'
+      tabindex='-1'
+      aria-hidden='true'>
       <img class='selected_project_card__image'
         :src="project.image"
         :alt="`${project.title} interface`"
@@ -27,8 +29,8 @@ defineProps<{ project: Project }>();
           :href="project.href"
           target='_blank'
           rel='noreferrer'
-          aria-label='Open project'
-        >↗</a>
+          :aria-label="`Open ${project.title} (opens in a new tab)`"
+        ><span aria-hidden='true'>↗</span></a>
       </div>
 
       <p class='selected_project_card__description' v-text='project.description'></p>

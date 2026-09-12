@@ -42,7 +42,7 @@ useHead({
     <section class='proof_page__hero wrap'>
       <div v-reveal class='proof_page__heading'>
         <NuxtLink class='proof_page__back' to='/'>
-          ← Engineering notebook
+          <span aria-hidden='true'>←</span> Engineering notebook
         </NuxtLink>
         <p class='eyebrow'>Proof archive</p>
         <h1 class='proof_page__title'>
@@ -84,7 +84,7 @@ useHead({
     </section>
 
     <section class='proof_page__results wrap'>
-      <div class='proof_page__result_meta'>
+      <div class='proof_page__result_meta' aria-live='polite'>
         <strong v-text='filtered_documents.length'></strong>
         <span v-text="filtered_documents.length === 1 ? 'document' : 'documents'"></span>
       </div>

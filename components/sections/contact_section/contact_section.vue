@@ -13,18 +13,22 @@
           Open to international teams and relocation.
         </p>
 
-        <a href='mailto:zhassulan.serikuly@gmail.com'>zhassulan.serikuly@gmail.com ↗</a>
+        <a href='mailto:zhassulan.serikuly@gmail.com'>
+          zhassulan.serikuly@gmail.com <span aria-hidden='true'>↗</span>
+        </a>
 
         <div>
           <a href='https://www.linkedin.com/in/serikulyzhassulan'
             target='_blank'
             rel='noreferrer'>
             LinkedIn
+            <span class='sr_only'>(opens in a new tab)</span>
           </a>
           <a href='https://github.com/zhassulaan'
             target='_blank'
             rel='noreferrer'>
             GitHub
+            <span class='sr_only'>(opens in a new tab)</span>
           </a>
         </div>
       </div>

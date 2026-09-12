@@ -209,7 +209,7 @@ onBeforeUnmount(() => {
         <ThemeToggle />
 
         <a class='button site_header__mobile_cta' href='mailto:zhassulan.serikuly@gmail.com'>
-          Start a conversation ↗
+          Start a conversation <span aria-hidden='true'>↗</span>
         </a>
       </div>
     </div>

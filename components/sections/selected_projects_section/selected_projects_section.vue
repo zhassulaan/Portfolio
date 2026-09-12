@@ -24,7 +24,7 @@ import SelectedProjectCard from '@/components/cards/selected_project_card/select
       <div class='selected_projects_section__footer'>
         <NuxtLink class='selected_projects_section__more' to='/projects'>
           Browse all projects
-          <span>↗</span>
+          <span aria-hidden='true'>↗</span>
         </NuxtLink>
       </div>
     </div>

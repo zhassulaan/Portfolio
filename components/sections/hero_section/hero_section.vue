@@ -22,9 +22,12 @@ import { portfolio_assets } from '@/data/portfolio';
       </p>
 
       <div class='hero_section__actions'>
-        <a class='button' href='#cases'>Open the notebook ↓</a>
+        <a class='button' href='#cases'>
+          Open the notebook <span aria-hidden='true'>↓</span>
+        </a>
         <a class='button button--ghost'
           :href="portfolio_assets.cv"
+          aria-label='Download CV as PDF'
           download>
           CV / PDF
         </a>
@@ -35,17 +38,19 @@ import { portfolio_assets } from '@/data/portfolio';
           href='https://www.linkedin.com/in/serikulyzhassulan'
           target='_blank'
           rel='noreferrer'>
-          LinkedIn <span>↗</span>
+          LinkedIn <span aria-hidden='true'>↗</span>
+          <span class='sr_only'>(opens in a new tab)</span>
         </a>
         <a class='hero_section__social_link'
           href='https://github.com/zhassulaan'
           target='_blank'
           rel='noreferrer'>
-          GitHub <span>↗</span>
+          GitHub <span aria-hidden='true'>↗</span>
+          <span class='sr_only'>(opens in a new tab)</span>
         </a>
         <a class='hero_section__social_link'
           href='mailto:zhassulan.serikuly@gmail.com'>
-          Email <span>↗</span>
+          Email <span aria-hidden='true'>↗</span>
         </a>
       </div>
 

@@ -11,7 +11,9 @@ defineProps<{ project: Project }>();
       v-if='project.href'
       :href="project.href"
       target='_blank'
-      rel='noreferrer'>
+      rel='noreferrer'
+      tabindex='-1'
+      aria-hidden='true'>
       <img class='project_archive_card__image'
         :src="project.image"
         :alt="`${project.title} interface`"
@@ -37,8 +39,8 @@ defineProps<{ project: Project }>();
           :href="project.href"
           target='_blank'
           rel='noreferrer'
-          :aria-label="`Open ${project.title}`">
-          ↗
+          :aria-label="`Open ${project.title} (opens in a new tab)`">
+          <span aria-hidden='true'>↗</span>
         </a>
       </div>
       <p class='project_archive_card__description' v-text='project.description'></p>

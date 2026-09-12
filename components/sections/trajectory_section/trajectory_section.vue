@@ -1,5 +1,6 @@
 <script setup lang='ts'>
 import { milestones, proof_items } from '@/data/portfolio';
+import { NuxtLink } from '#components';
 </script>
 
 <template>
@@ -36,18 +37,17 @@ import { milestones, proof_items } from '@/data/portfolio';
         <h3>Things that can be checked.</h3>
         <p>Education, language evidence, competition recognition and a signed recommendation — kept separate from the engineering story.</p>
         <NuxtLink class='trajectory_section__proof_link' to='/proof'>
-          View all certificates &amp; recommendations ↗
+          View all certificates &amp; recommendations <span aria-hidden='true'>↗</span>
         </NuxtLink>
       </div>
 
       <div class='trajectory_section__proof_grid'>
         <component class='trajectory_section__proof_item'
-          :is="item.href ? 'a' : 'article'"
+          :is="item.href ? NuxtLink : 'article'"
           v-for='item in proof_items'
           :key="item.label"
           v-reveal
-          :href="item.href"
-          :target="item.href ? '_blank' : undefined"
+          :to="item.href"
         >
           <img v-if='item.logo'
             :src="item.logo"
@@ -56,7 +56,7 @@ import { milestones, proof_items } from '@/data/portfolio';
           <span v-text='item.label'></span>
           <strong v-text='item.value'></strong>
           <p v-text='item.note'></p>
-          <em v-if='item.href'>Open proof ↗</em>
+          <em v-if='item.href'>Open proof <span aria-hidden='true'>↗</span></em>
         </component>
       </div>
     </div>

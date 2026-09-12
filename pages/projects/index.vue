@@ -37,7 +37,7 @@ useHead({
     <section class='projects_page__hero wrap'>
       <div v-reveal class='projects_page__heading'>
         <NuxtLink class='projects_page__back' to='/'>
-          ← Engineering notebook
+          <span aria-hidden='true'>←</span> Engineering notebook
         </NuxtLink>
         <p class='eyebrow'>Project archive</p>
         <h1 class='projects_page__title'>
@@ -87,7 +87,7 @@ useHead({
     </section>
 
     <section class='projects_page__results wrap'>
-      <div class='projects_page__result_meta'>
+      <div class='projects_page__result_meta' aria-live='polite'>
         <strong v-text='filtered_projects.length'></strong>
         <span v-text="filtered_projects.length === 1 ? 'project' : 'projects'"></span>
       </div>
