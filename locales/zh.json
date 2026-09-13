@@ -84,6 +84,7 @@
     "opens_new_tab_sr": "（在新标签页中打开）"
   },
   "footer": {
+    "tech_line": "Nuxt 3 · Vue 3 · TypeScript",
     "back_to_top": "回到顶部 ↑"
   },
   "accessibility": {
@@ -177,7 +178,9 @@
     "skill_frontend": "前端",
     "skill_architecture": "架构与质量",
     "skill_testing": "测试",
+    "skill_performance": "性能优化",
     "skill_backend": "后端",
+    "skill_mobile": "移动端开发",
     "skill_tools": "工具与 DevOps"
   }
 }

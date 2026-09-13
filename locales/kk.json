@@ -84,6 +84,7 @@
     "opens_new_tab_sr": "(жаңа қойындыда ашылады)"
   },
   "footer": {
+    "tech_line": "Nuxt 3 · Vue 3 · TypeScript",
     "back_to_top": "Жоғарыға ↑"
   },
   "accessibility": {
@@ -177,7 +178,9 @@
     "skill_frontend": "Frontend",
     "skill_architecture": "Архитектура және сапа",
     "skill_testing": "Тестілеу",
+    "skill_performance": "Өнімділік",
     "skill_backend": "Backend",
+    "skill_mobile": "Мобильді әзірлеу",
     "skill_tools": "Құралдар және DevOps"
   }
 }
