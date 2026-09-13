@@ -1,6 +1,4 @@
 import portrait from '@/assets/images/main.png';
-// import cv from '@/assets/files/Zhassulan_Serikuly-CV.pdf';
-// import recommendation_keyhorse from '@/assets/files/recommendation_keyhorse.pdf';
 import ciklum_logo from '@/assets/logos/ciklum.svg';
 import keyhorse_logo from '@/assets/logos/keyhorse.svg';
 import dar_logo from '@/assets/logos/dar.svg';
@@ -32,15 +30,53 @@ import rakhat_image from '@/assets/images/projects/rakhat.png';
 import m1_service_image from '@/assets/images/projects/m1-service.png';
 import type { CaseStudy, Milestone, Principle, ProofDocument, ProofItem, Project, Signal, Surface } from '@/types/portfolio';
 
-export const portfolio_assets = { portrait, /*cv*/ };
+// Served straight from /public — a static file needs no build-time import,
+// unlike the images/logos above which go through Vite's asset pipeline.
+export const portfolio_assets = { portrait, cv: '/files/Zhassulan_Serikuly-CV.pdf' };
 
-export const nav_items = [
-  { label: 'Signals', href: '/#signals' }, { label: 'Cases', href: '/#cases' }, { label: 'Builds', href: '/#builds' }, { label: 'Projects', href: '/projects' }, { label: 'Proof', href: '/proof' }, { label: 'Path', href: '/#path' }, { label: 'Contact', href: '/#contact' },
-];
+export const nav_items = [{
+  label: 'Signals',
+  href: '/#signals',
+}, {
+  label: 'Cases',
+  href: '/#cases',
+}, {
+  label: 'Builds',
+  href: '/#builds',
+}, {
+  label: 'Projects',
+  href: '/projects',
+}, {
+  label: 'Proof',
+  href: '/proof',
+}, {
+  label: 'CV',
+  href: '/cv',
+}, {
+  label: 'Path',
+  href: '/#path',
+}, {
+  label: 'Contact',
+  href: '/#contact',
+}];
 
-export const signals: Signal[] = [
-  { value: '6+', label: 'years in production', note: 'From React internship work to senior ownership across international product teams.' }, { value: '1M+', label: 'users served', note: 'Production interfaces operating at meaningful product scale.' }, { value: '120+', label: 'projects delivered', note: 'Across web, mobile and data-intensive platforms.' }, { value: '75+', label: 'projects optimized', note: 'Performance, architecture and maintainability improvements.' },
-];
+export const signals: Signal[] = [{
+  value: '6+',
+  label: 'years in production',
+  note: 'From React internship work to senior ownership across international product teams.',
+}, {
+  value: '1M+',
+  label: 'users served',
+  note: 'Production interfaces operating at meaningful product scale.',
+}, {
+  value: '120+',
+  label: 'projects delivered',
+  note: 'Across web, mobile and data-intensive platforms.',
+}, {
+  value: '75+',
+  label: 'projects optimized',
+  note: 'Performance, architecture and maintainability improvements.',
+}];
 
 export const case_studies: CaseStudy[] = [
   {
@@ -51,7 +87,13 @@ export const case_studies: CaseStudy[] = [
     problem: 'A growing Vue product surface had to stay coherent while 10+ modules evolved in parallel for a platform serving more than one million users annually.',
     solution: 'Defined reusable Vue 3 / TypeScript patterns around composition, routing, state and shared product workflows so new features could start from an established system instead of local conventions.',
     result: 'The architecture reduced feature implementation time by roughly 30% while creating a stronger base for cross-module development.',
-    metrics: [{ value: '10+', label: 'product modules' }, { value: '~30%', label: 'faster feature delivery' }],
+    metrics: [{
+      value: '10+',
+      label: 'product modules',
+    }, {
+      value: '~30%',
+      label: 'faster feature delivery',
+    }],
     stack: ['Vue 3', 'TypeScript', 'Pinia', 'Vue Router', 'Composition API', 'Vite'],
   }, {
     index: '02',
@@ -61,7 +103,13 @@ export const case_studies: CaseStudy[] = [
     problem: 'High-traffic screens were slowed by work happening across rendering, data fetching, caching and asynchronous UI flows rather than one obvious bottleneck.',
     solution: 'Optimized the full request-to-render path: rendering behavior, caching, async orchestration and API request patterns, then backed the work with Core Web Vitals, Lighthouse, tests and Sentry monitoring.',
     result: 'Average page load time moved from about 3.2 seconds to 2.1 seconds while the platform continued to evolve.',
-    metrics: [{ value: '3.2 → 2.1s', label: 'average page load' }, { value: '34%', label: 'approx. reduction' }],
+    metrics: [{
+      value: '3.2 → 2.1s',
+      label: 'average page load',
+    }, {
+      value: '34%',
+      label: 'approx. reduction',
+    }],
     stack: ['Core Web Vitals', 'Lighthouse', 'Vitest', 'Jest', 'Sentry', 'CI/CD'],
   }, {
     index: '03',
@@ -71,7 +119,13 @@ export const case_studies: CaseStudy[] = [
     problem: 'Dense GIS interfaces had to render and manipulate datasets containing roughly 300K–500K geospatial objects without making the first interaction feel delayed.',
     solution: 'Restructured layers and styles, introduced clustering and client-side filtering, and tightened the Vuex-to-Elasticsearch data path to eliminate repeated work.',
     result: 'Initial Mapbox GL JS rendering dropped from about 800ms to 480ms, with a 30% improvement in geospatial search response time from separate algorithm work.',
-    metrics: [{ value: '800 → 480ms', label: 'initial map render' }, { value: '300K–500K', label: 'geospatial objects' }],
+    metrics: [{
+      value: '800 → 480ms',
+      label: 'initial map render',
+    }, {
+      value: '300K–500K',
+      label: 'geospatial objects',
+    }],
     stack: ['Vue.js', 'Mapbox GL JS', 'Vuex', 'Elasticsearch', 'Performance Profiling'],
   }, {
     index: '04',
@@ -81,7 +135,13 @@ export const case_studies: CaseStudy[] = [
     problem: 'Dozens of regional GIS products shared recurring UI and data patterns, but repeated implementations made delivery slower and consistency expensive.',
     solution: 'Created a centralized architecture with 100+ reusable Vue components and shared modules, then standardized BEM, theming, role-aware patterns, linting and test practices around it.',
     result: 'Similar implementation work dropped by up to 50%; some launches that previously took about a month could be completed in roughly a week.',
-    metrics: [{ value: '100+', label: 'reusable components' }, { value: '1 month → 1 week', label: 'similar implementations' }],
+    metrics: [{
+      value: '100+',
+      label: 'reusable components',
+    }, {
+      value: '1 month → 1 week',
+      label: 'similar implementations',
+    }],
     stack: ['Vue.js', 'TypeScript', 'BEM', 'Vitest', 'Playwright', 'GitLab CI/CD'],
   },
 ];
@@ -89,19 +149,19 @@ export const case_studies: CaseStudy[] = [
 
 export const projects: Project[] = [
   { id: 'geonomix', title: 'Geonomix', category: 'GIS & Platforms', image: geonomix_image, description: 'A large-scale geospatial and digital-twin platform combining interactive maps, municipal data, digital registries, government services and monitoring tools across regional deployments.', stack: ['Vue.js', 'Vuex', 'Mapbox GL JS', 'Django', 'PostgreSQL', 'Elasticsearch'], href: 'https://iulytau.kz', featured: true, note: 'Map-first product where data volume and reusable regional delivery shaped the frontend architecture.' },
-  { id: 'midas-event', title: 'Midas Event', category: 'Corporate', image: midas_event_image, description: 'An event-agency website presenting services, projects and event work through responsive pages and interactive frontend elements.', stack: ['React', 'JavaScript', 'CSS'], href: 'https://midasevent.kz', featured: true },
+  { id: 'midas-event', title: 'Midas Event', category: 'Corporate', image: midas_event_image, description: 'An event-agency site built as a browsable portfolio of past events rather than a static services list, with React-driven interactive detail throughout.', stack: ['React', 'JavaScript', 'CSS'], href: 'https://midasevent.kz', featured: true },
   { id: 'kostyum', title: 'Kostyum.kz', category: 'E-commerce', image: kostyum_image, description: 'A responsive men’s fashion e-commerce frontend with reusable product-catalog UI and a focus on a smooth desktop and mobile shopping experience.', stack: ['Nuxt.js', 'Vue.js', 'SSR'], href: 'https://kostyum.kz', featured: true },
   { id: 'unistory', title: 'UniStory', category: 'AI & Web3', image: unistory_image, description: 'A digital product interface integrating crypto-wallet state and asynchronous backend data into reusable React product experiences.', stack: ['React', 'TypeScript', 'REST APIs', 'Web3'], href: 'https://unistory.app/ru/', featured: true },
-  { id: 'kazmed', title: 'KazMedEngineering', category: 'Healthcare', image: kazmed_image, description: 'A responsive corporate frontend for an authorized medical-equipment service partner, presenting expertise and technical service offerings.', stack: ['Nuxt.js', 'Swiper'], href: 'https://www.kme.kz' },
+  { id: 'kazmed', title: 'KazMedEngineering', category: 'Healthcare', image: kazmed_image, description: 'A corporate frontend for an authorized medical-equipment service partner, built around a Swiper-driven catalog of equipment and service lines instead of long text pages.', stack: ['Nuxt.js', 'Swiper'], href: 'https://www.kme.kz' },
   { id: 'dostyk-trans-terminal', title: 'Dostyk Trans Terminal', category: 'Corporate', image: dostyk_trans_terminal_image, description: 'A corporate website for a logistics terminal at the Dostyk–Alashankou border crossing, presenting container handling, storage and transshipment services.', stack: ['Nuxt.js', 'Vue.js'], href: 'https://www.dtt.kz/' },
   { id: 'melissa', title: 'Melissa', category: 'E-commerce', image: melissa_image, description: 'A large online pharmacy with 13,000+ products, including catalog navigation, search, filtering, sorting, product pages, cart flows and backend integrations.', stack: ['Nuxt.js', 'Vue.js', 'REST APIs'], href: 'https://melissaapteka.kz', note: 'A large catalogue experience where information architecture matters as much as UI polish.' },
-  { id: 'abi-construction', title: 'ABI Construction', category: 'Corporate', image: abi_construction_image, description: 'A construction-company website with responsive interfaces, dynamic functionality and content-management features.', stack: ['WordPress', 'Vue.js', 'PHP', 'SCSS'], href: 'https://abi-construction.kz' },
+  { id: 'abi-construction', title: 'ABI Construction', category: 'Corporate', image: abi_construction_image, description: 'A construction-company website pairing a WordPress content backend with Vue-driven project galleries and interactive UI on top.', stack: ['WordPress', 'Vue.js', 'PHP', 'SCSS'], href: 'https://abi-construction.kz' },
   { id: 'tahit', title: 'TAHIT', category: 'Corporate', image: tahit_image, description: 'A manufacturing-company frontend showcasing textile production capabilities, technologies, products and services across desktop and mobile.', stack: ['Vue.js'], href: 'https://tahit.kz' },
   { id: 'dobraya', title: 'Dobraya Pharmacy', category: 'E-commerce', image: dobraya_image, description: 'An online-pharmacy storefront with responsive catalogs, category navigation, search, filtering and product flows.', stack: ['HTML', 'JavaScript', 'SCSS', 'Bootstrap', 'jQuery'], href: 'https://dobraya-apteka.kz' },
   { id: 'asia-mebel', title: 'Asia Mebel', category: 'E-commerce', image: azm_trade_image, description: 'A commercial catalog for furniture materials, fittings, tools and services with structured navigation, filtering, search and product pages.', stack: ['1C Bitrix', 'PHP', 'JavaScript', 'SASS', 'Bootstrap'], href: 'https://asiamebel.com' },
-  { id: 'pharmacom', title: 'Pharmacom', category: 'Healthcare', image: pharmacom_image, description: 'A healthcare website for a vaccination clinic and pharmacy network, presenting services and customer information.', stack: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'jQuery'], href: 'https://pharma.com.kz' },
+  { id: 'pharmacom', title: 'Pharmacom', category: 'Healthcare', image: pharmacom_image, description: 'A healthcare website for a vaccination clinic and pharmacy network, organized around locations, services and patient information rather than one static homepage.', stack: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'jQuery'], href: 'https://pharma.com.kz' },
   { id: 'navat', title: 'NAVAT', category: 'Hospitality', image: new_navat_image, description: 'A promotional restaurant landing page with a responsive visual experience built around menu, atmosphere and brand identity.', stack: ['JavaScript', 'HTML', 'CSS', 'jQuery'], href: 'https://newnavat.netlify.app' },
-  { id: 'asia-credit-bank', title: 'AsiaCredit Bank', category: 'Finance', image: asia_credit_bank_image, description: 'A customer-facing bank contact-center website with responsive interfaces and interactive functionality for product and support information.', stack: ['PHP', 'HTML', 'JavaScript', 'SCSS'], href: 'https://asiacreditbank.kz' },
+  { id: 'asia-credit-bank', title: 'AsiaCredit Bank', category: 'Finance', image: asia_credit_bank_image, description: 'A bank contact-center website turning a large set of product and support pages into a fast, easy-to-navigate structure for customers.', stack: ['PHP', 'HTML', 'JavaScript', 'SCSS'], href: 'https://asiacreditbank.kz' },
   // { id: 'rento', title: 'Rento', category: 'Booking', image: rento_image, description: 'A sports-facility booking platform with customer and host experiences, authentication, availability, reservations and a custom administration panel.', stack: ['React', 'Redux', 'Firebase'], href: 'https://rentokz.netlify.app', note: 'Multi-role product state and booking workflows in one frontend.' },
   // { id: 'tez-zhet', title: 'Tez Zhet', category: 'Delivery', image: tez_zhet_image, description: 'A mobile-first food and grocery delivery product covering discovery, search, cart, checkout, addresses, authentication, orders and backend API integration.', stack: ['Nuxt.js', 'Vue.js', 'REST APIs'], href: 'https://apps.apple.com/sk/app/tezzhet/id6473077229', note: 'End-to-end transactional flows optimized for mobile use.' },
   // { id: 'qazbooking', title: 'QazBooking', category: 'Booking', image: qazbooking_image, description: 'An accommodation-booking platform for hostels and recreation centers with search, filters, authentication, property pages and reservation flows.', stack: ['1C Bitrix', 'PHP', 'JavaScript', 'SASS', 'Bootstrap'], href: 'https://qazbooking.kz' },
@@ -116,58 +176,180 @@ export const projects: Project[] = [
 
 export const featured_projects = projects.filter((project) => project.featured);
 
-export const surfaces: Surface[] = [
-  { index: 'A', title: 'High-traffic product modules', text: 'Interfaces where architecture, caching, state and API behavior have to work as one product system.', tags: ['Vue 3', 'TypeScript', 'Pinia', 'Vite'], variant: 'grid' }, { index: 'B', title: 'Geospatial systems', text: 'Map-heavy products where data volume changes the frontend architecture, not just the rendering layer.', tags: ['Mapbox GL JS', 'Elasticsearch', 'GIS', 'Data-intensive UI'], variant: 'map' }, { index: 'C', title: 'Modernization programs', text: 'Legacy-to-modern migrations that keep product delivery moving while the technical foundation changes underneath.', tags: ['Vue 2 → Vue 3', 'Composition API', 'Testing', 'CI/CD'], variant: 'flow' }, { index: 'D', title: 'End-to-end product delivery', text: 'Frontend-first engineering with enough backend depth to own APIs, integration boundaries and production behavior.', tags: ['Django REST', 'Python', 'PostgreSQL', 'REST APIs'], variant: 'pulse' },
-];
+export const surfaces: Surface[] = [{
+  index: 'A',
+  title: 'High-traffic product modules',
+  text: 'Interfaces where architecture, caching, state and API behavior have to work as one product system.',
+  tags: ['Vue 3', 'TypeScript', 'Pinia', 'Vite'],
+  variant: 'grid',
+}, {
+  index: 'B',
+  title: 'Geospatial systems',
+  text: 'Map-heavy products where data volume changes the frontend architecture, not just the rendering layer.',
+  tags: ['Mapbox GL JS', 'Elasticsearch', 'GIS', 'Data-intensive UI'],
+  variant: 'map',
+}, {
+  index: 'C',
+  title: 'Modernization programs',
+  text: 'Legacy-to-modern migrations that keep product delivery moving while the technical foundation changes underneath.',
+  tags: ['Vue 2 → Vue 3', 'Composition API', 'Testing', 'CI/CD'],
+  variant: 'flow',
+}, {
+  index: 'D',
+  title: 'End-to-end product delivery',
+  text: 'Frontend-first engineering with enough backend depth to own APIs, integration boundaries and production behavior.',
+  tags: ['Django REST', 'Python', 'PostgreSQL', 'REST APIs'],
+  variant: 'pulse',
+}];
 
-export const principles: Principle[] = [
-  { number: '01', title: 'Measure before rewriting.', text: 'A performance change should begin with evidence and end with a user-visible outcome.' }, { number: '02', title: 'Architecture is a delivery tool.', text: 'The best abstraction is the one that makes the next feature cheaper, safer and easier to understand.' }, { number: '03', title: 'Frontend is part of the system.', text: 'Rendering, data shape, APIs, accessibility, observability and release pipelines are one engineering surface.' }, { number: '04', title: 'Senior means reducing uncertainty.', text: 'Technical leadership is making trade-offs visible so a team can move quickly without accumulating hidden risk.' },
-];
+export const principles: Principle[] = [{
+  number: '01',
+  title: 'Measure before rewriting.',
+  text: 'A performance change should begin with evidence and end with a user-visible outcome.',
+}, {
+  number: '02',
+  title: 'Architecture is a delivery tool.',
+  text: 'The best abstraction is the one that makes the next feature cheaper, safer and easier to understand.',
+}, {
+  number: '03',
+  title: 'Frontend is part of the system.',
+  text: 'Rendering, data shape, APIs, accessibility, observability and release pipelines are one engineering surface.',
+}, {
+  number: '04',
+  title: 'Senior means reducing uncertainty.',
+  text: 'Technical leadership is making trade-offs visible so a team can move quickly without accumulating hidden risk.',
+}];
 
-export const milestones: Milestone[] = [
-  { period: '2025 — 2026', company: 'Ciklum', role: 'Senior Software Engineer', focus: 'Frontend architecture · product modernization · performance · technical leadership', logo: ciklum_logo }, { period: '2021 — 2025', company: 'KeyHorse', role: 'Middle → Senior Software Engineer · Team Lead', focus: 'GIS · digital twins · reusable systems · backend APIs · mentoring', logo: keyhorse_logo }, { period: '2020 — 2021', company: 'DAR', role: 'Junior Software Engineer', focus: 'High-volume web delivery · e-commerce · mobile · performance', logo: dar_logo }, { period: '2020', company: 'EPAM Systems', role: 'Software Engineer Intern', focus: 'React · TypeScript · reusable UI · engineering foundations', logo: epam_logo },
-];
+export const milestones: Milestone[] = [{
+  period: '2025 — 2026',
+  company: 'Ciklum',
+  role: 'Senior Software Engineer',
+  focus: 'Frontend architecture · product modernization · performance · technical leadership',
+  logo: ciklum_logo,
+  location: 'Bucharest, Romania (Remote)',
+  summary: 'Global software engineering company delivering digital products for international clients.',
+  highlights: [{
+    label: 'Architecture',
+    text: 'Established a shared Vue 3/TypeScript architecture — a reusable component library and type-safe API layer — across 10+ modules (1–3M users), built to WCAG AA standards, cutting feature implementation time by ~30%.',
+  }, {
+    label: 'Performance',
+    text: 'Optimized rendering, caching, and API request patterns across high-traffic modules, improving Core Web Vitals — cutting interaction latency (INP) from ~280ms to ~150ms.',
+  }, {
+    label: 'Modernization',
+    text: 'Modernized legacy Vue 2 codebases to Vue 3, Composition API, and Vite; strengthened reliability via Vitest/Jest testing and CI/CD workflows.',
+  }, {
+    label: 'Leadership',
+    text: 'Led frontend architectural decisions, reviewed pull requests, and guided engineers through cross-module technical challenges.',
+  }],
+}, {
+  period: '2021 — 2025',
+  company: 'KeyHorse',
+  role: 'Middle → Senior Software Engineer · Team Lead',
+  focus: 'GIS · digital twins · reusable systems · backend APIs · mentoring',
+  logo: keyhorse_logo,
+  location: 'Almaty, Kazakhstan',
+  summary: 'GIS and digital-twin platform company serving Central Asia.',
+  highlights: [{
+    label: 'Delivery',
+    text: 'Delivered 80+ regional and 100+ smaller GIS/digital-twin projects serving 1M+ users across 4 countries; built 10 platforms from scratch, launching within 1–1.5 months.',
+  }, {
+    label: 'Performance',
+    text: 'Reduced Mapbox GL JS rendering time 40% (800ms → 480ms) and Elasticsearch geospatial search latency 30% across datasets of 300K–500K objects.',
+  }, {
+    label: 'Architecture',
+    text: 'Built 100+ reusable Vue components in a shared architecture, cutting development effort on similar projects by up to 50% — in some cases from ~1 month to 1 week.',
+  }, {
+    label: 'Backend',
+    text: 'Developed 30–40 REST endpoints (Django, PostgreSQL) for 100K+ record datasets powering GIS workflows.',
+  }, {
+    label: 'Team Leadership',
+    text: 'Mentored 8 engineers, ran ~20 code reviews/week, and standardized BEM/ESLint/Stylelint practices enforced through GitLab CI/CD; automated 40+ test scenarios (Vitest, Playwright) reaching 70–80% coverage.',
+  }],
+}, {
+  period: '2020 — 2021',
+  company: 'DAR',
+  role: 'Junior Software Engineer',
+  focus: 'High-volume web delivery · e-commerce · mobile · performance',
+  logo: dar_logo,
+  summary: 'Technology group building fintech, education, and sports platforms.',
+  highlights: [{
+    label: 'Delivery',
+    text: 'Delivered 40+ production web apps while handling 3–4 concurrent projects, plus 5–7 cross-platform mobile apps (Ionic, Capacitor, React Native); cut load times 40% via SSR and code splitting, reaching 100/100 Lighthouse SEO.',
+  }],
+}, {
+  period: '2020',
+  company: 'EPAM Systems',
+  role: 'Software Engineer Intern',
+  focus: 'React · TypeScript · reusable UI · engineering foundations',
+  logo: epam_logo,
+  summary: 'Global IT consulting and digital engineering company.',
+  highlights: [{
+    label: 'Highlights',
+    text: 'Selected 1 of 3 from 40 applicants; shipped responsive React/TypeScript interfaces and reusable components.',
+  }],
+}];
 
-export const proof_items: ProofItem[] = [
-  { label: 'Education', value: 'Information Systems', note: 'Suleyman Demirel University · 2018–2022 · GPA 3.72 / 4.0', logo: sdu_logo }, { label: 'English', value: 'IELTS 7.0', note: 'Academic IELTS · CEFR C1 result', href: '/certificate/ielts' }, { label: 'Recognition', value: 'Silver Medal', note: 'INFOMATRIX-ASIA 2018 — International Computer Project Competition.', href: '/certificate/infomatrix-silver-medal' }, { label: 'Reference', value: 'KeyHorse', note: 'Signed recommendation from company leadership', href: '/recommendation/keyhorse' },
-];
+export const proof_items: ProofItem[] = [{
+  label: 'Education',
+  value: 'Information Systems',
+  note: 'Suleyman Demirel University · 2018–2022 · GPA 3.72 / 4.0',
+  logo: sdu_logo,
+}, {
+  label: 'English',
+  value: 'IELTS 7.0',
+  note: 'Academic IELTS · CEFR C1 result',
+  href: '/certificate/ielts',
+}, {
+  label: 'Recognition',
+  value: 'Silver Medal',
+  note: 'Infomatrix Asia-Pacific 2018 — International Computer Project Competition.',
+  href: '/certificate/infomatrix',
+}, {
+  label: 'Reference',
+  value: 'KeyHorse',
+  note: 'Signed recommendation from company leadership',
+  href: '/recommendation/keyhorse',
+}, {
+  label: 'Languages',
+  value: '5 spoken',
+  note: 'English — full working proficiency · Kazakh & Russian — native · Turkish — conversational · Chinese — basic',
+}];
 
 // One source of truth for the /proof archive and its detail pages
 // (pages/certificate/[slug].vue, pages/recommendation/[slug].vue).
 // See PROOF_GUIDE.md for how to attach the real scanned file to an entry.
-export const proof_documents: ProofDocument[] = [
-  {
-    slug: 'ielts',
-    kind: 'certificate',
-    title: 'IELTS Academic 7.0/9.0',
-    issuer: 'British Council',
-    date: '2023',
-    description: 'Academic IELTS result (CEFR C1) — evidence of full working professional English proficiency for international, remote-first engineering roles.',
-  },
-  {
-    slug: 'chinese-proficiency',
-    kind: 'certificate',
-    title: 'Chinese Language Proficiency',
-    issuer: 'Language proficiency certificate',
-    date: '2023',
-    description: 'Basic Chinese language proficiency, developed alongside professional work with cross-border product and business teams.',
-  },
-  {
-    slug: 'infomatrix-silver-medal',
-    kind: 'certificate',
-    title: 'Silver Medal — INFOMATRIX-ASIA 2018',
-    issuer: 'INFOMATRIX-ASIA',
-    date: '2018',
-    description: 'International Computer Project Competition recognition for an early software engineering project.',
-  },
-  {
-    slug: 'keyhorse',
-    kind: 'recommendation',
-    title: 'Recommendation Letter — KeyHorse',
-    issuer: 'Adilet Kentbayev, Company Head — KeyHorse LLP',
-    date: 'Issued 21 Aug 2026',
-    description: 'A signed recommendation on KeyHorse letterhead recommending Zhassulan for a senior-level engineering role.',
-    file: '/files/recommendations/keyhorse.pdf',
-    file_type: 'pdf',
-  },
-];
+export const proof_documents: ProofDocument[] = [{
+  slug: 'ielts',
+  kind: 'certificate',
+  title: 'IELTS Academic 7.0/9.0',
+  issuer: 'British Council',
+  date: '2023',
+  description: 'Academic IELTS result (CEFR C1) — evidence of full working professional English proficiency for international, remote-first engineering roles.',
+}, {
+  slug: 'chinese-proficiency',
+  kind: 'certificate',
+  title: 'Chinese Language Proficiency',
+  issuer: 'East West Education',
+  date: '2019',
+  description: 'Basic Chinese language proficiency, developed alongside professional work with cross-border product and business teams.',
+  file: '/files/certificates/chinese-proficiency.pdf',
+  file_type: 'pdf',
+}, {
+  slug: 'infomatrix',
+  kind: 'certificate',
+  title: 'Silver Medal — Infomatrix Asia-Pacific 2018',
+  issuer: 'Infomatrix Asia-Pacific',
+  date: '2018',
+  description: 'International Computer Project Competition recognition for an early software engineering project.',
+  file: '/files/certificates/infomatrix.pdf',
+  file_type: 'pdf',
+}, {
+  slug: 'keyhorse',
+  kind: 'recommendation',
+  title: 'Recommendation Letter — KeyHorse',
+  issuer: 'Adilet Kentbayev, Company Head — KeyHorse LLP',
+  date: 'Issued 21 Aug 2026',
+  description: 'A signed recommendation on KeyHorse letterhead recommending Zhassulan for a senior-level engineering role.',
+  file: '/files/recommendations/keyhorse.pdf',
+  file_type: 'pdf',
+}];

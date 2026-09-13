@@ -1,8 +1,13 @@
 <script setup lang='ts'>
 import type { Project } from '@/types/portfolio';
 import TagList from '@/components/ui/tag_list/tag_list.vue';
+import { useLocaleText } from '@/composables/use_locale_text';
 
-defineProps<{ project: Project }>();
+const props = defineProps<{ project: Project }>();
+const { tx } = useLocaleText();
+
+const description = computed(() => tx(`projects.${props.project.id}.description`, props.project.description));
+const note = computed(() => props.project.note ? tx(`projects.${props.project.id}.note`, props.project.note) : '');
 </script>
 
 <template>
@@ -32,8 +37,8 @@ defineProps<{ project: Project }>();
         ><span aria-hidden='true'>↗</span></a>
       </div>
 
-      <p class='selected_project_card__description' v-text='project.description'></p>
-      <p class='selected_project_card__note' v-text='project.note'></p>
+      <p class='selected_project_card__description' v-text='description'></p>
+      <p class='selected_project_card__note' v-text='note'></p>
       <TagList :items="project.stack" />
     </div>
   </article>

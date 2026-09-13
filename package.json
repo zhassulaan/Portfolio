@@ -7,16 +7,26 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test:unit": "vitest run",
+    "test:unit:watch": "vitest",
+    "pretest:e2e": "nuxt build",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
+    "@nuxtjs/i18n": "^9.0.0",
     "nuxt": "^3.10.3",
     "vue": "^3.4.19",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@nuxt/test-utils": "^3.14.0",
+    "@playwright/test": "^1.47.0",
+    "@vue/test-utils": "^2.4.6",
     "clean-css-cli": "^5.6.3",
-    "sass": "^1.71.1"
+    "happy-dom": "^15.7.0",
+    "sass": "^1.71.1",
+    "vitest": "^3.2.0"
   }
 }

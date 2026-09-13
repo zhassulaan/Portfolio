@@ -1,8 +1,10 @@
 <script setup lang='ts'>
 import type { Surface } from '@/types/portfolio';
 import TagList from '@/components/ui/tag_list/tag_list.vue';
+import { useLocaleText } from '@/composables/use_locale_text';
 
-defineProps<{ surface: Surface }>();
+const props = defineProps<{ surface: Surface }>();
+const { tx } = useLocaleText();
 </script>
 
 <template>
@@ -15,8 +17,8 @@ defineProps<{ surface: Surface }>();
     </div>
 
     <div class='system_tile__body'>
-      <h3 v-text='surface.title'></h3>
-      <p v-text='surface.text'></p>
+      <h3 v-text="tx(`surfaces.${surface.index}.title`, surface.title)"></h3>
+      <p v-text="tx(`surfaces.${surface.index}.text`, surface.text)"></p>
       <TagList :items="surface.tags" />
     </div>
   </article>

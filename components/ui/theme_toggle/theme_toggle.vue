@@ -3,11 +3,19 @@ import { useTheme, type ThemePreference } from '@/composables/use_theme';
 
 const { preference, set_preference } = useTheme();
 
-const options: Array<{ value: ThemePreference; label: string; icon: string }> = [
-  { value: 'light', label: 'Light theme', icon: '☀' },
-  { value: 'dark', label: 'Dark theme', icon: '☾' },
-  { value: 'auto', label: 'Match system theme', icon: '◐' },
-];
+const options: Array<{ value: ThemePreference; label: string; icon: string }> = [{
+  value: 'light',
+  label: 'Light theme',
+  icon: '☀',
+}, {
+  value: 'dark',
+  label: 'Dark theme',
+  icon: '☾',
+}, {
+  value: 'auto',
+  label: 'Match system theme',
+  icon: '◐',
+}];
 </script>
 
 <template>

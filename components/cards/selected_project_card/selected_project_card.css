@@ -1,7 +1,7 @@
 .selected_project_card {
   overflow: hidden;
   border: 1px solid #2c2e36;
-  border-radius: 22px;
+  border-radius: 1.375em;
   background: #17181e;
 }
 
@@ -9,7 +9,7 @@
   position: relative;
   display: block;
   overflow: hidden;
-  height: 300px;
+  height: 18.75em;
   background: #24262d;
 }
 
@@ -28,40 +28,40 @@
 
 .selected_project_card__index, .selected_project_card__category {
   position: absolute;
-  top: 16px;
+  top: 1em;
   border: 1px solid rgba(255, 255, 255, .18);
-  border-radius: 999px;
-  padding: 7px 10px;
+  border-radius: 62.4375em;
+  padding: .4375em .625em;
   background: rgba(16, 17, 22, .72);
   backdrop-filter: blur(12px);
-  font-size: 10px;
+  font-size: .625em;
   font-weight: 800;
   letter-spacing: .08em;
   color: #fff;
 }
 
 .selected_project_card__index {
-  left: 16px;
+  left: 1em;
 }
 
 .selected_project_card__category {
-  right: 16px;
+  right: 1em;
   text-transform: uppercase;
 }
 
 .selected_project_card__body {
-  padding: 26px;
+  padding: 1.625em;
 }
 
 .selected_project_card__heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
+  gap: 1.125em;
 }
 
 .selected_project_card__title {
-  font-size: 30px;
+  font-size: 1.875em;
 }
 
 .selected_project_card__arrow {
@@ -69,30 +69,30 @@
   place-items: center;
   display: grid;
   transition: background .25s ease, color .25s ease, transform .25s ease;
-  width: 42px;
-  height: 42px;
+  width: 2.625em;
+  height: 2.625em;
   border: 1px solid #353741;
   border-radius: 50%;
 }
 
 .selected_project_card__arrow:hover {
-  transform: translateY(-2px);
+  transform: translateY(-.125em);
   background: #fff;
   color: #111218;
 }
 
 .selected_project_card__description {
-  margin: 18px 0 12px;
-  font-size: 15px;
+  margin: 1.125em 0 .75em;
+  font-size: .9375em;
   line-height: 1.65;
   color: #c5c7cf;
 }
 
 .selected_project_card__note {
-  margin: 0 0 22px;
+  margin: 0 0 1.375em;
   border-top: 1px solid #2c2e36;
-  padding-top: 15px;
-  font-size: 12px;
+  padding-top: .9375em;
+  font-size: .75em;
   line-height: 1.6;
   color: #858893;
 }
@@ -104,6 +104,6 @@
 
 @media (max-width: 600px) {
   .selected_project_card__media {
-    height: 230px;
+    height: 14.375em;
   }
 }

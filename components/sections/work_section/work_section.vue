@@ -7,10 +7,10 @@ import SystemTile from '@/components/cards/system_tile/system_tile.vue';
   <section class='work_section section wrap' id='systems'>
     <div class='section_heading'>
       <div>
-        <p class='eyebrow'>Systems I like working on</p>
-        <h2>No client gallery.<br />Just the engineering terrain.</h2>
+        <p class='eyebrow'>{{ $t('work.eyebrow') }}</p>
+        <h2 v-html="$t('work.heading')"></h2>
       </div>
-      <p>LinkedIn can list projects and employers. Here I would rather show the kinds of systems where my work becomes most valuable.</p>
+      <p>{{ $t('work.intro') }}</p>
     </div>
 
     <div class='work_section__grid'>

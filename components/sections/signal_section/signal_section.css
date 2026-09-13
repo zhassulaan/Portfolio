@@ -6,8 +6,8 @@
 }
 
 .signal_section__item {
-  min-height: 175px;
-  padding: 28px 22px;
+  min-height: 10.9375em;
+  padding: 1.75em 1.375em;
   border-right: 1px solid var(--theme-line);
 }
 
@@ -21,20 +21,20 @@
 
 .signal_section__item strong {
   display: block;
-  margin-bottom: 20px;
-  font: 800 34px 'Manrope';
+  margin-bottom: 1.25em;
+  font: 800 2.125em 'Manrope';
   letter-spacing: -.05em;
 }
 
 .signal_section__item span {
-  font-size: 13px;
+  font-size: .8125em;
   font-weight: 800;
 }
 
 .signal_section__item p {
-  margin: 7px 0 0;
+  margin: .4375em 0 0;
   color: var(--theme-muted);
-  font-size: 12px;
+  font-size: .75em;
   line-height: 1.55;
 }
 
@@ -52,13 +52,13 @@
 
 @media (max-width: 600px) {
   .signal_section__item {
-    min-height: 145px;
-    padding: 22px 14px;
+    min-height: 9.0625em;
+    padding: 1.375em .875em;
   }
   .signal_section__item:first-child {
-    padding-left: 14px;
+    padding-left: .875em;
   }
   .signal_section__item strong {
-    font-size: 27px;
+    font-size: 1.6875em;
   }
 }

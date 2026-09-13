@@ -1,7 +1,12 @@
-export type ThemePreference = 'light' | 'dark' | 'auto';
-export type ResolvedTheme = 'light' | 'dark';
+// 'blue' and 'gray' are extra accessibility color schemes (offered from the
+// accessibility panel, not the header toggle) — kept on this same composable
+// rather than a second parallel state machine, so the header toggle and the
+// accessibility panel can never disagree about which scheme is active.
+export type ThemePreference = 'light' | 'dark' | 'blue' | 'gray' | 'auto';
+export type ResolvedTheme = 'light' | 'dark' | 'blue' | 'gray';
 
 const THEME_STORAGE_KEY = 'zs_theme';
+const EXPLICIT_THEMES: ReadonlyArray<ResolvedTheme> = ['light', 'dark', 'blue', 'gray'];
 
 const preference = ref<ThemePreference>('auto');
 const resolved = ref<ResolvedTheme>('light');
@@ -13,8 +18,8 @@ const read_stored_preference = (): ThemePreference => {
   try {
     const stored = window.localStorage.getItem(THEME_STORAGE_KEY);
 
-    if (stored === 'light' || stored === 'dark' || stored === 'auto') {
-      return stored;
+    if (stored === 'auto' || (EXPLICIT_THEMES as string[]).includes(stored ?? '')) {
+      return stored as ThemePreference;
     }
   } catch {
     // localStorage can throw in private/blocked contexts; fall back silently.
@@ -54,7 +59,9 @@ const initialize = () => {
   // The blocking inline script in nuxt.config.ts already set data-theme
   // before hydration; trust it instead of recomputing to avoid a mismatch.
   const applied_attribute = document.documentElement.getAttribute('data-theme');
-  resolved.value = applied_attribute === 'dark' ? 'dark' : 'light';
+  resolved.value = (EXPLICIT_THEMES as string[]).includes(applied_attribute ?? '')
+    ? (applied_attribute as ResolvedTheme)
+    : 'light';
 
   media_query = window.matchMedia('(prefers-color-scheme: dark)');
   media_query.addEventListener('change', (event) => {

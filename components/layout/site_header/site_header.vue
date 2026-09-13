@@ -1,8 +1,15 @@
 <script setup lang='ts'>
 import { nav_items } from '@/data/portfolio';
 import ThemeToggle from '@/components/ui/theme_toggle/theme_toggle.vue';
+import LanguageSwitcher from '@/components/ui/language_switcher/language_switcher.vue';
 
 const route = useRoute();
+const local_path = useLocalePath();
+
+// nav_items only carries an English label + href; the translated label for
+// each entry lives in the `nav` namespace of i18n/locales/*.json, keyed by
+// the last path segment (works for both '/#signals' and '/cv' style hrefs).
+const nav_key = (href: string) => href.replace('/#', '').replace('/', '');
 
 const active_section = ref('');
 const is_mobile_nav_open = ref(false);
@@ -14,10 +21,10 @@ let observer: IntersectionObserver | null = null;
 
 const is_nav_item_active = (href: string) => {
   if (!href.startsWith('/#')) {
-    return route.path === href;
+    return route.path === local_path(href);
   }
 
-  if (route.path !== '/') {
+  if (route.path !== local_path('/')) {
     return false;
   }
 
@@ -25,7 +32,7 @@ const is_nav_item_active = (href: string) => {
 };
 
 const sync_active_section = () => {
-  if (route.path !== '/') {
+  if (route.path !== local_path('/')) {
     active_section.value = '';
     return;
   }
@@ -38,7 +45,7 @@ const sync_active_section = () => {
     active_section.value = 'contact';
 
     if (route.hash !== '#contact') {
-      window.history.replaceState(null, '', '/#contact');
+      window.history.replaceState(null, '', `${local_path('/')}#contact`);
     }
 
     return;
@@ -69,7 +76,7 @@ const sync_active_section = () => {
     window.history.replaceState(
       null,
       '',
-      `/#${next_active_section}`,
+      `${local_path('/')}#${next_active_section}`,
     );
   }
 };
@@ -130,8 +137,20 @@ watch(
   },
 );
 
+let locked_scroll_y = 0;
+
 watch(is_mobile_nav_open, (is_open) => {
-  document.documentElement.classList.toggle('has_locked_scroll', is_open);
+  const html = document.documentElement;
+
+  if (is_open) {
+    locked_scroll_y = window.scrollY;
+    html.style.setProperty('--locked_scroll_y', `-${locked_scroll_y}px`);
+    html.classList.add('has_locked_scroll');
+  } else {
+    html.classList.remove('has_locked_scroll');
+    html.style.removeProperty('--locked_scroll_y');
+    window.scrollTo(0, locked_scroll_y);
+  }
 });
 
 onBeforeUnmount(() => {
@@ -144,6 +163,7 @@ onBeforeUnmount(() => {
 
   window.removeEventListener('keydown', handle_keydown);
   document.documentElement.classList.remove('has_locked_scroll');
+  document.documentElement.style.removeProperty('--locked_scroll_y');
 });
 </script>
 
@@ -151,27 +171,28 @@ onBeforeUnmount(() => {
   <header class='site_header'>
     <div class='site_header__inner'>
       <NuxtLink class='site_header__brand'
-        to='/'
-        aria-label='Home'>
+        :to="local_path('/')"
+        :aria-label="$t('header.home_aria')">
         <span class='site_header__brand_text' v-text="'ZS'"></span>
       </NuxtLink>
 
-      <nav class='site_header__nav' aria-label='Primary navigation'>
+      <nav class='site_header__nav' :aria-label="$t('header.primary_nav_aria')">
         <NuxtLink class='site_header__nav_link'
           :class="{ 'site_header__nav_link--active': is_nav_item_active(item.href) }"
           v-for='item in nav_items'
           :key='item.href'
-          :to='item.href'
+          :to="local_path(item.href)"
           :aria-current="is_nav_item_active(item.href) ? 'page' : null">
-          <span class='site_header__nav_text' v-text='item.label'></span>
+          <span class='site_header__nav_text' v-text="$t(`nav.${nav_key(item.href)}`)"></span>
         </NuxtLink>
       </nav>
 
       <div class='site_header__actions'>
+        <LanguageSwitcher class='site_header__language' />
         <ThemeToggle class='site_header__theme' />
 
         <a class='site_header__cta' href='mailto:zhassulan.serikuly@gmail.com'>
-          <span class='site_header__cta_text' v-text="'Start a conversation'"></span>
+          <span class='site_header__cta_text' v-text="$t('header.start_conversation')"></span>
           <i class='site_header__cta_arrow' aria-hidden='true' v-text="'↗'"></i>
         </a>
 
@@ -179,7 +200,7 @@ onBeforeUnmount(() => {
           type='button'
           :aria-expanded="is_mobile_nav_open"
           aria-controls='mobile_nav'
-          :aria-label="is_mobile_nav_open ? 'Close menu' : 'Open menu'"
+          :aria-label="is_mobile_nav_open ? $t('header.close_menu') : $t('header.open_menu')"
           v-on:click="toggle_mobile_nav">
           <span class='site_header__burger_box' :class="{ 'site_header__burger_box--open': is_mobile_nav_open }">
             <span></span>
@@ -191,25 +212,26 @@ onBeforeUnmount(() => {
     </div>
 
     <div class='site_header__mobile_nav'
-      id='mobile_nav'
-      v-show='is_mobile_nav_open'>
-      <nav class='site_header__mobile_links' aria-label='Mobile navigation'>
+      :class="{ 'site_header__mobile_nav--open': is_mobile_nav_open }"
+      id='mobile_nav'>
+      <nav class='site_header__mobile_links' :aria-label="$t('header.mobile_nav_aria')">
         <NuxtLink class='site_header__mobile_link'
           :class="{ 'site_header__mobile_link--active': is_nav_item_active(item.href) }"
           v-for='item in nav_items'
           :key='item.href'
-          :to='item.href'
+          :to="local_path(item.href)"
           :aria-current="is_nav_item_active(item.href) ? 'page' : null"
           v-on:click="close_mobile_nav">
-          <span v-text='item.label'></span>
+          <span v-text="$t(`nav.${nav_key(item.href)}`)"></span>
         </NuxtLink>
       </nav>
 
       <div class='site_header__mobile_footer'>
+        <LanguageSwitcher />
         <ThemeToggle />
 
         <a class='button site_header__mobile_cta' href='mailto:zhassulan.serikuly@gmail.com'>
-          Start a conversation <span aria-hidden='true'>↗</span>
+          {{ $t('header.start_conversation') }} <span aria-hidden='true'>↗</span>
         </a>
       </div>
     </div>

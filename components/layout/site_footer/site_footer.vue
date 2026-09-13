@@ -1,9 +1,13 @@
 <script setup lang='ts'>
 const scrollToTop = () => {
+  const prefers_reduced_motion =
+    typeof window !== 'undefined' &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   window.scrollTo({
     top: 0,
     left: 0,
-    behavior: 'smooth',
+    behavior: prefers_reduced_motion ? 'instant' : 'smooth',
   });
 };
 </script>
@@ -15,7 +19,7 @@ const scrollToTop = () => {
     <button class='site_footer__top'
       type='button'
       v-on:click="scrollToTop">
-      Back to top ↑
+      {{ $t('footer.back_to_top') }}
     </button>
   </footer>
 </template>

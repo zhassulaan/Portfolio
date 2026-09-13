@@ -4,13 +4,13 @@
   --spotlight_x: 50%;
   --spotlight_y: 50%;
   position: relative;
-  transform: perspective(1000px) rotateX(var(--tilt_rotate_x)) rotateY(var(--tilt_rotate_y));
+  transform: perspective(62.5em) rotateX(var(--tilt_rotate_x)) rotateY(var(--tilt_rotate_y));
   transform-style: preserve-3d;
   will-change: transform;
   overflow: hidden;
   transition: transform .16s ease-out, box-shadow .3s ease, border-color .3s ease;
   border: 1px solid var(--theme-line);
-  border-radius: 22px;
+  border-radius: 1.375em;
   background: var(--theme-surface);
 }
 
@@ -42,9 +42,9 @@
 .project_archive_card__media {
   position: relative;
   display: block;
-  transform: translateZ(18px);
+  transform: translateZ(1.125em);
   overflow: hidden;
-  height: 250px;
+  height: 15.625em;
   background: #e7e5de;
 }
 
@@ -62,14 +62,14 @@
 
 .project_archive_card__category {
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: 1em;
+  left: 1em;
   border: 1px solid rgba(255, 255, 255, .5);
-  border-radius: 999px;
-  padding: 7px 10px;
+  border-radius: 62.4375em;
+  padding: .4375em .625em;
   background: rgba(255, 255, 255, .86);
   backdrop-filter: blur(10px);
-  font-size: 10px;
+  font-size: .625em;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .08em;
@@ -78,8 +78,8 @@
 .project_archive_card__body {
   position: relative;
   z-index: 2;
-  transform: translateZ(12px);
-  padding: 24px;
+  transform: translateZ(.75em);
+  padding: 1.5em;
   background: var(--theme-surface);
 }
 
@@ -87,11 +87,11 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 18px;
+  gap: 1.125em;
 }
 
 .project_archive_card__title {
-  font-size: 27px;
+  font-size: 1.6875em;
 }
 
 .project_archive_card__link {
@@ -99,8 +99,8 @@
   place-items: center;
   display: grid;
   transition: transform .25s ease, background .25s ease, color .25s ease;
-  width: 40px;
-  height: 40px;
+  width: 2.5em;
+  height: 2.5em;
   border: 1px solid var(--theme-line);
   border-radius: 50%;
 }
@@ -112,9 +112,9 @@
 }
 
 .project_archive_card__description {
-  min-height: 94px;
-  margin: 16px 0 22px;
-  font-size: 14px;
+  min-height: 5.875em;
+  margin: 1em 0 1.375em;
+  font-size: .875em;
   line-height: 1.65;
   color: var(--theme-muted);
 }
@@ -125,7 +125,7 @@
   }
   .project_archive_card__media {
     transform: none;
-    height: 220px;
+    height: 13.75em;
   }
   .project_archive_card__body {
     transform: none;

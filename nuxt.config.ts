@@ -2,6 +2,63 @@ export default defineNuxtConfig({
   devtools: {
     enabled: false,
   },
+  modules: [
+    '@nuxtjs/i18n',
+  ],
+  i18n: {
+    locales: [{
+      code: 'en',
+      language: 'en-US',
+      name: 'English',
+      file: 'en.json',
+    }, {
+      code: 'ru',
+      language: 'ru-RU',
+      name: 'Русский',
+      file: 'ru.json',
+    }, {
+      code: 'kk',
+      language: 'kk-KZ',
+      name: 'Қазақша',
+      file: 'kk.json',
+    }, {
+      code: 'tr',
+      language: 'tr-TR',
+      name: 'Türkçe',
+      file: 'tr.json',
+    }, {
+      code: 'zh',
+      language: 'zh-CN',
+      name: '中文',
+      file: 'zh.json',
+    }, {
+      code: 'nl',
+      language: 'nl-NL',
+      name: 'Nederlands',
+      file: 'nl.json',
+    }, {
+      code: 'de',
+      language: 'de-DE',
+      name: 'Deutsch',
+      file: 'de.json',
+    }],
+    defaultLocale: 'en',
+    langDir: 'locales/',
+    restructureDir: false,
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: false,
+    // A few messages (hero.title, several section headings, cv_page.title)
+    // deliberately contain `<em>`/`<br />` and are rendered with v-html so
+    // that emphasis/line-breaks can move per language. Without this, the
+    // message compiler treats any HTML-looking tag as unsafe and hard-fails
+    // the whole build with "Detected HTML in ... message".
+    compilation: {
+      strictMessage: false,
+    },
+  },
   css: [
     '@/assets/css/theme.css',
     '@/assets/css/base.css',
@@ -37,7 +94,8 @@ export default defineNuxtConfig({
           innerHTML: `(function () {
             try {
               var stored = window.localStorage.getItem('zs_theme');
-              var preference = (stored === 'light' || stored === 'dark' || stored === 'auto') ? stored : 'auto';
+              var explicit = ['light', 'dark', 'blue', 'gray'];
+              var preference = (explicit.indexOf(stored) !== -1 || stored === 'auto') ? stored : 'auto';
               var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
               var resolved = preference === 'auto' ? (prefersDark ? 'dark' : 'light') : preference;
               document.documentElement.setAttribute('data-theme', resolved);

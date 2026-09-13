@@ -1,12 +1,18 @@
 <script setup lang='ts'>
 import SiteHeader from '@/components/layout/site_header/site_header.vue';
 import SiteFooter from '@/components/layout/site_footer/site_footer.vue';
+import AccessibilityPanel from '@/components/ui/accessibility_panel/accessibility_panel.vue';
+
+const { t, locale } = useI18n();
 
 useHead({
-  titleTemplate: (title_chunk) => title_chunk ? `${title_chunk} · Zhassulan Serikuly` : 'Zhassulan Serikuly — Engineering Notebook',
+  htmlAttrs: {
+    lang: locale,
+  },
+  titleTemplate: (title_chunk) => title_chunk ? `${title_chunk} · ${t('site.title_suffix')}` : t('site.default_title'),
   meta: [{
     name: 'description',
-    content: 'Engineering portfolio of Zhassulan Serikuly — frontend architecture, performance, modernization, GIS and production systems.'
+    content: computed(() => t('site.description')),
   }],
 });
 </script>
@@ -17,5 +23,6 @@ useHead({
     <SiteHeader />
     <NuxtPage />
     <SiteFooter />
+    <AccessibilityPanel />
   </div>
 </template>

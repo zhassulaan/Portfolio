@@ -1,6 +1,8 @@
 <script setup lang='ts'>
 import { featured_projects } from '@/data/portfolio';
 import SelectedProjectCard from '@/components/cards/selected_project_card/selected_project_card.vue';
+
+const local_path = useLocalePath();
 </script>
 
 <template>
@@ -8,10 +10,10 @@ import SelectedProjectCard from '@/components/cards/selected_project_card/select
     <div class='wrap'>
       <div class='section_heading'>
         <div>
-          <p class='eyebrow'>Selected builds</p>
-          <h2>A few products.<br />Not the whole archive.</h2>
+          <p class='eyebrow'>{{ $t('selected_projects.eyebrow') }}</p>
+          <h2 v-html="$t('selected_projects.heading')"></h2>
         </div>
-        <p>These are here to give the engineering notebook a visual layer. They are not a second résumé and they are not meant to list every project I have shipped.</p>
+        <p>{{ $t('selected_projects.intro') }}</p>
       </div>
 
       <div class='selected_projects_section__grid'>
@@ -22,8 +24,8 @@ import SelectedProjectCard from '@/components/cards/selected_project_card/select
       </div>
 
       <div class='selected_projects_section__footer'>
-        <NuxtLink class='selected_projects_section__more' to='/projects'>
-          Browse all projects
+        <NuxtLink class='selected_projects_section__more' :to="local_path('/projects')">
+          {{ $t('selected_projects.browse_all') }}
           <span aria-hidden='true'>↗</span>
         </NuxtLink>
       </div>
