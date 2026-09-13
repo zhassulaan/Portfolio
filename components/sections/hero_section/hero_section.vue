@@ -34,7 +34,7 @@ import { portfolio_assets } from '@/data/portfolio';
 
       <div class='hero_section__socials' aria-label='Social links'>
         <a class='hero_section__social_link'
-          href='https://www.linkedin.com/in/serikulyzhassulan'
+          href='https://www.linkedin.com/in/zhassulan-serikuly'
           target='_blank'
           rel='noreferrer'>
           LinkedIn <span aria-hidden='true'>↗</span>

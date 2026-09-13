@@ -18,7 +18,7 @@
         </a>
 
         <div>
-          <a href='https://www.linkedin.com/in/serikulyzhassulan'
+          <a href='https://www.linkedin.com/in/zhassulan-serikuly'
             target='_blank'
             rel='noreferrer'>
             LinkedIn
