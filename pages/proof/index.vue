@@ -4,6 +4,7 @@ import { useProofFilter } from '@/composables/use_proof_filter';
 import ProofCard from '@/components/cards/proof_card/proof_card.vue';
 
 const { t } = useI18n();
+const local_path = useLocalePath();
 
 const {
   search_query,
@@ -43,7 +44,7 @@ useHead({
   <main class='proof_page' id='main_content' tabindex='-1'>
     <section class='proof_page__hero wrap'>
       <div v-reveal class='proof_page__heading'>
-        <NuxtLink class='proof_page__back' to='/'>
+        <NuxtLink class='proof_page__back' :to="local_path('/')">
           <span aria-hidden='true'>←</span> {{ $t('proof_page.back_link') }}
         </NuxtLink>
         <p class='eyebrow'>{{ $t('proof_page.eyebrow') }}</p>

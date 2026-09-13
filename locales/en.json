@@ -108,7 +108,7 @@
     "tts_legend": "Text-to-speech",
     "tts_off": "Off",
     "tts_on": "On",
-    "tts_hint": "Reads the current page's main content aloud."
+    "tts_hint": "Reads the current page’s main content aloud."
   },
   "proof_detail": {
     "back_link": "All proof documents",
@@ -117,7 +117,7 @@
     "open_full_document": "Open full document",
     "opens_new_tab_sr": "(opens in a new tab)",
     "placeholder_title": "Scan not uploaded yet.",
-    "placeholder_text": "This entry is set up but the original file hasn't been attached to the site yet."
+    "placeholder_text": "This entry is set up but the original file hasn’t been attached to the site yet."
   },
   "proof_page": {
     "back_link": "Engineering notebook",

@@ -4,6 +4,7 @@ import { useProjectFilter } from '@/composables/use_project_filter';
 import ProjectArchiveCard from '@/components/cards/project_archive_card/project_archive_card.vue';
 
 const { t } = useI18n();
+const local_path = useLocalePath();
 
 const {
   search_query,
@@ -43,7 +44,7 @@ useHead({
   <main class='projects_page' id='main_content' tabindex='-1'>
     <section class='projects_page__hero wrap'>
       <div v-reveal class='projects_page__heading'>
-        <NuxtLink class='projects_page__back' to='/'>
+        <NuxtLink class='projects_page__back' :to="local_path('/')">
           <span aria-hidden='true'>←</span> {{ $t('projects_page.back_link') }}
         </NuxtLink>
         <p class='eyebrow'>{{ $t('projects_page.eyebrow') }}</p>

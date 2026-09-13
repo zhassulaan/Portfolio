@@ -6,6 +6,7 @@ import { useLocaleText } from '@/composables/use_locale_text';
 const props = defineProps<{ kind: ProofDocument['kind']; slug: string }>();
 const { t } = useI18n();
 const { tx } = useLocaleText();
+const local_path = useLocalePath();
 
 const proof_document = proof_documents.find(
   (item) => item.kind === props.kind && item.slug === props.slug,
@@ -30,7 +31,7 @@ const kind_label = computed(() =>
 
 <template>
   <main class='proof_detail wrap' id='main_content' tabindex='-1'>
-    <NuxtLink class='proof_detail__back' to='/proof'>
+    <NuxtLink class='proof_detail__back' :to="local_path('/proof')">
       <span aria-hidden='true'>←</span> {{ $t('proof_detail.back_link') }}
     </NuxtLink>
 

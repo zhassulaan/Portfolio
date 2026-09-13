@@ -59,8 +59,11 @@ main[id='main_content']:focus {
   outline: none;
 }
 
-html.has_locked_scroll,
 html.has_locked_scroll body {
+  position: fixed;
+  top: var(--locked_scroll_y, 0px);
+  left: 0;
+  right: 0;
   overflow: hidden;
 }
 

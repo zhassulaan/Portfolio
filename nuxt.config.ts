@@ -36,6 +36,14 @@ export default defineNuxtConfig({
     langDir: 'locales/',
     strategy: 'prefix_except_default',
     detectBrowserLanguage: false,
+    // A few messages (hero.title, several section headings, cv_page.title)
+    // deliberately contain `<em>`/`<br />` and are rendered with v-html so
+    // that emphasis/line-breaks can move per language. Without this, the
+    // message compiler treats any HTML-looking tag as unsafe and hard-fails
+    // the whole build with "Detected HTML in ... message".
+    compilation: {
+      strictMessage: false,
+    },
   },
   css: [
     '@/assets/css/theme.css',

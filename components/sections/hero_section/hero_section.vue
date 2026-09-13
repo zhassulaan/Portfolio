@@ -1,5 +1,7 @@
 <script setup lang='ts'>
 import { portfolio_assets } from '@/data/portfolio';
+
+const local_path = useLocalePath();
 </script>
 
 <template>
@@ -21,7 +23,7 @@ import { portfolio_assets } from '@/data/portfolio';
           {{ $t('hero.cta_open_notebook') }} <span aria-hidden='true'>↓</span>
         </a>
         <NuxtLink class='button button--ghost'
-          to='/cv'
+          :to="local_path('/cv')"
           :aria-label="$t('hero.cta_cv_aria')">
           {{ $t('hero.cta_cv') }}
         </NuxtLink>

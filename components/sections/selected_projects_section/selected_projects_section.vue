@@ -1,6 +1,8 @@
 <script setup lang='ts'>
 import { featured_projects } from '@/data/portfolio';
 import SelectedProjectCard from '@/components/cards/selected_project_card/selected_project_card.vue';
+
+const local_path = useLocalePath();
 </script>
 
 <template>
@@ -22,7 +24,7 @@ import SelectedProjectCard from '@/components/cards/selected_project_card/select
       </div>
 
       <div class='selected_projects_section__footer'>
-        <NuxtLink class='selected_projects_section__more' to='/projects'>
+        <NuxtLink class='selected_projects_section__more' :to="local_path('/projects')">
           {{ $t('selected_projects.browse_all') }}
           <span aria-hidden='true'>↗</span>
         </NuxtLink>

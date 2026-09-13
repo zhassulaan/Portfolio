@@ -2,7 +2,7 @@
   "site": {
     "title_suffix": "Zhassulan Serikuly",
     "default_title": "Zhassulan Serikuly — Mühendislik Defteri",
-    "description": "Zhassulan Serikuly'nin mühendislik portföyü — frontend mimarisi, performans, modernizasyon, GIS ve production sistemleri."
+    "description": "Zhassulan Serikuly’nin mühendislik portföyü — frontend mimarisi, performans, modernizasyon, GIS ve production sistemleri."
   },
   "nav": {
     "signals": "Göstergeler",
@@ -26,7 +26,7 @@
   "hero": {
     "status": "Senior Software Engineer · production ortamında 6+ yıl deneyim",
     "title": "Kullanıcıların <em>hissettiği</em>, ekiplerin de <em>uzun süre yaşamak zorunda kaldığı</em> kısmı ben inşa ediyorum.",
-    "lead": "Bu, LinkedIn'imin bir kopyası değil. Hız, mimari, modernizasyon ve production yazılımın arkasındaki kararlar üzerine küçük bir mühendislik defteri.",
+    "lead": "Bu, LinkedIn’imin bir kopyası değil. Hız, mimari, modernizasyon ve production yazılımın arkasındaki kararlar üzerine küçük bir mühendislik defteri.",
     "cta_open_notebook": "Defteri aç",
     "cta_cv": "Özgeçmiş / PDF",
     "cta_cv_aria": "Özgeçmişi görüntüle ve indir",
@@ -143,7 +143,7 @@
     "back_link": "Mühendislik defteri",
     "eyebrow": "Proje arşivi",
     "heading": "Defterin arkasındaki<br />yapımlar.",
-    "intro": "Proje adına, ne yaptığına veya stack'indeki herhangi bir teknolojiye göre arayın. Ana sayfa küratörlü kalır; bu sayfa daha geniş arşivdir.",
+    "intro": "Proje adına, ne yaptığına veya stack’indeki herhangi bir teknolojiye göre arayın. Ana sayfa küratörlü kalır; bu sayfa daha geniş arşivdir.",
     "search_label": "Ara",
     "search_placeholder": "Örneğin “Mapbox”, “booking”, “React”…",
     "category_label": "Kategori",

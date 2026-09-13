@@ -10,6 +10,7 @@ import { useLocaleText } from '@/composables/use_locale_text';
 
 const { t } = useI18n();
 const { tx } = useLocaleText();
+const local_path = useLocalePath();
 
 // Group labels are translated via cv_page.skill_* keys below; the items
 // themselves are product/technology names and stay as-is in every locale.
@@ -69,7 +70,7 @@ useHead({
   <main class='cv_page' id='main_content' tabindex='-1'>
     <section class='cv_page__hero wrap'>
       <div v-reveal class='cv_page__heading'>
-        <NuxtLink class='cv_page__back' to='/'>
+        <NuxtLink class='cv_page__back' :to="local_path('/')">
           <span aria-hidden='true'>←</span> {{ $t('cv_page.back_link') }}
         </NuxtLink>
         <p class='eyebrow'>{{ $t('cv_page.eyebrow') }}</p>
@@ -151,7 +152,7 @@ useHead({
           v-for='(item, index) in proof_items'
           :key="item.label"
           v-reveal
-          :to="item.href">
+          :to="item.href ? local_path(item.href) : undefined">
           <img v-if='item.logo' :src="item.logo" :alt="`${item.label} logo`" />
           <span v-text="tx(`proof_items.${index}.label`, item.label)"></span>
           <strong v-text="tx(`proof_items.${index}.value`, item.value)"></strong>
@@ -160,7 +161,7 @@ useHead({
         </component>
       </div>
 
-      <NuxtLink class='cv_page__proof_link' to='/proof'>
+      <NuxtLink class='cv_page__proof_link' :to="local_path('/proof')">
         {{ $t('cv_page.view_all_proof') }} <span aria-hidden='true'>↗</span>
       </NuxtLink>
     </section>
@@ -172,9 +173,9 @@ useHead({
       </div>
       <a class='button cv_page__cta_button'
         :href="portfolio_assets.cv"
-        :aria-label="$t('cv_page.download_aria')"
+        :aria-label="$t('cv_page.download_cv_aria')"
         download>
-        {{ $t('cv_page.download') }} <span aria-hidden='true'>↓</span>
+        {{ $t('cv_page.download_cv') }} <span aria-hidden='true'>↓</span>
       </a>
     </section>
   </main>

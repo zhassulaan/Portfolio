@@ -5,8 +5,9 @@ import { useLocaleText } from '@/composables/use_locale_text';
 const props = defineProps<{ doc: ProofDocument }>();
 const { t } = useI18n();
 const { tx } = useLocaleText();
+const local_path = useLocalePath();
 
-const detail_href = computed(() => `/${props.doc.kind}/${props.doc.slug}`);
+const detail_href = computed(() => local_path(`/${props.doc.kind}/${props.doc.slug}`));
 const kind_label = computed(() => (props.doc.kind === 'certificate' ? t('proof_page.kind_certificate') : t('proof_page.kind_recommendation')));
 const title = computed(() => tx(`proof_documents.${props.doc.slug}.title`, props.doc.title));
 const description = computed(() => tx(`proof_documents.${props.doc.slug}.description`, props.doc.description));

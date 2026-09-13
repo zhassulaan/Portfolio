@@ -4,6 +4,7 @@ import { NuxtLink } from '#components';
 import { useLocaleText } from '@/composables/use_locale_text';
 
 const { tx } = useLocaleText();
+const local_path = useLocalePath();
 </script>
 
 <template>
@@ -39,7 +40,7 @@ const { tx } = useLocaleText();
         <p class='eyebrow'>{{ $t('trajectory.proof_eyebrow') }}</p>
         <h3>{{ $t('trajectory.proof_heading') }}</h3>
         <p>{{ $t('trajectory.proof_intro') }}</p>
-        <NuxtLink class='trajectory_section__proof_link' to='/proof'>
+        <NuxtLink class='trajectory_section__proof_link' :to="local_path('/proof')">
           {{ $t('trajectory.proof_link') }} <span aria-hidden='true'>↗</span>
         </NuxtLink>
       </div>
@@ -50,7 +51,7 @@ const { tx } = useLocaleText();
           v-for='(item, index) in proof_items'
           :key="item.label"
           v-reveal
-          :to="item.href"
+          :to="item.href ? local_path(item.href) : undefined"
         >
           <img v-if='item.logo'
             :src="item.logo"
