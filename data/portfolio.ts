@@ -136,39 +136,38 @@ export const proof_items: ProofItem[] = [
 // One source of truth for the /proof archive and its detail pages
 // (pages/certificate/[slug].vue, pages/recommendation/[slug].vue).
 // See PROOF_GUIDE.md for how to attach the real scanned file to an entry.
-export const proof_documents: ProofDocument[] = [
-  {
-    slug: 'ielts',
-    kind: 'certificate',
-    title: 'IELTS Academic 7.0/9.0',
-    issuer: 'British Council',
-    date: '2023',
-    description: 'Academic IELTS result (CEFR C1) — evidence of full working professional English proficiency for international, remote-first engineering roles.',
-  },
-  {
-    slug: 'chinese-proficiency',
-    kind: 'certificate',
-    title: 'Chinese Language Proficiency',
-    issuer: 'Language proficiency certificate',
-    date: '2023',
-    description: 'Basic Chinese language proficiency, developed alongside professional work with cross-border product and business teams.',
-  },
-  {
-    slug: 'infomatrix-silver-medal',
-    kind: 'certificate',
-    title: 'Silver Medal — INFOMATRIX-ASIA 2018',
-    issuer: 'INFOMATRIX-ASIA',
-    date: '2018',
-    description: 'International Computer Project Competition recognition for an early software engineering project.',
-  },
-  {
-    slug: 'keyhorse',
-    kind: 'recommendation',
-    title: 'Recommendation Letter — KeyHorse',
-    issuer: 'Adilet Kentbayev, Company Head — KeyHorse LLP',
-    date: 'Issued 21 Aug 2026',
-    description: 'A signed recommendation on KeyHorse letterhead recommending Zhassulan for a senior-level engineering role.',
-    file: '/files/recommendations/keyhorse.pdf',
-    file_type: 'pdf',
-  },
-];
+export const proof_documents: ProofDocument[] = [{
+  slug: 'ielts',
+  kind: 'certificate',
+  title: 'IELTS Academic 7.0/9.0',
+  issuer: 'British Council',
+  date: '2023',
+  description: 'Academic IELTS result (CEFR C1) — evidence of full working professional English proficiency for international, remote-first engineering roles.',
+}, {
+  slug: 'chinese-proficiency',
+  kind: 'certificate',
+  title: 'Chinese Language Proficiency',
+  issuer: 'Language proficiency certificate',
+  date: '2023',
+  description: 'Basic Chinese language proficiency, developed alongside professional work with cross-border product and business teams.',
+  file: '/files/certificates/chinese-proficiency.pdf',
+  file_type: 'pdf',
+}, {
+  slug: 'infomatrix',
+  kind: 'certificate',
+  title: 'Silver Medal — Infomatrix - AsiaPacific',
+  issuer: 'International competition',
+  date: '2018',
+  description: 'International Computer Project Competition recognition for an early software engineering project.',
+  file: '/files/certificates/infomatrix.pdf',
+  file_type: 'pdf',
+}, {
+  slug: 'keyhorse',
+  kind: 'recommendation',
+  title: 'Recommendation Letter — KeyHorse',
+  issuer: 'Adilet Kentbayev, Company Head — KeyHorse LLP',
+  date: 'Issued 21 Aug 2026',
+  description: 'A signed recommendation on KeyHorse letterhead recommending Zhassulan for a senior-level engineering role.',
+  file: '/files/recommendations/keyhorse.pdf',
+  file_type: 'pdf',
+}];

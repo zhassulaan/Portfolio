@@ -7,13 +7,22 @@ import TagList from '@/components/ui/tag_list/tag_list.vue';
 // the pattern already used in trajectory_section.
 import { NuxtLink } from '#components';
 
-const skill_groups: Array<{ label: string; items: string[] }> = [
-  { label: 'Frontend', items: ['Vue 2/3', 'React', 'Nuxt', 'Next.js', 'TypeScript', 'JavaScript', 'Pinia', 'Vuex', 'Redux', 'HTML5', 'CSS3', 'Tailwind', 'Mapbox GL JS'] },
-  { label: 'Architecture & quality', items: ['SSR', 'Design systems', 'WCAG accessibility', 'Core Web Vitals', 'Cross-browser compatibility', 'PWA', 'BEM'] },
-  { label: 'Testing', items: ['Vitest', 'Jest', 'Playwright'] },
-  { label: 'Backend', items: ['Python', 'Django REST Framework', 'PostgreSQL', 'Elasticsearch', 'REST APIs', 'WebSockets'] },
-  { label: 'Tools & DevOps', items: ['Git', 'GitLab', 'Vite', 'Docker', 'CI/CD', 'ESLint', 'Stylelint', 'Sentry', 'Agile/Scrum'] },
-];
+const skill_groups: Array<{ label: string; items: string[] }> = [{
+  label: 'Frontend',
+  items: ['Vue 2/3', 'React', 'Nuxt', 'Next.js', 'TypeScript', 'JavaScript', 'Pinia', 'Vuex', 'Redux', 'HTML5', 'CSS3', 'Tailwind', 'Mapbox GL JS']
+}, {
+  label: 'Architecture & quality',
+  items: ['SSR', 'Design systems', 'WCAG accessibility', 'Core Web Vitals', 'Cross-browser compatibility', 'PWA', 'BEM']
+}, {
+  label: 'Testing',
+  items: ['Vitest', 'Jest', 'Playwright']
+}, {
+  label: 'Backend',
+  items: ['Python', 'Django REST Framework', 'PostgreSQL', 'Elasticsearch', 'REST APIs', 'WebSockets']
+}, {
+  label: 'Tools & DevOps',
+  items: ['Git', 'GitLab', 'Vite', 'Docker', 'CI/CD', 'ESLint', 'Stylelint', 'Sentry', 'Agile/Scrum']
+}];
 
 onMounted(() => {
   window.scrollTo({

@@ -20,24 +20,48 @@ const toggle_button = ref<HTMLButtonElement | null>(null);
 const panel = ref<HTMLElement | null>(null);
 const route = useRoute();
 
-const color_schemes: Array<{ value: ThemePreference; label: string; sample: string }> = [
-  { value: 'light', label: 'Normal', sample: 'Ц' },
-  { value: 'dark', label: 'Dark', sample: 'Ц' },
-  { value: 'blue', label: 'Blue', sample: 'Ц' },
-  { value: 'gray', label: 'Gray', sample: 'Ц' },
-];
+const color_schemes: Array<{ value: ThemePreference; label: string; sample: string }> = [{
+  value: 'light',
+  label: 'Normal',
+  sample: 'Ц',
+}, {
+  value: 'dark',
+  label: 'Dark',
+  sample: 'Ц',
+}, {
+  value: 'blue',
+  label: 'Blue',
+  sample: 'Ц',
+}, {
+  value: 'gray',
+  label: 'Gray',
+  sample: 'Ц',
+}];
 
-const font_sizes: Array<{ value: FontSize; label: string }> = [
-  { value: 'small', label: 'Small' },
-  { value: 'medium', label: 'Medium' },
-  { value: 'large', label: 'Large' },
-];
+const font_sizes: Array<{ value: FontSize; label: string }> = [{
+  value: 'small',
+  label: 'Small',
+}, {
+  value: 'medium',
+  label: 'Medium',
+}, {
+  value: 'large',
+  label: 'Large',
+}];
 
-const image_modes: Array<{ value: ImageMode; label: string; icon: string }> = [
-  { value: 'show', label: 'Show', icon: '🖼' },
-  { value: 'grayscale', label: 'Grayscale', icon: '◐' },
-  { value: 'hide', label: 'Hide', icon: '🚫' },
-];
+const image_modes: Array<{ value: ImageMode; label: string; icon: string }> = [{
+  value: 'show',
+  label: 'Show',
+  icon: '🖼',
+}, {
+  value: 'grayscale',
+  label: 'Grayscale',
+  icon: '◐',
+}, {
+  value: 'hide',
+  label: 'Hide',
+  icon: '🚫',
+}];
 
 const open_panel = () => {
   is_open.value = true;
