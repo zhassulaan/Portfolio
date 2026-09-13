@@ -19,7 +19,7 @@ const scrollToTop = () => {
     <button class='site_footer__top'
       type='button'
       v-on:click="scrollToTop">
-      Back to top ↑
+      {{ $t('footer.back_to_top') }}
     </button>
   </footer>
 </template>

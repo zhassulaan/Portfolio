@@ -1,10 +1,15 @@
 <script setup lang='ts'>
 import type { ProofDocument } from '@/types/portfolio';
+import { useLocaleText } from '@/composables/use_locale_text';
 
 const props = defineProps<{ doc: ProofDocument }>();
+const { t } = useI18n();
+const { tx } = useLocaleText();
 
 const detail_href = computed(() => `/${props.doc.kind}/${props.doc.slug}`);
-const kind_label = computed(() => (props.doc.kind === 'certificate' ? 'Certificate' : 'Recommendation'));
+const kind_label = computed(() => (props.doc.kind === 'certificate' ? t('proof_page.kind_certificate') : t('proof_page.kind_recommendation')));
+const title = computed(() => tx(`proof_documents.${props.doc.slug}.title`, props.doc.title));
+const description = computed(() => tx(`proof_documents.${props.doc.slug}.description`, props.doc.description));
 </script>
 
 <template>
@@ -14,7 +19,7 @@ const kind_label = computed(() => (props.doc.kind === 'certificate' ? 'Certifica
       <span class='proof_card__arrow' aria-hidden='true' v-text="'↗'"></span>
     </div>
 
-    <h2 class='proof_card__title' v-text='doc.title'></h2>
+    <h2 class='proof_card__title' v-text='title'></h2>
 
     <p class='proof_card__meta'>
       <span v-text='doc.issuer'></span>
@@ -22,7 +27,7 @@ const kind_label = computed(() => (props.doc.kind === 'certificate' ? 'Certifica
       <span v-text='doc.date'></span>
     </p>
 
-    <p class='proof_card__description' v-text='doc.description'></p>
+    <p class='proof_card__description' v-text='description'></p>
   </NuxtLink>
 </template>
 

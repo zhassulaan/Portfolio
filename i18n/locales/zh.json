@@ -1,0 +1,183 @@
+{
+  "site": {
+    "title_suffix": "Zhassulan Serikuly",
+    "default_title": "Zhassulan Serikuly — 工程笔记",
+    "description": "Zhassulan Serikuly 的工程作品集——前端架构、性能优化、系统现代化改造、GIS 与生产级系统。"
+  },
+  "nav": {
+    "signals": "数据概览",
+    "cases": "案例",
+    "builds": "作品",
+    "projects": "全部项目",
+    "proof": "证明材料",
+    "cv": "简历",
+    "path": "成长路径",
+    "contact": "联系方式"
+  },
+  "header": {
+    "home_aria": "首页",
+    "primary_nav_aria": "主导航",
+    "mobile_nav_aria": "移动端导航",
+    "start_conversation": "发起对话",
+    "open_menu": "打开菜单",
+    "close_menu": "关闭菜单",
+    "language": "语言"
+  },
+  "hero": {
+    "status": "高级软件工程师 · 6 年以上生产环境经验",
+    "title": "我打造的是用户能<em>感受到</em>、团队又不得不长期<em>维护下去</em>的那部分。",
+    "lead": "这不是我 LinkedIn 的复制品，而是一本关于速度、架构、系统现代化改造，以及生产级软件背后决策的小小工程笔记。",
+    "cta_open_notebook": "打开笔记",
+    "cta_cv": "简历 / PDF",
+    "cta_cv_aria": "查看并下载简历",
+    "social_linkedin": "LinkedIn",
+    "social_github": "GitHub",
+    "social_email": "邮箱",
+    "opens_new_tab_sr": "（在新标签页中打开）",
+    "meta_1": "Vue / React / Nuxt / Next / TypeScript",
+    "meta_2": "Python / Django REST",
+    "meta_3": "性能优化 / 架构 / 技术领导力",
+    "signal_top_label": "当前模式",
+    "signal_top_value": "降低复杂度",
+    "signal_bottom_label": "循环",
+    "signal_bottom_value": "分析 → 简化 → 验证"
+  },
+  "work": {
+    "eyebrow": "我喜欢深入的系统类型",
+    "heading": "没有客户案例展示墙，<br />只有真实的工程战场。",
+    "intro": "LinkedIn 可以罗列项目和雇主，但我更想在这里展示我的工作真正产生最大价值的那类系统。"
+  },
+  "case_studies": {
+    "eyebrow": "工程笔记",
+    "heading": "四个值得在面试中细说的决策。",
+    "intro": "这里没有职位描述式的条目。每个案例都围绕一个约束条件、一次工程决策和一个可衡量的结果展开。",
+    "label_constraint": "约束条件",
+    "label_move": "工程决策",
+    "label_outcome": "结果"
+  },
+  "selected_projects": {
+    "eyebrow": "精选作品",
+    "heading": "几款产品，<br />而非完整档案。",
+    "intro": "这里只是为工程笔记增加一层视觉呈现，并非第二份简历，也不打算列出我做过的每一个项目。",
+    "browse_all": "浏览全部项目"
+  },
+  "principles": {
+    "eyebrow": "工作原则",
+    "heading": "代码背后的准则。",
+    "intro": "工具会变，但这些是我打算一直坚持的习惯。"
+  },
+  "trajectory": {
+    "eyebrow": "成长路径",
+    "heading": "职责范围的扩展，<br />而不是职位名称的编年史。",
+    "intro": "时间线被刻意压缩了。真正有意思的是工作性质的变化：界面开发 → 交付 → 系统 → 技术责任。",
+    "proof_eyebrow": "有据可查，而非摆设",
+    "proof_heading": "可以被核实的东西。",
+    "proof_intro": "教育背景、语言能力证明、竞赛获奖，以及一封签署的推荐信——与工程故事分开单列。",
+    "proof_link": "查看全部证书与推荐信",
+    "open_proof": "查看证明材料"
+  },
+  "contact": {
+    "eyebrow": "下一个系统",
+    "heading": "如果一个产品正变得越来越难以改动，我会很感兴趣。",
+    "role_line": "高级软件工程师 · 高级前端工程师 · 技术组长",
+    "relocation_line": "愿意加入国际团队，接受异地工作安排。",
+    "opens_new_tab_sr": "（在新标签页中打开）"
+  },
+  "footer": {
+    "back_to_top": "回到顶部 ↑"
+  },
+  "accessibility": {
+    "toggle_aria": "无障碍设置",
+    "heading": "无障碍",
+    "reset": "重置",
+    "close_aria": "关闭无障碍设置",
+    "color_scheme_legend": "配色方案",
+    "scheme_normal": "标准",
+    "scheme_dark": "深色",
+    "scheme_blue": "蓝色",
+    "scheme_gray": "灰色",
+    "font_size_legend": "字体大小",
+    "font_small": "小",
+    "font_medium": "中",
+    "font_large": "大",
+    "images_legend": "图片",
+    "image_show": "显示",
+    "image_grayscale": "灰度",
+    "image_hide": "隐藏",
+    "tts_legend": "文本朗读",
+    "tts_off": "关闭",
+    "tts_on": "开启",
+    "tts_hint": "朗读当前页面的主要内容。"
+  },
+  "proof_detail": {
+    "back_link": "所有证明文件",
+    "certificate_label": "证书",
+    "recommendation_label": "推荐信",
+    "open_full_document": "打开完整文件",
+    "opens_new_tab_sr": "（在新标签页中打开）",
+    "placeholder_title": "扫描件尚未上传。",
+    "placeholder_text": "该条目已建好，但原始文件尚未添加到网站上。"
+  },
+  "proof_page": {
+    "back_link": "工程笔记",
+    "eyebrow": "证明材料档案",
+    "heading": "证书与<br />推荐信。",
+    "intro": "教育背景、语言能力证明、竞赛获奖以及签署的推荐信——支撑工程故事的、可核实的记录。",
+    "search_label": "搜索",
+    "search_placeholder": "试试搜索“IELTS”“KeyHorse”…",
+    "type_label": "类型",
+    "kind_all": "全部",
+    "kind_certificates": "证书",
+    "kind_recommendations": "推荐信",
+    "reset": "重置",
+    "result_singular": "份文件",
+    "result_plural": "份文件",
+    "empty_title": "没有找到匹配的文件。",
+    "empty_text": "请尝试更宽泛的搜索，或重置筛选条件。",
+    "reset_filters": "重置筛选",
+    "kind_certificate": "证书",
+    "kind_recommendation": "推荐信"
+  },
+  "projects_page": {
+    "back_link": "工程笔记",
+    "eyebrow": "项目档案",
+    "heading": "支撑这本笔记的<br />项目作品。",
+    "intro": "可按项目名称、功能或技术栈搜索。首页只展示精选内容，这一页是更完整的档案。",
+    "search_label": "搜索",
+    "search_placeholder": "试试搜索“Mapbox”“booking”“React”…",
+    "category_label": "分类",
+    "stack_label": "技术栈",
+    "reset": "重置",
+    "result_singular": "个项目",
+    "result_plural": "个项目",
+    "empty_title": "没有找到匹配的项目。",
+    "empty_text": "请尝试更宽泛的搜索，或重置筛选条件。",
+    "reset_filters": "重置筛选",
+    "category_all": "全部",
+    "stack_all": "全部"
+  },
+  "cv_page": {
+    "back_link": "工程笔记",
+    "eyebrow": "个人简历",
+    "title": "本页的全部内容，<br />整合为一份 PDF。",
+    "intro": "与本笔记其他部分相同的经历、技能与证明材料，整理成单一文档——方便用于求职系统投递、邮件附件或打印。",
+    "download_cv": "下载简历",
+    "download_cv_aria": "以 PDF 格式下载简历",
+    "open_new_tab": "在新标签页中打开",
+    "opens_new_tab_sr": "（在新标签页中打开）",
+    "file_meta": "PDF · 2026 年更新",
+    "snapshot_aria": "职业概览",
+    "experience_heading": "工作经历",
+    "skills_heading": "技能",
+    "education_heading": "教育背景、证书与证明材料",
+    "want_file_heading": "需要文件版本吗？",
+    "want_file_text": "同样的内容，一份 PDF——可直接用于投递或发送邮件。",
+    "view_all_proof": "查看全部证书与推荐信",
+    "open_proof": "查看证明材料",
+    "skill_frontend": "前端",
+    "skill_architecture": "架构与质量",
+    "skill_testing": "测试",
+    "skill_backend": "后端",
+    "skill_tools": "工具与 DevOps"
+  }
+}

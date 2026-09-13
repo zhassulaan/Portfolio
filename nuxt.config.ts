@@ -2,6 +2,41 @@ export default defineNuxtConfig({
   devtools: {
     enabled: false,
   },
+  modules: [
+    '@nuxtjs/i18n',
+  ],
+  i18n: {
+    locales: [{
+      code: 'en',
+      iso: 'en-US',
+      name: 'English',
+      file: 'en.json',
+    }, {
+      code: 'ru',
+      iso: 'ru-RU',
+      name: 'Русский',
+      file: 'ru.json',
+    }, {
+      code: 'kk',
+      iso: 'kk-KZ',
+      name: 'Қазақша',
+      file: 'kk.json',
+    }, {
+      code: 'tr',
+      iso: 'tr-TR',
+      name: 'Türkçe',
+      file: 'tr.json',
+    }, {
+      code: 'zh',
+      iso: 'zh-CN',
+      name: '中文',
+      file: 'zh.json',
+    }],
+    defaultLocale: 'en',
+    langDir: 'locales/',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: false,
+  },
   css: [
     '@/assets/css/theme.css',
     '@/assets/css/base.css',

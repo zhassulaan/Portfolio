@@ -1,0 +1,183 @@
+{
+  "site": {
+    "title_suffix": "Zhassulan Serikuly",
+    "default_title": "Zhassulan Serikuly — Engineering Notebook",
+    "description": "Engineering portfolio of Zhassulan Serikuly — frontend architecture, performance, modernization, GIS and production systems."
+  },
+  "nav": {
+    "signals": "Signals",
+    "cases": "Cases",
+    "builds": "Builds",
+    "projects": "Projects",
+    "proof": "Proof",
+    "cv": "CV",
+    "path": "Path",
+    "contact": "Contact"
+  },
+  "header": {
+    "home_aria": "Home",
+    "primary_nav_aria": "Primary navigation",
+    "mobile_nav_aria": "Mobile navigation",
+    "start_conversation": "Start a conversation",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu",
+    "language": "Language"
+  },
+  "hero": {
+    "status": "Senior Software Engineer · 6+ years in production",
+    "title": "I engineer the parts users <em>feel</em> and teams have to <em>live with.</em>",
+    "lead": "This is not a mirror of my LinkedIn. It is a small engineering notebook about speed, architecture, modernization and the decisions behind production software.",
+    "cta_open_notebook": "Open the notebook",
+    "cta_cv": "CV / PDF",
+    "cta_cv_aria": "View and download CV",
+    "social_linkedin": "LinkedIn",
+    "social_github": "GitHub",
+    "social_email": "Email",
+    "opens_new_tab_sr": "(opens in a new tab)",
+    "meta_1": "Vue / React / Nuxt / Next / TypeScript",
+    "meta_2": "Python / Django REST",
+    "meta_3": "Performance / Architecture / Leadership",
+    "signal_top_label": "current mode",
+    "signal_top_value": "reduce complexity",
+    "signal_bottom_label": "loop",
+    "signal_bottom_value": "profile → simplify → prove"
+  },
+  "work": {
+    "eyebrow": "Systems I like working on",
+    "heading": "No client gallery.<br />Just the engineering terrain.",
+    "intro": "LinkedIn can list projects and employers. Here I would rather show the kinds of systems where my work becomes most valuable."
+  },
+  "case_studies": {
+    "eyebrow": "Engineering notebook",
+    "heading": "Four decisions worth discussing in an interview.",
+    "intro": "No job-description bullets here. Each case is structured around a constraint, an engineering move and a measurable outcome.",
+    "label_constraint": "Constraint",
+    "label_move": "Engineering move",
+    "label_outcome": "Outcome"
+  },
+  "selected_projects": {
+    "eyebrow": "Selected builds",
+    "heading": "A few products.<br />Not the whole archive.",
+    "intro": "These are here to give the engineering notebook a visual layer. They are not a second résumé and they are not meant to list every project I have shipped.",
+    "browse_all": "Browse all projects"
+  },
+  "principles": {
+    "eyebrow": "Operating principles",
+    "heading": "The rules behind the code.",
+    "intro": "Tools change. These are the habits I expect to keep."
+  },
+  "trajectory": {
+    "eyebrow": "Engineering path",
+    "heading": "A progression of scope,<br />not a chronology of job titles.",
+    "intro": "The chronology is deliberately compressed. The interesting part is how the work changed: UI → delivery → systems → technical ownership.",
+    "proof_eyebrow": "Proof, not decoration",
+    "proof_heading": "Things that can be checked.",
+    "proof_intro": "Education, language evidence, competition recognition and a signed recommendation — kept separate from the engineering story.",
+    "proof_link": "View all certificates & recommendations",
+    "open_proof": "Open proof"
+  },
+  "contact": {
+    "eyebrow": "Next system",
+    "heading": "If the product is getting harder to change, I’m interested.",
+    "role_line": "Senior Software Engineer · Senior Frontend Engineer · Team Lead",
+    "relocation_line": "Open to international teams and relocation.",
+    "opens_new_tab_sr": "(opens in a new tab)"
+  },
+  "footer": {
+    "back_to_top": "Back to top ↑"
+  },
+  "accessibility": {
+    "toggle_aria": "Accessibility settings",
+    "heading": "Accessibility",
+    "reset": "Reset",
+    "close_aria": "Close accessibility settings",
+    "color_scheme_legend": "Color scheme",
+    "scheme_normal": "Normal",
+    "scheme_dark": "Dark",
+    "scheme_blue": "Blue",
+    "scheme_gray": "Gray",
+    "font_size_legend": "Font size",
+    "font_small": "Small",
+    "font_medium": "Medium",
+    "font_large": "Large",
+    "images_legend": "Images",
+    "image_show": "Show",
+    "image_grayscale": "Grayscale",
+    "image_hide": "Hide",
+    "tts_legend": "Text-to-speech",
+    "tts_off": "Off",
+    "tts_on": "On",
+    "tts_hint": "Reads the current page's main content aloud."
+  },
+  "proof_detail": {
+    "back_link": "All proof documents",
+    "certificate_label": "Certificate",
+    "recommendation_label": "Recommendation letter",
+    "open_full_document": "Open full document",
+    "opens_new_tab_sr": "(opens in a new tab)",
+    "placeholder_title": "Scan not uploaded yet.",
+    "placeholder_text": "This entry is set up but the original file hasn't been attached to the site yet."
+  },
+  "proof_page": {
+    "back_link": "Engineering notebook",
+    "eyebrow": "Proof archive",
+    "heading": "Certificates and<br />recommendations.",
+    "intro": "Education, language evidence, competition recognition and signed recommendations — the verifiable record behind the engineering story.",
+    "search_label": "Search",
+    "search_placeholder": "Try “IELTS”, “KeyHorse”…",
+    "type_label": "Type",
+    "kind_all": "All",
+    "kind_certificates": "Certificates",
+    "kind_recommendations": "Recommendations",
+    "reset": "Reset",
+    "result_singular": "document",
+    "result_plural": "documents",
+    "empty_title": "No matching documents.",
+    "empty_text": "Try a broader search or reset the filters.",
+    "reset_filters": "Reset filters",
+    "kind_certificate": "Certificate",
+    "kind_recommendation": "Recommendation"
+  },
+  "projects_page": {
+    "back_link": "Engineering notebook",
+    "eyebrow": "Project archive",
+    "heading": "The builds behind<br />the notebook.",
+    "intro": "Search by project name, what it does, or any technology in its stack. The home page stays curated; this page is the wider archive.",
+    "search_label": "Search",
+    "search_placeholder": "Try “Mapbox”, “booking”, “React”…",
+    "category_label": "Category",
+    "stack_label": "Stack",
+    "reset": "Reset",
+    "result_singular": "project",
+    "result_plural": "projects",
+    "empty_title": "No matching projects.",
+    "empty_text": "Try a broader search or reset the filters.",
+    "reset_filters": "Reset filters",
+    "category_all": "All",
+    "stack_all": "All"
+  },
+  "cv_page": {
+    "back_link": "Engineering notebook",
+    "eyebrow": "Curriculum vitae",
+    "title": "Everything on this page,<br />as one PDF.",
+    "intro": "The same experience, skills and proof as the rest of this notebook, laid out as a single document — for applicant tracking systems, email attachments, or printing.",
+    "download_cv": "Download CV",
+    "download_cv_aria": "Download CV as PDF",
+    "open_new_tab": "Open in a new tab",
+    "opens_new_tab_sr": "(opens in a new tab)",
+    "file_meta": "PDF · updated for 2026",
+    "snapshot_aria": "Career snapshot",
+    "experience_heading": "Experience",
+    "skills_heading": "Skills",
+    "education_heading": "Education, certifications & proof",
+    "want_file_heading": "Want it as a file?",
+    "want_file_text": "Same content, one PDF — ready for an application or an inbox.",
+    "view_all_proof": "View all certificates & recommendations",
+    "open_proof": "Open proof",
+    "skill_frontend": "Frontend",
+    "skill_architecture": "Architecture & quality",
+    "skill_testing": "Testing",
+    "skill_backend": "Backend",
+    "skill_tools": "Tools & DevOps"
+  }
+}

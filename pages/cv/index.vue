@@ -9,19 +9,25 @@ import { NuxtLink } from '#components';
 
 const skill_groups: Array<{ label: string; items: string[] }> = [{
   label: 'Frontend',
-  items: ['Vue 2/3', 'React', 'Nuxt', 'Next.js', 'TypeScript', 'JavaScript', 'Pinia', 'Vuex', 'Redux', 'HTML5', 'CSS3', 'Tailwind', 'Mapbox GL JS']
+  items: ['Vue.js 2/3', 'React', 'Nuxt.js', 'Next.js', 'TypeScript', 'JavaScript', 'Pinia', 'Vuex', 'Redux', 'HTML5', 'CSS3', 'Tailwind CSS', 'Mapbox GL JS']
 }, {
-  label: 'Architecture & quality',
-  items: ['SSR', 'Design systems', 'WCAG accessibility', 'Core Web Vitals', 'Cross-browser compatibility', 'PWA', 'BEM']
+  label: 'Architecture & Quality',
+  items: ['Server-Side Rendering (SSR)', 'Design systems', 'Responsive UI', 'WCAG accessibility', 'Cross-browser compatibility', 'Progressive Web Apps (PWA)', 'BEM', 'Full-Stack Development', 'Object-Oriented Programming (OOP)']
+}, {
+  label: 'Performance',
+  items: ['Core Web Vitals (LCP, INP, CLS)', 'Code Splitting', 'Lazy Loading', 'Tree Shaking', 'Bundle Optimization', 'Technical SEO']
 }, {
   label: 'Testing',
-  items: ['Vitest', 'Jest', 'Playwright']
+  items: ['Vitest', 'Jest', 'Playwright', 'Unit Testing', 'E2E Testing']
 }, {
   label: 'Backend',
-  items: ['Python', 'Django REST Framework', 'PostgreSQL', 'Elasticsearch', 'REST APIs', 'WebSockets']
+  items: ['Python', 'Django REST Framework', 'PHP', 'Laravel', 'PostgreSQL', 'MySQL', 'PL/SQL', 'Elasticsearch', 'REST APIs', 'WebSockets']
+}, {
+  label: 'Mobile',
+  items: ['React Native', 'Ionic', 'Capacitor']
 }, {
   label: 'Tools & DevOps',
-  items: ['Git', 'GitLab', 'Vite', 'Docker', 'CI/CD', 'ESLint', 'Stylelint', 'Sentry', 'Agile/Scrum']
+  items: ['Git', 'GitLab', 'Vite', 'Docker', 'CI/CD', 'ESLint', 'Stylelint', 'Sentry', 'Postman', 'Agile/Scrum', 'Kanban']
 }];
 
 onMounted(() => {

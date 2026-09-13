@@ -1,16 +1,19 @@
 <script setup lang='ts'>
 import { milestones, proof_items } from '@/data/portfolio';
 import { NuxtLink } from '#components';
+import { useLocaleText } from '@/composables/use_locale_text';
+
+const { tx } = useLocaleText();
 </script>
 
 <template>
   <section class='trajectory_section section wrap' id='path'>
     <div class='section_heading'>
       <div>
-        <p class='eyebrow'>Engineering path</p>
-        <h2>A progression of scope,<br />not a second résumé.</h2>
+        <p class='eyebrow'>{{ $t('trajectory.eyebrow') }}</p>
+        <h2 v-html="$t('trajectory.heading')"></h2>
       </div>
-      <p>The chronology is deliberately compressed. The interesting part is how the work changed: UI → delivery → systems → technical ownership.</p>
+      <p>{{ $t('trajectory.intro') }}</p>
     </div>
 
     <div class='trajectory_section__companies'>
@@ -25,26 +28,26 @@ import { NuxtLink } from '#components';
 
         <div class='trajectory_section__company_body'>
           <small v-text='item.period'></small>
-          <h3 v-text='item.role'></h3>
-          <p v-text='item.focus'></p>
+          <h3 v-text="tx(`milestones.${item.company}.role`, item.role)"></h3>
+          <p v-text="tx(`milestones.${item.company}.focus`, item.focus)"></p>
         </div>
       </article>
     </div>
 
     <div class='trajectory_section__proof'>
       <div class='trajectory_section__proof_intro' v-reveal>
-        <p class='eyebrow'>Proof, not decoration</p>
-        <h3>Things that can be checked.</h3>
-        <p>Education, language evidence, competition recognition and a signed recommendation — kept separate from the engineering story.</p>
+        <p class='eyebrow'>{{ $t('trajectory.proof_eyebrow') }}</p>
+        <h3>{{ $t('trajectory.proof_heading') }}</h3>
+        <p>{{ $t('trajectory.proof_intro') }}</p>
         <NuxtLink class='trajectory_section__proof_link' to='/proof'>
-          View all certificates &amp; recommendations <span aria-hidden='true'>↗</span>
+          {{ $t('trajectory.proof_link') }} <span aria-hidden='true'>↗</span>
         </NuxtLink>
       </div>
 
       <div class='trajectory_section__proof_grid'>
         <component class='trajectory_section__proof_item'
           :is="item.href ? NuxtLink : 'article'"
-          v-for='item in proof_items'
+          v-for='(item, index) in proof_items'
           :key="item.label"
           v-reveal
           :to="item.href"
@@ -53,10 +56,10 @@ import { NuxtLink } from '#components';
             :src="item.logo"
             :alt="`${item.label} logo`"
           />
-          <span v-text='item.label'></span>
-          <strong v-text='item.value'></strong>
-          <p v-text='item.note'></p>
-          <em v-if='item.href'>Open proof <span aria-hidden='true'>↗</span></em>
+          <span v-text="tx(`proof_items.${index}.label`, item.label)"></span>
+          <strong v-text="tx(`proof_items.${index}.value`, item.value)"></strong>
+          <p v-text="tx(`proof_items.${index}.note`, item.note)"></p>
+          <em v-if='item.href'>{{ $t('trajectory.open_proof') }} <span aria-hidden='true'>↗</span></em>
         </component>
       </div>
     </div>

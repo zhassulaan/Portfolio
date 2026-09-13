@@ -4,10 +4,10 @@
 }
 
 .cv_page__hero {
+  display: grid;
   align-items: end;
   gap: 3.75em;
   grid-template-columns: 1.1fr .9fr;
-  display: grid;
   padding-block: 5.75em 3.875em;
 }
 
@@ -33,10 +33,10 @@
 }
 
 .cv_page__download {
+  display: flex;
   flex-direction: column;
   align-items: start;
   gap: .875em;
-  display: flex;
   border: 1px solid var(--theme-line);
   border-radius: 1.375em;
   padding: 1.75em;
@@ -63,16 +63,16 @@
 }
 
 .cv_page__signals {
-  grid-template-columns: repeat(4, 1fr);
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   border-top: 1px solid var(--theme-line);
   border-bottom: 1px solid var(--theme-line);
 }
 
 .cv_page__signal {
+  display: flex;
   align-items: baseline;
   gap: .625em;
-  display: flex;
   border-right: 1px solid var(--theme-line);
   padding: 1.75em 1.375em;
 }
@@ -111,9 +111,9 @@
 }
 
 .cv_page__timeline {
+  display: grid;
   gap: 1.125em;
   grid-template-columns: repeat(2, 1fr);
-  display: grid;
 }
 
 .cv_page__timeline_item {
@@ -124,9 +124,9 @@
 }
 
 .cv_page__timeline_head {
+  display: flex;
   align-items: center;
   gap: .875em;
-  display: flex;
   margin-bottom: 1.125em;
 }
 
@@ -179,28 +179,28 @@
 }
 
 .cv_page__proof_grid {
+  display: grid;
   gap: .75em;
   grid-template-columns: repeat(4, 1fr);
-  display: grid;
   margin-bottom: 1.5em;
 }
 
 .cv_page__proof_item {
   position: relative;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
+  min-height: 10.625em;
   border: 1px solid var(--theme-line);
   border-radius: 1.125em;
-  min-height: 10.625em;
   padding: 1.25em;
   background: var(--theme-surface);
 }
 
 .cv_page__proof_item img {
-  margin-bottom: 1em;
-  border-radius: .375em;
   width: 3.75em;
   height: 1.875em;
+  margin-bottom: 1em;
+  border-radius: .375em;
   padding: .25em .375em;
   background: #fff;
   object-fit: contain;
@@ -249,10 +249,10 @@
 }
 
 .cv_page__cta {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.5em;
-  display: flex;
   margin-top: 3.75em;
   border: 1px solid var(--theme-line);
   border-radius: 1.375em;

@@ -1,0 +1,183 @@
+{
+  "site": {
+    "title_suffix": "Zhassulan Serikuly",
+    "default_title": "Zhassulan Serikuly — Mühendislik Defteri",
+    "description": "Zhassulan Serikuly'nin mühendislik portföyü — frontend mimarisi, performans, modernizasyon, GIS ve production sistemleri."
+  },
+  "nav": {
+    "signals": "Göstergeler",
+    "cases": "Vakalar",
+    "builds": "Yapımlar",
+    "projects": "Projeler",
+    "proof": "Kanıtlar",
+    "cv": "Özgeçmiş",
+    "path": "Yol",
+    "contact": "İletişim"
+  },
+  "header": {
+    "home_aria": "Ana sayfa",
+    "primary_nav_aria": "Ana gezinme",
+    "mobile_nav_aria": "Mobil gezinme",
+    "start_conversation": "Bir konuşma başlat",
+    "open_menu": "Menüyü aç",
+    "close_menu": "Menüyü kapat",
+    "language": "Dil"
+  },
+  "hero": {
+    "status": "Senior Software Engineer · production ortamında 6+ yıl deneyim",
+    "title": "Kullanıcıların <em>hissettiği</em>, ekiplerin de <em>uzun süre yaşamak zorunda kaldığı</em> kısmı ben inşa ediyorum.",
+    "lead": "Bu, LinkedIn'imin bir kopyası değil. Hız, mimari, modernizasyon ve production yazılımın arkasındaki kararlar üzerine küçük bir mühendislik defteri.",
+    "cta_open_notebook": "Defteri aç",
+    "cta_cv": "Özgeçmiş / PDF",
+    "cta_cv_aria": "Özgeçmişi görüntüle ve indir",
+    "social_linkedin": "LinkedIn",
+    "social_github": "GitHub",
+    "social_email": "E-posta",
+    "opens_new_tab_sr": "(yeni sekmede açılır)",
+    "meta_1": "Vue / React / Nuxt / Next / TypeScript",
+    "meta_2": "Python / Django REST",
+    "meta_3": "Performans / Mimari / Liderlik",
+    "signal_top_label": "şu anki mod",
+    "signal_top_value": "karmaşıklığı azalt",
+    "signal_bottom_label": "döngü",
+    "signal_bottom_value": "profille → sadeleştir → kanıtla"
+  },
+  "work": {
+    "eyebrow": "Üzerinde çalışmaktan keyif aldığım sistemler",
+    "heading": "Müşteri galerisi yok.<br />Sadece mühendislik alanı.",
+    "intro": "LinkedIn projeleri ve işverenleri listeleyebilir. Burada işimin en değerli olduğu sistem türlerini göstermeyi tercih ediyorum."
+  },
+  "case_studies": {
+    "eyebrow": "Mühendislik defteri",
+    "heading": "Bir mülakatta konuşulmaya değer dört karar.",
+    "intro": "Burada iş ilanı maddeleri yok. Her vaka bir kısıt, bir mühendislik hamlesi ve ölçülebilir bir sonuç etrafında kurgulandı.",
+    "label_constraint": "Kısıt",
+    "label_move": "Mühendislik hamlesi",
+    "label_outcome": "Sonuç"
+  },
+  "selected_projects": {
+    "eyebrow": "Seçilmiş yapımlar",
+    "heading": "Birkaç ürün.<br />Arşivin tamamı değil.",
+    "intro": "Bunlar mühendislik defterine görsel bir katman katmak için burada. İkinci bir özgeçmiş değiller ve yaptığım her projeyi listelemeyi amaçlamıyorlar.",
+    "browse_all": "Tüm projelere göz at"
+  },
+  "principles": {
+    "eyebrow": "Çalışma ilkeleri",
+    "heading": "Kodun arkasındaki kurallar.",
+    "intro": "Araçlar değişir. Bunlar sürdürmeyi planladığım alışkanlıklar."
+  },
+  "trajectory": {
+    "eyebrow": "Mühendislik yolculuğu",
+    "heading": "Kapsamın büyümesi,<br />unvanların kronolojisi değil.",
+    "intro": "Kronoloji bilinçli olarak sıkıştırıldı. İlginç olan, işin özünün nasıl değiştiği: arayüz → teslimat → sistemler → teknik sorumluluk.",
+    "proof_eyebrow": "Süs değil, kanıt",
+    "proof_heading": "Doğrulanabilecek şeyler.",
+    "proof_intro": "Eğitim, dil yeterliliği kanıtı, yarışma tanınırlığı ve imzalı bir referans mektubu — mühendislik hikayesinden ayrı tutuluyor.",
+    "proof_link": "Tüm sertifikaları ve referansları gör",
+    "open_proof": "Kanıtı aç"
+  },
+  "contact": {
+    "eyebrow": "Sıradaki sistem",
+    "heading": "Ürünü değiştirmek giderek zorlaşıyorsa, bu benim ilgimi çeker.",
+    "role_line": "Senior Software Engineer · Senior Frontend Engineer · Team Lead",
+    "relocation_line": "Uluslararası ekiplere ve yer değiştirmeye açığım.",
+    "opens_new_tab_sr": "(yeni sekmede açılır)"
+  },
+  "footer": {
+    "back_to_top": "Yukarı çık ↑"
+  },
+  "accessibility": {
+    "toggle_aria": "Erişilebilirlik ayarları",
+    "heading": "Erişilebilirlik",
+    "reset": "Sıfırla",
+    "close_aria": "Erişilebilirlik ayarlarını kapat",
+    "color_scheme_legend": "Renk şeması",
+    "scheme_normal": "Normal",
+    "scheme_dark": "Koyu",
+    "scheme_blue": "Mavi",
+    "scheme_gray": "Gri",
+    "font_size_legend": "Yazı tipi boyutu",
+    "font_small": "Küçük",
+    "font_medium": "Orta",
+    "font_large": "Büyük",
+    "images_legend": "Görseller",
+    "image_show": "Göster",
+    "image_grayscale": "Gri tonlama",
+    "image_hide": "Gizle",
+    "tts_legend": "Sesli okuma",
+    "tts_off": "Kapalı",
+    "tts_on": "Açık",
+    "tts_hint": "Geçerli sayfanın ana içeriğini sesli okur."
+  },
+  "proof_detail": {
+    "back_link": "Tüm kanıt belgeleri",
+    "certificate_label": "Sertifika",
+    "recommendation_label": "Referans mektubu",
+    "open_full_document": "Belgenin tamamını aç",
+    "opens_new_tab_sr": "(yeni sekmede açılır)",
+    "placeholder_title": "Taranan belge henüz yüklenmedi.",
+    "placeholder_text": "Bu kayıt hazır, ancak orijinal dosya henüz siteye eklenmedi."
+  },
+  "proof_page": {
+    "back_link": "Mühendislik defteri",
+    "eyebrow": "Kanıt arşivi",
+    "heading": "Sertifikalar ve<br />referans mektupları.",
+    "intro": "Eğitim, dil yeterliliği kanıtı, yarışma tanınırlığı ve imzalı referans mektupları — mühendislik hikayesinin arkasındaki doğrulanabilir kayıt.",
+    "search_label": "Ara",
+    "search_placeholder": "Örneğin “IELTS”, “KeyHorse”…",
+    "type_label": "Tür",
+    "kind_all": "Tümü",
+    "kind_certificates": "Sertifikalar",
+    "kind_recommendations": "Referans mektupları",
+    "reset": "Sıfırla",
+    "result_singular": "belge",
+    "result_plural": "belge",
+    "empty_title": "Eşleşen belge yok.",
+    "empty_text": "Daha geniş bir arama deneyin veya filtreleri sıfırlayın.",
+    "reset_filters": "Filtreleri sıfırla",
+    "kind_certificate": "Sertifika",
+    "kind_recommendation": "Referans mektubu"
+  },
+  "projects_page": {
+    "back_link": "Mühendislik defteri",
+    "eyebrow": "Proje arşivi",
+    "heading": "Defterin arkasındaki<br />yapımlar.",
+    "intro": "Proje adına, ne yaptığına veya stack'indeki herhangi bir teknolojiye göre arayın. Ana sayfa küratörlü kalır; bu sayfa daha geniş arşivdir.",
+    "search_label": "Ara",
+    "search_placeholder": "Örneğin “Mapbox”, “booking”, “React”…",
+    "category_label": "Kategori",
+    "stack_label": "Stack",
+    "reset": "Sıfırla",
+    "result_singular": "proje",
+    "result_plural": "proje",
+    "empty_title": "Eşleşen proje yok.",
+    "empty_text": "Daha geniş bir arama deneyin veya filtreleri sıfırlayın.",
+    "reset_filters": "Filtreleri sıfırla",
+    "category_all": "Tümü",
+    "stack_all": "Tümü"
+  },
+  "cv_page": {
+    "back_link": "Mühendislik defteri",
+    "eyebrow": "Özgeçmiş",
+    "title": "Bu sayfadaki her şey<br />tek bir PDF olarak.",
+    "intro": "Bu defterin geri kalanındaki aynı deneyim, beceriler ve kanıtlar tek bir belgede — başvuru takip sistemleri, e-posta ekleri veya baskı için.",
+    "download_cv": "Özgeçmişi indir",
+    "download_cv_aria": "Özgeçmişi PDF olarak indir",
+    "open_new_tab": "Yeni sekmede aç",
+    "opens_new_tab_sr": "(yeni sekmede açılır)",
+    "file_meta": "PDF · 2026 için güncellendi",
+    "snapshot_aria": "Kariyer özeti",
+    "experience_heading": "Deneyim",
+    "skills_heading": "Beceriler",
+    "education_heading": "Eğitim, sertifikalar ve kanıtlar",
+    "want_file_heading": "Dosya olarak mı istersiniz?",
+    "want_file_text": "Aynı içerik, tek bir PDF — bir başvuru veya e-posta için hazır.",
+    "view_all_proof": "Tüm sertifikaları ve referansları gör",
+    "open_proof": "Kanıtı aç",
+    "skill_frontend": "Frontend",
+    "skill_architecture": "Mimari ve kalite",
+    "skill_testing": "Test",
+    "skill_backend": "Backend",
+    "skill_tools": "Araçlar ve DevOps"
+  }
+}
