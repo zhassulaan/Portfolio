@@ -1,1 +1,0 @@
-import{e as a,o as t,c as e,F as o,m as r,t as _}from"./entry.NNiFi7Sr.js";const i={class:"tag_list"},c=["textContent"],u=a({__name:"tag_list",props:{items:{}},setup(n){return(l,m)=>(t(),e("div",i,[(t(!0),e(o,null,r(n.items,s=>(t(),e("span",{class:"tag_list__item",key:s,textContent:_(s)},null,8,c))),128))]))}});export{u as _};
