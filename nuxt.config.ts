@@ -8,42 +8,46 @@ export default defineNuxtConfig({
   i18n: {
     locales: [{
       code: 'en',
-      iso: 'en-US',
+      language: 'en-US',
       name: 'English',
       file: 'en.json',
     }, {
       code: 'ru',
-      iso: 'ru-RU',
+      language: 'ru-RU',
       name: 'Русский',
       file: 'ru.json',
     }, {
       code: 'kk',
-      iso: 'kk-KZ',
+      language: 'kk-KZ',
       name: 'Қазақша',
       file: 'kk.json',
     }, {
       code: 'tr',
-      iso: 'tr-TR',
+      language: 'tr-TR',
       name: 'Türkçe',
       file: 'tr.json',
     }, {
       code: 'zh',
-      iso: 'zh-CN',
+      language: 'zh-CN',
       name: '中文',
       file: 'zh.json',
-      }, {
-        code: 'nl',
-        iso: 'nl-NL',
-        name: 'Nederlands',
-        file: 'nl.json',
-      }, {
-        code: 'de',
-        iso: 'de-DE',
-        name: 'Deutsch',
-        file: 'de.json',
+    }, {
+      code: 'nl',
+      language: 'nl-NL',
+      name: 'Nederlands',
+      file: 'nl.json',
+    }, {
+      code: 'de',
+      language: 'de-DE',
+      name: 'Deutsch',
+      file: 'de.json',
     }],
     defaultLocale: 'en',
     langDir: 'locales/',
+    restructureDir: false,
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
     strategy: 'prefix_except_default',
     detectBrowserLanguage: false,
     // A few messages (hero.title, several section headings, cv_page.title)
