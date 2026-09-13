@@ -1,1 +1,0 @@
-import{f as s,g as e,h as t,i as n,j as a,o as r}from"./entry.BRIXeL9I.js";import{_ as u}from"./proof_detail_section.css.BAUaa_pA.js";const m=s({__name:"[slug]",setup(c){const o=e().params.slug;return t(()=>{window.scrollTo({top:0,left:0,behavior:"instant"})}),(i,_)=>(r(),n(u,{kind:"certificate",slug:a(o)},null,8,["slug"]))}});export{m as default};
