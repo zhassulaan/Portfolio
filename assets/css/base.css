@@ -222,6 +222,15 @@ h1, h2, h3 {
   scroll-margin-top: 7em;
 }
 
+html[lang='ru'] .section_heading h2,
+html[lang='kk'] .section_heading h2,
+html[lang='tr'] .section_heading h2,
+html[lang='de'] .section_heading h2,
+html[lang='nl'] .section_heading h2 {
+  font-size: clamp(1.875em, 4.4vw, 3.25em);
+  line-height: 1.08;
+}
+
 /* Accessibility panel controls — see components/ui/accessibility_panel and
    composables/use_accessibility.ts. Every size in this project's CSS is now
    in `em`, so scaling the root font-size cascades through the whole site —

@@ -17,6 +17,15 @@
   line-height: 1.02;
 }
 
+html[lang='ru'] .contact_section h2,
+html[lang='kk'] .contact_section h2,
+html[lang='tr'] .contact_section h2,
+html[lang='de'] .contact_section h2,
+html[lang='nl'] .contact_section h2 {
+  font-size: clamp(2em, 4.2vw, 3.25em);
+  line-height: 1.08;
+}
+
 .contact_section .eyebrow {
   color: rgba(255, 255, 255, .68);
 }

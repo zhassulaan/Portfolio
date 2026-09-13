@@ -109,6 +109,15 @@ useHead({
     </section>
 
     <section class='cv_page__section wrap'>
+      <h2>{{ $t('cv_page.achievements_heading') }}</h2>
+
+      <ul class='cv_page__achievements'>
+        <li class='cv_page__achievement' v-reveal>{{ $t('cv_page.achievement_1') }}</li>
+        <li class='cv_page__achievement' v-reveal>{{ $t('cv_page.achievement_2') }}</li>
+      </ul>
+    </section>
+
+    <section class='cv_page__section wrap'>
       <h2>{{ $t('cv_page.experience_heading') }}</h2>
 
       <div class='cv_page__timeline'>

@@ -31,6 +31,16 @@ export default defineNuxtConfig({
       iso: 'zh-CN',
       name: '中文',
       file: 'zh.json',
+      }, {
+        code: 'nl',
+        iso: 'nl-NL',
+        name: 'Nederlands',
+        file: 'nl.json',
+      }, {
+        code: 'de',
+        iso: 'de-DE',
+        name: 'Deutsch',
+        file: 'de.json',
     }],
     defaultLocale: 'en',
     langDir: 'locales/',

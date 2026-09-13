@@ -110,6 +110,37 @@
   font-size: clamp(1.625em, 2.6vw, 2.125em);
 }
 
+.cv_page__achievements {
+  gap: 1.125em;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cv_page__achievement {
+  position: relative;
+  border: 1px solid var(--theme-line);
+  border-radius: 1.125em;
+  padding: 1.5em 1.5em 1.5em 3.125em;
+  background: var(--theme-surface);
+  font-size: .9375em;
+  line-height: 1.6;
+  color: var(--theme-text);
+}
+
+.cv_page__achievement::before {
+  content: '';
+  position: absolute;
+  top: 1.75em;
+  left: 1.5em;
+  width: .5em;
+  height: .5em;
+  border-radius: 50%;
+  background: var(--theme-accent);
+}
+
 .cv_page__timeline {
   display: grid;
   gap: 1.125em;
@@ -299,6 +330,9 @@
     margin-bottom: 1.875em;
   }
   .cv_page__timeline {
+    grid-template-columns: 1fr;
+  }
+  .cv_page__achievements {
     grid-template-columns: 1fr;
   }
   .cv_page__cta {

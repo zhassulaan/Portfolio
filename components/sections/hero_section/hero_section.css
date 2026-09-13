@@ -33,6 +33,15 @@
   line-height: .96;
 }
 
+html[lang='ru'] .hero_section__title,
+html[lang='kk'] .hero_section__title,
+html[lang='tr'] .hero_section__title,
+html[lang='de'] .hero_section__title,
+html[lang='nl'] .hero_section__title {
+  font-size: clamp(2.125em, 4.4vw, 3.625em);
+  line-height: 1.08;
+}
+
 .hero_section__title em {
   color: var(--theme-accent);
   font-style: normal;
@@ -240,6 +249,14 @@
   }
   .hero_section__title {
     font-size: clamp(2.75em, 14vw, 3.875em);
+  }
+  html[lang='ru'] .hero_section__title,
+  html[lang='kk'] .hero_section__title,
+  html[lang='tr'] .hero_section__title,
+  html[lang='de'] .hero_section__title,
+  html[lang='nl'] .hero_section__title {
+    font-size: clamp(2em, 10.5vw, 2.75em);
+    line-height: 1.1;
   }
   .hero_section__lead {
     font-size: 1em;
