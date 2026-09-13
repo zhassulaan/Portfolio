@@ -110,6 +110,14 @@
   font-size: clamp(1.625em, 2.6vw, 2.125em);
 }
 
+.cv_page__profile_text {
+  margin: 0;
+  max-width: 46em;
+  font-size: .9375em;
+  line-height: 1.7;
+  color: var(--theme-muted);
+}
+
 .cv_page__achievements {
   gap: 1.125em;
   grid-template-columns: repeat(2, 1fr);
@@ -142,10 +150,10 @@
 }
 
 .cv_page__timeline {
-  display: grid;
+display: grid;
   gap: 1.125em;
   grid-template-columns: repeat(2, 1fr);
-}
+  }
 
 .cv_page__timeline_item {
   border: 1px solid var(--theme-line);
@@ -155,10 +163,10 @@
 }
 
 .cv_page__timeline_head {
-  display: flex;
+display: flex;
   align-items: center;
   gap: .875em;
-  margin-bottom: 1.125em;
+    margin-bottom: 1.125em;
 }
 
 .cv_page__timeline_head img {
@@ -193,6 +201,66 @@
   font-size: .8125em;
   line-height: 1.6;
   color: var(--theme-muted);
+}
+
+.cv_page__timeline_trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: .375em;
+  margin-top: 1.125em;
+  border: 0;
+  padding: 0;
+  background: none;
+  font: inherit;
+  font-size: .75em;
+  font-weight: 800;
+  color: var(--theme-accent);
+  cursor: pointer;
+  transition: transform .2s ease;
+}
+
+.cv_page__timeline_trigger:hover {
+  transform: translateX(.1875em);
+}
+
+.cv_page__modal_meta {
+  margin: 0 0 1em;
+  font-size: .75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--theme-muted);
+}
+
+.cv_page__modal_summary {
+  margin: 0 0 1.5em;
+  font-size: .9375em;
+  line-height: 1.6;
+  color: var(--theme-muted);
+}
+
+.cv_page__modal_highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cv_page__modal_highlights li {
+  font-size: .9375em;
+  line-height: 1.6;
+}
+
+.cv_page__modal_highlights strong {
+  display: block;
+  margin-bottom: .1875em;
+  font-size: .75em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--theme-accent);
 }
 
 .cv_page__skills {

@@ -226,24 +226,67 @@ export const milestones: Milestone[] = [{
   role: 'Senior Software Engineer',
   focus: 'Frontend architecture · product modernization · performance · technical leadership',
   logo: ciklum_logo,
+  location: 'Bucharest, Romania (Remote)',
+  summary: 'Global software engineering company delivering digital products for international clients.',
+  highlights: [{
+    label: 'Architecture',
+    text: 'Established a shared Vue 3/TypeScript architecture — a reusable component library and type-safe API layer — across 10+ modules (1–3M users), built to WCAG AA standards, cutting feature implementation time by ~30%.',
+  }, {
+    label: 'Performance',
+    text: 'Optimized rendering, caching, and API request patterns across high-traffic modules, improving Core Web Vitals — cutting interaction latency (INP) from ~280ms to ~150ms.',
+  }, {
+    label: 'Modernization',
+    text: 'Modernized legacy Vue 2 codebases to Vue 3, Composition API, and Vite; strengthened reliability via Vitest/Jest testing and CI/CD workflows.',
+  }, {
+    label: 'Leadership',
+    text: 'Led frontend architectural decisions, reviewed pull requests, and guided engineers through cross-module technical challenges.',
+  }],
 }, {
   period: '2021 — 2025',
   company: 'KeyHorse',
   role: 'Middle → Senior Software Engineer · Team Lead',
   focus: 'GIS · digital twins · reusable systems · backend APIs · mentoring',
   logo: keyhorse_logo,
+  location: 'Almaty, Kazakhstan',
+  summary: 'GIS and digital-twin platform company serving Central Asia.',
+  highlights: [{
+    label: 'Delivery',
+    text: 'Delivered 80+ regional and 100+ smaller GIS/digital-twin projects serving 1M+ users across 4 countries; built 10 platforms from scratch, launching within 1–1.5 months.',
+  }, {
+    label: 'Performance',
+    text: 'Reduced Mapbox GL JS rendering time 40% (800ms → 480ms) and Elasticsearch geospatial search latency 30% across datasets of 300K–500K objects.',
+  }, {
+    label: 'Architecture',
+    text: 'Built 100+ reusable Vue components in a shared architecture, cutting development effort on similar projects by up to 50% — in some cases from ~1 month to 1 week.',
+  }, {
+    label: 'Backend',
+    text: 'Developed 30–40 REST endpoints (Django, PostgreSQL) for 100K+ record datasets powering GIS workflows.',
+  }, {
+    label: 'Team Leadership',
+    text: 'Mentored 8 engineers, ran ~20 code reviews/week, and standardized BEM/ESLint/Stylelint practices enforced through GitLab CI/CD; automated 40+ test scenarios (Vitest, Playwright) reaching 70–80% coverage.',
+  }],
 }, {
   period: '2020 — 2021',
   company: 'DAR',
   role: 'Junior Software Engineer',
   focus: 'High-volume web delivery · e-commerce · mobile · performance',
   logo: dar_logo,
+  summary: 'Technology group building fintech, education, and sports platforms.',
+  highlights: [{
+    label: 'Delivery',
+    text: 'Delivered 40+ production web apps while handling 3–4 concurrent projects, plus 5–7 cross-platform mobile apps (Ionic, Capacitor, React Native); cut load times 40% via SSR and code splitting, reaching 100/100 Lighthouse SEO.',
+  }],
 }, {
   period: '2020',
   company: 'EPAM Systems',
   role: 'Software Engineer Intern',
   focus: 'React · TypeScript · reusable UI · engineering foundations',
   logo: epam_logo,
+  summary: 'Global IT consulting and digital engineering company.',
+  highlights: [{
+    label: 'Highlights',
+    text: 'Selected 1 of 3 from 40 applicants; shipped responsive React/TypeScript interfaces and reusable components.',
+  }],
 }];
 
 export const proof_items: ProofItem[] = [{
@@ -266,6 +309,10 @@ export const proof_items: ProofItem[] = [{
   value: 'KeyHorse',
   note: 'Signed recommendation from company leadership',
   href: '/recommendation/keyhorse',
+}, {
+  label: 'Languages',
+  value: '5 spoken',
+  note: 'English — full working proficiency · Kazakh & Russian — native · Turkish — conversational · Chinese — basic',
 }];
 
 // One source of truth for the /proof archive and its detail pages

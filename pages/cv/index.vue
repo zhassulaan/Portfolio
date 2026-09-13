@@ -1,16 +1,42 @@
 <script setup lang='ts'>
 import { portfolio_assets, signals, milestones, proof_items } from '@/data/portfolio';
 import TagList from '@/components/ui/tag_list/tag_list.vue';
+import Modal from '@/components/ui/modal/modal.vue';
 // Imported explicitly (rather than relying on Nuxt's compile-time
 // auto-import) because it's used as a dynamic `:is` value below, which
 // needs an actual component reference, not just the tag name — matching
 // the pattern already used in trajectory_section.
 import { NuxtLink } from '#components';
 import { useLocaleText } from '@/composables/use_locale_text';
+import type { Milestone } from '@/types/portfolio';
 
 const { t } = useI18n();
 const { tx } = useLocaleText();
 const local_path = useLocalePath();
+
+// Full per-role detail (career profile paragraph aside) only shows up in
+// the "view full role details" modal — the timeline card itself stays a
+// short summary, matching the rest of the page's snapshot-then-detail
+// pattern.
+const active_milestone = ref<Milestone | null>(null);
+
+const open_milestone_details = (item: Milestone) => {
+  active_milestone.value = item;
+};
+
+const close_milestone_details = () => {
+  active_milestone.value = null;
+};
+
+const active_milestone_title = computed(() => {
+  if (!active_milestone.value) {
+    return '';
+  }
+
+  const role = tx(`milestones.${active_milestone.value.company}.role`, active_milestone.value.role);
+
+  return `${active_milestone.value.company} — ${role}`;
+});
 
 // Group labels are translated via cv_page.skill_* keys below; the items
 // themselves are product/technology names and stay as-is in every locale.
@@ -108,6 +134,11 @@ useHead({
       </div>
     </section>
 
+    <section class='cv_page__section wrap' v-reveal>
+      <h2>{{ $t('cv_page.profile_heading') }}</h2>
+      <p class='cv_page__profile_text'>{{ $t('cv_page.profile_text') }}</p>
+    </section>
+
     <section class='cv_page__section wrap'>
       <h2>{{ $t('cv_page.achievements_heading') }}</h2>
 
@@ -134,9 +165,41 @@ useHead({
           </div>
           <p class='cv_page__timeline_role' v-text="tx(`milestones.${item.company}.role`, item.role)"></p>
           <p class='cv_page__timeline_focus' v-text="tx(`milestones.${item.company}.focus`, item.focus)"></p>
+          <button v-if='item.highlights?.length'
+            class='cv_page__timeline_trigger'
+            type='button'
+            :aria-label="$t('cv_page.view_details_aria', { company: item.company })"
+            v-on:click="open_milestone_details(item)">
+            {{ $t('cv_page.view_details') }} <span aria-hidden='true'>↗</span>
+          </button>
         </article>
       </div>
     </section>
+
+    <Modal :open='!!active_milestone'
+      :title='active_milestone_title'
+      :close_label="$t('cv_page.close_modal_aria')"
+      v-on:close='close_milestone_details'>
+      <template v-if='active_milestone'>
+        <p class='cv_page__modal_meta'>
+          <span v-text='active_milestone.period'></span>
+          <template v-if='active_milestone.location'>
+            <span aria-hidden='true'> · </span>
+            <span v-text="tx(`milestones.${active_milestone.company}.location`, active_milestone.location)"></span>
+          </template>
+        </p>
+        <p v-if='active_milestone.summary'
+          class='cv_page__modal_summary'
+          v-text="tx(`milestones.${active_milestone.company}.summary`, active_milestone.summary)">
+        </p>
+        <ul class='cv_page__modal_highlights'>
+          <li v-for='(highlight, index) in active_milestone.highlights' :key='highlight.label'>
+            <strong v-text="tx(`milestones.${active_milestone.company}.highlight_${index}.label`, highlight.label)"></strong>
+            <span v-text="tx(`milestones.${active_milestone.company}.highlight_${index}.text`, highlight.text)"></span>
+          </li>
+        </ul>
+      </template>
+    </Modal>
 
     <section class='cv_page__section wrap'>
       <h2>{{ $t('cv_page.skills_heading') }}</h2>

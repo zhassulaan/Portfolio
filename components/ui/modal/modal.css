@@ -1,0 +1,101 @@
+.modal_overlay {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em;
+  background: rgba(12, 13, 17, .55);
+  backdrop-filter: blur(2px);
+}
+
+.modal {
+  width: min(38em, 100%);
+  max-height: min(85vh, 44em);
+  overflow-y: auto;
+  border: 1px solid var(--theme-line);
+  border-radius: 1.375em;
+  padding: 2em;
+  background: var(--theme-surface);
+  color: var(--theme-text);
+  box-shadow: 0 32px 64px rgba(12, 13, 17, .32);
+}
+
+.modal__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1em;
+  margin-bottom: 1.25em;
+}
+
+.modal__header h2 {
+  margin: 0;
+  font-size: 1.375em;
+  line-height: 1.25;
+}
+
+.modal__close {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 2em;
+  height: 2em;
+  border: 1px solid var(--theme-line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--theme-text);
+  font-size: .9375em;
+  cursor: pointer;
+  transition: background .18s ease, border-color .18s ease;
+}
+
+.modal__close:hover {
+  border-color: var(--theme-accent);
+  background: var(--theme-surface_alt, transparent);
+}
+
+.modal_fade-enter-active .modal,
+.modal_fade-leave-active .modal {
+  transition: transform .22s ease, opacity .22s ease;
+}
+
+.modal_fade-enter-active,
+.modal_fade-leave-active {
+  transition: opacity .22s ease;
+}
+
+.modal_fade-enter-from,
+.modal_fade-leave-to {
+  opacity: 0;
+}
+
+.modal_fade-enter-from .modal,
+.modal_fade-leave-to .modal {
+  transform: translateY(.75em) scale(.98);
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal_fade-enter-active,
+  .modal_fade-leave-active,
+  .modal_fade-enter-active .modal,
+  .modal_fade-leave-active .modal {
+    transition: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal_overlay {
+    padding: 1em;
+    align-items: flex-end;
+  }
+  .modal {
+    width: 100%;
+    max-height: 85vh;
+    border-radius: 1.125em 1.125em 0 0;
+    padding: 1.5em;
+  }
+}

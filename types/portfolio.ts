@@ -30,12 +30,22 @@ export interface Principle {
   text: string;
 }
 
+export interface MilestoneHighlight {
+  label: string;
+  text: string;
+}
+
 export interface Milestone {
   period: string;
   company: string;
   role: string;
   focus: string;
   logo: string;
+  // Optional — only populated where the CV has enough detail to justify a
+  // "full role details" modal (see pages/cv/index.vue).
+  location?: string;
+  summary?: string;
+  highlights?: MilestoneHighlight[];
 }
 
 export interface ProofItem {
