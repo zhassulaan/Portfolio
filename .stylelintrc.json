@@ -9,9 +9,9 @@
     "import-notation": null,
 
     "selector-class-pattern": [
-      "^(v-|mapboxgl-)[a-z0-9-]+$|^[a-z0-9_]+(-[a-z0-9_]+)?(--[a-z0-9_]+)?$|^[a-z0-9_]+-(enter|leave)-(active|from|to)$",
+      "^(v-|mapboxgl-)[a-z0-9-]+$|^[a-z][a-z0-9]*(_[a-z0-9]+)*(__[a-z][a-z0-9]*(_[a-z0-9]+)*)?(--[a-z][a-z0-9]*(_[a-z0-9]+)*)?$|^[a-z0-9_]+-(enter|leave)-(active|from|to)$",
       {
-        "message": "Class should be BEM-ish lowercase (e.g. 'card__title--active'), a 'v-*' (Vue) or 'mapboxgl-*' (Mapbox GL) library class, or a Vue transition class (e.g. 'fade-enter-active')."
+        "message": "Class must be strict BEM: block(_word)*, optional __element(_word)*, optional --modifier(_word)* (e.g. 'card__title--active'), a 'v-*' (Vue) or 'mapboxgl-*' (Mapbox GL) library class, or a Vue transition class (e.g. 'fade-enter-active')."
       }
     ],
 

@@ -19,18 +19,19 @@ const messages = ruleMessages(ruleName, {
 });
 const meta = { fixable: true };
 
-function rule(primary, _secondaryOptions, context) {
+function rule(primary) {
   return (root, result) => {
     const validOptions = validateOptions(result, ruleName, { actual: primary });
-    if (!validOptions) return;
-    if (!primary) return;
+    if (!validOptions) {
+      return;
+    }
+    if (!primary) {
+      return;
+    }
 
     const after = root.raws.after || '';
     const newlineCount = (after.match(/\n/g) || []).length;
-    if (newlineCount <= 1) return;
-
-    if (context.fix) {
-      root.raws.after = '\n';
+    if (newlineCount <= 1) {
       return;
     }
 
@@ -39,6 +40,9 @@ function rule(primary, _secondaryOptions, context) {
       node: root,
       result,
       ruleName,
+      fix: () => {
+        root.raws.after = '\n';
+      },
     });
   };
 }

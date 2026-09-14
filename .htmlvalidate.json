@@ -5,7 +5,7 @@
     "class-pattern": [
       "error",
       {
-        "pattern": "/^(v-|mapboxgl-)[a-z0-9-]+$|^[a-z0-9_]+(-[a-z0-9_]+)?(--[a-z0-9_]+)?$|^[a-z0-9_]+-(enter|leave)-(active|from|to)$/"
+        "pattern": "/^(v-|mapboxgl-)[a-z0-9-]+$|^[a-z][a-z0-9]*(_[a-z0-9]+)*(__[a-z][a-z0-9]*(_[a-z0-9]+)*)?(--[a-z][a-z0-9]*(_[a-z0-9]+)*)?$|^[a-z0-9_]+-(enter|leave)-(active|from|to)$/"
       }
     ],
     "attr-quotes": ["error", { "style": "any" }],
