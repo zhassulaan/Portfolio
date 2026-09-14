@@ -43,11 +43,19 @@ const active_milestone_title = computed(() => {
 const skill_groups: Array<{ key: string; label: string; items: string[] }> = [{
   key: 'frontend',
   label: 'Frontend',
-  items: ['Vue.js 2/3', 'React', 'Nuxt.js', 'Next.js', 'TypeScript', 'JavaScript', 'Pinia', 'Vuex', 'Redux', 'HTML5', 'CSS3', 'Tailwind CSS', 'Mapbox GL JS']
+  items: ['Vue.js', 'React', 'Nuxt.js', 'Next.js', 'TypeScript', 'JavaScript', 'Pinia', 'Vuex', 'Redux', 'HTML5', 'CSS3', 'Tailwind CSS', 'Mapbox GL JS']
+}, {
+  key: 'backend',
+  label: 'Backend',
+  items: ['Django', 'Python', 'Laravel', 'PHP', 'PostgreSQL', 'MySQL', 'PL/SQL', 'Elasticsearch', 'REST APIs', 'WebSockets']
+}, {
+  key: 'mobile',
+  label: 'Mobile',
+  items: ['React Native', 'Ionic', 'Capacitor']
 }, {
   key: 'architecture',
   label: 'Architecture & Quality',
-  items: ['Server-Side Rendering (SSR)', 'Design systems', 'Responsive UI', 'WCAG accessibility', 'Cross-browser compatibility', 'Progressive Web Apps (PWA)', 'BEM', 'Full-Stack Development', 'Object-Oriented Programming (OOP)']
+  items: ['SSR', 'Design Systems', 'PWA', 'Cross-Browser Compatibility', 'WCAG Accessibility', 'BEM', 'OOP']
 }, {
   key: 'performance',
   label: 'Performance',
@@ -55,19 +63,11 @@ const skill_groups: Array<{ key: string; label: string; items: string[] }> = [{
 }, {
   key: 'testing',
   label: 'Testing',
-  items: ['Vitest', 'Jest', 'Playwright', 'Unit Testing', 'E2E Testing']
-}, {
-  key: 'backend',
-  label: 'Backend',
-  items: ['Python', 'Django REST Framework', 'PHP', 'Laravel', 'PostgreSQL', 'MySQL', 'PL/SQL', 'Elasticsearch', 'REST APIs', 'WebSockets']
-}, {
-  key: 'mobile',
-  label: 'Mobile',
-  items: ['React Native', 'Ionic', 'Capacitor']
+  items: ['Vitest', 'Jest', 'Playwright (Unit & E2E Testing)']
 }, {
   key: 'tools',
   label: 'Tools & DevOps',
-  items: ['Git', 'GitLab', 'Vite', 'Docker', 'CI/CD', 'ESLint', 'Stylelint', 'Sentry', 'Postman', 'Agile/Scrum', 'Kanban']
+  items: ['Git', 'GitLab', 'Vite', 'Docker', 'CI/CD', 'ESLint', 'Stylelint', 'Sentry', 'Agile/Scrum', 'Kanban']
 }];
 
 onMounted(() => {
