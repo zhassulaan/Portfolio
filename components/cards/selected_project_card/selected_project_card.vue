@@ -11,7 +11,7 @@ const note = computed(() => props.project.note ? tx(`projects.${props.project.id
 </script>
 
 <template>
-  <article v-reveal class='selected_project_card'>
+  <article class='selected_project_card' v-reveal>
     <a class='selected_project_card__media'
       :href="project.href"
       target='_blank'
@@ -21,7 +21,7 @@ const note = computed(() => props.project.note ? tx(`projects.${props.project.id
       <img class='selected_project_card__image'
         :src="project.image"
         alt=''
-        loading='lazy' />
+        loading='lazy'>
       <span class='selected_project_card__category' v-text='project.category'></span>
     </a>
 
@@ -33,8 +33,9 @@ const note = computed(() => props.project.note ? tx(`projects.${props.project.id
           :href="project.href"
           target='_blank'
           rel='noreferrer'
-          :aria-label="`Open ${project.title} (opens in a new tab)`"
-        ><span aria-hidden='true'>↗</span></a>
+          :aria-label="`Open ${project.title} (opens in a new tab)`">
+          <span aria-hidden='true'>↗</span>
+        </a>
       </div>
 
       <p class='selected_project_card__description' v-text='description'></p>

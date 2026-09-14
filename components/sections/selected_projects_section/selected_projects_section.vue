@@ -13,14 +13,13 @@ const local_path = useLocalePath();
           <p class='eyebrow'>{{ $t('selected_projects.eyebrow') }}</p>
           <h2 v-html="$t('selected_projects.heading')"></h2>
         </div>
-        <p>{{ $t('selected_projects.intro') }}</p>
+        <p class='selected_projects_section__intro'>{{ $t('selected_projects.intro') }}</p>
       </div>
 
       <div class='selected_projects_section__grid'>
         <SelectedProjectCard v-for='project in featured_projects'
           :key="project.title"
-          :project="project"
-        />
+          :project="project" />
       </div>
 
       <div class='selected_projects_section__footer'>

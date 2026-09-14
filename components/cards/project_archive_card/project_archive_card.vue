@@ -10,7 +10,9 @@ const description = computed(() => tx(`projects.${props.project.id}.description`
 </script>
 
 <template>
-  <article class='project_archive_card' v-reveal v-tilt>
+  <article class='project_archive_card'
+    v-tilt
+    v-reveal>
     <a class='project_archive_card__media'
       v-if='project.href'
       :href="project.href"
@@ -21,7 +23,7 @@ const description = computed(() => tx(`projects.${props.project.id}.description`
       <img class='project_archive_card__image'
         :src="project.image"
         alt=''
-        loading='lazy' />
+        loading='lazy'>
       <span class='project_archive_card__category' v-text='project.category'></span>
     </a>
 
@@ -29,7 +31,7 @@ const description = computed(() => tx(`projects.${props.project.id}.description`
       <img class='project_archive_card__image'
         :src="project.image"
         :alt="`${project.title} interface`"
-        loading='lazy' />
+        loading='lazy'>
       <span class='project_archive_card__category' v-text='project.category'></span>
     </div>
 

@@ -3,7 +3,7 @@
   color: #fff;
 }
 
-.selected_projects_section .eyebrow, .selected_projects_section .section_heading > p {
+.selected_projects_section .eyebrow, .selected_projects_section__intro {
   color: #9da0aa;
 }
 
@@ -13,7 +13,7 @@
   gap: 1.125em;
 }
 
-@media (max-width: 760px) {
+@media (width <= 760px) {
   .selected_projects_section__grid {
     grid-template-columns: 1fr;
   }

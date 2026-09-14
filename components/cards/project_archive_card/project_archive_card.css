@@ -3,6 +3,7 @@
   --tilt_rotate_y: 0deg;
   --spotlight_x: 50%;
   --spotlight_y: 50%;
+
   position: relative;
   transform: perspective(62.5em) rotateX(var(--tilt_rotate_x)) rotateY(var(--tilt_rotate_y));
   transform-style: preserve-3d;
@@ -24,15 +25,15 @@
   transition: opacity .3s ease;
   background: radial-gradient(
     circle at var(--spotlight_x) var(--spotlight_y),
-    rgba(255, 70, 70, .30),
-    rgba(255, 70, 70, .10) 20%,
+    rgb(255 70 70 / 30%),
+    rgb(255 70 70 / 10%) 20%,
     transparent 42%,
   );
 }
 
 .project_archive_card:hover {
-  box-shadow: 0 28px 70px rgba(255, 70, 70, .10), 0 24px 60px rgba(17, 18, 24, .10);
-  border-color: rgba(255, 70, 70, .42);
+  box-shadow: 0 28px 70px rgb(255 70 70 / 10%), 0 24px 60px rgb(17 18 24 / 10%);
+  border-color: rgb(255 70 70 / 42%);
 }
 
 .project_archive_card:hover::after {
@@ -64,10 +65,10 @@
   position: absolute;
   top: 1em;
   left: 1em;
-  border: 1px solid rgba(255, 255, 255, .5);
+  border: 1px solid rgb(255 255 255 / 50%);
   border-radius: 62.4375em;
   padding: .4375em .625em;
-  background: rgba(255, 255, 255, .86);
+  background: rgb(255 255 255 / 86%);
   backdrop-filter: blur(10px);
   font-size: .625em;
   font-weight: 800;
@@ -119,17 +120,21 @@
   color: var(--theme-muted);
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .project_archive_card {
+    /* stylelint-disable-next-line declaration-no-important */
     transform: none !important;
   }
+
   .project_archive_card__media {
     transform: none;
     height: 13.75em;
   }
+
   .project_archive_card__body {
     transform: none;
   }
+
   .project_archive_card__description {
     min-height: 0;
   }

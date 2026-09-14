@@ -30,7 +30,9 @@ const kind_label = computed(() =>
 </script>
 
 <template>
-  <main class='proof_detail wrap' id='main_content' tabindex='-1'>
+  <main class='proof_detail wrap'
+    id='main_content'
+    tabindex='-1'>
     <NuxtLink class='proof_detail__back' :to="local_path('/proof')">
       <span aria-hidden='true'>←</span> {{ $t('proof_detail.back_link') }}
     </NuxtLink>
@@ -49,12 +51,11 @@ const kind_label = computed(() =>
     <div class='proof_detail__viewer' v-if='proof_document.file'>
       <img v-if="proof_document.file_type !== 'pdf'"
         :src='proof_document.file'
-        :alt="`${title} scan`"
-      />
+        :alt="`${title} scan`">
       <iframe v-else
-        :src='proof_document.file'
         :title='title'
-      ></iframe>
+        :src='proof_document.file'>
+      </iframe>
 
       <a class='button proof_detail__open'
         :href='proof_document.file'

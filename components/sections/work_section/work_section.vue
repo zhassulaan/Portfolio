@@ -16,8 +16,7 @@ import SystemTile from '@/components/cards/system_tile/system_tile.vue';
     <div class='work_section__grid'>
       <SystemTile v-for='surface in surfaces'
         :key="surface.index"
-        :surface="surface"
-      />
+        :surface="surface" />
     </div>
   </section>
 </template>

@@ -86,7 +86,7 @@
 }
 
 .cv_page__signal strong {
-  font: 800 1.75em 'Manrope';
+  font: 800 1.75em Manrope;
   letter-spacing: -.04em;
 }
 
@@ -316,7 +316,7 @@ display: flex;
 
 .cv_page__proof_item strong {
   margin-top: .5em;
-  font: 800 1.1875em 'Manrope';
+  font: 800 1.1875em Manrope;
 }
 
 .cv_page__proof_item p {
@@ -373,49 +373,58 @@ display: flex;
   flex-shrink: 0;
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .cv_page__signals {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .cv_page__signal:nth-child(2) {
     border-right: 0;
   }
+
   .cv_page__signal:nth-child(-n+2) {
     border-bottom: 1px solid var(--theme-line);
   }
+
   .cv_page__proof_grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 760px) {
+@media (width <= 760px) {
   .cv_page__hero {
     gap: 1.875em;
     grid-template-columns: 1fr;
     padding-block: 4em 2.625em;
   }
+
   .cv_page__back {
     margin-bottom: 1.875em;
   }
+
   .cv_page__timeline {
     grid-template-columns: 1fr;
   }
+
   .cv_page__achievements {
     grid-template-columns: 1fr;
   }
+
   .cv_page__cta {
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .cv_page__signal {
     padding: 1.375em .875em;
   }
+
   .cv_page__signal:first-child {
     padding-left: .875em;
   }
+
   .cv_page__proof_grid {
     grid-template-columns: 1fr;
   }

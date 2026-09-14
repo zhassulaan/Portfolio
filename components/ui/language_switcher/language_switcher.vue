@@ -9,10 +9,6 @@ const available_locales = computed(() =>
   (locales.value as Array<{ code: string; name?: string }>),
 );
 
-const current_locale = computed(() =>
-  available_locales.value.find((item) => item.code === locale.value),
-);
-
 const toggle_open = () => {
   is_open.value = !is_open.value;
 };
@@ -60,8 +56,8 @@ onBeforeUnmount(() => {
     </button>
 
     <ul class='language_switcher__menu'
-      role='listbox'
       v-if='is_open'
+      role='listbox'
       :aria-label="$t('header.language')">
       <li v-for='item in available_locales' :key='item.code'>
         <NuxtLink class='language_switcher__option'

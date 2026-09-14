@@ -29,10 +29,10 @@
 .selected_project_card__index, .selected_project_card__category {
   position: absolute;
   top: 1em;
-  border: 1px solid rgba(255, 255, 255, .18);
+  border: 1px solid rgb(255 255 255 / 18%);
   border-radius: 62.4375em;
   padding: .4375em .625em;
-  background: rgba(16, 17, 22, .72);
+  background: rgb(16 17 22 / 72%);
   backdrop-filter: blur(12px);
   font-size: .625em;
   font-weight: 800;
@@ -102,7 +102,7 @@
   color: #c6c8d0;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .selected_project_card__media {
     height: 14.375em;
   }

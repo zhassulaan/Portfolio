@@ -12,7 +12,7 @@ const key = (field: string) => `case_studies.${props.case_study.index}.${field}`
 </script>
 
 <template>
-  <article v-reveal class='case_study_card'>
+  <article class='case_study_card' v-reveal>
     <div class='case_study_card__rail'>
       <span v-text='case_study.index'></span>
       <i></i>

@@ -6,8 +6,8 @@ import epam_logo from '@/assets/logos/epam.svg';
 import sdu_logo from '@/assets/logos/sdu.svg';
 import geonomix_image from '@/assets/images/projects/geonomix.png';
 import melissa_image from '@/assets/images/projects/melissa.png';
-import rento_image from '@/assets/images/projects/rento.png';
-import tez_zhet_image from '@/assets/images/projects/tez-zhet.png';
+// import rento_image from '@/assets/images/projects/rento.png';
+// import tez_zhet_image from '@/assets/images/projects/tez-zhet.png';
 import kostyum_image from '@/assets/images/projects/kostyum.png';
 import midas_event_image from '@/assets/images/projects/midas-event.png';
 import dostyk_trans_terminal_image from '@/assets/images/projects/dostyk-trans-terminal.png';
@@ -16,18 +16,18 @@ import kazmed_image from '@/assets/images/projects/kazmed.png';
 import abi_construction_image from '@/assets/images/projects/abi-construction.png';
 import tahit_image from '@/assets/images/projects/tahit.png';
 import dobraya_image from '@/assets/images/projects/dobraya.png';
-import qazbooking_image from '@/assets/images/projects/qazbooking.png';
+// import qazbooking_image from '@/assets/images/projects/qazbooking.png';
 import azm_trade_image from '@/assets/images/projects/azm-trade.png';
 import pharmacom_image from '@/assets/images/projects/pharmacom.png';
-import mobi_event_image from '@/assets/images/projects/mobi-event.png';
+// import mobi_event_image from '@/assets/images/projects/mobi-event.png';
 import new_navat_image from '@/assets/images/projects/new-navat.png';
-import qonys_toi_image from '@/assets/images/projects/qonys-toi.png';
-import qazaq_taxi_image from '@/assets/images/projects/qazaq-taxi.png';
-import yaq_image from '@/assets/images/projects/yaq.png';
+// import qonys_toi_image from '@/assets/images/projects/qonys-toi.png';
+// import qazaq_taxi_image from '@/assets/images/projects/qazaq-taxi.png';
+// import yaq_image from '@/assets/images/projects/yaq.png';
 import asia_credit_bank_image from '@/assets/images/projects/asia-credit-bank.png';
-import ikeruen_image from '@/assets/images/projects/ikeruen.png';
-import rakhat_image from '@/assets/images/projects/rakhat.png';
-import m1_service_image from '@/assets/images/projects/m1-service.png';
+// import ikeruen_image from '@/assets/images/projects/ikeruen.png';
+// import rakhat_image from '@/assets/images/projects/rakhat.png';
+// import m1_service_image from '@/assets/images/projects/m1-service.png';
 import type { CaseStudy, Milestone, Principle, ProofDocument, ProofItem, Project, Signal, Surface } from '@/types/portfolio';
 
 // Served straight from /public — a static file needs no build-time import,
@@ -145,7 +145,6 @@ export const case_studies: CaseStudy[] = [
     stack: ['Vue.js', 'TypeScript', 'BEM', 'Vitest', 'Playwright', 'GitLab CI/CD'],
   },
 ];
-
 
 export const projects: Project[] = [
   { id: 'geonomix', title: 'Geonomix', category: 'GIS & Platforms', image: geonomix_image, description: 'A large-scale geospatial and digital-twin platform combining interactive maps, municipal data, digital registries, government services and monitoring tools across regional deployments.', stack: ['Vue.js', 'Vuex', 'Mapbox GL JS', 'Django', 'PostgreSQL', 'Elasticsearch'], href: 'https://iulytau.kz', featured: true, note: 'Map-first product where data volume and reusable regional delivery shaped the frontend architecture.' },

@@ -46,7 +46,7 @@
 
 .principles_section__item > span {
   color: #666976;
-  font: 800 .6875em 'Manrope';
+  font: 800 .6875em Manrope;
 }
 
 .principles_section__item h3 {
@@ -60,20 +60,22 @@
   line-height: 1.65;
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .principles_section__inner {
     grid-template-columns: 1fr;
     gap: 2.8125em;
   }
+
   .principles_section__intro {
     position: static;
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .principles_section__item {
     grid-template-columns: 2.1875em 1fr;
   }
+
   .principles_section__item p {
     grid-column: 2;
   }

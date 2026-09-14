@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from 'vitest';
+import { describe, expect, it } from 'vitest';
 import { mockNuxtImport } from '@nuxt/test-utils/runtime';
 import { ru } from '@/data/translations/ru';
 

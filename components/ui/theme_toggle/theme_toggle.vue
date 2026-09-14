@@ -19,17 +19,22 @@ const options: Array<{ value: ThemePreference; label: string; icon: string }> = 
 </script>
 
 <template>
-  <div class='theme_toggle' role='group' aria-label='Color theme'>
+  <div class='theme_toggle'
+    role='group'
+    aria-label='Color theme'>
     <button class='theme_toggle__option'
       :class="{ 'theme_toggle__option--active': preference === option.value }"
+      :title="option.label"
       v-for='option in options'
       :key="option.value"
       type='button'
       :aria-pressed="preference === option.value"
       :aria-label="option.label"
-      :title="option.label"
       v-on:click="set_preference(option.value)">
-      <span class='theme_toggle__icon' aria-hidden='true' v-text='option.icon'></span>
+      <span class='theme_toggle__icon'
+        aria-hidden='true'
+        v-text='option.icon'>
+      </span>
     </button>
   </div>
 </template>

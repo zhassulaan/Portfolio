@@ -23,7 +23,7 @@
   transform: translateY(-.125em);
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .site_footer {
     flex-direction: column;
     align-items: flex-start;

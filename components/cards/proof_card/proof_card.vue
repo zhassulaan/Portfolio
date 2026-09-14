@@ -14,10 +14,16 @@ const description = computed(() => tx(`proof_documents.${props.doc.slug}.descrip
 </script>
 
 <template>
-  <NuxtLink class='proof_card' :to='detail_href' v-reveal v-tilt>
+  <NuxtLink class='proof_card'
+    :to='detail_href'
+    v-tilt
+    v-reveal>
     <div class='proof_card__head'>
       <span class='proof_card__kind' v-text='kind_label'></span>
-      <span class='proof_card__arrow' aria-hidden='true' v-text="'↗'"></span>
+      <span class='proof_card__arrow'
+        aria-hidden='true'
+        v-text="'↗'">
+      </span>
     </div>
 
     <h2 class='proof_card__title' v-text='title'></h2>

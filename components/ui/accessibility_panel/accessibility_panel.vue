@@ -2,7 +2,6 @@
 import { useTheme, type ThemePreference } from '@/composables/use_theme';
 import { useAccessibility, type FontSize, type ImageMode } from '@/composables/use_accessibility';
 
-const { t } = useI18n();
 const { preference, set_preference } = useTheme();
 const {
   font_size,
@@ -143,20 +142,20 @@ watch(
 <template>
   <div class='accessibility_panel_root'>
     <button class='accessibility_panel__toggle'
+      :title="$t('accessibility.toggle_aria')"
       ref='toggle_button'
       type='button'
       :aria-expanded='is_open'
       aria-controls='accessibility_panel'
       :aria-label="$t('accessibility.toggle_aria')"
-      :title="$t('accessibility.toggle_aria')"
       v-on:click='toggle_panel'>
       <span aria-hidden='true'>♿</span>
     </button>
 
     <div class='accessibility_panel'
       :class="{ 'accessibility_panel--open': is_open }"
-      ref='panel'
       id='accessibility_panel'
+      ref='panel'
       role='dialog'
       aria-modal='true'
       :aria-label="$t('accessibility.toggle_aria')"
@@ -180,7 +179,9 @@ watch(
 
       <fieldset class='accessibility_panel__section'>
         <legend>{{ $t('accessibility.color_scheme_legend') }}</legend>
-        <div class='accessibility_panel__options' role='group' :aria-label="$t('accessibility.color_scheme_legend')">
+        <div class='accessibility_panel__options'
+          role='group'
+          :aria-label="$t('accessibility.color_scheme_legend')">
           <button class='accessibility_panel__option accessibility_panel__option--scheme'
             :class="[
               `accessibility_panel__option--${scheme.value}`,
@@ -191,7 +192,10 @@ watch(
             type='button'
             :aria-pressed="preference === scheme.value"
             v-on:click='set_preference(scheme.value)'>
-            <span class='accessibility_panel__sample' aria-hidden='true' v-text='scheme.sample'></span>
+            <span class='accessibility_panel__sample'
+              aria-hidden='true'
+              v-text='scheme.sample'>
+            </span>
             <span>{{ $t('accessibility.' + scheme.label) }}</span>
           </button>
         </div>
@@ -199,7 +203,9 @@ watch(
 
       <fieldset class='accessibility_panel__section'>
         <legend>{{ $t('accessibility.font_size_legend') }}</legend>
-        <div class='accessibility_panel__options' role='group' :aria-label="$t('accessibility.font_size_legend')">
+        <div class='accessibility_panel__options'
+          role='group'
+          :aria-label="$t('accessibility.font_size_legend')">
           <button class='accessibility_panel__option'
             :class="[
               `accessibility_panel__option--font_${size.value}`,
@@ -218,7 +224,9 @@ watch(
 
       <fieldset class='accessibility_panel__section'>
         <legend>{{ $t('accessibility.images_legend') }}</legend>
-        <div class='accessibility_panel__options' role='group' :aria-label="$t('accessibility.images_legend')">
+        <div class='accessibility_panel__options'
+          role='group'
+          :aria-label="$t('accessibility.images_legend')">
           <button class='accessibility_panel__option'
             :class="{ 'accessibility_panel__option--active': image_mode === mode.value }"
             v-for='mode in image_modes'
@@ -226,7 +234,10 @@ watch(
             type='button'
             :aria-pressed="image_mode === mode.value"
             v-on:click='set_image_mode(mode.value)'>
-            <span class='accessibility_panel__sample' aria-hidden='true' v-text='mode.icon'></span>
+            <span class='accessibility_panel__sample'
+              aria-hidden='true'
+              v-text='mode.icon'>
+            </span>
             <span>{{ $t('accessibility.' + mode.label) }}</span>
           </button>
         </div>
@@ -234,7 +245,9 @@ watch(
 
       <fieldset class='accessibility_panel__section' v-if='speech_supported'>
         <legend>{{ $t('accessibility.tts_legend') }}</legend>
-        <div class='accessibility_panel__options' role='group' :aria-label="$t('accessibility.tts_legend')">
+        <div class='accessibility_panel__options'
+          role='group'
+          :aria-label="$t('accessibility.tts_legend')">
           <button class='accessibility_panel__option'
             :class="{ 'accessibility_panel__option--active': !text_to_speech }"
             type='button'

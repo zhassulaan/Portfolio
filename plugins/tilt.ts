@@ -5,7 +5,9 @@ export default defineNuxtPlugin((nuxt_app) => {
     },
 
     mounted(element: HTMLElement) {
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+      }
 
       const max_rotation = 7;
 

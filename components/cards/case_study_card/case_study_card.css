@@ -18,7 +18,7 @@
 }
 
 .case_study_card__rail span {
-  font: 800 .75em 'Manrope';
+  font: 800 .75em Manrope;
 }
 
 .case_study_card__rail i {
@@ -108,7 +108,7 @@
 
 .case_study_card__metrics strong {
   display: block;
-  font: 800 1.75em 'Manrope';
+  font: 800 1.75em Manrope;
   letter-spacing: -.05em;
 }
 
@@ -119,31 +119,36 @@
   color: #a9abb4;
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .case_study_card {
     grid-template-columns: 3.4375em 1fr;
   }
+
   .case_study_card__metrics {
     grid-template-columns: repeat(2, 1fr);
     grid-column: 2;
     border-top: 1px solid #2f3037;
     border-left: 0;
   }
+
   .case_study_card__story {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .case_study_card {
     grid-template-columns: 1fr;
   }
+
   .case_study_card__rail {
     display: none;
   }
+
   .case_study_card__main {
     padding: 1.5em;
   }
+
   .case_study_card__metrics {
     grid-column: 1;
   }
