@@ -62,7 +62,7 @@ export const signals: Signal[] = [{
   label: 'users served',
   note: 'Production interfaces operating at meaningful product scale.',
 }, {
-  value: '120+',
+  value: '200+',
   label: 'projects delivered',
   note: 'Across web, mobile and data-intensive platforms.',
 }, {
@@ -140,10 +140,10 @@ export const case_studies: CaseStudy[] = [
 ];
 
 export const projects: Project[] = [
-  { id: 'geonomix', title: 'Geonomix', category: 'GIS & Platforms', image: geonomix_image, description: 'A large-scale geospatial and digital-twin platform combining interactive maps, municipal data, digital registries, government services and monitoring tools across regional deployments.', stack: ['Vue.js', 'Vuex', 'Mapbox GL JS', 'Django', 'PostgreSQL', 'Elasticsearch'], href: 'https://iulytau.kz', featured: true, note: 'Map-first product where data volume and reusable regional delivery shaped the frontend architecture.' },
-  { id: 'midas-event', title: 'Midas Event', category: 'Corporate', image: midas_event_image, description: 'An event-agency site built as a browsable portfolio of past events rather than a static services list, with React-driven interactive detail throughout.', stack: ['React', 'JavaScript', 'CSS'], href: 'https://midasevent.kz', featured: true },
-  { id: 'kostyum', title: 'Kostyum.kz', category: 'E-commerce', image: kostyum_image, description: 'A responsive men’s and women’s fashion e-commerce frontend — reusable product-catalog UI covering apparel, footwear, and accessories, with a focus on a smooth desktop and mobile shopping experience.', stack: ['Nuxt.js', 'Vue.js', 'SSR'], href: 'https://kostyum.kz', featured: true },
+  { id: 'geonomix', title: 'Geonomix', category: 'GIS & Platforms', image: geonomix_image, description: 'A large-scale geospatial and digital-twin platform combining interactive maps, municipal data, digital registries, government services and monitoring tools across regional deployments.', stack: ['Vue.js', 'Vuex', 'Mapbox GL JS', 'Django', 'PostgreSQL', 'Elasticsearch'], href: 'https://iulytau.kz', note: 'Map-first product where data volume and reusable regional delivery shaped the frontend architecture.' },
   { id: 'stroymarket', title: 'Stroymarket.kz', category: 'Marketplace', image: stroymarket_image, description: 'A nationwide B2B marketplace connecting construction material suppliers, contractors, and equipment rental across Kazakhstan — live catalog and supplier search across 39 cities, an AI-powered project assistant, and a cost-estimation calculator for common build types.', stack: ['Vue.js', 'Nuxt.js'], href: 'https://stroymarket.kz', featured: true, note: 'Solo-built, from supplier/catalog discovery to an AI construction assistant and cost estimator.' },
+  { id: 'kostyum', title: 'Kostyum.kz', category: 'E-commerce', image: kostyum_image, description: 'A responsive men’s and women’s fashion e-commerce frontend — reusable product-catalog UI covering apparel, footwear, and accessories, with a focus on a smooth desktop and mobile shopping experience.', stack: ['Nuxt.js', 'Vue.js', 'SSR'], href: 'https://kostyum.kz', featured: true },
+  { id: 'midas-event', title: 'Midas Event', category: 'Corporate', image: midas_event_image, description: 'An event-agency site built as a browsable portfolio of past events rather than a static services list, with React-driven interactive detail throughout.', stack: ['React', 'JavaScript', 'CSS'], href: 'https://midasevent.kz', featured: true },
   { id: 'magnum', title: 'Magnum.kz', category: 'Retail', image: magnum_image, description: 'Frontend contributor on Kazakhstan’s largest supermarket chain’s site — built the product catalog and promotions, the Magnum Chef sub-brand pages (bakery, culinary, confectionery), the loyalty/bonus-app promotion section, and the careers page.', stack: ['Vue.js', 'Nuxt.js'], href: 'https://magnum.kz', featured: false, note: 'Contributed core customer-facing sections as part of the delivery team; not a solo build.' },
   { id: 'unistory', title: 'UniStory', category: 'AI & Web3', image: unistory_image, description: 'A digital product interface integrating crypto-wallet state and asynchronous backend data into reusable React product experiences.', stack: ['React', 'TypeScript', 'REST APIs', 'Web3'], href: 'https://unistory.app/ru/', featured: true },
   { id: 'kazmed', title: 'KazMedEngineering', category: 'Healthcare', image: kazmed_image, description: 'A corporate frontend for an authorized medical-equipment service partner, built around a Swiper-driven catalog of equipment and service lines instead of long text pages.', stack: ['Nuxt.js', 'Swiper'], href: 'https://www.kme.kz' },
@@ -232,7 +232,7 @@ export const milestones: Milestone[] = [{
 }, {
   period: 'Jul 2021 — Aug 2025',
   company: 'KeyHorse',
-  role: 'Middle → Senior + Team Lead Software Engineer',
+  role: 'Senior + Team Lead Software Engineer',
   focus: 'GIS · digital twins · reusable systems · backend APIs · mentoring',
   logo: keyhorse_logo,
   location: 'Almaty, Kazakhstan',
@@ -284,6 +284,9 @@ export const milestones: Milestone[] = [{
   }, {
     label: 'Cross-Platform Development',
     text: 'Shipped 5–7 production mobile applications to iOS and Android using Ionic, Capacitor, and React Native, sharing up to 40–50% of code across platforms.',
+  }, {
+    label: 'Backend & APIs',
+    text: 'Also built and maintained Laravel (PHP)/MySQL backend services — REST APIs, database schema design, and authentication — for 6 of these applications, supporting 15K+ requests/day.',
   }],
 }, {
   period: 'Jan 2020 - Jun 2020',
