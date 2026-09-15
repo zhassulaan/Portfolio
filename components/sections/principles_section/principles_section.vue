@@ -8,7 +8,7 @@ const { tx } = useLocaleText();
 <template>
   <section class='principles_section section' id='principles'>
     <div class='wrap principles_section__inner'>
-      <div v-reveal class='principles_section__intro'>
+      <div class='principles_section__intro' v-reveal>
         <p class='eyebrow'>{{ $t('principles.eyebrow') }}</p>
         <h2>{{ $t('principles.heading') }}</h2>
         <p>{{ $t('principles.intro') }}</p>

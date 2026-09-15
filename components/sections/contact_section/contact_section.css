@@ -27,11 +27,11 @@ html[lang='nl'] .contact_section h2 {
 }
 
 .contact_section .eyebrow {
-  color: rgba(255, 255, 255, .68);
+  color: rgb(255 255 255 / 68%);
 }
 
 .contact_section__action > p {
-  color: rgba(255, 255, 255, .82);
+  color: rgb(255 255 255 / 82%);
   font-size: 1em;
   line-height: 1.7;
 }
@@ -40,13 +40,15 @@ html[lang='nl'] .contact_section h2 {
   display: inline-block;
   margin-top: .875em;
   padding-bottom: .3125em;
-  border-bottom: 1px solid rgba(255,255,255,.5);
-  font: 800 clamp(1.3125em, 3vw, 2.125em) 'Manrope';
+  border-bottom: 1px solid rgb(255 255 255 / 50%);
+  font: 800 clamp(1.3125em, 3vw, 2.125em) Manrope;
   letter-spacing: -.04em;
   white-space: nowrap;
+  position: relative;
+  transition: transform .3s ease, opacity .3s ease;
 }
 
-.contact_section__action > div {
+.contact_section__socials {
   display: flex;
   gap: 1.25em;
   margin-top: 1.625em;
@@ -54,17 +56,18 @@ html[lang='nl'] .contact_section h2 {
   font-weight: 800;
 }
 
-@media (max-width: 800px) {
+@media (width <= 800px) {
   .contact_section__inner {
     grid-template-columns: 1fr;
     gap: 2.1875em;
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .contact_section {
     padding-block: 4.75em;
   }
+
   .contact_section__action > a {
     white-space: normal;
     font-size: 1.25em;
@@ -72,16 +75,11 @@ html[lang='nl'] .contact_section h2 {
   }
 }
 
-.contact_section__action > a {
-  position: relative;
-  transition: transform .3s ease, opacity .3s ease;
-}
-
 .contact_section__action > a:hover {
   transform: translateX(.375em);
 }
 
-.contact_section__action > div a {
+.contact_section__social_link {
   position: relative;
   overflow: hidden;
   padding: .4375em .5625em;
@@ -89,22 +87,22 @@ html[lang='nl'] .contact_section h2 {
   transition: color .25s ease, transform .25s ease;
 }
 
-.contact_section__action > div a::before {
+.contact_section__social_link::before {
   position: absolute;
   inset: 0;
   z-index: -1;
   border-radius: inherit;
-  background: #ffffff;
+  background: #fff;
   content: '';
   transform: scale(0);
   transition: transform .3s cubic-bezier(.2, .8, .2, 1);
 }
 
-.contact_section__action > div a:hover {
+.contact_section__social_link:hover {
   color: var(--theme-accent);
   transform: translateY(-.125em);
 }
 
-.contact_section__action > div a:hover::before {
+.contact_section__social_link:hover::before {
   transform: scale(1);
 }

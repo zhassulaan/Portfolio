@@ -3,12 +3,14 @@ import type { Surface } from '@/types/portfolio';
 import TagList from '@/components/ui/tag_list/tag_list.vue';
 import { useLocaleText } from '@/composables/use_locale_text';
 
-const props = defineProps<{ surface: Surface }>();
+defineProps<{ surface: Surface }>();
 const { tx } = useLocaleText();
 </script>
 
 <template>
-  <article class='system_tile' :class="`system_tile--${surface.variant}`" v-reveal>
+  <article class='system_tile'
+    :class="`system_tile--${surface.variant}`"
+    v-reveal>
     <div class='system_tile__visual' aria-hidden='true'>
       <span class='system_tile__index' v-text='surface.index'></span>
       <div class='system_tile__pattern'>

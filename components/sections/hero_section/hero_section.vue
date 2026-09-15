@@ -1,7 +1,5 @@
 <script setup lang='ts'>
 import { portfolio_assets } from '@/data/portfolio';
-
-const local_path = useLocalePath();
 </script>
 
 <template>
@@ -23,13 +21,15 @@ const local_path = useLocalePath();
           {{ $t('hero.cta_open_notebook') }} <span aria-hidden='true'>↓</span>
         </a>
         <NuxtLink class='button button--ghost'
-          :to="local_path('/cv')"
+          to='/cv'
           :aria-label="$t('hero.cta_cv_aria')">
           {{ $t('hero.cta_cv') }}
         </NuxtLink>
       </div>
 
-      <div class='hero_section__socials' aria-label='Social links'>
+      <div class='hero_section__socials'
+        role='group'
+        aria-label='Social links'>
         <a class='hero_section__social_link'
           href='https://www.linkedin.com/in/zhassulan-serikuly'
           target='_blank'
@@ -44,8 +44,7 @@ const local_path = useLocalePath();
           {{ $t('hero.social_github') }} <span aria-hidden='true'>↗</span>
           <span class='sr_only'>{{ $t('hero.opens_new_tab_sr') }}</span>
         </a>
-        <a class='hero_section__social_link'
-          href='mailto:zhassulan.serikuly@gmail.com'>
+        <a class='hero_section__social_link' href='mailto:zhassulan.serikuly@gmail.com'>
           {{ $t('hero.social_email') }} <span aria-hidden='true'>↗</span>
         </a>
       </div>
@@ -57,14 +56,14 @@ const local_path = useLocalePath();
       </div>
     </div>
 
-    <div v-reveal class='hero_section__visual'>
+    <div class='hero_section__visual' v-reveal>
       <div class='hero_section__orbit hero_section__orbit--one'></div>
       <div class='hero_section__orbit hero_section__orbit--two'></div>
 
       <div class='hero_section__portrait_frame'>
         <img class='hero_section__portrait'
           :src="portfolio_assets.portrait"
-          alt='Zhassulan Serikuly' />
+          alt='Zhassulan Serikuly'>
       </div>
 
       <div class='hero_section__signal hero_section__signal--top'>

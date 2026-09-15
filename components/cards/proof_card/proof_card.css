@@ -1,6 +1,7 @@
 .proof_card {
   --tilt_rotate_x: 0deg;
   --tilt_rotate_y: 0deg;
+
   display: block;
   transform: perspective(62.5em) rotateX(var(--tilt_rotate_x)) rotateY(var(--tilt_rotate_y));
   transform-style: preserve-3d;
@@ -12,7 +13,7 @@
 }
 
 .proof_card:hover {
-  box-shadow: 0 24px 60px rgba(99, 91, 255, .12);
+  box-shadow: 0 24px 60px rgb(99 91 255 / 12%);
   border-color: var(--theme-accent);
 }
 
@@ -72,10 +73,12 @@
   color: var(--theme-muted);
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .proof_card {
+    /* stylelint-disable-next-line declaration-no-important */
     transform: none !important;
   }
+
   .proof_card__description {
     min-height: 0;
   }

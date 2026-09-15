@@ -43,11 +43,19 @@ const active_milestone_title = computed(() => {
 const skill_groups: Array<{ key: string; label: string; items: string[] }> = [{
   key: 'frontend',
   label: 'Frontend',
-  items: ['Vue.js 2/3', 'React', 'Nuxt.js', 'Next.js', 'TypeScript', 'JavaScript', 'Pinia', 'Vuex', 'Redux', 'HTML5', 'CSS3', 'Tailwind CSS', 'Mapbox GL JS']
+  items: ['Vue.js', 'React', 'Nuxt.js', 'Next.js', 'TypeScript', 'JavaScript', 'Pinia', 'Vuex', 'Redux', 'HTML5', 'CSS3', 'Tailwind CSS', 'Mapbox GL JS']
+}, {
+  key: 'backend',
+  label: 'Backend',
+  items: ['Django', 'Python', 'Laravel', 'PHP', 'PostgreSQL', 'MySQL', 'PL/SQL', 'Elasticsearch', 'REST APIs', 'WebSockets']
+}, {
+  key: 'mobile',
+  label: 'Mobile',
+  items: ['React Native', 'Ionic', 'Capacitor']
 }, {
   key: 'architecture',
   label: 'Architecture & Quality',
-  items: ['Server-Side Rendering (SSR)', 'Design systems', 'Responsive UI', 'WCAG accessibility', 'Cross-browser compatibility', 'Progressive Web Apps (PWA)', 'BEM', 'Full-Stack Development', 'Object-Oriented Programming (OOP)']
+  items: ['SSR', 'Design Systems', 'PWA', 'Cross-Browser Compatibility', 'WCAG Accessibility', 'BEM', 'OOP']
 }, {
   key: 'performance',
   label: 'Performance',
@@ -55,19 +63,11 @@ const skill_groups: Array<{ key: string; label: string; items: string[] }> = [{
 }, {
   key: 'testing',
   label: 'Testing',
-  items: ['Vitest', 'Jest', 'Playwright', 'Unit Testing', 'E2E Testing']
-}, {
-  key: 'backend',
-  label: 'Backend',
-  items: ['Python', 'Django REST Framework', 'PHP', 'Laravel', 'PostgreSQL', 'MySQL', 'PL/SQL', 'Elasticsearch', 'REST APIs', 'WebSockets']
-}, {
-  key: 'mobile',
-  label: 'Mobile',
-  items: ['React Native', 'Ionic', 'Capacitor']
+  items: ['Vitest', 'Jest', 'Playwright (Unit & E2E Testing)']
 }, {
   key: 'tools',
   label: 'Tools & DevOps',
-  items: ['Git', 'GitLab', 'Vite', 'Docker', 'CI/CD', 'ESLint', 'Stylelint', 'Sentry', 'Postman', 'Agile/Scrum', 'Kanban']
+  items: ['Git', 'GitLab', 'Vite', 'Docker', 'CI/CD', 'ESLint', 'Stylelint', 'Sentry', 'Agile/Scrum', 'Kanban']
 }];
 
 onMounted(() => {
@@ -93,9 +93,11 @@ useHead({
 </script>
 
 <template>
-  <main class='cv_page' id='main_content' tabindex='-1'>
+  <main class='cv_page'
+    id='main_content'
+    tabindex='-1'>
     <section class='cv_page__hero wrap'>
-      <div v-reveal class='cv_page__heading'>
+      <div class='cv_page__heading' v-reveal>
         <NuxtLink class='cv_page__back' :to="local_path('/')">
           <span aria-hidden='true'>←</span> {{ $t('cv_page.back_link') }}
         </NuxtLink>
@@ -106,7 +108,7 @@ useHead({
         </p>
       </div>
 
-      <div v-reveal class='cv_page__download'>
+      <div class='cv_page__download' v-reveal>
         <a class='button cv_page__download_button'
           :href="portfolio_assets.cv"
           :aria-label="$t('cv_page.download_cv_aria')"
@@ -157,7 +159,7 @@ useHead({
           :key="item.company"
           v-reveal>
           <div class='cv_page__timeline_head'>
-            <img :src="item.logo" :alt="`${item.company} logo`" />
+            <img :src="item.logo" :alt="`${item.company} logo`">
             <div>
               <h3 v-text='item.company'></h3>
               <small v-text='item.period'></small>
@@ -165,8 +167,8 @@ useHead({
           </div>
           <p class='cv_page__timeline_role' v-text="tx(`milestones.${item.company}.role`, item.role)"></p>
           <p class='cv_page__timeline_focus' v-text="tx(`milestones.${item.company}.focus`, item.focus)"></p>
-          <button v-if='item.highlights?.length'
-            class='cv_page__timeline_trigger'
+          <button class='cv_page__timeline_trigger'
+            v-if='item.highlights?.length'
             type='button'
             :aria-label="$t('cv_page.view_details_aria', { company: item.company })"
             v-on:click="open_milestone_details(item)">
@@ -176,8 +178,8 @@ useHead({
       </div>
     </section>
 
-    <Modal :open='!!active_milestone'
-      :title='active_milestone_title'
+    <Modal :title='active_milestone_title'
+      :open='!!active_milestone'
       :close_label="$t('cv_page.close_modal_aria')"
       v-on:close='close_milestone_details'>
       <template v-if='active_milestone'>
@@ -188,8 +190,8 @@ useHead({
             <span v-text="tx(`milestones.${active_milestone.company}.location`, active_milestone.location)"></span>
           </template>
         </p>
-        <p v-if='active_milestone.summary'
-          class='cv_page__modal_summary'
+        <p class='cv_page__modal_summary'
+          v-if='active_milestone.summary'
           v-text="tx(`milestones.${active_milestone.company}.summary`, active_milestone.summary)">
         </p>
         <ul class='cv_page__modal_highlights'>
@@ -223,9 +225,11 @@ useHead({
           :is="item.href ? NuxtLink : 'article'"
           v-for='(item, index) in proof_items'
           :key="item.label"
-          v-reveal
-          :to="item.href ? local_path(item.href) : undefined">
-          <img v-if='item.logo' :src="item.logo" :alt="`${item.label} logo`" />
+          :to="item.href ? local_path(item.href) : undefined"
+          v-reveal>
+          <img v-if='item.logo'
+            :src="item.logo"
+            :alt="`${item.label} logo`">
           <span v-text="tx(`proof_items.${index}.label`, item.label)"></span>
           <strong v-text="tx(`proof_items.${index}.value`, item.value)"></strong>
           <p v-text="tx(`proof_items.${index}.note`, item.note)"></p>

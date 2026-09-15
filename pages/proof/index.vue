@@ -15,8 +15,12 @@ const {
 } = useProofFilter(proof_documents);
 
 const kind_label = (kind: string) => {
-  if (kind === 'certificate') return t('proof_page.kind_certificates');
-  if (kind === 'recommendation') return t('proof_page.kind_recommendations');
+  if (kind === 'certificate') {
+    return t('proof_page.kind_certificates');
+  }
+  if (kind === 'recommendation') {
+    return t('proof_page.kind_recommendations');
+  }
 
   return t('proof_page.kind_all');
 };
@@ -41,9 +45,11 @@ useHead({
 </script>
 
 <template>
-  <main class='proof_page' id='main_content' tabindex='-1'>
+  <main class='proof_page'
+    id='main_content'
+    tabindex='-1'>
     <section class='proof_page__hero wrap'>
-      <div v-reveal class='proof_page__heading'>
+      <div class='proof_page__heading' v-reveal>
         <NuxtLink class='proof_page__back' :to="local_path('/')">
           <span aria-hidden='true'>←</span> {{ $t('proof_page.back_link') }}
         </NuxtLink>
@@ -51,7 +57,7 @@ useHead({
         <h1 class='proof_page__title' v-html="$t('proof_page.heading')"></h1>
       </div>
 
-      <p v-reveal class='proof_page__intro'>
+      <p class='proof_page__intro' v-reveal>
         {{ $t('proof_page.intro') }}
       </p>
     </section>
@@ -59,9 +65,9 @@ useHead({
     <section class='proof_page__controls wrap' aria-label='Proof document filters'>
       <label class='proof_page__search'>
         <span>{{ $t('proof_page.search_label') }}</span>
-        <input v-model='search_query'
-          type='search'
-          :placeholder="$t('proof_page.search_placeholder')" />
+        <input type='search'
+          :placeholder="$t('proof_page.search_placeholder')"
+          v-model='search_query'>
       </label>
 
       <label class='proof_page__select'>
@@ -70,7 +76,8 @@ useHead({
           <option v-for='kind in kinds'
             :key="kind"
             :value="kind"
-            v-text='kind_label(kind)'></option>
+            v-text='kind_label(kind)'>
+          </option>
         </select>
       </label>
 

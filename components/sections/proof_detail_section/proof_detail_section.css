@@ -69,7 +69,7 @@
 .proof_detail__placeholder strong {
   display: block;
   margin-bottom: .625em;
-  font: 800 1.125em 'Manrope';
+  font: 800 1.125em Manrope;
 }
 
 .proof_detail__placeholder p {
@@ -87,10 +87,11 @@
   font-size: .8125em;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .proof_detail {
     padding-block: 4em 5em;
   }
+
   .proof_detail__viewer iframe {
     height: 26.25em;
   }

@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/i18n',
+    '@nuxt/eslint',
   ],
   i18n: {
     locales: [{

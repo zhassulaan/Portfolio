@@ -193,7 +193,10 @@ onBeforeUnmount(() => {
 
         <a class='site_header__cta' href='mailto:zhassulan.serikuly@gmail.com'>
           <span class='site_header__cta_text' v-text="$t('header.start_conversation')"></span>
-          <i class='site_header__cta_arrow' aria-hidden='true' v-text="'↗'"></i>
+          <i class='site_header__cta_arrow'
+            aria-hidden='true'
+            v-text="'↗'">
+          </i>
         </a>
 
         <button class='site_header__burger'

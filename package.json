@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "zhassulan-portfolio",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,7 +11,14 @@
     "test:unit": "vitest run",
     "test:unit:watch": "vitest",
     "pretest:e2e": "nuxt build",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:css:fix": "stylelint \"**/*.css\" --fix",
+    "lint:html": "node scripts/lint-html.mjs",
+    "lint:unused-css": "python3 scripts/check_unused_css_classes.py",
+    "lint:all": "npm run lint && npm run lint:css && npm run lint:html"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
@@ -21,12 +28,19 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@nuxt/eslint": "^0.5.0",
     "@nuxt/test-utils": "^3.14.0",
     "@playwright/test": "^1.47.0",
+    "@stylistic/stylelint-plugin": "^5.3.0",
     "@vue/test-utils": "^2.4.6",
     "clean-css-cli": "^5.6.3",
+    "eslint": "^9.9.0",
     "happy-dom": "^15.7.0",
+    "html-validate": "^11.15.0",
+    "html-validate-vue": "^9.3.1",
     "sass": "^1.71.1",
+    "stylelint": "^17.15.0",
+    "stylelint-config-standard": "^40.0.0",
     "vitest": "^3.2.0"
   }
 }

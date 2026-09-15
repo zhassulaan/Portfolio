@@ -1,0 +1,24 @@
+{
+  "plugins": ["html-validate-vue"],
+  "extends": ["html-validate:recommended", "html-validate-vue:recommended"],
+  "rules": {
+    "class-pattern": [
+      "error",
+      {
+        "pattern": "/^(v-|mapboxgl-)[a-z0-9-]+$|^[a-z][a-z0-9]*(_[a-z0-9]+)*(__[a-z][a-z0-9]*(_[a-z0-9]+)*)?(--[a-z][a-z0-9]*(_[a-z0-9]+)*)?$|^[a-z0-9_]+-(enter|leave)-(active|from|to)$/"
+      }
+    ],
+    "attr-quotes": ["error", { "style": "any" }],
+    "element-case": ["error", { "style": ["lowercase", "pascalcase"] }],
+    "element-name": ["error", { "pattern": "^[A-Z][A-Za-z0-9]*$|^[a-z][a-z0-9]*(-[a-z0-9]+)+$" }],
+    "void-style": ["error", { "style": "omit" }],
+    "empty-heading": "off",
+    "wcag/h30": "off",
+    "prefer-native-element": "off"
+  },
+  "elements": ["html5"],
+  "transform": {
+    "^.*\\.vue$": "html-validate-vue"
+  },
+  "root": true
+}

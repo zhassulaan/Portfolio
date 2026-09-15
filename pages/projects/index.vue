@@ -41,9 +41,11 @@ useHead({
 </script>
 
 <template>
-  <main class='projects_page' id='main_content' tabindex='-1'>
+  <main class='projects_page'
+    id='main_content'
+    tabindex='-1'>
     <section class='projects_page__hero wrap'>
-      <div v-reveal class='projects_page__heading'>
+      <div class='projects_page__heading' v-reveal>
         <NuxtLink class='projects_page__back' :to="local_path('/')">
           <span aria-hidden='true'>←</span> {{ $t('projects_page.back_link') }}
         </NuxtLink>
@@ -51,7 +53,7 @@ useHead({
         <h1 class='projects_page__title' v-html="$t('projects_page.heading')"></h1>
       </div>
 
-      <p v-reveal class='projects_page__intro'>
+      <p class='projects_page__intro' v-reveal>
         {{ $t('projects_page.intro') }}
       </p>
     </section>
@@ -59,9 +61,9 @@ useHead({
     <section class='projects_page__controls wrap' aria-label='Project filters'>
       <label class='projects_page__search'>
         <span>{{ $t('projects_page.search_label') }}</span>
-        <input v-model='search_query'
-          type='search'
-          :placeholder="$t('projects_page.search_placeholder')" />
+        <input type='search'
+          :placeholder="$t('projects_page.search_placeholder')"
+          v-model='search_query'>
       </label>
 
       <label class='projects_page__select'>
@@ -69,7 +71,9 @@ useHead({
         <select v-model='active_category'>
           <option v-for='category in categories'
             :key="category"
-            :value="category" v-text='option_label(category)'></option>
+            :value="category"
+            v-text='option_label(category)'>
+          </option>
         </select>
       </label>
 
@@ -78,7 +82,9 @@ useHead({
         <select v-model='active_stack'>
           <option v-for='stack in stacks'
             :key="stack"
-            :value="stack" v-text='option_label(stack)'></option>
+            :value="stack"
+            v-text='option_label(stack)'>
+          </option>
         </select>
       </label>
 

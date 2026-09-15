@@ -24,7 +24,7 @@ const local_path = useLocalePath();
         v-reveal>
         <div class='trajectory_section__company_head'>
           <span v-text='`0${index + 1}`'></span>
-          <img :src="item.logo" :alt="`${item.company} logo`" />
+          <img :src="item.logo" :alt="`${item.company} logo`">
         </div>
 
         <div class='trajectory_section__company_body'>
@@ -50,13 +50,11 @@ const local_path = useLocalePath();
           :is="item.href ? NuxtLink : 'article'"
           v-for='(item, index) in proof_items'
           :key="item.label"
-          v-reveal
           :to="item.href ? local_path(item.href) : undefined"
-        >
+          v-reveal>
           <img v-if='item.logo'
             :src="item.logo"
-            :alt="`${item.label} logo`"
-          />
+            :alt="`${item.label} logo`">
           <span v-text="tx(`proof_items.${index}.label`, item.label)"></span>
           <strong v-text="tx(`proof_items.${index}.value`, item.value)"></strong>
           <p v-text="tx(`proof_items.${index}.note`, item.note)"></p>

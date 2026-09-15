@@ -16,7 +16,9 @@ import CaseStudyCard from '@/components/cards/case_study_card/case_study_card.vu
       </div>
 
       <div class='case_studies_section__list'>
-        <CaseStudyCard v-for='item in case_studies' :key="item.index" :case_study="item" />
+        <CaseStudyCard v-for='item in case_studies'
+          :key="item.index"
+          :case_study="item" />
       </div>
     </div>
   </section>

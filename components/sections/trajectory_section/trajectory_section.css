@@ -27,7 +27,7 @@
 
 .trajectory_section__company_head > span {
   color: var(--theme-muted);
-  font: 800 .625em 'Manrope';
+  font: 800 .625em Manrope;
 }
 
 .trajectory_section__company_head img {
@@ -135,7 +135,7 @@
 
 .trajectory_section__proof_item strong {
   margin-top: .5em;
-  font: 800 1.375em 'Manrope';
+  font: 800 1.375em Manrope;
 }
 
 .trajectory_section__proof_item p {
@@ -154,37 +154,44 @@
   font-weight: 800;
 }
 
-@media (max-width: 980px) {
+@media (width <= 980px) {
   .trajectory_section__companies {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .trajectory_section__company:nth-child(2) {
     border-right: 0;
   }
+
   .trajectory_section__company:nth-child(-n+2) {
     border-bottom: 1px solid var(--theme-line);
   }
+
   .trajectory_section__proof {
     grid-template-columns: 1fr;
     gap: 1.875em;
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .trajectory_section__companies {
     grid-template-columns: 1fr;
   }
+
   .trajectory_section__company {
     min-height: 15.625em;
     border-right: 0;
     border-bottom: 1px solid var(--theme-line);
   }
+
   .trajectory_section__company:last-child {
     border-bottom: 0;
   }
+
   .trajectory_section__company_body {
     margin-top: 2.1875em;
   }
+
   .trajectory_section__proof_grid {
     grid-template-columns: 1fr;
   }

@@ -4,7 +4,7 @@
   gap: 1.125em;
 }
 
-@media (max-width: 760px) {
+@media (width <= 760px) {
   .work_section__grid {
     grid-template-columns: 1fr;
   }

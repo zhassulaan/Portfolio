@@ -22,7 +22,7 @@
 .signal_section__item strong {
   display: block;
   margin-bottom: 1.25em;
-  font: 800 2.125em 'Manrope';
+  font: 800 2.125em Manrope;
   letter-spacing: -.05em;
 }
 
@@ -38,26 +38,30 @@
   line-height: 1.55;
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .signal_section {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .signal_section__item:nth-child(2) {
     border-right: 0;
   }
+
   .signal_section__item:nth-child(-n+2) {
     border-bottom: 1px solid var(--theme-line);
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .signal_section__item {
     min-height: 9.0625em;
     padding: 1.375em .875em;
   }
+
   .signal_section__item:first-child {
     padding-left: .875em;
   }
+
   .signal_section__item strong {
     font-size: 1.6875em;
   }
