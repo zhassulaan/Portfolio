@@ -155,7 +155,7 @@ html[lang='nl'] .hero_section__title {
 }
 
 .hero_section__signal small {
-  color: var(--theme-muted);
+  color: rgb(17 18 24 / 64%);
   font-size: .5625em;
   font-weight: 800;
   letter-spacing: .14em;
@@ -163,6 +163,7 @@ html[lang='nl'] .hero_section__title {
 }
 
 .hero_section__signal strong {
+  color: var(--theme-ink);
   margin-top: .3125em;
   font: 700 .8125em Manrope;
 }

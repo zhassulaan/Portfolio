@@ -118,6 +118,10 @@
   color: var(--theme-muted);
 }
 
+.cv_page__profile_text + .cv_page__profile_text {
+  margin-top: 1em;
+}
+
 .cv_page__achievements {
   gap: 1.125em;
   grid-template-columns: repeat(2, 1fr);
@@ -154,114 +158,6 @@ display: grid;
   gap: 1.125em;
   grid-template-columns: repeat(2, 1fr);
   }
-
-.cv_page__timeline_item {
-  border: 1px solid var(--theme-line);
-  border-radius: 1.125em;
-  padding: 1.5em;
-  background: var(--theme-surface);
-}
-
-.cv_page__timeline_head {
-display: flex;
-  align-items: center;
-  gap: .875em;
-    margin-bottom: 1.125em;
-}
-
-.cv_page__timeline_head img {
-  flex-shrink: 0;
-  border-radius: .5em;
-  width: 2.625em;
-  height: 2.625em;
-  padding: .375em;
-  background: #fff;
-  filter: saturate(.85);
-  object-fit: contain;
-}
-
-.cv_page__timeline_head h3 {
-  font-size: 1.0625em;
-}
-
-.cv_page__timeline_head small {
-  font-size: .6875em;
-  font-weight: 700;
-  color: var(--theme-muted);
-}
-
-.cv_page__timeline_role {
-  margin: 0 0 .5em;
-  font-size: .875em;
-  font-weight: 700;
-}
-
-.cv_page__timeline_focus {
-  margin: 0;
-  font-size: .8125em;
-  line-height: 1.6;
-  color: var(--theme-muted);
-}
-
-.cv_page__timeline_trigger {
-  display: inline-flex;
-  align-items: center;
-  gap: .375em;
-  margin-top: 1.125em;
-  border: 0;
-  padding: 0;
-  background: none;
-  font: inherit;
-  font-size: .75em;
-  font-weight: 800;
-  color: var(--theme-accent);
-  cursor: pointer;
-  transition: transform .2s ease;
-}
-
-.cv_page__timeline_trigger:hover {
-  transform: translateX(.1875em);
-}
-
-.cv_page__modal_meta {
-  margin: 0 0 1em;
-  font-size: .75em;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-  color: var(--theme-muted);
-}
-
-.cv_page__modal_summary {
-  margin: 0 0 1.5em;
-  font-size: .9375em;
-  line-height: 1.6;
-  color: var(--theme-muted);
-}
-
-.cv_page__modal_highlights {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.cv_page__modal_highlights li {
-  font-size: .9375em;
-  line-height: 1.6;
-}
-
-.cv_page__modal_highlights strong {
-  display: block;
-  margin-bottom: .1875em;
-  font-size: .75em;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-  color: var(--theme-accent);
-}
 
 .cv_page__skills {
   gap: 1.5em;
@@ -301,7 +197,7 @@ display: flex;
   margin-bottom: 1em;
   border-radius: .375em;
   padding: .25em .375em;
-  background: #fff;
+  background: var(--theme-white);
   object-fit: contain;
   object-position: left center;
 }

@@ -2,6 +2,8 @@
 import { portfolio_assets, signals, milestones, proof_items } from '@/data/portfolio';
 import TagList from '@/components/ui/tag_list/tag_list.vue';
 import Modal from '@/components/ui/modal/modal.vue';
+import MilestoneCard from '@/components/cards/milestone_card/milestone_card.vue';
+import MilestoneDetail from '@/components/cards/milestone_detail/milestone_detail.vue';
 // Imported explicitly (rather than relying on Nuxt's compile-time
 // auto-import) because it's used as a dynamic `:is` value below, which
 // needs an actual component reference, not just the tag name — matching
@@ -33,7 +35,8 @@ const active_milestone_title = computed(() => {
     return '';
   }
 
-  const role = tx(`milestones.${active_milestone.value.company}.role`, active_milestone.value.role);
+  const key = active_milestone.value.id || active_milestone.value.company;
+  const role = tx(`milestones.${key}.role`, active_milestone.value.role);
 
   return `${active_milestone.value.company} — ${role}`;
 });
@@ -139,6 +142,7 @@ useHead({
     <section class='cv_page__section wrap' v-reveal>
       <h2>{{ $t('cv_page.profile_heading') }}</h2>
       <p class='cv_page__profile_text'>{{ $t('cv_page.profile_text') }}</p>
+      <p class='cv_page__profile_text'>{{ $t('cv_page.profile_text_2') }}</p>
     </section>
 
     <section class='cv_page__section wrap'>
@@ -154,27 +158,10 @@ useHead({
       <h2>{{ $t('cv_page.experience_heading') }}</h2>
 
       <div class='cv_page__timeline'>
-        <article class='cv_page__timeline_item'
-          v-for='item in milestones'
-          :key="item.company"
-          v-reveal>
-          <div class='cv_page__timeline_head'>
-            <img :src="item.logo" :alt="`${item.company} logo`">
-            <div>
-              <h3 v-text='item.company'></h3>
-              <small v-text='item.period'></small>
-            </div>
-          </div>
-          <p class='cv_page__timeline_role' v-text="tx(`milestones.${item.company}.role`, item.role)"></p>
-          <p class='cv_page__timeline_focus' v-text="tx(`milestones.${item.company}.focus`, item.focus)"></p>
-          <button class='cv_page__timeline_trigger'
-            v-if='item.highlights?.length'
-            type='button'
-            :aria-label="$t('cv_page.view_details_aria', { company: item.company })"
-            v-on:click="open_milestone_details(item)">
-            {{ $t('cv_page.view_details') }} <span aria-hidden='true'>↗</span>
-          </button>
-        </article>
+        <MilestoneCard v-for='item in milestones'
+          :key="item.id || item.company"
+          :milestone='item'
+          v-on:view-details='open_milestone_details' />
       </div>
     </section>
 
@@ -182,25 +169,7 @@ useHead({
       :open='!!active_milestone'
       :close_label="$t('cv_page.close_modal_aria')"
       v-on:close='close_milestone_details'>
-      <template v-if='active_milestone'>
-        <p class='cv_page__modal_meta'>
-          <span v-text='active_milestone.period'></span>
-          <template v-if='active_milestone.location'>
-            <span aria-hidden='true'> · </span>
-            <span v-text="tx(`milestones.${active_milestone.company}.location`, active_milestone.location)"></span>
-          </template>
-        </p>
-        <p class='cv_page__modal_summary'
-          v-if='active_milestone.summary'
-          v-text="tx(`milestones.${active_milestone.company}.summary`, active_milestone.summary)">
-        </p>
-        <ul class='cv_page__modal_highlights'>
-          <li v-for='(highlight, index) in active_milestone.highlights' :key='highlight.label'>
-            <strong v-text="tx(`milestones.${active_milestone.company}.highlight_${index}.label`, highlight.label)"></strong>
-            <span v-text="tx(`milestones.${active_milestone.company}.highlight_${index}.text`, highlight.text)"></span>
-          </li>
-        </ul>
-      </template>
+      <MilestoneDetail v-if='active_milestone' :milestone='active_milestone' />
     </Modal>
 
     <section class='cv_page__section wrap'>
