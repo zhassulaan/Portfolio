@@ -1,9 +1,14 @@
 :root {
+  --theme-white: #fff;
+  --theme-white-rgb: 255 255 255;
+  --theme-black: #000;
+  --theme-black-rgb: 0 0 0;
+
   --theme-ink: #111218;
   --theme-text: #111218;
   --theme-muted: #6a6c76;
   --theme-paper: #f4f2ec;
-  --theme-surface: #fff;
+  --theme-surface: var(--theme-white);
   --theme-surface_alt: #ebe8e0;
   --theme-line: #d6d3ca;
   --theme-accent: #635bff;
@@ -13,7 +18,7 @@
   --theme-header_bg: rgb(244 242 236 / 96%);
   --theme-chip_bg: #efede7;
   --theme-chip_text: #555862;
-  --theme-control_bg: #fff;
+  --theme-control_bg: var(--theme-white);
   --theme-nav_text: #383a43;
   --theme-case_study_border: #d0cdc4;
   --theme-case_study_surface: #f8f6f1;

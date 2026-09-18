@@ -25,7 +25,7 @@ import type { CaseStudy, Milestone, Principle, ProofDocument, ProofItem, Project
 
 // Served straight from /public — a static file needs no build-time import,
 // unlike the images/logos above which go through Vite's asset pipeline.
-export const portfolio_assets = { portrait, cv: '/files/Zhassulan_Serikuly-CV.pdf' };
+export const portfolio_assets = { portrait, cv: '/files/Zhassulan-Serikuly-Senior-Software-Engineer-Resume.pdf' };
 
 export const nav_items = [{
   label: 'Signals',
@@ -62,7 +62,7 @@ export const signals: Signal[] = [{
   label: 'users served',
   note: 'Production interfaces operating at meaningful product scale.',
 }, {
-  value: '120+',
+  value: '200+',
   label: 'projects delivered',
   note: 'Across web, mobile and data-intensive platforms.',
 }, {
@@ -140,10 +140,10 @@ export const case_studies: CaseStudy[] = [
 ];
 
 export const projects: Project[] = [
-  { id: 'geonomix', title: 'Geonomix', category: 'GIS & Platforms', image: geonomix_image, description: 'A large-scale geospatial and digital-twin platform combining interactive maps, municipal data, digital registries, government services and monitoring tools across regional deployments.', stack: ['Vue.js', 'Vuex', 'Mapbox GL JS', 'Django', 'PostgreSQL', 'Elasticsearch'], href: 'https://iulytau.kz', featured: true, note: 'Map-first product where data volume and reusable regional delivery shaped the frontend architecture.' },
-  { id: 'midas-event', title: 'Midas Event', category: 'Corporate', image: midas_event_image, description: 'An event-agency site built as a browsable portfolio of past events rather than a static services list, with React-driven interactive detail throughout.', stack: ['React', 'JavaScript', 'CSS'], href: 'https://midasevent.kz', featured: true },
-  { id: 'kostyum', title: 'Kostyum.kz', category: 'E-commerce', image: kostyum_image, description: 'A responsive men’s and women’s fashion e-commerce frontend — reusable product-catalog UI covering apparel, footwear, and accessories, with a focus on a smooth desktop and mobile shopping experience.', stack: ['Nuxt.js', 'Vue.js', 'SSR'], href: 'https://kostyum.kz', featured: true },
+  { id: 'geonomix', title: 'Geonomix', category: 'GIS & Platforms', image: geonomix_image, description: 'A large-scale geospatial and digital-twin platform combining interactive maps, municipal data, digital registries, government services and monitoring tools across regional deployments.', stack: ['Vue.js', 'Vuex', 'Mapbox GL JS', 'Django', 'PostgreSQL', 'Elasticsearch'], href: 'https://iulytau.kz', note: 'Map-first product where data volume and reusable regional delivery shaped the frontend architecture.' },
   { id: 'stroymarket', title: 'Stroymarket.kz', category: 'Marketplace', image: stroymarket_image, description: 'A nationwide B2B marketplace connecting construction material suppliers, contractors, and equipment rental across Kazakhstan — live catalog and supplier search across 39 cities, an AI-powered project assistant, and a cost-estimation calculator for common build types.', stack: ['Vue.js', 'Nuxt.js'], href: 'https://stroymarket.kz', featured: true, note: 'Solo-built, from supplier/catalog discovery to an AI construction assistant and cost estimator.' },
+  { id: 'kostyum', title: 'Kostyum.kz', category: 'E-commerce', image: kostyum_image, description: 'A responsive men’s and women’s fashion e-commerce frontend — reusable product-catalog UI covering apparel, footwear, and accessories, with a focus on a smooth desktop and mobile shopping experience.', stack: ['Nuxt.js', 'Vue.js', 'SSR'], href: 'https://kostyum.kz', featured: true },
+  { id: 'midas-event', title: 'Midas Event', category: 'Corporate', image: midas_event_image, description: 'An event-agency site built as a browsable portfolio of past events rather than a static services list, with React-driven interactive detail throughout.', stack: ['React', 'JavaScript', 'CSS'], href: 'https://midasevent.kz', featured: true },
   { id: 'magnum', title: 'Magnum.kz', category: 'Retail', image: magnum_image, description: 'Frontend contributor on Kazakhstan’s largest supermarket chain’s site — built the product catalog and promotions, the Magnum Chef sub-brand pages (bakery, culinary, confectionery), the loyalty/bonus-app promotion section, and the careers page.', stack: ['Vue.js', 'Nuxt.js'], href: 'https://magnum.kz', featured: false, note: 'Contributed core customer-facing sections as part of the delivery team; not a solo build.' },
   { id: 'unistory', title: 'UniStory', category: 'AI & Web3', image: unistory_image, description: 'A digital product interface integrating crypto-wallet state and asynchronous backend data into reusable React product experiences.', stack: ['React', 'TypeScript', 'REST APIs', 'Web3'], href: 'https://unistory.app/ru/', featured: true },
   { id: 'kazmed', title: 'KazMedEngineering', category: 'Healthcare', image: kazmed_image, description: 'A corporate frontend for an authorized medical-equipment service partner, built around a Swiper-driven catalog of equipment and service lines instead of long text pages.', stack: ['Nuxt.js', 'Swiper'], href: 'https://www.kme.kz' },
@@ -206,63 +206,78 @@ export const principles: Principle[] = [{
 }];
 
 export const milestones: Milestone[] = [{
+  id: 'ciklum',
   period: 'Aug 2025 — Sep 2026',
   company: 'Ciklum',
   role: 'Senior Software Engineer',
   focus: 'Frontend architecture · product modernization · performance · technical leadership',
   logo: ciklum_logo,
   location: 'Bucharest, Romania (Remote)',
-  summary: 'Global software engineering and digital services company helping international businesses design, build, and scale complex digital products.',
+  summary: 'UK-based global digital product and enterprise software transformation leader.',
   highlights: [{
     label: 'Architecture',
-    text: 'Established a shared Vue 3/TypeScript architecture — reusable component library and type-safe API layer — across 10+ modules scaling from 1M to 3M users, built to WCAG AA standards, cutting feature implementation time by ~30%.',
-  }, {
-    label: 'Performance',
-    text: 'Optimized rendering, caching, and API request patterns across high-traffic modules, cutting interaction latency (INP) from ~280ms to ~150ms and improving Core Web Vitals scores platform-wide.',
-  }, {
-    label: 'Modernization & Reliability',
-    text: 'Modernized legacy Vue 2 codebases to Vue 3, Composition API, and Vite; strengthened production reliability through Vitest/Jest testing, Sentry monitoring, and CI/CD workflows.',
-  }, {
-    label: 'Platform Efficiency',
-    text: 'Cut duplicate API calls by 40% and bundle size by 20% — measured via Lighthouse and network-request profiling — by refactoring the shared data-fetching and state layer into reusable composables.',
+    text: 'Established a shared Vue 3/strict TypeScript component library and type-safe REST/GraphQL API layer across 10+ modules serving 1–3M users, built to WCAG AA standards — cutting feature implementation time by ~30%.',
   }, {
     label: 'Technical Leadership',
-    text: 'Led frontend architectural decisions and conducted ~15 pull-request reviews per week across a team of 6 engineers, cutting post-merge defects by 35% and establishing coding standards adopted platform-wide.',
+    text: 'Led frontend architectural decisions, driving sprint planning and backlog refinement for a team of 6 engineers; conducted ~15 GitLab merge-request reviews per week, lowering post-merge defects by 35%.',
+  }, {
+    label: 'Performance & Core Web Vitals',
+    text: 'Optimized rendering, caching, and network request patterns across high-traffic modules, reducing interaction latency (INP) from ~280ms to ~150ms and dropping duplicate API calls by 40%.',
+  }, {
+    label: 'Modernization & Reliability',
+    text: 'Modernized legacy Vue 2 codebases to Vue 3, Composition API, Pinia, and Vite, shrinking bundle size by 20%; strengthened reliability via Vitest/Jest testing, Sentry monitoring, and CI/CD workflows.',
+  }, {
+    label: 'Tooling, Mobile & AI',
+    text: 'Structured codebases using Feature-Sliced Design and TanStack Query, trimming boilerplate by ~25%; extended the design system to an Ionic/Capacitor mobile app and deployed AI-assisted dev tooling (Cursor, Claude Code).',
   }],
 }, {
+  id: 'keyhorse',
   period: 'Jul 2021 — Aug 2025',
   company: 'KeyHorse',
-  role: 'Middle → Senior + Team Lead Software Engineer',
-  focus: 'GIS · digital twins · reusable systems · backend APIs · mentoring',
+  role: 'Middle → Senior → Team Lead Software Engineer',
+  focus: 'GIS · digital twins · engineering leadership · reusable systems · backend APIs',
   logo: keyhorse_logo,
   location: 'Almaty, Kazakhstan',
-  summary: 'Software engineering company developing multi-tenant GIS and digital-twin platforms for urban monitoring and complex geospatial data visualization across Kazakhstan and Central Asia.',
-  highlights: [{
-    label: 'Delivery & Scale',
-    text: 'Delivered 80+ regional and 100+ smaller GIS/digital-twin projects serving 1M+ users across Kazakhstan, Uzbekistan, Kyrgyzstan and Tajikistan; built 10 regional platforms from the ground up across the full Software Development Life Cycle (SDLC), typically launching within 1–1.5 months — roughly 2x faster than the team’s prior average.',
+  summary: 'GIS and digital-twin platform company serving Central Asia.',
+  roles: [{
+    id: 'team-lead',
+    label: 'Team Lead',
+    period: 'Sep 2023 — Aug 2025',
+    role: 'Team Lead Software Engineer',
+    highlights: [{
+      label: 'Engineering Leadership',
+      text: 'Directed an engineering department of 18 developers across 3 sub-teams, leading the shift to Scrum and setting technical direction to deliver 80+ large-scale regional projects and 100+ smaller digital-twin deployments, serving 1.5M+ active users across 4 countries.',
+    }, {
+      label: 'Solo Product Delivery',
+      text: 'Independently architected and launched 10 enterprise platforms from scratch in 1–1.5 months each, cutting time-to-market by ~2x versus the company\'s historical average.',
+    }, {
+      label: 'Process & Governance',
+      text: 'Led sprint planning, estimation, and technical documentation, conducting ~50 code reviews per week and establishing documentation standards that cut new-hire onboarding time by 40%.',
+    }],
   }, {
-    label: 'Performance',
-    text: 'Reduced Mapbox GL JS rendering time by 40% (800ms→480ms) across datasets of 300K–500K geospatial objects through layer/style restructuring, clustering, and client-side filtering; improved geospatial search response time by 30% by eliminating redundant processing loops and optimizing Elasticsearch/Vuex data handling.',
-  }, {
-    label: 'Reusable Architecture',
-    text: 'Built 100+ reusable Vue components and shared modules within a centralized architecture, cutting development effort by up to 50% on similar projects — in some cases reducing implementation from ~1 month to 1 week.',
-  }, {
-    label: 'Accessibility',
-    text: 'Built a core accessibility framework adopted across regional projects — supporting configurable visual modes, typography, image settings, and text-to-speech — cutting implementation time from ~3 days to ~4 hours while averaging 87/100 Lighthouse Accessibility and 95/100 Performance.',
-  }, {
-    label: 'Backend & APIs',
-    text: 'Developed 30–40 REST endpoints with Python, Django, and PostgreSQL for datasets of 100K+ records, supporting frontend integrations and sustaining 99.9% uptime across data-intensive GIS workflows.',
-  }, {
-    label: 'Team Leadership',
-    text: 'Mentored 18 developers (5 frontend), leading ~20 code reviews per week, providing technical guidance and onboarding across production projects — cutting new-hire ramp-up time by 40%.',
-  }, {
-    label: 'Engineering Standards',
-    text: 'Standardized shared component architecture, BEM/ESLint/Stylelint conventions, theming, and role/context-based UI patterns across 80+ regional projects, enforced via automated GitLab CI/CD checks — cutting code duplication and improving maintainability.',
-  }, {
-    label: 'Testing & Quality',
-    text: 'Automated 40+ critical frontend scenarios — search/filtering, map interactions, forms, and core user flows — with Vitest and Playwright, reaching 70–80% coverage of critical application logic.',
+    id: 'mid-senior',
+    label: 'Middle → Senior',
+    period: 'Jul 2021 — Sep 2023',
+    role: 'Middle → Senior Software Engineer',
+    highlights: [{
+      label: 'Geospatial Performance',
+      text: 'Reduced Mapbox GL JS rendering time by 40% (800ms → 480ms) and restructured Elasticsearch indexing/query patterns with memoized Vuex getters to cut search latency by 30% across 500K+ geo-objects.',
+    }, {
+      label: 'Frontend Architecture',
+      text: 'Designed a shared Vue architecture (100+ FSD components), documented in a Storybook component library to standardize UI patterns across teams, reducing feature development cycle time by 50%.',
+    }, {
+      label: 'Backend & Data Design',
+      text: 'Engineered 35+ Django/PostgreSQL REST endpoints with Redis caching and optimized PL/pgSQL stored procedures for large-scale geospatial datasets, maintaining 99.9% production uptime while generating type-safe API clients for frontend integration.',
+    }, {
+      label: 'DevOps & Automation',
+      text: 'Designed a Vitest, Playwright, and Cypress testing strategy and enforced production quality gates via unified GitLab CI/CD pipelines across 86 repositories, lifting code coverage to 70–80% and cutting regression bugs by 30%.',
+    }, {
+      label: 'Design Systems & WCAG',
+      text: 'Authored a CSS framework using design tokens, SCSS, and BEM methodologies built to WCAG AA standards, slashing UI implementation time from ~3 days down to ~4 hours.',
+    }],
   }],
 }, {
+    id: 'dar',
   period: 'Jun 2020 — Jul 2021',
   company: 'DAR',
   role: 'Junior Software Engineer',
@@ -270,22 +285,23 @@ export const milestones: Milestone[] = [{
   logo: dar_logo,
   summary: 'Technology group developing digital products and platforms across fintech, education, sports, and business operations.',
   highlights: [{
-    label: 'Production Scale',
-    text: 'Delivered frontend functionality across 40 multi-page production applications, typically containing 10+ pages each, while handling up to 3–4 concurrent projects.',
+    label: 'Production Architecture',
+    text: 'Delivered 30+ multi-page production applications (8+ pages each) while managing up to 3–4 concurrent projects, cutting delivery time by 25% (5–10 days/cycle) through a reusable Vue/React component library (34 components, BEM architecture).',
   }, {
-    label: 'Delivery Efficiency',
-    text: 'Reduced development time by 5–10 days per project through 30+ reusable components, shared layouts, and BEM-based architecture reused across 20+ projects, enabling consistent delivery ahead of deadlines.',
-  }, {
-    label: 'Large-Scale Platforms',
-    text: 'Independently built complete frontend applications for food delivery and accommodation booking platforms in ~1 month each — including GSAP-powered animations and interactions — supporting 150–200 restaurants across 3 cities and 100–150 property listings.',
+    label: 'Platform Delivery',
+    text: 'Independently architected and shipped two full-scale platforms — food delivery and accommodation booking — in ~1 month each, including GSAP-powered animations, supporting 150–200 restaurants across 3 cities and 100–150 property listings.',
   }, {
     label: 'Performance & SEO',
-    text: 'Reduced load times by 40% to 1.8–2.2 seconds through SSR, code splitting, lazy loading, tree shaking, and bundle optimization, while achieving 100/100 Lighthouse SEO scores across most projects.',
+    text: 'Cut page load times by 40% (to 1.8–2.2s) via SSR, code splitting, lazy loading, and bundle optimization, achieving 100/100 Lighthouse SEO scores across most projects.',
   }, {
     label: 'Cross-Platform Development',
-    text: 'Shipped 5–7 production mobile applications to iOS and Android using Ionic, Capacitor, and React Native, sharing up to 40–50% of code across platforms.',
+    text: 'Shipped 5–7 production mobile apps (iOS/Android) via Ionic, Capacitor, and React Native, sharing 40–50% of code across platforms.',
+  }, {
+    label: 'Backend & APIs',
+    text: 'Built and maintained Laravel/MySQL REST backends — API design, database schema, and authentication — for 6 of these applications, handling 15K+ requests/day.',
   }],
 }, {
+  id: 'epam',
   period: 'Jan 2020 - Jun 2020',
   company: 'EPAM Systems',
   role: 'Software Engineer Intern',
@@ -294,13 +310,25 @@ export const milestones: Milestone[] = [{
   summary: 'Global IT consulting and digital engineering company.',
   highlights: [{
     label: 'Competitive Selection',
-    text: 'Selected as 1 of 3 hires from 40+ applicants in a competitive technical hiring process.',
+    text: 'Selected as 1 of 3 engineering hires from 40+ applicants in a competitive technical hiring process.',
   }, {
     label: 'Frontend Development',
-    text: 'Engineered responsive, production-grade web apps and reusable component libraries in React, TypeScript, and JavaScript, integrating APIs into dynamic, user-friendly interfaces.',
+    text: 'Built responsive React/TypeScript interfaces and reusable component libraries, integrating APIs into production workflows; contributed to 5+ enterprise internal tools.',
   }, {
     label: 'Engineering Growth',
-    text: 'Gained exposure to enterprise-grade code standards, review processes, and delivery methodology carried into later roles.',
+    text: 'Participated in enterprise-grade code reviews, unit testing, and delivery standards — a foundation carried into every role since.',
+  }],
+}, {
+  id: 'freelance',
+  period: '2019 — 2025',
+  company: 'Independent Contractor',
+  role: 'Freelance Software Engineer',
+  focus: 'Freelance Vue/React development · full-cycle SaaS & e-commerce delivery · client management',
+  location: 'Remote (international clients)',
+  summary: 'Independent freelance and contract work for international clients, run alongside full-time roles.',
+  highlights: [{
+    label: 'Client Delivery',
+    text: 'Delivered 40+ international Vue/React projects (SaaS, e-commerce) with a 100% on-time rate and 5.0 rating, owning full SDLC from client discovery to production, including complex third-party API integrations.',
   }],
 }];
 

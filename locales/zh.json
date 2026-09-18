@@ -163,10 +163,10 @@
     "title": "本页的全部内容，<br />整合为一份 PDF。",
     "intro": "与本笔记其他部分相同的经历、技能与证明材料，整理成单一文档——方便用于求职系统投递、邮件附件或打印。",
     "profile_heading": "职业概况",
-    "profile_text": "拥有6年以上商业经验的高级软件工程师，擅长架构设计与扩展高性能Web应用及数据密集型平台，业务覆盖GIS、金融科技与企业级领域，服务用户超过100万。全面负责软件开发生命周期（SDLC）——包括架构设计、实现、性能优化、测试与生产支持。精通 Vue.js、React、Nuxt.js、Next.js 和 TypeScript，并具备基于 Python、Django 和 PostgreSQL 的后端开发能力。在技术领导力、工程师指导以及性能、可靠性与交付速度方面的可衡量提升上，均有成熟的履历。",
+    "profile_text": "拥有6年以上商业经验的高级软件工程师，负责架构设计、扩展并交付了100多个高性能网页应用和数据密集型平台（GIS/数字孪生、金融科技、电商），服务超过100万用户。在跨领域技术领导力、带教最多18人的团队以及全流程 SDLC 责任方面拥有已验证的履历。",
     "achievements_heading": "主要成就",
-    "achievement_1": "为10多个平台设计了多层缓存与失效策略，将冗余API请求减少约50%，并将后端基础设施成本降低约20%。",
-    "achievement_2": "编写了前端工程标准——代码评审规范与组件架构模式——被3家公司、80多个项目采用，将新工程师的入职适应时间缩短约40%。",
+    "achievement_1": "为10多个平台设计了多层缓存与失效策略，将冗余 API 流量减少50%，并将云基础设施成本降低约20%。（Ciklum）",
+    "achievement_2": "编写了统一的前端工程标准——包括代码评审准则和组件架构模式——已在2家公司、100多个生产项目中采用，将新工程师的上手效率提升40%。",
     "download_cv": "下载简历",
     "download_cv_aria": "以 PDF 格式下载简历",
     "open_new_tab": "在新标签页中打开",
@@ -187,8 +187,12 @@
     "skill_architecture": "架构与质量",
     "skill_testing": "测试",
     "skill_performance": "性能优化",
-    "skill_backend": "后端",
-    "skill_mobile": "移动端开发",
-    "skill_tools": "工具与 DevOps"
+    "skill_backend": "后端与 API",
+    "skill_mobile": "移动端 / PWA",
+    "skill_tools": "DevOps 与工具",
+    "profile_text_2": "在 Vue/React 与 TypeScript 生态系统方面拥有深厚专业知识，并以 Django（Python）、Laravel（PHP）和 PostgreSQL/Elasticsearch 支撑企业级后端设计。较早采用 AI 辅助开发工作流（Cursor、Claude Code、Copilot），以减少状态管理样板代码、自动化质量门禁，并将上市时间缩短约2倍。",
+    "role_selector_aria": "选择角色阶段",
+    "skill_process": "工程流程",
+    "skill_ai": "AI 辅助开发"
   }
 }

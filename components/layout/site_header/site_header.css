@@ -27,7 +27,7 @@
   height: 3.25em;
   border-radius: 50%;
   background: var(--theme-ink);
-  color: #fff;
+  color: var(--theme-white);
 }
 
 .site_header__brand:hover {
@@ -127,7 +127,7 @@
   transform: translateY(-.125em);
   box-shadow: 0 12px 28px rgb(17 18 24 / 14%);
   border-color: var(--theme-ink);
-  color: #fff;
+  color: var(--theme-white);
 }
 
 .site_header__cta:hover::before {

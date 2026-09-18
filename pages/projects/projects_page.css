@@ -182,7 +182,7 @@
   inset: 2.125em -8% 0;
   z-index: -1;
   pointer-events: none;
-  mask-image: linear-gradient(to bottom, transparent 0, #000 28%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0, var(--theme-black) 28%, transparent 100%);
   animation: projects_page_grid_drift 18s linear infinite;
   background-image:
     linear-gradient(var(--theme-projects_motion_soft) .0625em, transparent .0625em),
@@ -205,7 +205,7 @@
 .projects_page__reset:hover {
   transform: rotate(-2deg) translateY(-.125em);
   background: var(--theme-ink);
-  color: #fff;
+  color: var(--theme-white);
 }
 
 @keyframes projects_page_grid_drift {

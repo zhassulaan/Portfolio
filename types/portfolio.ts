@@ -35,17 +35,25 @@ export interface MilestoneHighlight {
   text: string;
 }
 
+export interface MilestoneRole {
+  id: string;
+  label: string;
+  role: string;
+  period: string;
+  highlights: MilestoneHighlight[];
+}
+
 export interface Milestone {
+  id?: string;
   period: string;
   company: string;
   role: string;
   focus: string;
-  logo: string;
-  // Optional — only populated where the CV has enough detail to justify a
-  // "full role details" modal (see pages/cv/index.vue).
+  logo?: string;
   location?: string;
   summary?: string;
   highlights?: MilestoneHighlight[];
+  roles?: MilestoneRole[];
 }
 
 export interface ProofItem {

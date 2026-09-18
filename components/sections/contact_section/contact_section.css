@@ -1,7 +1,7 @@
 .contact_section {
   padding-block: 6.25em;
   background: var(--theme-accent);
-  color: #fff;
+  color: var(--theme-white);
 }
 
 .contact_section__inner {
@@ -27,11 +27,11 @@ html[lang='nl'] .contact_section h2 {
 }
 
 .contact_section .eyebrow {
-  color: rgb(255 255 255 / 68%);
+  color: rgb(var(--theme-white-rgb) / 68%);
 }
 
 .contact_section__action > p {
-  color: rgb(255 255 255 / 82%);
+  color: rgb(var(--theme-white-rgb) / 82%);
   font-size: 1em;
   line-height: 1.7;
 }
@@ -40,7 +40,7 @@ html[lang='nl'] .contact_section h2 {
   display: inline-block;
   margin-top: .875em;
   padding-bottom: .3125em;
-  border-bottom: 1px solid rgb(255 255 255 / 50%);
+  border-bottom: 1px solid rgb(var(--theme-white-rgb) / 50%);
   font: 800 clamp(1.3125em, 3vw, 2.125em) Manrope;
   letter-spacing: -.04em;
   white-space: nowrap;
@@ -92,7 +92,7 @@ html[lang='nl'] .contact_section h2 {
   inset: 0;
   z-index: -1;
   border-radius: inherit;
-  background: #fff;
+  background: var(--theme-white);
   content: '';
   transform: scale(0);
   transition: transform .3s cubic-bezier(.2, .8, .2, 1);

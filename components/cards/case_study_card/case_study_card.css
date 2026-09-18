@@ -93,7 +93,7 @@
   border-left: 1px solid var(--theme-case_study_rule);
   padding: 1.875em;
   background: #111218;
-  color: #fff;
+  color: var(--theme-white);
 }
 
 .case_study_card__metrics div {

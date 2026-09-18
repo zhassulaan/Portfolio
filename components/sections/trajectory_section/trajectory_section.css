@@ -36,7 +36,7 @@
   padding: .3125em .5em;
   border-radius: .5em;
   object-fit: contain;
-  background: #fff;
+  background: var(--theme-white);
   filter: saturate(.85);
 }
 
@@ -122,7 +122,7 @@
   border-radius: .375em;
   object-fit: contain;
   object-position: left center;
-  background: #fff;
+  background: var(--theme-white);
 }
 
 .trajectory_section__proof_item span {
