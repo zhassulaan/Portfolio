@@ -46,31 +46,39 @@ const active_milestone_title = computed(() => {
 const skill_groups: Array<{ key: string; label: string; items: string[] }> = [{
   key: 'frontend',
   label: 'Frontend',
-  items: ['Vue.js', 'React', 'Nuxt.js', 'Next.js', 'TypeScript', 'JavaScript', 'Pinia', 'Vuex', 'Redux', 'HTML5', 'CSS3', 'Tailwind CSS', 'Mapbox GL JS']
+  items: ['Vue.js (2/3, Composition API)', 'React', 'Next.js', 'Nuxt.js', 'TypeScript (Strict)', 'JavaScript', 'Pinia', 'Vuex', 'Redux', 'TanStack Query', 'Semantic HTML', 'CSS3', 'SCSS', 'LESS', 'Tailwind CSS', 'Mapbox GL JS']
 }, {
   key: 'backend',
-  label: 'Backend',
-  items: ['Django', 'Python', 'Laravel', 'PHP', 'PostgreSQL', 'MySQL', 'PL/SQL', 'Elasticsearch', 'REST APIs', 'WebSockets']
+  label: 'Backend & APIs',
+  items: ['Django', 'Python', 'Laravel', 'PHP', 'PostgreSQL', 'MySQL', 'Elasticsearch', 'Redis', 'REST APIs', 'GraphQL', 'WebSockets', 'Public APIs']
 }, {
   key: 'mobile',
-  label: 'Mobile',
-  items: ['React Native', 'Ionic', 'Capacitor']
+  label: 'Mobile / PWA',
+  items: ['React Native', 'Ionic', 'Capacitor', 'PWA']
 }, {
   key: 'architecture',
   label: 'Architecture & Quality',
-  items: ['SSR', 'Design Systems', 'PWA', 'Cross-Browser Compatibility', 'WCAG Accessibility', 'BEM', 'OOP']
+  items: ['Feature-Sliced Design (FSD)', 'Server-Side Rendering (SSR)', 'Object-Oriented Programming (OOP)', 'Functional Programming', 'Design Systems', 'CSS Architecture', 'WCAG Accessibility', 'Cross-Browser UI', 'BEM', 'i18n']
 }, {
   key: 'performance',
   label: 'Performance',
-  items: ['Core Web Vitals (LCP, INP, CLS)', 'Code Splitting', 'Lazy Loading', 'Tree Shaking', 'Bundle Optimization', 'Technical SEO']
+  items: ['Core Web Vitals (LCP/INP/CLS)', 'Code Splitting', 'Lazy Loading', 'Bundle Optimization', 'Tree Shaking', 'Technical SEO', 'Observability']
 }, {
   key: 'testing',
   label: 'Testing',
-  items: ['Vitest', 'Jest', 'Playwright (Unit & E2E Testing)']
+  items: ['Vitest/Jest', 'Playwright/Cypress (Unit & E2E Testing)']
 }, {
   key: 'tools',
-  label: 'Tools & DevOps',
-  items: ['Git', 'GitLab', 'Vite', 'Docker', 'CI/CD', 'ESLint', 'Stylelint', 'Sentry', 'Agile/Scrum', 'Kanban']
+  label: 'DevOps & Tooling',
+  items: ['Git', 'GitLab CI/CD', 'Azure DevOps', 'Azure', 'Docker', 'Vite/Webpack', 'Monorepo Tooling (NX/Turborepo/pnpm)', 'ESLint/Stylelint', 'Sentry']
+}, {
+  key: 'process',
+  label: 'Engineering Processes',
+  items: ['Agile (Scrum)', 'Kanban', 'Task Decomposition & Estimation', 'Technical Documentation', 'Refactoring', 'Product/UX & Design Collaboration', 'Developer Experience (DX)']
+}, {
+  key: 'ai',
+  label: 'AI-Assisted Development',
+  items: ['Claude Code', 'Cursor', 'GitHub Copilot']
 }];
 
 onMounted(() => {

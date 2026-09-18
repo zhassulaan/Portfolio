@@ -187,10 +187,12 @@
     "skill_architecture": "Архитектура и качество",
     "skill_testing": "Тестирование",
     "skill_performance": "Производительность",
-    "skill_backend": "Backend",
-    "skill_mobile": "Мобильная разработка",
-    "skill_tools": "Инструменты и DevOps",
+    "skill_backend": "Backend и API",
+    "skill_mobile": "Мобильная разработка / PWA",
+    "skill_tools": "DevOps и инструменты",
     "profile_text_2": "Глубокая экспертиза в экосистемах Vue/React и TypeScript, подкреплённая проектированием корпоративного backend на Django (Python), Laravel (PHP) и PostgreSQL/Elasticsearch. Один из первых внедрил AI-инструменты в разработку (Cursor, Claude Code, Copilot), чтобы сократить шаблонный код управления состоянием, автоматизировать quality gates и ускорить time-to-market примерно в 2 раза.",
-    "role_selector_aria": "Выбор этапа роли"
+    "role_selector_aria": "Выбор этапа роли",
+    "skill_process": "Инженерные процессы",
+    "skill_ai": "Разработка с AI"
   }
 }

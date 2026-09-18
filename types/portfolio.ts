@@ -49,7 +49,7 @@ export interface Milestone {
   company: string;
   role: string;
   focus: string;
-  logo: string;
+  logo?: string;
   location?: string;
   summary?: string;
   highlights?: MilestoneHighlight[];

@@ -187,10 +187,12 @@
     "skill_architecture": "Architectuur & kwaliteit",
     "skill_testing": "Testen",
     "skill_performance": "Performance",
-    "skill_backend": "Backend",
-    "skill_mobile": "Mobile",
-    "skill_tools": "Tools & DevOps",
+    "skill_backend": "Backend & API's",
+    "skill_mobile": "Mobile / PWA",
+    "skill_tools": "DevOps & Tooling",
     "profile_text_2": "Diepgaande expertise in de Vue/React- en TypeScript-ecosystemen, ondersteund door enterprise backend-ontwerp met Django (Python), Laravel (PHP) en PostgreSQL/Elasticsearch. Vroege gebruiker van AI-ondersteunde ontwikkelworkflows (Cursor, Claude Code, Copilot) om state-management boilerplate te verminderen, kwaliteitspoorten te automatiseren en de time-to-market ~2x te verkorten.",
-    "role_selector_aria": "Rolfase selecteren"
+    "role_selector_aria": "Rolfase selecteren",
+    "skill_process": "Engineering-processen",
+    "skill_ai": "AI-ondersteunde ontwikkeling"
   }
 }

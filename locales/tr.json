@@ -187,10 +187,12 @@
     "skill_architecture": "Mimari ve kalite",
     "skill_testing": "Test",
     "skill_performance": "Performans",
-    "skill_backend": "Backend",
-    "skill_mobile": "Mobil",
-    "skill_tools": "Araçlar ve DevOps",
+    "skill_backend": "Backend & API'ler",
+    "skill_mobile": "Mobil / PWA",
+    "skill_tools": "DevOps ve Araçlar",
     "profile_text_2": "Django (Python), Laravel (PHP) ve PostgreSQL/Elasticsearch ile kurumsal backend tasarımı tarafından desteklenen Vue/React ve TypeScript ekosistemlerinde derin uzmanlık. State-management şablon kodunu azaltmak, kalite kapılarını otomatikleştirmek ve time-to-market’i ~2 kat hızlandırmak için AI destekli geliştirme iş akışlarını (Cursor, Claude Code, Copilot) erken benimseyen biri.",
-    "role_selector_aria": "Rol aşamasını seçin"
+    "role_selector_aria": "Rol aşamasını seçin",
+    "skill_process": "Mühendislik Süreçleri",
+    "skill_ai": "AI Destekli Geliştirme"
   }
 }

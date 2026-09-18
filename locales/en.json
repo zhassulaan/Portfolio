@@ -188,9 +188,11 @@
     "skill_architecture": "Architecture & quality",
     "skill_testing": "Testing",
     "skill_performance": "Performance",
-    "skill_backend": "Backend",
-    "skill_mobile": "Mobile",
-    "skill_tools": "Tools & DevOps",
-    "role_selector_aria": "Select role phase"
+    "skill_backend": "Backend & APIs",
+    "skill_mobile": "Mobile / PWA",
+    "skill_tools": "DevOps & Tooling",
+    "role_selector_aria": "Select role phase",
+    "skill_process": "Engineering Processes",
+    "skill_ai": "AI-Assisted Development"
   }
 }

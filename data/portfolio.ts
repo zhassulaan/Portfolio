@@ -318,6 +318,18 @@ export const milestones: Milestone[] = [{
     label: 'Engineering Growth',
     text: 'Participated in enterprise-grade code reviews, unit testing, and delivery standards — a foundation carried into every role since.',
   }],
+}, {
+  id: 'freelance',
+  period: '2019 — 2025',
+  company: 'Independent Contractor',
+  role: 'Freelance Software Engineer',
+  focus: 'Freelance Vue/React development · full-cycle SaaS & e-commerce delivery · client management',
+  location: 'Remote (international clients)',
+  summary: 'Independent freelance and contract work for international clients, run alongside full-time roles.',
+  highlights: [{
+    label: 'Client Delivery',
+    text: 'Delivered 40+ international Vue/React projects (SaaS, e-commerce) with a 100% on-time rate and 5.0 rating, owning full SDLC from client discovery to production, including complex third-party API integrations.',
+  }],
 }];
 
 export const proof_items: ProofItem[] = [{
