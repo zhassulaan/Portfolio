@@ -1,6 +1,6 @@
 .principles_section {
   background: var(--theme-dark);
-  color: #fff;
+  color: var(--theme-white);
 }
 
 .principles_section__inner {

@@ -95,7 +95,7 @@
 .proof_page__reset:hover {
   transform: translateY(-.125em);
   background: var(--theme-ink);
-  color: #fff;
+  color: var(--theme-white);
 }
 
 .proof_page__results {

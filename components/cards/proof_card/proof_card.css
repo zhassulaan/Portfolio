@@ -48,7 +48,7 @@
 .proof_card:hover .proof_card__arrow {
   transform: rotate(45deg);
   background: var(--theme-ink);
-  color: #fff;
+  color: var(--theme-white);
 }
 
 .proof_card__title {

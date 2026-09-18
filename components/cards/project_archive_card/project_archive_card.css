@@ -65,10 +65,10 @@
   position: absolute;
   top: 1em;
   left: 1em;
-  border: 1px solid rgb(255 255 255 / 50%);
+  border: 1px solid rgb(var(--theme-white-rgb) / 50%);
   border-radius: 62.4375em;
   padding: .4375em .625em;
-  background: rgb(255 255 255 / 86%);
+  background: rgb(var(--theme-white-rgb) / 86%);
   backdrop-filter: blur(10px);
   font-size: .625em;
   font-weight: 800;
@@ -109,7 +109,7 @@
 .project_archive_card__link:hover {
   transform: scale(1.06);
   background: var(--theme-ink);
-  color: #fff;
+  color: var(--theme-white);
 }
 
 .project_archive_card__description {

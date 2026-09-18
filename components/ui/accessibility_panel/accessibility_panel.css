@@ -15,7 +15,7 @@
   background: var(--theme-ink);
   cursor: pointer;
   font-size: 1.375em;
-  color: #fff;
+  color: var(--theme-white);
 }
 
 .accessibility_panel__toggle:hover {
