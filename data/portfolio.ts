@@ -25,7 +25,7 @@ import type { CaseStudy, Milestone, Principle, ProofDocument, ProofItem, Project
 
 // Served straight from /public — a static file needs no build-time import,
 // unlike the images/logos above which go through Vite's asset pipeline.
-export const portfolio_assets = { portrait, cv: '/files/Zhassulan_Serikuly-CV.pdf' };
+export const portfolio_assets = { portrait, cv: '/files/Zhassulan-Serikuly-Senior-Software-Engineer-Resume.pdf' };
 
 export const nav_items = [{
   label: 'Signals',
