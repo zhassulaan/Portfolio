@@ -2,8 +2,8 @@
 import { portfolio_assets, signals, milestones, proof_items } from '@/data/portfolio';
 import TagList from '@/components/ui/tag_list/tag_list.vue';
 import Modal from '@/components/ui/modal/modal.vue';
-import MilestoneCard from '@/components/cards/milestone_card/milestone_card.vue';
-import MilestoneDetail from '@/components/cards/milestone_detail/milestone_detail.vue';
+import MilestoneCard from '@/components/cards/milestone/milestone_card.vue';
+import MilestoneDetail from '@/components/cards/milestone/milestone_detail.vue';
 // Imported explicitly (rather than relying on Nuxt's compile-time
 // auto-import) because it's used as a dynamic `:is` value below, which
 // needs an actual component reference, not just the tag name — matching

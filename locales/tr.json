@@ -163,10 +163,10 @@
     "title": "Bu sayfadaki her şey<br />tek bir PDF olarak.",
     "intro": "Bu defterin geri kalanındaki aynı deneyim, beceriler ve kanıtlar tek bir belgede — başvuru takip sistemleri, e-posta ekleri veya baskı için.",
     "profile_heading": "Kariyer profili",
-    "profile_text": "GIS, fintech ve kurumsal alanlarda yüksek performanslı web uygulamaları ve veri yoğun platformlar tasarlayıp ölçeklendiren, 1M+ kullanıcıya hizmet veren, 6+ yıllık ticari deneyime sahip Senior Software Engineer. SDLC'nin tamamından sorumlu — mimari, uygulama, performans optimizasyonu, test ve üretim desteği. Vue.js, React, Nuxt.js, Next.js ve TypeScript konusunda derin uzmanlık; Python, Django ve PostgreSQL ile backend geliştirmeyle destekleniyor. Teknik liderlik, mühendislere mentorluk yapma ve performans, güvenilirlik ile teslimat hızında ölçülebilir kazanımlar sağlama konusunda kanıtlanmış bir geçmiş.",
+    "profile_text": "6+ yıllık ticari deneyime sahip, GIS/dijital ikiz, fintech ve e-ticaret alanlarında 1M+ kullanıcıya hizmet veren 100+ yüksek performanslı web uygulaması ve veri yoğun platform tasarlayan, ölçeklendiren ve teslim eden bir Senior Software Engineer. Alanlar arası teknik liderlik, 18 kişiye kadar geliştirici ekiplerine mentorluk ve tam SDLC sorumluluğunda kanıtlanmış bir geçmişe sahip.",
     "achievements_heading": "Öne çıkan başarılar",
-    "achievement_1": "10’dan fazla platform için çok katmanlı bir önbellekleme ve geçersiz kılma stratejisi tasarladım; gereksiz API isteklerini yaklaşık %50 azalttım ve backend altyapı maliyetlerini tahmini %20 düşürdüm.",
-    "achievement_2": "3 şirkette ve 80’den fazla projede benimsenen frontend mühendislik standartlarını — kod inceleme kılavuzlarını ve bileşen mimarisi kalıplarını — hazırladım; yeni mühendislerin işe alışma süresini tahmini %40 kısalttım.",
+    "achievement_1": "10+ platform genelinde çok katmanlı bir önbellekleme ve geçersiz kılma stratejisi tasarladım; gereksiz API trafiğini %50 azalttım ve bulut altyapı maliyetlerini tahmini %20 düşürdüm. (Ciklum)",
+    "achievement_2": "Kod inceleme kuralları ve bileşen mimarisi desenlerinden oluşan, 2 şirkette ve 100+ production projesinde benimsenen birleşik frontend mühendislik standartları oluşturdum; yeni mühendislerin verimliliğe ulaşma süresini %40 hızlandırdım.",
     "download_cv": "Özgeçmişi indir",
     "download_cv_aria": "Özgeçmişi PDF olarak indir",
     "open_new_tab": "Yeni sekmede aç",
@@ -189,6 +189,8 @@
     "skill_performance": "Performans",
     "skill_backend": "Backend",
     "skill_mobile": "Mobil",
-    "skill_tools": "Araçlar ve DevOps"
+    "skill_tools": "Araçlar ve DevOps",
+    "profile_text_2": "Django (Python), Laravel (PHP) ve PostgreSQL/Elasticsearch ile kurumsal backend tasarımı tarafından desteklenen Vue/React ve TypeScript ekosistemlerinde derin uzmanlık. State-management şablon kodunu azaltmak, kalite kapılarını otomatikleştirmek ve time-to-market’i ~2 kat hızlandırmak için AI destekli geliştirme iş akışlarını (Cursor, Claude Code, Copilot) erken benimseyen biri.",
+    "role_selector_aria": "Rol aşamasını seçin"
   }
 }

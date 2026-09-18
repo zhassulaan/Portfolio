@@ -49,7 +49,7 @@ const active_highlights = computed(() => active_role.value?.highlights ?? props.
     <div class='milestone_detail__roles'
       v-if='milestone.roles?.length'
       role='tablist'
-      aria-label='Select role phase'>
+      :aria-label="$t('cv_page.role_selector_aria')">
       <button v-for='r in milestone.roles'
         :key='r.id'
         type='button'

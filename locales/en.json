@@ -190,6 +190,7 @@
     "skill_performance": "Performance",
     "skill_backend": "Backend",
     "skill_mobile": "Mobile",
-    "skill_tools": "Tools & DevOps"
+    "skill_tools": "Tools & DevOps",
+    "role_selector_aria": "Select role phase"
   }
 }
