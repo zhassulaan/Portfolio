@@ -7,7 +7,6 @@
 // this goes live, since this is the one language on the site closest to
 // home.
 export const kk: Record<string, string> = {
-  // Signals
   'signals.0.label': 'жыл өндірістік тәжірибе',
   'signals.0.note': 'React тәжірибешісінен халықаралық өнім командаларындағы senior жауапкершілікке дейін.',
   'signals.1.label': 'пайдаланушыға қызмет көрсетілді',
@@ -17,7 +16,6 @@ export const kk: Record<string, string> = {
   'signals.3.label': 'жоба оңтайландырылды',
   'signals.3.note': 'Өнімділік, архитектура және қолдауға жарамдылықты жақсарту.',
 
-  // Case studies
   'case_studies.01.kicker': 'Өнім ауқымындағы архитектура',
   'case_studies.01.title': 'Он модульді бір жүйедей сезіндіру.',
   'case_studies.01.problem': 'Жылына миллионнан астам пайдаланушыға қызмет көрсететін платформада 10+ модуль қатар дамып жатқанда, өсіп келе жатқан Vue өнімінің беті бірізді болып қалуы керек еді.',
@@ -47,7 +45,6 @@ export const kk: Record<string, string> = {
   'case_studies.04.metrics.0.label': 'қайта пайдаланылатын компонент',
   'case_studies.04.metrics.1.label': 'ұқсас іске асыру',
 
-  // Systems / surfaces
   'surfaces.A.title': 'Жоғары трафикті өнім модульдері',
   'surfaces.A.text': 'Архитектура, кэштеу, күй және API тәртібі бір өнім жүйесі ретінде жұмыс істеуі тиіс интерфейстер.',
   'surfaces.B.title': 'Геокеңістіктік жүйелер',
@@ -57,7 +54,6 @@ export const kk: Record<string, string> = {
   'surfaces.D.title': 'End-to-end өнім жеткізу',
   'surfaces.D.text': 'API-ды, интеграция шекараларын және production тәртібін меңгеруге жеткілікті backend тереңдігі бар frontend-бағытталған инженерия.',
 
-  // Principles
   'principles.01.title': 'Алдымен өлшеу, содан кейін қайта жазу.',
   'principles.01.text': 'Өнімділік өзгерісі дәлелден басталып, пайдаланушыға көрінетін нәтижемен аяқталуы керек.',
   'principles.02.title': 'Архитектура — жеткізу құралы.',
@@ -67,7 +63,6 @@ export const kk: Record<string, string> = {
   'principles.04.title': 'Senior болу — белгісіздікті азайту деген сөз.',
   'principles.04.text': 'Техникалық көшбасшылық — командаға жасырын тәуекел жинамай тез қозғалуға мүмкіндік беру үшін ымыраларды көрінетін ету.',
 
-  // Milestones
   'milestones.ciklum.role': 'Senior Software Engineer',
   'milestones.ciklum.focus': 'Frontend архитектурасы · өнімді модернизациялау · өнімділік · техникалық көшбасшылық',
   'milestones.keyhorse.role': 'Middle → Senior → Team Lead Software Engineer',
@@ -76,8 +71,9 @@ export const kk: Record<string, string> = {
   'milestones.dar.focus': 'Көлемді веб-жеткізу · e-commerce · мобильді қосымшалар · өнімділік',
   'milestones.epam.role': 'Software Engineer Intern',
   'milestones.epam.focus': 'React · TypeScript · қайта пайдаланылатын UI · инженерлік негіздер',
+  'milestones.freelance.role': 'Freelance Software Engineer',
+  'milestones.freelance.focus': 'Vue/React бойынша фриланс әзірлеу · SaaS және e-commerce толық циклді жеткізу · клиенттермен жұмыс',
 
-  // Milestones — full role detail (shown in the CV page's "view details" modal)
   'milestones.ciklum.location': 'Бухарест, Румыния (қашықтан)',
   'milestones.ciklum.summary': 'Халықаралық цифрлық өнімдер мен корпоративтік бағдарламалық трансформация саласындағы жаһандық көшбасшы, Ұлыбританияда орналасқан.',
   'milestones.ciklum.highlight_0.label': 'Архитектура',
@@ -128,8 +124,11 @@ export const kk: Record<string, string> = {
   'milestones.epam.highlight_1.text': 'React/TypeScript-те бейімделгіш интерфейстер мен қайта пайдаланылатын компонент кітапханаларын әзірледім, API-ларды production жұмыс үрдістеріне біріктірдім; 5+ корпоративтік ішкі құралға үлес қостым.',
   'milestones.epam.highlight_2.label': 'Кәсіби өсу',
   'milestones.epam.highlight_2.text': 'Корпоративтік деңгейдегі код шолуларына, unit-тестілеуге және жеткізу стандарттарына қатыстым — бұл кейінгі әрбір рөлге негіз болды.',
+  'milestones.freelance.location': 'Қашықтан (халықаралық клиенттер)',
+  'milestones.freelance.summary': 'Негізгі жұмыспен қатар жүргізілген, халықаралық клиенттер үшін дербес фриланс және келісімшарттық жұмыс.',
+  'milestones.freelance.highlight_0.label': 'Клиенттерге жеткізу',
+  'milestones.freelance.highlight_0.text': '40+ халықаралық Vue/React жобасын (SaaS, e-commerce) мерзімін 100% сақтап және 5.0 рейтингпен жеткіздім, клиентпен алғашқы талқылаудан production-ға дейінгі толық SDLC-ге жауап бердім, соның ішінде күрделі үшінші тарап API интеграцияларын жүзеге асырдым.',
 
-  // Proof items
   'proof_items.0.label': 'Білім',
   'proof_items.0.value': 'Ақпараттық жүйелер',
   'proof_items.0.note': 'Сулейман Демирел атындағы университет · 2018–2022 · GPA 3.72 / 4.0',
@@ -146,7 +145,6 @@ export const kk: Record<string, string> = {
   'proof_items.4.value': '5 тіл',
   'proof_items.4.note': 'Ағылшын тілі — еркін жұмыс деңгейінде · Қазақ және орыс тілдері — ана тілі · Түрік тілі — сөйлесу деңгейінде · Қытай тілі — бастапқы деңгейде',
 
-  // Proof documents
   'proof_documents.ielts.title': 'IELTS Academic 7.0/9.0',
   'proof_documents.ielts.description': 'Академиялық IELTS нәтижесі (CEFR C1) — халықаралық, remote-first инженерлік рөлдерге жарамды еркін кәсіби ағылшын тілінің дәлелі.',
   'proof_documents.chinese-proficiency.title': 'Қытай тілін білу деңгейі',
@@ -156,7 +154,6 @@ export const kk: Record<string, string> = {
   'proof_documents.keyhorse.title': 'Ұсыныс хаты — KeyHorse',
   'proof_documents.keyhorse.description': 'KeyHorse бланкісінде Жасұланды senior деңгейіндегі инженерлік лауазымға ұсынатын, қолы қойылған ұсыныс хаты.',
 
-  // Projects
   'projects.geonomix.description': 'Аймақтық енгізулерде интерактивті карталарды, муниципалдық деректерді, цифрлық тізілімдерді, мемлекеттік қызметтер мен мониторинг құралдарын біріктіретін ауқымды геокеңістіктік және цифрлық қосарлар платформасы.',
   'projects.midas-event.description': 'Статикалық қызметтер тізімі емес, өткен іс-шаралардың шолуға болатын портфолиосы ретінде құрылған, React негізіндегі интерактивті мазмұны бар event-агенттігінің сайты.',
   'projects.kostyum.description': 'Тауар каталогына арналған қайта пайдаланылатын UI-мен және десктоп пен мобильдегі тегіс сатып алу тәжірибесіне бағытталған ерлер сән e-commerce фронтенді.',

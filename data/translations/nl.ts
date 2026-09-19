@@ -4,7 +4,6 @@
 // Missing keys fall back to the English text in portfolio.ts — see
 // composables/use_locale_text.ts.
 export const nl: Record<string, string> = {
-  // Signals
   'signals.0.label': 'jaar in productie-ontwikkeling',
   'signals.0.note': 'Van een React-stage tot senior verantwoordelijkheid in internationale productteams.',
   'signals.1.label': 'gebruikers',
@@ -14,7 +13,6 @@ export const nl: Record<string, string> = {
   'signals.3.label': 'geoptimaliseerde projecten',
   'signals.3.note': 'Verbeteringen in performance, architectuur en onderhoudbaarheid.',
 
-  // Case studies
   'case_studies.01.kicker': 'Architectuur op productschaal',
   'case_studies.01.title': 'Tien modules tot één systeem maken.',
   'case_studies.01.problem': 'Een groeiend Vue-productoppervlak moest consistent blijven terwijl 10+ modules parallel evolueerden voor een platform met meer dan een miljoen gebruikers per jaar.',
@@ -44,7 +42,6 @@ export const nl: Record<string, string> = {
   'case_studies.04.metrics.0.label': 'herbruikbare componenten',
   'case_studies.04.metrics.1.label': 'vergelijkbare implementaties',
 
-  // Systems / surfaces
   'surfaces.A.title': 'Zwaarbelaste productmodules',
   'surfaces.A.text': 'Interfaces waar architectuur, caching, state en API-gedrag moeten functioneren als één productsysteem.',
   'surfaces.B.title': 'Geospatiale systemen',
@@ -54,7 +51,6 @@ export const nl: Record<string, string> = {
   'surfaces.D.title': 'End-to-end productlevering',
   'surfaces.D.text': 'Frontend-engineering met genoeg backend-diepgang om API’s, integratiegrenzen en productiegedrag te beheren.',
 
-  // Principles
   'principles.01.title': 'Eerst meten, dan herschrijven.',
   'principles.01.text': 'Een performanceverandering moet beginnen met feiten en eindigen met een resultaat dat de gebruiker merkt.',
   'principles.02.title': 'Architectuur is een leverinstrument.',
@@ -64,7 +60,6 @@ export const nl: Record<string, string> = {
   'principles.04.title': 'Senior zijn betekent onzekerheid verminderen.',
   'principles.04.text': 'Technisch leiderschap betekent afwegingen zichtbaar maken zodat het team snel vooruit kan zonder verborgen risico’s op te bouwen.',
 
-  // Milestones
   'milestones.ciklum.role': 'Senior Software Engineer',
   'milestones.ciklum.focus': 'Frontend-architectuur · productmodernisering · performance · technisch leiderschap',
   'milestones.keyhorse.role': 'Middle → Senior → Team Lead Software Engineer',
@@ -73,8 +68,9 @@ export const nl: Record<string, string> = {
   'milestones.dar.focus': 'Hoogvolume webontwikkeling · e-commerce · mobiele apps · performance',
   'milestones.epam.role': 'Software Engineer Stagiair',
   'milestones.epam.focus': 'React · TypeScript · herbruikbare UI · technische basis',
+  'milestones.freelance.role': 'Freelance Software Engineer',
+  'milestones.freelance.focus': 'Freelance Vue/React-ontwikkeling · end-to-end levering van SaaS & e-commerce · klantbeheer',
 
-  // Milestones — full role detail (shown in the CV page's "view details" modal)
   'milestones.ciklum.location': 'Boekarest, Roemenië (op afstand)',
   'milestones.ciklum.summary': 'Wereldwijde leider in digitale producten en transformatie van bedrijfssoftware, gevestigd in het VK.',
   'milestones.ciklum.highlight_0.label': 'Architectuur',
@@ -125,8 +121,11 @@ export const nl: Record<string, string> = {
   'milestones.epam.highlight_1.text': 'Bouwde responsieve React/TypeScript-interfaces en herbruikbare componentenbibliotheken, integreerde API’s in productieworkflows; droeg bij aan 5+ interne bedrijfstools.',
   'milestones.epam.highlight_2.label': 'Professionele Groei',
   'milestones.epam.highlight_2.text': 'Nam deel aan code reviews, unit tests en leveringsstandaarden op enterprise-niveau — een basis die in elke volgende rol werd meegenomen.',
+  'milestones.freelance.location': 'Op afstand (internationale klanten)',
+  'milestones.freelance.summary': 'Zelfstandig freelance- en contractwerk voor internationale klanten, naast voltijdse functies.',
+  'milestones.freelance.highlight_0.label': 'Klantoplevering',
+  'milestones.freelance.highlight_0.text': 'Leverde 40+ internationale Vue/React-projecten (SaaS, e-commerce) met een 100% tijdige oplevering en een 5.0-beoordeling, verantwoordelijk voor de volledige SDLC van klantacquisitie tot productie, inclusief complexe integraties met externe API\'s.',
 
-  // Proof items (home page + CV page)
   'proof_items.0.label': 'Opleiding',
   'proof_items.0.value': 'Informatiesystemen',
   'proof_items.0.note': 'Suleyman Demirel University · 2018–2022 · GPA 3,72/4,0',
@@ -143,7 +142,6 @@ export const nl: Record<string, string> = {
   'proof_items.4.value': '5 talen',
   'proof_items.4.note': 'Engels — uitstekend zakelijk niveau · Kazachs & Russisch — moedertaal · Turks — conversatieniveau · Chinees — basisniveau',
 
-  // Proof documents (certificate/recommendation detail pages)
   'proof_documents.ielts.title': 'IELTS Academic 7.0/9.0',
   'proof_documents.ielts.description': 'Resultaat van de Academic IELTS (CEFR C1) — bewijs van vloeiend, professioneel Engels voor internationale, remote-first engineeringfuncties.',
   'proof_documents.chinese-proficiency.title': 'Chinese taalvaardigheid',
@@ -153,7 +151,6 @@ export const nl: Record<string, string> = {
   'proof_documents.keyhorse.title': 'Aanbevelingsbrief — KeyHorse',
   'proof_documents.keyhorse.description': 'Ondertekende aanbeveling op briefpapier van KeyHorse, waarin Zhassulan wordt aanbevolen voor een senior engineering-functie.',
 
-  // Projects
   'projects.geonomix.description': 'Grootschalig geospatiaal platform en digital twin dat interactieve kaarten, gemeentelijke data, digitale registers, overheidsdiensten en monitoringtools combineert in regionale implementaties.',
   'projects.midas-event.description': 'Website van een eventbureau, opgebouwd als een doorbladerbaar portfolio van eerdere evenementen in plaats van een statische dienstenlijst, met interactieve details in React.',
   'projects.kostyum.description': 'Responsief e-commerce-frontend voor herenmode met herbruikbare productcatalogus-UI en focus op een soepele winkelervaring op desktop en mobiel.',

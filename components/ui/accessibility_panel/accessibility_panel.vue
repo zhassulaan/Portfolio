@@ -1,100 +1,97 @@
 <script setup lang='ts'>
-import { useTheme, type ThemePreference } from '@/composables/use_theme';
-import { useAccessibility, type FontSize, type ImageMode } from '@/composables/use_accessibility';
+import { useThemeStore, type ThemePreference } from '@/stores/theme';
+import { useAccessibilityStore, type FontSize, type ImageMode } from '@/stores/accessibility';
+import AccessibilityOptionGroup from '@/components/ui/accessibility_option_group/accessibility_option_group.vue';
 
-const { preference, set_preference } = useTheme();
-const {
-  font_size,
-  image_mode,
-  text_to_speech,
-  speech_supported,
-  set_font_size,
-  set_image_mode,
-  set_text_to_speech,
-  stop_speaking,
-  reset_all,
-} = useAccessibility();
+const { t } = useI18n();
+const theme_store = useThemeStore();
+const { preference } = storeToRefs(theme_store);
+const { set_preference } = theme_store;
+
+const accessibility_store = useAccessibilityStore();
+const { font_size, image_mode, text_to_speech, speech_supported } = storeToRefs(accessibility_store);
+const { set_font_size, set_image_mode, set_text_to_speech, stop_speaking, reset_all } = accessibility_store;
 
 const is_open = ref(false);
 const toggle_button = ref<HTMLButtonElement | null>(null);
 const panel = ref<HTMLElement | null>(null);
 const route = useRoute();
 
-const color_schemes: Array<{ value: ThemePreference; label: string; sample: string }> = [{
-  value: 'light',
-  label: 'scheme_normal',
-  sample: 'Ц',
-}, {
-  value: 'dark',
-  label: 'scheme_dark',
-  sample: 'Ц',
-}, {
-  value: 'blue',
-  label: 'scheme_blue',
-  sample: 'Ц',
-}, {
-  value: 'gray',
-  label: 'scheme_gray',
-  sample: 'Ц',
-}];
+// Each group is a computed (not a plain array) so the labels stay reactive
+// to locale switches — plain arrays built once at setup wouldn't re-run
+// t() when the language changes.
+const color_scheme_options = computed(() => ([
+  { value: 'light', label: t('accessibility.scheme_normal'), sample: 'Ц', extra_class: 'accessibility_option_group__option--scheme accessibility_option_group__option--light' },
+  { value: 'dark', label: t('accessibility.scheme_dark'), sample: 'Ц', extra_class: 'accessibility_option_group__option--scheme accessibility_option_group__option--dark' },
+  { value: 'blue', label: t('accessibility.scheme_blue'), sample: 'Ц', extra_class: 'accessibility_option_group__option--scheme accessibility_option_group__option--blue' },
+  { value: 'gray', label: t('accessibility.scheme_gray'), sample: 'Ц', extra_class: 'accessibility_option_group__option--scheme accessibility_option_group__option--gray' },
+]));
 
-const font_sizes: Array<{ value: FontSize; label: string }> = [{
-  value: 'small',
-  label: 'font_small',
-}, {
-  value: 'medium',
-  label: 'font_medium',
-}, {
-  value: 'large',
-  label: 'font_large',
-}];
+const font_size_options = computed(() => ([
+  { value: 'small', label: t('accessibility.font_small'), sample: 'A', extra_class: 'accessibility_option_group__option--font_small' },
+  { value: 'medium', label: t('accessibility.font_medium'), sample: 'A', extra_class: 'accessibility_option_group__option--font_medium' },
+  { value: 'large', label: t('accessibility.font_large'), sample: 'A', extra_class: 'accessibility_option_group__option--font_large' },
+]));
 
-const image_modes: Array<{ value: ImageMode; label: string; icon: string }> = [{
-  value: 'show',
-  label: 'image_show',
-  icon: '🖼',
-}, {
-  value: 'grayscale',
-  label: 'image_grayscale',
-  icon: '◐',
-}, {
-  value: 'hide',
-  label: 'image_hide',
-  icon: '🚫',
-}];
+const image_mode_options = computed(() => ([
+  { value: 'show', label: t('accessibility.image_show'), sample: '🖼' },
+  { value: 'grayscale', label: t('accessibility.image_grayscale'), sample: '◐' },
+  { value: 'hide', label: t('accessibility.image_hide'), sample: '🚫' },
+]));
 
-const open_panel = () => {
+const tts_options = computed(() => ([
+  { value: false, label: t('accessibility.tts_off'), sample: '🔇' },
+  { value: true, label: t('accessibility.tts_on'), sample: '🔊' },
+]));
+
+function handle_scheme_select(value: string | boolean) {
+  set_preference(value as ThemePreference);
+}
+
+function handle_font_size_select(value: string | boolean) {
+  set_font_size(value as FontSize);
+}
+
+function handle_image_mode_select(value: string | boolean) {
+  set_image_mode(value as ImageMode);
+}
+
+function handle_tts_select(value: string | boolean) {
+  set_text_to_speech(value as boolean);
+}
+
+function open_panel() {
   is_open.value = true;
 
   nextTick(() => {
     panel.value?.focus();
   });
-};
+}
 
-const close_panel = () => {
+function close_panel() {
   if (!is_open.value) {
     return;
   }
 
   is_open.value = false;
   toggle_button.value?.focus();
-};
+}
 
-const toggle_panel = () => {
+function toggle_panel() {
   if (is_open.value) {
     close_panel();
   } else {
     open_panel();
   }
-};
+}
 
-const handle_keydown = (event: KeyboardEvent) => {
-  if (event.key === 'Escape' && is_open.value) {
+function handle_keydown(event: KeyboardEvent) {
+  if (event.key == 'Escape' && is_open.value) {
     close_panel();
   }
-};
+}
 
-const handle_click_outside = (event: MouseEvent) => {
+function handle_click_outside(event: MouseEvent) {
   if (!is_open.value) {
     return;
   }
@@ -106,12 +103,12 @@ const handle_click_outside = (event: MouseEvent) => {
   }
 
   close_panel();
-};
+}
 
-const handle_reset = () => {
+function handle_reset() {
   set_preference('light');
   reset_all();
-};
+}
 
 onMounted(() => {
   window.addEventListener('keydown', handle_keydown);
@@ -177,96 +174,31 @@ watch(
         </div>
       </div>
 
-      <fieldset class='accessibility_panel__section'>
-        <legend>{{ $t('accessibility.color_scheme_legend') }}</legend>
-        <div class='accessibility_panel__options'
-          role='group'
-          :aria-label="$t('accessibility.color_scheme_legend')">
-          <button class='accessibility_panel__option accessibility_panel__option--scheme'
-            :class="[
-              `accessibility_panel__option--${scheme.value}`,
-              { 'accessibility_panel__option--active': preference === scheme.value },
-            ]"
-            v-for='scheme in color_schemes'
-            :key='scheme.value'
-            type='button'
-            :aria-pressed="preference === scheme.value"
-            v-on:click='set_preference(scheme.value)'>
-            <span class='accessibility_panel__sample'
-              aria-hidden='true'
-              v-text='scheme.sample'>
-            </span>
-            <span>{{ $t('accessibility.' + scheme.label) }}</span>
-          </button>
-        </div>
-      </fieldset>
+      <AccessibilityOptionGroup :legend="$t('accessibility.color_scheme_legend')"
+        :aria_label="$t('accessibility.color_scheme_legend')"
+        :options='color_scheme_options'
+        :active='preference'
+        v-on:select='handle_scheme_select' />
 
-      <fieldset class='accessibility_panel__section'>
-        <legend>{{ $t('accessibility.font_size_legend') }}</legend>
-        <div class='accessibility_panel__options'
-          role='group'
-          :aria-label="$t('accessibility.font_size_legend')">
-          <button class='accessibility_panel__option'
-            :class="[
-              `accessibility_panel__option--font_${size.value}`,
-              { 'accessibility_panel__option--active': font_size === size.value },
-            ]"
-            v-for='size in font_sizes'
-            :key='size.value'
-            type='button'
-            :aria-pressed="font_size === size.value"
-            v-on:click='set_font_size(size.value)'>
-            <span class='accessibility_panel__sample' aria-hidden='true'>A</span>
-            <span>{{ $t('accessibility.' + size.label) }}</span>
-          </button>
-        </div>
-      </fieldset>
+      <AccessibilityOptionGroup :legend="$t('accessibility.font_size_legend')"
+        :aria_label="$t('accessibility.font_size_legend')"
+        :options='font_size_options'
+        :active='font_size'
+        v-on:select='handle_font_size_select' />
 
-      <fieldset class='accessibility_panel__section'>
-        <legend>{{ $t('accessibility.images_legend') }}</legend>
-        <div class='accessibility_panel__options'
-          role='group'
-          :aria-label="$t('accessibility.images_legend')">
-          <button class='accessibility_panel__option'
-            :class="{ 'accessibility_panel__option--active': image_mode === mode.value }"
-            v-for='mode in image_modes'
-            :key='mode.value'
-            type='button'
-            :aria-pressed="image_mode === mode.value"
-            v-on:click='set_image_mode(mode.value)'>
-            <span class='accessibility_panel__sample'
-              aria-hidden='true'
-              v-text='mode.icon'>
-            </span>
-            <span>{{ $t('accessibility.' + mode.label) }}</span>
-          </button>
-        </div>
-      </fieldset>
+      <AccessibilityOptionGroup :legend="$t('accessibility.images_legend')"
+        :aria_label="$t('accessibility.images_legend')"
+        :options='image_mode_options'
+        :active='image_mode'
+        v-on:select='handle_image_mode_select' />
 
-      <fieldset class='accessibility_panel__section' v-if='speech_supported'>
-        <legend>{{ $t('accessibility.tts_legend') }}</legend>
-        <div class='accessibility_panel__options'
-          role='group'
-          :aria-label="$t('accessibility.tts_legend')">
-          <button class='accessibility_panel__option'
-            :class="{ 'accessibility_panel__option--active': !text_to_speech }"
-            type='button'
-            :aria-pressed='!text_to_speech'
-            v-on:click='set_text_to_speech(false)'>
-            <span class='accessibility_panel__sample' aria-hidden='true'>🔇</span>
-            <span>{{ $t('accessibility.tts_off') }}</span>
-          </button>
-          <button class='accessibility_panel__option'
-            :class="{ 'accessibility_panel__option--active': text_to_speech }"
-            type='button'
-            :aria-pressed='text_to_speech'
-            v-on:click='set_text_to_speech(true)'>
-            <span class='accessibility_panel__sample' aria-hidden='true'>🔊</span>
-            <span>{{ $t('accessibility.tts_on') }}</span>
-          </button>
-        </div>
-        <p class='accessibility_panel__hint'>{{ $t('accessibility.tts_hint') }}</p>
-      </fieldset>
+      <AccessibilityOptionGroup v-if='speech_supported'
+        :legend="$t('accessibility.tts_legend')"
+        :aria_label="$t('accessibility.tts_legend')"
+        :options='tts_options'
+        :active='text_to_speech'
+        :hint="$t('accessibility.tts_hint')"
+        v-on:select='handle_tts_select' />
     </div>
   </div>
 </template>

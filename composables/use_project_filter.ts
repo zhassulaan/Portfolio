@@ -1,6 +1,6 @@
 import type { Project } from '@/types/portfolio';
 
-export const useProjectFilter = (projects: Project[]) => {
+export function useProjectFilter(projects: Project[]) {
   const search_query = ref('');
   const active_category = ref('All');
   const active_stack = ref('All');
@@ -27,18 +27,18 @@ export const useProjectFilter = (projects: Project[]) => {
       ].join(' ').toLowerCase();
 
       const matches_search = !query || searchable_text.includes(query);
-      const matches_category = active_category.value === 'All' || project.category === active_category.value;
-      const matches_stack = active_stack.value === 'All' || project.stack.includes(active_stack.value);
+      const matches_category = active_category.value == 'All' || project.category == active_category.value;
+      const matches_stack = active_stack.value == 'All' || project.stack.includes(active_stack.value);
 
       return matches_search && matches_category && matches_stack;
     });
   });
 
-  const reset_filters = () => {
+  function reset_filters() {
     search_query.value = '';
     active_category.value = 'All';
     active_stack.value = 'All';
-  };
+  }
 
   return {
     search_query,
@@ -49,4 +49,4 @@ export const useProjectFilter = (projects: Project[]) => {
     filtered_projects,
     reset_filters,
   };
-};
+}

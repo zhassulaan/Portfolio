@@ -14,6 +14,7 @@
     "void-style": ["error", { "style": "omit" }],
     "empty-heading": "off",
     "wcag/h30": "off",
+    "text-content": "off",
     "prefer-native-element": "off"
   },
   "elements": ["html5"],

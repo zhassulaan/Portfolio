@@ -26,9 +26,10 @@
   filter: saturate(1.05);
 }
 
-.selected_project_card__index, .selected_project_card__category {
+.selected_project_card__category {
   position: absolute;
   top: 1em;
+  right: 1em;
   border: 1px solid rgb(var(--theme-white-rgb) / 18%);
   border-radius: 62.4375em;
   padding: .4375em .625em;
@@ -36,17 +37,9 @@
   backdrop-filter: blur(12px);
   font-size: .625em;
   font-weight: 800;
+  text-transform: uppercase;
   letter-spacing: .08em;
   color: var(--theme-white);
-}
-
-.selected_project_card__index {
-  left: 1em;
-}
-
-.selected_project_card__category {
-  right: 1em;
-  text-transform: uppercase;
 }
 
 .selected_project_card__body {

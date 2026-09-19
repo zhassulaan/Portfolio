@@ -2,7 +2,6 @@
 // used in data/portfolio.ts (index/number/company/slug/id). Missing keys
 // fall back to the English text in portfolio.ts.
 export const zh: Record<string, string> = {
-  // Signals
   'signals.0.label': '年生产环境经验',
   'signals.0.note': '从 React 实习工作到在跨国产品团队中承担高级职责。',
   'signals.1.label': '服务用户数',
@@ -12,7 +11,6 @@ export const zh: Record<string, string> = {
   'signals.3.label': '个项目优化',
   'signals.3.note': '在性能、架构与可维护性方面的改进。',
 
-  // Case studies
   'case_studies.01.kicker': '产品规模下的架构',
   'case_studies.01.title': '让十个模块像一个系统一样运转。',
   'case_studies.01.problem': '在一个年服务用户超百万的平台上，10 多个模块并行演进，日益扩张的 Vue 产品体系必须保持一致性。',
@@ -42,7 +40,6 @@ export const zh: Record<string, string> = {
   'case_studies.04.metrics.0.label': '个可复用组件',
   'case_studies.04.metrics.1.label': '次类似实现',
 
-  // Systems / surfaces
   'surfaces.A.title': '高流量产品模块',
   'surfaces.A.text': '架构、缓存、状态与 API 行为必须作为同一套产品系统协同运作的界面。',
   'surfaces.B.title': '地理空间系统',
@@ -52,7 +49,6 @@ export const zh: Record<string, string> = {
   'surfaces.D.title': '端到端的产品交付',
   'surfaces.D.text': '以前端为主导、同时具备足够后端深度，可以掌控 API、集成边界与生产环境行为的工程实践。',
 
-  // Principles
   'principles.01.title': '先度量，再重写。',
   'principles.01.text': '一次性能优化应当从数据出发，并以用户可感知的结果收尾。',
   'principles.02.title': '架构是一种交付工具。',
@@ -62,7 +58,6 @@ export const zh: Record<string, string> = {
   'principles.04.title': '所谓 Senior，就是降低不确定性。',
   'principles.04.text': '技术领导力，就是把权衡取舍讲清楚，让团队能快速前进，而不是悄悄积累风险。',
 
-  // Milestones
   'milestones.ciklum.role': '高级软件工程师',
   'milestones.ciklum.focus': '前端架构 · 产品现代化改造 · 性能优化 · 技术领导力',
   'milestones.keyhorse.role': '中级 → 高级 → 技术组长软件工程师',
@@ -71,8 +66,9 @@ export const zh: Record<string, string> = {
   'milestones.dar.focus': '高产出网页交付 · 电商 · 移动端 · 性能优化',
   'milestones.epam.role': '软件工程实习生',
   'milestones.epam.focus': 'React · TypeScript · 可复用 UI · 工程基础',
+  'milestones.freelance.role': 'Freelance Software Engineer',
+  'milestones.freelance.focus': '自由职业 Vue/React 开发 · SaaS 与电商全周期交付 · 客户管理',
 
-  // Milestones — full role detail (shown in the CV page's "view details" modal)
   'milestones.ciklum.location': '布加勒斯特，罗马尼亚（远程）',
   'milestones.ciklum.summary': '总部位于英国的全球数字产品与企业软件转型领导者。',
   'milestones.ciklum.highlight_0.label': '架构',
@@ -123,8 +119,11 @@ export const zh: Record<string, string> = {
   'milestones.epam.highlight_1.text': '构建了响应式 React/TypeScript 界面和可复用组件库，将 API 集成到生产工作流中；为5个以上企业内部工具做出贡献。',
   'milestones.epam.highlight_2.label': '工程能力成长',
   'milestones.epam.highlight_2.text': '参与了企业级代码评审、单元测试和交付标准的实践——这一基础延续到了之后的每一个职位中。',
+  'milestones.freelance.location': '远程（国际客户）',
+  'milestones.freelance.summary': '在全职工作之余为国际客户提供独立自由职业与合同制开发服务。',
+  'milestones.freelance.highlight_0.label': '客户交付',
+  'milestones.freelance.highlight_0.text': '交付了40多个国际 Vue/React 项目（SaaS、电商），准时交付率达100%，客户评分5.0，负责从客户接洽到上线的完整SDLC，包括复杂的第三方API集成。',
 
-  // Proof items
   'proof_items.0.label': '教育背景',
   'proof_items.0.value': '信息系统专业',
   'proof_items.0.note': '苏莱曼·德米雷尔大学 · 2018–2022 · GPA 3.72 / 4.0',
@@ -141,7 +140,6 @@ export const zh: Record<string, string> = {
   'proof_items.4.value': '5 门语言',
   'proof_items.4.note': '英语——熟练的工作水平 · 哈萨克语和俄语——母语 · 土耳其语——日常会话水平 · 汉语——基础水平',
 
-  // Proof documents
   'proof_documents.ielts.title': 'IELTS Academic 7.0/9.0',
   'proof_documents.ielts.description': '学术类雅思成绩（CEFR C1）——证明具备胜任国际化、远程优先工程岗位所需的全面专业英语能力。',
   'proof_documents.chinese-proficiency.title': '中文水平证明',
@@ -151,7 +149,6 @@ export const zh: Record<string, string> = {
   'proof_documents.keyhorse.title': '推荐信——KeyHorse',
   'proof_documents.keyhorse.description': '一封使用 KeyHorse official 信头、已签署的推荐信，推荐 Zhassulan 担任高级工程岗位。',
 
-  // Projects
   'projects.geonomix.description': '一个大型地理信息与数字孪生平台，在区域部署中整合了交互式地图、市政数据、数字登记系统、政务服务与监控工具。',
   'projects.midas-event.description': '一个活动策划公司的网站，被设计成可浏览的往期活动作品集，而非静态服务列表，通篇采用 React 打造的交互式细节展示。',
   'projects.kostyum.description': '一个响应式男装电商前端，具备可复用的商品目录 UI，专注于在桌面端与移动端提供流畅的购物体验。',

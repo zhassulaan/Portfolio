@@ -17,10 +17,11 @@
  *  - void-style: 'omit'         — matches the project's vue/html-self-closing
  *    ESLint config: void elements (<img>, <input>, <br>, ...) never get a
  *    trailing slash here.
- *  - empty-heading / wcag/h30 (off) — both are static-analysis false
- *    positives against v-text: `<h2 v-text='title'></h2>` renders real
+ *  - empty-heading / wcag/h30 / text-content (off) — all three are
+ *    static-analysis false positives against v-text: `<h2 v-text='title'>
+ *    </h2>` or `<button><span v-text='label'></span></button>` render real
  *    content at runtime, but html-validate can't see through the v-text
- *    binding at lint time and reports the element as empty.
+ *    binding at lint time and reports the element as empty / unnamed.
  *  - prefer-native-element (off) — flags this codebase's deliberately
  *    custom-styled accessible dropdown (role=listbox / aria-expanded /
  *    aria-haspopup pattern in language_switcher.vue) for not being a plain

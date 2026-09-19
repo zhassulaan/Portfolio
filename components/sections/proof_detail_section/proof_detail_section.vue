@@ -9,7 +9,7 @@ const { tx } = useLocaleText();
 const local_path = useLocalePath();
 
 const proof_document = proof_documents.find(
-  (item) => item.kind === props.kind && item.slug === props.slug,
+  (item) => item.kind == props.kind && item.slug == props.slug,
 );
 
 if (!proof_document) {
@@ -25,7 +25,7 @@ useHead({
 });
 
 const kind_label = computed(() =>
-  props.kind === 'certificate' ? t('proof_detail.certificate_label') : t('proof_detail.recommendation_label'),
+  props.kind == 'certificate' ? t('proof_detail.certificate_label') : t('proof_detail.recommendation_label'),
 );
 </script>
 
@@ -49,7 +49,7 @@ const kind_label = computed(() =>
     <p class='proof_detail__description' v-text='description'></p>
 
     <div class='proof_detail__viewer' v-if='proof_document.file'>
-      <img v-if="proof_document.file_type !== 'pdf'"
+      <img v-if="proof_document.file_type != 'pdf'"
         :src='proof_document.file'
         :alt="`${title} scan`">
       <iframe v-else

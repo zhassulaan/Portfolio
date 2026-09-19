@@ -22,13 +22,13 @@ const local_path = useLocalePath();
 // pattern.
 const active_milestone = ref<Milestone | null>(null);
 
-const open_milestone_details = (item: Milestone) => {
+function open_milestone_details(item: Milestone) {
   active_milestone.value = item;
-};
+}
 
-const close_milestone_details = () => {
+function close_milestone_details() {
   active_milestone.value = null;
-};
+}
 
 const active_milestone_title = computed(() => {
   if (!active_milestone.value) {

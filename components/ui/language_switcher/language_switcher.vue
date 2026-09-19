@@ -9,15 +9,15 @@ const available_locales = computed(() =>
   (locales.value as Array<{ code: string; name?: string }>),
 );
 
-const toggle_open = () => {
+function toggle_open() {
   is_open.value = !is_open.value;
-};
+}
 
-const close = () => {
+function close() {
   is_open.value = false;
-};
+}
 
-const handle_click_outside = (event: MouseEvent) => {
+function handle_click_outside(event: MouseEvent) {
   if (!is_open.value) {
     return;
   }
@@ -25,13 +25,13 @@ const handle_click_outside = (event: MouseEvent) => {
   if (!root.value?.contains(event.target as Node)) {
     close();
   }
-};
+}
 
-const handle_keydown = (event: KeyboardEvent) => {
-  if (event.key === 'Escape' && is_open.value) {
+function handle_keydown(event: KeyboardEvent) {
+  if (event.key == 'Escape' && is_open.value) {
     close();
   }
-};
+}
 
 onMounted(() => {
   window.addEventListener('click', handle_click_outside);
@@ -61,10 +61,10 @@ onBeforeUnmount(() => {
       :aria-label="$t('header.language')">
       <li v-for='item in available_locales' :key='item.code'>
         <NuxtLink class='language_switcher__option'
-          :class="{ 'language_switcher__option--active': item.code === locale }"
+          :class="{ 'language_switcher__option--active': item.code == locale }"
           :to='switch_locale_path(item.code)'
           role='option'
-          :aria-selected='item.code === locale'
+          :aria-selected='item.code == locale'
           v-on:click='close'>
           {{ item.name }}
         </NuxtLink>

@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-const scrollToTop = () => {
+function scrollToTop() {
   const prefers_reduced_motion =
     typeof window !== 'undefined' &&
     window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -9,7 +9,7 @@ const scrollToTop = () => {
     left: 0,
     behavior: prefers_reduced_motion ? 'instant' : 'smooth',
   });
-};
+}
 </script>
 
 <template>

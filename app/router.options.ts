@@ -23,7 +23,7 @@ export default <RouterConfig>{
       };
     }
 
-    if (to.path !== from.path) {
+    if (to.path != from.path) {
       return {
         left: 0,
         top: 0,
