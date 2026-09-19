@@ -45,6 +45,7 @@ export default defineNuxtConfig({
       file: 'de.json',
     }],
     defaultLocale: 'en',
+    baseUrl: 'https://zhassulan.netlify.app',
     langDir: 'locales/',
     restructureDir: false,
     bundle: {

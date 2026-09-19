@@ -23,6 +23,8 @@ const description = computed(() => tx(`projects.${props.project.id}.description`
       <img class='project_archive_card__image'
         :src="project.image"
         alt=''
+        :width="project.image_width"
+        :height="project.image_height"
         loading='lazy'>
       <span class='project_archive_card__category' v-text='project.category'></span>
     </a>
@@ -31,6 +33,8 @@ const description = computed(() => tx(`projects.${props.project.id}.description`
       <img class='project_archive_card__image'
         :src="project.image"
         :alt="`${project.title} interface`"
+        :width="project.image_width"
+        :height="project.image_height"
         loading='lazy'>
       <span class='project_archive_card__category' v-text='project.category'></span>
     </div>

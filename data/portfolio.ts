@@ -1,25 +1,25 @@
-import portrait from '@/assets/images/main.png';
+import portrait from '@/assets/images/main.webp';
 import ciklum_logo from '@/assets/logos/ciklum.svg';
 import keyhorse_logo from '@/assets/logos/keyhorse.svg';
 import dar_logo from '@/assets/logos/dar.svg';
 import epam_logo from '@/assets/logos/epam.svg';
 import sdu_logo from '@/assets/logos/sdu.svg';
-import geonomix_image from '@/assets/images/projects/geonomix.png';
-import melissa_image from '@/assets/images/projects/melissa.png';
-import kostyum_image from '@/assets/images/projects/kostyum.png';
-import stroymarket_image from '@/assets/images/projects/stroymarket.png';
-import magnum_image from '@/assets/images/projects/magnum.png';
-import midas_event_image from '@/assets/images/projects/midas-event.png';
-import dostyk_trans_terminal_image from '@/assets/images/projects/dostyk-trans-terminal.png';
-import unistory_image from '@/assets/images/projects/unistory.png';
-import kazmed_image from '@/assets/images/projects/kazmed.png';
-import abi_construction_image from '@/assets/images/projects/abi-construction.png';
-import tahit_image from '@/assets/images/projects/tahit.png';
-import dobraya_image from '@/assets/images/projects/dobraya.png';
-import azm_trade_image from '@/assets/images/projects/azm-trade.png';
-import pharmacom_image from '@/assets/images/projects/pharmacom.png';
-import new_navat_image from '@/assets/images/projects/new-navat.png';
-import asia_credit_bank_image from '@/assets/images/projects/asia-credit-bank.png';
+import geonomix_image from '@/assets/images/projects/geonomix.webp';
+import melissa_image from '@/assets/images/projects/melissa.webp';
+import kostyum_image from '@/assets/images/projects/kostyum.webp';
+import stroymarket_image from '@/assets/images/projects/stroymarket.webp';
+import magnum_image from '@/assets/images/projects/magnum.webp';
+import midas_event_image from '@/assets/images/projects/midas-event.webp';
+import dostyk_trans_terminal_image from '@/assets/images/projects/dostyk-trans-terminal.webp';
+import unistory_image from '@/assets/images/projects/unistory.webp';
+import kazmed_image from '@/assets/images/projects/kazmed.webp';
+import abi_construction_image from '@/assets/images/projects/abi-construction.webp';
+import tahit_image from '@/assets/images/projects/tahit.webp';
+import dobraya_image from '@/assets/images/projects/dobraya.webp';
+import azm_trade_image from '@/assets/images/projects/azm-trade.webp';
+import pharmacom_image from '@/assets/images/projects/pharmacom.webp';
+import new_navat_image from '@/assets/images/projects/new-navat.webp';
+import asia_credit_bank_image from '@/assets/images/projects/asia-credit-bank.webp';
 import type { CaseStudy, Milestone, Principle, ProofDocument, ProofItem, Project, Signal, Surface } from '@/types/portfolio';
 
 // Served straight from /public — a static file needs no build-time import,
@@ -139,22 +139,22 @@ export const case_studies: CaseStudy[] = [
 ];
 
 export const projects: Project[] = [
-  { id: 'geonomix', title: 'Geonomix', category: 'GIS & Platforms', image: geonomix_image, description: 'A large-scale geospatial and digital-twin platform combining interactive maps, municipal data, digital registries, government services and monitoring tools across regional deployments.', stack: ['Vue.js', 'Vuex', 'Mapbox GL JS', 'Django', 'PostgreSQL', 'Elasticsearch'], href: 'https://iulytau.kz', note: 'Map-first product where data volume and reusable regional delivery shaped the frontend architecture.' },
-  { id: 'stroymarket', title: 'Stroymarket.kz', category: 'Marketplace', image: stroymarket_image, description: 'A nationwide B2B marketplace connecting construction material suppliers, contractors, and equipment rental across Kazakhstan — live catalog and supplier search across 39 cities, an AI-powered project assistant, and a cost-estimation calculator for common build types.', stack: ['Vue.js', 'Nuxt.js'], href: 'https://stroymarket.kz', featured: true, note: 'Solo-built, from supplier/catalog discovery to an AI construction assistant and cost estimator.' },
-  { id: 'kostyum', title: 'Kostyum.kz', category: 'E-commerce', image: kostyum_image, description: 'A responsive men’s and women’s fashion e-commerce frontend — reusable product-catalog UI covering apparel, footwear, and accessories, with a focus on a smooth desktop and mobile shopping experience.', stack: ['Nuxt.js', 'Vue.js', 'SSR'], href: 'https://kostyum.kz', featured: true },
-  { id: 'midas-event', title: 'Midas Event', category: 'Corporate', image: midas_event_image, description: 'An event-agency site built as a browsable portfolio of past events rather than a static services list, with React-driven interactive detail throughout.', stack: ['React', 'JavaScript', 'CSS'], href: 'https://midasevent.kz', featured: true },
-  { id: 'magnum', title: 'Magnum.kz', category: 'Retail', image: magnum_image, description: 'Frontend contributor on Kazakhstan’s largest supermarket chain’s site — built the product catalog and promotions, the Magnum Chef sub-brand pages (bakery, culinary, confectionery), the loyalty/bonus-app promotion section, and the careers page.', stack: ['Vue.js', 'Nuxt.js'], href: 'https://magnum.kz', featured: false, note: 'Contributed core customer-facing sections as part of the delivery team; not a solo build.' },
-  { id: 'unistory', title: 'UniStory', category: 'AI & Web3', image: unistory_image, description: 'A digital product interface integrating crypto-wallet state and asynchronous backend data into reusable React product experiences.', stack: ['React', 'TypeScript', 'REST APIs', 'Web3'], href: 'https://unistory.app/ru/', featured: true },
-  { id: 'kazmed', title: 'KazMedEngineering', category: 'Healthcare', image: kazmed_image, description: 'A corporate frontend for an authorized medical-equipment service partner, built around a Swiper-driven catalog of equipment and service lines instead of long text pages.', stack: ['Nuxt.js', 'Swiper'], href: 'https://www.kme.kz' },
-  { id: 'dostyk-trans-terminal', title: 'Dostyk Trans Terminal', category: 'Corporate', image: dostyk_trans_terminal_image, description: 'A corporate website for a logistics terminal at the Dostyk–Alashankou border crossing, presenting container handling, storage and transshipment services.', stack: ['Nuxt.js', 'Vue.js'], href: 'https://www.dtt.kz/' },
-  { id: 'melissa', title: 'Melissa', category: 'E-commerce', image: melissa_image, description: 'A large online pharmacy with 13,000+ products, including catalog navigation, search, filtering, sorting, product pages, cart flows and backend integrations.', stack: ['Nuxt.js', 'Vue.js', 'REST APIs'], href: 'https://melissaapteka.kz', note: 'A large catalogue experience where information architecture matters as much as UI polish.' },
-  { id: 'abi-construction', title: 'ABI Construction', category: 'Corporate', image: abi_construction_image, description: 'A construction-company website pairing a WordPress content backend with Vue-driven project galleries and interactive UI on top.', stack: ['WordPress', 'Vue.js', 'PHP', 'SCSS'], href: 'https://abi-construction.kz' },
-  { id: 'tahit', title: 'TAHIT', category: 'Corporate', image: tahit_image, description: 'A manufacturing-company frontend showcasing textile production capabilities, technologies, products and services across desktop and mobile.', stack: ['Vue.js'], href: 'https://tahit.kz' },
-  { id: 'dobraya', title: 'Dobraya Pharmacy', category: 'E-commerce', image: dobraya_image, description: 'An online-pharmacy storefront with responsive catalogs, category navigation, search, filtering and product flows.', stack: ['HTML', 'JavaScript', 'SCSS', 'Bootstrap', 'jQuery'], href: 'https://dobraya-apteka.kz' },
-  { id: 'asia-mebel', title: 'Asia Mebel', category: 'E-commerce', image: azm_trade_image, description: 'A commercial catalog for furniture materials, fittings, tools and services with structured navigation, filtering, search and product pages.', stack: ['1C Bitrix', 'PHP', 'JavaScript', 'SASS', 'Bootstrap'], href: 'https://asiamebel.com' },
-  { id: 'pharmacom', title: 'Pharmacom', category: 'Healthcare', image: pharmacom_image, description: 'A healthcare website for a vaccination clinic and pharmacy network, organized around locations, services and patient information rather than one static homepage.', stack: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'jQuery'], href: 'https://pharma.com.kz' },
-  { id: 'navat', title: 'NAVAT', category: 'Hospitality', image: new_navat_image, description: 'A promotional restaurant landing page with a responsive visual experience built around menu, atmosphere and brand identity.', stack: ['JavaScript', 'HTML', 'CSS', 'jQuery'], href: 'https://newnavat.netlify.app' },
-  { id: 'asia-credit-bank', title: 'AsiaCredit Bank', category: 'Finance', image: asia_credit_bank_image, description: 'A bank contact-center website turning a large set of product and support pages into a fast, easy-to-navigate structure for customers.', stack: ['PHP', 'HTML', 'JavaScript', 'SCSS'], href: 'https://asiacreditbank.kz' },
+  { id: 'geonomix', title: 'Geonomix', category: 'GIS & Platforms', image: geonomix_image, image_width: 1600, image_height: 869, description: 'A large-scale geospatial and digital-twin platform combining interactive maps, municipal data, digital registries, government services and monitoring tools across regional deployments.', stack: ['Vue.js', 'Vuex', 'Mapbox GL JS', 'Django', 'PostgreSQL', 'Elasticsearch'], href: 'https://iulytau.kz', note: 'Map-first product where data volume and reusable regional delivery shaped the frontend architecture.' },
+  { id: 'stroymarket', title: 'Stroymarket.kz', category: 'Marketplace', image: stroymarket_image, image_width: 1600, image_height: 896, description: 'A nationwide B2B marketplace connecting construction material suppliers, contractors, and equipment rental across Kazakhstan — live catalog and supplier search across 39 cities, an AI-powered project assistant, and a cost-estimation calculator for common build types.', stack: ['Vue.js', 'Nuxt.js'], href: 'https://stroymarket.kz', featured: true, note: 'Solo-built, from supplier/catalog discovery to an AI construction assistant and cost estimator.' },
+  { id: 'kostyum', title: 'Kostyum.kz', category: 'E-commerce', image: kostyum_image, image_width: 1600, image_height: 824, description: 'A responsive men’s and women’s fashion e-commerce frontend — reusable product-catalog UI covering apparel, footwear, and accessories, with a focus on a smooth desktop and mobile shopping experience.', stack: ['Nuxt.js', 'Vue.js', 'SSR'], href: 'https://kostyum.kz', featured: true },
+  { id: 'midas-event', title: 'Midas Event', category: 'Corporate', image: midas_event_image, image_width: 1600, image_height: 999, description: 'An event-agency site built as a browsable portfolio of past events rather than a static services list, with React-driven interactive detail throughout.', stack: ['React', 'JavaScript', 'CSS'], href: 'https://midasevent.kz', featured: true },
+  { id: 'magnum', title: 'Magnum.kz', category: 'Retail', image: magnum_image, image_width: 1600, image_height: 822, description: 'Frontend contributor on Kazakhstan’s largest supermarket chain’s site — built the product catalog and promotions, the Magnum Chef sub-brand pages (bakery, culinary, confectionery), the loyalty/bonus-app promotion section, and the careers page.', stack: ['Vue.js', 'Nuxt.js'], href: 'https://magnum.kz', featured: false, note: 'Contributed core customer-facing sections as part of the delivery team; not a solo build.' },
+  { id: 'unistory', title: 'UniStory', category: 'AI & Web3', image: unistory_image, image_width: 1600, image_height: 912, description: 'A digital product interface integrating crypto-wallet state and asynchronous backend data into reusable React product experiences.', stack: ['React', 'TypeScript', 'REST APIs', 'Web3'], href: 'https://unistory.app/ru/', featured: true },
+  { id: 'kazmed', title: 'KazMedEngineering', category: 'Healthcare', image: kazmed_image, image_width: 1600, image_height: 863, description: 'A corporate frontend for an authorized medical-equipment service partner, built around a Swiper-driven catalog of equipment and service lines instead of long text pages.', stack: ['Nuxt.js', 'Swiper'], href: 'https://www.kme.kz' },
+  { id: 'dostyk-trans-terminal', title: 'Dostyk Trans Terminal', category: 'Corporate', image: dostyk_trans_terminal_image, image_width: 1600, image_height: 859, description: 'A corporate website for a logistics terminal at the Dostyk–Alashankou border crossing, presenting container handling, storage and transshipment services.', stack: ['Nuxt.js', 'Vue.js'], href: 'https://www.dtt.kz/' },
+  { id: 'melissa', title: 'Melissa', category: 'E-commerce', image: melissa_image, image_width: 1431, image_height: 763, description: 'A large online pharmacy with 13,000+ products, including catalog navigation, search, filtering, sorting, product pages, cart flows and backend integrations.', stack: ['Nuxt.js', 'Vue.js', 'REST APIs'], href: 'https://melissaapteka.kz', note: 'A large catalogue experience where information architecture matters as much as UI polish.' },
+  { id: 'abi-construction', title: 'ABI Construction', category: 'Corporate', image: abi_construction_image, image_width: 1600, image_height: 846, description: 'A construction-company website pairing a WordPress content backend with Vue-driven project galleries and interactive UI on top.', stack: ['WordPress', 'Vue.js', 'PHP', 'SCSS'], href: 'https://abi-construction.kz' },
+  { id: 'tahit', title: 'TAHIT', category: 'Corporate', image: tahit_image, image_width: 1600, image_height: 856, description: 'A manufacturing-company frontend showcasing textile production capabilities, technologies, products and services across desktop and mobile.', stack: ['Vue.js'], href: 'https://tahit.kz' },
+  { id: 'dobraya', title: 'Dobraya Pharmacy', category: 'E-commerce', image: dobraya_image, image_width: 1431, image_height: 767, description: 'An online-pharmacy storefront with responsive catalogs, category navigation, search, filtering and product flows.', stack: ['HTML', 'JavaScript', 'SCSS', 'Bootstrap', 'jQuery'], href: 'https://dobraya-apteka.kz' },
+  { id: 'asia-mebel', title: 'Asia Mebel', category: 'E-commerce', image: azm_trade_image, image_width: 1600, image_height: 1000, description: 'A commercial catalog for furniture materials, fittings, tools and services with structured navigation, filtering, search and product pages.', stack: ['1C Bitrix', 'PHP', 'JavaScript', 'SASS', 'Bootstrap'], href: 'https://asiamebel.com' },
+  { id: 'pharmacom', title: 'Pharmacom', category: 'Healthcare', image: pharmacom_image, image_width: 1427, image_height: 760, description: 'A healthcare website for a vaccination clinic and pharmacy network, organized around locations, services and patient information rather than one static homepage.', stack: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'jQuery'], href: 'https://pharma.com.kz' },
+  { id: 'navat', title: 'NAVAT', category: 'Hospitality', image: new_navat_image, image_width: 1600, image_height: 877, description: 'A promotional restaurant landing page with a responsive visual experience built around menu, atmosphere and brand identity.', stack: ['JavaScript', 'HTML', 'CSS', 'jQuery'], href: 'https://newnavat.netlify.app' },
+  { id: 'asia-credit-bank', title: 'AsiaCredit Bank', category: 'Finance', image: asia_credit_bank_image, image_width: 1427, image_height: 767, description: 'A bank contact-center website turning a large set of product and support pages into a fast, easy-to-navigate structure for customers.', stack: ['PHP', 'HTML', 'JavaScript', 'SCSS'], href: 'https://asiacreditbank.kz' },
 ];
 
 export const featured_projects = projects.filter((project) => project.featured);
