@@ -1,0 +1,47 @@
+.error_page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  padding-block: 5em;
+  background: var(--theme-paper);
+}
+
+.error_page__inner {
+  max-width: 34em;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.error_page__title {
+  margin: 0 0 .625em;
+  font-size: clamp(2.375em, 6vw, 3.5em);
+  line-height: 1.05;
+}
+
+.error_page__message {
+  max-width: 28em;
+  margin: 0 auto 2em;
+  font-size: 1.0625em;
+  line-height: 1.7;
+  color: var(--theme-muted);
+}
+
+.error_page__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: .9375em;
+}
+
+@media (width <= 600px) {
+  .error_page {
+    padding-block: 3.5em;
+  }
+
+  .error_page__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
