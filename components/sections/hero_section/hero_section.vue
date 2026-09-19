@@ -64,8 +64,9 @@ import { portfolio_assets } from '@/data/portfolio';
         <img class='hero_section__portrait'
           :src="portfolio_assets.portrait"
           alt='Zhassulan Serikuly'
-          width='1145'
-          height='1374'>
+          fetchpriority='high'
+          width='950'
+          height='1140'>
       </div>
 
       <div class='hero_section__signal hero_section__signal--top'>

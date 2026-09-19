@@ -5,7 +5,7 @@
   --theme-black-rgb: 0 0 0;
   --theme-ink: #111218;
   --theme-text: #111218;
-  --theme-muted: #6a6c76;
+  --theme-muted: #5c5e67;
   --theme-paper: #f4f2ec;
   --theme-surface: var(--theme-white);
   --theme-surface_alt: #ebe8e0;
@@ -22,7 +22,7 @@
   --theme-case_study_border: #d0cdc4;
   --theme-case_study_surface: #f8f6f1;
   --theme-case_study_rule: #d7d4cc;
-  --theme-case_study_label: #92949b;
+  --theme-case_study_label: #64666d;
   --theme-case_study_story: #50525b;
   --theme-controls_bg: rgb(246 244 239 / 94%);
   --theme-projects_motion: #12a874;
