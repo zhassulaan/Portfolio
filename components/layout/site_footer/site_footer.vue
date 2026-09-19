@@ -16,12 +16,14 @@ function scrollToTop() {
   <footer class='site_footer wrap'>
     <span v-text='`© ${new Date().getFullYear()} Zhassulan Serikuly`'></span>
     <span>Nuxt 3 · Vue 3 · TypeScript</span>
-    <button class='site_footer__top'
-      type='button'
+    <button
+      class='site_footer__top'
       v-on:click="scrollToTop">
+      type='button'
       {{ $t('footer.back_to_top') }}
     </button>
   </footer>
 </template>
 
 <style src='./site_footer.css'></style>
+
