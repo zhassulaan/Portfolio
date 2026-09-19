@@ -3,6 +3,7 @@ node_modules
 .output
 dist
 .DS_Store
+__pycache__
 
 .nuxtrc
 test-results
