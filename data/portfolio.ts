@@ -16,7 +16,6 @@ import kazmed_image from '@/assets/images/projects/kazmed.png';
 import abi_construction_image from '@/assets/images/projects/abi-construction.png';
 import tahit_image from '@/assets/images/projects/tahit.png';
 import dobraya_image from '@/assets/images/projects/dobraya.png';
-// import qazbooking_image from '@/assets/images/projects/qazbooking.png';
 import azm_trade_image from '@/assets/images/projects/azm-trade.png';
 import pharmacom_image from '@/assets/images/projects/pharmacom.png';
 import new_navat_image from '@/assets/images/projects/new-navat.png';
@@ -156,7 +155,6 @@ export const projects: Project[] = [
   { id: 'pharmacom', title: 'Pharmacom', category: 'Healthcare', image: pharmacom_image, description: 'A healthcare website for a vaccination clinic and pharmacy network, organized around locations, services and patient information rather than one static homepage.', stack: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'jQuery'], href: 'https://pharma.com.kz' },
   { id: 'navat', title: 'NAVAT', category: 'Hospitality', image: new_navat_image, description: 'A promotional restaurant landing page with a responsive visual experience built around menu, atmosphere and brand identity.', stack: ['JavaScript', 'HTML', 'CSS', 'jQuery'], href: 'https://newnavat.netlify.app' },
   { id: 'asia-credit-bank', title: 'AsiaCredit Bank', category: 'Finance', image: asia_credit_bank_image, description: 'A bank contact-center website turning a large set of product and support pages into a fast, easy-to-navigate structure for customers.', stack: ['PHP', 'HTML', 'JavaScript', 'SCSS'], href: 'https://asiacreditbank.kz' },
-  // { id: 'qazbooking', title: 'QazBooking', category: 'Booking', image: qazbooking_image, description: 'An accommodation-booking platform for hostels and recreation centers with search, filters, authentication, property pages and reservation flows.', stack: ['1C Bitrix', 'PHP', 'JavaScript', 'SASS', 'Bootstrap'], href: 'https://qazbooking.kz' },
 ];
 
 export const featured_projects = projects.filter((project) => project.featured);

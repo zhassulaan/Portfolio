@@ -19,7 +19,7 @@ const {
 // Category/stack values stay in English (they're canonical filter values,
 // matched against data/portfolio.ts) — only the 'All' option is translated
 // for display.
-const option_label = (value: string) => (value === 'All' ? t('projects_page.category_all') : value);
+const option_label = (value: string) => (value == 'All' ? t('projects_page.category_all') : value);
 
 onMounted(() => {
   window.scrollTo({
@@ -98,7 +98,7 @@ useHead({
     <section class='projects_page__results wrap'>
       <div class='projects_page__result_meta' aria-live='polite'>
         <strong v-text='filtered_projects.length'></strong>
-        <span v-text="filtered_projects.length === 1 ? $t('projects_page.result_singular') : $t('projects_page.result_plural')"></span>
+        <span v-text="filtered_projects.length == 1 ? $t('projects_page.result_singular') : $t('projects_page.result_plural')"></span>
       </div>
 
       <div class='projects_page__grid' v-if='filtered_projects.length'>

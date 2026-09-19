@@ -19,20 +19,20 @@ const section_ids = nav_items
 
 let observer: IntersectionObserver | null = null;
 
-const is_nav_item_active = (href: string) => {
+function is_nav_item_active(href: string) {
   if (!href.startsWith('/#')) {
-    return route.path === local_path(href);
+    return route.path == local_path(href);
   }
 
-  if (route.path !== local_path('/')) {
+  if (route.path != local_path('/')) {
     return false;
   }
 
-  return href === `/#${active_section.value}`;
-};
+  return href == `/#${active_section.value}`;
+}
 
-const sync_active_section = () => {
-  if (route.path !== local_path('/')) {
+function sync_active_section() {
+  if (route.path != local_path('/')) {
     active_section.value = '';
     return;
   }
@@ -44,7 +44,7 @@ const sync_active_section = () => {
   if (is_bottom) {
     active_section.value = 'contact';
 
-    if (route.hash !== '#contact') {
+    if (route.hash != '#contact') {
       window.history.replaceState(null, '', `${local_path('/')}#contact`);
     }
 
@@ -71,7 +71,7 @@ const sync_active_section = () => {
 
   if (
     next_active_section &&
-    route.hash !== `#${next_active_section}`
+    route.hash != `#${next_active_section}`
   ) {
     window.history.replaceState(
       null,
@@ -79,9 +79,9 @@ const sync_active_section = () => {
       `${local_path('/')}#${next_active_section}`,
     );
   }
-};
+}
 
-const observe_sections = () => {
+function observe_sections() {
   observer?.disconnect();
 
   observer = new IntersectionObserver(sync_active_section, {
@@ -98,21 +98,21 @@ const observe_sections = () => {
   });
 
   sync_active_section();
-};
+}
 
-const close_mobile_nav = () => {
+function close_mobile_nav() {
   is_mobile_nav_open.value = false;
-};
+}
 
-const toggle_mobile_nav = () => {
+function toggle_mobile_nav() {
   is_mobile_nav_open.value = !is_mobile_nav_open.value;
-};
+}
 
-const handle_keydown = (event: KeyboardEvent) => {
-  if (event.key === 'Escape' && is_mobile_nav_open.value) {
+function handle_keydown(event: KeyboardEvent) {
+  if (event.key == 'Escape' && is_mobile_nav_open.value) {
     close_mobile_nav();
   }
-};
+}
 
 onMounted(() => {
   observe_sections();
@@ -182,7 +182,7 @@ onBeforeUnmount(() => {
           v-for='item in nav_items'
           :key='item.href'
           :to="local_path(item.href)"
-          :aria-current="is_nav_item_active(item.href) ? 'page' : null">
+          :aria-current="is_nav_item_active(item.href) ? 'page' : undefined">
           <span class='site_header__nav_text' v-text="$t(`nav.${nav_key(item.href)}`)"></span>
         </NuxtLink>
       </nav>
@@ -223,7 +223,7 @@ onBeforeUnmount(() => {
           v-for='item in nav_items'
           :key='item.href'
           :to="local_path(item.href)"
-          :aria-current="is_nav_item_active(item.href) ? 'page' : null"
+          :aria-current="is_nav_item_active(item.href) ? 'page' : undefined"
           v-on:click="close_mobile_nav">
           <span v-text="$t(`nav.${nav_key(item.href)}`)"></span>
         </NuxtLink>

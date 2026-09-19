@@ -3,9 +3,8 @@
 // and highlights, plus (when the employer has more than one role phase,
 // e.g. a promotion) a phase selector that swaps which phase's highlights
 // are shown. Fully self-contained: it owns its own selected-phase state
-// rather than the parent tracking it, which is what let pages/cv/index.vue
-// drop active_role_id/active_role/select_role/etc. entirely — the parent
-// only needs to know *which milestone* is open, not which phase of it.
+// rather than the parent tracking it, so the parent only needs to know
+// *which milestone* is open, not which phase of it.
 import { useLocaleText } from '@/composables/use_locale_text';
 import type { Milestone, MilestoneRole } from '@/types/portfolio';
 
@@ -23,12 +22,12 @@ const active_role = computed<MilestoneRole | null>(() => {
   if (!roles?.length) {
     return null;
   }
-  return roles.find((candidate) => candidate.id === active_role_id.value) ?? roles[0];
+  return roles.find((candidate) => candidate.id == active_role_id.value) ?? roles[0];
 });
 
-const select_role = (role_id: string) => {
+function select_role(role_id: string) {
   active_role_id.value = role_id;
-};
+}
 
 const translation_key = computed(() => props.milestone.id || props.milestone.company);
 
@@ -50,13 +49,13 @@ const active_highlights = computed(() => active_role.value?.highlights ?? props.
       v-if='milestone.roles?.length'
       role='tablist'
       :aria-label="$t('cv_page.role_selector_aria')">
-      <button v-for='r in milestone.roles'
+      <button class='milestone_detail__role_tab'
+        :class="{ 'milestone_detail__role_tab--active': active_role?.id == r.id }"
+        v-for='r in milestone.roles'
         :key='r.id'
         type='button'
-        class='milestone_detail__role_tab'
-        :class="{ 'milestone_detail__role_tab--active': active_role?.id === r.id }"
         role='tab'
-        :aria-selected='active_role?.id === r.id'
+        :aria-selected='active_role?.id == r.id'
         v-on:click='select_role(r.id)'>
         {{ tx(`milestones.${translation_key}.roles.${r.id}.label`, r.label) }}
       </button>

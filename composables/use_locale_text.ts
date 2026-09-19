@@ -12,11 +12,11 @@ import { locale_dictionaries, type LocaleCode } from '@/data/translations';
 export function useLocaleText() {
   const { locale } = useI18n();
 
-  const tx = (key: string, fallback: string): string => {
+  function tx(key: string, fallback: string): string {
     const dictionary = locale_dictionaries[locale.value as LocaleCode];
 
     return dictionary?.[key] ?? fallback;
-  };
+  }
 
   return { tx };
 }

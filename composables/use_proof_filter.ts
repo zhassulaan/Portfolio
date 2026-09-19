@@ -2,7 +2,7 @@ import type { ProofDocument } from '@/types/portfolio';
 
 export type ProofKindFilter = 'All' | 'certificate' | 'recommendation';
 
-export const useProofFilter = (documents: ProofDocument[]) => {
+export function useProofFilter(documents: ProofDocument[]) {
   const search_query = ref('');
   const active_kind = ref<ProofKindFilter>('All');
 
@@ -19,16 +19,16 @@ export const useProofFilter = (documents: ProofDocument[]) => {
       ].join(' ').toLowerCase();
 
       const matches_search = !query || searchable_text.includes(query);
-      const matches_kind = active_kind.value === 'All' || document.kind === active_kind.value;
+      const matches_kind = active_kind.value == 'All' || document.kind == active_kind.value;
 
       return matches_search && matches_kind;
     });
   });
 
-  const reset_filters = () => {
+  function reset_filters() {
     search_query.value = '';
     active_kind.value = 'All';
-  };
+  }
 
   return {
     search_query,
@@ -37,4 +37,4 @@ export const useProofFilter = (documents: ProofDocument[]) => {
     filtered_documents,
     reset_filters,
   };
-};
+}

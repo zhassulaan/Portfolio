@@ -2,7 +2,6 @@
 // used in data/portfolio.ts (index/number/company/slug/id). Missing keys
 // fall back to the English text in portfolio.ts.
 export const tr: Record<string, string> = {
-  // Signals
   'signals.0.label': 'yıl production deneyimi',
   'signals.0.note': 'React stajyerliğinden uluslararası ürün ekiplerinde senior sorumluluğa.',
   'signals.1.label': 'kullanıcıya ulaşıldı',
@@ -12,7 +11,6 @@ export const tr: Record<string, string> = {
   'signals.3.label': 'proje optimize edildi',
   'signals.3.note': 'Performans, mimari ve sürdürülebilirlik iyileştirmeleri.',
 
-  // Case studies
   'case_studies.01.kicker': 'Ürün ölçeğinde mimari',
   'case_studies.01.title': 'On modülü tek bir sistem gibi hissettirmek.',
   'case_studies.01.problem': 'Büyüyen bir Vue ürün yüzeyinin, yılda bir milyondan fazla kullanıcıya hizmet veren bir platformda 10+ modül paralel geliştirilirken tutarlı kalması gerekiyordu.',
@@ -42,7 +40,6 @@ export const tr: Record<string, string> = {
   'case_studies.04.metrics.0.label': 'yeniden kullanılabilir bileşen',
   'case_studies.04.metrics.1.label': 'benzer uygulama',
 
-  // Systems / surfaces
   'surfaces.A.title': 'Yoğun trafikli ürün modülleri',
   'surfaces.A.text': 'Mimarinin, önbelleklemenin, state\'in ve API davranışının tek bir ürün sistemi gibi çalışması gereken arayüzler.',
   'surfaces.B.title': 'Coğrafi bilgi sistemleri',
@@ -52,7 +49,6 @@ export const tr: Record<string, string> = {
   'surfaces.D.title': 'Uçtan uca ürün teslimatı',
   'surfaces.D.text': 'API\'lere, entegrasyon sınırlarına ve production davranışına sahip çıkacak kadar derin backend bilgisiyle desteklenen frontend odaklı mühendislik.',
 
-  // Principles
   'principles.01.title': 'Yeniden yazmadan önce ölç.',
   'principles.01.text': 'Bir performans değişikliği kanıtla başlamalı ve kullanıcının görebileceği bir sonuçla bitmeli.',
   'principles.02.title': 'Mimari bir teslimat aracıdır.',
@@ -62,7 +58,6 @@ export const tr: Record<string, string> = {
   'principles.04.title': 'Senior olmak, belirsizliği azaltmak demektir.',
   'principles.04.text': 'Teknik liderlik, ekibin gizli risk biriktirmeden hızlı ilerleyebilmesi için ödünleşimleri görünür kılmaktır.',
 
-  // Milestones
   'milestones.ciklum.role': 'Senior Software Engineer',
   'milestones.ciklum.focus': 'Frontend mimarisi · ürün modernizasyonu · performans · teknik liderlik',
   'milestones.keyhorse.role': 'Middle → Senior → Team Lead Software Engineer',
@@ -71,8 +66,9 @@ export const tr: Record<string, string> = {
   'milestones.dar.focus': 'Yüksek hacimli web teslimatı · e-ticaret · mobil · performans',
   'milestones.epam.role': 'Software Engineer Intern',
   'milestones.epam.focus': 'React · TypeScript · yeniden kullanılabilir UI · mühendislik temelleri',
+  'milestones.freelance.role': 'Freelance Software Engineer',
+  'milestones.freelance.focus': 'Freelance Vue/React geliştirme · uçtan uca SaaS ve e-ticaret teslimatı · müşteri yönetimi',
 
-  // Milestones — full role detail (shown in the CV page's "view details" modal)
   'milestones.ciklum.location': 'Bükreş, Romanya (Uzaktan)',
   'milestones.ciklum.summary': 'Birleşik Krallık merkezli, küresel dijital ürün ve kurumsal yazılım dönüşümü lideri.',
   'milestones.ciklum.highlight_0.label': 'Mimari',
@@ -123,8 +119,11 @@ export const tr: Record<string, string> = {
   'milestones.epam.highlight_1.text': 'Duyarlı React/TypeScript arayüzleri ve yeniden kullanılabilir bileşen kütüphaneleri geliştirdim, API’leri production iş akışlarına entegre ettim; 5+ kurumsal iç araca katkıda bulundum.',
   'milestones.epam.highlight_2.label': 'Mühendislik Gelişimi',
   'milestones.epam.highlight_2.text': 'Kurumsal düzeyde kod incelemelerine, birim testlerine ve teslimat standartlarına katıldım — bu, sonraki her rolde taşıdığım bir temel oldu.',
+  'milestones.freelance.location': 'Uzaktan (uluslararası müşteriler)',
+  'milestones.freelance.summary': 'Tam zamanlı rollerin yanı sıra yürütülen, uluslararası müşteriler için bağımsız freelance ve sözleşmeli çalışma.',
+  'milestones.freelance.highlight_0.label': 'Müşteri Teslimatı',
+  'milestones.freelance.highlight_0.text': '40\'tan fazla uluslararası Vue/React projesini (SaaS, e-ticaret) %100 zamanında teslim oranı ve 5.0 puanla tamamladım; müşteri keşfinden production\'a kadar tüm SDLC\'yi yönettim ve karmaşık üçüncü taraf API entegrasyonlarını gerçekleştirdim.',
 
-  // Proof items
   'proof_items.0.label': 'Eğitim',
   'proof_items.0.value': 'Bilişim Sistemleri',
   'proof_items.0.note': 'Suleyman Demirel Üniversitesi · 2018–2022 · Not Ortalaması 3.72 / 4.0',
@@ -141,7 +140,6 @@ export const tr: Record<string, string> = {
   'proof_items.4.value': '5 dil',
   'proof_items.4.note': 'İngilizce — tam profesyonel yeterlilik · Kazakça ve Rusça — anadil · Türkçe — konuşma düzeyi · Çince — temel düzey',
 
-  // Proof documents
   'proof_documents.ielts.title': 'IELTS Academic 7.0/9.0',
   'proof_documents.ielts.description': 'Akademik IELTS sonucu (CEFR C1) — uluslararası, uzaktan çalışmaya uygun mühendislik rolleri için tam profesyonel İngilizce yeterliliğinin kanıtı.',
   'proof_documents.chinese-proficiency.title': 'Çince Dil Yeterliliği',
@@ -151,7 +149,6 @@ export const tr: Record<string, string> = {
   'proof_documents.keyhorse.title': 'Referans Mektubu — KeyHorse',
   'proof_documents.keyhorse.description': 'Zhassulan\'ı senior seviyede bir mühendislik rolü için öneren, KeyHorse antetli kağıdında imzalı bir referans mektubu.',
 
-  // Projects
   'projects.geonomix.description': 'Bölgesel uygulamalarda interaktif haritaları, belediye verilerini, dijital sicilleri, kamu hizmetlerini ve izleme araçlarını bir araya getiren büyük ölçekli coğrafi bilgi ve dijital ikiz platformu.',
   'projects.midas-event.description': 'Statik bir hizmet listesi yerine geçmiş etkinliklerin gezilebilir bir portföyü olarak kurgulanmış, React tabanlı interaktif detaylara sahip bir etkinlik ajansı sitesi.',
   'projects.kostyum.description': 'Yeniden kullanılabilir ürün katalog arayüzüne sahip, masaüstü ve mobilde akıcı bir alışveriş deneyimine odaklanan responsive erkek modası e-ticaret frontend\'i.',

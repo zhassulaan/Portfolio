@@ -4,7 +4,6 @@
 // Missing keys fall back to the English text in portfolio.ts — see
 // composables/use_locale_text.ts.
 export const de: Record<string, string> = {
-  // Signals
   'signals.0.label': 'Jahre in der Produktentwicklung',
   'signals.0.note': 'Vom React-Praktikum bis zur Senior-Verantwortung in internationalen Produktteams.',
   'signals.1.label': 'Nutzer',
@@ -14,7 +13,6 @@ export const de: Record<string, string> = {
   'signals.3.label': 'optimierte Projekte',
   'signals.3.note': 'Verbesserungen bei Performance, Architektur und Wartbarkeit.',
 
-  // Case studies
   'case_studies.01.kicker': 'Architektur im Produktmaßstab',
   'case_studies.01.title': 'Zehn Module zu einem System machen.',
   'case_studies.01.problem': 'Eine wachsende Vue-Produktoberfläche musste konsistent bleiben, während sich 10+ Module parallel für eine Plattform mit über einer Million Nutzern pro Jahr weiterentwickelten.',
@@ -44,7 +42,6 @@ export const de: Record<string, string> = {
   'case_studies.04.metrics.0.label': 'wiederverwendbare Komponenten',
   'case_studies.04.metrics.1.label': 'ähnliche Implementierungen',
 
-  // Systems / surfaces
   'surfaces.A.title': 'Stark frequentierte Produktmodule',
   'surfaces.A.text': 'Interfaces, bei denen Architektur, Caching, State und API-Verhalten als ein einziges Produktsystem funktionieren müssen.',
   'surfaces.B.title': 'Geodatensysteme',
@@ -54,7 +51,6 @@ export const de: Record<string, string> = {
   'surfaces.D.title': 'End-to-End-Produktlieferung',
   'surfaces.D.text': 'Frontend-Engineering mit genug Backend-Tiefe, um APIs, Integrationsgrenzen und Produktionsverhalten zu verantworten.',
 
-  // Principles
   'principles.01.title': 'Erst messen, dann umschreiben.',
   'principles.01.text': 'Eine Performance-Änderung sollte mit Fakten beginnen und mit einem für Nutzer spürbaren Ergebnis enden.',
   'principles.02.title': 'Architektur ist ein Lieferwerkzeug.',
@@ -64,7 +60,6 @@ export const de: Record<string, string> = {
   'principles.04.title': 'Senior zu sein heißt, Unsicherheit zu reduzieren.',
   'principles.04.text': 'Technische Führung bedeutet, Kompromisse sichtbar zu machen, damit das Team schnell vorankommt, ohne verborgene Risiken anzuhäufen.',
 
-  // Milestones
   'milestones.ciklum.role': 'Senior Software Engineer',
   'milestones.ciklum.focus': 'Frontend-Architektur · Produktmodernisierung · Performance · technische Führung',
   'milestones.keyhorse.role': 'Middle → Senior → Team Lead Software Engineer',
@@ -73,8 +68,9 @@ export const de: Record<string, string> = {
   'milestones.dar.focus': 'Hochvolumige Webentwicklung · E-Commerce · mobile Apps · Performance',
   'milestones.epam.role': 'Software Engineer Praktikant',
   'milestones.epam.focus': 'React · TypeScript · wiederverwendbares UI · technische Grundlagen',
+  'milestones.freelance.role': 'Freelance Software Engineer',
+  'milestones.freelance.focus': 'Freelance Vue/React-Entwicklung · End-to-End-Lieferung von SaaS & E-Commerce · Kundenmanagement',
 
-  // Milestones — full role detail (shown in the CV page's "view details" modal)
   'milestones.ciklum.location': 'Bukarest, Rumänien (Remote)',
   'milestones.ciklum.summary': 'Global tätiger Anbieter für digitale Produkte und Unternehmenssoftware-Transformation mit Sitz im Vereinigten Königreich.',
   'milestones.ciklum.highlight_0.label': 'Architektur',
@@ -125,8 +121,11 @@ export const de: Record<string, string> = {
   'milestones.epam.highlight_1.text': 'Entwickelte responsive React/TypeScript-Oberflächen und wiederverwendbare Komponentenbibliotheken, integrierte APIs in Produktions-Workflows; trug zu 5+ internen Unternehmenstools bei.',
   'milestones.epam.highlight_2.label': 'Fachliches Wachstum',
   'milestones.epam.highlight_2.text': 'Nahm an Code-Reviews, Unit-Tests und Lieferstandards auf Enterprise-Niveau teil — eine Grundlage, die in jede folgende Rolle mitgenommen wurde.',
+  'milestones.freelance.location': 'Remote (internationale Kunden)',
+  'milestones.freelance.summary': 'Unabhängige freiberufliche und projektbasierte Arbeit für internationale Kunden, parallel zu Vollzeitpositionen.',
+  'milestones.freelance.highlight_0.label': 'Kundenprojekte',
+  'milestones.freelance.highlight_0.text': 'Lieferte 40+ internationale Vue/React-Projekte (SaaS, E-Commerce) mit einer 100%igen Pünktlichkeitsrate und einer Bewertung von 5,0; verantwortete den vollständigen SDLC von der Kundenanfrage bis zur Produktion, einschließlich komplexer Drittanbieter-API-Integrationen.',
 
-  // Proof items (home page + CV page)
   'proof_items.0.label': 'Ausbildung',
   'proof_items.0.value': 'Informationssysteme',
   'proof_items.0.note': 'Suleyman Demirel University · 2018–2022 · GPA 3,72/4,0',
@@ -143,7 +142,6 @@ export const de: Record<string, string> = {
   'proof_items.4.value': '5 Sprachen',
   'proof_items.4.note': 'Englisch — verhandlungssicher · Kasachisch & Russisch — Muttersprache · Türkisch — Konversationsniveau · Chinesisch — Grundkenntnisse',
 
-  // Proof documents (certificate/recommendation detail pages)
   'proof_documents.ielts.title': 'IELTS Academic 7.0/9.0',
   'proof_documents.ielts.description': 'Ergebnis des Academic IELTS (CEFR C1) — Nachweis fließenden, professionellen Englisch für internationale, remote-first Engineering-Rollen.',
   'proof_documents.chinese-proficiency.title': 'Chinesischkenntnisse',
@@ -153,7 +151,6 @@ export const de: Record<string, string> = {
   'proof_documents.keyhorse.title': 'Empfehlungsschreiben — KeyHorse',
   'proof_documents.keyhorse.description': 'Unterschriebene Empfehlung auf KeyHorse-Briefpapier, die Zhassulan für eine Senior-Engineering-Position empfiehlt.',
 
-  // Projects
   'projects.geonomix.description': 'Groß angelegte Geodatenplattform und digitaler Zwilling, der interaktive Karten, kommunale Daten, digitale Register, öffentliche Dienstleistungen und Monitoring-Tools in regionalen Implementierungen vereint.',
   'projects.midas-event.description': 'Website einer Eventagentur, aufgebaut als durchstöberbares Portfolio vergangener Veranstaltungen statt als statische Leistungsliste, mit interaktiven Details in React.',
   'projects.kostyum.description': 'Responsives E-Commerce-Frontend für Herrenmode mit wiederverwendbarem Produktkatalog-UI und Fokus auf ein reibungsloses Einkaufserlebnis auf Desktop und Mobile.',

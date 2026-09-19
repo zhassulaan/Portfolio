@@ -14,16 +14,16 @@ const {
   reset_filters,
 } = useProofFilter(proof_documents);
 
-const kind_label = (kind: string) => {
-  if (kind === 'certificate') {
+function kind_label(kind: string) {
+  if (kind == 'certificate') {
     return t('proof_page.kind_certificates');
   }
-  if (kind === 'recommendation') {
+  if (kind == 'recommendation') {
     return t('proof_page.kind_recommendations');
   }
 
   return t('proof_page.kind_all');
-};
+}
 
 onMounted(() => {
   window.scrollTo({
@@ -91,7 +91,7 @@ useHead({
     <section class='proof_page__results wrap'>
       <div class='proof_page__result_meta' aria-live='polite'>
         <strong v-text='filtered_documents.length'></strong>
-        <span v-text="filtered_documents.length === 1 ? $t('proof_page.result_singular') : $t('proof_page.result_plural')"></span>
+        <span v-text="filtered_documents.length == 1 ? $t('proof_page.result_singular') : $t('proof_page.result_plural')"></span>
       </div>
 
       <div class='proof_page__grid' v-if='filtered_documents.length'>

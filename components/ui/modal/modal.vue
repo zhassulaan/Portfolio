@@ -20,11 +20,11 @@ let last_focused: HTMLElement | null = null;
 
 const close = () => emit('close');
 
-const handle_keydown = (event: KeyboardEvent) => {
-  if (event.key === 'Escape') {
+function handle_keydown(event: KeyboardEvent) {
+  if (event.key == 'Escape') {
     close();
   }
-};
+}
 
 watch(() => props.open, (is_open) => {
   if (is_open) {

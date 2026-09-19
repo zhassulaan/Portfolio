@@ -4,7 +4,6 @@
 // Missing keys fall back to the English text in portfolio.ts — see
 // composables/use_locale_text.ts.
 export const ru: Record<string, string> = {
-  // Signals
   'signals.0.label': 'лет в промышленной разработке',
   'signals.0.note': 'От стажировки на React до senior-ответственности в международных продуктовых командах.',
   'signals.1.label': 'пользователей',
@@ -14,7 +13,6 @@ export const ru: Record<string, string> = {
   'signals.3.label': 'проектов оптимизировано',
   'signals.3.note': 'Улучшения производительности, архитектуры и поддерживаемости.',
 
-  // Case studies
   'case_studies.01.kicker': 'Архитектура на масштабе продукта',
   'case_studies.01.title': 'Сделать десять модулей одной системой.',
   'case_studies.01.problem': 'Растущей поверхности продукта на Vue нужно было оставаться согласованной, пока 10+ модулей развивались параллельно для платформы с более чем миллионом пользователей в год.',
@@ -44,7 +42,6 @@ export const ru: Record<string, string> = {
   'case_studies.04.metrics.0.label': 'переиспользуемых компонентов',
   'case_studies.04.metrics.1.label': 'похожих реализаций',
 
-  // Systems / surfaces
   'surfaces.A.title': 'Высоконагруженные продуктовые модули',
   'surfaces.A.text': 'Интерфейсы, где архитектура, кэширование, состояние и поведение API должны работать как единая продуктовая система.',
   'surfaces.B.title': 'Геопространственные системы',
@@ -54,7 +51,6 @@ export const ru: Record<string, string> = {
   'surfaces.D.title': 'End-to-end доставка продукта',
   'surfaces.D.text': 'Фронтенд-инженерия с достаточной глубиной бэкенда, чтобы владеть API, границами интеграций и поведением в production.',
 
-  // Principles
   'principles.01.title': 'Сначала измерить, потом переписывать.',
   'principles.01.text': 'Изменение производительности должно начинаться с фактов и заканчиваться результатом, заметным пользователю.',
   'principles.02.title': 'Архитектура — это инструмент доставки.',
@@ -64,7 +60,6 @@ export const ru: Record<string, string> = {
   'principles.04.title': 'Senior — значит снижать неопределённость.',
   'principles.04.text': 'Техническое лидерство — это делать компромиссы видимыми, чтобы команда двигалась быстро, не накапливая скрытых рисков.',
 
-  // Milestones
   'milestones.ciklum.role': 'Senior Software Engineer',
   'milestones.ciklum.focus': 'Фронтенд-архитектура · модернизация продукта · производительность · техническое лидерство',
   'milestones.keyhorse.role': 'Middle → Senior → Team Lead Software Engineer',
@@ -73,8 +68,9 @@ export const ru: Record<string, string> = {
   'milestones.dar.focus': 'Высокообъёмная веб-разработка · e-commerce · мобильные приложения · производительность',
   'milestones.epam.role': 'Software Engineer Intern',
   'milestones.epam.focus': 'React · TypeScript · переиспользуемый UI · инженерные основы',
+  'milestones.freelance.role': 'Freelance Software Engineer',
+  'milestones.freelance.focus': 'Фриланс-разработка на Vue/React · полный цикл доставки SaaS и e-commerce · работа с клиентами',
 
-  // Milestones — full role detail (shown in the CV page's "view details" modal)
   'milestones.ciklum.location': 'Бухарест, Румыния (удалённо)',
   'milestones.ciklum.summary': 'Глобальный лидер в области цифровых продуктов и трансформации корпоративного ПО, базирующийся в Великобритании.',
   'milestones.ciklum.highlight_0.label': 'Архитектура',
@@ -125,8 +121,11 @@ export const ru: Record<string, string> = {
   'milestones.epam.highlight_1.text': 'Разрабатывал адаптивные интерфейсы на React/TypeScript и переиспользуемые библиотеки компонентов, интегрируя API в production-процессы; внёс вклад в 5+ корпоративных внутренних инструментов.',
   'milestones.epam.highlight_2.label': 'Профессиональный рост',
   'milestones.epam.highlight_2.text': 'Участвовал в код-ревью корпоративного уровня, unit-тестировании и стандартах доставки — основа, которая легла в основу всех последующих ролей.',
+  'milestones.freelance.location': 'Удалённо (международные клиенты)',
+  'milestones.freelance.summary': 'Независимая фриланс- и контрактная работа с международными клиентами, велась параллельно с основной занятостью.',
+  'milestones.freelance.highlight_0.label': 'Доставка проектов клиентам',
+  'milestones.freelance.highlight_0.text': 'Реализовал 40+ международных проектов на Vue/React (SaaS, e-commerce) со 100% соблюдением сроков и рейтингом 5.0, полностью отвечая за SDLC от обсуждения с клиентом до продакшена, включая интеграцию сложных сторонних API.',
 
-  // Proof items (home page + CV page)
   'proof_items.0.label': 'Образование',
   'proof_items.0.value': 'Информационные системы',
   'proof_items.0.note': 'Suleyman Demirel University · 2018–2022 · GPA 3.72 / 4.0',
@@ -143,7 +142,6 @@ export const ru: Record<string, string> = {
   'proof_items.4.value': '5 языков',
   'proof_items.4.note': 'Английский — свободное рабочее владение · Казахский и русский — родные · Турецкий — разговорный уровень · Китайский — базовый уровень',
 
-  // Proof documents (certificate/recommendation detail pages)
   'proof_documents.ielts.title': 'IELTS Academic 7.0/9.0',
   'proof_documents.ielts.description': 'Результат академического IELTS (CEFR C1) — подтверждение свободного профессионального английского для международных, remote-first инженерных ролей.',
   'proof_documents.chinese-proficiency.title': 'Владение китайским языком',
@@ -153,7 +151,6 @@ export const ru: Record<string, string> = {
   'proof_documents.keyhorse.title': 'Рекомендательное письмо — KeyHorse',
   'proof_documents.keyhorse.description': 'Подписанная рекомендация на бланке KeyHorse, рекомендующая Жасулана на инженерную позицию senior-уровня.',
 
-  // Projects
   'projects.geonomix.description': 'Масштабная геопространственная платформа и цифровой двойник, объединяющая интерактивные карты, муниципальные данные, цифровые реестры, госуслуги и инструменты мониторинга в региональных внедрениях.',
   'projects.midas-event.description': 'Сайт event-агентства, построенный как просматриваемое портфолио прошедших мероприятий, а не статичный список услуг, с интерактивными деталями на React.',
   'projects.kostyum.description': 'Адаптивный фронтенд e-commerce для мужской моды с переиспользуемым UI каталога товаров и упором на плавный опыт покупок на десктопе и мобильных.',
