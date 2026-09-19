@@ -69,6 +69,8 @@ export interface Project {
   title: string;
   category: string;
   image: string;
+  image_width: number;
+  image_height: number;
   description: string;
   stack: string[];
   href?: string;

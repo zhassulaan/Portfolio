@@ -21,6 +21,8 @@ const note = computed(() => props.project.note ? tx(`projects.${props.project.id
       <img class='selected_project_card__image'
         :src="project.image"
         alt=''
+        :width="project.image_width"
+        :height="project.image_height"
         loading='lazy'>
       <span class='selected_project_card__category' v-text='project.category'></span>
     </a>
