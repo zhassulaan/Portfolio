@@ -50,7 +50,7 @@ const skill_groups: Array<{ key: string; label: string; items: string[] }> = [{
 }, {
   key: 'backend',
   label: 'Backend & APIs',
-  items: ['Django', 'Python', 'Laravel', 'PHP', 'PostgreSQL', 'MySQL', 'Elasticsearch', 'Redis', 'REST APIs', 'GraphQL', 'WebSockets', 'Public APIs']
+  items: ['Node.js', 'NestJS', 'Laravel', 'PHP', 'PostgreSQL', 'MySQL', 'Elasticsearch', 'Redis', 'REST APIs', 'GraphQL', 'WebSockets', 'Public APIs']
 }, {
   key: 'mobile',
   label: 'Mobile / PWA',
@@ -206,7 +206,9 @@ useHead({
           v-reveal>
           <img v-if='item.logo'
             :src="item.logo"
-            :alt="`${item.label} logo`">
+            :alt="`${item.label} logo`"
+            width='120'
+            height='60'>
           <span v-text="tx(`proof_items.${index}.label`, item.label)"></span>
           <strong v-text="tx(`proof_items.${index}.value`, item.value)"></strong>
           <p v-text="tx(`proof_items.${index}.note`, item.note)"></p>

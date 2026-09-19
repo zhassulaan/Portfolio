@@ -35,7 +35,7 @@
     "social_email": "E-mail",
     "opens_new_tab_sr": "(opent in een nieuw tabblad)",
     "meta_1": "Vue / React / Nuxt / Next / TypeScript",
-    "meta_2": "Python / Django",
+    "meta_2": "Node.js / NestJS",
     "meta_3": "Performance / Architectuur / Leiderschap",
     "signal_top_label": "huidige modus",
     "signal_top_value": "complexiteit verminderen",
@@ -190,7 +190,7 @@
     "skill_backend": "Backend & API's",
     "skill_mobile": "Mobile / PWA",
     "skill_tools": "DevOps & Tooling",
-    "profile_text_2": "Diepgaande expertise in de Vue/React- en TypeScript-ecosystemen, ondersteund door enterprise backend-ontwerp met Django (Python), Laravel (PHP) en PostgreSQL/Elasticsearch. Vroege gebruiker van AI-ondersteunde ontwikkelworkflows (Cursor, Claude Code, Copilot) om state-management boilerplate te verminderen, kwaliteitspoorten te automatiseren en de time-to-market ~2x te verkorten.",
+    "profile_text_2": "Diepgaande expertise in de Vue/React- en TypeScript-ecosystemen, ondersteund door enterprise backend-ontwerp met Node.js, NestJS, Laravel, PostgreSQL, Redis en Elasticsearch. Vroege gebruiker van AI-ondersteunde ontwikkelworkflows (Cursor, Claude Code, Copilot) om state-management boilerplate te verminderen, kwaliteitspoorten te automatiseren en de time-to-market ~2x te verkorten.",
     "role_selector_aria": "Rolfase selecteren",
     "skill_process": "Engineering-processen",
     "skill_ai": "AI-ondersteunde ontwikkeling"

@@ -35,7 +35,7 @@
     "social_email": "Email",
     "opens_new_tab_sr": "(открывается в новой вкладке)",
     "meta_1": "Vue / React / Nuxt / Next / TypeScript",
-    "meta_2": "Python / Django",
+    "meta_2": "Node.js / NestJS",
     "meta_3": "Производительность / Архитектура / Лидерство",
     "signal_top_label": "текущий режим",
     "signal_top_value": "снижать сложность",
@@ -190,7 +190,7 @@
     "skill_backend": "Backend и API",
     "skill_mobile": "Мобильная разработка / PWA",
     "skill_tools": "DevOps и инструменты",
-    "profile_text_2": "Глубокая экспертиза в экосистемах Vue/React и TypeScript, подкреплённая проектированием корпоративного backend на Django (Python), Laravel (PHP) и PostgreSQL/Elasticsearch. Один из первых внедрил AI-инструменты в разработку (Cursor, Claude Code, Copilot), чтобы сократить шаблонный код управления состоянием, автоматизировать quality gates и ускорить time-to-market примерно в 2 раза.",
+    "profile_text_2": "Глубокая экспертиза в экосистемах Vue/React и TypeScript, подкреплённая проектированием корпоративного backend на Node.js, NestJS, Laravel, PostgreSQL, Redis и Elasticsearch. Один из первых внедрил AI-инструменты в разработку (Cursor, Claude Code, Copilot), чтобы сократить шаблонный код управления состоянием, автоматизировать quality gates и ускорить time-to-market примерно в 2 раза.",
     "role_selector_aria": "Выбор этапа роли",
     "skill_process": "Инженерные процессы",
     "skill_ai": "Разработка с AI"

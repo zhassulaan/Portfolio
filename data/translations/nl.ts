@@ -98,7 +98,7 @@ export const nl: Record<string, string> = {
   'milestones.keyhorse.roles.mid-senior.highlight_1.label': 'Frontend-architectuur',
   'milestones.keyhorse.roles.mid-senior.highlight_1.text': 'Ontwierp een gedeelde Vue-architectuur (100+ FSD-componenten), gedocumenteerd in een gedeelde Storybook-componentenbibliotheek om UI-patronen tussen teams te standaardiseren — verkortte de ontwikkelcyclus van features met 50%.',
   'milestones.keyhorse.roles.mid-senior.highlight_2.label': 'Backend & Datamodellering',
-  'milestones.keyhorse.roles.mid-senior.highlight_2.text': 'Bouwde 35+ Django/PostgreSQL REST-endpoints met Redis-caching en geoptimaliseerde PL/pgSQL-stored procedures voor grootschalige geospatiale datasets, met behoud van 99,9% productie-uptime tijdens het genereren van type-veilige API-clients voor frontend-integratie.',
+  'milestones.keyhorse.roles.mid-senior.highlight_2.text': 'Bouwde 35+ REST-API’s met Node.js, NestJS, PostgreSQL en Redis, met geoptimaliseerde PL/pgSQL-stored procedures en Elasticsearch-integratie voor grootschalige geospatiale datasets, met behoud van 99,9% productie-uptime tijdens het genereren van type-veilige API-clients voor frontend-integratie.',
   'milestones.keyhorse.roles.mid-senior.highlight_3.label': 'DevOps & Automatisering',
   'milestones.keyhorse.roles.mid-senior.highlight_3.text': 'Ontwierp een Vitest-, Playwright- en Cypress-teststrategie en handhaafde productiekwaliteitspoorten via uniforme GitLab CI/CD-pipelines voor 86 repositories, verhoogde de codedekking naar 70–80% en verminderde regressiebugs met 30%.',
   'milestones.keyhorse.roles.mid-senior.highlight_4.label': 'Designsystemen & WCAG',

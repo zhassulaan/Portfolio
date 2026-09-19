@@ -35,7 +35,7 @@
     "social_email": "E-posta",
     "opens_new_tab_sr": "(yeni sekmede açılır)",
     "meta_1": "Vue / React / Nuxt / Next / TypeScript",
-    "meta_2": "Python / Django",
+    "meta_2": "Node.js / NestJS",
     "meta_3": "Performans / Mimari / Liderlik",
     "signal_top_label": "şu anki mod",
     "signal_top_value": "karmaşıklığı azalt",
@@ -190,7 +190,7 @@
     "skill_backend": "Backend & API'ler",
     "skill_mobile": "Mobil / PWA",
     "skill_tools": "DevOps ve Araçlar",
-    "profile_text_2": "Django (Python), Laravel (PHP) ve PostgreSQL/Elasticsearch ile kurumsal backend tasarımı tarafından desteklenen Vue/React ve TypeScript ekosistemlerinde derin uzmanlık. State-management şablon kodunu azaltmak, kalite kapılarını otomatikleştirmek ve time-to-market’i ~2 kat hızlandırmak için AI destekli geliştirme iş akışlarını (Cursor, Claude Code, Copilot) erken benimseyen biri.",
+    "profile_text_2": "Node.js, NestJS, Laravel, PostgreSQL, Redis ve Elasticsearch ile kurumsal backend tasarımı tarafından desteklenen Vue/React ve TypeScript ekosistemlerinde derin uzmanlık. State-management şablon kodunu azaltmak, kalite kapılarını otomatikleştirmek ve time-to-market’i ~2 kat hızlandırmak için AI destekli geliştirme iş akışlarını (Cursor, Claude Code, Copilot) erken benimseyen biri.",
     "role_selector_aria": "Rol aşamasını seçin",
     "skill_process": "Mühendislik Süreçleri",
     "skill_ai": "AI Destekli Geliştirme"

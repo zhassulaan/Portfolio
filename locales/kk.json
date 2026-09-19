@@ -35,7 +35,7 @@
     "social_email": "Email",
     "opens_new_tab_sr": "(жаңа қойындыда ашылады)",
     "meta_1": "Vue / React / Nuxt / Next / TypeScript",
-    "meta_2": "Python / Django",
+    "meta_2": "Node.js / NestJS",
     "meta_3": "Өнімділік / Архитектура / Көшбасшылық",
     "signal_top_label": "ағымдағы режим",
     "signal_top_value": "күрделілікті азайту",
@@ -190,7 +190,7 @@
     "skill_backend": "Backend және API",
     "skill_mobile": "Мобильді әзірлеу / PWA",
     "skill_tools": "DevOps және құралдар",
-    "profile_text_2": "Django (Python), Laravel (PHP) және PostgreSQL/Elasticsearch арқылы корпоративтік backend дизайнымен қуатталған Vue/React және TypeScript экожүйелерінде терең сараптама. Күй басқару стандартты кодын қысқарту, сапа қақпаларын автоматтандыру және time-to-market-ті ~2 есе жылдамдату үшін AI көмегімен дамыту жұмыс үрдістерін (Cursor, Claude Code, Copilot) ерте қабылдаған маман.",
+    "profile_text_2": "Node.js, NestJS, Laravel, PostgreSQL, Redis және Elasticsearch арқылы корпоративтік backend дизайнымен қуатталған Vue/React және TypeScript экожүйелерінде терең сараптама. Күй басқару стандартты кодын қысқарту, сапа қақпаларын автоматтандыру және time-to-market-ті ~2 есе жылдамдату үшін AI көмегімен дамыту жұмыс үрдістерін (Cursor, Claude Code, Copilot) ерте қабылдаған маман.",
     "role_selector_aria": "Рөл кезеңін таңдау",
     "skill_process": "Инженерлік процестер",
     "skill_ai": "AI көмегімен дамыту"

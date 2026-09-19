@@ -96,7 +96,7 @@ export const zh: Record<string, string> = {
   'milestones.keyhorse.roles.mid-senior.highlight_1.label': '前端架构',
   'milestones.keyhorse.roles.mid-senior.highlight_1.text': '设计了统一的 Vue 架构（100多个 FSD 组件），并记录在共享的 Storybook 组件库中以统一各团队的 UI 模式，将功能开发周期缩短50%。',
   'milestones.keyhorse.roles.mid-senior.highlight_2.label': '后端与数据设计',
-  'milestones.keyhorse.roles.mid-senior.highlight_2.text': '为大规模地理空间数据集开发了35多个 Django/PostgreSQL REST 接口，采用 Redis 缓存和优化的 PL/pgSQL 存储过程，在为前端集成生成类型安全 API 客户端的同时保持99.9%的生产环境正常运行时间。',
+  'milestones.keyhorse.roles.mid-senior.highlight_2.text': '为大规模地理空间数据集使用 Node.js、NestJS、PostgreSQL 和 Redis 开发了35多个 REST API，采用优化的 PL/pgSQL 存储过程和 Elasticsearch 集成，在为前端集成生成类型安全 API 客户端的同时保持99.9%的生产环境正常运行时间。',
   'milestones.keyhorse.roles.mid-senior.highlight_3.label': 'DevOps 与自动化',
   'milestones.keyhorse.roles.mid-senior.highlight_3.text': '设计了 Vitest、Playwright 和 Cypress 测试策略，并通过统一的 GitLab CI/CD 流水线在86个代码仓库中实施生产质量门禁，将代码覆盖率提升至70–80%，并将回归缺陷减少30%。',
   'milestones.keyhorse.roles.mid-senior.highlight_4.label': '设计系统与 WCAG',

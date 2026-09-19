@@ -98,7 +98,7 @@ export const de: Record<string, string> = {
   'milestones.keyhorse.roles.mid-senior.highlight_1.label': 'Frontend-Architektur',
   'milestones.keyhorse.roles.mid-senior.highlight_1.text': 'Entwarf eine gemeinsame Vue-Architektur (100+ FSD-Komponenten), dokumentiert in einer Storybook-Komponentenbibliothek zur Standardisierung von UI-Mustern teamübergreifend — verkürzte den Feature-Entwicklungszyklus um 50 %.',
   'milestones.keyhorse.roles.mid-senior.highlight_2.label': 'Backend & Datenmodellierung',
-  'milestones.keyhorse.roles.mid-senior.highlight_2.text': 'Entwickelte 35+ Django/PostgreSQL-REST-Endpunkte mit Redis-Caching und optimierten PL/pgSQL-Stored-Procedures für großangelegte Geodatensätze, hielt dabei 99,9 % Produktions-Uptime bei gleichzeitiger Generierung typsicherer API-Clients für die Frontend-Integration.',
+  'milestones.keyhorse.roles.mid-senior.highlight_2.text': 'Entwickelte 35+ REST-APIs mit Node.js, NestJS, PostgreSQL und Redis, mit optimierten PL/pgSQL-Stored-Procedures und Elasticsearch-Integration für großangelegte Geodatensätze, hielt dabei 99,9 % Produktions-Uptime bei gleichzeitiger Generierung typsicherer API-Clients für die Frontend-Integration.',
   'milestones.keyhorse.roles.mid-senior.highlight_3.label': 'DevOps & Automatisierung',
   'milestones.keyhorse.roles.mid-senior.highlight_3.text': 'Entwarf eine Vitest-, Playwright- und Cypress-Teststrategie und setzte Production-Quality-Gates über einheitliche GitLab-CI/CD-Pipelines in 86 Repositories durch, erhöhte die Codeabdeckung auf 70–80 % und senkte Regressionsfehler um 30 %.',
   'milestones.keyhorse.roles.mid-senior.highlight_4.label': 'Designsysteme & WCAG',

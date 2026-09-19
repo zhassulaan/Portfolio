@@ -96,7 +96,7 @@ export const tr: Record<string, string> = {
   'milestones.keyhorse.roles.mid-senior.highlight_1.label': 'Frontend Mimarisi',
   'milestones.keyhorse.roles.mid-senior.highlight_1.text': 'Ekipler arasında UI desenlerini standartlaştırmak için bir Storybook bileşen kütüphanesinde belgelenen, paylaşılan bir Vue mimarisi (100+ FSD bileşeni) tasarladım; bu, özellik geliştirme döngü süresini %50 azalttı.',
   'milestones.keyhorse.roles.mid-senior.highlight_2.label': 'Backend ve Veri Tasarımı',
-  'milestones.keyhorse.roles.mid-senior.highlight_2.text': 'Büyük ölçekli coğrafi veri kümeleri için Redis önbellekleme ve optimize edilmiş PL/pgSQL saklı yordamlarıyla 35+ Django/PostgreSQL REST endpoint’i geliştirdim; frontend entegrasyonu için tip güvenli API istemcileri üretirken %99,9 production çalışma süresini korudum.',
+  'milestones.keyhorse.roles.mid-senior.highlight_2.text': 'Büyük ölçekli coğrafi veri kümeleri için Node.js, NestJS, PostgreSQL ve Redis kullanarak, optimize edilmiş PL/pgSQL saklı yordamları ve Elasticsearch entegrasyonuyla 35+ REST API geliştirdim; frontend entegrasyonu için tip güvenli API istemcileri üretirken %99,9 production çalışma süresini korudum.',
   'milestones.keyhorse.roles.mid-senior.highlight_3.label': 'DevOps ve Otomasyon',
   'milestones.keyhorse.roles.mid-senior.highlight_3.text': 'Bir Vitest, Playwright ve Cypress test stratejisi tasarladım ve 86 repository genelinde birleşik GitLab CI/CD pipeline’ları aracılığıyla production kalite kapıları uyguladım; kod kapsamını %70–80’e çıkardım ve regresyon hatalarını %30 azalttım.',
   'milestones.keyhorse.roles.mid-senior.highlight_4.label': 'Tasarım Sistemleri ve WCAG',

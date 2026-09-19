@@ -139,7 +139,7 @@ export const case_studies: CaseStudy[] = [
 ];
 
 export const projects: Project[] = [
-  { id: 'geonomix', title: 'Geonomix', category: 'GIS & Platforms', image: geonomix_image, image_width: 1200, image_height: 652, description: 'A large-scale geospatial and digital-twin platform combining interactive maps, municipal data, digital registries, government services and monitoring tools across regional deployments.', stack: ['Vue.js', 'Vuex', 'Mapbox GL JS', 'Django', 'PostgreSQL', 'Elasticsearch'], href: 'https://iulytau.kz', note: 'Map-first product where data volume and reusable regional delivery shaped the frontend architecture.' },
+  { id: 'geonomix', title: 'Geonomix', category: 'GIS & Platforms', image: geonomix_image, image_width: 1200, image_height: 652, description: 'A large-scale geospatial and digital-twin platform combining interactive maps, municipal data, digital registries, government services and monitoring tools across regional deployments.', stack: ['Vue.js', 'Vuex', 'Mapbox GL JS', 'Node.js', 'PostgreSQL', 'Elasticsearch'], href: 'https://iulytau.kz', note: 'Map-first product where data volume and reusable regional delivery shaped the frontend architecture.' },
   { id: 'stroymarket', title: 'Stroymarket.kz', category: 'Marketplace', image: stroymarket_image, image_width: 1200, image_height: 672, description: 'A nationwide B2B marketplace connecting construction material suppliers, contractors, and equipment rental across Kazakhstan — live catalog and supplier search across 39 cities, an AI-powered project assistant, and a cost-estimation calculator for common build types.', stack: ['Vue.js', 'Nuxt.js'], href: 'https://stroymarket.kz', featured: true, note: 'Solo-built, from supplier/catalog discovery to an AI construction assistant and cost estimator.' },
   { id: 'kostyum', title: 'Kostyum.kz', category: 'E-commerce', image: kostyum_image, image_width: 1200, image_height: 618, description: 'A responsive men’s and women’s fashion e-commerce frontend — reusable product-catalog UI covering apparel, footwear, and accessories, with a focus on a smooth desktop and mobile shopping experience.', stack: ['Nuxt.js', 'Vue.js', 'SSR'], href: 'https://kostyum.kz', featured: true },
   { id: 'midas-event', title: 'Midas Event', category: 'Corporate', image: midas_event_image, image_width: 1200, image_height: 749, description: 'An event-agency site built as a browsable portfolio of past events rather than a static services list, with React-driven interactive detail throughout.', stack: ['React', 'JavaScript', 'CSS'], href: 'https://midasevent.kz', featured: true },
@@ -181,7 +181,7 @@ export const surfaces: Surface[] = [{
   index: 'D',
   title: 'End-to-end product delivery',
   text: 'Frontend-first engineering with enough backend depth to own APIs, integration boundaries and production behavior.',
-  tags: ['Django', 'Python', 'PostgreSQL', 'REST APIs'],
+  tags: ['Node.js', 'NestJS', 'PostgreSQL', 'REST APIs'],
   variant: 'pulse',
 }];
 
@@ -265,7 +265,7 @@ export const milestones: Milestone[] = [{
       text: 'Designed a shared Vue architecture (100+ FSD components), documented in a Storybook component library to standardize UI patterns across teams, reducing feature development cycle time by 50%.',
     }, {
       label: 'Backend & Data Design',
-      text: 'Engineered 35+ Django/PostgreSQL REST endpoints with Redis caching and optimized PL/pgSQL stored procedures for large-scale geospatial datasets, maintaining 99.9% production uptime while generating type-safe API clients for frontend integration.',
+      text: 'Engineered 35+ REST APIs using Node.js, NestJS, PostgreSQL, and Redis, with optimized PL/pgSQL stored procedures and Elasticsearch integration for large-scale geospatial datasets, maintaining 99.9% production uptime while generating type-safe API clients for frontend integration.',
     }, {
       label: 'DevOps & Automation',
       text: 'Designed a Vitest, Playwright, and Cypress testing strategy and enforced production quality gates via unified GitLab CI/CD pipelines across 86 repositories, lifting code coverage to 70–80% and cutting regression bugs by 30%.',

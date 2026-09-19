@@ -101,7 +101,7 @@ export const kk: Record<string, string> = {
   'milestones.keyhorse.roles.mid-senior.highlight_1.label': 'Frontend архитектурасы',
   'milestones.keyhorse.roles.mid-senior.highlight_1.text': 'Командалар арасында UI үлгілерін стандарттау үшін ортақ Storybook компонент кітапханасында құжатталған ортақ Vue архитектурасын (100+ FSD компоненті) жобаладым — бұл функцияларды дамыту циклінің уақытын 50%-ға қысқартты.',
   'milestones.keyhorse.roles.mid-senior.highlight_2.label': 'Backend және деректер дизайны',
-  'milestones.keyhorse.roles.mid-senior.highlight_2.text': 'Ірі геокеңістіктік деректер жиынтықтары үшін Redis кэштеуі мен оңтайландырылған PL/pgSQL сақталған процедуралары бар 35+ Django/PostgreSQL REST endpoint-терін әзірледім, frontend интеграциясы үшін типі қауіпсіз API клиенттерін генерациялай отырып, 99,9% production жұмыс уақытын сақтадым.',
+  'milestones.keyhorse.roles.mid-senior.highlight_2.text': 'Ірі геокеңістіктік деректер жиынтықтары үшін Node.js, NestJS, PostgreSQL және Redis көмегімен, оңтайландырылған PL/pgSQL сақталған процедуралары мен Elasticsearch интеграциясы бар 35+ REST API әзірледім, frontend интеграциясы үшін типі қауіпсіз API клиенттерін генерациялай отырып, 99,9% production жұмыс уақытын сақтадым.',
   'milestones.keyhorse.roles.mid-senior.highlight_3.label': 'DevOps және автоматтандыру',
   'milestones.keyhorse.roles.mid-senior.highlight_3.text': 'Vitest, Playwright және Cypress тестілеу стратегиясын жобаладым және 86 репозиторий бойынша біріктірілген GitLab CI/CD pipeline-дары арқылы production сапа қақпаларын енгіздім, код қамтуын 70–80%-ға көтердім және регрессиялық қателерді 30%-ға азайттым.',
   'milestones.keyhorse.roles.mid-senior.highlight_4.label': 'Дизайн жүйелері және WCAG',

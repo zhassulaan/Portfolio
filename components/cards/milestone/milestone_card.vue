@@ -23,7 +23,9 @@ const has_detail = computed(() => !!(props.milestone.highlights?.length || props
     <div class='milestone_card__head'>
       <img v-if='milestone.logo'
         :src='milestone.logo'
-        :alt="`${milestone.company} logo`">
+        :alt="`${milestone.company} logo`"
+        width='64'
+        height='64'>
       <div>
         <h3 v-text='milestone.company'></h3>
         <small v-text='milestone.period'></small>

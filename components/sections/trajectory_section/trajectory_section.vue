@@ -24,7 +24,10 @@ const local_path = useLocalePath();
         v-reveal>
         <div class='trajectory_section__company_head'>
           <span v-text='`0${index + 1}`'></span>
-          <img :src="item.logo" :alt="`${item.company} logo`">
+          <img :src="item.logo"
+            :alt="`${item.company} logo`"
+            width='200'
+            height='80'>
         </div>
 
         <div class='trajectory_section__company_body'>
@@ -54,7 +57,9 @@ const local_path = useLocalePath();
           v-reveal>
           <img v-if='item.logo'
             :src="item.logo"
-            :alt="`${item.label} logo`">
+            :alt="`${item.label} logo`"
+            width='140'
+            height='68'>
           <span v-text="tx(`proof_items.${index}.label`, item.label)"></span>
           <strong v-text="tx(`proof_items.${index}.value`, item.value)"></strong>
           <p v-text="tx(`proof_items.${index}.note`, item.note)"></p>

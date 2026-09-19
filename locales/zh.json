@@ -35,7 +35,7 @@
     "social_email": "邮箱",
     "opens_new_tab_sr": "（在新标签页中打开）",
     "meta_1": "Vue / React / Nuxt / Next / TypeScript",
-    "meta_2": "Python / Django",
+    "meta_2": "Node.js / NestJS",
     "meta_3": "性能优化 / 架构 / 技术领导力",
     "signal_top_label": "当前模式",
     "signal_top_value": "降低复杂度",
@@ -190,7 +190,7 @@
     "skill_backend": "后端与 API",
     "skill_mobile": "移动端 / PWA",
     "skill_tools": "DevOps 与工具",
-    "profile_text_2": "在 Vue/React 与 TypeScript 生态系统方面拥有深厚专业知识，并以 Django（Python）、Laravel（PHP）和 PostgreSQL/Elasticsearch 支撑企业级后端设计。较早采用 AI 辅助开发工作流（Cursor、Claude Code、Copilot），以减少状态管理样板代码、自动化质量门禁，并将上市时间缩短约2倍。",
+    "profile_text_2": "在 Vue/React 与 TypeScript 生态系统方面拥有深厚专业知识，并以 Node.js、NestJS、Laravel、PostgreSQL、Redis 和 Elasticsearch 支撑企业级后端设计。较早采用 AI 辅助开发工作流（Cursor、Claude Code、Copilot），以减少状态管理样板代码、自动化质量门禁，并将上市时间缩短约2倍。",
     "role_selector_aria": "选择角色阶段",
     "skill_process": "工程流程",
     "skill_ai": "AI 辅助开发"

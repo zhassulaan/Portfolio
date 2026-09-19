@@ -35,7 +35,7 @@
     "social_email": "E-Mail",
     "opens_new_tab_sr": "(öffnet in einem neuen Tab)",
     "meta_1": "Vue / React / Nuxt / Next / TypeScript",
-    "meta_2": "Python / Django",
+    "meta_2": "Node.js / NestJS",
     "meta_3": "Performance / Architektur / Führung",
     "signal_top_label": "aktueller Modus",
     "signal_top_value": "Komplexität reduzieren",
@@ -190,7 +190,7 @@
     "skill_backend": "Backend & APIs",
     "skill_mobile": "Mobile / PWA",
     "skill_tools": "DevOps & Tools",
-    "profile_text_2": "Tiefgehende Expertise in den Vue/React- und TypeScript-Ökosystemen, unterstützt durch Enterprise-Backend-Design mit Django (Python), Laravel (PHP) und PostgreSQL/Elasticsearch. Früher Anwender KI-gestützter Entwicklungsworkflows (Cursor, Claude Code, Copilot), um State-Management-Boilerplate zu reduzieren, Quality Gates zu automatisieren und die Time-to-Market um ~das Doppelte zu verkürzen.",
+    "profile_text_2": "Tiefgehende Expertise in den Vue/React- und TypeScript-Ökosystemen, unterstützt durch Enterprise-Backend-Design mit Node.js, NestJS, Laravel, PostgreSQL, Redis und Elasticsearch. Früher Anwender KI-gestützter Entwicklungsworkflows (Cursor, Claude Code, Copilot), um State-Management-Boilerplate zu reduzieren, Quality Gates zu automatisieren und die Time-to-Market um ~das Doppelte zu verkürzen.",
     "role_selector_aria": "Rollenphase auswählen",
     "skill_process": "Engineering-Prozesse",
     "skill_ai": "KI-gestützte Entwicklung"

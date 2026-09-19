@@ -98,7 +98,7 @@ export const ru: Record<string, string> = {
   'milestones.keyhorse.roles.mid-senior.highlight_1.label': 'Фронтенд-архитектура',
   'milestones.keyhorse.roles.mid-senior.highlight_1.text': 'Спроектировал единую Vue-архитектуру (100+ FSD-компонентов), задокументированную в общей библиотеке компонентов Storybook для стандартизации UI-паттернов между командами, сократив цикл разработки фич на 50%.',
   'milestones.keyhorse.roles.mid-senior.highlight_2.label': 'Backend и проектирование данных',
-  'milestones.keyhorse.roles.mid-senior.highlight_2.text': 'Разработал 35+ REST-эндпоинтов на Django/PostgreSQL с кэшированием на Redis и оптимизированными хранимыми процедурами PL/pgSQL для крупных геопространственных датасетов, поддерживая 99,9% продакшн-аптайма при генерации типобезопасных API-клиентов для фронтенд-интеграции.',
+  'milestones.keyhorse.roles.mid-senior.highlight_2.text': 'Разработал 35+ REST API на Node.js, NestJS, PostgreSQL и Redis, с оптимизированными хранимыми процедурами PL/pgSQL и интеграцией Elasticsearch для крупных геопространственных датасетов, поддерживая 99,9% продакшн-аптайма при генерации типобезопасных API-клиентов для фронтенд-интеграции.',
   'milestones.keyhorse.roles.mid-senior.highlight_3.label': 'DevOps и автоматизация',
   'milestones.keyhorse.roles.mid-senior.highlight_3.text': 'Спроектировал стратегию тестирования на Vitest, Playwright и Cypress и внедрил production quality gates через единые GitLab CI/CD пайплайны для 86 репозиториев, подняв покрытие кода до 70–80% и снизив число регрессионных багов на 30%.',
   'milestones.keyhorse.roles.mid-senior.highlight_4.label': 'Дизайн-системы и WCAG',

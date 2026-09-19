@@ -22,7 +22,6 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.5.1",
     "@nuxtjs/i18n": "^9.0.0",
     "@pinia/nuxt": "^1.0.2",
     "nuxt": "^3.10.3",
