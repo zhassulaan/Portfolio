@@ -1,1 +1,0 @@
-import{_ as e}from"./RC6Q70xs.js";import{e as s,Q as t,K as n,i as a,g as r,o as u}from"./Cw1cFQLL.js";import"./D0ICSYaP.js";const g=s({__name:"[slug]",setup(c){const o=t().params.slug;return n(()=>{window.scrollTo({top:0,left:0,behavior:"instant"})}),(l,p)=>(u(),a(e,{kind:"certificate",slug:r(o)},null,8,["slug"]))}});export{g as default};
