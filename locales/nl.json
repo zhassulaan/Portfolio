@@ -163,7 +163,7 @@
     "title": "Alles op deze pagina,<br />als één PDF.",
     "intro": "Dezelfde ervaring, vaardigheden en bewijzen als de rest van dit notitieboek, samengevoegd tot één document — voor sollicitatiesystemen, e-mailbijlagen of afdrukken.",
     "profile_heading": "Loopbaanprofiel",
-    "profile_text": "Senior Software Engineer met 6+ jaar commerciële ervaring in het ontwerpen, schalen en opleveren van 100+ hoogperformante webapplicaties en data-intensieve platforms (GIS/digital twin, fintech, e-commerce) voor 1 miljoen+ gebruikers. Bewezen staat van dienst in cross-domain technisch leiderschap, het begeleiden van teams tot 18 developers en volledige SDLC-verantwoordelijkheid.",
+    "profile_text": "Senior Software Engineer met 6+ jaar commerciële ervaring in het ontwerpen, schalen en opleveren van 100+ hoogperformante webapplicaties en data-intensieve platforms op het gebied van GIS/digital twin, fintech en e-commerce voor 1 miljoen+ gebruikers. Bewezen staat van dienst in technisch leiderschap, het leiden en begeleiden van teams tot 18 engineers en volledige SDLC-verantwoordelijkheid.",
     "achievements_heading": "Belangrijkste prestaties",
     "achievement_1": "Ontwierp een meerlaagse caching- en invalidatiestrategie voor 10+ platforms, verminderde overbodig API-verkeer met 50% en verlaagde cloud-infrastructuurkosten met naar schatting 20%. (Ciklum)",
     "achievement_2": "Stelde uniforme frontend-engineeringstandaarden op — richtlijnen voor codereview en patronen voor componentarchitectuur — toegepast in 2 bedrijven en 100+ productieprojecten, waardoor nieuwe engineers 40% sneller productief werden.",
@@ -190,7 +190,7 @@
     "skill_backend": "Backend & API's",
     "skill_mobile": "Mobile / PWA",
     "skill_tools": "DevOps & Tooling",
-    "profile_text_2": "Diepgaande expertise in de Vue/React- en TypeScript-ecosystemen, ondersteund door enterprise backend-ontwerp met Node.js, NestJS, Laravel, PostgreSQL, Redis en Elasticsearch. Vroege gebruiker van AI-ondersteunde ontwikkelworkflows (Cursor, Claude Code, Copilot) om state-management boilerplate te verminderen, kwaliteitspoorten te automatiseren en de time-to-market ~2x te verkorten.",
+    "profile_text_2": "Diepgaande expertise in React, Next.js en TypeScript, ondersteund door production backend-ontwikkeling met Node.js, NestJS, PostgreSQL en MongoDB. Integreerde AI-ondersteunde ontwikkelworkflows met Cursor, Claude Code en GitHub Copilot, automatiseerde kwaliteitspoorten en terugkerende engineeringtaken om de time-to-market ~2x te verkorten.",
     "role_selector_aria": "Rolfase selecteren",
     "skill_process": "Engineering-processen",
     "skill_ai": "AI-ondersteunde ontwikkeling"

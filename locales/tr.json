@@ -163,7 +163,7 @@
     "title": "Bu sayfadaki her şey<br />tek bir PDF olarak.",
     "intro": "Bu defterin geri kalanındaki aynı deneyim, beceriler ve kanıtlar tek bir belgede — başvuru takip sistemleri, e-posta ekleri veya baskı için.",
     "profile_heading": "Kariyer profili",
-    "profile_text": "6+ yıllık ticari deneyime sahip, GIS/dijital ikiz, fintech ve e-ticaret alanlarında 1M+ kullanıcıya hizmet veren 100+ yüksek performanslı web uygulaması ve veri yoğun platform tasarlayan, ölçeklendiren ve teslim eden bir Senior Software Engineer. Alanlar arası teknik liderlik, 18 kişiye kadar geliştirici ekiplerine mentorluk ve tam SDLC sorumluluğunda kanıtlanmış bir geçmişe sahip.",
+    "profile_text": "6+ yıllık ticari deneyime sahip, GIS/dijital ikiz, fintech ve e-ticaret alanlarında 1M+ kullanıcıya hizmet veren 100+ yüksek performanslı web uygulaması ve veri yoğun platform tasarlayan, ölçeklendiren ve teslim eden bir Senior Software Engineer. Teknik liderlik, 18 mühendise kadar ekiplere liderlik ve mentorluk, tam SDLC sorumluluğunda kanıtlanmış bir geçmişe sahip.",
     "achievements_heading": "Öne çıkan başarılar",
     "achievement_1": "10+ platform genelinde çok katmanlı bir önbellekleme ve geçersiz kılma stratejisi tasarladım; gereksiz API trafiğini %50 azalttım ve bulut altyapı maliyetlerini tahmini %20 düşürdüm. (Ciklum)",
     "achievement_2": "Kod inceleme kuralları ve bileşen mimarisi desenlerinden oluşan, 2 şirkette ve 100+ production projesinde benimsenen birleşik frontend mühendislik standartları oluşturdum; yeni mühendislerin verimliliğe ulaşma süresini %40 hızlandırdım.",
@@ -190,7 +190,7 @@
     "skill_backend": "Backend & API'ler",
     "skill_mobile": "Mobil / PWA",
     "skill_tools": "DevOps ve Araçlar",
-    "profile_text_2": "Node.js, NestJS, Laravel, PostgreSQL, Redis ve Elasticsearch ile kurumsal backend tasarımı tarafından desteklenen Vue/React ve TypeScript ekosistemlerinde derin uzmanlık. State-management şablon kodunu azaltmak, kalite kapılarını otomatikleştirmek ve time-to-market’i ~2 kat hızlandırmak için AI destekli geliştirme iş akışlarını (Cursor, Claude Code, Copilot) erken benimseyen biri.",
+    "profile_text_2": "React, Next.js ve TypeScript'te derin uzmanlık; Node.js, NestJS, PostgreSQL ve MongoDB ile production backend geliştirme tarafından destekleniyor. Cursor, Claude Code ve GitHub Copilot ile AI destekli geliştirme iş akışlarını entegre ederek kalite kapılarını ve tekrarlayan mühendislik görevlerini otomatikleştirdim, time-to-market'i ~2 kat hızlandırdım.",
     "role_selector_aria": "Rol aşamasını seçin",
     "skill_process": "Mühendislik Süreçleri",
     "skill_ai": "AI Destekli Geliştirme"

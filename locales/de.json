@@ -163,7 +163,7 @@
     "title": "Alles auf dieser Seite,<br />als eine PDF-Datei.",
     "intro": "Dieselbe Erfahrung, Fähigkeiten und Nachweise wie im übrigen Notizbuch, als ein einziges Dokument — für Bewerbungssysteme, E-Mail-Anhänge oder den Druck.",
     "profile_heading": "Karriereprofil",
-    "profile_text": "Senior Software Engineer mit 6+ Jahren kommerzieller Erfahrung in der Konzeption, Skalierung und Bereitstellung von 100+ hochperformanten Webanwendungen und datenintensiven Plattformen (GIS/Digital Twin, Fintech, E-Commerce) für 1 Mio.+ Nutzer. Nachweisliche Erfolgsbilanz in bereichsübergreifender technischer Führung, Mentoring von Teams mit bis zu 18 Entwicklern und voller SDLC-Verantwortung.",
+    "profile_text": "Senior Software Engineer mit 6+ Jahren kommerzieller Erfahrung in der Konzeption, Skalierung und Bereitstellung von 100+ hochperformanten Webanwendungen und datenintensiven Plattformen in den Bereichen GIS/Digital Twin, Fintech und E-Commerce für 1 Mio.+ Nutzer. Nachweisliche Erfolgsbilanz in technischer Führung, Leitung und Mentoring von Teams mit bis zu 18 Ingenieuren sowie voller SDLC-Verantwortung.",
     "achievements_heading": "Wichtigste Erfolge",
     "achievement_1": "Entwarf eine mehrschichtige Caching- und Invalidierungsstrategie für 10+ Plattformen, reduzierte redundanten API-Traffic um 50 % und senkte die Cloud-Infrastrukturkosten um geschätzte 20 %. (Ciklum)",
     "achievement_2": "Verfasste einheitliche Frontend-Engineering-Standards — Code-Review-Richtlinien und Komponentenarchitektur-Muster — die in 2 Unternehmen und 100+ Produktionsprojekten übernommen wurden und die Time-to-Productivity neuer Ingenieure um 40 % beschleunigten.",
@@ -190,7 +190,7 @@
     "skill_backend": "Backend & APIs",
     "skill_mobile": "Mobile / PWA",
     "skill_tools": "DevOps & Tools",
-    "profile_text_2": "Tiefgehende Expertise in den Vue/React- und TypeScript-Ökosystemen, unterstützt durch Enterprise-Backend-Design mit Node.js, NestJS, Laravel, PostgreSQL, Redis und Elasticsearch. Früher Anwender KI-gestützter Entwicklungsworkflows (Cursor, Claude Code, Copilot), um State-Management-Boilerplate zu reduzieren, Quality Gates zu automatisieren und die Time-to-Market um ~das Doppelte zu verkürzen.",
+    "profile_text_2": "Tiefgehende Expertise in React, Next.js und TypeScript, unterstützt durch Production-Backend-Entwicklung mit Node.js, NestJS, PostgreSQL und MongoDB. Integration KI-gestützter Entwicklungsworkflows mit Cursor, Claude Code und GitHub Copilot, Automatisierung von Quality Gates und wiederkehrenden Engineering-Aufgaben zur Verkürzung der Time-to-Market um ~das Doppelte.",
     "role_selector_aria": "Rollenphase auswählen",
     "skill_process": "Engineering-Prozesse",
     "skill_ai": "KI-gestützte Entwicklung"
