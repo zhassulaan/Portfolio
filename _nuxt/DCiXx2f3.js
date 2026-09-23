@@ -1,0 +1,1 @@
+import{_ as s}from"./Ds8Lxs5A.js";import{d as e,Q as t,K as n,h as a,u as r,o as u}from"./eAsy6mzC.js";import"./2ZdTcq74.js";const d=e({__name:"[slug]",setup(c){const o=t().params.slug;return n(()=>{window.scrollTo({top:0,left:0,behavior:"instant"})}),(m,i)=>(u(),a(s,{kind:"recommendation",slug:r(o)},null,8,["slug"]))}});export{d as default};
