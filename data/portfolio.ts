@@ -109,7 +109,7 @@ export const case_studies: CaseStudy[] = [
     kicker: 'Geospatial performance',
     title: 'Half a million map objects should still feel interactive.',
     problem: 'Dense GIS interfaces had to render and manipulate datasets containing roughly 300K–500K geospatial objects without making the first interaction feel delayed.',
-    solution: 'Restructured layers and styles, introduced clustering and client-side filtering, and tightened the Vuex-to-Elasticsearch data path to eliminate repeated work.',
+    solution: 'Restructured layers and styles, introduced clustering and client-side filtering, and tightened the data path between the React state layer and Elasticsearch to eliminate repeated work.',
     result: 'Initial Mapbox GL JS rendering dropped from about 800ms to 480ms, with a 30% improvement in geospatial search response time from separate algorithm work.',
     metrics: [{
       value: '800 → 480ms',
@@ -118,14 +118,14 @@ export const case_studies: CaseStudy[] = [
       value: '300K–500K',
       label: 'geospatial objects',
     }],
-    stack: ['Vue.js', 'Mapbox GL JS', 'Vuex', 'Elasticsearch', 'Performance Profiling'],
+    stack: ['React', 'Mapbox GL JS', 'Redux', 'Elasticsearch', 'Performance Profiling'],
   }, {
     index: '04',
     company: 'KeyHorse',
     kicker: 'Reusable delivery systems',
     title: 'Build the next regional product by configuring, not copying.',
     problem: 'Dozens of regional GIS products shared recurring UI and data patterns, but repeated implementations made delivery slower and consistency expensive.',
-    solution: 'Created a centralized architecture with 100+ reusable Vue components and shared modules, then standardized BEM, theming, role-aware patterns, linting and test practices around it.',
+    solution: 'Created a centralized React architecture using Feature-Sliced Design, with 100+ reusable components documented in Storybook, then standardized TypeScript, theming, role-aware patterns, linting and test practices around it.',
     result: 'Similar implementation work dropped by up to 50%; some launches that previously took about a month could be completed in roughly a week.',
     metrics: [{
       value: '100+',
@@ -134,12 +134,12 @@ export const case_studies: CaseStudy[] = [
       value: '1 month → 1 week',
       label: 'similar implementations',
     }],
-    stack: ['Vue.js', 'TypeScript', 'BEM', 'Vitest', 'Playwright', 'GitLab CI/CD'],
+    stack: ['React', 'TypeScript', 'Feature-Sliced Design', 'Storybook', 'Vitest', 'Playwright'],
   },
 ];
 
 export const projects: Project[] = [
-  { id: 'geonomix', title: 'Geonomix', category: 'GIS & Platforms', image: geonomix_image, image_width: 1200, image_height: 652, description: 'A large-scale geospatial and digital-twin platform combining interactive maps, municipal data, digital registries, government services and monitoring tools across regional deployments.', stack: ['Vue.js', 'Vuex', 'Mapbox GL JS', 'Node.js', 'PostgreSQL', 'Elasticsearch'], href: 'https://iulytau.kz', note: 'Map-first product where data volume and reusable regional delivery shaped the frontend architecture.' },
+  { id: 'geonomix', title: 'Geonomix', category: 'GIS & Platforms', image: geonomix_image, image_width: 1200, image_height: 652, description: 'A large-scale geospatial and digital-twin platform combining interactive maps, municipal data, digital registries, government services and monitoring tools across regional deployments.', stack: ['React', 'Mapbox GL JS', 'Node.js', 'NestJS', 'PostgreSQL', 'Elasticsearch'], href: 'https://iulytau.kz', note: 'Map-first product where data volume and reusable regional delivery shaped the frontend architecture.' },
   { id: 'stroymarket', title: 'Stroymarket.kz', category: 'Marketplace', image: stroymarket_image, image_width: 1200, image_height: 672, description: 'A nationwide B2B marketplace connecting construction material suppliers, contractors, and equipment rental across Kazakhstan — live catalog and supplier search across 39 cities, an AI-powered project assistant, and a cost-estimation calculator for common build types.', stack: ['Vue.js', 'Nuxt.js'], href: 'https://stroymarket.kz', featured: true, note: 'Solo-built, from supplier/catalog discovery to an AI construction assistant and cost estimator.' },
   { id: 'kostyum', title: 'Kostyum.kz', category: 'E-commerce', image: kostyum_image, image_width: 1200, image_height: 618, description: 'A responsive men’s and women’s fashion e-commerce frontend — reusable product-catalog UI covering apparel, footwear, and accessories, with a focus on a smooth desktop and mobile shopping experience.', stack: ['Nuxt.js', 'Vue.js', 'SSR'], href: 'https://kostyum.kz', featured: true },
   { id: 'midas-event', title: 'Midas Event', category: 'Corporate', image: midas_event_image, image_width: 1200, image_height: 749, description: 'An event-agency site built as a browsable portfolio of past events rather than a static services list, with React-driven interactive detail throughout.', stack: ['React', 'JavaScript', 'CSS'], href: 'https://midasevent.kz', featured: true },
@@ -214,19 +214,19 @@ export const milestones: Milestone[] = [{
   summary: 'UK-based global digital product and enterprise software transformation leader.',
   highlights: [{
     label: 'Architecture',
-    text: 'Established a shared Vue 3/strict TypeScript component library and type-safe REST/GraphQL API layer across 10+ modules serving 1–3M users, built to WCAG AA standards — cutting feature implementation time by ~30%.',
+    text: 'Established a shared React/Next.js component library (strict TypeScript, WCAG AA) plus a type-safe REST/GraphQL API layer across 10+ production modules serving 1–3M users — cut feature implementation time by ~30%.',
   }, {
-    label: 'Technical Leadership',
-    text: 'Led frontend architectural decisions, driving sprint planning and backlog refinement for a team of 6 engineers; conducted ~15 GitLab merge-request reviews per week, lowering post-merge defects by 35%.',
+    label: 'Modernization',
+    text: 'Modernized legacy React/Next.js codebases incrementally, migrating from Pages Router to App Router and Server Components and converting JavaScript modules to strict TypeScript without disrupting ongoing releases.',
   }, {
     label: 'Performance & Core Web Vitals',
-    text: 'Optimized rendering, caching, and network request patterns across high-traffic modules, reducing interaction latency (INP) from ~280ms to ~150ms and dropping duplicate API calls by 40%.',
+    text: 'Profiled and optimized rendering, hydration, and interaction-heavy user flows across high-traffic modules, reducing Interaction to Next Paint (INP) from ~280ms to ~150ms.',
   }, {
-    label: 'Modernization & Reliability',
-    text: 'Modernized legacy Vue 2 codebases to Vue 3, Composition API, Pinia, and Vite, shrinking bundle size by 20%; strengthened reliability via Vitest/Jest testing, Sentry monitoring, and CI/CD workflows.',
+    label: 'Technical Leadership',
+    text: 'Drove frontend architecture and technical planning for a team of 6 engineers and reviewed ~15 GitLab merge requests per week — improved review practices helped reduce post-merge defects by 35%.',
   }, {
-    label: 'Tooling, Mobile & AI',
-    text: 'Structured codebases using Feature-Sliced Design and TanStack Query, trimming boilerplate by ~25%; extended the design system to an Ionic/Capacitor mobile app and deployed AI-assisted dev tooling (Cursor, Claude Code).',
+    label: 'Production Reliability',
+    text: 'Expanded unit, integration, and end-to-end test coverage for critical user flows and API integrations, added type-check and lint gates to CI/CD, and set up Sentry monitoring to catch regressions before and after deployment.',
   }],
 }, {
   id: 'keyhorse',
@@ -244,13 +244,13 @@ export const milestones: Milestone[] = [{
     role: 'Team Lead Software Engineer',
     highlights: [{
       label: 'Engineering Leadership',
-      text: 'Directed an engineering department of 18 developers across 3 sub-teams, leading the shift to Scrum and setting technical direction to deliver 80+ large-scale regional projects and 100+ smaller digital-twin deployments, serving 1.5M+ active users across 4 countries.',
+      text: 'Led 18 engineers across 3 teams, setting technical direction for 80+ large-scale regional GIS platforms and 100+ smaller digital-twin deployments serving 1.5M+ users across 4 countries.',
     }, {
       label: 'Solo Product Delivery',
-      text: 'Independently architected and launched 10 enterprise platforms from scratch in 1–1.5 months each, cutting time-to-market by ~2x versus the company\'s historical average.',
+      text: 'Independently architected and launched 10 enterprise platforms from scratch, typically taking each from initial requirements to production in 1–1.5 months — roughly 2x faster than the company\'s previous delivery cycle.',
     }, {
-      label: 'Process & Governance',
-      text: 'Led sprint planning, estimation, and technical documentation, conducting ~50 code reviews per week and establishing documentation standards that cut new-hire onboarding time by 40%.',
+      label: 'Engineering Process',
+      text: 'Introduced Scrum across 3 teams and established shared planning, estimation, code review, and documentation practices, reviewing ~50 merge requests per week and reducing new-hire onboarding time by 40%.',
     }],
   }, {
     id: 'mid-senior',
@@ -258,45 +258,45 @@ export const milestones: Milestone[] = [{
     period: 'Jul 2021 — Sep 2023',
     role: 'Middle → Senior Software Engineer',
     highlights: [{
-      label: 'Geospatial Performance',
-      text: 'Reduced Mapbox GL JS rendering time by 40% (800ms → 480ms) and restructured Elasticsearch indexing/query patterns with memoized Vuex getters to cut search latency by 30% across 500K+ geo-objects.',
-    }, {
       label: 'Frontend Architecture',
-      text: 'Designed a shared Vue architecture (100+ FSD components), documented in a Storybook component library to standardize UI patterns across teams, reducing feature development cycle time by 50%.',
+      text: 'Built a shared React architecture using Feature-Sliced Design, with 100+ reusable components documented in Storybook, standardizing UI development across regional projects and cutting feature implementation time by 50%.',
     }, {
-      label: 'Backend & Data Design',
-      text: 'Engineered 35+ REST APIs using Node.js, NestJS, PostgreSQL, and Redis, with optimized PL/pgSQL stored procedures and Elasticsearch integration for large-scale geospatial datasets, maintaining 99.9% production uptime while generating type-safe API clients for frontend integration.',
+      label: 'Geospatial Performance',
+      text: 'Optimized Mapbox GL JS rendering and Elasticsearch indexing/query patterns across 500K+ geospatial objects, reducing map render time by 40% (800ms → 480ms) and search latency by 30%.',
     }, {
-      label: 'DevOps & Automation',
-      text: 'Designed a Vitest, Playwright, and Cypress testing strategy and enforced production quality gates via unified GitLab CI/CD pipelines across 86 repositories, lifting code coverage to 70–80% and cutting regression bugs by 30%.',
+      label: 'Backend & Data',
+      text: 'Designed and built 35+ REST APIs with Node.js and NestJS for data-intensive GIS platforms, working with PostgreSQL, MongoDB, and Redis for persistence and caching. Generated type-safe TypeScript clients from OpenAPI contracts to keep frontend and backend integrations in sync.',
     }, {
-      label: 'Design Systems & WCAG',
-      text: 'Authored a CSS framework using design tokens, SCSS, and BEM methodologies built to WCAG AA standards, slashing UI implementation time from ~3 days down to ~4 hours.',
+      label: 'Event-Driven Architecture',
+      text: 'Moved long-running GIS processing from synchronous API flows to Kafka consumers and background workers, with retries and idempotency to handle failures safely. Used WebSockets to send processing updates back to clients.',
+    }, {
+      label: 'Quality & Observability',
+      text: 'Set up shared testing with Vitest, Playwright, and Cypress across 86 repositories, with automated checks running through GitLab CI/CD. Used Grafana dashboards and alerts to monitor production after deployment — critical-path coverage reached 70–80%, while regression bugs dropped by 30%.',
     }],
   }],
 }, {
-    id: 'dar',
+  id: 'dar',
   period: 'Jun 2020 — Jul 2021',
   company: 'DAR',
   role: 'Junior Software Engineer',
   focus: 'High-volume web delivery · e-commerce · mobile · performance',
   logo: dar_logo,
-  summary: 'Technology group developing digital products and platforms across fintech, education, sports, and business operations.',
+  summary: 'Technology group developing digital products and platforms across fintech, education, hospitality, and business operations.',
   highlights: [{
-    label: 'Production Architecture',
-    text: 'Delivered 30+ multi-page production applications (8+ pages each) while managing up to 3–4 concurrent projects, cutting delivery time by 25% (5–10 days/cycle) through a reusable Vue/React component library (34 components, BEM architecture).',
+    label: 'Project Delivery',
+    text: 'Delivered nearly 20 web applications with React and Vue, often working across 3–4 projects in parallel and taking features from requirements through production.',
   }, {
-    label: 'Platform Delivery',
-    text: 'Independently architected and shipped two full-scale platforms — food delivery and accommodation booking — in ~1 month each, including GSAP-powered animations, supporting 150–200 restaurants across 3 cities and 100–150 property listings.',
+    label: 'End-to-End Ownership',
+    text: 'Independently architected and shipped food-delivery and accommodation-booking platforms in ~1 month each, supporting 150–200 restaurants across 3 cities and 1,000+ property listings.',
   }, {
-    label: 'Performance & SEO',
-    text: 'Cut page load times by 40% (to 1.8–2.2s) via SSR, code splitting, lazy loading, and bundle optimization, achieving 100/100 Lighthouse SEO scores across most projects.',
+    label: 'Web Performance',
+    text: 'Improved frontend performance through bundle optimization, lazy loading, and rendering improvements, reducing page load times by up to 40% (to 1.8–2.2s) on selected applications.',
   }, {
     label: 'Cross-Platform Development',
-    text: 'Shipped 5–7 production mobile apps (iOS/Android) via Ionic, Capacitor, and React Native, sharing 40–50% of code across platforms.',
+    text: 'Built and released 5–7 production mobile applications for iOS and Android using Ionic, Capacitor, and React Native, sharing business logic and API integrations across platforms where practical.',
   }, {
-    label: 'Backend & APIs',
-    text: 'Built and maintained Laravel/MySQL REST backends — API design, database schema, and authentication — for 6 of these applications, handling 15K+ requests/day.',
+    label: 'Full-Stack Development',
+    text: 'Built FastAPI/MySQL backends for 6 production applications, owning REST API design, database schemas, authentication, and frontend integration.',
   }],
 }, {
   id: 'epam',
@@ -308,25 +308,37 @@ export const milestones: Milestone[] = [{
   summary: 'Global IT consulting and digital engineering company.',
   highlights: [{
     label: 'Competitive Selection',
-    text: 'Selected as 1 of 3 engineering hires from 40+ applicants in a competitive technical hiring process.',
+    text: 'Selected as 1 of 3 engineers to join the development team from 40+ candidates, following the company\'s technical selection process.',
   }, {
     label: 'Frontend Development',
-    text: 'Built responsive React/TypeScript interfaces and reusable component libraries, integrating APIs into production workflows; contributed to 5+ enterprise internal tools.',
+    text: 'Built and maintained internal web applications with React and TypeScript, developing reusable UI components, complex forms, data tables, and REST API integrations.',
   }, {
-    label: 'Engineering Growth',
-    text: 'Participated in enterprise-grade code reviews, unit testing, and delivery standards — a foundation carried into every role since.',
+    label: 'Application Development',
+    text: 'Developed features and resolved production issues across 5+ internal React applications, working within existing codebases and established engineering practices.',
+  }, {
+    label: 'Engineering Practices',
+    text: 'Wrote unit tests, participated in code reviews, and supported debugging and production releases.',
   }],
 }, {
   id: 'freelance',
   period: '2019 — 2025',
   company: 'Independent Contractor',
   role: 'Freelance Software Engineer',
-  focus: 'Freelance Vue/React development · full-cycle SaaS & e-commerce delivery · client management',
+  focus: 'Full-cycle SaaS & e-commerce delivery · multi-framework frontend · client management',
   location: 'Remote (international clients)',
   summary: 'Independent freelance and contract work for international clients, run alongside full-time roles.',
   highlights: [{
     label: 'Client Delivery',
-    text: 'Delivered 40+ international Vue/React projects (SaaS, e-commerce) with a 100% on-time rate and 5.0 rating, owning full SDLC from client discovery to production, including complex third-party API integrations.',
+    text: 'Delivered 40+ web applications for international clients across SaaS, e-commerce, and internal business tools, working directly with clients from requirements through production.',
+  }, {
+    label: 'Frontend Development',
+    text: 'Built production applications with React, Vue, and Angular, intentionally taking on projects across different frameworks to maintain hands-on experience beyond my primary React stack.',
+  }, {
+    label: 'Project Highlight',
+    text: 'Built a multi-tenant SaaS platform for a Middle Eastern client, designing the frontend architecture, role-based access, dashboards, and API integrations from scratch and taking the product through production launch.',
+  }, {
+    label: 'End-to-End Ownership',
+    text: 'Managed projects independently from estimation and technical planning through implementation, testing, deployment, and post-release support.',
   }],
 }];
 

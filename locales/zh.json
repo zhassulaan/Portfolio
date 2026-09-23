@@ -163,7 +163,7 @@
     "title": "本页的全部内容，<br />整合为一份 PDF。",
     "intro": "与本笔记其他部分相同的经历、技能与证明材料，整理成单一文档——方便用于求职系统投递、邮件附件或打印。",
     "profile_heading": "职业概况",
-    "profile_text": "拥有6年以上商业经验的高级软件工程师，负责架构设计、扩展并交付了100多个高性能网页应用和数据密集型平台（GIS/数字孪生、金融科技、电商），服务超过100万用户。在跨领域技术领导力、带教最多18人的团队以及全流程 SDLC 责任方面拥有已验证的履历。",
+    "profile_text": "拥有6年以上商业经验的高级软件工程师，负责架构设计、扩展并交付了100多个高性能网页应用和数据密集型平台，涵盖 GIS/数字孪生、金融科技与电商领域，服务超过100万用户。在技术领导力、带领并指导最多18人的工程团队以及全流程 SDLC 责任方面拥有已验证的履历。",
     "achievements_heading": "主要成就",
     "achievement_1": "为10多个平台设计了多层缓存与失效策略，将冗余 API 流量减少50%，并将云基础设施成本降低约20%。（Ciklum）",
     "achievement_2": "编写了统一的前端工程标准——包括代码评审准则和组件架构模式——已在2家公司、100多个生产项目中采用，将新工程师的上手效率提升40%。",
@@ -190,7 +190,7 @@
     "skill_backend": "后端与 API",
     "skill_mobile": "移动端 / PWA",
     "skill_tools": "DevOps 与工具",
-    "profile_text_2": "在 Vue/React 与 TypeScript 生态系统方面拥有深厚专业知识，并以 Node.js、NestJS、Laravel、PostgreSQL、Redis 和 Elasticsearch 支撑企业级后端设计。较早采用 AI 辅助开发工作流（Cursor、Claude Code、Copilot），以减少状态管理样板代码、自动化质量门禁，并将上市时间缩短约2倍。",
+    "profile_text_2": "在 React、Next.js 与 TypeScript 方面拥有深厚专业知识，并以 Node.js、NestJS、PostgreSQL 和 MongoDB 支撑生产环境后端开发。将 Cursor、Claude Code 与 GitHub Copilot 等 AI 辅助开发工作流融入日常工作，自动化质量门禁与重复性工程任务，将上市时间缩短约2倍。",
     "role_selector_aria": "选择角色阶段",
     "skill_process": "工程流程",
     "skill_ai": "AI 辅助开发"

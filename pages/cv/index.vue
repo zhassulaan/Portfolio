@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-import { portfolio_assets, signals, milestones, proof_items } from '@/data/portfolio';
+import { signals, milestones, proof_items } from '@/data/portfolio'; // portfolio_assets temporarily unused: CV download button is commented out below
 import TagList from '@/components/ui/tag_list/tag_list.vue';
 import Modal from '@/components/ui/modal/modal.vue';
 import MilestoneCard from '@/components/cards/milestone/milestone_card.vue';
@@ -46,39 +46,39 @@ const active_milestone_title = computed(() => {
 const skill_groups: Array<{ key: string; label: string; items: string[] }> = [{
   key: 'frontend',
   label: 'Frontend',
-  items: ['Vue.js (2/3, Composition API)', 'React', 'Next.js', 'Nuxt.js', 'TypeScript (Strict)', 'JavaScript', 'Pinia', 'Vuex', 'Redux', 'TanStack Query', 'Semantic HTML', 'CSS3', 'SCSS', 'LESS', 'Tailwind CSS', 'Mapbox GL JS']
+  items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'Vue.js', 'Angular', 'Redux', 'TanStack Query', 'Pinia', 'Storybook', 'Mapbox GL JS', 'HTML5', 'CSS3', 'SCSS', 'Tailwind CSS']
 }, {
   key: 'backend',
   label: 'Backend & APIs',
-  items: ['Node.js', 'NestJS', 'Laravel', 'PHP', 'PostgreSQL', 'MySQL', 'Elasticsearch', 'Redis', 'REST APIs', 'GraphQL', 'WebSockets', 'Public APIs']
+  items: ['Node.js', 'NestJS', 'Express.js', 'FastAPI', 'PostgreSQL', 'MongoDB', 'MySQL', 'Redis', 'Elasticsearch', 'Apache Kafka', 'REST APIs', 'GraphQL', 'OpenAPI', 'WebSockets']
 }, {
   key: 'mobile',
-  label: 'Mobile / PWA',
+  label: 'Mobile / Cross-Platform',
   items: ['React Native', 'Ionic', 'Capacitor', 'PWA']
 }, {
   key: 'architecture',
-  label: 'Architecture & Quality',
-  items: ['Feature-Sliced Design (FSD)', 'Server-Side Rendering (SSR)', 'Object-Oriented Programming (OOP)', 'Functional Programming', 'Design Systems', 'CSS Architecture', 'WCAG Accessibility', 'Cross-Browser UI', 'BEM', 'i18n']
+  label: 'Architecture',
+  items: ['Frontend Architecture', 'Feature-Sliced Design (FSD)', 'Server-Side Rendering (SSR)', 'React Server Components', 'Design Systems', 'Micro-Frontends', 'Object-Oriented Programming (OOP)', 'BEM', 'WCAG Accessibility', 'i18n']
 }, {
   key: 'performance',
   label: 'Performance',
-  items: ['Core Web Vitals (LCP/INP/CLS)', 'Code Splitting', 'Lazy Loading', 'Bundle Optimization', 'Tree Shaking', 'Technical SEO', 'Observability']
+  items: ['Core Web Vitals (LCP/INP/CLS)', 'Performance Profiling', 'Code Splitting', 'Lazy Loading', 'Bundle Optimization', 'Tree Shaking', 'Technical SEO']
 }, {
   key: 'testing',
-  label: 'Testing',
-  items: ['Vitest/Jest', 'Playwright/Cypress (Unit & E2E Testing)']
+  label: 'Testing & Quality',
+  items: ['Vitest', 'Jest', 'Playwright', 'Cypress', 'Unit Testing', 'Integration Testing', 'E2E Testing', 'ESLint']
 }, {
   key: 'tools',
-  label: 'DevOps & Tooling',
-  items: ['Git', 'GitLab CI/CD', 'Azure DevOps', 'Azure', 'Docker', 'Vite/Webpack', 'Monorepo Tooling (NX/Turborepo/pnpm)', 'ESLint/Stylelint', 'Sentry']
+  label: 'DevOps & Observability',
+  items: ['Git', 'GitLab CI/CD', 'Docker', 'Kubernetes', 'Terraform', 'Grafana', 'Sentry', 'Vite', 'Webpack', 'Monorepo Tooling (Nx/Turborepo/pnpm)']
 }, {
   key: 'process',
-  label: 'Engineering Processes',
-  items: ['Agile (Scrum)', 'Kanban', 'Task Decomposition & Estimation', 'Technical Documentation', 'Refactoring', 'Product/UX & Design Collaboration', 'Developer Experience (DX)']
+  label: 'Engineering & Leadership',
+  items: ['Technical Leadership', 'Software Architecture', 'Code Review', 'Mentoring', 'Scrum', 'Kanban', 'Task Decomposition & Estimation', 'Technical Documentation', 'SDLC', 'Developer Experience (DX)']
 }, {
   key: 'ai',
   label: 'AI-Assisted Development',
-  items: ['Claude Code', 'Cursor', 'GitHub Copilot']
+  items: ['Cursor', 'Claude Code', 'GitHub Copilot']
 }];
 
 onMounted(() => {
@@ -119,6 +119,7 @@ useHead({
         </p>
       </div>
 
+      <!-- Temporarily disabled: download file out of date / unavailable
       <div class='cv_page__download' v-reveal>
         <a class='button cv_page__download_button'
           :href="portfolio_assets.cv"
@@ -135,6 +136,7 @@ useHead({
         </a>
         <p class='cv_page__file_meta'>{{ $t('cv_page.file_meta') }}</p>
       </div>
+      -->
     </section>
 
     <section class='cv_page__signals wrap' :aria-label="$t('cv_page.snapshot_aria')">
@@ -221,6 +223,7 @@ useHead({
       </NuxtLink>
     </section>
 
+    <!-- Temporarily disabled: download file out of date / unavailable
     <section class='cv_page__cta wrap' v-reveal>
       <div>
         <h2>{{ $t('cv_page.want_file_heading') }}</h2>
@@ -233,6 +236,7 @@ useHead({
         {{ $t('cv_page.download_cv') }} <span aria-hidden='true'>↓</span>
       </a>
     </section>
+    -->
   </main>
 </template>
 
