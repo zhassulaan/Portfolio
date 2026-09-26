@@ -185,14 +185,16 @@
     "open_proof": "Дәлелді ашу",
     "skill_frontend": "Frontend",
     "skill_architecture": "Архитектура және сапа",
-    "skill_testing": "Тестілеу",
+    "skill_testing": "Тестілеу және сапа",
     "skill_performance": "Өнімділік",
     "skill_backend": "Backend және API",
-    "skill_mobile": "Мобильді әзірлеу / PWA",
-    "skill_tools": "DevOps және құралдар",
+    "skill_mobile": "Мобильді / кросс-платформалық әзірлеу",
+    "skill_tools": "Бұлт және DevOps",
     "profile_text_2": "React, Next.js және TypeScript-те терең сараптама, Node.js, NestJS, PostgreSQL және MongoDB арқылы production backend әзірлеумен қуатталған. AI көмегімен дамыту жұмыс үрдістерін — Cursor, Claude Code, GitHub Copilot — енгіздім, сапа қақпалары мен қайталанатын инженерлік тапсырмаларды автоматтандырып, time-to-market-ті ~2 есе жылдамдаттым.",
     "role_selector_aria": "Рөл кезеңін таңдау",
-    "skill_process": "Инженерлік процестер",
-    "skill_ai": "AI көмегімен дамыту"
+    "skill_process": "Инженерлік үдерістер және көшбасшылық",
+    "skill_ai": "AI көмегімен дамыту",
+    "skill_state": "Күй басқару",
+    "skill_database": "Дерекқор және хабар алмасу"
   }
 }

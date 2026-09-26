@@ -185,14 +185,16 @@
     "open_proof": "Nachweis öffnen",
     "skill_frontend": "Frontend",
     "skill_architecture": "Architektur & Qualität",
-    "skill_testing": "Testing",
+    "skill_testing": "Testing & Qualität",
     "skill_performance": "Performance",
     "skill_backend": "Backend & APIs",
-    "skill_mobile": "Mobile / PWA",
-    "skill_tools": "DevOps & Tools",
+    "skill_mobile": "Mobil / Plattformübergreifend",
+    "skill_tools": "Cloud & DevOps",
     "profile_text_2": "Tiefgehende Expertise in React, Next.js und TypeScript, unterstützt durch Production-Backend-Entwicklung mit Node.js, NestJS, PostgreSQL und MongoDB. Integration KI-gestützter Entwicklungsworkflows mit Cursor, Claude Code und GitHub Copilot, Automatisierung von Quality Gates und wiederkehrenden Engineering-Aufgaben zur Verkürzung der Time-to-Market um ~das Doppelte.",
     "role_selector_aria": "Rollenphase auswählen",
-    "skill_process": "Engineering-Prozesse",
-    "skill_ai": "KI-gestützte Entwicklung"
+    "skill_process": "Engineering & Leadership",
+    "skill_ai": "KI-gestützte Entwicklung",
+    "skill_state": "Zustandsverwaltung",
+    "skill_database": "Datenbank & Messaging"
   }
 }

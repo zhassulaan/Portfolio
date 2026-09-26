@@ -185,14 +185,16 @@
     "open_proof": "查看证明材料",
     "skill_frontend": "前端",
     "skill_architecture": "架构与质量",
-    "skill_testing": "测试",
+    "skill_testing": "测试与质量",
     "skill_performance": "性能优化",
     "skill_backend": "后端与 API",
-    "skill_mobile": "移动端 / PWA",
-    "skill_tools": "DevOps 与工具",
+    "skill_mobile": "移动端/跨平台",
+    "skill_tools": "云与 DevOps",
     "profile_text_2": "在 React、Next.js 与 TypeScript 方面拥有深厚专业知识，并以 Node.js、NestJS、PostgreSQL 和 MongoDB 支撑生产环境后端开发。将 Cursor、Claude Code 与 GitHub Copilot 等 AI 辅助开发工作流融入日常工作，自动化质量门禁与重复性工程任务，将上市时间缩短约2倍。",
     "role_selector_aria": "选择角色阶段",
-    "skill_process": "工程流程",
-    "skill_ai": "AI 辅助开发"
+    "skill_process": "工程与领导力",
+    "skill_ai": "AI 辅助开发",
+    "skill_state": "状态管理",
+    "skill_database": "数据库与消息队列"
   }
 }

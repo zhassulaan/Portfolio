@@ -185,14 +185,16 @@
     "open_proof": "Kanıtı aç",
     "skill_frontend": "Frontend",
     "skill_architecture": "Mimari ve kalite",
-    "skill_testing": "Test",
+    "skill_testing": "Test ve Kalite",
     "skill_performance": "Performans",
     "skill_backend": "Backend & API'ler",
-    "skill_mobile": "Mobil / PWA",
-    "skill_tools": "DevOps ve Araçlar",
+    "skill_mobile": "Mobil / Çapraz Platform",
+    "skill_tools": "Bulut ve DevOps",
     "profile_text_2": "React, Next.js ve TypeScript'te derin uzmanlık; Node.js, NestJS, PostgreSQL ve MongoDB ile production backend geliştirme tarafından destekleniyor. Cursor, Claude Code ve GitHub Copilot ile AI destekli geliştirme iş akışlarını entegre ederek kalite kapılarını ve tekrarlayan mühendislik görevlerini otomatikleştirdim, time-to-market'i ~2 kat hızlandırdım.",
     "role_selector_aria": "Rol aşamasını seçin",
-    "skill_process": "Mühendislik Süreçleri",
-    "skill_ai": "AI Destekli Geliştirme"
+    "skill_process": "Mühendislik ve Liderlik",
+    "skill_ai": "AI Destekli Geliştirme",
+    "skill_state": "Durum Yönetimi",
+    "skill_database": "Veritabanı ve Mesajlaşma"
   }
 }

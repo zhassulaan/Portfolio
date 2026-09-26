@@ -76,8 +76,8 @@ export const case_studies: CaseStudy[] = [
     company: 'Ciklum',
     kicker: 'Architecture at product scale',
     title: 'Make ten modules feel like one system.',
-    problem: 'A growing Vue product surface had to stay coherent while 10+ modules evolved in parallel for a platform serving more than one million users annually.',
-    solution: 'Defined reusable Vue 3 / TypeScript patterns around composition, routing, state and shared product workflows so new features could start from an established system instead of local conventions.',
+    problem: 'A growing React/Next.js product surface had to stay coherent while 10+ modules evolved in parallel for a platform serving 1–3M users.',
+    solution: 'Built a shared React/Next.js component library and a type-safe REST/GraphQL API layer with NestJS — standardizing strict TypeScript, WCAG AA compliance and shared product workflows so new features could start from an established system instead of local conventions.',
     result: 'The architecture reduced feature implementation time by roughly 30% while creating a stronger base for cross-module development.',
     metrics: [{
       value: '10+',
@@ -86,7 +86,7 @@ export const case_studies: CaseStudy[] = [
       value: '~30%',
       label: 'faster feature delivery',
     }],
-    stack: ['Vue 3', 'TypeScript', 'Pinia', 'Vue Router', 'Composition API', 'Vite'],
+    stack: ['React', 'Next.js', 'NestJS', 'TypeScript', 'REST APIs', 'GraphQL'],
   }, {
     index: '02',
     company: 'Ciklum',
@@ -208,25 +208,31 @@ export const milestones: Milestone[] = [{
   period: 'Aug 2025 — Sep 2026',
   company: 'Ciklum',
   role: 'Senior Software Engineer',
-  focus: 'Frontend architecture · product modernization · performance · technical leadership',
+  focus: 'Frontend architecture · product modernization · performance · technical leadership · cross-platform',
   logo: ciklum_logo,
   location: 'Bucharest, Romania (Remote)',
-  summary: 'UK-based global digital product and enterprise software transformation leader.',
+  summary: 'UK-based digital product and enterprise software engineering company.',
   highlights: [{
     label: 'Architecture',
-    text: 'Established a shared React/Next.js component library (strict TypeScript, WCAG AA) plus a type-safe REST/GraphQL API layer across 10+ production modules serving 1–3M users — cut feature implementation time by ~30%.',
+    text: 'Designed React/Next.js and NestJS architecture across 10+ modules, building shared UI components with strict TypeScript/WCAG AA and type-safe REST/GraphQL APIs backed by MongoDB/MySQL, cutting feature implementation time by ~30%.',
   }, {
-    label: 'Modernization',
-    text: 'Modernized legacy React/Next.js codebases incrementally, migrating from Pages Router to App Router and Server Components and converting JavaScript modules to strict TypeScript without disrupting ongoing releases.',
+    label: 'Frontend Modernization',
+    text: 'Modernized legacy React/Next.js codebases, migrating from Pages Router to App Router with Server Components and JavaScript to strict TypeScript; introduced Feature-Sliced Design and TanStack Query to standardize architecture and reduce duplicated data fetching.',
   }, {
-    label: 'Performance & Core Web Vitals',
-    text: 'Profiled and optimized rendering, hydration, and interaction-heavy user flows across high-traffic modules, reducing Interaction to Next Paint (INP) from ~280ms to ~150ms.',
+    label: 'Web Performance',
+    text: 'Profiled and optimized rendering, hydration, and interaction-heavy flows across high-traffic modules serving 1–3M users, reducing Interaction to Next Paint (INP) from ~280ms to ~150ms.',
   }, {
     label: 'Technical Leadership',
-    text: 'Drove frontend architecture and technical planning for a team of 6 engineers and reviewed ~15 GitLab merge requests per week — improved review practices helped reduce post-merge defects by 35%.',
+    text: 'Drove frontend architecture and technical planning for a 6-engineer team, reviewing ~15 GitLab merge requests weekly; improved review practices helped reduce post-merge defects by 35%.',
   }, {
     label: 'Production Reliability',
-    text: 'Expanded unit, integration, and end-to-end test coverage for critical user flows and API integrations, added type-check and lint gates to CI/CD, and set up Sentry monitoring to catch regressions before and after deployment.',
+    text: 'Expanded automated test coverage (unit, integration, and E2E) for critical user flows and API integrations, adding CI/CD quality gates and Sentry monitoring.',
+  }, {
+    label: 'AI Integration & Tooling',
+    text: 'Built LLM-powered product features using RAG with NestJS backend services; also integrated Cursor, Claude Code, and GitHub Copilot into engineering workflows, cutting repeatable task time by nearly half.',
+  }, {
+    label: 'Cross-Platform',
+    text: 'Extended the shared design system to Ionic/Capacitor, reusing 46 UI components across web and mobile while keeping platform-specific logic separate.',
   }],
 }, {
   id: 'keyhorse',
@@ -236,7 +242,7 @@ export const milestones: Milestone[] = [{
   focus: 'GIS · digital twins · engineering leadership · reusable systems · backend APIs',
   logo: keyhorse_logo,
   location: 'Almaty, Kazakhstan',
-  summary: 'GIS and digital-twin platform company serving Central Asia.',
+  summary: 'Technology company building large-scale GIS and digital-twin platforms across Central Asia.',
   roles: [{
     id: 'team-lead',
     label: 'Team Lead',
@@ -250,7 +256,7 @@ export const milestones: Milestone[] = [{
       text: 'Independently architected and launched 10 enterprise platforms from scratch, typically taking each from initial requirements to production in 1–1.5 months — roughly 2x faster than the company\'s previous delivery cycle.',
     }, {
       label: 'Engineering Process',
-      text: 'Introduced Scrum across 3 teams and established shared planning, estimation, code review, and documentation practices, reviewing ~50 merge requests per week and reducing new-hire onboarding time by 40%.',
+      text: 'Introduced Scrum across 3 teams and established shared planning, estimation, code review, and documentation practices, improving delivery consistency and reducing new-hire onboarding time by 40%.',
     }],
   }, {
     id: 'mid-senior',
@@ -259,35 +265,36 @@ export const milestones: Milestone[] = [{
     role: 'Middle → Senior Software Engineer',
     highlights: [{
       label: 'Frontend Architecture',
-      text: 'Built a shared React architecture using Feature-Sliced Design, with 100+ reusable components documented in Storybook, standardizing UI development across regional projects and cutting feature implementation time by 50%.',
+      text: 'Built a shared React architecture using Feature-Sliced Design, with 100+ reusable components documented in Storybook and used across regional projects.',
     }, {
       label: 'Geospatial Performance',
-      text: 'Optimized Mapbox GL JS rendering and Elasticsearch indexing/query patterns across 500K+ geospatial objects, reducing map render time by 40% (800ms → 480ms) and search latency by 30%.',
+      text: 'Optimized Mapbox GL JS rendering and Elasticsearch indexing/query patterns across 500K+ geospatial objects, reducing map render time from 800ms to 480ms and search latency by 30%.',
     }, {
       label: 'Backend & Data',
-      text: 'Designed and built 35+ REST APIs with Node.js and NestJS for data-intensive GIS platforms, working with PostgreSQL, MongoDB, and Redis for persistence and caching. Generated type-safe TypeScript clients from OpenAPI contracts to keep frontend and backend integrations in sync.',
+      text: 'Designed and built 35+ REST APIs with Node.js and NestJS for data-intensive GIS platforms, using PostgreSQL, MongoDB, and Redis for persistence and caching. Containerized services with Docker and generated type-safe OpenAPI clients for frontend integration.',
     }, {
       label: 'Event-Driven Architecture',
       text: 'Moved long-running GIS processing from synchronous API flows to Kafka consumers and background workers, with retries and idempotency to handle failures safely. Used WebSockets to send processing updates back to clients.',
     }, {
       label: 'Quality & Observability',
-      text: 'Set up shared testing with Vitest, Playwright, and Cypress across 86 repositories, with automated checks running through GitLab CI/CD. Used Grafana dashboards and alerts to monitor production after deployment — critical-path coverage reached 70–80%, while regression bugs dropped by 30%.',
+      text: 'Set up shared testing with Vitest, Playwright, and Cypress across 86 repositories, with automated checks through GitLab CI/CD. Used Grafana dashboards and alerts to monitor production after deployment.',
     }],
   }],
 }, {
   id: 'dar',
   period: 'Jun 2020 — Jul 2021',
   company: 'DAR',
-  role: 'Junior Software Engineer',
+  role: 'Software Engineer',
   focus: 'High-volume web delivery · e-commerce · mobile · performance',
   logo: dar_logo,
+  location: 'Almaty, Kazakhstan (Hybrid)',
   summary: 'Technology group developing digital products and platforms across fintech, education, hospitality, and business operations.',
   highlights: [{
+    label: 'End-to-End Ownership',
+    text: 'Independently architected and shipped food-delivery and accommodation-booking platforms in ~1 month each — one supporting ~200 restaurants across 3 cities and the other 1,000+ property listings.',
+  }, {
     label: 'Project Delivery',
     text: 'Delivered nearly 20 web applications with React and Vue, often working across 3–4 projects in parallel and taking features from requirements through production.',
-  }, {
-    label: 'End-to-End Ownership',
-    text: 'Independently architected and shipped food-delivery and accommodation-booking platforms in ~1 month each, supporting 150–200 restaurants across 3 cities and 1,000+ property listings.',
   }, {
     label: 'Web Performance',
     text: 'Improved frontend performance through bundle optimization, lazy loading, and rendering improvements, reducing page load times by up to 40% (to 1.8–2.2s) on selected applications.',
@@ -305,25 +312,26 @@ export const milestones: Milestone[] = [{
   role: 'Software Engineer Intern',
   focus: 'React · TypeScript · reusable UI · engineering foundations',
   logo: epam_logo,
-  summary: 'Global IT consulting and digital engineering company.',
+  location: 'Almaty, Kazakhstan (On-site)',
+  summary: 'Global IT consulting and digital engineering company serving enterprise clients.',
   highlights: [{
-    label: 'Competitive Selection',
-    text: 'Selected as 1 of 3 engineers to join the development team from 40+ candidates, following the company\'s technical selection process.',
-  }, {
     label: 'Frontend Development',
     text: 'Built and maintained internal web applications with React and TypeScript, developing reusable UI components, complex forms, data tables, and REST API integrations.',
   }, {
-    label: 'Application Development',
-    text: 'Developed features and resolved production issues across 5+ internal React applications, working within existing codebases and established engineering practices.',
+    label: 'Feature Delivery',
+    text: 'Implemented features and resolved production issues across 5+ internal applications, working within existing codebases and established engineering practices.',
   }, {
     label: 'Engineering Practices',
     text: 'Wrote unit tests, participated in code reviews, and supported debugging and production releases.',
+  }, {
+    label: 'Selection',
+    text: 'Selected as 1 of 3 engineers from 40+ candidates, following the company\'s technical selection process.',
   }],
 }, {
   id: 'freelance',
   period: '2019 — 2025',
   company: 'Independent Contractor',
-  role: 'Freelance Software Engineer',
+  role: 'Fullstack Software Engineer',
   focus: 'Full-cycle SaaS & e-commerce delivery · multi-framework frontend · client management',
   location: 'Remote (international clients)',
   summary: 'Independent freelance and contract work for international clients, run alongside full-time roles.',
@@ -331,14 +339,14 @@ export const milestones: Milestone[] = [{
     label: 'Client Delivery',
     text: 'Delivered 40+ web applications for international clients across SaaS, e-commerce, and internal business tools, working directly with clients from requirements through production.',
   }, {
-    label: 'Frontend Development',
-    text: 'Built production applications with React, Vue, and Angular, intentionally taking on projects across different frameworks to maintain hands-on experience beyond my primary React stack.',
-  }, {
     label: 'Project Highlight',
-    text: 'Built a multi-tenant SaaS platform for a Middle Eastern client, designing the frontend architecture, role-based access, dashboards, and API integrations from scratch and taking the product through production launch.',
+    text: 'Architected and built a multi-tenant SaaS platform for a Middle Eastern client with subscription billing and payment flows, role-based access, dashboards, and third-party API integrations, taking it from initial requirements through production launch.',
+  }, {
+    label: 'Full-Stack Development',
+    text: 'Built production applications with React, Vue, and Angular, with Node.js/NestJS/Express.js for backend development; intentionally took on projects across different frontend frameworks to maintain hands-on experience beyond my primary React stack.',
   }, {
     label: 'End-to-End Ownership',
-    text: 'Managed projects independently from estimation and technical planning through implementation, testing, deployment, and post-release support.',
+    text: 'Owned projects from estimation and technical planning through implementation, testing, deployment, and post-release support.',
   }],
 }];
 
