@@ -185,14 +185,16 @@
     "open_proof": "Bewijs openen",
     "skill_frontend": "Frontend",
     "skill_architecture": "Architectuur & kwaliteit",
-    "skill_testing": "Testen",
+    "skill_testing": "Testen & kwaliteit",
     "skill_performance": "Performance",
     "skill_backend": "Backend & API's",
-    "skill_mobile": "Mobile / PWA",
-    "skill_tools": "DevOps & Tooling",
+    "skill_mobile": "Mobiel / cross-platform",
+    "skill_tools": "Cloud & DevOps",
     "profile_text_2": "Diepgaande expertise in React, Next.js en TypeScript, ondersteund door production backend-ontwikkeling met Node.js, NestJS, PostgreSQL en MongoDB. Integreerde AI-ondersteunde ontwikkelworkflows met Cursor, Claude Code en GitHub Copilot, automatiseerde kwaliteitspoorten en terugkerende engineeringtaken om de time-to-market ~2x te verkorten.",
     "role_selector_aria": "Rolfase selecteren",
-    "skill_process": "Engineering-processen",
-    "skill_ai": "AI-ondersteunde ontwikkeling"
+    "skill_process": "Engineering & leiderschap",
+    "skill_ai": "AI-ondersteunde ontwikkeling",
+    "skill_state": "State management",
+    "skill_database": "Database & messaging"
   }
 }

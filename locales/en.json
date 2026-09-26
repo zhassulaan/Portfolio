@@ -186,13 +186,15 @@
     "open_proof": "Open proof",
     "skill_frontend": "Frontend",
     "skill_architecture": "Architecture & quality",
-    "skill_testing": "Testing",
+    "skill_testing": "Testing & Quality",
     "skill_performance": "Performance",
     "skill_backend": "Backend & APIs",
-    "skill_mobile": "Mobile / PWA",
-    "skill_tools": "DevOps & Tooling",
+    "skill_mobile": "Mobile / Cross-Platform",
+    "skill_tools": "Cloud & DevOps",
     "role_selector_aria": "Select role phase",
-    "skill_process": "Engineering Processes",
-    "skill_ai": "AI-Assisted Development"
+    "skill_process": "Engineering & Leadership",
+    "skill_ai": "AI-Assisted Development",
+    "skill_state": "State Management",
+    "skill_database": "Database & Messaging"
   }
 }

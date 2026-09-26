@@ -46,11 +46,19 @@ const active_milestone_title = computed(() => {
 const skill_groups: Array<{ key: string; label: string; items: string[] }> = [{
   key: 'frontend',
   label: 'Frontend',
-  items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'Vue.js', 'Angular', 'Redux', 'TanStack Query', 'Pinia', 'Storybook', 'Mapbox GL JS', 'HTML5', 'CSS3', 'SCSS', 'Tailwind CSS']
+  items: ['React', 'Next.js', 'Vue.js', 'Nuxt.js', 'Angular', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'SCSS', 'Tailwind CSS', 'Mapbox GL JS']
+}, {
+  key: 'state',
+  label: 'State Management',
+  items: ['Redux', 'Pinia', 'Zustand', 'TanStack Query']
 }, {
   key: 'backend',
   label: 'Backend & APIs',
-  items: ['Node.js', 'NestJS', 'Express.js', 'FastAPI', 'PostgreSQL', 'MongoDB', 'MySQL', 'Redis', 'Elasticsearch', 'Apache Kafka', 'REST APIs', 'GraphQL', 'OpenAPI', 'WebSockets']
+  items: ['Node.js', 'NestJS', 'Express.js', 'FastAPI', 'Python', 'REST APIs', 'GraphQL', 'OpenAPI', 'WebSockets', 'Microservices', 'DDD', 'RBAC']
+}, {
+  key: 'database',
+  label: 'Database & Messaging',
+  items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Elasticsearch', 'Apache Kafka', 'RabbitMQ']
 }, {
   key: 'mobile',
   label: 'Mobile / Cross-Platform',
@@ -58,7 +66,7 @@ const skill_groups: Array<{ key: string; label: string; items: string[] }> = [{
 }, {
   key: 'architecture',
   label: 'Architecture',
-  items: ['Frontend Architecture', 'Feature-Sliced Design (FSD)', 'Server-Side Rendering (SSR)', 'React Server Components', 'Design Systems', 'Micro-Frontends', 'Object-Oriented Programming (OOP)', 'BEM', 'WCAG Accessibility', 'i18n']
+  items: ['Frontend Architecture', 'Feature-Sliced Design (FSD)', 'Server-Side Rendering (SSR)', 'React Server Components', 'Design Systems', 'Micro-Frontends', 'Storybook', 'Object-Oriented Programming (OOP)', 'BEM', 'WCAG AA Accessibility', 'i18n']
 }, {
   key: 'performance',
   label: 'Performance',
@@ -69,8 +77,8 @@ const skill_groups: Array<{ key: string; label: string; items: string[] }> = [{
   items: ['Vitest', 'Jest', 'Playwright', 'Cypress', 'Unit Testing', 'Integration Testing', 'E2E Testing', 'ESLint']
 }, {
   key: 'tools',
-  label: 'DevOps & Observability',
-  items: ['Git', 'GitLab CI/CD', 'Docker', 'Kubernetes', 'Terraform', 'Grafana', 'Sentry', 'Vite', 'Webpack', 'Monorepo Tooling (Nx/Turborepo/pnpm)']
+  label: 'Cloud & DevOps',
+  items: ['Git', 'GitLab CI/CD', 'Docker', 'Kubernetes', 'AWS', 'Azure', 'GCP', 'Terraform', 'Grafana', 'Sentry', 'Vite', 'Webpack', 'Monorepo Tooling (Nx/Turborepo/pnpm)']
 }, {
   key: 'process',
   label: 'Engineering & Leadership',

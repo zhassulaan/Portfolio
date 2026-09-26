@@ -185,14 +185,16 @@
     "open_proof": "Открыть подтверждение",
     "skill_frontend": "Frontend",
     "skill_architecture": "Архитектура и качество",
-    "skill_testing": "Тестирование",
+    "skill_testing": "Тестирование и качество",
     "skill_performance": "Производительность",
     "skill_backend": "Backend и API",
-    "skill_mobile": "Мобильная разработка / PWA",
-    "skill_tools": "DevOps и инструменты",
+    "skill_mobile": "Мобильная / кроссплатформенная разработка",
+    "skill_tools": "Облако и DevOps",
     "profile_text_2": "Глубокая экспертиза в React, Next.js и TypeScript, подкреплённая продакшн-разработкой backend на Node.js, NestJS, PostgreSQL и MongoDB. Внедрил AI-инструменты в разработку — Cursor, Claude Code, GitHub Copilot — автоматизировав quality gates и рутинные инженерные задачи, что ускорило time-to-market примерно в 2 раза.",
     "role_selector_aria": "Выбор этапа роли",
-    "skill_process": "Инженерные процессы",
-    "skill_ai": "Разработка с AI"
+    "skill_process": "Инженерные процессы и лидерство",
+    "skill_ai": "Разработка с AI",
+    "skill_state": "Управление состоянием",
+    "skill_database": "База данных и очереди сообщений"
   }
 }
