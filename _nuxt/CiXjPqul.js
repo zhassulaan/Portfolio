@@ -1,0 +1,1 @@
+import{_ as s}from"./CtvhV4vu.js";import{d as t,Q as e,K as n,h as a,u as r,o as u}from"./H7rc4SqC.js";import"./DjEqMgPw.js";const d=t({__name:"[slug]",setup(c){const o=e().params.slug;return n(()=>{window.scrollTo({top:0,left:0,behavior:"instant"})}),(i,p)=>(u(),a(s,{kind:"certificate",slug:r(o)},null,8,["slug"]))}});export{d as default};
