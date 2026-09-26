@@ -191,7 +191,7 @@ onBeforeUnmount(() => {
         <LanguageSwitcher class='site_header__language' />
         <ThemeToggle class='site_header__theme' />
 
-        <a class='site_header__cta' href='mailto:zhassulan.serikuly@gmail.com'>
+        <a class='site_header__cta' href='mailto:serikuly.zhassulan@gmail.com'>
           <span class='site_header__cta_text' v-text="$t('header.start_conversation')"></span>
           <i class='site_header__cta_arrow'
             aria-hidden='true'
@@ -233,7 +233,7 @@ onBeforeUnmount(() => {
         <LanguageSwitcher />
         <ThemeToggle />
 
-        <a class='button site_header__mobile_cta' href='mailto:zhassulan.serikuly@gmail.com'>
+        <a class='button site_header__mobile_cta' href='mailto:serikuly.zhassulan@gmail.com'>
           {{ $t('header.start_conversation') }} <span aria-hidden='true'>↗</span>
         </a>
       </div>
