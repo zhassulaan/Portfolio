@@ -64,7 +64,7 @@ useHead({
       jobTitle: 'Senior Software Engineer',
       url: SITE_URL,
       image: og_image_url,
-      email: 'mailto:zhassulan.serikuly@gmail.com',
+      email: 'mailto:serikuly.zhassulan@gmail.com',
       sameAs: [
         'https://www.linkedin.com/in/zhassulan-serikuly',
         'https://github.com/zhassulaan',

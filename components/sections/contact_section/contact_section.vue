@@ -13,8 +13,8 @@
           {{ $t('contact.relocation_line') }}
         </p>
 
-        <a href='mailto:zhassulan.serikuly@gmail.com'>
-          zhassulan.serikuly@gmail.com&nbsp;<span aria-hidden='true'>↗</span>
+        <a href='mailto:serikuly.zhassulan@gmail.com'>
+          serikuly.zhassulan@gmail.com&nbsp;<span aria-hidden='true'>↗</span>
         </a>
 
         <div class='contact_section__socials'>

@@ -35,7 +35,7 @@ function go_home() {
           v-on:click="go_home">
           Back to home <span aria-hidden='true'>→</span>
         </button>
-        <a class='button button--ghost' href='mailto:zhassulan.serikuly@gmail.com'>
+        <a class='button button--ghost' href='mailto:serikuly.zhassulan@gmail.com'>
           Email me
         </a>
       </div>

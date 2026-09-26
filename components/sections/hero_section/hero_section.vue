@@ -44,7 +44,7 @@ import { portfolio_assets } from '@/data/portfolio';
           {{ $t('hero.social_github') }} <span aria-hidden='true'>↗</span>
           <span class='sr_only'>{{ $t('hero.opens_new_tab_sr') }}</span>
         </a>
-        <a class='hero_section__social_link' href='mailto:zhassulan.serikuly@gmail.com'>
+        <a class='hero_section__social_link' href='mailto:serikuly.zhassulan@gmail.com'>
           {{ $t('hero.social_email') }} <span aria-hidden='true'>↗</span>
         </a>
       </div>
