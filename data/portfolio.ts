@@ -309,11 +309,11 @@ export const milestones: Milestone[] = [{
   id: 'epam',
   period: 'Jan 2020 - Jun 2020',
   company: 'EPAM Systems',
-  role: 'Software Engineer Intern',
+  role: 'Software Engineer',
   focus: 'React · TypeScript · reusable UI · engineering foundations',
   logo: epam_logo,
   location: 'Almaty, Kazakhstan (On-site)',
-  summary: 'Global IT consulting and digital engineering company serving enterprise clients.',
+  summary: 'Global IT consulting and digital engineering company serving enterprise clients. Completed as a 6-month software engineering internship.',
   highlights: [{
     label: 'Frontend Development',
     text: 'Built and maintained internal web applications with React and TypeScript, developing reusable UI components, complex forms, data tables, and REST API integrations.',
