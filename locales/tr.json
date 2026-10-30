@@ -12,7 +12,9 @@
     "proof": "Kanıtlar",
     "cv": "Özgeçmiş",
     "path": "Yol",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "hire": "İşe al",
+    "blog": "Blog"
   },
   "header": {
     "home_aria": "Ana sayfa",
@@ -21,7 +23,10 @@
     "start_conversation": "Bir konuşma başlat",
     "open_menu": "Menüyü aç",
     "close_menu": "Menüyü kapat",
-    "language": "Dil"
+    "language": "Dil",
+    "skip_to_content": "İçeriğe geç",
+    "language_search": "Dil ara",
+    "language_no_results": "Dil bulunamadı"
   },
   "hero": {
     "status": "Senior Software Engineer · production ortamında 6+ yıl deneyim",
@@ -40,7 +45,8 @@
     "signal_top_label": "şu anki mod",
     "signal_top_value": "karmaşıklığı azalt",
     "signal_bottom_label": "döngü",
-    "signal_bottom_value": "profille → sadeleştir → kanıtla"
+    "signal_bottom_value": "profille → sadeleştir → kanıtla",
+    "availability": "Hemen başlayabilirim · Taşınmaya açığım"
   },
   "work": {
     "eyebrow": "Üzerinde çalışmaktan keyif aldığım sistemler",
@@ -196,5 +202,35 @@
     "skill_ai": "AI Destekli Geliştirme",
     "skill_state": "Durum Yönetimi",
     "skill_database": "Veritabanı ve Mesajlaşma"
+  },
+  "hire": {
+    "eyebrow": "Beni işe alın",
+    "heading": "Senior Software Engineer rollerine açığım. Hemen başlayabilirim.",
+    "intro": "Kod yazarak çalışırım ve 18 mühendise kadar ekipleri yönettim. Bir işe alımcının bilmesi gerekenler aşağıda.",
+    "fact_roles_label": "Roller",
+    "fact_roles_value": "Senior Frontend · Senior Full-Stack · Senior Software Engineer · kod yazmaya devam eden Tech Lead",
+    "fact_stack_label": "Ana teknoloji yığını",
+    "fact_stack_value": "React, Next.js, TypeScript, Node.js, NestJS, PostgreSQL",
+    "fact_format_label": "Çalışma biçimi",
+    "fact_format_value": "Uzaktan, hibrit veya ofiste",
+    "fact_relocation_label": "Taşınma",
+    "fact_relocation_value": "Taşınmaya açığım (vize sponsorluğu gerekir)",
+    "fact_availability_label": "Müsaitlik",
+    "fact_availability_value": "Hemen başlayabilirim",
+    "fact_languages_label": "Diller",
+    "fact_languages_value": "İngilizce (IELTS 7.0) · Rusça ve Kazakça (ana dil)",
+    "cta_book": "Tanışma görüşmesi ayarla",
+    "cta_copy_email": "E-postayı kopyala",
+    "copied": "Kopyalandı!"
+  },
+  "blog_page": {
+    "eyebrow": "Blog",
+    "title": "Mühendislik notları",
+    "intro": "Gerçek mühendislik kararlarının kısa anlatımı: sorun neydi, ne değişti ve rakamlar ne gösterdi.",
+    "english_only": "Yazılar yalnızca İngilizce olarak sunulmaktadır.",
+    "read_time": "{minutes} dk okuma",
+    "back_link": "Bloga dön",
+    "empty": "Henüz yazı yok.",
+    "footer_text": "Benzer bir şey üzerinde mi çalışıyorsunuz? Konuşmaktan memnuniyet duyarım."
   }
 }

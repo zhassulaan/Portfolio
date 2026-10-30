@@ -12,7 +12,9 @@
     "proof": "证明材料",
     "cv": "简历",
     "path": "成长路径",
-    "contact": "联系方式"
+    "contact": "联系方式",
+    "hire": "招聘",
+    "blog": "博客"
   },
   "header": {
     "home_aria": "首页",
@@ -21,7 +23,10 @@
     "start_conversation": "发起对话",
     "open_menu": "打开菜单",
     "close_menu": "关闭菜单",
-    "language": "语言"
+    "language": "语言",
+    "skip_to_content": "跳到内容",
+    "language_search": "搜索语言",
+    "language_no_results": "未找到语言"
   },
   "hero": {
     "status": "高级软件工程师 · 6 年以上生产环境经验",
@@ -40,7 +45,8 @@
     "signal_top_label": "当前模式",
     "signal_top_value": "降低复杂度",
     "signal_bottom_label": "循环",
-    "signal_bottom_value": "分析 → 简化 → 验证"
+    "signal_bottom_value": "分析 → 简化 → 验证",
+    "availability": "可立即入职 · 愿意搬迁"
   },
   "work": {
     "eyebrow": "我喜欢深入的系统类型",
@@ -196,5 +202,35 @@
     "skill_ai": "AI 辅助开发",
     "skill_state": "状态管理",
     "skill_database": "数据库与消息队列"
+  },
+  "hire": {
+    "eyebrow": "聘用我",
+    "heading": "期待高级软件工程师职位，可立即入职。",
+    "intro": "我亲自写代码，也带过最多 18 人的团队。招聘方需要了解的信息都在下面。",
+    "fact_roles_label": "岗位",
+    "fact_roles_value": "高级前端 · 高级全栈 · 高级软件工程师 · 仍然写代码的技术负责人",
+    "fact_stack_label": "核心技术栈",
+    "fact_stack_value": "React、Next.js、TypeScript、Node.js、NestJS、PostgreSQL",
+    "fact_format_label": "工作方式",
+    "fact_format_value": "远程、混合或现场办公",
+    "fact_relocation_label": "搬迁",
+    "fact_relocation_value": "愿意搬迁（需要签证担保）",
+    "fact_availability_label": "到岗时间",
+    "fact_availability_value": "可立即入职",
+    "fact_languages_label": "语言",
+    "fact_languages_value": "英语（雅思 7.0）· 俄语和哈萨克语（母语）",
+    "cta_book": "预约初次沟通",
+    "cta_copy_email": "复制邮箱",
+    "copied": "已复制！"
+  },
+  "blog_page": {
+    "eyebrow": "博客",
+    "title": "工程笔记",
+    "intro": "真实工程决策的简短记录：问题是什么、改变了什么、数据说明了什么。",
+    "english_only": "文章仅提供英文版本。",
+    "read_time": "阅读约 {minutes} 分钟",
+    "back_link": "返回博客",
+    "empty": "暂无文章。",
+    "footer_text": "正在做类似的事情？很乐意和您聊聊。"
   }
 }

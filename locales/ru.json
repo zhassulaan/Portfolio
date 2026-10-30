@@ -12,7 +12,9 @@
     "proof": "Подтверждения",
     "cv": "Резюме",
     "path": "Путь",
-    "contact": "Контакты"
+    "contact": "Контакты",
+    "hire": "Нанять",
+    "blog": "Блог"
   },
   "header": {
     "home_aria": "Главная",
@@ -21,7 +23,10 @@
     "start_conversation": "Начать разговор",
     "open_menu": "Открыть меню",
     "close_menu": "Закрыть меню",
-    "language": "Язык"
+    "language": "Язык",
+    "skip_to_content": "Перейти к содержимому",
+    "language_search": "Найти язык",
+    "language_no_results": "Языки не найдены"
   },
   "hero": {
     "status": "Senior Software Engineer · 6+ лет в промышленной разработке",
@@ -40,7 +45,8 @@
     "signal_top_label": "текущий режим",
     "signal_top_value": "снижать сложность",
     "signal_bottom_label": "цикл",
-    "signal_bottom_value": "профилировать → упростить → доказать"
+    "signal_bottom_value": "профилировать → упростить → доказать",
+    "availability": "Готов приступить сразу · Открыт к релокации"
   },
   "work": {
     "eyebrow": "Системы, с которыми мне интересно работать",
@@ -196,5 +202,35 @@
     "skill_ai": "Разработка с AI",
     "skill_state": "Управление состоянием",
     "skill_database": "База данных и очереди сообщений"
+  },
+  "hire": {
+    "eyebrow": "Нанять меня",
+    "heading": "Открыт к ролям Senior Software Engineer. Могу начать сразу.",
+    "intro": "Работаю руками и руководил командами до 18 инженеров. Ниже всё, что нужно рекрутеру.",
+    "fact_roles_label": "Роли",
+    "fact_roles_value": "Senior Frontend · Senior Full-Stack · Senior Software Engineer · Tech Lead, остающийся в коде",
+    "fact_stack_label": "Основной стек",
+    "fact_stack_value": "React, Next.js, TypeScript, Node.js, NestJS, PostgreSQL",
+    "fact_format_label": "Формат работы",
+    "fact_format_value": "Удалённо, гибрид или офис",
+    "fact_relocation_label": "Релокация",
+    "fact_relocation_value": "Открыт к релокации (нужна визовая поддержка)",
+    "fact_availability_label": "Доступность",
+    "fact_availability_value": "Готов приступить сразу",
+    "fact_languages_label": "Языки",
+    "fact_languages_value": "Английский (IELTS 7.0) · русский и казахский (родные)",
+    "cta_book": "Записаться на знакомство",
+    "cta_copy_email": "Скопировать email",
+    "copied": "Скопировано!"
+  },
+  "blog_page": {
+    "eyebrow": "Блог",
+    "title": "Инженерные заметки",
+    "intro": "Короткие разборы реальных инженерных решений: в чём была проблема, что изменилось и что показали цифры.",
+    "english_only": "Статьи доступны только на английском.",
+    "read_time": "{minutes} мин чтения",
+    "back_link": "Назад в блог",
+    "empty": "Пока нет статей.",
+    "footer_text": "Работаете над чем-то похожим? Буду рад обсудить."
   }
 }

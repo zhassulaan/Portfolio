@@ -12,7 +12,9 @@
     "proof": "Nachweise",
     "cv": "Lebenslauf",
     "path": "Werdegang",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "hire": "Einstellen",
+    "blog": "Blog"
   },
   "header": {
     "home_aria": "Startseite",
@@ -21,7 +23,10 @@
     "start_conversation": "Gespräch beginnen",
     "open_menu": "Menü öffnen",
     "close_menu": "Menü schließen",
-    "language": "Sprache"
+    "language": "Sprache",
+    "skip_to_content": "Zum Inhalt springen",
+    "language_search": "Sprache suchen",
+    "language_no_results": "Keine Sprachen gefunden"
   },
   "hero": {
     "status": "Senior Software Engineer · 6+ Jahre in Produktionssystemen",
@@ -40,7 +45,8 @@
     "signal_top_label": "aktueller Modus",
     "signal_top_value": "Komplexität reduzieren",
     "signal_bottom_label": "Schleife",
-    "signal_bottom_value": "profilieren → vereinfachen → belegen"
+    "signal_bottom_value": "profilieren → vereinfachen → belegen",
+    "availability": "Sofort verfügbar · Offen für Umzug"
   },
   "work": {
     "eyebrow": "Systeme, an denen ich gerne arbeite",
@@ -196,5 +202,35 @@
     "skill_ai": "KI-gestützte Entwicklung",
     "skill_state": "Zustandsverwaltung",
     "skill_database": "Datenbank & Messaging"
+  },
+  "hire": {
+    "eyebrow": "Stellen Sie mich ein",
+    "heading": "Offen für Senior-Software-Engineer-Rollen. Sofort verfügbar.",
+    "intro": "Ich arbeite praktisch und habe Teams mit bis zu 18 Engineers geleitet. Unten steht, was Recruiter wissen müssen.",
+    "fact_roles_label": "Rollen",
+    "fact_roles_value": "Senior Frontend · Senior Full-Stack · Senior Software Engineer · Tech Lead, der selbst weiter programmiert",
+    "fact_stack_label": "Kern-Stack",
+    "fact_stack_value": "React, Next.js, TypeScript, Node.js, NestJS, PostgreSQL",
+    "fact_format_label": "Arbeitsmodell",
+    "fact_format_value": "Remote, hybrid oder vor Ort",
+    "fact_relocation_label": "Umzug",
+    "fact_relocation_value": "Offen für einen Umzug (Visa-Sponsoring erforderlich)",
+    "fact_availability_label": "Verfügbarkeit",
+    "fact_availability_value": "Sofort verfügbar",
+    "fact_languages_label": "Sprachen",
+    "fact_languages_value": "Englisch (IELTS 7.0) · Russisch und Kasachisch (Muttersprache)",
+    "cta_book": "Kennenlerngespräch buchen",
+    "cta_copy_email": "E-Mail kopieren",
+    "copied": "Kopiert!"
+  },
+  "blog_page": {
+    "eyebrow": "Blog",
+    "title": "Engineering-Notizen",
+    "intro": "Kurze Berichte über echte Engineering-Entscheidungen: Was das Problem war, was sich änderte und was die Zahlen zeigten.",
+    "english_only": "Artikel sind nur auf Englisch verfügbar.",
+    "read_time": "{minutes} Min. Lesezeit",
+    "back_link": "Zurück zum Blog",
+    "empty": "Noch keine Beiträge.",
+    "footer_text": "Arbeiten Sie an etwas Ähnlichem? Ich spreche gern darüber."
   }
 }

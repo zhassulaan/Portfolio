@@ -12,7 +12,9 @@
     "proof": "Bewijs",
     "cv": "CV",
     "path": "Traject",
-    "contact": "Contact"
+    "contact": "Contact",
+    "hire": "Inhuren",
+    "blog": "Blog"
   },
   "header": {
     "home_aria": "Home",
@@ -21,7 +23,10 @@
     "start_conversation": "Start een gesprek",
     "open_menu": "Menu openen",
     "close_menu": "Menu sluiten",
-    "language": "Taal"
+    "language": "Taal",
+    "skip_to_content": "Naar de inhoud",
+    "language_search": "Taal zoeken",
+    "language_no_results": "Geen talen gevonden"
   },
   "hero": {
     "status": "Senior Software Engineer · 6+ jaar in productieomgevingen",
@@ -40,7 +45,8 @@
     "signal_top_label": "huidige modus",
     "signal_top_value": "complexiteit verminderen",
     "signal_bottom_label": "cyclus",
-    "signal_bottom_value": "profileren → vereenvoudigen → bewijzen"
+    "signal_bottom_value": "profileren → vereenvoudigen → bewijzen",
+    "availability": "Direct beschikbaar · Open voor verhuizing"
   },
   "work": {
     "eyebrow": "Systemen waar ik graag aan werk",
@@ -196,5 +202,35 @@
     "skill_ai": "AI-ondersteunde ontwikkeling",
     "skill_state": "State management",
     "skill_database": "Database & messaging"
+  },
+  "hire": {
+    "eyebrow": "Neem mij aan",
+    "heading": "Open voor Senior Software Engineer-rollen. Direct beschikbaar.",
+    "intro": "Ik werk hands-on en heb teams van maximaal 18 engineers geleid. Hieronder staat wat een recruiter moet weten.",
+    "fact_roles_label": "Rollen",
+    "fact_roles_value": "Senior Frontend · Senior Full-Stack · Senior Software Engineer · Tech Lead die zelf blijft programmeren",
+    "fact_stack_label": "Kernstack",
+    "fact_stack_value": "React, Next.js, TypeScript, Node.js, NestJS, PostgreSQL",
+    "fact_format_label": "Werkvorm",
+    "fact_format_value": "Remote, hybride of op kantoor",
+    "fact_relocation_label": "Verhuizing",
+    "fact_relocation_value": "Open voor verhuizing (visumsponsoring nodig)",
+    "fact_availability_label": "Beschikbaarheid",
+    "fact_availability_value": "Direct beschikbaar",
+    "fact_languages_label": "Talen",
+    "fact_languages_value": "Engels (IELTS 7.0) · Russisch en Kazachs (moedertaal)",
+    "cta_book": "Plan een kennismaking",
+    "cta_copy_email": "E-mail kopiëren",
+    "copied": "Gekopieerd!"
+  },
+  "blog_page": {
+    "eyebrow": "Blog",
+    "title": "Engineeringnotities",
+    "intro": "Korte verslagen van echte engineeringbeslissingen: wat het probleem was, wat er veranderde en wat de cijfers lieten zien.",
+    "english_only": "Artikelen zijn alleen in het Engels beschikbaar.",
+    "read_time": "{minutes} min leestijd",
+    "back_link": "Terug naar de blog",
+    "empty": "Nog geen berichten.",
+    "footer_text": "Werkt u aan iets vergelijkbaars? Ik praat er graag over."
   }
 }

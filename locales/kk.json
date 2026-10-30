@@ -12,7 +12,9 @@
     "proof": "Растаулар",
     "cv": "Түйіндеме",
     "path": "Жол",
-    "contact": "Байланыс"
+    "contact": "Байланыс",
+    "hire": "Жалдау",
+    "blog": "Блог"
   },
   "header": {
     "home_aria": "Басты бет",
@@ -21,7 +23,10 @@
     "start_conversation": "Хабарласу",
     "open_menu": "Мәзірді ашу",
     "close_menu": "Мәзірді жабу",
-    "language": "Тіл"
+    "language": "Тіл",
+    "skip_to_content": "Мазмұнға өту",
+    "language_search": "Тілді іздеу",
+    "language_no_results": "Тілдер табылмады"
   },
   "hero": {
     "status": "Senior Software Engineer · өндірістік жобаларда 6+ жыл тәжірибе",
@@ -40,7 +45,8 @@
     "signal_top_label": "ағымдағы режим",
     "signal_top_value": "күрделілікті азайту",
     "signal_bottom_label": "цикл",
-    "signal_bottom_value": "профильдеу → жеңілдету → дәлелдеу"
+    "signal_bottom_value": "профильдеу → жеңілдету → дәлелдеу",
+    "availability": "Бірден бастауға дайынмын · Релокацияға ашықпын"
   },
   "work": {
     "eyebrow": "Жұмыс істегенді ұнататын жүйелерім",
@@ -196,5 +202,35 @@
     "skill_ai": "AI көмегімен дамыту",
     "skill_state": "Күй басқару",
     "skill_database": "Дерекқор және хабар алмасу"
+  },
+  "hire": {
+    "eyebrow": "Мені жалдаңыз",
+    "heading": "Senior Software Engineer рөлдеріне ашықпын. Бірден бастай аламын.",
+    "intro": "Кодпен жұмыс істеймін және 18 инженерге дейінгі командаларды басқардым. Рекрутерге қажеті төменде.",
+    "fact_roles_label": "Рөлдер",
+    "fact_roles_value": "Senior Frontend · Senior Full-Stack · Senior Software Engineer · кодпен жұмысын жалғастыратын Tech Lead",
+    "fact_stack_label": "Негізгі стек",
+    "fact_stack_value": "React, Next.js, TypeScript, Node.js, NestJS, PostgreSQL",
+    "fact_format_label": "Жұмыс форматы",
+    "fact_format_value": "Қашықтан, гибрид немесе кеңседе",
+    "fact_relocation_label": "Релокация",
+    "fact_relocation_value": "Релокацияға ашықпын (визалық қолдау қажет)",
+    "fact_availability_label": "Қолжетімділік",
+    "fact_availability_value": "Бірден бастауға дайынмын",
+    "fact_languages_label": "Тілдер",
+    "fact_languages_value": "Ағылшын (IELTS 7.0) · орыс және қазақ (ана тілі)",
+    "cta_book": "Таныстыру қоңырауына жазылу",
+    "cta_copy_email": "Email көшіру",
+    "copied": "Көшірілді!"
+  },
+  "blog_page": {
+    "eyebrow": "Блог",
+    "title": "Инженерлік жазбалар",
+    "intro": "Нақты инженерлік шешімдердің қысқаша талдауы: мәселе не болды, не өзгерді және сандар нені көрсетті.",
+    "english_only": "Мақалалар тек ағылшын тілінде қолжетімді.",
+    "read_time": "{minutes} мин оқу",
+    "back_link": "Блогқа оралу",
+    "empty": "Әзірге мақала жоқ.",
+    "footer_text": "Ұқсас нәрсемен айналысып жатсыз ба? Талқылауға қуаныштымын."
   }
 }

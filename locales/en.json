@@ -12,7 +12,9 @@
     "proof": "Proof",
     "cv": "CV",
     "path": "Path",
-    "contact": "Contact"
+    "contact": "Contact",
+    "hire": "Hire",
+    "blog": "Blog"
   },
   "header": {
     "home_aria": "Home",
@@ -21,7 +23,10 @@
     "start_conversation": "Start a conversation",
     "open_menu": "Open menu",
     "close_menu": "Close menu",
-    "language": "Language"
+    "language": "Language",
+    "skip_to_content": "Skip to content",
+    "language_search": "Search languages",
+    "language_no_results": "No languages found"
   },
   "hero": {
     "status": "Senior Software Engineer · 6+ years in production",
@@ -40,7 +45,8 @@
     "signal_top_label": "current mode",
     "signal_top_value": "reduce complexity",
     "signal_bottom_label": "loop",
-    "signal_bottom_value": "profile → simplify → prove"
+    "signal_bottom_value": "profile → simplify → prove",
+    "availability": "Available immediately · Open to relocation"
   },
   "work": {
     "eyebrow": "Systems I like working on",
@@ -196,5 +202,35 @@
     "skill_ai": "AI-Assisted Development",
     "skill_state": "State Management",
     "skill_database": "Database & Messaging"
+  },
+  "hire": {
+    "eyebrow": "Hire me",
+    "heading": "Open to Senior Software Engineer roles. Available immediately.",
+    "intro": "I work hands-on and have led teams of up to 18 engineers. What a recruiter needs to know is below.",
+    "fact_roles_label": "Roles",
+    "fact_roles_value": "Senior Frontend · Senior Full-Stack · Senior Software Engineer · hands-on Tech Lead",
+    "fact_stack_label": "Core stack",
+    "fact_stack_value": "React, Next.js, TypeScript, Node.js, NestJS, PostgreSQL",
+    "fact_format_label": "Work format",
+    "fact_format_value": "Remote, hybrid or on-site",
+    "fact_relocation_label": "Relocation",
+    "fact_relocation_value": "Open to relocation (visa sponsorship required)",
+    "fact_availability_label": "Availability",
+    "fact_availability_value": "Available immediately",
+    "fact_languages_label": "Languages",
+    "fact_languages_value": "English (IELTS 7.0) · Russian and Kazakh (native)",
+    "cta_book": "Book an intro call",
+    "cta_copy_email": "Copy email",
+    "copied": "Copied!"
+  },
+  "blog_page": {
+    "eyebrow": "Blog",
+    "title": "Engineering notes",
+    "intro": "Short write-ups of real engineering decisions: what the problem was, what changed and what the numbers did.",
+    "english_only": "Articles are available in English only.",
+    "read_time": "{minutes} min read",
+    "back_link": "Back to the blog",
+    "empty": "No posts yet.",
+    "footer_text": "Working on something similar? I would be glad to talk it through."
   }
 }
