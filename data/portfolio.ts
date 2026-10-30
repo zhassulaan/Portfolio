@@ -24,7 +24,7 @@ import type { CaseStudy, Milestone, Principle, ProofDocument, ProofItem, Project
 
 // Served straight from /public — a static file needs no build-time import,
 // unlike the images/logos above which go through Vite's asset pipeline.
-export const portfolio_assets = { portrait, cv: '/files/Zhassulan-Serikuly-Senior-Software-Engineer-Resume.pdf' };
+export const portfolio_assets = { portrait, cv: '/files/Zhassulan-Serikuly-CV.pdf' };
 
 export const nav_items = [{
   label: 'Signals',
@@ -45,8 +45,14 @@ export const nav_items = [{
   label: 'CV',
   href: '/cv',
 }, {
+  label: 'Blog',
+  href: '/blog',
+}, {
   label: 'Path',
   href: '/#path',
+}, {
+  label: 'Hire me',
+  href: '/#hire',
 }, {
   label: 'Contact',
   href: '/#contact',
@@ -57,17 +63,17 @@ export const signals: Signal[] = [{
   label: 'years in production',
   note: 'From React internship work to senior ownership across international product teams.',
 }, {
-  value: '1-3M',
+  value: '1M+',
   label: 'users served',
   note: 'Production interfaces operating at meaningful product scale.',
 }, {
-  value: '200+',
+  value: '100+',
   label: 'projects delivered',
   note: 'Across web, mobile and data-intensive platforms.',
 }, {
-  value: '75+',
-  label: 'projects optimized',
-  note: 'Performance, architecture and maintainability improvements.',
+  value: '18',
+  label: 'engineers led',
+  note: 'Technical leadership across 3 teams at KeyHorse.',
 }];
 
 export const case_studies: CaseStudy[] = [
@@ -76,7 +82,7 @@ export const case_studies: CaseStudy[] = [
     company: 'Ciklum',
     kicker: 'Architecture at product scale',
     title: 'Make ten modules feel like one system.',
-    problem: 'A growing React/Next.js product surface had to stay coherent while 10+ modules evolved in parallel for a platform serving 1–3M users.',
+    problem: 'A growing React/Next.js product surface had to stay coherent while 10+ modules evolved in parallel for a platform serving 1M+ users.',
     solution: 'Built a shared React/Next.js component library and a type-safe REST/GraphQL API layer with NestJS — standardizing strict TypeScript, WCAG AA compliance and shared product workflows so new features could start from an established system instead of local conventions.',
     result: 'The architecture reduced feature implementation time by roughly 30% while creating a stronger base for cross-module development.',
     metrics: [{
@@ -220,7 +226,7 @@ export const milestones: Milestone[] = [{
     text: 'Modernized legacy React/Next.js codebases, migrating from Pages Router to App Router with Server Components and JavaScript to strict TypeScript; introduced Feature-Sliced Design and TanStack Query to standardize architecture and reduce duplicated data fetching.',
   }, {
     label: 'Web Performance',
-    text: 'Profiled and optimized rendering, hydration, and interaction-heavy flows across high-traffic modules serving 1–3M users, reducing Interaction to Next Paint (INP) from ~280ms to ~150ms.',
+    text: 'Profiled and optimized rendering, hydration, and interaction-heavy flows across high-traffic modules serving 1M+ users, reducing Interaction to Next Paint (INP) from ~280ms to ~150ms.',
   }, {
     label: 'Technical Leadership',
     text: 'Drove frontend architecture and technical planning for a 6-engineer team, reviewing ~15 GitLab merge requests weekly; improved review practices helped reduce post-merge defects by 35%.',
@@ -253,7 +259,7 @@ export const milestones: Milestone[] = [{
       text: 'Led 18 engineers across 3 teams, setting technical direction for 80+ large-scale regional GIS platforms and 100+ smaller digital-twin deployments serving 1.5M+ users across 4 countries.',
     }, {
       label: 'Solo Product Delivery',
-      text: 'Independently architected and launched 10 enterprise platforms from scratch, typically taking each from initial requirements to production in 1–1.5 months — roughly 2x faster than the company\'s previous delivery cycle.',
+      text: 'Independently architected and launched 10 enterprise platforms from scratch, typically taking each from initial requirements to production within 1.5 months — roughly 2x faster than the company\'s previous delivery cycle.',
     }, {
       label: 'Engineering Process',
       text: 'Introduced Scrum across 3 teams and established shared planning, estimation, code review, and documentation practices, improving delivery consistency and reducing new-hire onboarding time by 40%.',

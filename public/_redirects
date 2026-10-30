@@ -1,0 +1,3 @@
+# Stable URL for the CV — use https://zhassulan.netlify.app/cv.pdf in applications,
+# LinkedIn and emails. When the PDF is replaced, only this line changes.
+/cv.pdf /files/Zhassulan-Serikuly-CV.pdf 302

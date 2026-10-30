@@ -1,5 +1,6 @@
 <script setup lang='ts'>
-import { signals, milestones, proof_items } from '@/data/portfolio'; // portfolio_assets temporarily unused: CV download button is commented out below
+import { portfolio_assets, signals, milestones, proof_items } from '@/data/portfolio';
+import { skill_groups } from '@/data/skills';
 import TagList from '@/components/ui/tag_list/tag_list.vue';
 import Modal from '@/components/ui/modal/modal.vue';
 import MilestoneCard from '@/components/cards/milestone/milestone_card.vue';
@@ -9,10 +10,12 @@ import MilestoneDetail from '@/components/cards/milestone/milestone_detail.vue';
 // needs an actual component reference, not just the tag name — matching
 // the pattern already used in trajectory_section.
 import { NuxtLink } from '#components';
+import { useAnalytics } from '@/composables/use_analytics';
 import { useLocaleText } from '@/composables/use_locale_text';
 import type { Milestone } from '@/types/portfolio';
 
 const { t } = useI18n();
+const { track } = useAnalytics();
 const { tx } = useLocaleText();
 const local_path = useLocalePath();
 
@@ -40,54 +43,6 @@ const active_milestone_title = computed(() => {
 
   return `${active_milestone.value.company} — ${role}`;
 });
-
-// Group labels are translated via cv_page.skill_* keys below; the items
-// themselves are product/technology names and stay as-is in every locale.
-const skill_groups: Array<{ key: string; label: string; items: string[] }> = [{
-  key: 'frontend',
-  label: 'Frontend',
-  items: ['React', 'Next.js', 'Vue.js', 'Nuxt.js', 'Angular', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'SCSS', 'Tailwind CSS', 'Mapbox GL JS']
-}, {
-  key: 'state',
-  label: 'State Management',
-  items: ['Redux', 'Pinia', 'Zustand', 'TanStack Query']
-}, {
-  key: 'backend',
-  label: 'Backend & APIs',
-  items: ['Node.js', 'NestJS', 'Express.js', 'FastAPI', 'Python', 'REST APIs', 'GraphQL', 'OpenAPI', 'WebSockets', 'Microservices', 'DDD', 'RBAC']
-}, {
-  key: 'database',
-  label: 'Database & Messaging',
-  items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Elasticsearch', 'Apache Kafka', 'RabbitMQ']
-}, {
-  key: 'mobile',
-  label: 'Mobile / Cross-Platform',
-  items: ['React Native', 'Ionic', 'Capacitor', 'PWA']
-}, {
-  key: 'architecture',
-  label: 'Architecture',
-  items: ['Frontend Architecture', 'Feature-Sliced Design (FSD)', 'Server-Side Rendering (SSR)', 'React Server Components', 'Design Systems', 'Micro-Frontends', 'Storybook', 'Object-Oriented Programming (OOP)', 'BEM', 'WCAG AA Accessibility', 'i18n']
-}, {
-  key: 'performance',
-  label: 'Performance',
-  items: ['Core Web Vitals (LCP/INP/CLS)', 'Performance Profiling', 'Code Splitting', 'Lazy Loading', 'Bundle Optimization', 'Tree Shaking', 'Technical SEO']
-}, {
-  key: 'testing',
-  label: 'Testing & Quality',
-  items: ['Vitest', 'Jest', 'Playwright', 'Cypress', 'Unit Testing', 'Integration Testing', 'E2E Testing', 'ESLint']
-}, {
-  key: 'tools',
-  label: 'Cloud & DevOps',
-  items: ['Git', 'GitLab CI/CD', 'Docker', 'Kubernetes', 'AWS', 'Azure', 'GCP', 'Terraform', 'Grafana', 'Sentry', 'Vite', 'Webpack', 'Monorepo Tooling (Nx/Turborepo/pnpm)']
-}, {
-  key: 'process',
-  label: 'Engineering & Leadership',
-  items: ['Technical Leadership', 'Software Architecture', 'Code Review', 'Mentoring', 'Scrum', 'Kanban', 'Task Decomposition & Estimation', 'Technical Documentation', 'SDLC', 'Developer Experience (DX)']
-}, {
-  key: 'ai',
-  label: 'AI-Assisted Development',
-  items: ['Cursor', 'Claude Code', 'GitHub Copilot']
-}];
 
 onMounted(() => {
   window.scrollTo({
@@ -127,24 +82,24 @@ useHead({
         </p>
       </div>
 
-      <!-- Temporarily disabled: download file out of date / unavailable
       <div class='cv_page__download' v-reveal>
         <a class='button cv_page__download_button'
           :href="portfolio_assets.cv"
           :aria-label="$t('cv_page.download_cv_aria')"
-          download>
+          download
+          v-on:click="track('CV Download', { source: 'cv_page_top' })">
           {{ $t('cv_page.download_cv') }} <span aria-hidden='true'>↓</span>
         </a>
         <a class='cv_page__view_link'
           :href="portfolio_assets.cv"
           target='_blank'
-          rel='noreferrer'>
+          rel='noreferrer'
+          v-on:click="track('CV Open', { source: 'cv_page_top' })">
           {{ $t('cv_page.open_new_tab') }} <span aria-hidden='true'>↗</span>
           <span class='sr_only'>{{ $t('cv_page.opens_new_tab_sr') }}</span>
         </a>
         <p class='cv_page__file_meta'>{{ $t('cv_page.file_meta') }}</p>
       </div>
-      -->
     </section>
 
     <section class='cv_page__signals wrap' :aria-label="$t('cv_page.snapshot_aria')">
@@ -231,7 +186,6 @@ useHead({
       </NuxtLink>
     </section>
 
-    <!-- Temporarily disabled: download file out of date / unavailable
     <section class='cv_page__cta wrap' v-reveal>
       <div>
         <h2>{{ $t('cv_page.want_file_heading') }}</h2>
@@ -240,11 +194,11 @@ useHead({
       <a class='button cv_page__cta_button'
         :href="portfolio_assets.cv"
         :aria-label="$t('cv_page.download_cv_aria')"
-        download>
+        download
+        v-on:click="track('CV Download', { source: 'cv_page_bottom' })">
         {{ $t('cv_page.download_cv') }} <span aria-hidden='true'>↓</span>
       </a>
     </section>
-    -->
   </main>
 </template>
 
