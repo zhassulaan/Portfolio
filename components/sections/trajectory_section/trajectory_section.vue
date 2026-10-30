@@ -5,6 +5,9 @@ import { useLocaleText } from '@/composables/use_locale_text';
 
 const { tx } = useLocaleText();
 const local_path = useLocalePath();
+
+// Translation keys use the milestone id ('ciklum'), not the name ('Ciklum').
+const translation_key = (item: { id?: string; company: string }) => item.id || item.company;
 </script>
 
 <template>
@@ -32,8 +35,8 @@ const local_path = useLocalePath();
 
         <div class='trajectory_section__company_body'>
           <small v-text='item.period'></small>
-          <h3 v-text="tx(`milestones.${item.company}.role`, item.role)"></h3>
-          <p v-text="tx(`milestones.${item.company}.focus`, item.focus)"></p>
+          <h3 v-text="tx(`milestones.${translation_key(item)}.role`, item.role)"></h3>
+          <p v-text="tx(`milestones.${translation_key(item)}.focus`, item.focus)"></p>
         </div>
       </article>
     </div>
