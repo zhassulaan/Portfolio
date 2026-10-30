@@ -16,9 +16,7 @@ const is_font_size = (value: unknown): value is FontSize =>
 const is_image_mode = (value: unknown): value is ImageMode =>
   value == 'show' || value == 'grayscale' || value == 'hide';
 
-// Text-to-speech is intentionally never persisted — a visitor who enabled it
-// on one visit almost certainly doesn't want the page to start talking on
-// its own, silently, on every future visit.
+// Text-to-speech is not saved: nobody wants a page that starts talking by itself.
 function read_stored_settings(): StoredSettings {
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
@@ -34,7 +32,7 @@ function read_stored_settings(): StoredSettings {
       image_mode: is_image_mode(parsed.image_mode) ? parsed.image_mode : undefined,
     };
   } catch (error) {
-    // Corrupt JSON or blocked storage — fall back to defaults silently.
+    // Bad JSON or blocked storage: use the defaults.
     console.warn('Could not read the stored accessibility settings:', error);
     return {};
   }
@@ -44,14 +42,8 @@ export const useAccessibilityStore = defineStore('accessibility', () => {
   const font_size = ref<FontSize>('medium');
   const image_mode = ref<ImageMode>('show');
   const text_to_speech = ref(false);
-  // Whether speech synthesis is available at all. This starts `false`
-  // (matching SSR, where `window` doesn't exist) and only flips to `true`
-  // once we've actually checked on the client — as a plain
-  // `typeof window !== 'undefined'` check called directly from the
-  // template, this would return different results on the server and the
-  // client and Vue would hydrate with a mismatched DOM (the text-to-speech
-  // section present on the client but missing from the server-rendered
-  // HTML).
+  // False on the server, set to true on the client. Checking `window` in the
+  // template would differ between server and client and break hydration.
   const speech_supported = ref(false);
 
   let is_initialized = false;
@@ -119,11 +111,8 @@ export const useAccessibilityStore = defineStore('accessibility', () => {
 
     window.speechSynthesis.speak(utterance);
 
-    // Chrome silently stops speaking after ~15 seconds on longer utterances
-    // (a long-standing bug, not a setting) unless the utterance is paused
-    // and resumed periodically. A whole page's main content easily runs
-    // past that, so without this a visitor who turns speech on would hear
-    // it cut off partway through and look broken.
+    // Chrome stops speaking after ~15 seconds unless the utterance is paused and
+    // resumed regularly.
     keep_alive_timer = setInterval(() => {
       if (!window.speechSynthesis.speaking) {
         clear_keep_alive();
@@ -163,7 +152,7 @@ export const useAccessibilityStore = defineStore('accessibility', () => {
     try {
       window.localStorage.removeItem(STORAGE_KEY);
     } catch (error) {
-      // Ignore — defaults are already applied for this session.
+      // Ignore: the defaults are already applied for this session.
       console.warn('Could not clear the stored accessibility settings:', error);
     }
   }

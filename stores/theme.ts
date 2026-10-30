@@ -14,7 +14,7 @@ function read_stored_preference(): ThemePreference {
       return stored as ThemePreference;
     }
   } catch (error) {
-    // localStorage can throw in private/blocked contexts; fall back silently.
+    // localStorage can throw in private mode; use the default.
     console.warn('Could not read the stored theme preference:', error);
   }
 
@@ -24,10 +24,7 @@ function read_stored_preference(): ThemePreference {
 const read_system_theme = (): ResolvedTheme =>
   window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
-// A Pinia store is a single module-level instance by default (the store id
-// 'theme' is a singleton unless something explicitly asks for a different
-// instance), so every consumer of useThemeStore() shares one global theme
-// state across the whole app.
+// One shared theme state for the whole app (Pinia stores are singletons).
 export const useThemeStore = defineStore('theme', () => {
   const preference = ref<ThemePreference>('auto');
   const resolved = ref<ResolvedTheme>('light');
@@ -61,8 +58,8 @@ export const useThemeStore = defineStore('theme', () => {
     is_initialized = true;
     preference.value = read_stored_preference();
 
-    // The blocking inline script in nuxt.config.ts already set data-theme
-    // before hydration; trust it instead of recomputing to avoid a mismatch.
+    // The inline script in nuxt.config.ts already set data-theme before hydration;
+    // use it to avoid a mismatch.
     const applied_attribute = document.documentElement.getAttribute('data-theme');
     resolved.value = (EXPLICIT_THEMES as string[]).includes(applied_attribute ?? '')
       ? (applied_attribute as ResolvedTheme)

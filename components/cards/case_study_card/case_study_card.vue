@@ -6,8 +6,7 @@ import { useLocaleText } from '@/composables/use_locale_text';
 const props = defineProps<{ case_study: CaseStudy }>();
 const { tx } = useLocaleText();
 
-// Case studies are keyed by their existing `index` field ('01'-'04'),
-// already unique and stable — see data/translations/*.ts.
+// Keys use the existing `index` field ('01'-'04'); see data/translations/*.ts.
 const key = (field: string) => `case_studies.${props.case_study.index}.${field}`;
 </script>
 

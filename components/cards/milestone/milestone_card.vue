@@ -1,9 +1,6 @@
 <script setup lang='ts'>
-// One employer card in the CV page's experience timeline — logo, company,
-// period, role, focus line, and (when there's detail to show) a button
-// that asks the parent to open the full-detail modal. Pulled out of
-// pages/cv/index.vue so that page's template isn't carrying the full
-// card markup inline for every milestone.
+// One employer card in the CV timeline, with a button that asks the parent to
+// open the details modal.
 import { useLocaleText } from '@/composables/use_locale_text';
 import type { Milestone } from '@/types/portfolio';
 

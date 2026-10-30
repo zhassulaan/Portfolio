@@ -1,8 +1,6 @@
 <script setup lang='ts'>
-// One fieldset of segmented-button options in the accessibility panel —
-// color scheme, font size, image mode, and text-to-speech all render the
-// same legend + button-group (+ optional hint) markup, so it's pulled out
-// here instead of being repeated four times in accessibility_panel.vue.
+// One fieldset of segmented buttons for the accessibility panel (theme, font
+// size, images, text-to-speech).
 export interface AccessibilityOption {
   value: string | boolean;
   label: string;

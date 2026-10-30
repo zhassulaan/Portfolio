@@ -1,8 +1,6 @@
 <script setup lang='ts'>
-// Generic, reusable dialog overlay — teleported to <body> so it isn't
-// clipped or z-index-fought by whatever section renders the trigger.
-// Content is fully slot-driven; callers own everything except the
-// backdrop/close/focus mechanics handled here.
+// Generic dialog, teleported to <body> so no section clips it. The content comes
+// from the slot; this component handles backdrop, close and focus.
 const props = withDefaults(defineProps<{
   open: boolean;
   title: string;
@@ -35,8 +33,7 @@ watch(() => props.open, (is_open) => {
   } else {
     document.body.style.overflow = '';
     window.removeEventListener('keydown', handle_keydown);
-    // Return focus to whatever opened the modal (the card's trigger
-    // button) rather than leaving it stranded on a removed element.
+    // Give focus back to the element that opened the modal.
     last_focused?.focus();
   }
 });

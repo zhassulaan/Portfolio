@@ -10,9 +10,8 @@ const local_path = useLocalePath();
 const { track } = useAnalytics();
 const contact = useContactLinks();
 
-// nav_items only carries an English label + href; the translated label for
-// each entry lives in the `nav` namespace of i18n/locales/*.json, keyed by
-// the last path segment (works for both '/#signals' and '/cv' style hrefs).
+// Nav labels come from the `nav` keys in locales/*.json, named after the last
+// part of the href.
 const nav_key = (href: string) => href.replace('/#', '').replace('/', '');
 
 const active_section = ref('');

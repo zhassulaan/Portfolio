@@ -2,8 +2,7 @@ import type { RouterConfig } from '@nuxt/schema';
 
 export default <RouterConfig>{
   scrollBehavior(to, from, saved_position) {
-    // Respect the OS-level 'reduce motion' preference (vestibular disorders,
-    // motion sensitivity) instead of always forcing a smooth animated scroll.
+    // Respect the OS 'reduce motion' setting instead of always scrolling smoothly.
     const prefers_reduced_motion =
       typeof window !== 'undefined' &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -16,9 +15,8 @@ export default <RouterConfig>{
       return {
         el: to.hash,
         top: 112,
-        // 'auto' defers to the CSS `scroll-behavior` on <html> (which we set
-        // to 'smooth' for the anchor-link experience), so a truly instant
-        // jump for reduced-motion users has to be requested explicitly.
+        // 'auto' follows the CSS scroll-behavior (smooth), so reduced-motion users
+        // need 'instant' set explicitly.
         behavior: prefers_reduced_motion ? 'instant' : 'smooth',
       };
     }
@@ -27,9 +25,7 @@ export default <RouterConfig>{
       return {
         left: 0,
         top: 0,
-        // Same trap: 'auto' would inherit the smooth CSS scroll-behavior and
-        // visibly animate from the old scroll position, which is exactly the
-        // 'lands in the middle, then scrolls up' glitch this avoids.
+        // Same reason: 'auto' would animate from the old scroll position.
         behavior: 'instant',
       };
     }

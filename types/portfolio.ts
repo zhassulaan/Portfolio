@@ -89,9 +89,8 @@ export interface ProofDocument {
   file_type?: 'image' | 'pdf';
 }
 
-// A blog post is a flat list of typed blocks instead of Markdown, so the
-// blog needs no extra dependency and every block renders through plain,
-// escaped Vue text (no v-html, nothing to sanitize).
+// A post is a list of typed blocks instead of Markdown: no extra dependency,
+// and everything renders as escaped text.
 export type BlogBlock =
   | { type: 'p'; text: string }
   | { type: 'h2'; text: string }
@@ -101,7 +100,7 @@ export type BlogBlock =
 export interface BlogPost {
   slug: string;
   title: string;
-  // ISO date (YYYY-MM-DD) — formatted per locale when displayed.
+  // ISO date (YYYY-MM-DD), formatted per language when shown.
   date: string;
   summary: string;
   tags: string[];

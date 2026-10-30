@@ -4,10 +4,7 @@ import { useAccessibilityStore } from '@/stores/accessibility';
 
 describe('useAccessibilityStore', () => {
   beforeEach(() => {
-    // font_size/image_mode live in a Pinia store singleton (shared across
-    // the whole app on purpose, so every panel/reader agrees on one state)
-    // — reset the DOM + storage between tests so they don't leak into each
-    // other.
+    // The store is a shared singleton, so reset the DOM and storage between tests.
     window.localStorage.clear();
     document.documentElement.removeAttribute('data-a11y-font-size');
     document.documentElement.removeAttribute('data-a11y-images');

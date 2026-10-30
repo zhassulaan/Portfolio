@@ -32,20 +32,16 @@ useHead({
   }],
 });
 
-// Canonical link + per-locale hreflang alternates + og:locale(:alternate),
-// generated from nuxt.config.ts's i18n block instead of hand-listing 7
-// locale codes here — stays correct if a locale is ever added or removed.
+// Canonical link, hreflang alternates and og:locale, generated from the i18n
+// block in nuxt.config.ts.
 const i18n_head = useLocaleHead({ lang: false, seo: true });
 useHead(() => ({
   link: i18n_head.value.link,
   meta: i18n_head.value.meta,
 }));
 
-// Open Graph / Twitter Card site-wide defaults. A page can still layer its
-// own og:title/og:description on top (see pages/index.vue and
-// proof_detail_section.vue) — unhead merges by meta key, so a more
-// specific page-level tag wins over these without needing to repeat the
-// rest of the OG/Twitter set on every page.
+// Site-wide Open Graph / Twitter Card defaults. A page can set its own og:title
+// and og:description on top (unhead merges by meta key).
 useSeoMeta({
   ogType: 'website',
   ogSiteName: computed(() => t('site.title_suffix')),
@@ -61,8 +57,7 @@ useSeoMeta({
   twitterImage: og_image_url,
 });
 
-// Person JSON-LD — describes the site owner once, site-wide rather than
-// per-route (a person doesn't change per page).
+// Person JSON-LD, once for the whole site.
 useHead({
   script: [{
     type: 'application/ld+json',

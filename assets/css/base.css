@@ -236,14 +236,8 @@ html[lang='nl'] .section_heading h2 {
   line-height: 1.08;
 }
 
-/* Accessibility panel controls — see components/ui/accessibility_panel and
-   composables/use_accessibility.ts. Every size in this project's CSS is now
-   in `em`, so scaling the root font-size cascades through the whole site —
-   text, spacing and layout all grow or shrink together, the same way a
-   browser's own zoom would, but under the visitor's control from the page
-   itself. (This replaced an earlier version that used `zoom` on <body>,
-   from before the em conversion — that approach no longer does anything
-   useful now that sizes actually respond to font-size.) */
+/* Accessibility panel font size (see stores/accessibility.ts). All sizes are in
+   em, so changing the root font-size scales text, spacing and layout together. */
 html[data-a11y-font-size='small'] {
   font-size: 87.5%;
 }

@@ -28,11 +28,9 @@ export default defineNuxtConfig({
     },
     strategy: 'prefix_except_default',
     detectBrowserLanguage: false,
-    // A few messages (hero.title, several section headings, cv_page.title)
-    // deliberately contain `<em>`/`<br />` and are rendered with v-html so
-    // that emphasis/line-breaks can move per language. Without this, the
-    // message compiler treats any HTML-looking tag as unsafe and hard-fails
-    // the whole build with "Detected HTML in ... message".
+    // A few messages (hero.title, cv_page.title, some headings) contain <em> and
+    // <br /> and are rendered with v-html. Without this, the message compiler
+    // fails the build with "Detected HTML in ... message".
     compilation: {
       strictMessage: false,
     },
@@ -109,8 +107,7 @@ export default defineNuxtConfig({
           href: '/site.webmanifest',
         },
       ],
-      // Resolves and applies the theme before first paint so switching
-      // between light/dark/auto never causes a flash of the wrong theme.
+      // Sets the theme before first paint so there is no flash of the wrong theme.
       script: [
         {
           key: 'theme-init',

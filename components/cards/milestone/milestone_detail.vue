@@ -1,20 +1,13 @@
 <script setup lang='ts'>
-// The "view details" modal's body for one milestone — meta line, summary,
-// and highlights, plus (when the employer has more than one role phase,
-// e.g. a promotion) a phase selector that swaps which phase's highlights
-// are shown. Fully self-contained: it owns its own selected-phase state
-// rather than the parent tracking it, so the parent only needs to know
-// *which milestone* is open, not which phase of it.
+// Body of the "view details" modal: meta line, summary and highlights, with a
+// role selector when there is more than one role (for example after a promotion).
 import { useLocaleText } from '@/composables/use_locale_text';
 import type { Milestone, MilestoneRole } from '@/types/portfolio';
 
 const props = defineProps<{ milestone: Milestone }>();
 const { tx } = useLocaleText();
 
-// Initialized once at setup time. The parent re-mounts this component each
-// time a different milestone's modal opens (see pages/cv/index.vue), so
-// this always starts fresh on the first/most-recent role phase rather than
-// carrying over whatever was selected for a previously-viewed milestone.
+// The parent remounts this component for each milestone, so it starts on the latest role.
 const active_role_id = ref<string | null>(props.milestone.roles?.[0]?.id ?? null);
 
 const active_role = computed<MilestoneRole | null>(() => {
@@ -31,10 +24,8 @@ function select_role(role_id: string) {
 
 const translation_key = computed(() => props.milestone.id || props.milestone.company);
 
-// Highlight translation keys nest under the selected phase (when there is
-// one) so "Team Lead" and "Middle → Senior" get independently
-// translatable text; the location/summary lines don't vary by phase, so
-// they stay under the milestone's own key.
+// Highlight keys are nested under the selected role so each role translates
+// separately. Location and summary use the milestone key.
 const active_translation_ns = computed(() => (
   active_role.value ? `${translation_key.value}.roles.${active_role.value.id}` : translation_key.value
 ));

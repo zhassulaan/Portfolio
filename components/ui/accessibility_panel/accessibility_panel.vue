@@ -17,9 +17,7 @@ const toggle_button = ref<HTMLButtonElement | null>(null);
 const panel = ref<HTMLElement | null>(null);
 const route = useRoute();
 
-// Each group is a computed (not a plain array) so the labels stay reactive
-// to locale switches — plain arrays built once at setup wouldn't re-run
-// t() when the language changes.
+// Computed so the labels update when the language changes.
 const color_scheme_options = computed(() => ([
   { value: 'light', label: t('accessibility.scheme_normal'), sample: 'Ц', extra_class: 'accessibility_option_group__option--scheme accessibility_option_group__option--light' },
   { value: 'dark', label: t('accessibility.scheme_dark'), sample: 'Ц', extra_class: 'accessibility_option_group__option--scheme accessibility_option_group__option--dark' },
@@ -121,9 +119,7 @@ onBeforeUnmount(() => {
   stop_speaking();
 });
 
-// Stop any reading in progress, and close the panel, whenever the route
-// changes — otherwise speech from the previous page keeps talking over the
-// new one and the panel would sit open across navigations.
+// Stop reading and close the panel on route change.
 watch(
   () => route.fullPath,
   () => {

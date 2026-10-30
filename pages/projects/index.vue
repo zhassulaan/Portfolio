@@ -16,9 +16,7 @@ const {
   reset_filters,
 } = useProjectFilter(projects);
 
-// Category/stack values stay in English (they're canonical filter values,
-// matched against data/portfolio.ts) — only the 'All' option is translated
-// for display.
+// Filter values stay in English (they match data/portfolio.ts); only 'All' is translated.
 const option_label = (value: string) => (value == 'All' ? t('projects_page.category_all') : value);
 
 onMounted(() => {

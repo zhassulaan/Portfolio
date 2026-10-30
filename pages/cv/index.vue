@@ -5,10 +5,7 @@ import TagList from '@/components/ui/tag_list/tag_list.vue';
 import Modal from '@/components/ui/modal/modal.vue';
 import MilestoneCard from '@/components/cards/milestone/milestone_card.vue';
 import MilestoneDetail from '@/components/cards/milestone/milestone_detail.vue';
-// Imported explicitly (rather than relying on Nuxt's compile-time
-// auto-import) because it's used as a dynamic `:is` value below, which
-// needs an actual component reference, not just the tag name — matching
-// the pattern already used in trajectory_section.
+// Imported explicitly because it's used as a dynamic :is value below.
 import { NuxtLink } from '#components';
 import { useAnalytics } from '@/composables/use_analytics';
 import { useLocaleText } from '@/composables/use_locale_text';
@@ -19,10 +16,7 @@ const { track } = useAnalytics();
 const { tx } = useLocaleText();
 const local_path = useLocalePath();
 
-// Full per-role detail (career profile paragraph aside) only shows up in
-// the "view full role details" modal — the timeline card itself stays a
-// short summary, matching the rest of the page's snapshot-then-detail
-// pattern.
+// Role details only open in the modal; the timeline card stays a short summary.
 const active_milestone = ref<Milestone | null>(null);
 
 function open_milestone_details(item: Milestone) {
@@ -48,9 +42,8 @@ onMounted(() => {
   window.scrollTo({
     top: 0,
     left: 0,
-    // 'instant', not 'auto' — 'auto' defers to the global smooth
-    // scroll-behavior on <html> and visibly animates from wherever the
-    // previous page was scrolled to.
+    // 'instant' because 'auto' follows the global smooth scroll and animates
+    // from the old position.
     behavior: 'instant',
   });
 });
