@@ -35,8 +35,8 @@ jobs:
       - name: Language files (missing/extra keys, placeholders)
         run: npm run lint:i18n
 
-      - name: Unused CSS check (non-blocking until the existing backlog is triaged)
-        run: npm run lint:unused-css || true
+      - name: Unused CSS check
+        run: npm run lint:unused-css
 
       - name: Unit tests
         run: npm run test:unit

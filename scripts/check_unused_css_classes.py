@@ -37,6 +37,9 @@ EXCLUDE_DIRS = ("node_modules", ".nuxt", ".output", "dist")
 # Classes never written as a literal string (Vue transition classes, classes
 # added by a library). Keep this list short.
 KNOWN_DYNAMIC = {
+    # Applied through `extra_class` strings in accessibility_panel.vue.
+    "accessibility_option_group__option--light", "accessibility_option_group__option--dark",
+    "accessibility_option_group__option--blue", "accessibility_option_group__option--gray",
     "modal_fade-enter-active", "modal_fade-enter-from", "modal_fade-enter-to",
     "modal_fade-leave-active", "modal_fade-leave-from", "modal_fade-leave-to",
 }
