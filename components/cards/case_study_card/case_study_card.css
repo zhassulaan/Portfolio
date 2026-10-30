@@ -45,7 +45,7 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .12em;
-  color: var(--theme-accent);
+  color: var(--theme-accent_text);
 }
 
 .case_study_card__meta span {

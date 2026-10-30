@@ -1,6 +1,6 @@
 .contact_section {
   padding-block: 6.25em;
-  background: var(--theme-accent);
+  background: var(--theme-accent_solid);
   color: var(--theme-white);
 }
 
@@ -27,7 +27,7 @@ html[lang='nl'] .contact_section h2 {
 }
 
 .contact_section .eyebrow {
-  color: rgb(var(--theme-white-rgb) / 68%);
+  color: rgb(var(--theme-white-rgb) / 85%);
 }
 
 .contact_section__action > p {
@@ -99,7 +99,7 @@ html[lang='nl'] .contact_section h2 {
 }
 
 .contact_section__social_link:hover {
-  color: var(--theme-accent);
+  color: var(--theme-accent_solid);
   transform: translateY(-.125em);
 }
 

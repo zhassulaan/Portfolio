@@ -3,7 +3,7 @@
   color: var(--theme-white);
 }
 
-.selected_projects_section .eyebrow, .selected_projects_section__intro {
+.selected_projects_section .eyebrow, .selected_projects_section .selected_projects_section__intro {
   color: #9da0aa;
 }
 

@@ -50,7 +50,7 @@
 .cv_page__view_link {
   font-size: .8125em;
   font-weight: 700;
-  color: var(--theme-accent);
+  color: var(--theme-accent_text);
 }
 
 .cv_page__file_meta {
@@ -150,7 +150,7 @@
   width: .5em;
   height: .5em;
   border-radius: 50%;
-  background: var(--theme-accent);
+  background: var(--theme-accent_solid);
 }
 
 .cv_page__timeline {
@@ -228,7 +228,7 @@ display: grid;
   font-size: .625em;
   font-weight: 800;
   font-style: normal;
-  color: var(--theme-accent);
+  color: var(--theme-accent_text);
 }
 
 .cv_page__proof_link {
@@ -236,7 +236,7 @@ display: grid;
   transition: transform .25s ease;
   font-size: .8125em;
   font-weight: 800;
-  color: var(--theme-accent);
+  color: var(--theme-accent_text);
 }
 
 .cv_page__proof_link:hover {

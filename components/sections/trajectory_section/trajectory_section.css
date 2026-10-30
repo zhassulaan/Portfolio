@@ -86,7 +86,7 @@
 .trajectory_section__proof_link {
   display: inline-block;
   margin-top: 1.125em;
-  color: var(--theme-accent);
+  color: var(--theme-accent_text);
   font-size: .8125em;
   font-weight: 800;
   transition: transform .25s ease;
@@ -148,7 +148,7 @@
 .trajectory_section__proof_item em {
   margin-top: auto;
   padding-top: 1em;
-  color: var(--theme-accent);
+  color: var(--theme-accent_text);
   font-size: .6875em;
   font-style: normal;
   font-weight: 800;

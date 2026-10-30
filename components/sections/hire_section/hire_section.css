@@ -47,8 +47,8 @@
 }
 
 .hire_section__book {
-  background: var(--theme-accent);
-  border-color: var(--theme-accent);
+  background: var(--theme-accent_solid);
+  border-color: var(--theme-accent_solid);
 }
 
 .hire_section__email {

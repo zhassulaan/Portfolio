@@ -43,7 +43,7 @@ html[lang='nl'] .hero_section__title {
 }
 
 .hero_section__title em {
-  color: var(--theme-accent);
+  color: var(--theme-accent_text);
   font-style: normal;
 }
 

@@ -11,6 +11,8 @@
   --theme-surface_alt: #ebe8e0;
   --theme-line: #d6d3ca;
   --theme-accent: #635bff;
+  --theme-accent_text: #4f46e5;
+  --theme-accent_solid: #4f46e5;
   --theme-accent_soft: #e9e6ff;
   --theme-green: #66db91;
   --theme-dark: #101116;
@@ -40,6 +42,8 @@
   --theme-line: #2a2b33;
   --theme-accent: #8a83ff;
   --theme-accent_soft: rgb(138 131 255 / 18%);
+  --theme-accent_text: #9a94ff;
+  --theme-accent_solid: #4f46e5;
   --theme-header_bg: rgb(12 13 17 / 86%);
   --theme-chip_bg: #1e1f27;
   --theme-chip_text: #c7c9d1;
@@ -63,6 +67,8 @@
   --theme-surface_alt: #163657;
   --theme-line: #234769;
   --theme-accent: #4da3ff;
+  --theme-accent_text: #7bbaff;
+  --theme-accent_solid: #1a5fc0;
   --theme-accent_soft: rgb(77 163 255 / 18%);
   --theme-header_bg: rgb(10 30 58 / 90%);
   --theme-chip_bg: #163657;
@@ -87,6 +93,8 @@
   --theme-surface_alt: #e2e2e2;
   --theme-line: #c9c9c9;
   --theme-accent: #4a4a4a;
+  --theme-accent_text: #4a4a4a;
+  --theme-accent_solid: #4a4a4a;
   --theme-accent_soft: rgb(74 74 74 / 14%);
   --theme-header_bg: rgb(236 236 236 / 96%);
   --theme-chip_bg: #e2e2e2;
@@ -113,6 +121,8 @@
     --theme-line: #2a2b33;
     --theme-accent: #8a83ff;
     --theme-accent_soft: rgb(138 131 255 / 18%);
+    --theme-accent_text: #9a94ff;
+    --theme-accent_solid: #4f46e5;
     --theme-header_bg: rgb(12 13 17 / 86%);
     --theme-chip_bg: #1e1f27;
     --theme-chip_text: #c7c9d1;

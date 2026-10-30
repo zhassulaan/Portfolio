@@ -51,21 +51,21 @@
   align-items: center;
   gap: .4375em;
   margin-top: 1.25em;
-  border: 1px solid var(--theme-accent);
+  border: 1px solid var(--theme-accent_solid);
   border-radius: 999px;
   padding: .5em 1.0625em;
   background: var(--theme-accent_soft);
   font: inherit;
   font-size: .8125em;
   font-weight: 800;
-  color: var(--theme-accent);
+  color: var(--theme-accent_text);
   cursor: pointer;
   transition: background-color .2s ease, color .2s ease, transform .2s ease, box-shadow .2s ease;
 }
 
 .milestone_card__trigger:hover,
 .milestone_card__trigger:focus-visible {
-  background: var(--theme-accent);
+  background: var(--theme-accent_solid);
   color: var(--theme-white);
   transform: translateY(-.0625em);
   box-shadow: 0 10px 22px rgb(var(--theme-black-rgb) / 14%);
