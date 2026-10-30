@@ -1,14 +1,8 @@
-// Custom rule: a CSS file must end with exactly one newline, no trailing
-// blank line — `...}\n` not `...}\n\n`.
+// A CSS file must end with exactly one newline, no trailing blank line.
 //
-// @stylistic/stylelint-plugin's max-empty-lines can't express this on its
-// own: its `max` option governs blank-line runs everywhere in the file
-// (including the deliberate single blank line this codebase keeps between
-// rule blocks), and setting it to 0 to catch a trailing blank line would
-// also strip every one of those in-between blank lines. This rule only
-// ever looks at root.raws.after — the raw whitespace after the LAST node
-// in the file — so it can enforce "no blank line at end of file" without
-// touching spacing anywhere else.
+// max-empty-lines can't do this: setting it to 0 would also remove the blank
+// lines between rules. This rule only checks root.raws.after, the whitespace
+// after the last node.
 import stylelint from 'stylelint';
 
 const { createPlugin, utils: { report, ruleMessages, validateOptions } } = stylelint;

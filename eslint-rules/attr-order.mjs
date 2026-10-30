@@ -1,50 +1,16 @@
-// Custom attribute-name ordering, replacing vue/attributes-order.
+// Attribute order by name, replacing vue/attributes-order, which can only sort
+// by category (it can't put placeholder before value or href before target).
 //
-// eslint-plugin-vue's built-in vue/attributes-order rule can only sort by
-// structural category (directive type / static vs bound) — it has no way
-// to say "placeholder before value" or "href before target", since both
-// pairs are literally the same category to it. This rule enforces the
-// exact house priority list instead, matching by attribute/directive NAME.
+// Tiers, lower = earlier:
+//   0 class | 1 id | 2 name | 3 v-if/v-else-if/v-else | 4 is | 5 title | 6 ref
+//   7 v-for | 8 key | 9 type | 10 href | 11 to | 12 target | 13 rel | 14 src, alt
+//   15 data-* | 16 role, aria-*, tabindex
+//   17 value, and anything unmatched (custom props like :items, :slug, :open)
+//   18 v-text | 19 v-html | 20 placeholder | 21 required | 22 disabled
+//   23 width, height, controls | 24 draggable, contenteditable, loading, v-reveal
+//   25 style | 26 v-model | 27 events (v-on, @...)
 //
-// Tiers, in order (lower = earlier):
-//   0  class / :class
-//   1  id
-//   2  name
-//   3  v-if / v-else-if / v-else
-//   4  is / :is
-//   5  title / :title
-//   6  ref
-//   7  v-for
-//   8  key / :key
-//   9  type
-//   10 href / :href
-//   11 to / :to
-//   12 target
-//   13 rel
-//   14 src / :src / alt
-//   15 data-*
-//   16 role / aria-* / tabindex
-//   17 value / :value, AND the catch-all for anything unmatched below —
-//      custom component props like :surface, :case_study, :doc, :project,
-//      :slug, :items, :open, :close_label, kind (none of which are native
-//      HTML attributes the house list covers) land here: "value" is the
-//      closest fit for "the data this element/component renders".
-//   18 v-text
-//   19 v-html
-//   20 placeholder / :placeholder
-//   21 required
-//   22 disabled
-//   23 width / height / controls
-//   24 draggable / contenteditable / loading, AND v-reveal (this
-//      codebase's one custom directive — not in the house list; placed
-//      here as the closest semantic fit, a scroll-triggered behavior)
-//   25 style
-//   26 v-model
-//   27 events (v-on / @anything) — always last
-//
-// Ties (same tier) keep their original relative order — Array#sort is
-// stable, so this never reshuffles attributes the house list didn't
-// mention a relation between.
+// Attributes in the same tier keep their original order.
 
 /** @param {import('vue-eslint-parser').AST.VAttribute | import('vue-eslint-parser').AST.VDirective} attr */
 function effectiveName(attr) {
@@ -164,13 +130,7 @@ export default {
   },
   create(context) {
     const sourceCode = context.sourceCode ?? context.getSourceCode();
-    // VStartTag/VAttribute etc. live in the <template> AST, which is a
-    // separate tree vue-eslint-parser attaches to the Program node —
-    // ESLint's normal ESTree traversal never reaches it.
-    // defineTemplateBodyVisitor is the parser service vue-eslint-parser
-    // provides specifically to visit that tree; a plain
-    // `return { VStartTag(node) {...} }` here would silently never fire
-    // (no error, but no effect either).
+    // defineTemplateBodyVisitor visits the <template> AST; a normal visitor never reaches it.
     if (!sourceCode.parserServices || !sourceCode.parserServices.defineTemplateBodyVisitor) {
       return {};
     }

@@ -1,8 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
 
-// `pretest:e2e` (package.json) runs `nuxt build` before this ever starts,
-// so the webServer command here only has to serve the already-built app —
-// avoids building twice locally and in CI.
+// `pretest:e2e` builds the app first, so the web server only has to serve it.
 export default defineConfig({
   testDir: './tests/e2e',
   fullyParallel: true,

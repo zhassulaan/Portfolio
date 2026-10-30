@@ -1,31 +1,15 @@
 #!/usr/bin/env node
 /**
- * Runs html-validate against every .vue SFC template (via the
- * html-validate-vue plugin, see .htmlvalidate.json's "transform") and any
- * standalone .html file in the project.
+ * Runs html-validate on every .vue template (through html-validate-vue) and on
+ * any .html file in the project.
  *
- * Note on the config's rule overrides (see .htmlvalidate.json for the
- * comments-equivalent — JSON has no comments, so the reasoning lives here):
- *  - attr-quotes: 'any'         — this codebase intentionally mixes single
- *    quotes (static attrs) and double quotes (bound attrs containing a
- *    template literal), matching ESLint's own 'quotes' rule for <script>.
- *  - element-case / element-name — Vue SFC components are referenced in
- *    PascalCase (<SiteHeader>, <NuxtLink>, ...), which html-validate's
- *    HTML5-oriented defaults don't recognize as valid custom-element names
- *    (real custom elements need a hyphen). Both are relaxed to accept
- *    PascalCase alongside real lowercase HTML5 elements.
- *  - void-style: 'omit'         — matches the project's vue/html-self-closing
- *    ESLint config: void elements (<img>, <input>, <br>, ...) never get a
- *    trailing slash here.
- *  - empty-heading / wcag/h30 / text-content (off) — all three are
- *    static-analysis false positives against v-text: `<h2 v-text='title'>
- *    </h2>` or `<button><span v-text='label'></span></button>` render real
- *    content at runtime, but html-validate can't see through the v-text
- *    binding at lint time and reports the element as empty / unnamed.
- *  - prefer-native-element (off) — flags this codebase's deliberately
- *    custom-styled accessible dropdown (role=listbox / aria-expanded /
- *    aria-haspopup pattern in language_switcher.vue) for not being a plain
- *    <select>, which is by design here, not an oversight.
+ * Rule overrides, with reasons (.htmlvalidate.json can't hold comments):
+ *  - attr-quotes 'any': single quotes for static attributes, double for bound ones.
+ *  - element-case / element-name: allow PascalCase components like <SiteHeader>.
+ *  - void-style 'omit': void elements have no trailing slash.
+ *  - empty-heading, wcag/h30, text-content (off): false positives, because
+ *    v-text content is invisible to the linter.
+ *  - prefer-native-element (off): language_switcher.vue is a custom listbox on purpose.
  */
 import { execFileSync } from 'node:child_process';
 import { readdirSync, statSync } from 'node:fs';

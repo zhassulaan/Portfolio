@@ -126,19 +126,15 @@ def main() -> None:
 
     y = 140
     draw.text((left, y), EYEBROW, font=font_eyebrow, fill=COLOR_ACCENT)
-    # Letter-spacing isn't native to PIL's text draw; a manual eyebrow rule
-    # under it reads the same "label" role instead.
+    # PIL has no letter-spacing, so a rule under the eyebrow label does that job.
     y += 34
     draw.rectangle([left, y, left + 46, y + 3], fill=COLOR_ACCENT)
 
     y += 40
     draw.text((left, y), NAME, font=font_name, fill=COLOR_TEXT)
 
-    # ROLE and DESCRIPTION wrap (rather than shrink, like NAME does) —
-    # shrinking a full sentence down to name.max_width would make it
-    # illegibly small next to a 50-60px name, so it wraps to 2 lines
-    # instead and the rest of the layout below just follows however many
-    # lines that took.
+    # ROLE and DESCRIPTION wrap to 2 lines instead of shrinking like NAME, which
+    # would make them too small. The layout below follows the line count.
     y += 92
     for line in wrap_text(draw, ROLE, font_role, text_max_width):
         draw.text((left, y), line, font=font_role, fill=COLOR_ACCENT)

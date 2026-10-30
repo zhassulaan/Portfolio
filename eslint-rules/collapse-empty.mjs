@@ -1,30 +1,10 @@
-// Custom rule: elements with fewer than 3 attributes and no inner content
-// (no real children — v-text/v-html count as content-free since they add
-// no template child node) must sit entirely on one line: attributes joined
-// by a single space, no space before the closing bracket, and the closing
-// tag glued directly onto it with nothing in between.
-//
-//   <option v-for='kind in kinds'
-//     :key="kind">
-//   </option>
-//
-// is wrong; the house rule is:
+// Elements with fewer than 3 attributes and no content go on one line:
 //
 //   <option v-for='kind in kinds' :key="kind"></option>
 //
-// vue/max-attributes-per-line and vue/multiline-html-element-content-newline
-// only ever SPLIT a line that has too many attributes or too much content —
-// neither has a way to merge lines that are already "valid" under a looser
-// per-line cap back down to one line. So formatting like the first example
-// above can happen (a stray manual edit, a half-applied autofix, a rebase)
-// and no existing rule will ever flag or fix it. This rule closes that gap
-// for the specific case established as house style: short (<3 attribute)
-// empty elements always collapse fully.
-//
-// Elements with 3+ attributes, or with real inner content, are left alone —
-// those are governed by vue/max-attributes-per-line,
-// vue/first-attribute-linebreak, and vue/multiline-html-element-content-newline
-// instead.
+// (v-text and v-html count as no content.) The built-in vue rules only split
+// long lines and never merge short ones. Elements with 3+ attributes or real
+// content are left to vue/max-attributes-per-line and the other built-in rules.
 
 function isEmptyContent(children) {
   return children.every((child) => child.type === 'VText' && /^\s*$/.test(child.value));

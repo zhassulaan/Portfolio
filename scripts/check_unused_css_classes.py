@@ -30,14 +30,12 @@ import sys
 
 CSS_GLOBS = ["**/*.css"]
 VUE_GLOBS = ["**/*.vue"]
-# Non-.vue places a class name could legitimately be applied via JS.
+# Non-.vue places where JS can apply a class.
 PLUGIN_JS_GLOBS = ["composables/**/*.ts", "plugins/**/*.ts", "app.vue", "error.vue"]
 EXCLUDE_DIRS = ("node_modules", ".nuxt", ".output", "dist")
 
-# Classes intentionally not authored as a literal string anywhere (e.g. Vue
-# auto-generated transition classes, or applied only by a third-party
-# library at runtime) — real, known exceptions, not a way to silence
-# everything.
+# Classes never written as a literal string (Vue transition classes, classes
+# added by a library). Keep this list short.
 KNOWN_DYNAMIC = {
     "modal_fade-enter-active", "modal_fade-enter-from", "modal_fade-enter-to",
     "modal_fade-leave-active", "modal_fade-leave-from", "modal_fade-leave-to",
@@ -53,9 +51,8 @@ def _read(path):
 
 
 def find_css_classes():
-    # Only scan actual selector preludes (the text between a `}`/start-of-file
-    # and the next `{`), never declaration bodies — otherwise numeric values
-    # like `margin: .5em` get misread as a class selector `.5em`.
+    # Only read selectors (the text before each `{`), so a value like
+    # `margin: .5em` isn't mistaken for a class `.5em`.
     classes = {}  # class_name -> [(file, line)]
     for pattern in CSS_GLOBS:
         for f in glob.glob(pattern, recursive=True):
@@ -87,8 +84,7 @@ def find_used_classes():
             for m in class_attr_re.finditer(text):
                 used.update(m.group(1).split())
             for m in bound_class_obj_re.finditer(text):
-                # `{ 'foo--active': someCondition, bar: other }` — keys are
-                # either quoted strings or bare identifiers.
+                # Object keys are quoted strings or bare identifiers: { 'foo--active': cond, bar: other }
                 body = m.group(1)
                 for key_m in re.finditer(r"""['"]([a-zA-Z0-9_-]+)['"]\s*:""", body):
                     used.add(key_m.group(1))
@@ -104,10 +100,8 @@ def find_used_classes():
 
 
 def find_dynamic_prefixes():
-    # Classes built as `` `foo--${variant}` `` (e.g. system_tile.vue's
-    # `` `system_tile--${surface.variant}` ``) can't be matched by exact
-    # name — pull out the literal prefix before the first `${` instead, and
-    # treat any CSS class starting with it as used.
+    # Dynamic classes like `system_tile--${surface.variant}` can't match by name, so take
+    # the part before `${` and treat every class with that prefix as used.
     prefixes = set()
     template_re = re.compile(r"`([a-zA-Z0-9_-]+)\$\{")
     for pattern in VUE_GLOBS + PLUGIN_JS_GLOBS:

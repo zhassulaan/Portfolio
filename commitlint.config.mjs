@@ -1,6 +1,4 @@
-// Conventional Commits, enforced on every commit via .husky/commit-msg.
-// Keeps the public commit log ("upd", "f", ".", "debug") from being part
-// of what a reviewer judges the project by.
+// Conventional Commits, enforced by .husky/commit-msg.
 export default {
   extends: ['@commitlint/config-conventional'],
   rules: {
