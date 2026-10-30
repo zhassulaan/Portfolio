@@ -21,7 +21,7 @@ npm run i18n:add -- fr "Français" fr-FR
   (hidden from the switcher, the sitemap and hreflang).
 - Right-to-left languages (`ar`, `he`, `fa`, `ur`) get `"dir": "rtl"`
   automatically.
-- Translate keys by copying them from `locales/en.json` — only the keys you
+- Translate keys by copying them from `locales/en.json`. Only the keys you
   translate need to exist.
 - `npm run lint:i18n` shows coverage per language and fails on typos
   (keys that don't exist in English) or broken `{placeholders}`.

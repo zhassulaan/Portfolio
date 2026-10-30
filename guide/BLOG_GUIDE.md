@@ -1,11 +1,11 @@
 # Writing a blog post
 
-Posts live in `data/blog_posts.ts` as plain data — no Markdown parser, no
+Posts live in `data/blog_posts.ts` as plain data: no Markdown parser, no
 extra dependency, nothing rendered with `v-html`.
 
 ```ts
 {
-  slug: 'my-post',            // URL: /blog/my-post — lowercase, hyphens
+  slug: 'my-post',            // URL: /blog/my-post, lowercase with hyphens
   title: '…',
   date: '2026-10-16',         // ISO date; newest first in the array
   summary: '…',               // used in the list, meta description, social cards
@@ -24,7 +24,7 @@ After adding a post run `npm run sitemap` so the new URL is listed.
 
 The two starter posts were drafted from the facts in the case studies
 (`data/portfolio.ts`). Before relying on them, read them once and add the
-details only you know — real numbers, what went wrong, what you would do
+details only you know: real numbers, what went wrong, what you would do
 differently. Specific, first-hand detail is what makes a post worth reading.
 
 Posts are English-only: the list and post pages show a short note in other

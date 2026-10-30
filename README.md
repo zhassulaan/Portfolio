@@ -1,25 +1,17 @@
-# Zhassulan Serikuly — Engineering Notebook
+# Portfolio
 
-A Nuxt 3 portfolio deliberately designed **not** to duplicate LinkedIn.
+My personal portfolio: https://zhassulan.netlify.app
 
-LinkedIn carries chronology and job-description detail. This site focuses on:
+Built with Nuxt 3, Vue 3 and TypeScript. It has 7 languages, light and dark themes and an accessibility panel.
 
-- measurable engineering decisions;
-- frontend architecture and modernization;
-- performance work at product and GIS scale;
-- system types and operating principles;
-- a compressed career path with company logos;
-- verifiable proof such as education, IELTS, competition recognition and recommendation letters.
+Pages: home (cases, projects, career path, hire me), `/projects`, `/cv`, `/proof`, `/blog`.
 
-## Source conventions
+## Code conventions
 
-- Vue 3 + Nuxt 3 + TypeScript;
-- component-based architecture;
-- `snake_case` filenames;
-- BEM-style CSS with `snake_case` blocks/elements;
-- component-owned styles under `assets/css/components/`;
-- `;` for TypeScript statements and trailing `,` in data structures;
-- lightweight IntersectionObserver reveal animation with reduced-motion support.
+- `snake_case` for files, variables and CSS class names.
+- BEM-style CSS. Each component keeps its `.vue` and `.css` files in one folder.
+- `;` after TypeScript statements, trailing `,` in data.
+- Details in `guide/COMPONENT_STRUCTURE.md`.
 
 ## Run
 
@@ -43,20 +35,20 @@ npm run dev
 
 Copy `.env.example` to `.env`. Everything is optional:
 
-- `NUXT_PUBLIC_BOOKING_URL` — Cal.com/Calendly link for “Book an intro call”
-  (without it the button opens a pre-filled email).
-- `NUXT_PUBLIC_ANALYTICS_DOMAIN` — turns on cookie-free Plausible analytics.
-  Custom events: CV Download, CV Open, Booking Click, Email Click, Email Copy.
-- `NUXT_PUBLIC_SITE_URL` — canonical/hreflang/Open Graph base URL.
+- `NUXT_PUBLIC_BOOKING_URL` is the Calendly or Cal.com link for “Book an intro call”.
+  Without it, the button opens an email.
+- `NUXT_PUBLIC_ANALYTICS_DOMAIN` turns on Plausible analytics.
+  Events: CV Download, CV Open, Booking Click, Email Click, Email Copy.
+- `NUXT_PUBLIC_SITE_URL` is the base URL for canonical, hreflang and Open Graph links.
 
 ## More guides
 
-- `guide/LANGUAGES_GUIDE.md` — adding languages
-- `guide/BLOG_GUIDE.md` — writing posts
+- `guide/LANGUAGES_GUIDE.md`: adding languages
+- `guide/BLOG_GUIDE.md`: writing posts
 - `guide/COMPONENT_STRUCTURE.md`, `PROJECTS_GUIDE.md`, `PROOF_GUIDE.md`
 
 ## CV file
 
-The CV button serves `public/files/Zhassulan-Serikuly-CV.pdf` (also reachable
-at the stable address `/cv.pdf`). To update it, replace that file — a unit
-test checks that it exists and is a real PDF.
+The CV button serves `public/files/Zhassulan-Serikuly-CV.pdf`, also available at
+`/cv.pdf`. To update the CV, replace that file. A unit test checks that it
+exists and is a PDF.
