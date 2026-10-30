@@ -18,7 +18,10 @@
     "lint:css:fix": "stylelint \"**/*.css\" --fix",
     "lint:html": "node scripts/lint-html.mjs",
     "lint:unused-css": "python3 scripts/check_unused_css_classes.py",
-    "lint:all": "npm run lint && npm run lint:css && npm run lint:html",
+    "lint:i18n": "node scripts/i18n.mjs check",
+    "i18n:add": "node scripts/i18n.mjs add",
+    "sitemap": "python3 scripts/generate_sitemap.py",
+    "lint:all": "npm run lint && npm run lint:css && npm run lint:html && npm run lint:i18n",
     "prepare": "husky"
   },
   "dependencies": {

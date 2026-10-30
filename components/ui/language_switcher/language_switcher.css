@@ -32,10 +32,10 @@
   z-index: 20;
   display: flex;
   flex-direction: column;
+  gap: .375em;
   min-width: 9em;
   margin: 0;
   padding: .375em;
-  list-style: none;
   border: 1px solid var(--theme-line);
   border-radius: .75em;
   background: var(--theme-surface);
@@ -59,4 +59,29 @@
 .language_switcher__option--active {
   color: var(--theme-ink);
   font-weight: 600;
+}
+
+.language_switcher__search {
+  width: 100%;
+  padding: .5em .625em;
+  border: 1px solid var(--theme-line);
+  border-radius: .5em;
+  background: transparent;
+  color: var(--theme-text);
+  font: inherit;
+  font-size: .875em;
+}
+
+.language_switcher__list {
+  max-height: min(60vh, 20em);
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.language_switcher__empty {
+  padding: .5em .625em;
+  color: var(--theme-muted);
+  font-size: .875em;
 }

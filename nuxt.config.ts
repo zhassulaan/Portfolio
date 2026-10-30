@@ -1,3 +1,7 @@
+import locale_registry from './config/locales.json';
+
+const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL || 'https://zhassulan.netlify.app';
+
 export default defineNuxtConfig({
   devtools: {
     enabled: false,
@@ -8,44 +12,15 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
   ],
   i18n: {
-    locales: [{
-      code: 'en',
-      language: 'en-US',
-      name: 'English',
-      file: 'en.json',
-    }, {
-      code: 'ru',
-      language: 'ru-RU',
-      name: 'Русский',
-      file: 'ru.json',
-    }, {
-      code: 'kk',
-      language: 'kk-KZ',
-      name: 'Қазақша',
-      file: 'kk.json',
-    }, {
-      code: 'tr',
-      language: 'tr-TR',
-      name: 'Türkçe',
-      file: 'tr.json',
-    }, {
-      code: 'zh',
-      language: 'zh-CN',
-      name: '中文',
-      file: 'zh.json',
-    }, {
-      code: 'nl',
-      language: 'nl-NL',
-      name: 'Nederlands',
-      file: 'nl.json',
-    }, {
-      code: 'de',
-      language: 'de-DE',
-      name: 'Deutsch',
-      file: 'de.json',
-    }],
+    // Languages are listed in config/locales.json. Entries with
+    // `published: false` are kept out of the site.
+    locales: locale_registry
+      .filter((entry) => entry.published !== false)
+      .map((entry) => ({ ...entry, file: `${entry.code}.json` })),
+    // Fallback to English for missing keys is set in i18n.config.ts.
+    vueI18n: './i18n.config.ts',
     defaultLocale: 'en',
-    baseUrl: 'https://zhassulan.netlify.app',
+    baseUrl: SITE_URL,
     langDir: 'locales/',
     restructureDir: false,
     bundle: {
@@ -60,6 +35,18 @@ export default defineNuxtConfig({
     // the whole build with "Detected HTML in ... message".
     compilation: {
       strictMessage: false,
+    },
+  },
+  // Browser-visible settings, set via NUXT_PUBLIC_* variables (see .env.example).
+  // An empty value turns the feature off.
+  runtimeConfig: {
+    public: {
+      siteUrl: SITE_URL,
+      contactEmail: 'serikuly.zhassulan@gmail.com',
+      // Read at build time (.env locally, environment variables on Netlify).
+      bookingUrl: process.env.NUXT_PUBLIC_BOOKING_URL || '',
+      analyticsDomain: process.env.NUXT_PUBLIC_ANALYTICS_DOMAIN || '',
+      analyticsScriptSrc: process.env.NUXT_PUBLIC_ANALYTICS_SCRIPT_SRC || 'https://plausible.io/js/script.tagged-events.js',
     },
   },
   css: [

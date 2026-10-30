@@ -3,18 +3,27 @@ import SiteHeader from '@/components/layout/site_header/site_header.vue';
 import SiteFooter from '@/components/layout/site_footer/site_footer.vue';
 import AccessibilityPanel from '@/components/ui/accessibility_panel/accessibility_panel.vue';
 
-const { t, locale } = useI18n();
+const { t, locale, locales } = useI18n();
 const route = useRoute();
+const { public: public_config } = useRuntimeConfig();
 
-// Keep in sync with nuxt.config.ts's i18n.baseUrl, which useLocaleHead()
-// below reads to build the absolute alternate-locale URLs.
-const SITE_URL = 'https://zhassulan.netlify.app';
+// From runtimeConfig (nuxt.config.ts); i18n.baseUrl there uses the same value.
+const SITE_URL = public_config.siteUrl;
+const CONTACT_EMAIL = public_config.contactEmail;
+
+// RTL languages are marked with "dir": "rtl" in config/locales.json.
+const text_direction = computed(() => {
+  const current = (locales.value as Array<{ code: string; dir?: string }>).find((item) => item.code == locale.value);
+
+  return current?.dir ?? 'ltr';
+});
 const canonical_url = computed(() => `${SITE_URL}${route.path}`);
 const og_image_url = `${SITE_URL}/og-image.jpg`;
 
 useHead({
   htmlAttrs: {
     lang: locale,
+    dir: text_direction,
   },
   titleTemplate: (title_chunk) => title_chunk ? `${title_chunk} · ${t('site.title_suffix')}` : t('site.default_title'),
   meta: [{
@@ -64,7 +73,7 @@ useHead({
       jobTitle: 'Senior Software Engineer',
       url: SITE_URL,
       image: og_image_url,
-      email: 'mailto:serikuly.zhassulan@gmail.com',
+      email: `mailto:${CONTACT_EMAIL}`,
       sameAs: [
         'https://www.linkedin.com/in/zhassulan-serikuly',
         'https://github.com/zhassulaan',
@@ -76,7 +85,7 @@ useHead({
 
 <template>
   <div class='site_shell'>
-    <a class='skip_link' href='#main_content'>Skip to content</a>
+    <a class='skip_link' href='#main_content'>{{ $t('header.skip_to_content') }}</a>
     <SiteHeader />
     <NuxtPage />
     <SiteFooter />

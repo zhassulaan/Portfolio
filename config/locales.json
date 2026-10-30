@@ -1,0 +1,9 @@
+[
+  { "code": "en", "language": "en-US", "name": "English" },
+  { "code": "ru", "language": "ru-RU", "name": "Русский" },
+  { "code": "kk", "language": "kk-KZ", "name": "Қазақша" },
+  { "code": "tr", "language": "tr-TR", "name": "Türkçe" },
+  { "code": "zh", "language": "zh-CN", "name": "中文" },
+  { "code": "nl", "language": "nl-NL", "name": "Nederlands" },
+  { "code": "de", "language": "de-DE", "name": "Deutsch" }
+]

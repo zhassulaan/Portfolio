@@ -9,28 +9,36 @@ when a page or a proof document is added, so a small script that reads the
 same data the app itself renders from (data/portfolio.ts's proof_documents)
 is enough, and keeps the sitemap from drifting out of sync with the app.
 
-Locale/routing rules mirror nuxt.config.ts's i18n block: 7 locales,
-strategy 'prefix_except_default' (the default locale, 'en', is served
-unprefixed; every other locale gets a /{locale} prefix), defaultLocale
-'en'. If either of those change in nuxt.config.ts, update LOCALES /
-DEFAULT_LOCALE below to match.
+Locales come from config/locales.json — the same registry nuxt.config.ts
+reads — so adding a language there updates the sitemap automatically.
+Entries marked "published": false are skipped, exactly as on the site.
+Routing mirrors nuxt.config.ts: strategy 'prefix_except_default' (the
+default locale, 'en', is served unprefixed; every other locale gets a
+/{locale} prefix). Blog posts are read from data/blog_posts.ts.
 
 Usage: python3 scripts/generate_sitemap.py
 """
+import json
 import re
 from datetime import date
 from pathlib import Path
 
 SITE_URL = 'https://zhassulan.netlify.app'
 
-LOCALES = ['en', 'ru', 'kk', 'tr', 'zh', 'nl', 'de']
+LOCALE_REGISTRY = Path('config/locales.json')
 DEFAULT_LOCALE = 'en'
+LOCALES = [
+    entry['code']
+    for entry in json.loads(LOCALE_REGISTRY.read_text(encoding='utf-8'))
+    if entry.get('published', True)
+]
 
 PORTFOLIO_DATA = Path('data/portfolio.ts')
+BLOG_DATA = Path('data/blog_posts.ts')
 OUTPUT = Path('public/sitemap.xml')
 
 # Static routes, matching pages/**/*.vue one-for-one.
-STATIC_ROUTES = ['/', '/projects', '/cv', '/proof']
+STATIC_ROUTES = ['/', '/projects', '/cv', '/proof', '/blog']
 
 
 def load_proof_slugs() -> list[tuple[str, str]]:
@@ -48,8 +56,18 @@ def load_proof_slugs() -> list[tuple[str, str]]:
     return entries
 
 
+def load_blog_slugs() -> list[str]:
+    """Slugs of every post in data/blog_posts.ts, so /blog/<slug> routes
+    never drift from the real data."""
+    if not BLOG_DATA.exists():
+        return []
+    return re.findall(r"^\s*slug:\s*'([\w-]+)',", BLOG_DATA.read_text(encoding='utf-8'), re.MULTILINE)
+
+
 def build_routes() -> list[str]:
     routes = list(STATIC_ROUTES)
+    for slug in load_blog_slugs():
+        routes.append(f'/blog/{slug}')
     for slug, kind in load_proof_slugs():
         routes.append(f'/{kind}/{slug}')
     return routes

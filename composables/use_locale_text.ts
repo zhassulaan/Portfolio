@@ -1,4 +1,5 @@
-export type LocaleCode = 'en' | 'ru' | 'kk' | 'tr' | 'zh' | 'nl' | 'de';
+// Codes come from config/locales.json.
+export type LocaleCode = string;
 
 // Looks up a translated override for a piece of data-driven content (a
 // project description, a case study paragraph, a milestone's focus line,
