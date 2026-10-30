@@ -6,6 +6,7 @@ import SelectedProjectsSection from '@/components/sections/selected_projects_sec
 import WorkSection from '@/components/sections/work_section/work_section.vue';
 import PrinciplesSection from '@/components/sections/principles_section/principles_section.vue';
 import TrajectorySection from '@/components/sections/trajectory_section/trajectory_section.vue';
+import HireSection from '@/components/sections/hire_section/hire_section.vue';
 import ContactSection from '@/components/sections/contact_section/contact_section.vue';
 
 useHead({
@@ -31,6 +32,7 @@ useHead({
     <WorkSection />
     <PrinciplesSection />
     <TrajectorySection />
+    <HireSection />
     <ContactSection />
   </main>
 </template>

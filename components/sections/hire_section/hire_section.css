@@ -1,0 +1,90 @@
+.hire_section__body {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 3.75em;
+  align-items: start;
+}
+
+.hire_section__facts {
+  display: grid;
+  margin: 0;
+  border-top: 1px solid var(--theme-line);
+}
+
+.hire_section__fact {
+  display: grid;
+  grid-template-columns: 11em 1fr;
+  gap: 1.5em;
+  padding-block: 1.125em;
+  border-bottom: 1px solid var(--theme-line);
+}
+
+.hire_section__fact dt {
+  color: var(--theme-muted);
+  font-size: .6875em;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.hire_section__fact dd {
+  margin: 0;
+  font-size: 1.0625em;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.hire_section__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: .75em;
+  padding: 1.75em;
+  border: 1px solid var(--theme-line);
+  border-radius: 1.25em;
+  background: var(--theme-surface);
+}
+
+.hire_section__book {
+  background: var(--theme-accent);
+  border-color: var(--theme-accent);
+}
+
+.hire_section__email {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .5em;
+  margin: .5em 0 0;
+  color: var(--theme-muted);
+  font-size: .875em;
+  overflow-wrap: anywhere;
+}
+
+.hire_section__email a {
+  color: var(--theme-text);
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+
+.hire_section__copied {
+  min-height: 1.25em;
+  color: var(--theme-projects_motion);
+  font-weight: 700;
+}
+
+@media (width <= 900px) {
+  .hire_section__body {
+    grid-template-columns: 1fr;
+    gap: 2.25em;
+  }
+}
+
+@media (width <= 600px) {
+  .hire_section__fact {
+    grid-template-columns: 1fr;
+    gap: .375em;
+  }
+}

@@ -1,5 +1,10 @@
 <script setup lang='ts'>
 import { portfolio_assets } from '@/data/portfolio';
+import { useAnalytics } from '@/composables/use_analytics';
+import { useContactLinks } from '@/composables/use_contact_links';
+
+const { track } = useAnalytics();
+const contact = useContactLinks();
 </script>
 
 <template>
@@ -9,6 +14,7 @@ import { portfolio_assets } from '@/data/portfolio';
         <span></span>
         {{ $t('hero.status') }}
       </p>
+      <p class='hero_section__availability'>{{ $t('hero.availability') }}</p>
 
       <h1 class='hero_section__title' v-html="$t('hero.title')"></h1>
 
@@ -25,6 +31,14 @@ import { portfolio_assets } from '@/data/portfolio';
           :aria-label="$t('hero.cta_cv_aria')">
           {{ $t('hero.cta_cv') }}
         </NuxtLink>
+        <a class='button button--ghost'
+          :href='contact.booking_href'
+          :target="contact.booking_opens_new_tab ? '_blank' : undefined"
+          :rel="contact.booking_opens_new_tab ? 'noreferrer' : undefined"
+          v-on:click="track('Booking Click', { source: 'hero' })">
+          {{ $t('hire.cta_book') }} <span aria-hidden='true'>↗</span>
+          <span class='sr_only' v-if='contact.booking_opens_new_tab'>{{ $t('hero.opens_new_tab_sr') }}</span>
+        </a>
       </div>
 
       <div class='hero_section__socials'
@@ -44,7 +58,9 @@ import { portfolio_assets } from '@/data/portfolio';
           {{ $t('hero.social_github') }} <span aria-hidden='true'>↗</span>
           <span class='sr_only'>{{ $t('hero.opens_new_tab_sr') }}</span>
         </a>
-        <a class='hero_section__social_link' href='mailto:serikuly.zhassulan@gmail.com'>
+        <a class='hero_section__social_link'
+          :href='contact.mailto_href'
+          v-on:click="track('Email Click', { source: 'hero' })">
           {{ $t('hero.social_email') }} <span aria-hidden='true'>↗</span>
         </a>
       </div>

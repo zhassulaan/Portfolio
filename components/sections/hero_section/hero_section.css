@@ -288,3 +288,10 @@ html[lang='nl'] .hero_section__title {
     left: -.3125em;
   }
 }
+
+.hero_section__availability {
+  margin: -.5em 0 1.25em;
+  color: var(--theme-muted);
+  font-size: .875em;
+  font-weight: 600;
+}

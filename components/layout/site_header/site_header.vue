@@ -2,9 +2,13 @@
 import { nav_items } from '@/data/portfolio';
 import ThemeToggle from '@/components/ui/theme_toggle/theme_toggle.vue';
 import LanguageSwitcher from '@/components/ui/language_switcher/language_switcher.vue';
+import { useAnalytics } from '@/composables/use_analytics';
+import { useContactLinks } from '@/composables/use_contact_links';
 
 const route = useRoute();
 const local_path = useLocalePath();
+const { track } = useAnalytics();
+const contact = useContactLinks();
 
 // nav_items only carries an English label + href; the translated label for
 // each entry lives in the `nav` namespace of i18n/locales/*.json, keyed by
@@ -191,7 +195,9 @@ onBeforeUnmount(() => {
         <LanguageSwitcher class='site_header__language' />
         <ThemeToggle class='site_header__theme' />
 
-        <a class='site_header__cta' href='mailto:serikuly.zhassulan@gmail.com'>
+        <a class='site_header__cta'
+          :href='contact.mailto_href'
+          v-on:click="track('Email Click', { source: 'header' })">
           <span class='site_header__cta_text' v-text="$t('header.start_conversation')"></span>
           <i class='site_header__cta_arrow'
             aria-hidden='true'
@@ -233,7 +239,9 @@ onBeforeUnmount(() => {
         <LanguageSwitcher />
         <ThemeToggle />
 
-        <a class='button site_header__mobile_cta' href='mailto:serikuly.zhassulan@gmail.com'>
+        <a class='button site_header__mobile_cta'
+          :href='contact.mailto_href'
+          v-on:click="track('Email Click', { source: 'header_mobile' })">
           {{ $t('header.start_conversation') }} <span aria-hidden='true'>↗</span>
         </a>
       </div>

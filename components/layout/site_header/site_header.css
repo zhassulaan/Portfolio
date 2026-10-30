@@ -67,6 +67,7 @@
 
 .site_header__nav_text {
   display: inline-block;
+  white-space: nowrap;
   transition: transform .28s cubic-bezier(.2, .8, .2, 1);
 }
 
@@ -285,7 +286,9 @@
   flex: 1;
 }
 
-@media (width <= 820px) {
+/* Ten nav entries need more room than the original eight: switch to the
+   burger menu below this width instead of letting links touch the controls. */
+@media (width <= 1040px) {
   .site_header__nav {
     display: none;
   }
@@ -303,7 +306,7 @@
   }
 }
 
-@media (width >= 821px) {
+@media (width >= 1041px) {
   .site_header__mobile_nav,
   .site_header__mobile_nav--open {
     /* stylelint-disable-next-line declaration-no-important */

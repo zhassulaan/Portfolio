@@ -1,3 +1,11 @@
+<script setup lang='ts'>
+import { useAnalytics } from '@/composables/use_analytics';
+import { useContactLinks } from '@/composables/use_contact_links';
+
+const { track } = useAnalytics();
+const contact = useContactLinks();
+</script>
+
 <template>
   <section class='contact_section' id='contact'>
     <div class='wrap contact_section__inner'>
@@ -13,8 +21,8 @@
           {{ $t('contact.relocation_line') }}
         </p>
 
-        <a href='mailto:serikuly.zhassulan@gmail.com'>
-          serikuly.zhassulan@gmail.com&nbsp;<span aria-hidden='true'>↗</span>
+        <a :href='contact.mailto_href' v-on:click="track('Email Click', { source: 'contact' })">
+          {{ contact.email }}&nbsp;<span aria-hidden='true'>↗</span>
         </a>
 
         <div class='contact_section__socials'>
