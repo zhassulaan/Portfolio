@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Zhassulan Serikuly: Engineering notes</title>
+    <link>https://zhassulan.netlify.app/blog</link>
+    <description>Short write-ups of engineering work: the problem, what changed and the numbers.</description>
+    <language>en</language>
+    <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>500K map objects, first render cut from 800 to 480 ms</title>
+      <link>https://zhassulan.netlify.app/blog/half-a-million-map-objects</link>
+      <guid isPermaLink="true">https://zhassulan.netlify.app/blog/half-a-million-map-objects</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+      <description>A Mapbox GL JS interface with 300K–500K geospatial objects: first render from about 800 ms to about 480 ms.</description>
+    </item>
+    <item>
+      <title>Moving from the Pages Router to the App Router</title>
+      <link>https://zhassulan.netlify.app/blog/pages-router-to-app-router</link>
+      <guid isPermaLink="true">https://zhassulan.netlify.app/blog/pages-router-to-app-router</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Modernizing legacy React/Next.js codebases at Ciklum: App Router, strict TypeScript, and INP from about 280 ms to about 150 ms.</description>
+    </item>
+  </channel>
+</rss>

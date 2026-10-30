@@ -1,6 +1,6 @@
 import type { BlogPost } from '@/types/portfolio';
 
-// Newest first. After adding a post, run `npm run sitemap`. See guide/BLOG_GUIDE.md.
+// Newest first. After adding a post, run `npm run feeds`. See guide/BLOG_GUIDE.md.
 export const blog_posts: BlogPost[] = [{
   slug: 'half-a-million-map-objects',
   title: '500K map objects, first render cut from 800 to 480 ms',

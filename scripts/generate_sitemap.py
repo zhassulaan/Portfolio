@@ -14,16 +14,21 @@ reads — so adding a language there updates the sitemap automatically.
 Entries marked "published": false are skipped, exactly as on the site.
 Routing mirrors nuxt.config.ts: strategy 'prefix_except_default' (the
 default locale, 'en', is served unprefixed; every other locale gets a
-/{locale} prefix). Blog posts are read from data/blog_posts.ts.
+/{locale} prefix). Blog posts are read from data/blog_posts.ts. Each URL's lastmod is
+the date of the last git commit that touched its source files (blog posts: their own date).
 
 Usage: python3 scripts/generate_sitemap.py
 """
 import json
+import os
 import re
+import subprocess
 from datetime import date
 from pathlib import Path
 
-SITE_URL = 'https://zhassulan.netlify.app'
+from blog_posts import load_posts
+
+SITE_URL = os.environ.get('NUXT_PUBLIC_SITE_URL', 'https://zhassulan.netlify.app')
 
 LOCALE_REGISTRY = Path('config/locales.json')
 DEFAULT_LOCALE = 'en'
@@ -34,7 +39,6 @@ LOCALES = [
 ]
 
 PORTFOLIO_DATA = Path('data/portfolio.ts')
-BLOG_DATA = Path('data/blog_posts.ts')
 OUTPUT = Path('public/sitemap.xml')
 
 # Static routes, matching pages/**/*.vue one-for-one.
@@ -56,21 +60,39 @@ def load_proof_slugs() -> list[tuple[str, str]]:
     return entries
 
 
-def load_blog_slugs() -> list[str]:
-    """Slugs of every post in data/blog_posts.ts, so /blog/<slug> routes
-    never drift from the real data."""
-    if not BLOG_DATA.exists():
-        return []
-    return re.findall(r"^\s*slug:\s*'([\w-]+)',", BLOG_DATA.read_text(encoding='utf-8'), re.MULTILINE)
-
-
 def build_routes() -> list[str]:
     routes = list(STATIC_ROUTES)
-    for slug in load_blog_slugs():
-        routes.append(f'/blog/{slug}')
+    for post in load_posts():
+        routes.append(f"/blog/{post['slug']}")
     for slug, kind in load_proof_slugs():
         routes.append(f'/{kind}/{slug}')
     return routes
+
+
+# Files whose last git commit date is the page's lastmod.
+ROUTE_SOURCES = {
+    '/': ['pages/index.vue', 'components/sections', 'data/portfolio.ts'],
+    '/projects': ['pages/projects', 'data/portfolio.ts'],
+    '/cv': ['pages/cv', 'data/skills.ts', 'data/portfolio.ts', 'public/files/Zhassulan-Serikuly-CV.pdf'],
+    '/proof': ['pages/proof', 'data/portfolio.ts'],
+    '/blog': ['pages/blog', 'data/blog_posts.ts'],
+}
+PROOF_SOURCES = ['components/sections/proof_detail_section', 'data/portfolio.ts']
+
+
+def git_date(paths: list[str]) -> str:
+    """Date of the last commit that touched any of the paths, or today without git."""
+    try:
+        out = subprocess.run(['git', 'log', '-1', '--format=%cs', '--', *paths], capture_output=True, text=True, check=True).stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        out = ''
+    return out or date.today().isoformat()
+
+
+def last_modified(route: str, post_dates: dict[str, str]) -> str:
+    if route.startswith('/blog/'):
+        return post_dates.get(route.removeprefix('/blog/'), git_date(['data/blog_posts.ts']))
+    return git_date(ROUTE_SOURCES.get(route, PROOF_SOURCES))
 
 
 def localized_path(route: str, locale: str) -> str:
@@ -89,7 +111,7 @@ def build_url(route: str, locale: str) -> str:
 
 def main() -> None:
     routes = build_routes()
-    lastmod = date.today().isoformat()
+    post_dates = {post['slug']: post['date'] for post in load_posts()}
 
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -99,6 +121,7 @@ def main() -> None:
 
     url_count = 0
     for route in routes:
+        lastmod = last_modified(route, post_dates)
         for locale in LOCALES:
             loc = build_url(route, locale)
             lines.append('  <url>')

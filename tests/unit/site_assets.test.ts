@@ -2,6 +2,7 @@
 import { existsSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
+import { blog_posts } from '../../data/blog_posts';
 import { portfolio_assets, proof_documents } from '../../data/portfolio';
 
 const PUBLIC_DIR = join(__dirname, '../../public');
@@ -25,5 +26,15 @@ describe('files the site links to', () => {
     const redirects = readFileSync(join(PUBLIC_DIR, '_redirects'), 'utf8');
 
     expect(redirects).toContain(`/cv.pdf ${portfolio_assets.cv}`);
+  });
+
+  it('lists every blog post in sitemap.xml and rss.xml (run `npm run feeds` after adding a post)', () => {
+    const sitemap = readFileSync(join(PUBLIC_DIR, 'sitemap.xml'), 'utf8');
+    const rss = readFileSync(join(PUBLIC_DIR, 'rss.xml'), 'utf8');
+
+    for (const post of blog_posts) {
+      expect(sitemap, post.slug).toContain(`/blog/${post.slug}`);
+      expect(rss, post.slug).toContain(`/blog/${post.slug}`);
+    }
   });
 });

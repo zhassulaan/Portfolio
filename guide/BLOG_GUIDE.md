@@ -19,7 +19,7 @@ extra dependency, nothing rendered with `v-html`.
 }
 ```
 
-After adding a post run `npm run sitemap` so the new URL is listed.
+After adding a post run `npm run feeds`: it updates `sitemap.xml` and `rss.xml`.
 `npm run test:unit` checks slugs, dates and structure.
 
 The two starter posts were drafted from the facts in the case studies

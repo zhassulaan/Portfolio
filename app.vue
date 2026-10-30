@@ -25,6 +25,7 @@ useHead({
     lang: locale,
     dir: text_direction,
   },
+  link: [{ rel: 'alternate', type: 'application/rss+xml', title: 'Blog', href: '/rss.xml' }],
   titleTemplate: (title_chunk) => title_chunk ? `${title_chunk} · ${t('site.title_suffix')}` : t('site.default_title'),
   meta: [{
     name: 'description',
