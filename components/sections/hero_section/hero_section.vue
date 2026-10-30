@@ -26,9 +26,7 @@ const contact = useContactLinks();
         <a class='button' href='#cases'>
           {{ $t('hero.cta_open_notebook') }} <span aria-hidden='true'>↓</span>
         </a>
-        <NuxtLink class='button button--ghost'
-          to='/cv'
-          :aria-label="$t('hero.cta_cv_aria')">
+        <NuxtLink class='button button--ghost' to='/cv'>
           {{ $t('hero.cta_cv') }}
         </NuxtLink>
         <a class='button button--ghost'

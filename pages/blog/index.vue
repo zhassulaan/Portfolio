@@ -27,7 +27,7 @@ useHead({
   <main class='blog_page wrap'
     id='main_content'
     tabindex='-1'>
-    <header class='blog_page__heading' v-reveal>
+    <header class='blog_page__heading'>
       <p class='eyebrow'>{{ $t('blog_page.eyebrow') }}</p>
       <h1 class='blog_page__title'>{{ $t('blog_page.title') }}</h1>
       <p class='blog_page__intro'>{{ $t('blog_page.intro') }}</p>

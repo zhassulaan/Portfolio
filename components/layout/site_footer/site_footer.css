@@ -16,7 +16,7 @@
   cursor: pointer;
   font: inherit;
   font-weight: 800;
-  color: var(--theme-ink);
+  color: var(--theme-text);
 }
 
 .site_footer__top:hover {

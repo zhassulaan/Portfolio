@@ -175,7 +175,7 @@ onBeforeUnmount(() => {
     <div class='site_header__inner'>
       <NuxtLink class='site_header__brand'
         :to="local_path('/')"
-        :aria-label="$t('header.home_aria')">
+        :aria-label="`ZS, ${$t('header.home_aria')}`">
         <span class='site_header__brand_text' v-text="'ZS'"></span>
       </NuxtLink>
 

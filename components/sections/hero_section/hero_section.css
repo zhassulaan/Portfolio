@@ -91,7 +91,7 @@ html[lang='nl'] .hero_section__title {
   flex-wrap: wrap;
   gap: .5em 1.25em;
   margin-top: 1.125em;
-  color: #4e5059;
+  color: var(--theme-muted);
   font-size: .6875em;
   font-weight: 700;
 }

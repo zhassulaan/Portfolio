@@ -69,7 +69,7 @@ onBeforeUnmount(() => {
       type='button'
       :aria-expanded='is_open'
       aria-haspopup='listbox'
-      :aria-label="$t('header.language')"
+      :aria-label="`${locale.toUpperCase()} ${$t('header.language')}`"
       v-on:click='toggle_open'>
       <span aria-hidden='true'>{{ locale.toUpperCase() }}</span>
     </button>
