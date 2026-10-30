@@ -1,34 +1,40 @@
-name: Build and Deploy
-on: 
-  push:
-    branches:
-      - main
+name: Build and Deploy (GitHub Pages)
+
+# The live site (zhassulan.netlify.app) is deployed by Netlify straight from
+# this repository, so this workflow no longer runs on every push — doing both
+# meant two deploy pipelines for one site, and this one skipped the tests.
+# It is kept for publishing to GitHub Pages on demand: run it from the
+# Actions tab. To restore automatic runs, add `push: { branches: [main] }`.
+on:
+  workflow_dispatch:
+
 permissions:
   contents: write
+
 jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [22]
     steps:
-    - name: Checkout 🛎️
-      uses: actions/checkout@v3
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
 
-    - name: Install & Generate 🔧
-      run: |
-        npm ci
-        npm run generate
-      env:
-        NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL  }}
+      - name: Install, test & generate 🔧
+        run: |
+          npm ci
+          npm run lint
+          npm run test:unit
+          npm run generate
+        env:
+          NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL }}
 
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        folder: dist
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist

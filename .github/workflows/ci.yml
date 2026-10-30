@@ -32,6 +32,9 @@ jobs:
       - name: HTML validation
         run: npm run lint:html
 
+      - name: Language files (missing/extra keys, placeholders)
+        run: npm run lint:i18n
+
       - name: Unused CSS check (non-blocking until the existing backlog is triaged)
         run: npm run lint:unused-css || true
 
