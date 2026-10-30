@@ -1,8 +1,5 @@
-// Translation overlay for data-driven content (case studies, projects,
-// milestones, principles, proof items/documents). Keyed by the same stable
-// ids already used in data/portfolio.ts (index/number/company/slug/id).
-// Missing keys fall back to the English text in portfolio.ts — see
-// composables/use_locale_text.ts.
+// Translation overlay for content in data/portfolio.ts. Keys use the ids from that
+// file. Missing keys fall back to English (see composables/use_locale_text.ts).
 export const ru: Record<string, string> = {
   'signals.0.label': 'лет в промышленной разработке',
   'signals.0.note': 'От стажировки на React до senior-ответственности в международных продуктовых командах.',
@@ -21,14 +18,14 @@ export const ru: Record<string, string> = {
   'case_studies.01.metrics.0.label': 'продуктовых модулей',
   'case_studies.01.metrics.1.label': 'быстрее доставка фич',
   'case_studies.02.kicker': 'Производительность как архитектура',
-  'case_studies.02.title': 'Относиться ко времени загрузки как к графу, а не числу.',
+  'case_studies.02.title': 'Загрузка страниц быстрее: с 3,2 до 2,1 секунды.',
   'case_studies.02.problem': 'Высоконагруженные экраны замедлялись из-за работы, распределённой между рендерингом, получением данных, кэшированием и асинхронными UI-потоками, а не из-за одного очевидного узкого места.',
   'case_studies.02.solution': 'Оптимизировал весь путь от запроса до рендера: поведение рендеринга, кэширование, асинхронную оркестрацию и паттерны API-запросов, подкрепив работу Core Web Vitals, Lighthouse, тестами и мониторингом Sentry.',
   'case_studies.02.result': 'Среднее время загрузки страницы снизилось примерно с 3.2 до 2.1 секунды, пока платформа продолжала развиваться.',
   'case_studies.02.metrics.0.label': 'средняя загрузка страницы',
   'case_studies.02.metrics.1.label': 'примерное снижение',
   'case_studies.03.kicker': 'Производительность геоданных',
-  'case_studies.03.title': 'Полмиллиона объектов на карте должны оставаться интерактивными.',
+  'case_studies.03.title': '500 тыс. объектов на карте: первый рендер с 800 до 480 мс.',
   'case_studies.03.problem': 'Плотным GIS-интерфейсам нужно было рендерить и обрабатывать наборы данных из примерно 300–500 тыс. геопространственных объектов, не делая первое взаимодействие ощутимо медленным.',
   'case_studies.03.solution': 'Перестроил слои и стили, внедрил кластеризацию и фильтрацию на клиенте, а также сократил лишнюю работу на пути данных между state-слоем React и Elasticsearch.',
   'case_studies.03.result': 'Начальный рендеринг Mapbox GL JS упал примерно с 800 до 480 мс, плюс отдельная работа над алгоритмами дала 30%-ное улучшение скорости геопоиска.',
@@ -57,7 +54,7 @@ export const ru: Record<string, string> = {
   'principles.02.text': 'Лучшая абстракция — та, что делает следующую фичу дешевле, безопаснее и понятнее.',
   'principles.03.title': 'Фронтенд — часть системы.',
   'principles.03.text': 'Рендеринг, форма данных, API, доступность, наблюдаемость и релизные пайплайны — одна инженерная поверхность.',
-  'principles.04.title': 'Senior — значит снижать неопределённость.',
+  'principles.04.title': 'Senior — это делать компромиссы видимыми.',
   'principles.04.text': 'Техническое лидерство — это делать компромиссы видимыми, чтобы команда двигалась быстро, не накапливая скрытых рисков.',
 
   'milestones.ciklum.role': 'Senior Software Engineer',

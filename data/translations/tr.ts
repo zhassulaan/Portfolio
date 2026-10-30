@@ -1,6 +1,5 @@
-// Translation overlay for data-driven content. Keyed by the same stable ids
-// used in data/portfolio.ts (index/number/company/slug/id). Missing keys
-// fall back to the English text in portfolio.ts.
+// Translation overlay for content in data/portfolio.ts. Keys use the ids from that
+// file. Missing keys fall back to English (see composables/use_locale_text.ts).
 export const tr: Record<string, string> = {
   'signals.0.label': 'yıl production deneyimi',
   'signals.0.note': 'React stajyerliğinden uluslararası ürün ekiplerinde senior sorumluluğa.',
@@ -19,14 +18,14 @@ export const tr: Record<string, string> = {
   'case_studies.01.metrics.0.label': 'ürün modülü',
   'case_studies.01.metrics.1.label': 'daha hızlı özellik teslimi',
   'case_studies.02.kicker': 'Mimari olarak performans',
-  'case_studies.02.title': 'Yüklenme süresini bir sayı değil, bir grafik olarak ele almak.',
+  'case_studies.02.title': 'Sayfa yüklenme süresi 3,2 saniyeden 2,1 saniyeye.',
   'case_studies.02.problem': 'Yoğun trafikli ekranlar, tek bir belirgin darboğazdan değil; render, veri çekme, önbellekleme ve asenkron UI akışları arasında dağılmış işlerden yavaşlıyordu.',
   'case_studies.02.solution': 'İstekten render\'a kadar tüm yolu optimize ettim: render davranışı, önbellekleme, asenkron orkestrasyon ve API istek kalıpları; bu çalışmayı Core Web Vitals, Lighthouse, testler ve Sentry izlemesiyle destekledim.',
   'case_studies.02.result': 'Platform gelişmeye devam ederken ortalama sayfa yüklenme süresi yaklaşık 3.2 saniyeden 2.1 saniyeye düştü.',
   'case_studies.02.metrics.0.label': 'ortalama sayfa yüklenmesi',
   'case_studies.02.metrics.1.label': 'yaklaşık azalma',
   'case_studies.03.kicker': 'Coğrafi veri performansı',
-  'case_studies.03.title': 'Yarım milyon harita nesnesi hâlâ etkileşimli hissettirmeli.',
+  'case_studies.03.title': '500 bin harita nesnesi: ilk render 800 ms’den 480 ms’ye.',
   'case_studies.03.problem': 'Yoğun GIS arayüzlerinin, ilk etkileşimi belirgin şekilde geciktirmeden yaklaşık 300-500 bin coğrafi nesne içeren veri kümelerini render edip işlemesi gerekiyordu.',
   'case_studies.03.solution': 'Katmanları ve stilleri yeniden yapılandırdım, kümeleme ve istemci tarafı filtreleme ekledim; React state katmanı ile Elasticsearch arasındaki veri yolundaki tekrar eden işleri ortadan kaldırdım.',
   'case_studies.03.result': 'İlk Mapbox GL JS render süresi yaklaşık 800 ms\'den 480 ms\'ye düştü; ayrı bir algoritma çalışmasıyla coğrafi arama yanıt süresinde %30 iyileşme sağlandı.',
@@ -55,7 +54,7 @@ export const tr: Record<string, string> = {
   'principles.02.text': 'En iyi soyutlama, bir sonraki özelliği daha ucuz, daha güvenli ve daha anlaşılır hale getirendir.',
   'principles.03.title': 'Frontend, sistemin bir parçasıdır.',
   'principles.03.text': 'Render, veri şekli, API\'ler, erişilebilirlik, gözlemlenebilirlik ve dağıtım süreçleri tek bir mühendislik alanıdır.',
-  'principles.04.title': 'Senior olmak, belirsizliği azaltmak demektir.',
+  'principles.04.title': 'Kıdemli olmak, ödünleşimleri görünür kılmaktır.',
   'principles.04.text': 'Teknik liderlik, ekibin gizli risk biriktirmeden hızlı ilerleyebilmesi için ödünleşimleri görünür kılmaktır.',
 
   'milestones.ciklum.role': 'Senior Software Engineer',

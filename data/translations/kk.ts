@@ -1,11 +1,7 @@
-// Translation overlay for data-driven content. Keyed by the same stable ids
-// used in data/portfolio.ts (index/number/company/slug/id). Missing keys
-// fall back to the English text in portfolio.ts.
+// Translation overlay for content in data/portfolio.ts. Keys use the ids from that
+// file. Missing keys fall back to English (see composables/use_locale_text.ts).
 //
-// NOTE: Kazakh technical/business phrasing below was machine-translated and
-// has not been checked by a native speaker — worth a proofread pass before
-// this goes live, since this is the one language on the site closest to
-// home.
+// NOTE: machine-translated, not yet proofread by a native speaker.
 export const kk: Record<string, string> = {
   'signals.0.label': 'жыл өндірістік тәжірибе',
   'signals.0.note': 'React тәжірибешісінен халықаралық өнім командаларындағы senior жауапкершілікке дейін.',
@@ -24,14 +20,14 @@ export const kk: Record<string, string> = {
   'case_studies.01.metrics.0.label': 'өнім модулі',
   'case_studies.01.metrics.1.label': 'функцияны тезірек жеткізу',
   'case_studies.02.kicker': 'Архитектура ретіндегі өнімділік',
-  'case_studies.02.title': 'Жүктелу уақытын санмен емес, графикпен қарау.',
+  'case_studies.02.title': 'Беттің жүктелуі 3,2 секундтан 2,1 секундқа дейін.',
   'case_studies.02.problem': 'Жоғары трафикті экрандар бір анық тар жерден емес, рендеринг, деректерді алу, кэштеу және асинхронды UI ағындары арасында бөлінген жұмыстан баяулап жатты.',
   'case_studies.02.solution': 'Сұраныстан рендерге дейінгі бүкіл жолды оңтайландырдым: рендеринг тәртібін, кэштеуді, асинхронды оркестрацияны және API сұраныс үлгілерін, содан кейін бұл жұмысты Core Web Vitals, Lighthouse, тесттер және Sentry мониторингімен нығайттым.',
   'case_studies.02.result': 'Платформа дами беруіне қарамастан, беттің орташа жүктелу уақыты шамамен 3.2 секундтан 2.1 секундқа дейін қысқарды.',
   'case_studies.02.metrics.0.label': 'орташа бет жүктелуі',
   'case_studies.02.metrics.1.label': 'шамамен төмендеу',
   'case_studies.03.kicker': 'Геодеректер өнімділігі',
-  'case_studies.03.title': 'Жарты миллион карта нысаны әлі де интерактивті болуы тиіс.',
+  'case_studies.03.title': 'Картадағы 500 мың нысан: алғашқы рендер 800-ден 480 мс-қа дейін.',
   'case_studies.03.problem': 'Тығыз GIS интерфейстері бірінші өзара әрекеттесуді байқалатындай баяулатпай, шамамен 300–500 мың геокеңістіктік нысаннан тұратын деректер жиынын рендерлеп, өңдеуі керек болды.',
   'case_studies.03.solution': 'Қабаттар мен стильдерді қайта құрдым, кластерлеу мен клиент жағындағы сүзгілеуді енгіздім және React күй қабаты мен Elasticsearch арасындағы деректер жолындағы қайталанатын жұмысты жойдым.',
   'case_studies.03.result': 'Mapbox GL JS бастапқы рендерингі шамамен 800 мс-тан 480 мс-қа дейін төмендеді, ал алгоритмдер бойынша бөлек жұмыс геоіздеу жылдамдығын 30%-ға жақсартты.',
@@ -60,7 +56,7 @@ export const kk: Record<string, string> = {
   'principles.02.text': 'Ең жақсы абстракция — келесі функцияны арзандатып, қауіпсіз әрі түсінікті ететін абстракция.',
   'principles.03.title': 'Frontend — жүйенің бір бөлігі.',
   'principles.03.text': 'Рендеринг, деректер пішіні, API, қолжетімділік, бақылаушылық және релиз конвейерлері — бір инженерлік аймақ.',
-  'principles.04.title': 'Senior болу — белгісіздікті азайту деген сөз.',
+  'principles.04.title': 'Senior — компромисстерді көрінетін ету.',
   'principles.04.text': 'Техникалық көшбасшылық — командаға жасырын тәуекел жинамай тез қозғалуға мүмкіндік беру үшін ымыраларды көрінетін ету.',
 
   'milestones.ciklum.role': 'Senior Software Engineer',

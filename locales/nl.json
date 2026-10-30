@@ -30,8 +30,8 @@
   },
   "hero": {
     "status": "Senior Software Engineer · 6+ jaar in productieomgevingen",
-    "title": "Ik bouw de onderdelen die gebruikers <em>voelen</em> en waar teams <em>mee moeten leven.</em>",
-    "lead": "Dit is geen spiegel van mijn LinkedIn. Het is een klein engineering-notitieboek over snelheid, architectuur, modernisering en de beslissingen achter productiesoftware.",
+    "title": "Ik bouw <em>snelle</em>, <em>onderhoudbare</em> webproducten, van frontend tot backend.",
+    "lead": "Ik ben full-stack engineer en werk vooral met React, Next.js en Node.js. Hier staan projecten waaraan ik werkte, wat ik veranderde en de resultaten.",
     "cta_open_notebook": "Open het notitieboek",
     "cta_cv": "CV / PDF",
     "cta_cv_aria": "CV bekijken en downloaden",
@@ -45,46 +45,46 @@
     "signal_top_label": "huidige modus",
     "signal_top_value": "complexiteit verminderen",
     "signal_bottom_label": "cyclus",
-    "signal_bottom_value": "profileren → vereenvoudigen → bewijzen",
+    "signal_bottom_value": "meten → vereenvoudigen → controleren",
     "availability": "Direct beschikbaar · Open voor verhuizing"
   },
   "work": {
     "eyebrow": "Systemen waar ik graag aan werk",
-    "heading": "Geen klantengalerij.<br />Alleen het technische terrein.",
-    "intro": "LinkedIn kan projecten en werkgevers opsommen. Hier laat ik liever het soort systemen zien waar mijn werk het meest waardevol wordt."
+    "heading": "Waar ik aan werk",
+    "intro": "De soorten systemen waarin mijn werk het meest oplevert."
   },
   "case_studies": {
     "eyebrow": "Engineering-notitieboek",
-    "heading": "Vier beslissingen die het waard zijn om in een sollicitatiegesprek te bespreken.",
-    "intro": "Geen functieomschrijving-opsommingen hier. Elke case is opgebouwd rond een beperking, een technische zet en een meetbaar resultaat.",
+    "heading": "Vier projecten met meetbare resultaten",
+    "intro": "Per project: het probleem, wat ik deed, het resultaat.",
     "label_constraint": "Beperking",
     "label_move": "Technische zet",
     "label_outcome": "Resultaat"
   },
   "selected_projects": {
     "eyebrow": "Geselecteerde builds",
-    "heading": "Een paar producten.<br />Niet het hele archief.",
-    "intro": "Deze zijn hier om het engineering-notitieboek een visuele laag te geven. Ze zijn geen tweede cv en zijn niet bedoeld om elk project dat ik heb opgeleverd te tonen.",
+    "heading": "Geselecteerde projecten",
+    "intro": "Een paar projecten met screenshots. De volledige lijst staat op de projectenpagina.",
     "browse_all": "Bekijk alle projecten"
   },
   "principles": {
     "eyebrow": "Werkprincipes",
     "heading": "De regels achter de code.",
-    "intro": "Tools veranderen. Dit zijn de gewoontes die ik wil behouden."
+    "intro": "Dingen die ik in elk project probeer te doen."
   },
   "trajectory": {
     "eyebrow": "Technisch traject",
-    "heading": "Een groei in reikwijdte,<br />geen chronologie van functietitels.",
-    "intro": "De chronologie is bewust ingekort. Het interessante deel is hoe het werk veranderde: UI → levering → systemen → technisch eigenaarschap.",
-    "proof_eyebrow": "Bewijs, geen decoratie",
-    "proof_heading": "Dingen die gecontroleerd kunnen worden.",
-    "proof_intro": "Opleiding, taalbewijs, erkenning van wedstrijden en een ondertekende aanbeveling — apart gehouden van het technische verhaal.",
+    "heading": "Van UI tot technisch eigenaarschap.",
+    "intro": "Een korte versie van mijn loopbaan. De volledige staat op de CV-pagina.",
+    "proof_eyebrow": "Bewijs",
+    "proof_heading": "Documenten die je kunt controleren",
+    "proof_intro": "Opleiding, Engelstoets, wedstrijdmedaille en een ondertekende aanbevelingsbrief.",
     "proof_link": "Bekijk alle certificaten & aanbevelingen",
     "open_proof": "Bewijs openen"
   },
   "contact": {
     "eyebrow": "Volgend systeem",
-    "heading": "Als het product moeilijker te veranderen wordt, ben ik geïnteresseerd.",
+    "heading": "Als je een senior engineer zoekt, schrijf me dan.",
     "role_line": "Senior Software Engineer · Senior Frontend Engineer · Team Lead",
     "relocation_line": "Open voor internationale teams en verhuizing.",
     "opens_new_tab_sr": "(opent in een nieuw tabblad)"
@@ -148,8 +148,8 @@
   "projects_page": {
     "back_link": "Engineering-notitieboek",
     "eyebrow": "Projectarchief",
-    "heading": "De builds achter<br />het notitieboek.",
-    "intro": "Zoek op projectnaam, functie, of een technologie in de stack. De homepage blijft gecureerd; deze pagina is het bredere archief.",
+    "heading": "Alle projecten",
+    "intro": "Zoek op naam, beschrijving of technologie.",
     "search_label": "Zoeken",
     "search_placeholder": "Probeer “Mapbox”, “boeking”, “React”…",
     "category_label": "Categorie",
@@ -166,8 +166,8 @@
   "cv_page": {
     "back_link": "Engineering-notitieboek",
     "eyebrow": "Curriculum vitae",
-    "title": "Alles op deze pagina,<br />als één PDF.",
-    "intro": "Dezelfde ervaring, vaardigheden en bewijzen als de rest van dit notitieboek, samengevoegd tot één document — voor sollicitatiesystemen, e-mailbijlagen of afdrukken.",
+    "title": "Mijn CV als PDF.",
+    "intro": "Dezelfde ervaring, vaardigheden en documenten als op deze site, in één bestand voor sollicitaties en afdrukken.",
     "profile_heading": "Loopbaanprofiel",
     "profile_text": "Senior Software Engineer met 6+ jaar commerciële ervaring in het ontwerpen, schalen en opleveren van 100+ hoogperformante webapplicaties en data-intensieve platforms op het gebied van GIS/digital twin, fintech en e-commerce voor 1 miljoen+ gebruikers. Bewezen staat van dienst in technisch leiderschap, het leiden en begeleiden van teams tot 18 engineers en volledige SDLC-verantwoordelijkheid.",
     "achievements_heading": "Belangrijkste prestaties",

@@ -30,8 +30,8 @@
   },
   "hero": {
     "status": "Senior Software Engineer · 6+ years in production",
-    "title": "I engineer the parts users <em>feel</em> and teams have to <em>live with.</em>",
-    "lead": "This is not a mirror of my LinkedIn. It is a small engineering notebook about speed, architecture, modernization and the decisions behind production software.",
+    "title": "I build <em>fast</em>, <em>maintainable</em> web products, frontend to backend.",
+    "lead": "I'm a full-stack engineer working mostly with React, Next.js and Node.js. Here are projects I worked on, what I changed and the results.",
     "cta_open_notebook": "Open the notebook",
     "cta_cv": "CV / PDF",
     "cta_cv_aria": "View and download CV",
@@ -45,46 +45,46 @@
     "signal_top_label": "current mode",
     "signal_top_value": "reduce complexity",
     "signal_bottom_label": "loop",
-    "signal_bottom_value": "profile → simplify → prove",
+    "signal_bottom_value": "measure → simplify → check",
     "availability": "Available immediately · Open to relocation"
   },
   "work": {
     "eyebrow": "Systems I like working on",
-    "heading": "No client gallery.<br />Just the engineering terrain.",
-    "intro": "LinkedIn can list projects and employers. Here I would rather show the kinds of systems where my work becomes most valuable."
+    "heading": "What I work on",
+    "intro": "The kinds of systems where my work matters most."
   },
   "case_studies": {
     "eyebrow": "Engineering notebook",
-    "heading": "Four decisions worth discussing in an interview.",
-    "intro": "No job-description bullets here. Each case is structured around a constraint, an engineering move and a measurable outcome.",
+    "heading": "Four projects with measurable results",
+    "intro": "Each one: the problem, what I did, the result.",
     "label_constraint": "Constraint",
     "label_move": "Engineering move",
     "label_outcome": "Outcome"
   },
   "selected_projects": {
     "eyebrow": "Selected builds",
-    "heading": "A few products.<br />Not the whole archive.",
-    "intro": "These are here to give the engineering notebook a visual layer. They are not a second résumé and they are not meant to list every project I have shipped.",
+    "heading": "Selected projects",
+    "intro": "A few projects with screenshots. The full list is on the projects page.",
     "browse_all": "Browse all projects"
   },
   "principles": {
     "eyebrow": "Operating principles",
     "heading": "The rules behind the code.",
-    "intro": "Tools change. These are the habits I expect to keep."
+    "intro": "Things I try to do on every project."
   },
   "trajectory": {
     "eyebrow": "Engineering path",
-    "heading": "A progression of scope,<br />not a chronology of job titles.",
-    "intro": "The chronology is deliberately compressed. The interesting part is how the work changed: UI → delivery → systems → technical ownership.",
-    "proof_eyebrow": "Proof, not decoration",
-    "proof_heading": "Things that can be checked.",
-    "proof_intro": "Education, language evidence, competition recognition and a signed recommendation — kept separate from the engineering story.",
+    "heading": "From UI to technical ownership.",
+    "intro": "A short version of my work history. The full one is on the CV page.",
+    "proof_eyebrow": "Proof",
+    "proof_heading": "Documents you can check",
+    "proof_intro": "Education, English test, competition medal and a signed recommendation letter.",
     "proof_link": "View all certificates & recommendations",
     "open_proof": "Open proof"
   },
   "contact": {
     "eyebrow": "Next system",
-    "heading": "If the product is getting harder to change, I’m interested.",
+    "heading": "If you're hiring a senior engineer, write to me.",
     "role_line": "Senior Software Engineer · Senior Frontend Engineer · Team Lead",
     "relocation_line": "Open to international teams and relocation.",
     "opens_new_tab_sr": "(opens in a new tab)"
@@ -148,8 +148,8 @@
   "projects_page": {
     "back_link": "Engineering notebook",
     "eyebrow": "Project archive",
-    "heading": "The builds behind<br />the notebook.",
-    "intro": "Search by project name, what it does, or any technology in its stack. The home page stays curated; this page is the wider archive.",
+    "heading": "All projects",
+    "intro": "Search by name, description or technology.",
     "search_label": "Search",
     "search_placeholder": "Try “Mapbox”, “booking”, “React”…",
     "category_label": "Category",
@@ -166,8 +166,8 @@
   "cv_page": {
     "back_link": "Engineering notebook",
     "eyebrow": "Curriculum vitae",
-    "title": "Everything on this page,<br />as one PDF.",
-    "intro": "The same experience, skills and proof as the rest of this notebook, laid out as a single document — for applicant tracking systems, email attachments, or printing.",
+    "title": "My CV as a PDF.",
+    "intro": "The same experience, skills and documents as this site, in one file for applications and printing.",
     "profile_heading": "Career profile",
     "profile_text": "Senior Software Engineer with 6+ years of commercial experience architecting, scaling, and delivering 100+ high-performance web applications and data-intensive platforms across GIS/digital-twin, fintech, and e-commerce, serving 1M+ users. Proven track record of technical leadership, leading and mentoring teams of up to 18 engineers, and full SDLC ownership.",
     "profile_text_2": "Deep expertise in React, Next.js, and TypeScript, backed by production backend development with Node.js, NestJS, PostgreSQL, and MongoDB. Integrated AI-assisted development workflows with Cursor, Claude Code, and GitHub Copilot, automating quality gates and repetitive engineering tasks to cut time-to-market by ~2x.",

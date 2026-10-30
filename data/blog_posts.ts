@@ -3,7 +3,7 @@ import type { BlogPost } from '@/types/portfolio';
 // Newest first. After adding a post, run `npm run sitemap`. See guide/BLOG_GUIDE.md.
 export const blog_posts: BlogPost[] = [{
   slug: 'half-a-million-map-objects',
-  title: 'Half a million map objects should still feel interactive',
+  title: '500K map objects, first render cut from 800 to 480 ms',
   date: '2026-10-16',
   summary: 'A Mapbox GL JS interface with 300K–500K geospatial objects: first render from about 800 ms to about 480 ms.',
   tags: ['Mapbox GL JS', 'Performance', 'React', 'Elasticsearch', 'GIS'],

@@ -22,8 +22,7 @@ import new_navat_image from '@/assets/images/projects/new-navat.webp';
 import asia_credit_bank_image from '@/assets/images/projects/asia-credit-bank.webp';
 import type { CaseStudy, Milestone, Principle, ProofDocument, ProofItem, Project, Signal, Surface } from '@/types/portfolio';
 
-// Served straight from /public — a static file needs no build-time import,
-// unlike the images/logos above which go through Vite's asset pipeline.
+// Served from /public, so no import is needed.
 export const portfolio_assets = { portrait, cv: '/files/Zhassulan-Serikuly-CV.pdf' };
 
 export const nav_items = [{
@@ -97,7 +96,7 @@ export const case_studies: CaseStudy[] = [
     index: '02',
     company: 'Ciklum',
     kicker: 'Performance as architecture',
-    title: 'Treat loading time as a graph, not a number.',
+    title: 'Cutting page load from 3.2 to 2.1 seconds.',
     problem: 'High-traffic screens were slowed by work happening across rendering, data fetching, caching and asynchronous UI flows rather than one obvious bottleneck.',
     solution: 'Optimized the full request-to-render path: rendering behavior, caching, async orchestration and API request patterns, then backed the work with Core Web Vitals, Lighthouse, tests and Sentry monitoring.',
     result: 'Average page load time moved from about 3.2 seconds to 2.1 seconds while the platform continued to evolve.',
@@ -113,7 +112,7 @@ export const case_studies: CaseStudy[] = [
     index: '03',
     company: 'KeyHorse',
     kicker: 'Geospatial performance',
-    title: 'Half a million map objects should still feel interactive.',
+    title: '500K map objects, first render cut from 800 to 480 ms.',
     problem: 'Dense GIS interfaces had to render and manipulate datasets containing roughly 300K–500K geospatial objects without making the first interaction feel delayed.',
     solution: 'Restructured layers and styles, introduced clustering and client-side filtering, and tightened the data path between the React state layer and Elasticsearch to eliminate repeated work.',
     result: 'Initial Mapbox GL JS rendering dropped from about 800ms to 480ms, with a 30% improvement in geospatial search response time from separate algorithm work.',
@@ -205,7 +204,7 @@ export const principles: Principle[] = [{
   text: 'Rendering, data shape, APIs, accessibility, observability and release pipelines are one engineering surface.',
 }, {
   number: '04',
-  title: 'Senior means reducing uncertainty.',
+  title: 'Senior means making trade-offs visible.',
   text: 'Technical leadership is making trade-offs visible so a team can move quickly without accumulating hidden risk.',
 }];
 
@@ -382,9 +381,8 @@ export const proof_items: ProofItem[] = [{
   note: 'English — full working proficiency · Kazakh & Russian — native · Turkish — conversational · Chinese — basic',
 }];
 
-// One source of truth for the /proof archive and its detail pages
-// (pages/certificate/[slug].vue, pages/recommendation/[slug].vue).
-// See PROOF_GUIDE.md for how to attach the real scanned file to an entry.
+// Source for the /proof page and its detail pages. See PROOF_GUIDE.md for
+// attaching the scanned file.
 export const proof_documents: ProofDocument[] = [{
   slug: 'ielts',
   kind: 'certificate',

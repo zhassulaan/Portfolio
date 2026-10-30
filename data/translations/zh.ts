@@ -1,6 +1,5 @@
-// Translation overlay for data-driven content. Keyed by the same stable ids
-// used in data/portfolio.ts (index/number/company/slug/id). Missing keys
-// fall back to the English text in portfolio.ts.
+// Translation overlay for content in data/portfolio.ts. Keys use the ids from that
+// file. Missing keys fall back to English (see composables/use_locale_text.ts).
 export const zh: Record<string, string> = {
   'signals.0.label': '年生产环境经验',
   'signals.0.note': '从 React 实习工作到在跨国产品团队中承担高级职责。',
@@ -19,14 +18,14 @@ export const zh: Record<string, string> = {
   'case_studies.01.metrics.0.label': '个产品模块',
   'case_studies.01.metrics.1.label': '功能交付提速',
   'case_studies.02.kicker': '性能即架构',
-  'case_studies.02.title': '把加载时间当作一张图，而不是一个数字。',
+  'case_studies.02.title': '页面加载时间从 3.2 秒降到 2.1 秒。',
   'case_studies.02.problem': '高流量页面变慢的原因分散在渲染、数据获取、缓存和异步 UI 流程之中，而不是某一个明显的瓶颈。',
   'case_studies.02.solution': '优化了从请求到渲染的整条链路：渲染行为、缓存、异步编排和 API 请求模式，并借助 Core Web Vitals、Lighthouse、测试和 Sentry 监控支撑这项工作。',
   'case_studies.02.result': '在平台持续演进的同时，平均页面加载时间从约 3.2 秒降到 2.1 秒。',
   'case_studies.02.metrics.0.label': '平均页面加载',
   'case_studies.02.metrics.1.label': '约降低',
   'case_studies.03.kicker': '地理空间性能',
-  'case_studies.03.title': '五十万个地图对象依然要保持流畅交互。',
+  'case_studies.03.title': '50 万个地图对象：首次渲染从 800 毫秒降到 480 毫秒。',
   'case_studies.03.problem': '密集的 GIS 界面需要渲染并处理约 30 万至 50 万个地理空间对象的数据集，同时不能让首次交互变得明显迟滞。',
   'case_studies.03.solution': '重构了图层与样式，引入聚合与客户端过滤，并精简了 React 状态层与 Elasticsearch 之间的数据链路，消除了重复计算。',
   'case_studies.03.result': 'Mapbox GL JS 的初始渲染时间从约 800 毫秒降到 480 毫秒，另外的算法优化工作又将地理搜索响应速度提升了 30%。',
@@ -55,7 +54,7 @@ export const zh: Record<string, string> = {
   'principles.02.text': '最好的抽象，是能让下一个功能开发得更便宜、更安全、更容易理解的那一种。',
   'principles.03.title': '前端是系统的一部分。',
   'principles.03.text': '渲染、数据结构、API、无障碍、可观测性与发布流水线，本质上是同一片工程领域。',
-  'principles.04.title': '所谓 Senior，就是降低不确定性。',
+  'principles.04.title': '高级意味着让权衡一目了然。',
   'principles.04.text': '技术领导力，就是把权衡取舍讲清楚，让团队能快速前进，而不是悄悄积累风险。',
 
   'milestones.ciklum.role': '高级软件工程师',

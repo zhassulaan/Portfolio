@@ -30,8 +30,8 @@
   },
   "hero": {
     "status": "高级软件工程师 · 6 年以上生产环境经验",
-    "title": "我打造的是用户能<em>感受到</em>、团队又不得不长期<em>维护下去</em>的那部分。",
-    "lead": "这不是我 LinkedIn 的复制品，而是一本关于速度、架构、系统现代化改造，以及生产级软件背后决策的小小工程笔记。",
+    "title": "我开发<em>快速</em>且<em>易维护</em>的 Web 产品，从前端到后端。",
+    "lead": "我是全栈工程师，主要使用 React、Next.js 和 Node.js。这里是我参与的项目、我做了哪些改变以及结果。",
     "cta_open_notebook": "打开笔记",
     "cta_cv": "简历 / PDF",
     "cta_cv_aria": "查看并下载简历",
@@ -45,46 +45,46 @@
     "signal_top_label": "当前模式",
     "signal_top_value": "降低复杂度",
     "signal_bottom_label": "循环",
-    "signal_bottom_value": "分析 → 简化 → 验证",
+    "signal_bottom_value": "测量 → 简化 → 验证",
     "availability": "可立即入职 · 愿意搬迁"
   },
   "work": {
     "eyebrow": "我喜欢深入的系统类型",
-    "heading": "没有客户案例展示墙，<br />只有真实的工程战场。",
-    "intro": "LinkedIn 可以罗列项目和雇主，但我更想在这里展示我的工作真正产生最大价值的那类系统。"
+    "heading": "我做什么",
+    "intro": "我的工作最能发挥价值的系统类型。"
   },
   "case_studies": {
     "eyebrow": "工程笔记",
-    "heading": "四个值得在面试中细说的决策。",
-    "intro": "这里没有职位描述式的条目。每个案例都围绕一个约束条件、一次工程决策和一个可衡量的结果展开。",
+    "heading": "四个有可衡量结果的项目",
+    "intro": "每个项目：问题、我的做法、结果。",
     "label_constraint": "约束条件",
     "label_move": "工程决策",
     "label_outcome": "结果"
   },
   "selected_projects": {
     "eyebrow": "精选作品",
-    "heading": "几款产品，<br />而非完整档案。",
-    "intro": "这里只是为工程笔记增加一层视觉呈现，并非第二份简历，也不打算列出我做过的每一个项目。",
+    "heading": "精选项目",
+    "intro": "几个带截图的项目。完整列表在项目页面。",
     "browse_all": "浏览全部项目"
   },
   "principles": {
     "eyebrow": "工作原则",
     "heading": "代码背后的准则。",
-    "intro": "工具会变，但这些是我打算一直坚持的习惯。"
+    "intro": "我在每个项目中努力做到的事。"
   },
   "trajectory": {
     "eyebrow": "成长路径",
-    "heading": "职责范围的扩展，<br />而不是职位名称的编年史。",
-    "intro": "时间线被刻意压缩了。真正有意思的是工作性质的变化：界面开发 → 交付 → 系统 → 技术责任。",
-    "proof_eyebrow": "有据可查，而非摆设",
-    "proof_heading": "可以被核实的东西。",
-    "proof_intro": "教育背景、语言能力证明、竞赛获奖，以及一封签署的推荐信——与工程故事分开单列。",
+    "heading": "从界面到技术负责。",
+    "intro": "我工作经历的简短版本，完整版在简历页面。",
+    "proof_eyebrow": "证明",
+    "proof_heading": "可以核实的文件",
+    "proof_intro": "学历、英语考试、竞赛奖牌和一封签名推荐信。",
     "proof_link": "查看全部证书与推荐信",
     "open_proof": "查看证明材料"
   },
   "contact": {
     "eyebrow": "下一个系统",
-    "heading": "如果一个产品正变得越来越难以改动，我会很感兴趣。",
+    "heading": "如果您在招聘高级工程师，请联系我。",
     "role_line": "高级软件工程师 · 高级前端工程师 · 技术组长",
     "relocation_line": "愿意加入国际团队，接受异地工作安排。",
     "opens_new_tab_sr": "（在新标签页中打开）"
@@ -148,8 +148,8 @@
   "projects_page": {
     "back_link": "工程笔记",
     "eyebrow": "项目档案",
-    "heading": "支撑这本笔记的<br />项目作品。",
-    "intro": "可按项目名称、功能或技术栈搜索。首页只展示精选内容，这一页是更完整的档案。",
+    "heading": "全部项目",
+    "intro": "按名称、描述或技术搜索。",
     "search_label": "搜索",
     "search_placeholder": "试试搜索“Mapbox”“booking”“React”…",
     "category_label": "分类",
@@ -166,8 +166,8 @@
   "cv_page": {
     "back_link": "工程笔记",
     "eyebrow": "个人简历",
-    "title": "本页的全部内容，<br />整合为一份 PDF。",
-    "intro": "与本笔记其他部分相同的经历、技能与证明材料，整理成单一文档——方便用于求职系统投递、邮件附件或打印。",
+    "title": "我的简历（PDF）。",
+    "intro": "与本站相同的经历、技能和文件，整合为一个文件，便于投递和打印。",
     "profile_heading": "职业概况",
     "profile_text": "拥有6年以上商业经验的高级软件工程师，负责架构设计、扩展并交付了100多个高性能网页应用和数据密集型平台，涵盖 GIS/数字孪生、金融科技与电商领域，服务超过100万用户。在技术领导力、带领并指导最多18人的工程团队以及全流程 SDLC 责任方面拥有已验证的履历。",
     "achievements_heading": "主要成就",

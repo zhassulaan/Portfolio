@@ -1,8 +1,5 @@
-// Translation overlay for data-driven content (case studies, projects,
-// milestones, principles, proof items/documents). Keyed by the same stable
-// ids already used in data/portfolio.ts (index/number/company/slug/id).
-// Missing keys fall back to the English text in portfolio.ts — see
-// composables/use_locale_text.ts.
+// Translation overlay for content in data/portfolio.ts. Keys use the ids from that
+// file. Missing keys fall back to English (see composables/use_locale_text.ts).
 export const nl: Record<string, string> = {
   'signals.0.label': 'jaar in productie-ontwikkeling',
   'signals.0.note': 'Van een React-stage tot senior verantwoordelijkheid in internationale productteams.',
@@ -21,14 +18,14 @@ export const nl: Record<string, string> = {
   'case_studies.01.metrics.0.label': 'productmodules',
   'case_studies.01.metrics.1.label': 'snellere feature-levering',
   'case_studies.02.kicker': 'Performance als architectuur',
-  'case_studies.02.title': 'Laadtijd behandelen als een graaf, niet als een getal.',
+  'case_studies.02.title': 'Paginalaadtijd van 3,2 naar 2,1 seconden.',
   'case_studies.02.problem': 'Zwaarbelaste schermen werden trager door werk dat verspreid was over rendering, data-ophaling, caching en asynchrone UI-stromen — niet door één duidelijk knelpunt.',
   'case_studies.02.solution': 'Ik optimaliseerde het volledige pad van aanvraag tot rendering: renderinggedrag, caching, asynchrone orkestratie en API-verzoekpatronen, ondersteund door Core Web Vitals, Lighthouse, tests en Sentry-monitoring.',
   'case_studies.02.result': 'De gemiddelde paginalaadtijd daalde van ongeveer 3,2 naar 2,1 seconden, terwijl het platform bleef groeien.',
   'case_studies.02.metrics.0.label': 'gemiddelde laadtijd',
   'case_studies.02.metrics.1.label': 'geschatte afname',
   'case_studies.03.kicker': 'Geodata-performance',
-  'case_studies.03.title': 'Een half miljoen kaartobjecten moeten interactief blijven.',
+  'case_studies.03.title': '500K kaartobjecten: eerste render van 800 naar 480 ms.',
   'case_studies.03.problem': 'Dichte GIS-interfaces moesten datasets van ongeveer 300.000–500.000 geo-objecten renderen en verwerken zonder de eerste interactie merkbaar te vertragen.',
   'case_studies.03.solution': 'Ik bouwde lagen en stijlen opnieuw op, introduceerde client-side clustering en filtering, en verminderde overbodig werk in het datapad tussen de React-statelaag en Elasticsearch.',
   'case_studies.03.result': 'De initiële rendering van Mapbox GL JS daalde van ongeveer 800 naar 480 ms, en apart algoritmewerk leverde een verbetering van 30% in geo-zoeksnelheid op.',
@@ -57,7 +54,7 @@ export const nl: Record<string, string> = {
   'principles.02.text': 'De beste abstractie is degene die de volgende feature goedkoper, veiliger en begrijpelijker maakt.',
   'principles.03.title': 'Frontend is onderdeel van het systeem.',
   'principles.03.text': 'Rendering, datavorm, API’s, toegankelijkheid, observability en release-pipelines zijn één technisch geheel.',
-  'principles.04.title': 'Senior zijn betekent onzekerheid verminderen.',
+  'principles.04.title': 'Senior zijn betekent afwegingen zichtbaar maken.',
   'principles.04.text': 'Technisch leiderschap betekent afwegingen zichtbaar maken zodat het team snel vooruit kan zonder verborgen risico’s op te bouwen.',
 
   'milestones.ciklum.role': 'Senior Software Engineer',

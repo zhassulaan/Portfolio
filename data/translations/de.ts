@@ -1,8 +1,5 @@
-// Translation overlay for data-driven content (case studies, projects,
-// milestones, principles, proof items/documents). Keyed by the same stable
-// ids already used in data/portfolio.ts (index/number/company/slug/id).
-// Missing keys fall back to the English text in portfolio.ts — see
-// composables/use_locale_text.ts.
+// Translation overlay for content in data/portfolio.ts. Keys use the ids from that
+// file. Missing keys fall back to English (see composables/use_locale_text.ts).
 export const de: Record<string, string> = {
   'signals.0.label': 'Jahre in der Produktentwicklung',
   'signals.0.note': 'Vom React-Praktikum bis zur Senior-Verantwortung in internationalen Produktteams.',
@@ -21,14 +18,14 @@ export const de: Record<string, string> = {
   'case_studies.01.metrics.0.label': 'Produktmodule',
   'case_studies.01.metrics.1.label': 'schnellere Feature-Auslieferung',
   'case_studies.02.kicker': 'Performance als Architektur',
-  'case_studies.02.title': 'Ladezeit als Graph behandeln, nicht als Zahl.',
+  'case_studies.02.title': 'Seitenladezeit von 3,2 auf 2,1 Sekunden.',
   'case_studies.02.problem': 'Stark frequentierte Bildschirme wurden langsamer durch Arbeit, die über Rendering, Datenabruf, Caching und asynchrone UI-Abläufe verteilt war — nicht durch einen einzelnen offensichtlichen Engpass.',
   'case_studies.02.solution': 'Ich optimierte den gesamten Weg von der Anfrage bis zum Rendern: Rendering-Verhalten, Caching, asynchrone Orchestrierung und API-Anfragemuster, abgesichert durch Core Web Vitals, Lighthouse, Tests und Sentry-Monitoring.',
   'case_studies.02.result': 'Die durchschnittliche Seitenladezeit sank von etwa 3,2 auf 2,1 Sekunden, während sich die Plattform weiterentwickelte.',
   'case_studies.02.metrics.0.label': 'durchschnittliche Ladezeit',
   'case_studies.02.metrics.1.label': 'ungefähre Reduzierung',
   'case_studies.03.kicker': 'Geodaten-Performance',
-  'case_studies.03.title': 'Eine halbe Million Kartenobjekte müssen interaktiv bleiben.',
+  'case_studies.03.title': '500K Kartenobjekte: erster Render von 800 auf 480 ms.',
   'case_studies.03.problem': 'Dichte GIS-Interfaces mussten Datensätze von etwa 300.000–500.000 Geo-Objekten rendern und verarbeiten, ohne die erste Interaktion spürbar zu verlangsamen.',
   'case_studies.03.solution': 'Ich baute Layer und Styles neu auf, führte clientseitiges Clustering und Filtern ein und reduzierte überflüssige Arbeit im Datenpfad zwischen dem React-State-Layer und Elasticsearch.',
   'case_studies.03.result': 'Das initiale Rendering von Mapbox GL JS fiel von etwa 800 auf 480 ms, zusätzlich brachte separate Algorithmusarbeit eine 30%ige Verbesserung der Geosuche-Geschwindigkeit.',
@@ -57,7 +54,7 @@ export const de: Record<string, string> = {
   'principles.02.text': 'Die beste Abstraktion ist die, die das nächste Feature günstiger, sicherer und verständlicher macht.',
   'principles.03.title': 'Frontend ist Teil des Systems.',
   'principles.03.text': 'Rendering, Datenform, APIs, Barrierefreiheit, Observability und Release-Pipelines sind eine einzige technische Oberfläche.',
-  'principles.04.title': 'Senior zu sein heißt, Unsicherheit zu reduzieren.',
+  'principles.04.title': 'Senior bedeutet, Abwägungen sichtbar zu machen.',
   'principles.04.text': 'Technische Führung bedeutet, Kompromisse sichtbar zu machen, damit das Team schnell vorankommt, ohne verborgene Risiken anzuhäufen.',
 
   'milestones.ciklum.role': 'Senior Software Engineer',

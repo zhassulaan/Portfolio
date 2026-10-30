@@ -30,8 +30,8 @@
   },
   "hero": {
     "status": "Senior Software Engineer · 6+ Jahre in Produktionssystemen",
-    "title": "Ich baue die Teile, die Nutzer <em>spüren</em> und mit denen Teams <em>leben müssen.</em>",
-    "lead": "Dies ist kein Spiegelbild meines LinkedIn-Profils. Es ist ein kleines Engineering-Notizbuch über Geschwindigkeit, Architektur, Modernisierung und die Entscheidungen hinter Produktionssoftware.",
+    "title": "Ich baue <em>schnelle</em>, <em>wartbare</em> Webprodukte, vom Frontend bis zum Backend.",
+    "lead": "Ich bin Full-Stack-Engineer und arbeite vor allem mit React, Next.js und Node.js. Hier sind Projekte, an denen ich gearbeitet habe, was ich verändert habe und die Ergebnisse.",
     "cta_open_notebook": "Notizbuch öffnen",
     "cta_cv": "Lebenslauf / PDF",
     "cta_cv_aria": "Lebenslauf ansehen und herunterladen",
@@ -45,46 +45,46 @@
     "signal_top_label": "aktueller Modus",
     "signal_top_value": "Komplexität reduzieren",
     "signal_bottom_label": "Schleife",
-    "signal_bottom_value": "profilieren → vereinfachen → belegen",
+    "signal_bottom_value": "messen → vereinfachen → prüfen",
     "availability": "Sofort verfügbar · Offen für Umzug"
   },
   "work": {
     "eyebrow": "Systeme, an denen ich gerne arbeite",
-    "heading": "Keine Kundengalerie.<br />Nur das technische Terrain.",
-    "intro": "LinkedIn kann Projekte und Arbeitgeber auflisten. Hier zeige ich lieber die Art von Systemen, in denen meine Arbeit am wertvollsten wird."
+    "heading": "Woran ich arbeite",
+    "intro": "Die Arten von Systemen, in denen meine Arbeit am meisten bewirkt."
   },
   "case_studies": {
     "eyebrow": "Engineering-Notizbuch",
-    "heading": "Vier Entscheidungen, über die es sich im Interview zu sprechen lohnt.",
-    "intro": "Keine Stellenbeschreibungs-Aufzählungen hier. Jeder Fall ist um eine Einschränkung, einen technischen Schritt und ein messbares Ergebnis strukturiert.",
+    "heading": "Vier Projekte mit messbaren Ergebnissen",
+    "intro": "Jeweils: das Problem, was ich getan habe, das Ergebnis.",
     "label_constraint": "Einschränkung",
     "label_move": "Technischer Schritt",
     "label_outcome": "Ergebnis"
   },
   "selected_projects": {
     "eyebrow": "Ausgewählte Builds",
-    "heading": "Ein paar Produkte.<br />Nicht das ganze Archiv.",
-    "intro": "Diese sind hier, um dem Engineering-Notizbuch eine visuelle Ebene zu geben. Sie sind kein zweiter Lebenslauf und sollen nicht jedes von mir ausgelieferte Projekt auflisten.",
+    "heading": "Ausgewählte Projekte",
+    "intro": "Einige Projekte mit Screenshots. Die vollständige Liste steht auf der Projektseite.",
     "browse_all": "Alle Projekte durchsuchen"
   },
   "principles": {
     "eyebrow": "Arbeitsprinzipien",
     "heading": "Die Regeln hinter dem Code.",
-    "intro": "Werkzeuge ändern sich. Das sind die Gewohnheiten, die ich beibehalten will."
+    "intro": "Dinge, die ich in jedem Projekt versuche."
   },
   "trajectory": {
     "eyebrow": "Werdegang",
-    "heading": "Eine Entwicklung des Umfangs,<br />keine Chronologie von Jobtiteln.",
-    "intro": "Die Chronologie ist bewusst komprimiert. Interessant ist, wie sich die Arbeit verändert hat: UI → Delivery → Systeme → technische Verantwortung.",
-    "proof_eyebrow": "Nachweis, keine Dekoration",
-    "proof_heading": "Dinge, die überprüft werden können.",
-    "proof_intro": "Ausbildung, Sprachnachweise, Wettbewerbserfolge und ein unterschriebenes Empfehlungsschreiben — getrennt von der technischen Geschichte gehalten.",
+    "heading": "Von der Oberfläche bis zur technischen Verantwortung.",
+    "intro": "Eine Kurzfassung meines Werdegangs. Die ausführliche steht auf der CV-Seite.",
+    "proof_eyebrow": "Nachweise",
+    "proof_heading": "Dokumente zum Überprüfen",
+    "proof_intro": "Ausbildung, Englischtest, Wettbewerbsmedaille und ein unterschriebenes Empfehlungsschreiben.",
     "proof_link": "Alle Zertifikate & Empfehlungen ansehen",
     "open_proof": "Nachweis öffnen"
   },
   "contact": {
     "eyebrow": "Nächstes System",
-    "heading": "Wenn das Produkt schwerer zu ändern wird, interessiert mich das.",
+    "heading": "Wenn Sie einen Senior Engineer suchen, schreiben Sie mir.",
     "role_line": "Senior Software Engineer · Senior Frontend Engineer · Team Lead",
     "relocation_line": "Offen für internationale Teams und Umzug.",
     "opens_new_tab_sr": "(öffnet in einem neuen Tab)"
@@ -148,8 +148,8 @@
   "projects_page": {
     "back_link": "Engineering-Notizbuch",
     "eyebrow": "Projekt-Archiv",
-    "heading": "Die Builds hinter<br />dem Notizbuch.",
-    "intro": "Suchen Sie nach Projektnamen, Funktion oder einer Technologie im Stack. Die Startseite bleibt kuratiert; diese Seite ist das breitere Archiv.",
+    "heading": "Alle Projekte",
+    "intro": "Suche nach Name, Beschreibung oder Technologie.",
     "search_label": "Suche",
     "search_placeholder": "Versuchen Sie „Mapbox“, „Buchung“, „React“…",
     "category_label": "Kategorie",
@@ -166,8 +166,8 @@
   "cv_page": {
     "back_link": "Engineering-Notizbuch",
     "eyebrow": "Lebenslauf",
-    "title": "Alles auf dieser Seite,<br />als eine PDF-Datei.",
-    "intro": "Dieselbe Erfahrung, Fähigkeiten und Nachweise wie im übrigen Notizbuch, als ein einziges Dokument — für Bewerbungssysteme, E-Mail-Anhänge oder den Druck.",
+    "title": "Mein CV als PDF.",
+    "intro": "Dieselbe Erfahrung, dieselben Skills und Dokumente wie auf dieser Seite, in einer Datei für Bewerbungen und zum Drucken.",
     "profile_heading": "Karriereprofil",
     "profile_text": "Senior Software Engineer mit 6+ Jahren kommerzieller Erfahrung in der Konzeption, Skalierung und Bereitstellung von 100+ hochperformanten Webanwendungen und datenintensiven Plattformen in den Bereichen GIS/Digital Twin, Fintech und E-Commerce für 1 Mio.+ Nutzer. Nachweisliche Erfolgsbilanz in technischer Führung, Leitung und Mentoring von Teams mit bis zu 18 Ingenieuren sowie voller SDLC-Verantwortung.",
     "achievements_heading": "Wichtigste Erfolge",

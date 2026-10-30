@@ -30,8 +30,8 @@
   },
   "hero": {
     "status": "Senior Software Engineer · production ortamında 6+ yıl deneyim",
-    "title": "Kullanıcıların <em>hissettiği</em>, ekiplerin de <em>uzun süre yaşamak zorunda kaldığı</em> kısmı ben inşa ediyorum.",
-    "lead": "Bu, LinkedIn’imin bir kopyası değil. Hız, mimari, modernizasyon ve production yazılımın arkasındaki kararlar üzerine küçük bir mühendislik defteri.",
+    "title": "<em>Hızlı</em> ve <em>bakımı kolay</em> web ürünleri geliştiriyorum, frontend’den backend’e.",
+    "lead": "Ağırlıklı olarak React, Next.js ve Node.js ile çalışan bir full-stack mühendisim. Burada üzerinde çalıştığım projeleri, neyi değiştirdiğimi ve sonuçları görebilirsiniz.",
     "cta_open_notebook": "Defteri aç",
     "cta_cv": "Özgeçmiş / PDF",
     "cta_cv_aria": "Özgeçmişi görüntüle ve indir",
@@ -45,46 +45,46 @@
     "signal_top_label": "şu anki mod",
     "signal_top_value": "karmaşıklığı azalt",
     "signal_bottom_label": "döngü",
-    "signal_bottom_value": "profille → sadeleştir → kanıtla",
+    "signal_bottom_value": "ölç → sadeleştir → doğrula",
     "availability": "Hemen başlayabilirim · Taşınmaya açığım"
   },
   "work": {
     "eyebrow": "Üzerinde çalışmaktan keyif aldığım sistemler",
-    "heading": "Müşteri galerisi yok.<br />Sadece mühendislik alanı.",
-    "intro": "LinkedIn projeleri ve işverenleri listeleyebilir. Burada işimin en değerli olduğu sistem türlerini göstermeyi tercih ediyorum."
+    "heading": "Üzerinde çalıştığım şeyler",
+    "intro": "Çalışmamın en çok fark yarattığı sistemler."
   },
   "case_studies": {
     "eyebrow": "Mühendislik defteri",
-    "heading": "Bir mülakatta konuşulmaya değer dört karar.",
-    "intro": "Burada iş ilanı maddeleri yok. Her vaka bir kısıt, bir mühendislik hamlesi ve ölçülebilir bir sonuç etrafında kurgulandı.",
+    "heading": "Ölçülebilir sonuçları olan dört proje",
+    "intro": "Her birinde: sorun, ne yaptım, sonuç.",
     "label_constraint": "Kısıt",
     "label_move": "Mühendislik hamlesi",
     "label_outcome": "Sonuç"
   },
   "selected_projects": {
     "eyebrow": "Seçilmiş yapımlar",
-    "heading": "Birkaç ürün.<br />Arşivin tamamı değil.",
-    "intro": "Bunlar mühendislik defterine görsel bir katman katmak için burada. İkinci bir özgeçmiş değiller ve yaptığım her projeyi listelemeyi amaçlamıyorlar.",
+    "heading": "Seçili projeler",
+    "intro": "Ekran görüntülü birkaç proje. Tam liste projeler sayfasında.",
     "browse_all": "Tüm projelere göz at"
   },
   "principles": {
     "eyebrow": "Çalışma ilkeleri",
     "heading": "Kodun arkasındaki kurallar.",
-    "intro": "Araçlar değişir. Bunlar sürdürmeyi planladığım alışkanlıklar."
+    "intro": "Her projede yapmaya çalıştığım şeyler."
   },
   "trajectory": {
     "eyebrow": "Mühendislik yolculuğu",
-    "heading": "Kapsamın büyümesi,<br />unvanların kronolojisi değil.",
-    "intro": "Kronoloji bilinçli olarak sıkıştırıldı. İlginç olan, işin özünün nasıl değiştiği: arayüz → teslimat → sistemler → teknik sorumluluk.",
-    "proof_eyebrow": "Süs değil, kanıt",
-    "proof_heading": "Doğrulanabilecek şeyler.",
-    "proof_intro": "Eğitim, dil yeterliliği kanıtı, yarışma tanınırlığı ve imzalı bir referans mektubu — mühendislik hikayesinden ayrı tutuluyor.",
+    "heading": "Arayüzden teknik sorumluluğa.",
+    "intro": "Kariyerimin kısa özeti. Tamamı CV sayfasında.",
+    "proof_eyebrow": "Kanıt",
+    "proof_heading": "Kontrol edebileceğiniz belgeler",
+    "proof_intro": "Eğitim, İngilizce sınavı, yarışma madalyası ve imzalı bir tavsiye mektubu.",
     "proof_link": "Tüm sertifikaları ve referansları gör",
     "open_proof": "Kanıtı aç"
   },
   "contact": {
     "eyebrow": "Sıradaki sistem",
-    "heading": "Ürünü değiştirmek giderek zorlaşıyorsa, bu benim ilgimi çeker.",
+    "heading": "Kıdemli bir mühendis arıyorsanız, bana yazın.",
     "role_line": "Senior Software Engineer · Senior Frontend Engineer · Team Lead",
     "relocation_line": "Uluslararası ekiplere ve yer değiştirmeye açığım.",
     "opens_new_tab_sr": "(yeni sekmede açılır)"
@@ -148,8 +148,8 @@
   "projects_page": {
     "back_link": "Mühendislik defteri",
     "eyebrow": "Proje arşivi",
-    "heading": "Defterin arkasındaki<br />yapımlar.",
-    "intro": "Proje adına, ne yaptığına veya stack’indeki herhangi bir teknolojiye göre arayın. Ana sayfa küratörlü kalır; bu sayfa daha geniş arşivdir.",
+    "heading": "Tüm projeler",
+    "intro": "Ad, açıklama veya teknolojiye göre arayın.",
     "search_label": "Ara",
     "search_placeholder": "Örneğin “Mapbox”, “booking”, “React”…",
     "category_label": "Kategori",
@@ -166,8 +166,8 @@
   "cv_page": {
     "back_link": "Mühendislik defteri",
     "eyebrow": "Özgeçmiş",
-    "title": "Bu sayfadaki her şey<br />tek bir PDF olarak.",
-    "intro": "Bu defterin geri kalanındaki aynı deneyim, beceriler ve kanıtlar tek bir belgede — başvuru takip sistemleri, e-posta ekleri veya baskı için.",
+    "title": "PDF olarak CV’m.",
+    "intro": "Bu sitedeki aynı deneyim, beceriler ve belgeler; başvurular ve yazdırma için tek dosyada.",
     "profile_heading": "Kariyer profili",
     "profile_text": "6+ yıllık ticari deneyime sahip, GIS/dijital ikiz, fintech ve e-ticaret alanlarında 1M+ kullanıcıya hizmet veren 100+ yüksek performanslı web uygulaması ve veri yoğun platform tasarlayan, ölçeklendiren ve teslim eden bir Senior Software Engineer. Teknik liderlik, 18 mühendise kadar ekiplere liderlik ve mentorluk, tam SDLC sorumluluğunda kanıtlanmış bir geçmişe sahip.",
     "achievements_heading": "Öne çıkan başarılar",
