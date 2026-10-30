@@ -234,7 +234,7 @@ export const milestones: Milestone[] = [{
     text: 'Expanded automated test coverage (unit, integration, and E2E) for critical user flows and API integrations, adding CI/CD quality gates and Sentry monitoring.',
   }, {
     label: 'AI Integration & Tooling',
-    text: 'Built LLM-powered product features using RAG with NestJS backend services; also integrated Cursor, Claude Code, and GitHub Copilot into engineering workflows, cutting repeatable task time by nearly half.',
+    text: 'Built LLM-powered product features using RAG with NestJS backend services; also integrated Cursor, Claude Code, and GitHub Copilot into team-wide workflows, cutting time spent on repetitive tasks by ~50% (team estimate).',
   }, {
     label: 'Cross-Platform',
     text: 'Extended the shared design system to Ionic/Capacitor, reusing 46 UI components across web and mobile while keeping platform-specific logic separate.',
@@ -305,7 +305,7 @@ export const milestones: Milestone[] = [{
     text: 'Improved frontend performance through bundle optimization, lazy loading, and rendering improvements, reducing page load times by up to 40% (to 1.8–2.2s) on selected applications.',
   }, {
     label: 'Cross-Platform Development',
-    text: 'Built and released 5–7 production mobile applications for iOS and Android using Ionic, Capacitor, and React Native, sharing business logic and API integrations across platforms where practical.',
+    text: 'Built and released 7 production mobile applications for iOS and Android using Ionic, Capacitor, and React Native, sharing business logic and API integrations across platforms where practical.',
   }, {
     label: 'Full-Stack Development',
     text: 'Built FastAPI/MySQL backends for 6 production applications, owning REST API design, database schemas, authentication, and frontend integration.',
@@ -314,7 +314,7 @@ export const milestones: Milestone[] = [{
   id: 'epam',
   period: 'Jan 2020 - Jun 2020',
   company: 'EPAM Systems',
-  role: 'Software Engineer',
+  role: 'Software Engineer Intern',
   focus: 'React · TypeScript · reusable UI · engineering foundations',
   logo: epam_logo,
   location: 'Almaty, Kazakhstan (On-site)',
@@ -330,7 +330,7 @@ export const milestones: Milestone[] = [{
     text: 'Wrote unit tests, participated in code reviews, and supported debugging and production releases.',
   }, {
     label: 'Selection',
-    text: 'Selected as 1 of 3 engineers from 40+ candidates, following the company\'s technical selection process.',
+    text: 'Selected as 1 of 3 interns from 40+ candidates, following the company\'s technical selection process.',
   }],
 }, {
   id: 'freelance',
