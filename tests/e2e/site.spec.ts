@@ -22,7 +22,7 @@ test.describe('Hire me', () => {
 
     const section = page.locator('#hire');
     await expect(section).toBeVisible();
-    await expect(section.getByText('Available immediately')).toBeVisible();
+    await expect(section.getByText('Available immediately', { exact: true })).toBeVisible();
     await expect(section.getByRole('link', { name: /book an intro call/i })).toHaveAttribute('href', /^(mailto:|https:)/);
   });
 });
