@@ -1,0 +1,41 @@
+name: Lighthouse
+
+# Fails when a page drops below the minimum scores in scripts/check_lighthouse.mjs
+# (performance 90, accessibility 100, best practices 95, SEO 95; median of 3 runs).
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lighthouse:
+    name: Lighthouse scores
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build the static site
+        run: npm run generate
+
+      - name: Serve it with compression, like the real host does
+        run: |
+          npx -y serve@14 dist -l 3000 --no-clipboard &
+          for attempt in $(seq 1 30); do
+            curl -sf http://localhost:3000/ > /dev/null && exit 0
+            sleep 1
+          done
+          echo "The server did not start" && exit 1
+
+      - name: Run Lighthouse
+        run: npm run lighthouse

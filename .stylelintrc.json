@@ -1,4 +1,5 @@
 {
+  "ignoreFiles": ["dist/**", ".output/**", ".nuxt/**"],
   "extends": "stylelint-config-standard",
   "plugins": ["@stylistic/stylelint-plugin", "./stylelint-rules/no-eof-blank-line.mjs"],
   "rules": {

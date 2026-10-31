@@ -24,7 +24,8 @@
     "rss": "python3 scripts/generate_rss.py",
     "feeds": "python3 scripts/generate_sitemap.py && python3 scripts/generate_rss.py",
     "lint:all": "npm run lint && npm run lint:css && npm run lint:html && npm run lint:i18n",
-    "prepare": "husky"
+    "prepare": "husky",
+    "lighthouse": "node scripts/check_lighthouse.mjs"
   },
   "dependencies": {
     "@nuxtjs/i18n": "^10.6.0",

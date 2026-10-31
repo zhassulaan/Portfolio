@@ -97,6 +97,6 @@ export default withNuxt(
     },
   },
   {
-    ignores: ['scripts/**', 'public/**'],
+    ignores: ['scripts/**', 'public/**', 'dist/**'],
   },
 );
