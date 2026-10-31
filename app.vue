@@ -67,6 +67,7 @@ useHead({
       '@type': 'Person',
       name: 'Zhassulan Serikuly',
       jobTitle: 'Senior Software Engineer',
+      knowsAbout: ['React', 'Next.js', 'TypeScript', 'Node.js', 'NestJS', 'Frontend architecture', 'Web performance'],
       url: SITE_URL,
       image: og_image_url,
       email: `mailto:${CONTACT_EMAIL}`,

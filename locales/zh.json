@@ -2,7 +2,8 @@
   "site": {
     "title_suffix": "Zhassulan Serikuly",
     "default_title": "Zhassulan Serikuly — 工程笔记",
-    "description": "Zhassulan Serikuly 的工程作品集——前端架构、性能优化、系统现代化改造、GIS 与生产级系统。"
+    "home_title": "Zhassulan Serikuly — 高级软件工程师 · 工程笔记",
+    "description": "高级软件工程师：React、Next.js、Node.js，6年以上经验。性能、架构与 GIS 案例。愿意搬迁，可立即入职。"
   },
   "nav": {
     "signals": "数据概览",

@@ -58,3 +58,13 @@ test.describe('Languages', () => {
     await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   });
 });
+
+test.describe('Search and link previews', () => {
+  test('the home page title and description name the role', async ({ page }) => {
+    await page.goto('/');
+
+    await expect(page).toHaveTitle(/Senior Software Engineer/);
+    await expect(page.locator('meta[name="description"]')).toHaveAttribute('content', /Senior Software Engineer/);
+    await expect(page.locator('meta[property="og:title"]')).toHaveAttribute('content', /Senior Software Engineer/);
+  });
+});

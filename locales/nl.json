@@ -2,7 +2,8 @@
   "site": {
     "title_suffix": "Zhassulan Serikuly",
     "default_title": "Zhassulan Serikuly — Engineering-notitieboek",
-    "description": "Technisch portfolio van Zhassulan Serikuly — frontend-architectuur, performance, modernisering, GIS en productiesystemen."
+    "home_title": "Zhassulan Serikuly — Senior Software Engineer · Engineering-notitieboek",
+    "description": "Senior Software Engineer: React, Next.js, Node.js, 6+ jaar ervaring. Cases over performance, architectuur en GIS. Open voor verhuizing, direct beschikbaar."
   },
   "nav": {
     "signals": "Signalen",

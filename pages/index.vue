@@ -9,15 +9,22 @@ import TrajectorySection from '@/components/sections/trajectory_section/trajecto
 import HireSection from '@/components/sections/hire_section/hire_section.vue';
 import ContactSection from '@/components/sections/contact_section/contact_section.vue';
 
+const { t } = useI18n();
+
+// The home page names the role in the title, which Google and link previews show.
+const home_title = computed(() => t('site.home_title'));
+const description = computed(() => t('site.description'));
+
 useHead({
-  title: 'Engineering Notebook',
-  meta: [{
-    property: 'og:title',
-    content: 'Zhassulan Serikuly — Engineering Notebook'
-  }, {
-    property: 'og:description',
-    content: 'A portfolio about engineering decisions and measurable outcomes rather than a duplicate résumé.'
-  }],
+  title: home_title,
+  titleTemplate: '%s',
+});
+
+useSeoMeta({
+  ogTitle: home_title,
+  twitterTitle: home_title,
+  ogDescription: description,
+  twitterDescription: description,
 });
 </script>
 
