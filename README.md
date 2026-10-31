@@ -29,7 +29,9 @@ npm run dev
 | `npm run test:e2e` | Builds the site and runs Playwright |
 | `npm run i18n:add -- <code> "<name>"` | Scaffolds a new language |
 | `npm run lint:i18n` | Language coverage and consistency report |
-| `npm run sitemap` | Regenerates `public/sitemap.xml` |
+| `npm run feeds` | Regenerates `public/sitemap.xml` and `public/rss.xml` |
+| `npm run lighthouse` | Lighthouse scores for the main pages (needs a running site) |
+| `npm run check:site` | Checks that the live site and the CV PDF respond |
 
 ## Configuration
 
@@ -52,3 +54,12 @@ Copy `.env.example` to `.env`. Everything is optional:
 The CV button serves `public/files/Zhassulan-Serikuly-CV.pdf`, also available at
 `/cv.pdf`. To update the CV, replace that file. A unit test checks that it
 exists and is a PDF.
+
+## Checks that run on GitHub
+
+- **CI**: linters, unit tests, build and e2e (including accessibility with axe).
+- **Lighthouse**: fails below performance 90, accessibility 100, best practices 95
+  or SEO 95 (median of 3 runs).
+- **Uptime check**: every 30 minutes it requests the live site and the CV PDF.
+  A failed run sends you an email. For an independent second alert you can add
+  the site to UptimeRobot (free): New monitor, HTTP(s), your URL, 5 minutes.

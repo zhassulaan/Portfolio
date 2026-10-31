@@ -1,0 +1,24 @@
+name: Uptime check
+
+# Every 30 minutes: requests the live site and fails if a page, the sitemap or
+# the CV PDF stops working. GitHub emails you when a scheduled run fails.
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  check:
+    name: Live site responds
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
+      - name: Check the live site
+        run: node scripts/check_site.mjs
