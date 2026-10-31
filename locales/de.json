@@ -59,7 +59,12 @@
     "intro": "Jeweils: das Problem, was ich getan habe, das Ergebnis.",
     "label_constraint": "Einschränkung",
     "label_move": "Technischer Schritt",
-    "label_outcome": "Ergebnis"
+    "label_outcome": "Ergebnis",
+    "open_page": "Diesen Fall öffnen",
+    "back_to_cases": "Alle Fälle",
+    "previous_case": "Vorheriger Fall",
+    "next_case": "Nächster Fall",
+    "nav_aria": "Fall-Navigation"
   },
   "selected_projects": {
     "eyebrow": "Ausgewählte Builds",

@@ -1,0 +1,71 @@
+.case_page {
+  min-height: 100vh;
+  padding-block: 5.75em 6.875em;
+}
+
+.case_page__back {
+  display: inline-block;
+  margin-bottom: 2.5em;
+  color: var(--theme-muted);
+  font-size: .8125em;
+  font-weight: 700;
+}
+
+.case_page__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.125em;
+  margin-top: 2.5em;
+}
+
+.case_page__link {
+  display: grid;
+  gap: .375em;
+  padding: 1.25em 1.5em;
+  border: 1px solid var(--theme-line);
+  border-radius: 1em;
+  background: var(--theme-surface);
+  transition: border-color .2s ease;
+}
+
+.case_page__link:hover {
+  border-color: var(--theme-muted);
+}
+
+.case_page__link--next {
+  grid-column: 2;
+  text-align: right;
+}
+
+.case_page__link small {
+  color: var(--theme-muted);
+  font-weight: 700;
+}
+
+.case_page__cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25em;
+  margin-top: 3em;
+  padding-top: 2em;
+  border-top: 1px solid var(--theme-line);
+}
+
+.case_page__cta p {
+  max-width: 28em;
+  margin: 0;
+  font: 700 1.25em Manrope;
+}
+
+@media (width <= 700px) {
+  .case_page__nav {
+    grid-template-columns: 1fr;
+  }
+
+  .case_page__link--next {
+    grid-column: 1;
+    text-align: left;
+  }
+}

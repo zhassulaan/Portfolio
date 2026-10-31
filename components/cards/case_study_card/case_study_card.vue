@@ -3,15 +3,16 @@ import type { CaseStudy } from '@/types/portfolio';
 import TagList from '@/components/ui/tag_list/tag_list.vue';
 import { useLocaleText } from '@/composables/use_locale_text';
 
-const props = defineProps<{ case_study: CaseStudy }>();
+const props = defineProps<{ case_study: CaseStudy; standalone?: boolean }>();
 const { tx } = useLocaleText();
+const local_path = useLocalePath();
 
 // Keys use the existing `index` field ('01'-'04'); see data/translations/*.ts.
 const key = (field: string) => `case_studies.${props.case_study.index}.${field}`;
 </script>
 
 <template>
-  <article class='case_study_card' v-reveal>
+  <article class='case_study_card' v-reveal='!standalone'>
     <div class='case_study_card__rail'>
       <span v-text='case_study.index'></span>
       <i></i>
@@ -43,6 +44,12 @@ const key = (field: string) => `case_studies.${props.case_study.index}.${field}`
       </div>
 
       <TagList :items="case_study.stack" />
+
+      <NuxtLink class='case_study_card__open'
+        v-if='!standalone'
+        :to="local_path(`/cases/${case_study.slug}`)">
+        {{ $t('case_studies.open_page') }} <span aria-hidden='true'>↗</span>
+      </NuxtLink>
     </div>
 
     <div class='case_study_card__metrics'>

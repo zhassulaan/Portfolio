@@ -59,7 +59,12 @@
     "intro": "Per project: het probleem, wat ik deed, het resultaat.",
     "label_constraint": "Beperking",
     "label_move": "Technische zet",
-    "label_outcome": "Resultaat"
+    "label_outcome": "Resultaat",
+    "open_page": "Open deze case",
+    "back_to_cases": "Alle cases",
+    "previous_case": "Vorige case",
+    "next_case": "Volgende case",
+    "nav_aria": "Case-navigatie"
   },
   "selected_projects": {
     "eyebrow": "Geselecteerde builds",

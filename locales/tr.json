@@ -59,7 +59,12 @@
     "intro": "Her birinde: sorun, ne yaptım, sonuç.",
     "label_constraint": "Kısıt",
     "label_move": "Mühendislik hamlesi",
-    "label_outcome": "Sonuç"
+    "label_outcome": "Sonuç",
+    "open_page": "Bu vakayı aç",
+    "back_to_cases": "Tüm vakalar",
+    "previous_case": "Önceki vaka",
+    "next_case": "Sonraki vaka",
+    "nav_aria": "Vaka gezintisi"
   },
   "selected_projects": {
     "eyebrow": "Seçilmiş yapımlar",

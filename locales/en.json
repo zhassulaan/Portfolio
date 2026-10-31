@@ -59,7 +59,12 @@
     "intro": "Each one: the problem, what I did, the result.",
     "label_constraint": "Constraint",
     "label_move": "Engineering move",
-    "label_outcome": "Outcome"
+    "label_outcome": "Outcome",
+    "open_page": "Open this case",
+    "back_to_cases": "All cases",
+    "previous_case": "Previous case",
+    "next_case": "Next case",
+    "nav_aria": "Case navigation"
   },
   "selected_projects": {
     "eyebrow": "Selected builds",

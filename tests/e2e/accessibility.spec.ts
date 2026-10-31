@@ -1,7 +1,7 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
-const pages = ['/', '/cv', '/blog', '/projects', '/proof'];
+const pages = ['/', '/cv', '/blog', '/projects', '/proof', '/cases/one-shared-system-for-10-modules'];
 const themes = ['light', 'dark', 'blue', 'gray'];
 
 for (const theme of themes) {

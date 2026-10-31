@@ -78,6 +78,7 @@ export const signals: Signal[] = [{
 export const case_studies: CaseStudy[] = [
   {
     index: '01',
+    slug: 'one-shared-system-for-10-modules',
     company: 'Ciklum',
     kicker: 'Architecture at product scale',
     title: 'Make ten modules feel like one system.',
@@ -94,6 +95,7 @@ export const case_studies: CaseStudy[] = [
     stack: ['React', 'Next.js', 'NestJS', 'TypeScript', 'REST APIs', 'GraphQL'],
   }, {
     index: '02',
+    slug: 'page-load-from-3-2-to-2-1-seconds',
     company: 'Ciklum',
     kicker: 'Performance as architecture',
     title: 'Cutting page load from 3.2 to 2.1 seconds.',
@@ -110,6 +112,7 @@ export const case_studies: CaseStudy[] = [
     stack: ['Core Web Vitals', 'Lighthouse', 'Vitest', 'Jest', 'Sentry', 'CI/CD'],
   }, {
     index: '03',
+    slug: '500k-map-objects-first-render',
     company: 'KeyHorse',
     kicker: 'Geospatial performance',
     title: '500K map objects, first render cut from 800 to 480 ms.',
@@ -126,6 +129,7 @@ export const case_studies: CaseStudy[] = [
     stack: ['React', 'Mapbox GL JS', 'Redux', 'Elasticsearch', 'Performance Profiling'],
   }, {
     index: '04',
+    slug: 'regional-products-from-configuration',
     company: 'KeyHorse',
     kicker: 'Reusable delivery systems',
     title: 'Build the next regional product by configuring, not copying.',

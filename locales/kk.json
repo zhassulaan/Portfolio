@@ -59,7 +59,12 @@
     "intro": "Әрқайсысында: мәселе, мен не істедім, нәтиже.",
     "label_constraint": "Шектеу",
     "label_move": "Инженерлік қадам",
-    "label_outcome": "Нәтиже"
+    "label_outcome": "Нәтиже",
+    "open_page": "Кейсті ашу",
+    "back_to_cases": "Барлық кейстер",
+    "previous_case": "Алдыңғы кейс",
+    "next_case": "Келесі кейс",
+    "nav_aria": "Кейстер навигациясы"
   },
   "selected_projects": {
     "eyebrow": "Таңдаулы жобалар",

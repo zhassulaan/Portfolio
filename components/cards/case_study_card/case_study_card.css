@@ -153,3 +153,11 @@
     grid-column: 1;
   }
 }
+
+.case_study_card__open {
+  display: inline-block;
+  margin-top: 1.25em;
+  color: var(--theme-accent_text);
+  font-size: .8125em;
+  font-weight: 700;
+}

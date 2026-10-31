@@ -68,3 +68,20 @@ test.describe('Search and link previews', () => {
     await expect(page.locator('meta[property="og:title"]')).toHaveAttribute('content', /Senior Software Engineer/);
   });
 });
+
+test.describe('Case pages', () => {
+  test('every case has its own page, linked from the home page', async ({ page }) => {
+    await page.goto('/#cases');
+    await page.getByRole('link', { name: /open this case/i }).first().click();
+
+    await expect(page).toHaveURL(/\/cases\/.+/);
+    await expect(page.getByRole('heading', { level: 1 })).toHaveCount(1);
+    await expect(page.getByRole('link', { name: /next case/i })).toBeVisible();
+  });
+
+  test('returns a not-found page for an unknown case', async ({ page }) => {
+    const response = await page.goto('/cases/this-case-does-not-exist');
+
+    expect(response?.status()).toBe(404);
+  });
+});

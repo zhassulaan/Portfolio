@@ -3,7 +3,7 @@ import { existsSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { blog_posts } from '../../data/blog_posts';
-import { portfolio_assets, proof_documents } from '../../data/portfolio';
+import { case_studies, portfolio_assets, proof_documents } from '../../data/portfolio';
 
 const PUBLIC_DIR = join(__dirname, '../../public');
 
@@ -35,6 +35,18 @@ describe('files the site links to', () => {
     for (const post of blog_posts) {
       expect(sitemap, post.slug).toContain(`/blog/${post.slug}`);
       expect(rss, post.slug).toContain(`/blog/${post.slug}`);
+    }
+  });
+
+  it('has unique, URL-safe case slugs, and lists every case in sitemap.xml (run `npm run feeds`)', () => {
+    const sitemap = readFileSync(join(PUBLIC_DIR, 'sitemap.xml'), 'utf8');
+    const slugs = case_studies.map((item) => item.slug);
+
+    expect(new Set(slugs).size).toBe(slugs.length);
+
+    for (const slug of slugs) {
+      expect(slug).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
+      expect(sitemap, slug).toContain(`/cases/${slug}`);
     }
   });
 });

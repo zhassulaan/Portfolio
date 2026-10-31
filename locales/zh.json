@@ -59,7 +59,12 @@
     "intro": "每个项目：问题、我的做法、结果。",
     "label_constraint": "约束条件",
     "label_move": "工程决策",
-    "label_outcome": "结果"
+    "label_outcome": "结果",
+    "open_page": "打开此案例",
+    "back_to_cases": "全部案例",
+    "previous_case": "上一个案例",
+    "next_case": "下一个案例",
+    "nav_aria": "案例导航"
   },
   "selected_projects": {
     "eyebrow": "精选作品",

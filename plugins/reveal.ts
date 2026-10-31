@@ -6,7 +6,13 @@ export default defineNuxtPlugin((nuxt_app) => {
       return {};
     },
 
-    mounted(element: HTMLElement) {
+    // v-reveal='false' skips the animation (content that is already on screen
+    // would otherwise wait for hydration before it becomes visible).
+    mounted(element: HTMLElement, binding) {
+      if (binding.value === false) {
+        return;
+      }
+
       element.classList.add('reveal');
 
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

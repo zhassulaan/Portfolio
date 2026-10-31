@@ -6,6 +6,8 @@ export interface Signal {
 
 export interface CaseStudy {
   index: string;
+  // URL part of /cases/<slug>. `index` stays the translation key.
+  slug: string;
   company: string;
   kicker: string;
   title: string;

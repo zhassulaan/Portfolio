@@ -60,10 +60,18 @@ def load_proof_slugs() -> list[tuple[str, str]]:
     return entries
 
 
+def load_case_slugs() -> list[str]:
+    """Slugs of the case studies in data/portfolio.ts (each has its own /cases/<slug> page)."""
+    text = PORTFOLIO_DATA.read_text(encoding='utf-8')
+    return re.findall(r"index:\s*'\d+',\s*\n\s*slug:\s*'([\w-]+)',", text)
+
+
 def build_routes() -> list[str]:
     routes = list(STATIC_ROUTES)
     for post in load_posts():
         routes.append(f"/blog/{post['slug']}")
+    for slug in load_case_slugs():
+        routes.append(f'/cases/{slug}')
     for slug, kind in load_proof_slugs():
         routes.append(f'/{kind}/{slug}')
     return routes
@@ -78,6 +86,7 @@ ROUTE_SOURCES = {
     '/blog': ['pages/blog', 'data/blog_posts.ts'],
 }
 PROOF_SOURCES = ['components/sections/proof_detail_section', 'data/portfolio.ts']
+CASE_SOURCES = ['pages/cases', 'components/cards/case_study_card', 'data/portfolio.ts']
 
 
 def git_date(paths: list[str]) -> str:
@@ -92,6 +101,8 @@ def git_date(paths: list[str]) -> str:
 def last_modified(route: str, post_dates: dict[str, str]) -> str:
     if route.startswith('/blog/'):
         return post_dates.get(route.removeprefix('/blog/'), git_date(['data/blog_posts.ts']))
+    if route.startswith('/cases/'):
+        return git_date(CASE_SOURCES)
     return git_date(ROUTE_SOURCES.get(route, PROOF_SOURCES))
 
 

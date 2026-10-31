@@ -59,7 +59,12 @@
     "intro": "В каждом: проблема, что я сделал, результат.",
     "label_constraint": "Ограничение",
     "label_move": "Инженерное решение",
-    "label_outcome": "Результат"
+    "label_outcome": "Результат",
+    "open_page": "Открыть кейс",
+    "back_to_cases": "Все кейсы",
+    "previous_case": "Предыдущий кейс",
+    "next_case": "Следующий кейс",
+    "nav_aria": "Навигация по кейсам"
   },
   "selected_projects": {
     "eyebrow": "Избранные проекты",
