@@ -57,7 +57,7 @@
   color: var(--theme-muted);
 }
 
-.case_study_card__main h3 {
+.case_study_card__title {
   max-width: 47.5em;
   margin: .9375em 0 1.625em;
   font-size: clamp(1.75em, 3vw, 2.625em);

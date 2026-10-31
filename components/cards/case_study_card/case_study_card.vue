@@ -24,7 +24,9 @@ const key = (field: string) => `case_studies.${props.case_study.index}.${field}`
         <span v-text='case_study.company'></span>
       </div>
 
-      <h3 v-text="tx(key('title'), case_study.title)"></h3>
+      <component class='case_study_card__title' :is="standalone ? 'h1' : 'h3'">
+        {{ tx(key('title'), case_study.title) }}
+      </component>
 
       <div class='case_study_card__story'>
         <div>

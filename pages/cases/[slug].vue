@@ -49,7 +49,6 @@ onMounted(() => {
       <span aria-hidden='true'>←</span> {{ $t('case_studies.back_to_cases') }}
     </NuxtLink>
 
-    <h1 class='sr_only'>{{ title }}</h1>
     <CaseStudyCard :case_study='case_study' :standalone='true' />
 
     <nav class='case_page__nav' :aria-label="$t('case_studies.nav_aria')">
